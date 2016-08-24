@@ -44,6 +44,8 @@ a:hover {
   line-height: 60px;
   text-transform: uppercase;
   margin-bottom: 10px;
+  text-align: justify;
+  text-align-last: justify;
 }
 
 .block {
