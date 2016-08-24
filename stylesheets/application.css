@@ -1,0 +1,111 @@
+@font-face { font-family: Knockout; src: url('Knockout-HTF47-Bantamweight.otf'); } 
+
+#content {
+  width: 900px;
+  margin: 0px auto;
+  margin-top: 50px;
+  font-family: Knockout, sans-serif;
+  text-align: justify;
+}
+
+a {
+  color: #0780cd;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #174e71;
+}
+
+#hi {
+  font-size: 57px;
+  color: #999;
+  font-weight: 100;
+}
+
+#stirman {
+  font-size: 446px;
+  font-weight: 100;
+  color: #000;
+  margin-top: -50px;
+}
+
+#build {
+  font-size: 122px;
+  font-weight: 100;
+  color: #fe179b;
+  margin-top: -70px;
+}
+
+#currently {
+  font-size: 65px;
+  font-weight: 100;
+  color: #444;
+  line-height: 60px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.block {
+  float: left;
+  margin: 14px 36px 0px 0px;
+}
+
+.block.last {
+  margin-right: 0px;
+}
+
+#notable {
+  font-size: 55px;
+  font-weight: 100;
+  color: #999;
+  line-height: 50px;
+  margin-top: 18px;
+}
+
+#psych {
+  font-size: 632px;
+  font-weight: 100;
+  color: #000;
+  margin-top: -70px;
+  margin-left: -20px;
+}
+
+#oh {
+  font-size: 89px;
+  font-weight: 100;
+  color: #444;
+  margin-top: -110px;
+  margin-bottom: 90px;
+}
+
+@-moz-document url-prefix() {
+
+  #hi {
+    font-size: 56.7px;
+  }
+
+  #stirman {
+    font-size: 440px;
+  }
+
+  #build {
+    font-size: 118px;
+  }
+
+  #currently {
+    font-size: 64.8px;
+  }
+
+  #notable {
+    font-size: 54.4px;
+  }
+
+  #psych {
+    font-size: 630px;
+  }
+
+  #oh {
+    font-size: 89px;
+  }
+}
