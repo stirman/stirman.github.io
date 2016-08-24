@@ -1,4 +1,4 @@
-@font-face { font-family: Knockout; src: url('Knockout-HTF47-Bantamweight.otf'); } 
+@font-face { font-family: Knockout; src: url('Knockout-HTF47-Bantamweight.otf'); }
 
 #content {
   width: 900px;
@@ -61,6 +61,9 @@ a:hover {
   color: #999;
   line-height: 50px;
   margin-top: 18px;
+  text-align: justify;
+  text-align-last: justify;
+  letter-spacing: 1px;
 }
 
 #psych {
