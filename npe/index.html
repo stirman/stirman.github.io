@@ -13,38 +13,35 @@
     <script src="js/OrbitControls.js"></script>
 		<script>
     
+      /***************/
+      /* Boilerplate defaults
+      /***************************************/
+
       var scene = new THREE.Scene();
       var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-
       var renderer = new THREE.WebGLRenderer({antialias: true});
       renderer.setSize(window.innerWidth, window.innerHeight);
       document.body.appendChild(renderer.domElement);
-
       camera.position.set(0, 0, 50);
 
+      /***************/
+      /* Orbit controls
+      /***************************************/
+
       var controls = new THREE.OrbitControls(camera, renderer.domElement);
-      // controls.enableDamping = true
       controls.maxDistance = 100
       controls.minDistance = -100
-      // controls.autorotate = true
-      // controls.autoRotateSpeed = 3.0
-      
       controls.update();
 
+      /***************/
+      /* Environments
+      /***************************************/
+      
       var i = 0
       var env = ['serene', 'divine', 'alps']
       var paused = false
       
       loadEnv(env[0])
-
-      document.addEventListener('dblclick', event => {              
-        i = i == 2 ? 0 : i + 1
-        loadEnv(env[i])
-      })
-
-      document.addEventListener('click', event => {              
-        paused = !paused
-      })
 
       function loadEnv(env) { 
         let materialArray = [];
@@ -71,10 +68,17 @@
         scene.add(skybox);
       }
 
+      /***************/
+      /* Extrude and materials
+      /***************************************/
+
       var extrudeSettings = {depth: 2, bevelEnabled: true, bevelSegments: 64, steps: 32, bevelSize: 1, bevelThickness: 1};
       var material = new THREE.MeshNormalMaterial({transparent: true, opacity: 0.9})
       // var material = new THREE.MeshStandardMaterial({metalness: 1, roughness: 0.5, transparent: true, opacity: 0.9});
       
+      /***************/
+      /* Logo shapes
+      /***************************************/
 
       var n1Shape = new THREE.Shape();
       n1Shape.moveTo(0, 10);
@@ -136,8 +140,13 @@
       e2mesh.position.set(24, 0, -13)
       scene.add( e2mesh );
 
+      /***************/
+      /* Random curves for camera movement
+      /***************************************/
+
       var curveBound = 200
       var spline = newSpline()
+      var camPosIndex = 0;
 
       function newSpline() {
         var spline = new THREE.CatmullRomCurve3([
@@ -150,26 +159,38 @@
         return spline;
       }
 
-      // var points = spline.getPoints( 50 );
-      // var geometry = new THREE.BufferGeometry().setFromPoints( points );
-      // var material = new THREE.LineBasicMaterial( { color : 0xff0000 } );
-      // var splineObject = new THREE.Line( geometry, material );
-      // scene.add(splineObject)
+      /***************/
+      /* Listeners
+      /***************************************/
 
-      var camPosIndex = 0;
+      document.addEventListener('dblclick', event => {              
+        i = i == 2 ? 0 : i + 1
+        loadEnv(env[i])
+      })
+
+      document.addEventListener('click', event => {              
+        paused = !paused
+      })
+
+      /***************/
+      /* Animate loop
+      /***************************************/
 
       function animate() {
         requestAnimationFrame( animate );
 
+        // toggle pause
         if (!paused) {
           camPosIndex++;
         }
       
+        // get a new spline after 350 frames
         if (camPosIndex > 350) {
           spline = newSpline()
           camPosIndex = 0;
         }
         
+        // move camera after 100 frames
         if (camPosIndex > 100) {
           var camPos = spline.getPoint((camPosIndex-100) / 250);
           camera.position.x = camPos.x;
@@ -178,7 +199,6 @@
         }
 
         controls.update();
-
         renderer.render( scene, camera );
       }
             
