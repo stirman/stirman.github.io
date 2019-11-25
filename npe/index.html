@@ -11,6 +11,7 @@
 	<body>
     <script src="js/three.js"></script>
     <script src="js/OrbitControls.js"></script>
+    <script src="js/BufferGeometryUtils.js"></script>
 		<script>
     
       /***************/
@@ -80,65 +81,66 @@
       /* Logo shapes
       /***************************************/
 
+      // Array of geometries for the masterGeometry (for performance)
+      var logoGeometries = []
+
       var n1Shape = new THREE.Shape();
       n1Shape.moveTo(0, 10);
       n1Shape.lineTo(3, 10)
       n1Shape.lineTo(15, -10)
       n1Shape.lineTo(0, -10)
-      var n1geometry = new THREE.ExtrudeGeometry( n1Shape, extrudeSettings );
-      var n1mesh = new THREE.Mesh( n1geometry, material );
-      n1mesh.position.set(-32, 0, 0)
-      scene.add( n1mesh );
+      var n1geometry = new THREE.BufferGeometry().fromGeometry(new THREE.ExtrudeGeometry( n1Shape, extrudeSettings ));
+      n1geometry.translate(-32, 0, 0)
+      logoGeometries.push(n1geometry)
   
       var n2Shape = new THREE.Shape();
       n2Shape.moveTo(0, 13.9);
       n2Shape.lineTo(16, 13.9)
       n2Shape.lineTo(16, -13.8)
       n2Shape.lineTo(0, -13.8)
-      var n2geometry = new THREE.ExtrudeGeometry( n2Shape, extrudeSettings );
-      var n2mesh = new THREE.Mesh( n2geometry, material );
-      n2mesh.position.set(-33.4, 0, -18)
-      scene.add( n2mesh );
+      var n2geometry = new THREE.BufferGeometry().fromGeometry(new THREE.ExtrudeGeometry(n2Shape, extrudeSettings));
+      n2geometry.translate(-33.4, 0, -18)
+      logoGeometries.push(n2geometry)
       
       var p1Shape = new THREE.Shape();
       p1Shape.moveTo(0, 7);
       p1Shape.lineTo(6, 7)
       p1Shape.lineTo(6, -7)
       p1Shape.lineTo(0, -7)
-      var p1geometry = new THREE.ExtrudeGeometry( p1Shape, extrudeSettings );
-      var p1mesh = new THREE.Mesh( p1geometry, material );
-      p1mesh.position.set(-7.5, 0, 12.5)
-      scene.add( p1mesh );
+      var p1geometry = new THREE.BufferGeometry().fromGeometry(new THREE.ExtrudeGeometry( p1Shape, extrudeSettings ));
+      p1geometry.translate(-7.5, 0, 12.5)
+      logoGeometries.push(p1geometry)
 
       var p2Shape = new THREE.Shape();
       p2Shape.moveTo(0, 11.4);
       p2Shape.lineTo(9.4, 11.4)
       p2Shape.lineTo(9.4, -4)
       p2Shape.lineTo(0, -4)
-      var p2geometry = new THREE.ExtrudeGeometry( p2Shape, extrudeSettings );      
-      var p2mesh = new THREE.Mesh( p2geometry, material );
-      p2mesh.position.set(0.2, 0, -7)
-      scene.add( p2mesh );
+      var p2geometry = new THREE.BufferGeometry().fromGeometry(new THREE.ExtrudeGeometry( p2Shape, extrudeSettings ));      
+      p2geometry.translate(0.2, 0, -7)
+      logoGeometries.push(p2geometry)
 
       var e1Shape = new THREE.Shape();
       e1Shape.moveTo(0, 8.7);
       e1Shape.lineTo(5, 8.7)
       e1Shape.lineTo(5, -8.8)
       e1Shape.lineTo(0, -8.8)
-      var e1geometry = new THREE.ExtrudeGeometry( e1Shape, extrudeSettings );      
-      var e1mesh = new THREE.Mesh( e1geometry, material );
-      e1mesh.position.set(9.7, 0, 5)
-      scene.add( e1mesh );
+      var e1geometry = new THREE.BufferGeometry().fromGeometry(new THREE.ExtrudeGeometry( e1Shape, extrudeSettings ));            
+      e1geometry.translate(9.7, 0, 5)
+      logoGeometries.push(e1geometry)
 
       var e2Shape = new THREE.Shape();
       e2Shape.moveTo(0, 12.8);
       e2Shape.lineTo(16, 12.9)
       e2Shape.lineTo(16, -12.9)
       e2Shape.lineTo(0, -12.9)
-      var e2geometry = new THREE.ExtrudeGeometry( e2Shape, extrudeSettings );
-      var e2mesh = new THREE.Mesh( e2geometry, material );
-      e2mesh.position.set(24, 0, -13)
-      scene.add( e2mesh );
+      var e2geometry = new THREE.BufferGeometry().fromGeometry(new THREE.ExtrudeGeometry( e2Shape, extrudeSettings ));
+      e2geometry.translate(24, 0, -13)
+      logoGeometries.push(e2geometry)
+
+      var masterGeometry = THREE.BufferGeometryUtils.mergeBufferGeometries(logoGeometries);
+      var masterMesh = new THREE.Mesh(masterGeometry, material)
+      scene.add(masterMesh);
 
       /***************/
       /* Random curves for camera movement
