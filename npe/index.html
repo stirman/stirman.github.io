@@ -199,7 +199,10 @@
           camera.position.y = camPos.y;
           camera.position.z = camPos.z;   
           
-          // masterMesh.rotation.x += ((camPosIndex-100) / 250) / Math.PI;
+          masterMesh.rotation.x = ( Math.PI * 2 ) * ( (camPosIndex-100) / 250 );
+          masterMesh.rotation.y = ( Math.PI * 2 ) * ( (camPosIndex-100) / 250 );
+          masterMesh.rotation.z = ( Math.PI * 2 ) * ( (camPosIndex-100) / 250 );
+          
         }
 
         controls.update();
