@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Skybox</title>
+		<style>
+			body { margin: 0; }
+			canvas { width: 100%; height: 100% }
+		</style>
+	</head>
+	<body>
+    <script src="js/three.js"></script>
+    <script src="js/OrbitControls.js"></script>
+		<script>
+    
+      var scene = new THREE.Scene();
+      var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+
+      var renderer = new THREE.WebGLRenderer({antialias: true});
+      renderer.setSize(window.innerWidth, window.innerHeight);
+      document.body.appendChild(renderer.domElement);
+
+      camera.position.set(0, 0, 50);
+
+      var controls = new THREE.OrbitControls(camera, renderer.domElement);
+      // controls.enableDamping = true
+      controls.maxDistance = 100
+      controls.minDistance = -100
+      // controls.autorotate = true
+      // controls.autoRotateSpeed = 3.0
+      
+      controls.update();
+
+      var i = 0
+      var env = ['serene', 'divine', 'alps']
+      var paused = false
+      
+      loadEnv(env[0])
+
+      document.addEventListener('dblclick', event => {              
+        i = i == 2 ? 0 : i + 1
+        loadEnv(env[i])
+      })
+
+      document.addEventListener('click', event => {              
+        paused = !paused
+      })
+
+      function loadEnv(env) { 
+        let materialArray = [];
+        let texture_ft = new THREE.TextureLoader().load( './' + env + '/' + env + '_ft.jpg');
+        let texture_bk = new THREE.TextureLoader().load( './' + env + '/' + env + '_bk.jpg');
+        let texture_up = new THREE.TextureLoader().load( './' + env + '/' + env + '_up.jpg');
+        let texture_dn = new THREE.TextureLoader().load( './' + env + '/' + env + '_dn.jpg');
+        let texture_rt = new THREE.TextureLoader().load( './' + env + '/' + env + '_rt.jpg');
+        let texture_lf = new THREE.TextureLoader().load( './' + env + '/' + env + '_lf.jpg');
+          
+        materialArray.push(new THREE.MeshBasicMaterial( { map: texture_ft }));
+        materialArray.push(new THREE.MeshBasicMaterial( { map: texture_bk }));
+        materialArray.push(new THREE.MeshBasicMaterial( { map: texture_up }));
+        materialArray.push(new THREE.MeshBasicMaterial( { map: texture_dn }));
+        materialArray.push(new THREE.MeshBasicMaterial( { map: texture_rt }));
+        materialArray.push(new THREE.MeshBasicMaterial( { map: texture_lf }));
+
+        for (let i = 0; i < 6; i++)
+          materialArray[i].side = THREE.BackSide;
+
+        // Add the Skybox to the scene  
+        var skyBoxGeo = new THREE.BoxGeometry(1000, 1000, 1000);
+        var skybox = new THREE.Mesh(skyBoxGeo, materialArray);
+        scene.add(skybox);
+      }
+
+      var extrudeSettings = {depth: 2, bevelEnabled: true, bevelSegments: 64, steps: 32, bevelSize: 1, bevelThickness: 1};
+      var material = new THREE.MeshNormalMaterial({transparent: true, opacity: 0.9})
+      // var material = new THREE.MeshStandardMaterial({metalness: 1, roughness: 0.5, transparent: true, opacity: 0.9});
+      
+
+      var n1Shape = new THREE.Shape();
+      n1Shape.moveTo(0, 10);
+      n1Shape.lineTo(3, 10)
+      n1Shape.lineTo(15, -10)
+      n1Shape.lineTo(0, -10)
+      var n1geometry = new THREE.ExtrudeGeometry( n1Shape, extrudeSettings );
+      var n1mesh = new THREE.Mesh( n1geometry, material );
+      n1mesh.position.set(-32, 0, 0)
+      scene.add( n1mesh );
+  
+      var n2Shape = new THREE.Shape();
+      n2Shape.moveTo(0, 13.9);
+      n2Shape.lineTo(16, 13.9)
+      n2Shape.lineTo(16, -13.8)
+      n2Shape.lineTo(0, -13.8)
+      var n2geometry = new THREE.ExtrudeGeometry( n2Shape, extrudeSettings );
+      var n2mesh = new THREE.Mesh( n2geometry, material );
+      n2mesh.position.set(-33.4, 0, -18)
+      scene.add( n2mesh );
+      
+      var p1Shape = new THREE.Shape();
+      p1Shape.moveTo(0, 7);
+      p1Shape.lineTo(6, 7)
+      p1Shape.lineTo(6, -7)
+      p1Shape.lineTo(0, -7)
+      var p1geometry = new THREE.ExtrudeGeometry( p1Shape, extrudeSettings );
+      var p1mesh = new THREE.Mesh( p1geometry, material );
+      p1mesh.position.set(-7.5, 0, 12.5)
+      scene.add( p1mesh );
+
+      var p2Shape = new THREE.Shape();
+      p2Shape.moveTo(0, 11.4);
+      p2Shape.lineTo(9.4, 11.4)
+      p2Shape.lineTo(9.4, -4)
+      p2Shape.lineTo(0, -4)
+      var p2geometry = new THREE.ExtrudeGeometry( p2Shape, extrudeSettings );      
+      var p2mesh = new THREE.Mesh( p2geometry, material );
+      p2mesh.position.set(0.2, 0, -7)
+      scene.add( p2mesh );
+
+      var e1Shape = new THREE.Shape();
+      e1Shape.moveTo(0, 8.7);
+      e1Shape.lineTo(5, 8.7)
+      e1Shape.lineTo(5, -8.8)
+      e1Shape.lineTo(0, -8.8)
+      var e1geometry = new THREE.ExtrudeGeometry( e1Shape, extrudeSettings );      
+      var e1mesh = new THREE.Mesh( e1geometry, material );
+      e1mesh.position.set(9.7, 0, 5)
+      scene.add( e1mesh );
+
+      var e2Shape = new THREE.Shape();
+      e2Shape.moveTo(0, 12.8);
+      e2Shape.lineTo(16, 12.9)
+      e2Shape.lineTo(16, -12.9)
+      e2Shape.lineTo(0, -12.9)
+      var e2geometry = new THREE.ExtrudeGeometry( e2Shape, extrudeSettings );
+      var e2mesh = new THREE.Mesh( e2geometry, material );
+      e2mesh.position.set(24, 0, -13)
+      scene.add( e2mesh );
+
+      var curveBound = 200
+      var spline = newSpline()
+
+      function newSpline() {
+        var spline = new THREE.CatmullRomCurve3([
+          new THREE.Vector3(0, 0, 50),
+          new THREE.Vector3(Math.random() * curveBound - curveBound/2, Math.random() * curveBound - curveBound/2, Math.random() * curveBound - curveBound/2),
+          new THREE.Vector3(Math.random() * curveBound - curveBound/2, Math.random() * curveBound - curveBound/2, Math.random() * curveBound - curveBound/2),
+          new THREE.Vector3(Math.random() * curveBound - curveBound/2, Math.random() * curveBound - curveBound/2, Math.random() * curveBound - curveBound/2),        
+          new THREE.Vector3(0, 0, 50)
+        ]);
+        return spline;
+      }
+
+      // var points = spline.getPoints( 50 );
+      // var geometry = new THREE.BufferGeometry().setFromPoints( points );
+      // var material = new THREE.LineBasicMaterial( { color : 0xff0000 } );
+      // var splineObject = new THREE.Line( geometry, material );
+      // scene.add(splineObject)
+
+      var camPosIndex = 0;
+
+      function animate() {
+        requestAnimationFrame( animate );
+
+        if (!paused) {
+          camPosIndex++;
+        }
+      
+        if (camPosIndex > 350) {
+          spline = newSpline()
+          camPosIndex = 0;
+        }
+        
+        if (camPosIndex > 100) {
+          var camPos = spline.getPoint((camPosIndex-100) / 250);
+          camera.position.x = camPos.x;
+          camera.position.y = camPos.y;
+          camera.position.z = camPos.z;                
+        }
+
+        controls.update();
+
+        renderer.render( scene, camera );
+      }
+            
+      animate();
+
+		</script>
+	</body>
+</html>
