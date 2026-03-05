@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>1NB Command Center — One Night Build Analytics</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:'Inter',sans-serif; background:#050505; color:#e5e5e5; min-height:100vh; }
+
+.header {
+  background:linear-gradient(135deg,#0a0a1a,#1a0a2a);
+  border-bottom:2px solid #e94560;
+  padding:20px 32px;
+  display:flex; justify-content:space-between; align-items:center;
+}
+.header h1 { font-family:'Space Grotesk',sans-serif; font-size:22px; font-weight:800; color:#fff; }
+.header h1 span { color:#e94560; }
+.header .controls { display:flex; gap:12px; align-items:center; }
+.header select, .header button {
+  background:#1a1a2e; border:1px solid #333; color:#e5e5e5; padding:8px 14px;
+  border-radius:8px; font-size:13px; cursor:pointer; font-family:'Inter',sans-serif;
+}
+.header select:hover, .header button:hover { border-color:#e94560; }
+.refresh-dot { width:8px; height:8px; border-radius:50%; background:#48e848; display:inline-block; margin-right:6px; animation:pulse 2s infinite; }
+@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
+
+.container { max-width:1400px; margin:0 auto; padding:24px; }
+
+.summary { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; margin-bottom:28px; }
+.card {
+  background:linear-gradient(135deg,#111128,#1a1a2e);
+  border:1px solid #222; border-radius:12px; padding:20px;
+  transition:border-color 0.2s;
+}
+.card:hover { border-color:#e94560; }
+.card .label { font-size:11px; text-transform:uppercase; letter-spacing:1px; color:#888; margin-bottom:8px; }
+.card .value { font-family:'Space Grotesk',sans-serif; font-size:32px; font-weight:800; color:#fff; }
+.card .sub { font-size:12px; color:#666; margin-top:4px; }
+
+.section-title {
+  font-family:'Space Grotesk',sans-serif; font-size:18px; font-weight:700;
+  margin-bottom:16px; color:#fff; display:flex; align-items:center; gap:10px;
+}
+.section-title .badge {
+  background:#e94560; color:#fff; font-size:11px; padding:3px 10px;
+  border-radius:20px; font-weight:600;
+}
+
+.apps-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:14px; margin-bottom:32px; }
+.app-card {
+  background:#111128; border:1px solid #222; border-radius:10px; padding:16px;
+  cursor:pointer; transition:all 0.2s; position:relative; overflow:hidden;
+}
+.app-card:hover { border-color:#e94560; transform:translateY(-2px); }
+.app-card .rank {
+  position:absolute; top:10px; right:12px; font-family:'Space Grotesk',sans-serif;
+  font-size:24px; font-weight:800; color:rgba(233,69,96,0.15);
+}
+.app-card .name { font-family:'Space Grotesk',sans-serif; font-size:15px; font-weight:700; margin-bottom:8px; }
+.app-card .stats { display:flex; gap:16px; margin-bottom:10px; }
+.app-card .stat { text-align:center; }
+.app-card .stat .num { font-family:'JetBrains Mono',monospace; font-size:18px; font-weight:700; color:#fff; }
+.app-card .stat .lbl { font-size:10px; color:#666; text-transform:uppercase; letter-spacing:0.5px; }
+.app-card .bar-wrap { height:4px; background:#1a1a2e; border-radius:2px; overflow:hidden; }
+.app-card .bar { height:100%; border-radius:2px; transition:width 0.5s ease; }
+
+.two-col { display:grid; grid-template-columns:1fr 1fr; gap:20px; margin-bottom:28px; }
+.panel { background:#111128; border:1px solid #222; border-radius:12px; padding:20px; }
+.panel h3 { font-family:'Space Grotesk',sans-serif; font-size:15px; margin-bottom:14px; color:#fff; }
+.row { display:flex; justify-content:space-between; align-items:center; padding:8px 0; border-bottom:1px solid #1a1a2e; }
+.row:last-child { border:none; }
+.row .name { font-size:13px; color:#ccc; min-width:120px; }
+.row .val { font-family:'JetBrains Mono',monospace; font-size:13px; color:#fff; font-weight:600; }
+.row .bar-sm { flex:1; margin:0 12px; height:3px; background:#1a1a2e; border-radius:2px; overflow:hidden; }
+.row .bar-sm .fill { height:100%; background:#e94560; border-radius:2px; }
+
+.realtime {
+  position:fixed; bottom:20px; right:20px; background:#111128; border:1px solid #333;
+  border-radius:10px; padding:12px 18px; display:flex; align-items:center; gap:10px;
+  font-size:13px; z-index:100; box-shadow:0 4px 20px rgba(0,0,0,0.5);
+}
+.realtime .dot { width:10px; height:10px; border-radius:50%; background:#48e848; animation:pulse 1.5s infinite; }
+.realtime .count { font-family:'Space Grotesk',sans-serif; font-size:20px; font-weight:800; color:#fff; }
+
+.loading { text-align:center; padding:60px; color:#666; font-size:14px; }
+.error { color:#e84848; padding:20px; text-align:center; }
+
+@media(max-width:768px) {
+  .summary { grid-template-columns:repeat(2,1fr); }
+  .two-col { grid-template-columns:1fr; }
+  .header { flex-direction:column; gap:12px; }
+}
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>📊 <span>1NB</span> Command Center</h1>
+  <div class="controls">
+    <select id="dateRange">
+      <option value="day">Today</option>
+      <option value="7d" selected>Last 7 days</option>
+      <option value="30d">Last 30 days</option>
+      <option value="month">This month</option>
+      <option value="all">All time</option>
+    </select>
+    <button onclick="loadAll()"><span class="refresh-dot"></span>Refresh</button>
+  </div>
+</div>
+
+<div class="container">
+  <div class="summary" id="summary">
+    <div class="card"><div class="label">Total Visitors</div><div class="value" id="totalVisitors">—</div><div class="sub" id="totalVisitorsSub"></div></div>
+    <div class="card"><div class="label">Total Pageviews</div><div class="value" id="totalPageviews">—</div><div class="sub" id="totalPageviewsSub"></div></div>
+    <div class="card"><div class="label">Active Apps</div><div class="value" id="activeApps">—</div><div class="sub">with traffic this period</div></div>
+    <div class="card"><div class="label">Bounce Rate</div><div class="value" id="bounceRate">—</div><div class="sub" id="bounceRateSub"></div></div>
+  </div>
+
+  <div class="section-title">🔥 App Leaderboard <span class="badge" id="appCount">—</span></div>
+  <div class="apps-grid" id="appsGrid"></div>
+
+  <div class="two-col">
+    <div class="panel"><h3>📡 Traffic Sources</h3><div id="sources"><div class="loading">Loading...</div></div></div>
+    <div class="panel"><h3>🌍 Top Pages</h3><div id="pages"><div class="loading">Loading...</div></div></div>
+  </div>
+  <div class="two-col">
+    <div class="panel"><h3>🗺️ Countries</h3><div id="countries"><div class="loading">Loading...</div></div></div>
+    <div class="panel"><h3>📱 Devices</h3><div id="devices"><div class="loading">Loading...</div></div></div>
+  </div>
+</div>
+
+<div class="realtime"><div class="dot"></div><div class="count" id="realtimeCount">0</div><div>online now</div></div>
+
+<script>
+const API='https://plausible.io/api/v2/query';
+const API_V1='https://plausible.io/api/v1';
+const KEY='GzM07UaF_9TT-m6nDQapVh70icGjjE5Ckz1J04XG8TKO6AglyhoiRnsJ36LhkmH-';
+const SITE='onenightbuild.com';
+
+const APP_NAMES={
+  '/':'🏠 Homepage','/aistack/':'🤖 AIStack','/agent-world/':'🎮 Agent World',
+  '/barcart/':'🍸 BarCart','/chronolist/':'⏰ ChronoList','/date-night-roulette/':'🎲 Date Night Roulette',
+  '/energy-vampires/':'🧛 Energy Vampires','/family-game-night/':'🎯 Family Game Night',
+  '/fitstack/':'💪 FitStack','/focus-flow/':'🎯 Focus Flow','/home-office-score/':'🏡 Home Office Score',
+  '/hoops-lab/':'🏀 Hoops Lab','/mealstack/':'🍽️ MealStack','/morning-routine-builder/':'☀️ Morning Routine',
+  '/netscore/':'📊 NetScore','/packlight/':'🧳 PackLight','/petcost/':'🐾 PetCost',
+  '/rate-calc/':'💰 Rate Calc','/real-cost/':'🏷️ Real Cost','/rosie-deck/':'🤖 Rosie Deck',
+  '/side-hustle-match/':'💡 Side Hustle Match','/sleep-score/':'😴 Sleep Score','/subaudit/':'💳 SubAudit',
+  '/valentines-gift-finder/':'💝 Valentine\'s Gift Finder','/versus/':'⚔️ Versus','/wavelength/':'📻 Wavelength',
+};
+const BAR_COLORS=['#e94560','#4ECDC4','#FFE66D','#A78BFA','#F97316','#48e848','#4888c8','#FF6B9D'];
+
+function getDateRange(){return document.getElementById('dateRange').value;}
+async function query(body){
+  const res=await fetch(API,{method:'POST',headers:{'Authorization':'Bearer '+KEY,'Content-Type':'application/json'},body:JSON.stringify({site_id:SITE,...body})});
+  if(!res.ok)throw new Error(`API ${res.status}`);return res.json();
+}
+async function queryV1(path){const res=await fetch(`${API_V1}${path}`,{headers:{'Authorization':'Bearer '+KEY}});return res.json();}
+function fmt(n){if(n>=1e6)return(n/1e6).toFixed(1)+'M';if(n>=1e3)return(n/1e3).toFixed(1)+'K';return n.toString();}
+
+async function loadRealtime(){try{const n=await queryV1('/stats/realtime/visitors?site_id='+SITE);document.getElementById('realtimeCount').textContent=n;}catch(e){}}
+async function loadSummary(){try{const data=await query({metrics:['visitors','pageviews','bounce_rate','visit_duration'],date_range:getDateRange()});const r=data.results[0]?.metrics||[0,0,0,0];document.getElementById('totalVisitors').textContent=fmt(r[0]);document.getElementById('totalPageviews').textContent=fmt(r[1]);document.getElementById('bounceRate').textContent=r[2]!=null?r[2]+'%':'—';document.getElementById('bounceRateSub').textContent=`Avg visit: ${r[3]||0}s`;}catch(e){}}
+
+async function loadApps(){try{const data=await query({metrics:['visitors','pageviews','bounce_rate','visit_duration'],date_range:getDateRange(),dimensions:['event:page'],order_by:[['visitors','desc']],limit:50});
+const apps={};data.results.forEach(r=>{const page=r.dimensions[0];const parts=page.split('/').filter(Boolean);const appKey=parts.length===0?'/':'/'+parts[0]+'/';if(!apps[appKey])apps[appKey]={visitors:0,pageviews:0,bounce:[],duration:[]};apps[appKey].visitors+=r.metrics[0];apps[appKey].pageviews+=r.metrics[1];if(r.metrics[2]!=null)apps[appKey].bounce.push(r.metrics[2]);if(r.metrics[3]!=null)apps[appKey].duration.push(r.metrics[3]);});
+const sorted=Object.entries(apps).filter(([k])=>k!=='/dashboard/').sort((a,b)=>b[1].visitors-a[1].visitors);
+const maxV=sorted[0]?.[1]?.visitors||1;
+document.getElementById('activeApps').textContent=sorted.filter(([,v])=>v.visitors>0).length;
+document.getElementById('appCount').textContent=sorted.length+' apps';
+document.getElementById('appsGrid').innerHTML=sorted.map(([key,stats],i)=>{const name=APP_NAMES[key]||key.replace(/\//g,'');const pct=Math.round((stats.visitors/maxV)*100);const avgB=stats.bounce.length?Math.round(stats.bounce.reduce((a,b)=>a+b,0)/stats.bounce.length):'—';const avgD=stats.duration.length?Math.round(stats.duration.reduce((a,b)=>a+b,0)/stats.duration.length):0;const c=BAR_COLORS[i%BAR_COLORS.length];return`<div class="app-card" onclick="window.open('https://onenightbuild.com${key}','_blank')"><div class="rank">#${i+1}</div><div class="name">${name}</div><div class="stats"><div class="stat"><div class="num">${fmt(stats.visitors)}</div><div class="lbl">Visitors</div></div><div class="stat"><div class="num">${fmt(stats.pageviews)}</div><div class="lbl">Views</div></div><div class="stat"><div class="num">${avgB}%</div><div class="lbl">Bounce</div></div><div class="stat"><div class="num">${avgD}s</div><div class="lbl">Avg Time</div></div></div><div class="bar-wrap"><div class="bar" style="width:${pct}%;background:${c}"></div></div></div>`;}).join('');}catch(e){document.getElementById('appsGrid').innerHTML='<div class="error">Failed to load</div>';}}
+
+async function loadPanel(id,dim,metric){try{const data=await query({metrics:['visitors','pageviews'],date_range:getDateRange(),dimensions:[dim],order_by:[[metric||'visitors','desc']],limit:10});const max=data.results[0]?.metrics[metric==='pageviews'?1:0]||1;const mi=metric==='pageviews'?1:0;document.getElementById(id).innerHTML=data.results.map(r=>{const n=dim==='event:page'?(APP_NAMES[r.dimensions[0]]||r.dimensions[0]):(r.dimensions[0]||'Direct / None');const pct=Math.round((r.metrics[mi]/max)*100);return`<div class="row"><div class="name">${n}</div><div class="bar-sm"><div class="fill" style="width:${pct}%"></div></div><div class="val">${fmt(r.metrics[mi])}</div></div>`;}).join('')||'<div style="color:#666;padding:8px">No data yet</div>';}catch(e){document.getElementById(id).innerHTML='<div class="error">Failed to load</div>';}}
+
+async function loadDevices(){try{const data=await query({metrics:['visitors'],date_range:getDateRange(),dimensions:['visit:device'],order_by:[['visitors','desc']]});const max=data.results[0]?.metrics[0]||1;const icons={Desktop:'🖥️',Mobile:'📱',Tablet:'📋'};document.getElementById('devices').innerHTML=data.results.map(r=>{const d=r.dimensions[0]||'Unknown';const pct=Math.round((r.metrics[0]/max)*100);return`<div class="row"><div class="name">${icons[d]||''} ${d}</div><div class="bar-sm"><div class="fill" style="width:${pct}%"></div></div><div class="val">${fmt(r.metrics[0])}</div></div>`;}).join('')||'<div style="color:#666;padding:8px">No data yet</div>';}catch(e){document.getElementById('devices').innerHTML='<div class="error">Failed to load</div>';}}
+
+async function loadAll(){await Promise.all([loadRealtime(),loadSummary(),loadApps(),loadPanel('sources','visit:source','visitors'),loadPanel('pages','event:page','pageviews'),loadPanel('countries','visit:country_name','visitors'),loadDevices()]);}
+
+document.getElementById('dateRange').addEventListener('change',loadAll);
+loadAll();setInterval(loadRealtime,15000);setInterval(loadAll,60000);
+</script>
+</body>
+</html>
