@@ -10,19 +10,19 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Space+Grotesk:wght@400;500;600&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --sand:#f5e6da;
-      --foam:#fdf8f3;
+      --sand:#f5f1ea;
+      --foam:#ffffff;
       --reef:#0f9ea8;
       --reef-dark:#0b6d73;
-      --coconut:#23414d;
+      --coconut:#1f2a2e;
       --sunset:#ff8a5c;
-      --lime:#8dd3bb;
+      --lime:#6abfb5;
     }
     *{box-sizing:border-box;margin:0;padding:0}
     body{
       font-family:'Space Grotesk',system-ui,sans-serif;
-      background:linear-gradient(180deg,#05252e 0%,#0c3d45 50%,#041c1f 100%);
-      color:var(--foam);
+      background:#f5f3ef;
+      color:var(--coconut);
       min-height:100vh;
       line-height:1.5;
     }
@@ -55,7 +55,7 @@
       content:"";
       position:absolute;
       inset:0;
-      background-image:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80');
+      background-image:url('https://a0.muscache.com/im/pictures/miso/Hosting-994979662060499143/original/9cecce5c-c736-48ab-a04a-d59241490c8f.jpeg');
       background-size:cover;
       background-position:center;
       opacity:.18;
@@ -64,26 +64,26 @@
     .hero-content{position:relative;z-index:1}
     .eyebrow{letter-spacing:.3em;text-transform:uppercase;font-size:.8rem;color:var(--lime);margin-bottom:12px;display:inline-block}
     h1{font-family:'Playfair Display',serif;font-size:clamp(2.4rem,6vw,3.8rem);margin-bottom:20px;color:#fff}
-    .hero p{max-width:720px;color:var(--sand);font-size:1.1rem;margin-bottom:24px}
+    .hero p{max-width:720px;color:var(--foam);font-size:1.1rem;margin-bottom:24px}
     .chips{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:32px}
-    .chip{padding:10px 18px;border-radius:999px;border:1px solid rgba(255,255,255,.2);color:var(--sand);font-size:.9rem;backdrop-filter:blur(6px)}
+    .chip{padding:10px 18px;border-radius:999px;border:1px solid rgba(15,70,73,.15);color:#104649;font-size:.9rem;background:rgba(255,255,255,.85)}
     .actions{display:flex;flex-wrap:wrap;gap:16px}
     .btn{padding:14px 26px;border-radius:999px;border:none;font-weight:600;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:8px;font-size:1rem}
     .btn.primary{background:linear-gradient(120deg,var(--sunset),#ffbd5c);color:#041c1f}
     .btn.ghost{border:1px solid rgba(255,255,255,.3);color:var(--foam);background:transparent}
     section.panel{
-      background:rgba(12,38,42,.92);
-      border:1px solid rgba(255,255,255,.05);
+      background:#ffffff;
+      border:1px solid rgba(15,70,73,.06);
       border-radius:28px;
       padding:36px;
       margin-bottom:32px;
-      box-shadow:0 20px 50px rgba(0,0,0,.45);
+      box-shadow:0 25px 80px rgba(15,24,32,.08);
     }
-    section.panel h2{font-family:'Playfair Display',serif;font-size:2rem;margin-bottom:20px;color:var(--sand)}
+    section.panel h2{font-family:'Playfair Display',serif;font-size:2rem;margin-bottom:20px;color:var(--coconut)}
     .villa-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px;align-items:center}
     .villa-grid img{width:100%;border-radius:24px;box-shadow:0 25px 60px rgba(0,0,0,.5);object-fit:cover}
     ul{list-style:none;padding-left:0}
-    .villa-grid ul li{margin-bottom:10px;color:#d9f1ef;text-transform:none}
+    .villa-grid ul li{margin-bottom:10px;color:#4c5357;text-transform:none}
     .itinerary{
       display:grid;
       grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
@@ -100,41 +100,47 @@
     }
     .day-card h3{font-size:1.2rem;color:#fff}
     .day-card span{font-size:.85rem;color:var(--lime);letter-spacing:.1em;text-transform:uppercase}
-    .day-card p{color:var(--sand);font-size:.95rem}
+    .day-card p{color:#4c5357;font-size:.95rem}
     .experiences-grid,.dining-grid,.resource-grid{
       display:grid;
       grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
       gap:20px;
     }
     .experience-card,.dining-card,.resource-card{
-      border:1px solid rgba(255,255,255,.08);
+      border:1px solid rgba(15,70,73,.08);
       border-radius:24px;
       padding:24px;
-      background:rgba(11,35,39,.85);
+      background:#faf8f5;
       display:flex;
       flex-direction:column;
       gap:12px;
     }
     .card-photo{
       width:100%;
-      height:160px;
+      height:170px;
       border-radius:18px;
       object-fit:cover;
-      box-shadow:0 15px 30px rgba(0,0,0,.45);
-      border:1px solid rgba(255,255,255,.08);
+      box-shadow:0 18px 36px rgba(15,24,32,.12);
+      border:1px solid rgba(15,70,73,.06);
     }
     .experience-card h3,.dining-card h3{font-size:1.25rem;color:#fff}
-    .experience-card ul,.dining-card ul{font-size:.95rem;color:var(--sand)}
+    .experience-card ul,.dining-card ul{font-size:.95rem;color:#4c5357}
     .tagline{font-size:.9rem;color:var(--lime);letter-spacing:.15em}
     .fishing-table{width:100%;border-collapse:collapse;margin-top:16px}
     .fishing-table th,.fishing-table td{padding:12px 10px;border-bottom:1px solid rgba(255,255,255,.08);text-align:left;vertical-align:top;font-size:.95rem}
     .fishing-table th{color:var(--lime);font-weight:600}
-    a{color:#7ce6ff;text-decoration:none}
+    a{color:var(--reef);text-decoration:none}
     a:hover{text-decoration:underline}
     .video-wrap{position:relative;padding-top:56%;border-radius:24px;overflow:hidden;box-shadow:0 25px 60px rgba(0,0,0,.5)}
     .video-wrap iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
-    .photo-strip{margin-top:20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:16px}
-    .photo-strip img{width:100%;height:190px;border-radius:20px;object-fit:cover;box-shadow:0 18px 35px rgba(0,0,0,.45);border:1px solid rgba(255,255,255,.1)}
+    .photo-strip{margin-top:20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px}
+    .photo-strip img{width:100%;height:200px;border-radius:20px;object-fit:cover;box-shadow:0 18px 35px rgba(0,0,0,.18);border:1px solid rgba(15,70,73,.08)}
+    .family-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+    .family-card{background:#faf8f5;border:1px solid rgba(15,70,73,.08);border-radius:20px;padding:18px;box-shadow:0 10px 30px rgba(15,24,32,.05)}
+    .family-card h3{font-size:1rem;margin-bottom:8px;color:var(--reef-dark);text-transform:uppercase;letter-spacing:.12em}
+    .family-card p{margin:0;color:#4c5357;font-size:.95rem}
+    .gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:12px}
+    .gallery-grid img{width:100%;height:220px;border-radius:20px;object-fit:cover;box-shadow:0 20px 45px rgba(15,24,32,.12);border:1px solid rgba(15,70,73,.08)}
     @media(max-width:720px){
       .hero{padding:32px}
       section.panel{padding:28px}
@@ -148,7 +154,7 @@
       <div class="hero-content">
         <p class="eyebrow">Puerto Carrillo · Guanacaste Province</p>
         <h1>Costa Rica Summer HQ · July 29 – Aug 5(6) 2026</h1>
-        <p>Seven ocean-view suites, an infinity pool that hangs over the Pacific, and an on-call chef set the stage for a multi-generation Stirman takeover just south of Sámara. Think of this page as mission control for sun, salt, jungle, and serious ceviche.</p>
+        <p>Seven ocean-view suites, an infinity pool that spills into the Pacific, and an on-call chef give Jason &amp; Cassie, Cadence, Greenley, Cru, Don &amp; Marie, Stacey, and cousins Cannan &amp; Bruin a private base camp just south of Sámara. This page is our shared mission control for sun, salt, jungle, and serious ceviche.</p>
         <div class="chips">
           <span class="chip">✈️ Fly into LIR · 2h15 scenic drive</span>
           <span class="chip">👨‍👩‍👧‍👦 12 travelers (family + Texas crew)</span>
@@ -161,10 +167,28 @@
       </div>
     </header>
 
+    <section class="panel" id="crew">
+      <h2>Family roll call</h2>
+      <div class="family-grid">
+        <div class="family-card">
+          <h3>Jason &amp; Cassie</h3>
+          <p>Cadence · Greenley · Cru</p>
+        </div>
+        <div class="family-card">
+          <h3>Don &amp; Marie</h3>
+          <p>World-class grandparents + beach-walk energy</p>
+        </div>
+        <div class="family-card">
+          <h3>Stacey</h3>
+          <p>Cannan · Bruin — ready for surf school + turtle patrol</p>
+        </div>
+      </div>
+    </section>
+
     <section class="panel" id="villa">
       <h2>The Villa · "Front-Row Pacific Views, Chef & Infinity Pool"</h2>
       <div class="villa-grid">
-        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80" alt="Sunset at a Costa Rican beach" />
+        <img src="https://a0.muscache.com/im/pictures/miso/Hosting-994979662060499143/original/f57a5278-9ac2-405a-b4f1-ff125a14647c.jpeg" alt="Perla Negra infinity pool and outdoor living area" />
         <div>
           <ul>
             <li>• Six ensuite bedrooms + bunk-ready media den keep kids + grandparents happy.</li>
@@ -176,9 +200,21 @@
         </div>
       </div>
       <div class="photo-strip">
-        <img src="https://images.unsplash.com/photo-1501117716987-c8e1ecb210d3?auto=format&fit=crop&w=1200&q=80" alt="Infinity pool overlooking the Pacific" />
-        <img src="https://images.unsplash.com/photo-1470246973918-29a93221c455?auto=format&fit=crop&w=1200&q=80" alt="Palm-lined road toward Playa Carrillo" />
-        <img src="https://images.unsplash.com/photo-1464306076886-da185f6a9d12?auto=format&fit=crop&w=1200&q=80" alt="Fresh tropical fruit platter" />
+        <img src="https://a0.muscache.com/im/pictures/miso/Hosting-994979662060499143/original/9b6d9a7d-1f5a-473c-9cfb-a6c9b42ead33.jpeg" alt="Open-air living room with ocean backdrop" />
+        <img src="https://a0.muscache.com/im/pictures/miso/Hosting-994979662060499143/original/b2d38645-0668-4e3d-9340-e32073dd7679.jpeg" alt="Sun loungers beside the saltwater pool" />
+        <img src="https://a0.muscache.com/im/pictures/miso/Hosting-994979662060499143/original/f0f70060-0414-43eb-bebe-7adce18b9f94.jpeg" alt="Chef Erik plating dinner in the outdoor kitchen" />
+      </div>
+    </section>
+
+    <section class="panel" id="gallery">
+      <h2>Villa gallery</h2>
+      <div class="gallery-grid">
+        <img src="https://a0.muscache.com/im/pictures/miso/Hosting-994979662060499143/original/612bdc33-e0ff-454a-9810-f17b40212f66.jpeg" alt="Outdoor lounge overlooking the Pacific" />
+        <img src="https://a0.muscache.com/im/pictures/miso/Hosting-994979662060499143/original/6b8940e2-cc3b-47e9-974e-650ce1a930c5.jpeg" alt="Sunset swim in the infinity pool" />
+        <img src="https://a0.muscache.com/im/pictures/miso/Hosting-994979662060499143/original/c4f1a672-f2f7-4631-b87b-a0b4e0587980.jpeg" alt="Indoor lounge with sculptural staircase" />
+        <img src="https://a0.muscache.com/im/pictures/miso/Hosting-994979662060499143/original/ab3b1b9b-ed7e-43b7-93d2-5929d7e47f58.jpeg" alt="King suite opening to the canopy" />
+        <img src="https://a0.muscache.com/im/pictures/miso/Hosting-994979662060499143/original/1175af99-8ce2-4284-a3ec-73dd6e41ba75.jpeg" alt="Saltwater pool with wraparound deck" />
+        <img src="https://a0.muscache.com/im/pictures/miso/Hosting-994979662060499143/original/69faa2f6-7ccd-4ef5-91f0-235d09a9ea03.jpeg" alt="Palm-framed view from the point" />
       </div>
     </section>
 
