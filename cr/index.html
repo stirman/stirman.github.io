@@ -115,6 +115,14 @@
       flex-direction:column;
       gap:12px;
     }
+    .card-photo{
+      width:100%;
+      height:160px;
+      border-radius:18px;
+      object-fit:cover;
+      box-shadow:0 15px 30px rgba(0,0,0,.45);
+      border:1px solid rgba(255,255,255,.08);
+    }
     .experience-card h3,.dining-card h3{font-size:1.25rem;color:#fff}
     .experience-card ul,.dining-card ul{font-size:.95rem;color:var(--sand)}
     .tagline{font-size:.9rem;color:var(--lime);letter-spacing:.15em}
@@ -125,6 +133,8 @@
     a:hover{text-decoration:underline}
     .video-wrap{position:relative;padding-top:56%;border-radius:24px;overflow:hidden;box-shadow:0 25px 60px rgba(0,0,0,.5)}
     .video-wrap iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+    .photo-strip{margin-top:20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:16px}
+    .photo-strip img{width:100%;height:190px;border-radius:20px;object-fit:cover;box-shadow:0 18px 35px rgba(0,0,0,.45);border:1px solid rgba(255,255,255,.1)}
     @media(max-width:720px){
       .hero{padding:32px}
       section.panel{padding:28px}
@@ -164,6 +174,11 @@
             <li>• Fiber Wi-Fi + Sonos + blackout shades for midday naps.</li>
           </ul>
         </div>
+      </div>
+      <div class="photo-strip">
+        <img src="https://images.unsplash.com/photo-1501117716987-c8e1ecb210d3?auto=format&fit=crop&w=1200&q=80" alt="Infinity pool overlooking the Pacific" />
+        <img src="https://images.unsplash.com/photo-1470246973918-29a93221c455?auto=format&fit=crop&w=1200&q=80" alt="Palm-lined road toward Playa Carrillo" />
+        <img src="https://images.unsplash.com/photo-1464306076886-da185f6a9d12?auto=format&fit=crop&w=1200&q=80" alt="Fresh tropical fruit platter" />
       </div>
     </section>
 
@@ -217,26 +232,32 @@
       <h2>Signature Experiences</h2>
       <div class="experiences-grid">
         <div class="experience-card">
+          <img class="card-photo" src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1200&q=80" alt="Palm trees lining Playa Carrillo" />
           <h3>Beach Trifecta</h3>
           <p>• Playa Carrillo — palm-lined crescent with picnic tables and mellow surf (costarica.org).<br/>• Playa Sámara — lively hub with cafés, surf shacks, boutique shopping (TwoWeeksInCostaRica).<br/>• Playa Barrigona — white sand + electric water for secluded afternoons (MyTanFeet). Arrange 4x4 + cooler.</p>
         </div>
         <div class="experience-card">
+          <img class="card-photo" src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=1200&q=80" alt="Sport-fishing boat heading offshore" />
           <h3>Bluewater &amp; Billfish</h3>
           <p>Winter trade winds push captains south to Carrillo, keeping marlin, sailfish, dorado, tuna, roosterfish, and cubera snapper on tap (FishCostaRica). Schedule one offshore day + one inshore light-tackle morning so everyone gets time on deck.</p>
         </div>
         <div class="experience-card">
+          <img class="card-photo" src="https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=1200&q=80" alt="Kayakers exploring a mangrove river" />
           <h3>Water + Wildlife Safari</h3>
           <p>Samara Adventures’ Wildlife & Mangrove Kayak floats the Ora River to Camaronal, spotting monkeys, iguanas, crabs, and aquatic birds before beach cocktails. Combine with Natural Center Tours kayaking (WhatsApp +506 8352-7183) for a private departure.</p>
         </div>
         <div class="experience-card">
+          <img class="card-photo" src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1200&q=80" alt="Catamaran cruising at sunset" />
           <h3>Sunset Catamaran Social</h3>
           <p>Samara Adventures catamaran charters include hotel pickup, open bar, snorkeling at Isla Chora, chef-made bites, and seasonal dolphin/whale sightings. Block the entire boat (12 pax) for the family so music &amp; menu are yours.</p>
         </div>
         <div class="experience-card">
+          <img class="card-photo" src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1200&q=80" alt="Baby sea turtle on the sand" />
           <h3>Camaronal Turtle Patrol</h3>
           <p>Camaronal Wildlife Refuge hosts Olive Ridley, Leatherback, Hawksbill, and Pacific Green turtles nesting most nights June–January (EnterCostaRica). Rangers guide nighttime visits only — wear dark clothing, no flashes, and book early.</p>
         </div>
         <div class="experience-card">
+          <img class="card-photo" src="https://images.unsplash.com/photo-1501700493788-fa1a4fc9fe62?auto=format&fit=crop&w=1200&q=80" alt="Zipliner flying above the jungle" />
           <h3>Nosara’s Miss Sky Canopy</h3>
           <p>21 runs across 11 km of cables soaring above valleys, rivers, and waterfalls (GypsyCabNosara). Morning departures catch cooler temps; add a waterfall swim + lunch in Nosara before heading back for pool time.</p>
         </div>
@@ -281,21 +302,25 @@
       <h2>Dining &amp; Nightfall Picks</h2>
       <div class="dining-grid">
         <div class="dining-card">
+          <img class="card-photo" src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80" alt="Steak sliced on a wooden board" />
           <span class="tagline">Carrillo</span>
           <h3>El Colibrí Argentine Steak House</h3>
           <p>Since 2008 this local institution has handled tomahawks, tenderloins, and family-style parrilladas paired with Malbec. Book the garden palapa for 12 and ask for the off-menu chimichurri tasting flight.</p>
         </div>
         <div class="dining-card">
+          <img class="card-photo" src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?auto=format&fit=crop&w=1200&q=80" alt="Coastal Italian dishes and wine" />
           <span class="tagline">Sámara Beach</span>
           <h3>Gusto Beach Club</h3>
           <p>Italian-forward menu with beachfront daybeds, cocktails, DJ nights, and breakfast-to-dinner service (Open daily 8a–midnight, per OpenTable). Reserve front-row tables for sunset.</p>
         </div>
         <div class="dining-card">
+          <img class="card-photo" src="https://images.unsplash.com/photo-1504753793650-d4a2b783c15f?auto=format&fit=crop&w=1200&q=80" alt="Grilled seafood platter" />
           <span class="tagline">Sámara</span>
           <h3>El Lagarto</h3>
           <p>Open-fire grill since 1998 (Samara Info Center). Think wood-planked tuna, smoked veggies, deep wine cellar, and a deck that overlooks the bay. Great for celebratory dinners.</p>
         </div>
         <div class="dining-card">
+          <img class="card-photo" src="https://images.unsplash.com/photo-1481833761820-0509d3217039?auto=format&fit=crop&w=1200&q=80" alt="Coffee and pastries on a wooden table" />
           <span class="tagline">Beach Day Fuel</span>
           <h3>Las Olas + MaLeHu</h3>
           <p>Las Olas Beach Bar delivers sushi, ceviche, and sunset happy hour right on the sand. Start mornings at MaLeHu Coffee for gourmet pastry, smoothies, and espresso before excursions.</p>
@@ -307,14 +332,17 @@
       <h2>Day Trips &amp; After-Dark Magic</h2>
       <div class="experiences-grid">
         <div class="experience-card">
+          <img class="card-photo" src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1200&q=80" alt="Starry night over a glowing bay" />
           <h3>Bioluminescence in Paquera</h3>
           <p>Bahía Rica’s kayak tour launches near the Paquera ferry — every paddle stroke ignites neon-blue plankton and you can jump in for a glowing swim (bahiarica.com). Plan on a 90-minute drive each way.</p>
         </div>
         <div class="experience-card">
+          <img class="card-photo" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80" alt="Snorkeler drifting over a coral reef" />
           <h3>Isla Chora Snorkel</h3>
           <p>Kayak or SUP 30 minutes from Sámara to a white-sand wildlife refuge with parrotfish, pufferfish, and calm reefs (samaraadventures.com/ocean-kayak-snorkel). Combine with a beach picnic.</p>
         </div>
         <div class="experience-card">
+          <img class="card-photo" src="https://images.unsplash.com/photo-1505764706515-aa95265c5abc?auto=format&fit=crop&w=1200&q=80" alt="Close-up of a sea turtle hatchling" />
           <h3>Camaronal Night Patrol</h3>
           <p>Join refuge guides 6pm–late to witness hatchlings race to the sea. June–January sees nightly arrivals; July/August sits squarely in peak season (EnterCostaRica). Limited permits — reserve now.</p>
         </div>
