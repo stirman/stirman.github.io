@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Puerto Carrillo HQ · Stirman Family Summer 2026</title>
+  <meta name="description" content="Luxury-forward planning hub for the Stirman family’s July 29 – August 5, 2026 stay in Puerto Carrillo, Costa Rica. Beaches, fishing, restaurants, wildlife, and day trips curated for a multigenerational crew." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Space+Grotesk:wght@400;500;600&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --sand:#f5e6da;
+      --foam:#fdf8f3;
+      --reef:#0f9ea8;
+      --reef-dark:#0b6d73;
+      --coconut:#23414d;
+      --sunset:#ff8a5c;
+      --lime:#8dd3bb;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{
+      font-family:'Space Grotesk',system-ui,sans-serif;
+      background:linear-gradient(180deg,#05252e 0%,#0c3d45 50%,#041c1f 100%);
+      color:var(--foam);
+      min-height:100vh;
+      line-height:1.5;
+    }
+    .texture{
+      position:fixed;
+      inset:0;
+      z-index:0;
+      opacity:.25;
+      background-image:url('https://www.transparenttextures.com/patterns/arabesque.png');
+      pointer-events:none;
+    }
+    main{
+      position:relative;
+      z-index:1;
+      max-width:1200px;
+      margin:0 auto;
+      padding:48px 24px 120px;
+    }
+    .hero{
+      background:rgba(4,28,31,.8);
+      border:1px solid rgba(255,255,255,.08);
+      border-radius:32px;
+      padding:48px;
+      margin-bottom:32px;
+      box-shadow:0 30px 80px rgba(7,14,17,.6);
+      position:relative;
+      overflow:hidden;
+    }
+    .hero::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      background-image:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80');
+      background-size:cover;
+      background-position:center;
+      opacity:.18;
+      z-index:0;
+    }
+    .hero-content{position:relative;z-index:1}
+    .eyebrow{letter-spacing:.3em;text-transform:uppercase;font-size:.8rem;color:var(--lime);margin-bottom:12px;display:inline-block}
+    h1{font-family:'Playfair Display',serif;font-size:clamp(2.4rem,6vw,3.8rem);margin-bottom:20px;color:#fff}
+    .hero p{max-width:720px;color:var(--sand);font-size:1.1rem;margin-bottom:24px}
+    .chips{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:32px}
+    .chip{padding:10px 18px;border-radius:999px;border:1px solid rgba(255,255,255,.2);color:var(--sand);font-size:.9rem;backdrop-filter:blur(6px)}
+    .actions{display:flex;flex-wrap:wrap;gap:16px}
+    .btn{padding:14px 26px;border-radius:999px;border:none;font-weight:600;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:8px;font-size:1rem}
+    .btn.primary{background:linear-gradient(120deg,var(--sunset),#ffbd5c);color:#041c1f}
+    .btn.ghost{border:1px solid rgba(255,255,255,.3);color:var(--foam);background:transparent}
+    section.panel{
+      background:rgba(12,38,42,.92);
+      border:1px solid rgba(255,255,255,.05);
+      border-radius:28px;
+      padding:36px;
+      margin-bottom:32px;
+      box-shadow:0 20px 50px rgba(0,0,0,.45);
+    }
+    section.panel h2{font-family:'Playfair Display',serif;font-size:2rem;margin-bottom:20px;color:var(--sand)}
+    .villa-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px;align-items:center}
+    .villa-grid img{width:100%;border-radius:24px;box-shadow:0 25px 60px rgba(0,0,0,.5);object-fit:cover}
+    ul{list-style:none;padding-left:0}
+    .villa-grid ul li{margin-bottom:10px;color:#d9f1ef;text-transform:none}
+    .itinerary{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:20px;
+    }
+    .day-card{
+      border:1px solid rgba(255,255,255,.08);
+      border-radius:24px;
+      padding:20px;
+      background:rgba(7,24,27,.85);
+      display:flex;
+      flex-direction:column;
+      gap:12px;
+    }
+    .day-card h3{font-size:1.2rem;color:#fff}
+    .day-card span{font-size:.85rem;color:var(--lime);letter-spacing:.1em;text-transform:uppercase}
+    .day-card p{color:var(--sand);font-size:.95rem}
+    .experiences-grid,.dining-grid,.resource-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:20px;
+    }
+    .experience-card,.dining-card,.resource-card{
+      border:1px solid rgba(255,255,255,.08);
+      border-radius:24px;
+      padding:24px;
+      background:rgba(11,35,39,.85);
+      display:flex;
+      flex-direction:column;
+      gap:12px;
+    }
+    .experience-card h3,.dining-card h3{font-size:1.25rem;color:#fff}
+    .experience-card ul,.dining-card ul{font-size:.95rem;color:var(--sand)}
+    .tagline{font-size:.9rem;color:var(--lime);letter-spacing:.15em}
+    .fishing-table{width:100%;border-collapse:collapse;margin-top:16px}
+    .fishing-table th,.fishing-table td{padding:12px 10px;border-bottom:1px solid rgba(255,255,255,.08);text-align:left;vertical-align:top;font-size:.95rem}
+    .fishing-table th{color:var(--lime);font-weight:600}
+    a{color:#7ce6ff;text-decoration:none}
+    a:hover{text-decoration:underline}
+    .video-wrap{position:relative;padding-top:56%;border-radius:24px;overflow:hidden;box-shadow:0 25px 60px rgba(0,0,0,.5)}
+    .video-wrap iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+    @media(max-width:720px){
+      .hero{padding:32px}
+      section.panel{padding:28px}
+    }
+  </style>
+</head>
+<body>
+  <div class="texture"></div>
+  <main>
+    <header class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">Puerto Carrillo · Guanacaste Province</p>
+        <h1>Costa Rica Summer HQ · July 29 – Aug 5(6) 2026</h1>
+        <p>Seven ocean-view suites, an infinity pool that hangs over the Pacific, and an on-call chef set the stage for a multi-generation Stirman takeover just south of Sámara. Think of this page as mission control for sun, salt, jungle, and serious ceviche.</p>
+        <div class="chips">
+          <span class="chip">✈️ Fly into LIR · 2h15 scenic drive</span>
+          <span class="chip">👨‍👩‍👧‍👦 12 travelers (family + Texas crew)</span>
+          <span class="chip">👩‍🍳 Private chef + staffed villa</span>
+        </div>
+        <div class="actions">
+          <a class="btn primary" href="https://www.airbnb.com/rooms/994979662060499143" target="_blank" rel="noopener">View the Villa ↗</a>
+          <a class="btn ghost" href="#itinerary">Jump to itinerary</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="panel" id="villa">
+      <h2>The Villa · "Front-Row Pacific Views, Chef & Infinity Pool"</h2>
+      <div class="villa-grid">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80" alt="Sunset at a Costa Rican beach" />
+        <div>
+          <ul>
+            <li>• Six ensuite bedrooms + bunk-ready media den keep kids + grandparents happy.</li>
+            <li>• Cliffside infinity pool, cold plunge, hammock terrace, and full outdoor kitchen.</li>
+            <li>• Daily breakfast + dinner via in-house chef; concierge can stock premium spirits + tropical fruit hampers.</li>
+            <li>• Five minutes to palm-lined Playa Carrillo (calm bay, picnic palms, coral heads per costarica.org).</li>
+            <li>• Fiber Wi-Fi + Sonos + blackout shades for midday naps.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel" id="itinerary">
+      <h2>Suggested Flow · 8 Days of "Pura Vida"</h2>
+      <div class="itinerary">
+        <div class="day-card">
+          <span>Day 1 · Wed Jul 29</span>
+          <h3>Arrival + Settling In</h3>
+          <p>Land at Liberia (LIR). Private sprinter (2h15 paved drive per Two Weeks in Costa Rica) brings everyone to Puerto Carrillo. Sunset swim at Playa Carrillo’s calm crescent bay, chef’s welcome dinner, stargazing from the infinity edge.</p>
+        </div>
+        <div class="day-card">
+          <span>Day 2 · Thu Jul 30</span>
+          <h3>Beach Club + Surf Warm-Up</h3>
+          <p>Slow breakfast, then claim shaded palms on Playa Carrillo. After lunch, hop to Sámara for gentle surf lessons or SUP with Samara Adventures (WhatsApp +506 8952 1000). Gusto Beach Club handles aperitivo + dinner with toes in the sand.</p>
+        </div>
+        <div class="day-card">
+          <span>Day 3 · Fri Jul 31</span>
+          <h3>Offshore Trophy Day</h3>
+          <p>Bluewater charter with Samara Local Fishing (Captain Frank’s 25’ Mako · $450 half-day / $650 full-day, rates from samaralocalfishing.com). Target marlin, sailfish, mahi, roosterfish — FishCostaRica notes Carrillo’s year-round pelagics. Non-anglers: yoga + chef-led Costa Rican cooking class.</p>
+        </div>
+        <div class="day-card">
+          <span>Day 4 · Sat Aug 1</span>
+          <h3>Mangroves + Turtles</h3>
+          <p>Morning Ora River wildlife paddle with Samara Adventures — glide through mangrove tunnels spotting monkeys, iguanas, and 50+ bird species before landing on Camaronal Beach. Nightfall brings guided Camaronal Wildlife Refuge turtle watch (nesting season June–Jan per EnterCostaRica).</p>
+        </div>
+        <div class="day-card">
+          <span>Day 5 · Sun Aug 2</span>
+          <h3>Private Catamaran + Steakhouse Night</h3>
+          <p>Charter the Samara Adventures sunset catamaran (snorkel Isla Chora, chef snacks, open bar, dolphin + seasonal whale spotting). Dock, rinse, then head to El Colibrí in Carrillo for Argentine grills, Malbecs, and twinkle-light courtyard vibes.</p>
+        </div>
+        <div class="day-card">
+          <span>Day 6 · Mon Aug 3</span>
+          <h3>Nosara Adventure Circuit</h3>
+          <p>Day trip north (1 hr) for Miss Sky Canopy Tour — 11 km of zip lines across jungle valleys and waterfalls (Gypsy Cab Nosara). Lunch in Nosara, optional spa time or tide pools at Playa Nosara before returning for a sunset mezcal tasting.</p>
+        </div>
+        <div class="day-card">
+          <span>Day 7 · Tue Aug 4</span>
+          <h3>Hidden Beaches + Wellness</h3>
+          <p>4x4 convoy to Playa Barrigona’s turquoise, crowd-free cove (MyTanFeet). Pack a chef picnic, set up umbrellas. Evening: private masseuses + sound bath at the villa, then chef’s tasting menu featuring Nicoya blue-zone staples.</p>
+        </div>
+        <div class="day-card">
+          <span>Day 8 · Wed Aug 5 (Optional Thur Aug 6)</span>
+          <h3>Wrap + Departure</h3>
+          <p>Morning stroll through Sámara’s boutiques, coffee at MaLeHu, last-minute beach time. Drivers depart for LIR 5 hours pre-flight. If extending to Aug 6, slot in Paquera bioluminescence (Bahia Rica) or a second fishing run.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Signature Experiences</h2>
+      <div class="experiences-grid">
+        <div class="experience-card">
+          <h3>Beach Trifecta</h3>
+          <p>• Playa Carrillo — palm-lined crescent with picnic tables and mellow surf (costarica.org).<br/>• Playa Sámara — lively hub with cafés, surf shacks, boutique shopping (TwoWeeksInCostaRica).<br/>• Playa Barrigona — white sand + electric water for secluded afternoons (MyTanFeet). Arrange 4x4 + cooler.</p>
+        </div>
+        <div class="experience-card">
+          <h3>Bluewater &amp; Billfish</h3>
+          <p>Winter trade winds push captains south to Carrillo, keeping marlin, sailfish, dorado, tuna, roosterfish, and cubera snapper on tap (FishCostaRica). Schedule one offshore day + one inshore light-tackle morning so everyone gets time on deck.</p>
+        </div>
+        <div class="experience-card">
+          <h3>Water + Wildlife Safari</h3>
+          <p>Samara Adventures’ Wildlife & Mangrove Kayak floats the Ora River to Camaronal, spotting monkeys, iguanas, crabs, and aquatic birds before beach cocktails. Combine with Natural Center Tours kayaking (WhatsApp +506 8352-7183) for a private departure.</p>
+        </div>
+        <div class="experience-card">
+          <h3>Sunset Catamaran Social</h3>
+          <p>Samara Adventures catamaran charters include hotel pickup, open bar, snorkeling at Isla Chora, chef-made bites, and seasonal dolphin/whale sightings. Block the entire boat (12 pax) for the family so music &amp; menu are yours.</p>
+        </div>
+        <div class="experience-card">
+          <h3>Camaronal Turtle Patrol</h3>
+          <p>Camaronal Wildlife Refuge hosts Olive Ridley, Leatherback, Hawksbill, and Pacific Green turtles nesting most nights June–January (EnterCostaRica). Rangers guide nighttime visits only — wear dark clothing, no flashes, and book early.</p>
+        </div>
+        <div class="experience-card">
+          <h3>Nosara’s Miss Sky Canopy</h3>
+          <p>21 runs across 11 km of cables soaring above valleys, rivers, and waterfalls (GypsyCabNosara). Morning departures catch cooler temps; add a waterfall swim + lunch in Nosara before heading back for pool time.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Fishing Desk · Charter Cheat Sheet</h2>
+      <table class="fishing-table">
+        <thead>
+          <tr>
+            <th>Operator</th>
+            <th>Why Book</th>
+            <th>Rates / Capacity</th>
+            <th>Contact</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Samara Local Fishing</strong><br/>Mako 25' "Reel Fishy 2" (Capt. Frank)</td>
+            <td>Family-friendly inshore or offshore with Humminbird sonar, shade roof, local bilingual crew.</td>
+            <td>$450 half-day inshore (4 hrs, up to 4 pax), $650 full-day offshore; add-on for 5th/6th angler (samaralocalfishing.com).</td>
+            <td>Web form or IG DM @samaralocalfishing</td>
+          </tr>
+          <tr>
+            <td><strong>Papagayo Fishing Charters – Sámara cell</strong></td>
+            <td>Access to larger 33'–40' diesel sportfishers with cabins, AC, outriggers for serious billfish runs.</td>
+            <td>Custom quotes; request 3/4 or full-day packages with gourmet lunch + premium tackle.</td>
+            <td>papagayofishingcharters.com · reservations form</td>
+          </tr>
+          <tr>
+            <td><strong>FishCostaRica Concierge</strong></td>
+            <td>Seasonal fleet repositioning to Carrillo (Jan–Apr) for calm seas and prolific marlin/sail bites.</td>
+            <td>Build bespoke itineraries (multi-day combos, live bait for roosterfish). Deposit secures boat/crew.</td>
+            <td>fishcostarica.com · +1 (800) 407-9438</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="panel">
+      <h2>Dining &amp; Nightfall Picks</h2>
+      <div class="dining-grid">
+        <div class="dining-card">
+          <span class="tagline">Carrillo</span>
+          <h3>El Colibrí Argentine Steak House</h3>
+          <p>Since 2008 this local institution has handled tomahawks, tenderloins, and family-style parrilladas paired with Malbec. Book the garden palapa for 12 and ask for the off-menu chimichurri tasting flight.</p>
+        </div>
+        <div class="dining-card">
+          <span class="tagline">Sámara Beach</span>
+          <h3>Gusto Beach Club</h3>
+          <p>Italian-forward menu with beachfront daybeds, cocktails, DJ nights, and breakfast-to-dinner service (Open daily 8a–midnight, per OpenTable). Reserve front-row tables for sunset.</p>
+        </div>
+        <div class="dining-card">
+          <span class="tagline">Sámara</span>
+          <h3>El Lagarto</h3>
+          <p>Open-fire grill since 1998 (Samara Info Center). Think wood-planked tuna, smoked veggies, deep wine cellar, and a deck that overlooks the bay. Great for celebratory dinners.</p>
+        </div>
+        <div class="dining-card">
+          <span class="tagline">Beach Day Fuel</span>
+          <h3>Las Olas + MaLeHu</h3>
+          <p>Las Olas Beach Bar delivers sushi, ceviche, and sunset happy hour right on the sand. Start mornings at MaLeHu Coffee for gourmet pastry, smoothies, and espresso before excursions.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Day Trips &amp; After-Dark Magic</h2>
+      <div class="experiences-grid">
+        <div class="experience-card">
+          <h3>Bioluminescence in Paquera</h3>
+          <p>Bahía Rica’s kayak tour launches near the Paquera ferry — every paddle stroke ignites neon-blue plankton and you can jump in for a glowing swim (bahiarica.com). Plan on a 90-minute drive each way.</p>
+        </div>
+        <div class="experience-card">
+          <h3>Isla Chora Snorkel</h3>
+          <p>Kayak or SUP 30 minutes from Sámara to a white-sand wildlife refuge with parrotfish, pufferfish, and calm reefs (samaraadventures.com/ocean-kayak-snorkel). Combine with a beach picnic.</p>
+        </div>
+        <div class="experience-card">
+          <h3>Camaronal Night Patrol</h3>
+          <p>Join refuge guides 6pm–late to witness hatchlings race to the sea. June–January sees nightly arrivals; July/August sits squarely in peak season (EnterCostaRica). Limited permits — reserve now.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Logistics, Weather &amp; Tips</h2>
+      <div class="experiences-grid">
+        <div class="experience-card">
+          <h3>Getting There</h3>
+          <p>• Liberia Intl (LIR) → villa: ~2h15 on paved Route 21/150 (per TwoWeeksInCostaRica).<br/>• Arrange a 20-seat sprinter for arrivals + a backup 4x4 for grocery / surf runs.<br/>• Nosara commuter flights (SANSA) land 40 min north if you want quick hops for day tours.</p>
+        </div>
+        <div class="experience-card">
+          <h3>Weather Snapshot</h3>
+          <p>Late July/early August = lush "green" season: mornings are sunny (highs 85 °F), humidity hovers ~70%, and brief golden-hour showers keep everything emerald. Pack light linens + quick-dry gear; plan outdoor excursions before 2 PM.</p>
+        </div>
+        <div class="experience-card">
+          <h3>Money &amp; Services</h3>
+          <p>Most restaurants + tours accept cards; keep colones for roadside fruit + tips (10% service fee usually included, add 5% for great service). WhatsApp is the default for every vendor — save numbers now.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>A Glimpse of the Coast</h2>
+      <div class="video-wrap">
+        <iframe src="https://www.youtube.com/embed/umr7glQ3u9o" title="Puerto Carrillo &amp; Sámara aerial footage" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Contacts &amp; Quick Links</h2>
+      <div class="resource-grid">
+        <div class="resource-card">
+          <h3>Tours &amp; Boats</h3>
+          <ul>
+            <li><a href="https://samaralocalfishing.com/" target="_blank" rel="noopener">Samara Local Fishing</a> (Capt. Frank)</li>
+            <li><a href="https://papagayofishingcharters.com/samara-fishing-charters/" target="_blank" rel="noopener">Papagayo Fishing Charters – Sámara</a></li>
+            <li><a href="https://samaraadventures.com/" target="_blank" rel="noopener">Samara Adventures</a> · WhatsApp +506 8952 1000</li>
+            <li><a href="https://www.naturalcentertours-samara.com/mangrove-kayak" target="_blank" rel="noopener">Natural Center Tours</a> · WhatsApp +506 8352 7183</li>
+            <li><a href="https://www.bahiarica.com/tour/bioluminescent-kayak-tour-costa-rica" target="_blank" rel="noopener">Bahía Rica Bioluminescence</a></li>
+            <li><a href="https://www.missskycanopytour.com/" target="_blank" rel="noopener">Miss Sky Canopy Tour</a></li>
+          </ul>
+        </div>
+        <div class="resource-card">
+          <h3>Dining &amp; Chefs</h3>
+          <ul>
+            <li><a href="https://samara.restaurantegusto.cr/en/" target="_blank" rel="noopener">Gusto Beach Club</a></li>
+            <li><a href="http://www.cabinaselcolibri.com/" target="_blank" rel="noopener">El Colibrí Steak House</a></li>
+            <li><a href="https://www.samarainfocenter.com/restaurants-bars/restaurants/" target="_blank" rel="noopener">Samara Info Center dining guide</a></li>
+            <li>Villa chef team contact: via Airbnb thread (chef already on retainer)</li>
+          </ul>
+        </div>
+        <div class="resource-card">
+          <h3>Practicalities</h3>
+          <ul>
+            <li>Emergency clinic: Centro Médico Sámara · +506 4000-1611</li>
+            <li>Groceries: Pali Sámara + organic feria (Saturdays)</li>
+            <li>Private driver partner: Liberia ↔ Carrillo via Coastal Luxe Transport</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>What’s Next</h2>
+      <p>• Decide which days lock for fishing, catamaran, and Nosara adventures so we can book deposits this week.<br/>• Confirm headcount for turtle night tour (kids love it but late hours).<br/>• Send me any must-eat spots or bucket-list requests and I’ll slot them in.</p>
+      <p style="margin-top:16px;color:var(--lime)">I’ll keep updating this page as bookings confirm — refresh anytime or share the link with the family.</p>
+    </section>
+  </main>
+</body>
+</html>
