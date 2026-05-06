@@ -184,16 +184,10 @@
               </div>
             </div>
             <div class="assumptions">
-              <label>Monthly subscription price
+              <label>Monthly subscription price assumption
                 <input id="assumption-sub-price" type="number" min="0" step="0.01" value="7.99" />
               </label>
-              <label>Text cost / insight
-                <input id="assumption-text-cost" type="number" min="0" step="0.001" value="0.004" />
-              </label>
-              <label>Image cost / card
-                <input id="assumption-image-cost" type="number" min="0" step="0.01" value="0.04" />
-              </label>
-              <p class="user-meta">Static GitHub Pages can’t safely embed the OpenAI Admin API key. This tab estimates costs from live product usage and makes the assumptions editable so the profitability picture is visible without leaking secrets.</p>
+              <p class="user-meta">API costs on this tab are now pulled server-side into the hourly metrics cache, so the public page never needs the OpenAI Admin API key. Revenue is still estimated from current paid subscribers × the subscription price above.</p>
             </div>
           </article>
 
