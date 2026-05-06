@@ -30,6 +30,10 @@
           <h1>Daily Divine Stats</h1>
           <p class="subtitle">Activity, engagement, retention, users, and profitability signals in one soft little command center.</p>
         </div>
+        <div class="header-freshness" aria-live="polite">
+          <span id="status">Loading…</span>
+          <button id="refresh" type="button" class="icon-refresh" aria-label="Refresh metrics" title="Refresh metrics">↻</button>
+        </div>
       </header>
 
       <nav class="top-nav" aria-label="Dashboard sections">
@@ -37,11 +41,6 @@
         <button type="button" data-section="users">Users</button>
         <button type="button" data-section="costs">API Costs</button>
       </nav>
-
-      <div class="status-card">
-        <span id="status">Loading Daily Divine data…</span>
-        <button id="refresh" type="button" class="inline-refresh">Refresh</button>
-      </div>
 
       <section id="section-overview" class="section active-section">
         <section class="metric-grid" aria-label="Key metrics">

@@ -155,7 +155,7 @@ function renderUsers() {
     <div class="user-row">
       <div>
         <p class="user-name">${escapeHtml(u.displayName)}</p>
-        <p class="user-meta">${escapeHtml(u.email || u.id)}<br>${u.lastLoginAtDate ? `Last login ${relativeDate(u.lastLoginAtDate)}` : "No login timestamp"}</p>
+        <p class="user-meta">${escapeHtml(u.email || u.id)}<br>${u.lastActiveAtDate ? relativeDate(u.lastActiveAtDate) : "No activity timestamp"}</p>
       </div>
       <div class="badges">
         ${u.isPaidSubscriber ? '<span class="badge paid">PAID</span>' : ""}
@@ -259,7 +259,7 @@ function busiestDay(series) { return [...(series || [])].sort((a, b) => (b.count
 function alpha(a, b) { return a.displayName.localeCompare(b.displayName, undefined, { sensitivity: "base" }) || a.id.localeCompare(b.id); }
 function isWithinDays(date, days) { return date instanceof Date && date >= new Date(Date.now() - (days * 86400000)); }
 function compactLabel(label) { return String(label || "").replace(/\s+/g, ""); }
-function setStatus(message, isError = false) { status.textContent = message; status.parentElement.classList.toggle("error", isError); }
+function setStatus(message, isError = false) { status.textContent = message; status.closest(".header-freshness")?.classList.toggle("error", isError); }
 function setText(id, text) { $(id).textContent = text; }
 function percent(value, total) { return `${Math.round((value / Math.max(1, total)) * 100)}%`; }
 function money(value) { return new Intl.NumberFormat(undefined, { style: "currency", currency: "USD", maximumFractionDigits: value < 10 ? 2 : 0 }).format(Number(value || 0)); }
