@@ -12,20 +12,19 @@
   --shadow: 0 22px 60px rgba(80, 46, 45, 0.12);
 }
 * { box-sizing: border-box; }
-html { min-height: 100%; background: var(--peach); scroll-padding-top: env(safe-area-inset-top); }
+html { min-height: 100%; background: var(--peach); scroll-padding-top: calc(env(safe-area-inset-top, 0px) + 20px); }
 body {
   margin: 0;
   min-height: 100vh;
   min-height: 100dvh;
-  padding-top: env(safe-area-inset-top);
-  padding-bottom: env(safe-area-inset-bottom);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
   font-family: ui-rounded, "SF Pro Rounded", "Nunito Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   color: var(--ink);
   background: radial-gradient(circle at 18% 10%, rgba(255,255,255,.86), transparent 26rem), radial-gradient(circle at 86% 18%, rgba(252,186,151,.64), transparent 24rem), linear-gradient(135deg, #fff4ec 0%, #ffd9c8 46%, #f7c9ba 100%);
 }
 button, input { font: inherit; }
 button { cursor: pointer; }
-.shell { width: min(1180px, calc(100vw - 28px)); margin: 0 auto; padding: max(16px, env(safe-area-inset-top)) 0 max(56px, env(safe-area-inset-bottom)); }
+.shell { width: min(1180px, calc(100vw - 28px)); margin: 0 auto; padding: calc(env(safe-area-inset-top, 0px) + 20px) 0 max(56px, env(safe-area-inset-bottom, 0px)); }
 .is-hidden, .section { display: none !important; }
 .active-section { display: block !important; }
 .login-card { width: min(470px, 100%); margin: 12vh auto 0; padding: 34px; border: 1px solid var(--line); border-radius: 32px; background: rgba(255,255,255,.68); box-shadow: var(--shadow); backdrop-filter: blur(18px); }
@@ -104,4 +103,4 @@ h2 { font-size: clamp(22px, 3vw, 30px); }
 .assumptions label { display: grid; gap: 7px; color: var(--plum); font-weight: 850; }
 .assumptions input { font-weight: 800; }
 @media (max-width: 980px) { .metric-grid, .cost-metrics { grid-template-columns: repeat(3, 1fr); } .content-grid { grid-template-columns: 1fr; } }
-@media (max-width: 680px) { .shell { width: min(100% - 18px, 1180px); padding-top: max(10px, env(safe-area-inset-top)); overflow-x: hidden; } .login-card { margin-top: 7vh; padding: 24px; border-radius: 26px; } .password-row { flex-direction: column; } .password-row button { width: 100%; } .metric-grid, .cost-metrics { grid-template-columns: repeat(2, 1fr); } .metric-card { min-height: 118px; padding: 15px; } .panel, .hero { padding: 17px; border-radius: 22px; min-width: 0; } .hero { align-items: flex-start; } .header-freshness { flex-direction: column-reverse; align-items: flex-end; gap: 6px; font-size: 12px; } .panel-heading { flex-direction: column; align-items: stretch; } .user-heading { display: grid; grid-template-columns: 1fr; align-items: stretch; } .bar-chart { gap: 3px; height: 250px; } .top-nav { position: sticky; top: max(8px, env(safe-area-inset-top)); z-index: 5; } .users-list { overflow: visible; padding-right: 0; } .user-row { flex-direction: column; align-items: stretch; overflow: visible; } .badges { justify-content: flex-start; } }
+@media (max-width: 680px) { .shell { width: min(100% - 18px, 1180px); padding-top: calc(env(safe-area-inset-top, 0px) + 20px); overflow-x: hidden; } .login-card { margin-top: 7vh; padding: 24px; border-radius: 26px; } .password-row { flex-direction: column; } .password-row button { width: 100%; } .metric-grid, .cost-metrics { grid-template-columns: repeat(2, 1fr); } .metric-card { min-height: 118px; padding: 15px; } .panel, .hero { padding: 17px; border-radius: 22px; min-width: 0; } .hero { align-items: flex-start; } .header-freshness { flex-direction: column-reverse; align-items: flex-end; gap: 6px; font-size: 12px; } .panel-heading { flex-direction: column; align-items: stretch; } .user-heading { display: grid; grid-template-columns: 1fr; align-items: stretch; } .bar-chart { gap: 3px; height: 250px; } .top-nav { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 8px); z-index: 5; } .users-list { overflow: visible; padding-right: 0; } .user-row { flex-direction: column; align-items: stretch; overflow: visible; } .badges { justify-content: flex-start; } }
