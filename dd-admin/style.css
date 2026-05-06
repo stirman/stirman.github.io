@@ -86,12 +86,13 @@ h2 { font-size: clamp(22px, 3vw, 30px); }
 .sort-tabs { display: flex; gap: 8px; margin-bottom: 14px; padding: 6px; border-radius: 16px; background: rgba(255,255,255,.48); }
 .sort-tabs button { flex: 1; border: 0; border-radius: 12px; padding: 10px 8px; background: transparent; color: var(--muted); font-weight: 850; }
 .sort-tabs button.active { color: white; background: linear-gradient(135deg, var(--apricot), var(--rose)); box-shadow: 0 8px 18px rgba(200,111,125,.18); }
-.users-list { display: grid; gap: 10px; max-height: 586px; overflow: auto; padding-right: 4px; }
-.users-list.dedicated { max-height: none; grid-template-columns: 1fr; }
-.user-row { display: flex; align-items: center; justify-content: space-between; gap: 14px; padding: 13px 14px; border: 1px solid var(--line); border-radius: 18px; background: rgba(255,255,255,.56); }
-.user-name { margin: 0 0 3px; font-weight: 850; color: var(--plum); }
-.user-meta { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.35; }
-.badges { display: flex; gap: 6px; flex-wrap: wrap; justify-content: flex-end; }
+.users-list { display: grid; gap: 10px; max-height: 586px; overflow: auto; padding-right: 4px; min-width: 0; }
+.users-list.dedicated { max-height: none; grid-template-columns: minmax(0, 1fr); }
+.user-row { display: flex; align-items: center; justify-content: space-between; gap: 14px; width: 100%; min-width: 0; padding: 13px 14px; border: 1px solid var(--line); border-radius: 18px; background: rgba(255,255,255,.56); overflow: hidden; }
+.user-row > div:first-child { min-width: 0; }
+.user-name { margin: 0 0 3px; font-weight: 850; color: var(--plum); overflow-wrap: anywhere; }
+.user-meta { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.35; overflow-wrap: anywhere; }
+.badges { display: flex; gap: 6px; flex-wrap: wrap; justify-content: flex-end; min-width: 0; }
 .badge { border-radius: 999px; padding: 5px 8px; background: rgba(129,109,120,.12); color: var(--muted); font-size: 11px; font-weight: 900; }
 .badge.paid { background: rgba(69,151,98,.14); color: #2f8552; }
 .badge.granted { background: rgba(245,157,100,.18); color: #b75d38; }
@@ -99,4 +100,4 @@ h2 { font-size: clamp(22px, 3vw, 30px); }
 .assumptions label { display: grid; gap: 7px; color: var(--plum); font-weight: 850; }
 .assumptions input { font-weight: 800; }
 @media (max-width: 980px) { .metric-grid, .cost-metrics { grid-template-columns: repeat(3, 1fr); } .content-grid { grid-template-columns: 1fr; } }
-@media (max-width: 680px) { .shell { width: min(100% - 18px, 1180px); padding-top: 10px; } .login-card { margin-top: 7vh; padding: 24px; border-radius: 26px; } .password-row { flex-direction: column; } .password-row button { width: 100%; } .metric-grid, .cost-metrics { grid-template-columns: repeat(2, 1fr); } .metric-card { min-height: 118px; padding: 15px; } .panel, .hero { padding: 17px; border-radius: 22px; } .panel-heading { flex-direction: column; align-items: stretch; } .user-heading { display: grid; grid-template-columns: 1fr; align-items: stretch; } .bar-chart { gap: 3px; height: 250px; } .top-nav { position: sticky; top: 8px; z-index: 5; } .status-card { flex-direction: column; align-items: stretch; } }
+@media (max-width: 680px) { .shell { width: min(100% - 18px, 1180px); padding-top: 10px; overflow-x: hidden; } .login-card { margin-top: 7vh; padding: 24px; border-radius: 26px; } .password-row { flex-direction: column; } .password-row button { width: 100%; } .metric-grid, .cost-metrics { grid-template-columns: repeat(2, 1fr); } .metric-card { min-height: 118px; padding: 15px; } .panel, .hero { padding: 17px; border-radius: 22px; min-width: 0; } .panel-heading { flex-direction: column; align-items: stretch; } .user-heading { display: grid; grid-template-columns: 1fr; align-items: stretch; } .bar-chart { gap: 3px; height: 250px; } .top-nav { position: sticky; top: 8px; z-index: 5; } .status-card { flex-direction: column; align-items: stretch; } .users-list { overflow: visible; padding-right: 0; } .user-row { flex-direction: column; align-items: stretch; overflow: visible; } .badges { justify-content: flex-start; } }

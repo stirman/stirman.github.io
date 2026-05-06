@@ -245,8 +245,8 @@ function drawLineChart(svg, series) {
 function buildStatusMessage(metrics) {
   const generated = new Date(metrics.generatedAt);
   const ageMinutes = Math.max(0, Math.round((Date.now() - generated.getTime()) / 60000));
-  const freshness = ageMinutes > (metrics.refreshCadenceMinutes || 60) + 10 ? ` · stale by about ${ageMinutes} min` : ` · about ${ageMinutes} min old`;
-  return `Showing cached metrics updated ${metrics.generatedAtHuman || generated.toLocaleString()}${freshness}.`;
+  const unit = ageMinutes === 1 ? "min" : "mins";
+  return `Data is ${ageMinutes} ${unit} old.`;
 }
 
 function renderTopLineItem(items) {
@@ -265,6 +265,25 @@ function percent(value, total) { return `${Math.round((value / Math.max(1, total
 function money(value) { return new Intl.NumberFormat(undefined, { style: "currency", currency: "USD", maximumFractionDigits: value < 10 ? 2 : 0 }).format(Number(value || 0)); }
 function numberValue(id, fallback) { const value = Number($(id).value); return Number.isFinite(value) ? value : fallback; }
 function formatNumber(value) { return Number(value || 0).toLocaleString(); }
-function relativeDate(date) { const diffDays = Math.round((startOfDay(date) - startOfDay(new Date())) / 86400000); return new Intl.RelativeTimeFormat(undefined, { numeric: "auto" }).format(diffDays, "day"); }
+function relativeDate(date) {
+  if (!(date instanceof Date)) return "unknown";
+  const elapsedSeconds = Math.max(0, Math.floor((Date.now() - date.getTime()) / 1000));
+  const units = [
+    ["year", 31536000],
+    ["month", 2592000],
+    ["week", 604800],
+    ["day", 86400],
+    ["hour", 3600],
+    ["min", 60]
+  ];
+  for (const [unit, seconds] of units) {
+    if (elapsedSeconds >= seconds) {
+      const value = Math.floor(elapsedSeconds / seconds);
+      const label = unit === "min" ? (value === 1 ? "min" : "mins") : `${unit}${value === 1 ? "" : "s"}`;
+      return `${value} ${label} ago`;
+    }
+  }
+  return "just now";
+}
 function startOfDay(date) { const d = new Date(date); d.setHours(0, 0, 0, 0); return d; }
 function escapeHtml(value) { return String(value).replace(/[&<>'"]/g, (char) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", "'": "&#39;", '"': "&quot;" }[char])); }
