@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Daily Divine Admin</title>
+  <title>Daily Divine Stats</title>
   <link rel="preconnect" href="https://www.gstatic.com" crossorigin />
   <link rel="stylesheet" href="./style.css" />
 </head>
@@ -12,8 +12,8 @@
     <section id="login" class="login-card" aria-labelledby="login-title">
       <div class="brand-mark">✦</div>
       <p class="eyebrow">Daily Divine</p>
-      <h1 id="login-title">Admin Portal</h1>
-      <p class="login-copy">A quiet, private view into users, engagement, retention, and the patterns worth noticing.</p>
+      <h1 id="login-title">Stats Portal</h1>
+      <p class="login-copy">A quiet, private view into users, engagement, retention, costs, and the patterns worth noticing.</p>
       <form id="login-form" class="login-form">
         <label for="password">Password</label>
         <div class="password-row">
@@ -24,87 +24,106 @@
       </form>
     </section>
 
-    <section id="dashboard" class="dashboard is-hidden" aria-label="Daily Divine admin dashboard">
+    <section id="dashboard" class="dashboard is-hidden" aria-label="Daily Divine stats dashboard">
       <header class="hero">
         <div>
-          <p class="eyebrow">Daily Divine Admin</p>
-          <h1>Activity, engagement & retention</h1>
-          <p class="subtitle">Live Firestore readout styled to feel like the app: warm, soft, and useful at a glance.</p>
-        </div>
-        <div class="hero-actions">
-          <button id="refresh" type="button" class="ghost-button">Refresh</button>
-          <button id="logout" type="button" class="ghost-button subtle">Lock</button>
+          <h1>Daily Divine Stats</h1>
+          <p class="subtitle">Activity, engagement, retention, users, and profitability signals in one soft little command center.</p>
         </div>
       </header>
 
-      <div id="status" class="status-card">Loading Daily Divine data…</div>
+      <nav class="top-nav" aria-label="Dashboard sections">
+        <button type="button" data-section="overview" class="active">Overview</button>
+        <button type="button" data-section="users">Users</button>
+        <button type="button" data-section="costs">API Costs</button>
+      </nav>
 
-      <section class="metric-grid" aria-label="Key metrics">
-        <article class="metric-card">
-          <span>Total users</span>
-          <strong id="metric-total-users">—</strong>
-          <small id="metric-new-users">—</small>
-        </article>
-        <article class="metric-card">
-          <span>Active 7d</span>
-          <strong id="metric-active-7">—</strong>
-          <small id="metric-active-rate">—</small>
-        </article>
-        <article class="metric-card">
-          <span>Active 30d</span>
-          <strong id="metric-active-30">—</strong>
-          <small>Recent monthly reach</small>
-        </article>
-        <article class="metric-card">
-          <span>Paid / granted</span>
-          <strong id="metric-premium">—</strong>
-          <small id="metric-premium-rate">—</small>
-        </article>
-        <article class="metric-card">
-          <span>Insights 30d</span>
-          <strong id="metric-insights">—</strong>
-          <small id="metric-entries">—</small>
-        </article>
-        <article class="metric-card">
-          <span>Retention signal</span>
-          <strong id="metric-retention">—</strong>
-          <small>Used in multiple weeks</small>
-        </article>
+      <div class="status-card">
+        <span id="status">Loading Daily Divine data…</span>
+        <button id="refresh" type="button" class="inline-refresh">Refresh</button>
+      </div>
+
+      <section id="section-overview" class="section active-section">
+        <section class="metric-grid" aria-label="Key metrics">
+          <article class="metric-card">
+            <span>Total users</span>
+            <strong id="metric-total-users">—</strong>
+            <small id="metric-new-users">—</small>
+          </article>
+          <article class="metric-card">
+            <span>Active 7d</span>
+            <strong id="metric-active-7">—</strong>
+            <small id="metric-active-rate">—</small>
+          </article>
+          <article class="metric-card">
+            <span>Active 30d</span>
+            <strong id="metric-active-30">—</strong>
+            <small>Recent monthly reach</small>
+          </article>
+          <article class="metric-card">
+            <span>Paid / granted</span>
+            <strong id="metric-premium">—</strong>
+            <small id="metric-premium-rate">—</small>
+          </article>
+          <article class="metric-card">
+            <span>Insights 30d</span>
+            <strong id="metric-insights">—</strong>
+            <small id="metric-entries">—</small>
+          </article>
+          <article class="metric-card">
+            <span>Card images generated</span>
+            <strong id="metric-card-images">—</strong>
+            <small id="metric-card-image-rate">—</small>
+          </article>
+        </section>
+
+        <section class="content-grid">
+          <article class="panel wide">
+            <div class="panel-heading">
+              <div>
+                <p class="eyebrow">Engagement</p>
+                <h2>Daily insights generated</h2>
+              </div>
+              <span class="pill">Last 30 days</span>
+            </div>
+            <div id="insight-chart" class="bar-chart" aria-label="Daily insights bar chart"></div>
+          </article>
+
+          <article class="panel wide">
+            <div class="panel-heading">
+              <div>
+                <p class="eyebrow">Growth</p>
+                <h2>Total users over time</h2>
+              </div>
+              <span class="pill">Since launch</span>
+            </div>
+            <svg id="users-line-chart" class="line-chart" role="img" aria-label="Total user count graph"></svg>
+          </article>
+
+          <article class="panel">
+            <div class="panel-heading">
+              <div>
+                <p class="eyebrow">Retention</p>
+                <h2>Cohorts</h2>
+              </div>
+            </div>
+            <div id="retention-chart" class="ring-wrap"></div>
+          </article>
+
+          <article class="panel wide">
+            <div class="panel-heading">
+              <div>
+                <p class="eyebrow">Did you know…</p>
+                <h2>Interesting patterns</h2>
+              </div>
+            </div>
+            <div id="insights-list" class="insights-list"></div>
+          </article>
+        </section>
       </section>
 
-      <section class="content-grid">
-        <article class="panel wide">
-          <div class="panel-heading">
-            <div>
-              <p class="eyebrow">Engagement</p>
-              <h2>Daily insights generated</h2>
-            </div>
-            <span id="chart-range" class="pill">Last 30 days</span>
-          </div>
-          <div id="insight-chart" class="bar-chart" aria-label="Daily insights bar chart"></div>
-        </article>
-
-        <article class="panel">
-          <div class="panel-heading">
-            <div>
-              <p class="eyebrow">Retention</p>
-              <h2>Cohorts</h2>
-            </div>
-          </div>
-          <div id="retention-chart" class="ring-wrap"></div>
-        </article>
-
-        <article class="panel wide">
-          <div class="panel-heading">
-            <div>
-              <p class="eyebrow">Did you know…</p>
-              <h2>Interesting patterns</h2>
-            </div>
-          </div>
-          <div id="insights-list" class="insights-list"></div>
-        </article>
-
-        <article class="panel users-panel">
+      <section id="section-users" class="section">
+        <article class="panel users-panel full-width">
           <div class="panel-heading user-heading">
             <div>
               <p class="eyebrow">Users</p>
@@ -117,8 +136,77 @@
             <button type="button" data-sort="alpha">A–Z</button>
             <button type="button" data-sort="paid">Paid First</button>
           </div>
-          <div id="users-list" class="users-list"></div>
+          <div id="users-list" class="users-list dedicated"></div>
         </article>
+      </section>
+
+      <section id="section-costs" class="section">
+        <section class="metric-grid cost-metrics" aria-label="API and revenue metrics">
+          <article class="metric-card">
+            <span>Est. API cost 30d</span>
+            <strong id="metric-api-cost">—</strong>
+            <small id="metric-cost-breakdown">Text + image generation</small>
+          </article>
+          <article class="metric-card">
+            <span>Subscription revenue</span>
+            <strong id="metric-revenue">—</strong>
+            <small id="metric-revenue-note">Based on paid subscribers</small>
+          </article>
+          <article class="metric-card">
+            <span>Gross margin</span>
+            <strong id="metric-margin">—</strong>
+            <small id="metric-margin-note">Revenue minus API costs</small>
+          </article>
+          <article class="metric-card">
+            <span>Cost per insight</span>
+            <strong id="metric-cost-per-insight">—</strong>
+            <small>Including image costs</small>
+          </article>
+        </section>
+
+        <section class="content-grid">
+          <article class="panel wide">
+            <div class="panel-heading">
+              <div>
+                <p class="eyebrow">Profitability</p>
+                <h2>Costs vs. subscription revenue</h2>
+              </div>
+              <span class="pill">Last 30 days estimate</span>
+            </div>
+            <svg id="profit-chart" class="line-chart" role="img" aria-label="Cost and revenue comparison graph"></svg>
+          </article>
+
+          <article class="panel">
+            <div class="panel-heading">
+              <div>
+                <p class="eyebrow">Assumptions</p>
+                <h2>Business model knobs</h2>
+              </div>
+            </div>
+            <div class="assumptions">
+              <label>Monthly subscription price
+                <input id="assumption-sub-price" type="number" min="0" step="0.01" value="7.99" />
+              </label>
+              <label>Text cost / insight
+                <input id="assumption-text-cost" type="number" min="0" step="0.001" value="0.004" />
+              </label>
+              <label>Image cost / card
+                <input id="assumption-image-cost" type="number" min="0" step="0.01" value="0.04" />
+              </label>
+              <p class="user-meta">Static GitHub Pages can’t safely embed the OpenAI Admin API key. This tab estimates costs from live product usage and makes the assumptions editable so the profitability picture is visible without leaking secrets.</p>
+            </div>
+          </article>
+
+          <article class="panel wide full-width">
+            <div class="panel-heading">
+              <div>
+                <p class="eyebrow">Cost drivers</p>
+                <h2>What is driving spend?</h2>
+              </div>
+            </div>
+            <div id="cost-insights-list" class="insights-list"></div>
+          </article>
+        </section>
       </section>
     </section>
   </main>
