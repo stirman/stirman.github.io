@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-05-06T22:05:43Z",
-  "generatedAtHuman": "May 06, 2026 at 03:05 PM PDT",
+  "generatedAt": "2026-05-06T23:05:41Z",
+  "generatedAtHuman": "May 06, 2026 at 04:05 PM PDT",
   "source": "hourly-cache",
   "refreshCadenceMinutes": 60,
   "overview": {
-    "totalUsers": 35,
-    "launchUsers": 31,
-    "active7": 22,
-    "active30": 35,
-    "premium": 11,
+    "totalUsers": 36,
+    "launchUsers": 32,
+    "active7": 23,
+    "active30": 36,
+    "premium": 12,
     "paidSubscribers": 3,
     "retainedUsers": 4,
     "insights30": 42,
@@ -470,6 +470,19 @@
       "insights30": 0,
       "cardImages30": 0,
       "retained": false
+    },
+    {
+      "id": "PbFD8pE5H2S2f3jHWvdhMZKEMFE2",
+      "displayName": "Zena Rojas",
+      "email": "zenafrojas@gmail.com",
+      "createdAt": "2026-05-06T22:22:08Z",
+      "lastLoginAt": "2026-05-06T22:22:08Z",
+      "lastActiveAt": "2026-05-06T22:22:08Z",
+      "isPaidSubscriber": false,
+      "grantedPremium": true,
+      "insights30": 0,
+      "cardImages30": 0,
+      "retained": false
     }
   ],
   "series": {
@@ -851,7 +864,7 @@
       {
         "date": "2026-05-06",
         "label": "May 6",
-        "count": 33
+        "count": 34
       }
     ],
     "dailyCosts": [
