@@ -1,0 +1,1431 @@
+{
+  "generatedAt": "2026-05-06T18:23:38Z",
+  "generatedAtHuman": "May 06, 2026 at 11:23 AM PDT",
+  "source": "hourly-cache",
+  "refreshCadenceMinutes": 60,
+  "overview": {
+    "totalUsers": 35,
+    "launchUsers": 31,
+    "active7": 22,
+    "active30": 35,
+    "premium": 11,
+    "paidSubscribers": 3,
+    "retainedUsers": 4,
+    "insights30": 41,
+    "entries30": 0,
+    "cardImages30": 31
+  },
+  "users": [
+    {
+      "id": "ZsT8tzk6KieYG5yFymetWk6lsYR2",
+      "displayName": "Alexandra Byrnes",
+      "email": "dsvxtj8cj7@privaterelay.appleid.com",
+      "createdAt": "2026-05-05T22:37:17Z",
+      "lastLoginAt": "2026-05-05T22:37:17Z",
+      "lastActiveAt": "2026-05-05T22:37:17Z",
+      "isPaidSubscriber": false,
+      "grantedPremium": false,
+      "insights30": 0,
+      "cardImages30": 0,
+      "retained": false
+    },
+    {
+      "id": "wLF5BJbKlXcrN5w8aybqDMA6E633",
+      "displayName": "Amy Widdowson",
+      "email": "j2bgppzxtb@privaterelay.appleid.com",
+      "createdAt": "2026-05-06T18:10:46Z",
+      "lastLoginAt": "2026-05-06T18:10:46Z",
+      "lastActiveAt": "2026-05-06T18:10:46Z",
+      "isPaidSubscriber": false,
+      "grantedPremium": false,
+      "insights30": 0,
+      "cardImages30": 0,
+      "retained": false
+    },
+    {
+      "id": "3z4FYbKUEiPp6EQibdCLMFL7hRa2",
+      "displayName": "Andrea Natta",
+      "email": "4n95628fmv@privaterelay.appleid.com",
+      "createdAt": "2026-04-24T16:57:36Z",
+      "lastLoginAt": "2026-04-28T04:23:27Z",
+      "lastActiveAt": "2026-04-28T04:23:27Z",
+      "isPaidSubscriber": false,
+      "grantedPremium": true,
+      "insights30": 3,
+      "cardImages30": 3,
+      "retained": true
+    },
+    {
+      "id": "EimhzDlaLjOvwFV6pQ7vmy2tAFj2",
+      "displayName": "AnneLise Staal",
+      "email": "hxmwtdp7mp@privaterelay.appleid.com",
+      "createdAt": "2026-05-05T22:51:02Z",
+      "lastLoginAt": "2026-05-05T22:51:02Z",
+      "lastActiveAt": "2026-05-05T22:51:02Z",
+      "isPaidSubscriber": false,
+      "grantedPremium": false,
+      "insights30": 0,
+      "cardImages30": 0,
+      "retained": false
+    },
+    {
+      "id": "am0yfOojXbPGkreEzouDzm8Wi4I3",
+      "displayName": "Annetta Box",
+      "email": "hzst5xtddy@privaterelay.appleid.com",
+      "createdAt": "2026-05-06T10:03:49Z",
+      "lastLoginAt": "2026-05-06T10:18:31Z",
+      "lastActiveAt": "2026-05-06T10:18:31Z",
+      "isPaidSubscriber": true,
+      "grantedPremium": false,
+      "insights30": 1,
+      "cardImages30": 1,
+      "retained": false
+    },
+    {
+      "id": "g19okJBjgKVRjf1O96J9TQVSSQk1",
+      "displayName": "Candida Ramirez",
+      "email": "5v9vdbtb5g@privaterelay.appleid.com",
+      "createdAt": "2026-04-24T05:45:03Z",
+      "lastLoginAt": "2026-04-29T04:54:51Z",
+      "lastActiveAt": "2026-04-29T04:54:51Z",
+      "isPaidSubscriber": false,
+      "grantedPremium": false,
+      "insights30": 1,
+      "cardImages30": 1,
+      "retained": false
+    },
+    {
+      "id": "ChVZV32FOZVLR7ZEycurmvvSVHh2",
+      "displayName": "Cannan Claghorn",
+      "email": "cannancan@icloud.com",
+      "createdAt": "2026-04-24T00:49:41Z",
+      "lastLoginAt": "2026-04-24T00:49:41Z",
+      "lastActiveAt": "2026-04-24T00:49:41Z",
+      "isPaidSubscriber": false,
+      "grantedPremium": true,
+      "insights30": 0,
+      "cardImages30": 0,
+      "retained": false
+    },
+    {
+      "id": "9975i8o9qob6EdhhRafarig8ueD3",
+      "displayName": "Cassandra Stirman",
+      "email": "cassiestirman@gmail.com",
+      "createdAt": "2025-11-01T22:59:06Z",
+      "lastLoginAt": "2026-05-05T23:45:12Z",
+      "lastActiveAt": "2026-05-05T23:45:12Z",
+      "isPaidSubscriber": false,
+      "grantedPremium": true,
+      "insights30": 16,
+      "cardImages30": 11,
+      "retained": true
+    },
+    {
+      "id": "3WHRf9Cv6Ve8ZEOKhmCVnCkUpqK2",
+      "displayName": "Cassie Rogers",
+      "email": "cassielrogers@icloud.com",
+      "createdAt": "2026-05-06T01:11:02Z",
+      "lastLoginAt": "2026-05-06T01:11:02Z",
+      "lastActiveAt": "2026-05-06T01:11:02Z",
+      "isPaidSubscriber": true,
+      "grantedPremium": false,
+      "insights30": 0,
+      "cardImages30": 0,
+      "retained": false
+    },
+    {
+      "id": "msYvbO53QMUR12uUFZn87CkZkvR2",
+      "displayName": "CHRISTINA MASSEY",
+      "email": "themasseyfamily@gmail.com",
+      "createdAt": "2026-04-23T19:52:48Z",
+      "lastLoginAt": "2026-04-23T19:52:48Z",
+      "lastActiveAt": "2026-04-23T19:52:48Z",
+      "isPaidSubscriber": false,
+      "grantedPremium": true,
+      "insights30": 0,
+      "cardImages30": 0,
+      "retained": false
+    },
+    {
+      "id": "VQv6diJdNmbD0q4SbywbbO03yV13",
+      "displayName": "Connie Bailey",
+      "email": "conniebailey09@gmail.com",
+      "createdAt": "2026-05-05T22:46:27Z",
+      "lastLoginAt": "2026-05-05T22:46:27Z",
+      "lastActiveAt": "2026-05-05T22:46:27Z",
+      "isPaidSubscriber": false,
+      "grantedPremium": false,
+      "insights30": 0,
+      "cardImages30": 0,
+      "retained": false
+    },
+    {
+      "id": "IBNoplJkfkaoSCUr4YunXg9zDJx1",
+      "displayName": "Curtis Gammill",
+      "email": "cduaneg@yahoo.com",
+      "createdAt": "2026-05-06T05:18:06Z",
+      "lastLoginAt": "2026-05-06T05:18:06Z",
+      "lastActiveAt": "2026-05-06T05:18:06Z",
+      "isPaidSubscriber": false,
+      "grantedPremium": false,
+      "insights30": 0,
+      "cardImages30": 0,
+      "retained": false
+    },
+    {
+      "id": "eUj9R3N2L2dvRAWA9elb4TbxOah2",
+      "displayName": "Dana Bussell",
+      "email": "w92dd92w5y@privaterelay.appleid.com",
+      "createdAt": "2026-04-24T14:57:20Z",
+      "lastLoginAt": "2026-04-24T14:57:20Z",
+      "lastActiveAt": "2026-04-24T14:57:20Z",
+      "isPaidSubscriber": false,
+      "grantedPremium": false,
+      "insights30": 0,
+      "cardImages30": 0,
+      "retained": false
+    },
+    {
+      "id": "cd1cWULqYJZrdVRuOIBcN8smqnf1",
+      "displayName": "Dana Welch",
+      "email": "y9m5njcnbd@privaterelay.appleid.com",
+      "createdAt": "2026-05-05T22:54:53Z",
+      "lastLoginAt": "2026-05-05T22:54:53Z",
+      "lastActiveAt": "2026-05-05T22:54:53Z",
+      "isPaidSubscriber": false,
+      "grantedPremium": false,
+      "insights30": 0,
+      "cardImages30": 0,
+      "retained": false
+    },
+    {
+      "id": "A2Q3T3mP1UWwgrOSREhqvPt4n7z1",
+      "displayName": "Darlene Bussell",
+      "email": "darlene.bussell@icloud.com",
+      "createdAt": "2026-04-25T03:07:35Z",
+      "lastLoginAt": "2026-04-25T03:07:35Z",
+      "lastActiveAt": "2026-04-25T03:07:35Z",
+      "isPaidSubscriber": false,
+      "grantedPremium": false,
+      "insights30": 0,
+      "cardImages30": 0,
+      "retained": false
+    },
+    {
+      "id": "eQ4Tbzep2HXY8rOYqNdCckIytC23",
+      "displayName": "Debbie Taylor",
+      "email": "86dv9zjfk8@privaterelay.appleid.com",
+      "createdAt": "2026-05-06T13:09:41Z",
+      "lastLoginAt": "2026-05-06T13:11:04Z",
+      "lastActiveAt": "2026-05-06T13:11:04Z",
+      "isPaidSubscriber": false,
+      "grantedPremium": false,
+      "insights30": 1,
+      "cardImages30": 1,
+      "retained": false
+    },
+    {
+      "id": "Dd6idoCQj3QghBSlnU7OgldCpow2",
+      "displayName": "Farnaz Khadiv",
+      "email": "g8dkzq7y87@privaterelay.appleid.com",
+      "createdAt": "2026-04-29T06:45:24Z",
+      "lastLoginAt": "2026-04-29T13:08:38Z",
+      "lastActiveAt": "2026-04-29T13:08:38Z",
+      "isPaidSubscriber": false,
+      "grantedPremium": false,
+      "insights30": 2,
+      "cardImages30": 1,
+      "retained": false
+    },
+    {
+      "id": "0zIxt2bZqdbPxb86BsF4clm8QPq2",
+      "displayName": "Finley Massey",
+      "email": "finleym2013@icloud.com",
+      "createdAt": "2026-04-24T00:44:33Z",
+      "lastLoginAt": "2026-04-24T00:44:33Z",
+      "lastActiveAt": "2026-04-24T00:44:33Z",
+      "isPaidSubscriber": false,
+      "grantedPremium": true,
+      "insights30": 0,
+      "cardImages30": 0,
+      "retained": false
+    },
+    {
+      "id": "FAwYw89nyXO468uOSDSRGf47T1g1",
+      "displayName": "Francesca McCartney",
+      "email": "ff92b9cf9c@privaterelay.appleid.com",
+      "createdAt": "2026-05-06T00:03:10Z",
+      "lastLoginAt": "2026-05-06T00:05:15Z",
+      "lastActiveAt": "2026-05-06T00:05:15Z",
+      "isPaidSubscriber": false,
+      "grantedPremium": true,
+      "insights30": 1,
+      "cardImages30": 1,
+      "retained": false
+    },
+    {
+      "id": "iprKtebsgffegRGJP74wsxNY7wM2",
+      "displayName": "Gian Raciti",
+      "email": "d5fvb6s8yb@privaterelay.appleid.com",
+      "createdAt": "2026-05-06T01:16:11Z",
+      "lastLoginAt": "2026-05-06T01:16:11Z",
+      "lastActiveAt": "2026-05-06T01:16:11Z",
+      "isPaidSubscriber": false,
+      "grantedPremium": false,
+      "insights30": 0,
+      "cardImages30": 0,
+      "retained": false
+    },
+    {
+      "id": "u9N5B7F0ENQOGIk5PlYpuI8f1292",
+      "displayName": "Glenda Corning",
+      "email": "j9x9qb74dm@privaterelay.appleid.com",
+      "createdAt": "2026-04-24T05:01:36Z",
+      "lastLoginAt": "2026-04-24T05:01:36Z",
+      "lastActiveAt": "2026-04-24T05:01:36Z",
+      "isPaidSubscriber": false,
+      "grantedPremium": false,
+      "insights30": 0,
+      "cardImages30": 0,
+      "retained": false
+    },
+    {
+      "id": "iG3cGF3Wh7YmuI0tE1N2eNYYO9G2",
+      "displayName": "Greenley Stirman",
+      "email": "greenleystirman@gmail.com",
+      "createdAt": "2026-04-24T01:29:58Z",
+      "lastLoginAt": "2026-04-24T01:33:00Z",
+      "lastActiveAt": "2026-04-24T01:33:00Z",
+      "isPaidSubscriber": false,
+      "grantedPremium": true,
+      "insights30": 1,
+      "cardImages30": 1,
+      "retained": false
+    },
+    {
+      "id": "gryLCR0ArChnrFqqxYlEFT4tU902",
+      "displayName": "HEATHER NOLL",
+      "email": "lallymonk@yahoo.com",
+      "createdAt": "2026-05-06T00:28:24Z",
+      "lastLoginAt": "2026-05-06T00:28:24Z",
+      "lastActiveAt": "2026-05-06T00:28:24Z",
+      "isPaidSubscriber": false,
+      "grantedPremium": false,
+      "insights30": 0,
+      "cardImages30": 0,
+      "retained": false
+    },
+    {
+      "id": "rPmSAnOIdQcaJtb11jIAqMapfR83",
+      "displayName": "Jason Toff",
+      "email": "jasontoff@gmail.com",
+      "createdAt": "2026-05-06T14:43:07Z",
+      "lastLoginAt": "2026-05-06T14:43:45Z",
+      "lastActiveAt": "2026-05-06T14:43:45Z",
+      "isPaidSubscriber": false,
+      "grantedPremium": false,
+      "insights30": 1,
+      "cardImages30": 1,
+      "retained": false
+    },
+    {
+      "id": "hT86ouhoqjbUpakX0J40LG2PnR22",
+      "displayName": "JOAN O'SHEA",
+      "email": "8jmtxrs7q6@privaterelay.appleid.com",
+      "createdAt": "2026-04-29T08:06:53Z",
+      "lastLoginAt": "2026-04-29T08:06:53Z",
+      "lastActiveAt": "2026-04-29T08:06:53Z",
+      "isPaidSubscriber": false,
+      "grantedPremium": false,
+      "insights30": 0,
+      "cardImages30": 0,
+      "retained": false
+    },
+    {
+      "id": "IHleRNro5BP84DG0jmkWYVsowQH3",
+      "displayName": "Jocelyn Tu",
+      "email": "n8tnbzcjd9@privaterelay.appleid.com",
+      "createdAt": "2026-05-05T22:40:29Z",
+      "lastLoginAt": "2026-05-05T22:40:29Z",
+      "lastActiveAt": "2026-05-05T22:40:29Z",
+      "isPaidSubscriber": false,
+      "grantedPremium": false,
+      "insights30": 0,
+      "cardImages30": 0,
+      "retained": false
+    },
+    {
+      "id": "gsjzhZNeF5Tipx85rToVgMy9Jxa2",
+      "displayName": "Kathryn Rogers",
+      "email": "h5rykkzm5k@privaterelay.appleid.com",
+      "createdAt": "2026-05-05T23:18:35Z",
+      "lastLoginAt": "2026-05-05T23:18:35Z",
+      "lastActiveAt": "2026-05-05T23:18:35Z",
+      "isPaidSubscriber": false,
+      "grantedPremium": false,
+      "insights30": 0,
+      "cardImages30": 0,
+      "retained": false
+    },
+    {
+      "id": "La6zzs3k8RhnbjmcVilWQZ17Ea23",
+      "displayName": "Kristine Bautista",
+      "email": "gc4ct86hk4@privaterelay.appleid.com",
+      "createdAt": "2026-05-05T22:41:54Z",
+      "lastLoginAt": "2026-05-05T22:41:54Z",
+      "lastActiveAt": "2026-05-05T22:41:54Z",
+      "isPaidSubscriber": false,
+      "grantedPremium": false,
+      "insights30": 0,
+      "cardImages30": 0,
+      "retained": false
+    },
+    {
+      "id": "IoW7Az7RcSQE7Xl9FsJgANqywaw1",
+      "displayName": "Lauren Rogers",
+      "email": "7czhh2m94g@privaterelay.appleid.com",
+      "createdAt": "2026-04-25T13:52:59Z",
+      "lastLoginAt": "2026-05-01T14:52:56Z",
+      "lastActiveAt": "2026-05-01T14:52:56Z",
+      "isPaidSubscriber": false,
+      "grantedPremium": true,
+      "insights30": 1,
+      "cardImages30": 1,
+      "retained": false
+    },
+    {
+      "id": "PuoUCnsJy6MQyeUHD3X0VnBmk7W2",
+      "displayName": "Luke Esterkyn",
+      "email": "luke.esterkyn@gmail.com",
+      "createdAt": "2026-04-15T19:03:55Z",
+      "lastLoginAt": "2026-04-15T19:05:01Z",
+      "lastActiveAt": "2026-04-15T19:05:01Z",
+      "isPaidSubscriber": false,
+      "grantedPremium": false,
+      "insights30": 1,
+      "cardImages30": 1,
+      "retained": false
+    },
+    {
+      "id": "T3lcTKAVGvYosYxeWCjJB7KvaB72",
+      "displayName": "Mimi Berkoe",
+      "email": "qqks6sxffx@privaterelay.appleid.com",
+      "createdAt": "2026-05-05T22:42:10Z",
+      "lastLoginAt": "2026-05-05T22:42:10Z",
+      "lastActiveAt": "2026-05-05T22:42:10Z",
+      "isPaidSubscriber": false,
+      "grantedPremium": false,
+      "insights30": 0,
+      "cardImages30": 0,
+      "retained": false
+    },
+    {
+      "id": "aT2X9MZaBZgmf9ZltNAUwChJ1363",
+      "displayName": "Olga Voronina",
+      "email": "djrw26vjmh@privaterelay.appleid.com",
+      "createdAt": "2026-05-06T00:44:04Z",
+      "lastLoginAt": "2026-05-06T00:49:08Z",
+      "lastActiveAt": "2026-05-06T00:49:08Z",
+      "isPaidSubscriber": false,
+      "grantedPremium": false,
+      "insights30": 1,
+      "cardImages30": 1,
+      "retained": false
+    },
+    {
+      "id": "qTafH3dJD8dyLz3eT93RkkPVQm93",
+      "displayName": "stirman@gmail.com",
+      "email": "stirman@gmail.com",
+      "createdAt": "2026-01-02T20:39:01Z",
+      "lastLoginAt": "2026-05-05T21:08:32Z",
+      "lastActiveAt": "2026-05-05T21:08:32Z",
+      "isPaidSubscriber": false,
+      "grantedPremium": false,
+      "insights30": 9,
+      "cardImages30": 7,
+      "retained": true
+    },
+    {
+      "id": "test-user-simulator",
+      "displayName": "test@simulator.local",
+      "email": "test@simulator.local",
+      "createdAt": "2026-01-11T20:31:10Z",
+      "lastLoginAt": "2026-04-28T22:44:16Z",
+      "lastActiveAt": "2026-04-28T22:44:16Z",
+      "isPaidSubscriber": false,
+      "grantedPremium": false,
+      "insights30": 2,
+      "cardImages30": 0,
+      "retained": true
+    },
+    {
+      "id": "ZBcmc5cVeAblm8BSA0KG29PjxwU2",
+      "displayName": "vpgsdy76p2@privaterelay.appleid.com",
+      "email": "vpgsdy76p2@privaterelay.appleid.com",
+      "createdAt": "2026-05-03T16:07:37Z",
+      "lastLoginAt": "2026-05-03T16:07:37Z",
+      "lastActiveAt": "2026-05-03T16:07:37Z",
+      "isPaidSubscriber": true,
+      "grantedPremium": false,
+      "insights30": 0,
+      "cardImages30": 0,
+      "retained": false
+    }
+  ],
+  "series": {
+    "dailyInsights": [
+      {
+        "date": "2026-04-07",
+        "label": "Apr 7",
+        "count": 0
+      },
+      {
+        "date": "2026-04-08",
+        "label": "Apr 8",
+        "count": 1
+      },
+      {
+        "date": "2026-04-09",
+        "label": "Apr 9",
+        "count": 1
+      },
+      {
+        "date": "2026-04-10",
+        "label": "Apr 10",
+        "count": 1
+      },
+      {
+        "date": "2026-04-11",
+        "label": "Apr 11",
+        "count": 2
+      },
+      {
+        "date": "2026-04-12",
+        "label": "Apr 12",
+        "count": 1
+      },
+      {
+        "date": "2026-04-13",
+        "label": "Apr 13",
+        "count": 0
+      },
+      {
+        "date": "2026-04-14",
+        "label": "Apr 14",
+        "count": 0
+      },
+      {
+        "date": "2026-04-15",
+        "label": "Apr 15",
+        "count": 1
+      },
+      {
+        "date": "2026-04-16",
+        "label": "Apr 16",
+        "count": 0
+      },
+      {
+        "date": "2026-04-17",
+        "label": "Apr 17",
+        "count": 0
+      },
+      {
+        "date": "2026-04-18",
+        "label": "Apr 18",
+        "count": 0
+      },
+      {
+        "date": "2026-04-19",
+        "label": "Apr 19",
+        "count": 1
+      },
+      {
+        "date": "2026-04-20",
+        "label": "Apr 20",
+        "count": 1
+      },
+      {
+        "date": "2026-04-21",
+        "label": "Apr 21",
+        "count": 0
+      },
+      {
+        "date": "2026-04-22",
+        "label": "Apr 22",
+        "count": 1
+      },
+      {
+        "date": "2026-04-23",
+        "label": "Apr 23",
+        "count": 2
+      },
+      {
+        "date": "2026-04-24",
+        "label": "Apr 24",
+        "count": 3
+      },
+      {
+        "date": "2026-04-25",
+        "label": "Apr 25",
+        "count": 1
+      },
+      {
+        "date": "2026-04-26",
+        "label": "Apr 26",
+        "count": 2
+      },
+      {
+        "date": "2026-04-27",
+        "label": "Apr 27",
+        "count": 3
+      },
+      {
+        "date": "2026-04-28",
+        "label": "Apr 28",
+        "count": 5
+      },
+      {
+        "date": "2026-04-29",
+        "label": "Apr 29",
+        "count": 2
+      },
+      {
+        "date": "2026-04-30",
+        "label": "Apr 30",
+        "count": 1
+      },
+      {
+        "date": "2026-05-01",
+        "label": "May 1",
+        "count": 3
+      },
+      {
+        "date": "2026-05-02",
+        "label": "May 2",
+        "count": 0
+      },
+      {
+        "date": "2026-05-03",
+        "label": "May 3",
+        "count": 1
+      },
+      {
+        "date": "2026-05-04",
+        "label": "May 4",
+        "count": 1
+      },
+      {
+        "date": "2026-05-05",
+        "label": "May 5",
+        "count": 4
+      },
+      {
+        "date": "2026-05-06",
+        "label": "May 6",
+        "count": 3
+      }
+    ],
+    "dailyCardImages": [
+      {
+        "date": "2026-04-07",
+        "label": "Apr 7",
+        "count": 0
+      },
+      {
+        "date": "2026-04-08",
+        "label": "Apr 8",
+        "count": 1
+      },
+      {
+        "date": "2026-04-09",
+        "label": "Apr 9",
+        "count": 1
+      },
+      {
+        "date": "2026-04-10",
+        "label": "Apr 10",
+        "count": 1
+      },
+      {
+        "date": "2026-04-11",
+        "label": "Apr 11",
+        "count": 1
+      },
+      {
+        "date": "2026-04-12",
+        "label": "Apr 12",
+        "count": 1
+      },
+      {
+        "date": "2026-04-13",
+        "label": "Apr 13",
+        "count": 0
+      },
+      {
+        "date": "2026-04-14",
+        "label": "Apr 14",
+        "count": 0
+      },
+      {
+        "date": "2026-04-15",
+        "label": "Apr 15",
+        "count": 1
+      },
+      {
+        "date": "2026-04-16",
+        "label": "Apr 16",
+        "count": 0
+      },
+      {
+        "date": "2026-04-17",
+        "label": "Apr 17",
+        "count": 0
+      },
+      {
+        "date": "2026-04-18",
+        "label": "Apr 18",
+        "count": 0
+      },
+      {
+        "date": "2026-04-19",
+        "label": "Apr 19",
+        "count": 1
+      },
+      {
+        "date": "2026-04-20",
+        "label": "Apr 20",
+        "count": 1
+      },
+      {
+        "date": "2026-04-21",
+        "label": "Apr 21",
+        "count": 0
+      },
+      {
+        "date": "2026-04-22",
+        "label": "Apr 22",
+        "count": 1
+      },
+      {
+        "date": "2026-04-23",
+        "label": "Apr 23",
+        "count": 1
+      },
+      {
+        "date": "2026-04-24",
+        "label": "Apr 24",
+        "count": 2
+      },
+      {
+        "date": "2026-04-25",
+        "label": "Apr 25",
+        "count": 1
+      },
+      {
+        "date": "2026-04-26",
+        "label": "Apr 26",
+        "count": 1
+      },
+      {
+        "date": "2026-04-27",
+        "label": "Apr 27",
+        "count": 3
+      },
+      {
+        "date": "2026-04-28",
+        "label": "Apr 28",
+        "count": 2
+      },
+      {
+        "date": "2026-04-29",
+        "label": "Apr 29",
+        "count": 2
+      },
+      {
+        "date": "2026-04-30",
+        "label": "Apr 30",
+        "count": 0
+      },
+      {
+        "date": "2026-05-01",
+        "label": "May 1",
+        "count": 2
+      },
+      {
+        "date": "2026-05-02",
+        "label": "May 2",
+        "count": 0
+      },
+      {
+        "date": "2026-05-03",
+        "label": "May 3",
+        "count": 1
+      },
+      {
+        "date": "2026-05-04",
+        "label": "May 4",
+        "count": 0
+      },
+      {
+        "date": "2026-05-05",
+        "label": "May 5",
+        "count": 4
+      },
+      {
+        "date": "2026-05-06",
+        "label": "May 6",
+        "count": 3
+      }
+    ],
+    "totalUsers": [
+      {
+        "date": "2026-04-22",
+        "label": "Apr 22",
+        "count": 2
+      },
+      {
+        "date": "2026-04-23",
+        "label": "Apr 23",
+        "count": 3
+      },
+      {
+        "date": "2026-04-24",
+        "label": "Apr 24",
+        "count": 10
+      },
+      {
+        "date": "2026-04-25",
+        "label": "Apr 25",
+        "count": 12
+      },
+      {
+        "date": "2026-04-26",
+        "label": "Apr 26",
+        "count": 12
+      },
+      {
+        "date": "2026-04-27",
+        "label": "Apr 27",
+        "count": 12
+      },
+      {
+        "date": "2026-04-28",
+        "label": "Apr 28",
+        "count": 12
+      },
+      {
+        "date": "2026-04-29",
+        "label": "Apr 29",
+        "count": 14
+      },
+      {
+        "date": "2026-04-30",
+        "label": "Apr 30",
+        "count": 14
+      },
+      {
+        "date": "2026-05-01",
+        "label": "May 1",
+        "count": 14
+      },
+      {
+        "date": "2026-05-02",
+        "label": "May 2",
+        "count": 14
+      },
+      {
+        "date": "2026-05-03",
+        "label": "May 3",
+        "count": 15
+      },
+      {
+        "date": "2026-05-04",
+        "label": "May 4",
+        "count": 15
+      },
+      {
+        "date": "2026-05-05",
+        "label": "May 5",
+        "count": 23
+      },
+      {
+        "date": "2026-05-06",
+        "label": "May 6",
+        "count": 33
+      }
+    ],
+    "dailyCosts": [
+      {
+        "date": "2026-04-07",
+        "label": "Apr 7",
+        "textDollars": 0.0013,
+        "imageDollars": 0.2582,
+        "otherDollars": 30.792,
+        "totalDollars": 31.0515
+      },
+      {
+        "date": "2026-04-08",
+        "label": "Apr 8",
+        "textDollars": 0.0017,
+        "imageDollars": 0.7743,
+        "otherDollars": 0.4772,
+        "totalDollars": 1.2532
+      },
+      {
+        "date": "2026-04-09",
+        "label": "Apr 9",
+        "textDollars": 0.002,
+        "imageDollars": 0.0,
+        "otherDollars": 0.4925,
+        "totalDollars": 0.4945
+      },
+      {
+        "date": "2026-04-10",
+        "label": "Apr 10",
+        "textDollars": 0.002,
+        "imageDollars": 0.2577,
+        "otherDollars": 0.3577,
+        "totalDollars": 0.6174
+      },
+      {
+        "date": "2026-04-11",
+        "label": "Apr 11",
+        "textDollars": 0.0,
+        "imageDollars": 0.0,
+        "otherDollars": 0.1287,
+        "totalDollars": 0.1287
+      },
+      {
+        "date": "2026-04-12",
+        "label": "Apr 12",
+        "textDollars": 0.0069,
+        "imageDollars": 1.2908,
+        "otherDollars": 0.2905,
+        "totalDollars": 1.5882
+      },
+      {
+        "date": "2026-04-13",
+        "label": "Apr 13",
+        "textDollars": 0.0,
+        "imageDollars": 0.2579,
+        "otherDollars": 0.1532,
+        "totalDollars": 0.4111
+      },
+      {
+        "date": "2026-04-14",
+        "label": "Apr 14",
+        "textDollars": 0.0,
+        "imageDollars": 0.0,
+        "otherDollars": 0.2264,
+        "totalDollars": 0.2264
+      },
+      {
+        "date": "2026-04-15",
+        "label": "Apr 15",
+        "textDollars": 0.0011,
+        "imageDollars": 0.5149,
+        "otherDollars": 0.0765,
+        "totalDollars": 0.5925
+      },
+      {
+        "date": "2026-04-16",
+        "label": "Apr 16",
+        "textDollars": 0.0,
+        "imageDollars": 0.0,
+        "otherDollars": 0.0,
+        "totalDollars": 0.0
+      },
+      {
+        "date": "2026-04-17",
+        "label": "Apr 17",
+        "textDollars": 0.0,
+        "imageDollars": 0.0,
+        "otherDollars": 0.0977,
+        "totalDollars": 0.0977
+      },
+      {
+        "date": "2026-04-18",
+        "label": "Apr 18",
+        "textDollars": 0.0,
+        "imageDollars": 0.0,
+        "otherDollars": 0.3613,
+        "totalDollars": 0.3613
+      },
+      {
+        "date": "2026-04-19",
+        "label": "Apr 19",
+        "textDollars": 0.0036,
+        "imageDollars": 0.0,
+        "otherDollars": 0.3631,
+        "totalDollars": 0.3667
+      },
+      {
+        "date": "2026-04-20",
+        "label": "Apr 20",
+        "textDollars": 0.0007,
+        "imageDollars": 0.5167,
+        "otherDollars": 0.1773,
+        "totalDollars": 0.6947
+      },
+      {
+        "date": "2026-04-21",
+        "label": "Apr 21",
+        "textDollars": 0.0,
+        "imageDollars": 2.2843,
+        "otherDollars": 0.245,
+        "totalDollars": 2.5293
+      },
+      {
+        "date": "2026-04-22",
+        "label": "Apr 22",
+        "textDollars": 0.002,
+        "imageDollars": 7.7154,
+        "otherDollars": 0.1405,
+        "totalDollars": 7.8579
+      },
+      {
+        "date": "2026-04-23",
+        "label": "Apr 23",
+        "textDollars": 0.0034,
+        "imageDollars": 0.5153,
+        "otherDollars": 0.0,
+        "totalDollars": 0.5188
+      },
+      {
+        "date": "2026-04-24",
+        "label": "Apr 24",
+        "textDollars": 0.0034,
+        "imageDollars": 4.4909,
+        "otherDollars": 0.0,
+        "totalDollars": 4.4943
+      },
+      {
+        "date": "2026-04-25",
+        "label": "Apr 25",
+        "textDollars": 0.0034,
+        "imageDollars": 34.5647,
+        "otherDollars": 0.0,
+        "totalDollars": 34.5681
+      },
+      {
+        "date": "2026-04-26",
+        "label": "Apr 26",
+        "textDollars": 0.0025,
+        "imageDollars": 4.1489,
+        "otherDollars": 0.0,
+        "totalDollars": 4.1514
+      },
+      {
+        "date": "2026-04-27",
+        "label": "Apr 27",
+        "textDollars": 0.0043,
+        "imageDollars": 4.7249,
+        "otherDollars": 91.9299,
+        "totalDollars": 96.6591
+      },
+      {
+        "date": "2026-04-28",
+        "label": "Apr 28",
+        "textDollars": 0.019,
+        "imageDollars": 0.7744,
+        "otherDollars": 7.5573,
+        "totalDollars": 8.3507
+      },
+      {
+        "date": "2026-04-29",
+        "label": "Apr 29",
+        "textDollars": 0.0073,
+        "imageDollars": 0.7738,
+        "otherDollars": 0.0,
+        "totalDollars": 0.781
+      },
+      {
+        "date": "2026-04-30",
+        "label": "Apr 30",
+        "textDollars": 0.0045,
+        "imageDollars": 0.4688,
+        "otherDollars": 0.0,
+        "totalDollars": 0.4733
+      },
+      {
+        "date": "2026-05-01",
+        "label": "May 1",
+        "textDollars": 0.0024,
+        "imageDollars": 0.2575,
+        "otherDollars": 0.0,
+        "totalDollars": 0.2599
+      },
+      {
+        "date": "2026-05-02",
+        "label": "May 2",
+        "textDollars": 0.002,
+        "imageDollars": 0.0,
+        "otherDollars": 0.0,
+        "totalDollars": 0.002
+      },
+      {
+        "date": "2026-05-03",
+        "label": "May 3",
+        "textDollars": 0.0,
+        "imageDollars": 0.2579,
+        "otherDollars": 0.0,
+        "totalDollars": 0.2579
+      },
+      {
+        "date": "2026-05-04",
+        "label": "May 4",
+        "textDollars": 0.0026,
+        "imageDollars": 0.2586,
+        "otherDollars": 0.0,
+        "totalDollars": 0.2611
+      },
+      {
+        "date": "2026-05-05",
+        "label": "May 5",
+        "textDollars": 0.0035,
+        "imageDollars": 1.0327,
+        "otherDollars": 0.0,
+        "totalDollars": 1.0362
+      },
+      {
+        "date": "2026-05-06",
+        "label": "May 6",
+        "textDollars": 0.0,
+        "imageDollars": 0.0,
+        "otherDollars": 0.0,
+        "totalDollars": 0.0
+      }
+    ]
+  },
+  "costs": {
+    "available": true,
+    "totalDollars": 200.0848,
+    "textDollars": 0.0797,
+    "imageDollars": 66.1385,
+    "otherDollars": 133.8666,
+    "byLineItem": [
+      {
+        "name": "gpt-5.5-2026-04-23, input",
+        "dollars": 87.6574
+      },
+      {
+        "name": "gpt-image-2-2026-04-21 image, output",
+        "dollars": 34.462
+      },
+      {
+        "name": "gpt-image-1 image, output",
+        "dollars": 24.3341
+      },
+      {
+        "name": "gpt-5.1-codex, input",
+        "dollars": 19.9963
+      },
+      {
+        "name": "gpt-5.1-codex, cached input",
+        "dollars": 12.6276
+      },
+      {
+        "name": "gpt-5.5-2026-04-23, cached input",
+        "dollars": 7.5116
+      },
+      {
+        "name": "gpt-5.5-2026-04-23, output",
+        "dollars": 4.2982
+      },
+      {
+        "name": "gpt-image-2-2026-04-21 image, input",
+        "dollars": 4.063
+      },
+      {
+        "name": "gpt-image-1 image, input",
+        "dollars": 2.4613
+      },
+      {
+        "name": "gpt-5.1-codex, output",
+        "dollars": 1.7556
+      },
+      {
+        "name": "gpt-image-1 text, input",
+        "dollars": 0.5092
+      },
+      {
+        "name": "gpt-image-2-2026-04-21 text, input",
+        "dollars": 0.309
+      },
+      {
+        "name": "gpt-4o-mini-2024-07-18, input",
+        "dollars": 0.0447
+      },
+      {
+        "name": "gpt-4o-mini-2024-07-18, output",
+        "dollars": 0.0323
+      },
+      {
+        "name": "web search tool calls",
+        "dollars": 0.02
+      },
+      {
+        "name": "text-embedding-3-small",
+        "dollars": 0.0026
+      },
+      {
+        "name": "gpt-4o-mini-2024-07-18, cached input",
+        "dollars": 0.0
+      },
+      {
+        "name": "gpt-image-1 image, cached input",
+        "dollars": 0.0
+      },
+      {
+        "name": "gpt-image-1 text, cached input",
+        "dollars": 0.0
+      }
+    ],
+    "daily": [
+      {
+        "date": "2026-04-07",
+        "label": "Apr 7",
+        "textDollars": 0.0013,
+        "imageDollars": 0.2582,
+        "otherDollars": 30.792,
+        "totalDollars": 31.0515
+      },
+      {
+        "date": "2026-04-08",
+        "label": "Apr 8",
+        "textDollars": 0.0017,
+        "imageDollars": 0.7743,
+        "otherDollars": 0.4772,
+        "totalDollars": 1.2532
+      },
+      {
+        "date": "2026-04-09",
+        "label": "Apr 9",
+        "textDollars": 0.002,
+        "imageDollars": 0.0,
+        "otherDollars": 0.4925,
+        "totalDollars": 0.4945
+      },
+      {
+        "date": "2026-04-10",
+        "label": "Apr 10",
+        "textDollars": 0.002,
+        "imageDollars": 0.2577,
+        "otherDollars": 0.3577,
+        "totalDollars": 0.6174
+      },
+      {
+        "date": "2026-04-11",
+        "label": "Apr 11",
+        "textDollars": 0.0,
+        "imageDollars": 0.0,
+        "otherDollars": 0.1287,
+        "totalDollars": 0.1287
+      },
+      {
+        "date": "2026-04-12",
+        "label": "Apr 12",
+        "textDollars": 0.0069,
+        "imageDollars": 1.2908,
+        "otherDollars": 0.2905,
+        "totalDollars": 1.5882
+      },
+      {
+        "date": "2026-04-13",
+        "label": "Apr 13",
+        "textDollars": 0.0,
+        "imageDollars": 0.2579,
+        "otherDollars": 0.1532,
+        "totalDollars": 0.4111
+      },
+      {
+        "date": "2026-04-14",
+        "label": "Apr 14",
+        "textDollars": 0.0,
+        "imageDollars": 0.0,
+        "otherDollars": 0.2264,
+        "totalDollars": 0.2264
+      },
+      {
+        "date": "2026-04-15",
+        "label": "Apr 15",
+        "textDollars": 0.0011,
+        "imageDollars": 0.5149,
+        "otherDollars": 0.0765,
+        "totalDollars": 0.5925
+      },
+      {
+        "date": "2026-04-16",
+        "label": "Apr 16",
+        "textDollars": 0.0,
+        "imageDollars": 0.0,
+        "otherDollars": 0.0,
+        "totalDollars": 0.0
+      },
+      {
+        "date": "2026-04-17",
+        "label": "Apr 17",
+        "textDollars": 0.0,
+        "imageDollars": 0.0,
+        "otherDollars": 0.0977,
+        "totalDollars": 0.0977
+      },
+      {
+        "date": "2026-04-18",
+        "label": "Apr 18",
+        "textDollars": 0.0,
+        "imageDollars": 0.0,
+        "otherDollars": 0.3613,
+        "totalDollars": 0.3613
+      },
+      {
+        "date": "2026-04-19",
+        "label": "Apr 19",
+        "textDollars": 0.0036,
+        "imageDollars": 0.0,
+        "otherDollars": 0.3631,
+        "totalDollars": 0.3667
+      },
+      {
+        "date": "2026-04-20",
+        "label": "Apr 20",
+        "textDollars": 0.0007,
+        "imageDollars": 0.5167,
+        "otherDollars": 0.1773,
+        "totalDollars": 0.6947
+      },
+      {
+        "date": "2026-04-21",
+        "label": "Apr 21",
+        "textDollars": 0.0,
+        "imageDollars": 2.2843,
+        "otherDollars": 0.245,
+        "totalDollars": 2.5293
+      },
+      {
+        "date": "2026-04-22",
+        "label": "Apr 22",
+        "textDollars": 0.002,
+        "imageDollars": 7.7154,
+        "otherDollars": 0.1405,
+        "totalDollars": 7.8579
+      },
+      {
+        "date": "2026-04-23",
+        "label": "Apr 23",
+        "textDollars": 0.0034,
+        "imageDollars": 0.5153,
+        "otherDollars": 0.0,
+        "totalDollars": 0.5188
+      },
+      {
+        "date": "2026-04-24",
+        "label": "Apr 24",
+        "textDollars": 0.0034,
+        "imageDollars": 4.4909,
+        "otherDollars": 0.0,
+        "totalDollars": 4.4943
+      },
+      {
+        "date": "2026-04-25",
+        "label": "Apr 25",
+        "textDollars": 0.0034,
+        "imageDollars": 34.5647,
+        "otherDollars": 0.0,
+        "totalDollars": 34.5681
+      },
+      {
+        "date": "2026-04-26",
+        "label": "Apr 26",
+        "textDollars": 0.0025,
+        "imageDollars": 4.1489,
+        "otherDollars": 0.0,
+        "totalDollars": 4.1514
+      },
+      {
+        "date": "2026-04-27",
+        "label": "Apr 27",
+        "textDollars": 0.0043,
+        "imageDollars": 4.7249,
+        "otherDollars": 91.9299,
+        "totalDollars": 96.6591
+      },
+      {
+        "date": "2026-04-28",
+        "label": "Apr 28",
+        "textDollars": 0.019,
+        "imageDollars": 0.7744,
+        "otherDollars": 7.5573,
+        "totalDollars": 8.3507
+      },
+      {
+        "date": "2026-04-29",
+        "label": "Apr 29",
+        "textDollars": 0.0073,
+        "imageDollars": 0.7738,
+        "otherDollars": 0.0,
+        "totalDollars": 0.781
+      },
+      {
+        "date": "2026-04-30",
+        "label": "Apr 30",
+        "textDollars": 0.0045,
+        "imageDollars": 0.4688,
+        "otherDollars": 0.0,
+        "totalDollars": 0.4733
+      },
+      {
+        "date": "2026-05-01",
+        "label": "May 1",
+        "textDollars": 0.0024,
+        "imageDollars": 0.2575,
+        "otherDollars": 0.0,
+        "totalDollars": 0.2599
+      },
+      {
+        "date": "2026-05-02",
+        "label": "May 2",
+        "textDollars": 0.002,
+        "imageDollars": 0.0,
+        "otherDollars": 0.0,
+        "totalDollars": 0.002
+      },
+      {
+        "date": "2026-05-03",
+        "label": "May 3",
+        "textDollars": 0.0,
+        "imageDollars": 0.2579,
+        "otherDollars": 0.0,
+        "totalDollars": 0.2579
+      },
+      {
+        "date": "2026-05-04",
+        "label": "May 4",
+        "textDollars": 0.0026,
+        "imageDollars": 0.2586,
+        "otherDollars": 0.0,
+        "totalDollars": 0.2611
+      },
+      {
+        "date": "2026-05-05",
+        "label": "May 5",
+        "textDollars": 0.0035,
+        "imageDollars": 1.0327,
+        "otherDollars": 0.0,
+        "totalDollars": 1.0362
+      },
+      {
+        "date": "2026-05-06",
+        "label": "May 6",
+        "textDollars": 0.0,
+        "imageDollars": 0.0,
+        "otherDollars": 0.0,
+        "totalDollars": 0.0
+      }
+    ],
+    "error": null,
+    "subscriptionPrice": 7.99,
+    "estimatedRevenue": 23.97,
+    "grossMargin": -176.11
+  }
+}
