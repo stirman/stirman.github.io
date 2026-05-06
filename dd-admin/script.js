@@ -204,13 +204,25 @@ function renderBarChart() {
 }
 
 function renderUserGrowthChart() {
+  const chart = $("users-growth-chart");
+  chart.innerHTML = "";
   const today = startOfDay(new Date());
   const days = daysBetween(LAUNCH_DATE, today);
-  const points = days.map((day) => {
-    const count = state.users.filter((u) => !u.createdAt || startOfDay(u.createdAt) <= day).length + FOUNDER_USER_ADJUSTMENT;
-    return { day, value: count };
+  const points = days.map((day) => ({
+    day,
+    value: state.users.filter((u) => !u.createdAt || startOfDay(u.createdAt) <= day).length + FOUNDER_USER_ADJUSTMENT
+  }));
+  const max = Math.max(1, ...points.map((p) => p.value));
+  const labelEvery = Math.max(1, Math.ceil(points.length / 12));
+
+  points.forEach((point, index) => {
+    const bar = document.createElement("div");
+    bar.className = "bar";
+    bar.style.height = `${Math.max(4, (point.value / max) * 100)}%`;
+    bar.dataset.label = index % labelEvery === 0 || index === points.length - 1 ? formatDay(point.day).replace(" ", "") : "";
+    bar.dataset.tip = `${formatDay(point.day)} · ${point.value.toLocaleString()} total users`;
+    chart.appendChild(bar);
   });
-  drawLineChart($("users-line-chart"), [{ points, className: "chart-line" }], { yPrefix: "", fill: true });
 }
 
 function renderRetention(retained, totalUsers) {

@@ -60,12 +60,15 @@ h2 { font-size: clamp(22px, 3vw, 30px); }
 .panel { padding: 22px; }
 .full-width { grid-column: 1 / -1; }
 .panel-heading { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 18px; }
-.user-heading { align-items: center; }
+.user-heading { display: grid; align-items: center; grid-template-columns: minmax(190px, max-content) minmax(260px, 1fr); }
+.user-heading h2 { white-space: nowrap; }
 .pill { display: inline-flex; align-items: center; border-radius: 999px; padding: 8px 11px; background: rgba(245,157,100,.16); color: var(--rose); font-size: 12px; font-weight: 850; }
 .bar-chart { display: grid; grid-template-columns: repeat(30, minmax(7px, 1fr)); align-items: end; gap: 6px; height: 278px; padding: 16px 0 38px; border-bottom: 1px solid var(--line); }
 .bar { position: relative; min-height: 6px; border-radius: 999px 999px 4px 4px; background: linear-gradient(180deg, #d36f86, #f2a46a); box-shadow: inset 0 1px 0 rgba(255,255,255,.34); }
 .bar::after { content: attr(data-label); position: absolute; left: 50%; bottom: -28px; transform: translateX(-50%) rotate(-45deg); transform-origin: center; color: var(--muted); font-size: 10px; opacity: .86; }
 .bar:hover::before { content: attr(data-tip); position: absolute; z-index: 3; bottom: calc(100% + 8px); left: 50%; transform: translateX(-50%); white-space: nowrap; border-radius: 10px; padding: 7px 9px; background: var(--plum); color: white; font-size: 12px; }
+.growth-chart { grid-template-columns: repeat(auto-fit, minmax(8px, 1fr)); }
+.growth-chart .bar { background: linear-gradient(180deg, #8f6fb8, #d36f86); }
 .line-chart { width: 100%; min-height: 278px; height: 278px; overflow: visible; }
 .axis-label { fill: var(--muted); font-size: 11px; }
 .chart-line { fill: none; stroke: var(--rose); stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; }
@@ -84,7 +87,7 @@ h2 { font-size: clamp(22px, 3vw, 30px); }
 .sort-tabs button { flex: 1; border: 0; border-radius: 12px; padding: 10px 8px; background: transparent; color: var(--muted); font-weight: 850; }
 .sort-tabs button.active { color: white; background: linear-gradient(135deg, var(--apricot), var(--rose)); box-shadow: 0 8px 18px rgba(200,111,125,.18); }
 .users-list { display: grid; gap: 10px; max-height: 586px; overflow: auto; padding-right: 4px; }
-.users-list.dedicated { max-height: none; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+.users-list.dedicated { max-height: none; grid-template-columns: 1fr; }
 .user-row { display: flex; align-items: center; justify-content: space-between; gap: 14px; padding: 13px 14px; border: 1px solid var(--line); border-radius: 18px; background: rgba(255,255,255,.56); }
 .user-name { margin: 0 0 3px; font-weight: 850; color: var(--plum); }
 .user-meta { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.35; }
@@ -96,4 +99,4 @@ h2 { font-size: clamp(22px, 3vw, 30px); }
 .assumptions label { display: grid; gap: 7px; color: var(--plum); font-weight: 850; }
 .assumptions input { font-weight: 800; }
 @media (max-width: 980px) { .metric-grid, .cost-metrics { grid-template-columns: repeat(3, 1fr); } .content-grid { grid-template-columns: 1fr; } }
-@media (max-width: 680px) { .shell { width: min(100% - 18px, 1180px); padding-top: 10px; } .login-card { margin-top: 7vh; padding: 24px; border-radius: 26px; } .password-row { flex-direction: column; } .password-row button { width: 100%; } .metric-grid, .cost-metrics { grid-template-columns: repeat(2, 1fr); } .metric-card { min-height: 118px; padding: 15px; } .panel, .hero { padding: 17px; border-radius: 22px; } .panel-heading, .user-heading { flex-direction: column; align-items: stretch; } .bar-chart { gap: 3px; height: 250px; } .top-nav { position: sticky; top: 8px; z-index: 5; } .status-card { flex-direction: column; align-items: stretch; } }
+@media (max-width: 680px) { .shell { width: min(100% - 18px, 1180px); padding-top: 10px; } .login-card { margin-top: 7vh; padding: 24px; border-radius: 26px; } .password-row { flex-direction: column; } .password-row button { width: 100%; } .metric-grid, .cost-metrics { grid-template-columns: repeat(2, 1fr); } .metric-card { min-height: 118px; padding: 15px; } .panel, .hero { padding: 17px; border-radius: 22px; } .panel-heading { flex-direction: column; align-items: stretch; } .user-heading { display: grid; grid-template-columns: 1fr; align-items: stretch; } .bar-chart { gap: 3px; height: 250px; } .top-nav { position: sticky; top: 8px; z-index: 5; } .status-card { flex-direction: column; align-items: stretch; } }
