@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Daily Divine Admin</title>
+  <link rel="preconnect" href="https://www.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <main class="shell">
+    <section id="login" class="login-card" aria-labelledby="login-title">
+      <div class="brand-mark">✦</div>
+      <p class="eyebrow">Daily Divine</p>
+      <h1 id="login-title">Admin Portal</h1>
+      <p class="login-copy">A quiet, private view into users, engagement, retention, and the patterns worth noticing.</p>
+      <form id="login-form" class="login-form">
+        <label for="password">Password</label>
+        <div class="password-row">
+          <input id="password" name="password" type="password" autocomplete="current-password" placeholder="Enter password" />
+          <button type="submit">Enter</button>
+        </div>
+        <p id="login-error" class="form-error" role="alert" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section id="dashboard" class="dashboard is-hidden" aria-label="Daily Divine admin dashboard">
+      <header class="hero">
+        <div>
+          <p class="eyebrow">Daily Divine Admin</p>
+          <h1>Activity, engagement & retention</h1>
+          <p class="subtitle">Live Firestore readout styled to feel like the app: warm, soft, and useful at a glance.</p>
+        </div>
+        <div class="hero-actions">
+          <button id="refresh" type="button" class="ghost-button">Refresh</button>
+          <button id="logout" type="button" class="ghost-button subtle">Lock</button>
+        </div>
+      </header>
+
+      <div id="status" class="status-card">Loading Daily Divine data…</div>
+
+      <section class="metric-grid" aria-label="Key metrics">
+        <article class="metric-card">
+          <span>Total users</span>
+          <strong id="metric-total-users">—</strong>
+          <small id="metric-new-users">—</small>
+        </article>
+        <article class="metric-card">
+          <span>Active 7d</span>
+          <strong id="metric-active-7">—</strong>
+          <small id="metric-active-rate">—</small>
+        </article>
+        <article class="metric-card">
+          <span>Active 30d</span>
+          <strong id="metric-active-30">—</strong>
+          <small>Recent monthly reach</small>
+        </article>
+        <article class="metric-card">
+          <span>Paid / granted</span>
+          <strong id="metric-premium">—</strong>
+          <small id="metric-premium-rate">—</small>
+        </article>
+        <article class="metric-card">
+          <span>Insights 30d</span>
+          <strong id="metric-insights">—</strong>
+          <small id="metric-entries">—</small>
+        </article>
+        <article class="metric-card">
+          <span>Retention signal</span>
+          <strong id="metric-retention">—</strong>
+          <small>Used in multiple weeks</small>
+        </article>
+      </section>
+
+      <section class="content-grid">
+        <article class="panel wide">
+          <div class="panel-heading">
+            <div>
+              <p class="eyebrow">Engagement</p>
+              <h2>Daily insights generated</h2>
+            </div>
+            <span id="chart-range" class="pill">Last 30 days</span>
+          </div>
+          <div id="insight-chart" class="bar-chart" aria-label="Daily insights bar chart"></div>
+        </article>
+
+        <article class="panel">
+          <div class="panel-heading">
+            <div>
+              <p class="eyebrow">Retention</p>
+              <h2>Cohorts</h2>
+            </div>
+          </div>
+          <div id="retention-chart" class="ring-wrap"></div>
+        </article>
+
+        <article class="panel wide">
+          <div class="panel-heading">
+            <div>
+              <p class="eyebrow">Did you know…</p>
+              <h2>Interesting patterns</h2>
+            </div>
+          </div>
+          <div id="insights-list" class="insights-list"></div>
+        </article>
+
+        <article class="panel users-panel">
+          <div class="panel-heading user-heading">
+            <div>
+              <p class="eyebrow">Users</p>
+              <h2>User list</h2>
+            </div>
+            <input id="user-search" class="search" type="search" placeholder="Search users" />
+          </div>
+          <div class="sort-tabs" role="tablist" aria-label="Sort users">
+            <button type="button" data-sort="recent" class="active">Recent</button>
+            <button type="button" data-sort="alpha">A–Z</button>
+            <button type="button" data-sort="paid">Paid First</button>
+          </div>
+          <div id="users-list" class="users-list"></div>
+        </article>
+      </section>
+    </section>
+  </main>
+
+  <script type="module" src="./script.js"></script>
+</body>
+</html>
