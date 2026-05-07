@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-05-07T14:05:45Z",
-  "generatedAtHuman": "May 07, 2026 at 07:05 AM PDT",
+  "generatedAt": "2026-05-07T15:05:43Z",
+  "generatedAtHuman": "May 07, 2026 at 08:05 AM PDT",
   "source": "hourly-cache",
   "refreshCadenceMinutes": 60,
   "overview": {
-    "totalUsers": 39,
-    "launchUsers": 35,
-    "active7": 26,
-    "active30": 39,
-    "premium": 12,
+    "totalUsers": 41,
+    "launchUsers": 37,
+    "active7": 28,
+    "active30": 41,
+    "premium": 13,
     "paidSubscribers": 3,
     "retainedUsers": 4,
-    "insights30": 44,
+    "insights30": 46,
     "entries30": 0,
-    "cardImages30": 32
+    "cardImages30": 34
   },
   "users": [
     {
@@ -190,12 +190,12 @@
       "displayName": "Dana Welch",
       "email": "y9m5njcnbd@privaterelay.appleid.com",
       "createdAt": "2026-05-05T22:54:53Z",
-      "lastLoginAt": "2026-05-05T22:54:53Z",
-      "lastActiveAt": "2026-05-05T22:54:53Z",
+      "lastLoginAt": "2026-05-07T14:19:26Z",
+      "lastActiveAt": "2026-05-07T14:19:26Z",
       "isPaidSubscriber": false,
       "grantedPremium": false,
-      "insights30": 0,
-      "cardImages30": 0,
+      "insights30": 1,
+      "cardImages30": 1,
       "retained": false
     },
     {
@@ -440,7 +440,7 @@
       "lastLoginAt": "2026-05-07T12:16:00Z",
       "lastActiveAt": "2026-05-07T12:16:00Z",
       "isPaidSubscriber": false,
-      "grantedPremium": false,
+      "grantedPremium": true,
       "insights30": 1,
       "cardImages30": 0,
       "retained": false
@@ -456,6 +456,19 @@
       "grantedPremium": false,
       "insights30": 0,
       "cardImages30": 0,
+      "retained": false
+    },
+    {
+      "id": "soVLapqVKGhuk7BzyzfCrUvADdF2",
+      "displayName": "Nina Price",
+      "email": "txbp546qk9@privaterelay.appleid.com",
+      "createdAt": "2026-05-07T14:22:55Z",
+      "lastLoginAt": "2026-05-07T14:24:21Z",
+      "lastActiveAt": "2026-05-07T14:24:21Z",
+      "isPaidSubscriber": false,
+      "grantedPremium": false,
+      "insights30": 1,
+      "cardImages30": 1,
       "retained": false
     },
     {
@@ -496,6 +509,19 @@
       "insights30": 2,
       "cardImages30": 0,
       "retained": true
+    },
+    {
+      "id": "HDxjvq4wbJcQ3xFaWsgoqbNuL643",
+      "displayName": "Timothy Scherer",
+      "email": "9jp628gbnn@privaterelay.appleid.com",
+      "createdAt": "2026-05-07T14:39:48Z",
+      "lastLoginAt": "2026-05-07T14:39:48Z",
+      "lastActiveAt": "2026-05-07T14:39:48Z",
+      "isPaidSubscriber": false,
+      "grantedPremium": false,
+      "insights30": 0,
+      "cardImages30": 0,
+      "retained": false
     },
     {
       "id": "ZBcmc5cVeAblm8BSA0KG29PjxwU2",
@@ -674,7 +700,7 @@
       {
         "date": "2026-05-07",
         "label": "May 7",
-        "count": 2
+        "count": 4
       }
     ],
     "dailyCardImages": [
@@ -826,7 +852,7 @@
       {
         "date": "2026-05-07",
         "label": "May 7",
-        "count": 1
+        "count": 3
       }
     ],
     "totalUsers": [
@@ -908,7 +934,7 @@
       {
         "date": "2026-05-07",
         "label": "May 7",
-        "count": 37
+        "count": 39
       }
     ],
     "dailyCosts": [
