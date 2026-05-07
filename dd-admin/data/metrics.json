@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-05-07T19:05:46Z",
-  "generatedAtHuman": "May 07, 2026 at 12:05 PM PDT",
+  "generatedAt": "2026-05-07T20:05:45Z",
+  "generatedAtHuman": "May 07, 2026 at 01:05 PM PDT",
   "source": "hourly-cache",
   "refreshCadenceMinutes": 60,
   "overview": {
-    "totalUsers": 41,
-    "launchUsers": 37,
-    "active7": 28,
-    "active30": 41,
+    "totalUsers": 42,
+    "launchUsers": 38,
+    "active7": 29,
+    "active30": 42,
     "premium": 14,
     "paidSubscribers": 4,
     "retainedUsers": 4,
@@ -511,6 +511,19 @@
       "retained": true
     },
     {
+      "id": "8x5qJOWZFXgnC4ihXYcciMoYGzV2",
+      "displayName": "Tiffany Nikolov",
+      "email": "zbjrk7gfbc@privaterelay.appleid.com",
+      "createdAt": "2026-05-07T19:15:00Z",
+      "lastLoginAt": "2026-05-07T19:15:00Z",
+      "lastActiveAt": "2026-05-07T19:15:00Z",
+      "isPaidSubscriber": false,
+      "grantedPremium": false,
+      "insights30": 0,
+      "cardImages30": 0,
+      "retained": false
+    },
+    {
       "id": "HDxjvq4wbJcQ3xFaWsgoqbNuL643",
       "displayName": "Timothy Scherer",
       "email": "9jp628gbnn@privaterelay.appleid.com",
@@ -934,7 +947,7 @@
       {
         "date": "2026-05-07",
         "label": "May 7",
-        "count": 39
+        "count": 40
       }
     ],
     "dailyCosts": [
