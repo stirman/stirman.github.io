@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-05-07T11:05:43Z",
-  "generatedAtHuman": "May 07, 2026 at 04:05 AM PDT",
+  "generatedAt": "2026-05-07T12:05:42Z",
+  "generatedAtHuman": "May 07, 2026 at 05:05 AM PDT",
   "source": "hourly-cache",
   "refreshCadenceMinutes": 60,
   "overview": {
-    "totalUsers": 37,
-    "launchUsers": 33,
-    "active7": 24,
-    "active30": 37,
+    "totalUsers": 38,
+    "launchUsers": 34,
+    "active7": 25,
+    "active30": 38,
     "premium": 12,
     "paidSubscribers": 3,
     "retainedUsers": 4,
@@ -404,6 +404,19 @@
       "grantedPremium": true,
       "insights30": 1,
       "cardImages30": 1,
+      "retained": false
+    },
+    {
+      "id": "TiUccH8r8vgd4SIfJp3BxB05Qh22",
+      "displayName": "Linda DuBose",
+      "email": "dragonfly58@me.com",
+      "createdAt": "2026-05-07T11:56:30Z",
+      "lastLoginAt": "2026-05-07T11:56:30Z",
+      "lastActiveAt": "2026-05-07T11:56:30Z",
+      "isPaidSubscriber": false,
+      "grantedPremium": false,
+      "insights30": 0,
+      "cardImages30": 0,
       "retained": false
     },
     {
@@ -882,7 +895,7 @@
       {
         "date": "2026-05-07",
         "label": "May 7",
-        "count": 35
+        "count": 36
       }
     ],
     "dailyCosts": [
