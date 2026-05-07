@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-05-07T16:05:43Z",
-  "generatedAtHuman": "May 07, 2026 at 09:05 AM PDT",
+  "generatedAt": "2026-05-07T17:05:48Z",
+  "generatedAtHuman": "May 07, 2026 at 10:05 AM PDT",
   "source": "hourly-cache",
   "refreshCadenceMinutes": 60,
   "overview": {
@@ -8,12 +8,12 @@
     "launchUsers": 37,
     "active7": 28,
     "active30": 41,
-    "premium": 13,
-    "paidSubscribers": 3,
+    "premium": 14,
+    "paidSubscribers": 4,
     "retainedUsers": 4,
     "insights30": 46,
     "entries30": 0,
-    "cardImages30": 34
+    "cardImages30": 35
   },
   "users": [
     {
@@ -244,10 +244,10 @@
       "createdAt": "2026-04-29T06:45:24Z",
       "lastLoginAt": "2026-04-29T13:08:38Z",
       "lastActiveAt": "2026-04-29T13:08:38Z",
-      "isPaidSubscriber": false,
+      "isPaidSubscriber": true,
       "grantedPremium": false,
       "insights30": 2,
-      "cardImages30": 1,
+      "cardImages30": 2,
       "retained": false
     },
     {
@@ -807,7 +807,7 @@
       {
         "date": "2026-04-28",
         "label": "Apr 28",
-        "count": 2
+        "count": 3
       },
       {
         "date": "2026-04-29",
@@ -1508,7 +1508,7 @@
     ],
     "error": null,
     "subscriptionPrice": 7.99,
-    "estimatedRevenue": 23.97,
-    "grossMargin": -147.13
+    "estimatedRevenue": 31.96,
+    "grossMargin": -139.14
   }
 }
