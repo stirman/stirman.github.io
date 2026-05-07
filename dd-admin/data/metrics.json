@@ -1,17 +1,17 @@
 {
-  "generatedAt": "2026-05-07T20:05:45Z",
-  "generatedAtHuman": "May 07, 2026 at 01:05 PM PDT",
+  "generatedAt": "2026-05-07T21:05:49Z",
+  "generatedAtHuman": "May 07, 2026 at 02:05 PM PDT",
   "source": "hourly-cache",
   "refreshCadenceMinutes": 60,
   "overview": {
-    "totalUsers": 42,
-    "launchUsers": 38,
-    "active7": 29,
-    "active30": 42,
+    "totalUsers": 43,
+    "launchUsers": 39,
+    "active7": 30,
+    "active30": 43,
     "premium": 14,
     "paidSubscribers": 4,
     "retainedUsers": 4,
-    "insights30": 47,
+    "insights30": 48,
     "entries30": 0,
     "cardImages30": 36
   },
@@ -433,6 +433,19 @@
       "retained": false
     },
     {
+      "id": "LMvhzjgwdvfaivXDGRdBemJHJhv1",
+      "displayName": "Mackenzie Cohan",
+      "email": "mackenzie@alayasf.com",
+      "createdAt": "2026-05-07T21:04:36Z",
+      "lastLoginAt": "2026-05-07T21:05:28Z",
+      "lastActiveAt": "2026-05-07T21:05:28Z",
+      "isPaidSubscriber": false,
+      "grantedPremium": false,
+      "insights30": 1,
+      "cardImages30": 0,
+      "retained": false
+    },
+    {
       "id": "GBROF6cjYMcLTwKUrFWD55vgBoF2",
       "displayName": "Maya Holland",
       "email": "mayasholland@gmail.com",
@@ -713,7 +726,7 @@
       {
         "date": "2026-05-07",
         "label": "May 7",
-        "count": 5
+        "count": 6
       }
     ],
     "dailyCardImages": [
@@ -947,7 +960,7 @@
       {
         "date": "2026-05-07",
         "label": "May 7",
-        "count": 40
+        "count": 41
       }
     ],
     "dailyCosts": [
