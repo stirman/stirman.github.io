@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-05-07T12:05:42Z",
-  "generatedAtHuman": "May 07, 2026 at 05:05 AM PDT",
+  "generatedAt": "2026-05-07T13:05:42Z",
+  "generatedAtHuman": "May 07, 2026 at 06:05 AM PDT",
   "source": "hourly-cache",
   "refreshCadenceMinutes": 60,
   "overview": {
-    "totalUsers": 38,
-    "launchUsers": 34,
-    "active7": 25,
-    "active30": 38,
+    "totalUsers": 39,
+    "launchUsers": 35,
+    "active7": 26,
+    "active30": 39,
     "premium": 12,
     "paidSubscribers": 3,
     "retainedUsers": 4,
-    "insights30": 42,
+    "insights30": 44,
     "entries30": 0,
-    "cardImages30": 31
+    "cardImages30": 32
   },
   "users": [
     {
@@ -73,12 +73,12 @@
       "displayName": "Annetta Box",
       "email": "hzst5xtddy@privaterelay.appleid.com",
       "createdAt": "2026-05-06T10:03:49Z",
-      "lastLoginAt": "2026-05-06T10:18:31Z",
-      "lastActiveAt": "2026-05-06T10:18:31Z",
+      "lastLoginAt": "2026-05-07T12:11:51Z",
+      "lastActiveAt": "2026-05-07T12:11:51Z",
       "isPaidSubscriber": true,
       "grantedPremium": false,
-      "insights30": 1,
-      "cardImages30": 1,
+      "insights30": 2,
+      "cardImages30": 2,
       "retained": false
     },
     {
@@ -433,6 +433,19 @@
       "retained": false
     },
     {
+      "id": "GBROF6cjYMcLTwKUrFWD55vgBoF2",
+      "displayName": "Maya Holland",
+      "email": "mayasholland@gmail.com",
+      "createdAt": "2026-05-07T12:14:56Z",
+      "lastLoginAt": "2026-05-07T12:16:00Z",
+      "lastActiveAt": "2026-05-07T12:16:00Z",
+      "isPaidSubscriber": false,
+      "grantedPremium": false,
+      "insights30": 1,
+      "cardImages30": 0,
+      "retained": false
+    },
+    {
       "id": "T3lcTKAVGvYosYxeWCjJB7KvaB72",
       "displayName": "Mimi Berkoe",
       "email": "qqks6sxffx@privaterelay.appleid.com",
@@ -661,7 +674,7 @@
       {
         "date": "2026-05-07",
         "label": "May 7",
-        "count": 0
+        "count": 2
       }
     ],
     "dailyCardImages": [
@@ -813,7 +826,7 @@
       {
         "date": "2026-05-07",
         "label": "May 7",
-        "count": 0
+        "count": 1
       }
     ],
     "totalUsers": [
@@ -895,7 +908,7 @@
       {
         "date": "2026-05-07",
         "label": "May 7",
-        "count": 36
+        "count": 37
       }
     ],
     "dailyCosts": [
