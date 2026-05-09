@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-05-09T05:05:48Z",
-  "generatedAtHuman": "May 08, 2026 at 10:05 PM PDT",
+  "generatedAt": "2026-05-09T06:05:45Z",
+  "generatedAtHuman": "May 08, 2026 at 11:05 PM PDT",
   "source": "hourly-cache",
   "refreshCadenceMinutes": 60,
   "overview": {
-    "totalUsers": 45,
-    "launchUsers": 41,
-    "active7": 31,
-    "active30": 45,
+    "totalUsers": 46,
+    "launchUsers": 42,
+    "active7": 32,
+    "active30": 46,
     "premium": 14,
     "paidSubscribers": 4,
     "retainedUsers": 4,
@@ -374,6 +374,19 @@
       "createdAt": "2026-05-05T22:40:29Z",
       "lastLoginAt": "2026-05-05T22:40:29Z",
       "lastActiveAt": "2026-05-05T22:40:29Z",
+      "isPaidSubscriber": false,
+      "grantedPremium": false,
+      "insights30": 0,
+      "cardImages30": 0,
+      "retained": false
+    },
+    {
+      "id": "25hI9zesFMQu6RFWLRmpWLd66dK2",
+      "displayName": "Jolie Jacobs",
+      "email": "28vvdn5yz2@privaterelay.appleid.com",
+      "createdAt": "2026-05-09T06:01:30Z",
+      "lastLoginAt": "2026-05-09T06:01:30Z",
+      "lastActiveAt": "2026-05-09T06:01:30Z",
       "isPaidSubscriber": false,
       "grantedPremium": false,
       "insights30": 0,
@@ -996,7 +1009,7 @@
       {
         "date": "2026-05-09",
         "label": "May 9",
-        "count": 43
+        "count": 44
       }
     ],
     "dailyCosts": [
