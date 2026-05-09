@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-05-09T22:05:50Z",
-  "generatedAtHuman": "May 09, 2026 at 03:05 PM PDT",
+  "generatedAt": "2026-05-09T23:05:52Z",
+  "generatedAtHuman": "May 09, 2026 at 04:05 PM PDT",
   "source": "hourly-cache",
   "refreshCadenceMinutes": 60,
   "overview": {
-    "totalUsers": 46,
-    "launchUsers": 42,
-    "active7": 32,
-    "active30": 46,
+    "totalUsers": 47,
+    "launchUsers": 43,
+    "active7": 33,
+    "active30": 47,
     "premium": 14,
     "paidSubscribers": 4,
     "retainedUsers": 4,
@@ -23,6 +23,19 @@
       "createdAt": "2026-05-05T22:37:17Z",
       "lastLoginAt": "2026-05-05T22:37:17Z",
       "lastActiveAt": "2026-05-05T22:37:17Z",
+      "isPaidSubscriber": false,
+      "grantedPremium": false,
+      "insights30": 0,
+      "cardImages30": 0,
+      "retained": false
+    },
+    {
+      "id": "tlb4IEdyWZQtEtJxHW662rMWKU32",
+      "displayName": "Alexis Richmer",
+      "email": "7hkdpzvvmw@privaterelay.appleid.com",
+      "createdAt": "2026-05-09T23:02:41Z",
+      "lastLoginAt": "2026-05-09T23:02:41Z",
+      "lastActiveAt": "2026-05-09T23:02:41Z",
       "isPaidSubscriber": false,
       "grantedPremium": false,
       "insights30": 0,
@@ -1009,7 +1022,7 @@
       {
         "date": "2026-05-09",
         "label": "May 9",
-        "count": 44
+        "count": 45
       }
     ],
     "dailyCosts": [
