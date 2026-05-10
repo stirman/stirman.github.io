@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-05-10T15:05:44Z",
-  "generatedAtHuman": "May 10, 2026 at 08:05 AM PDT",
+  "generatedAt": "2026-05-10T16:05:44Z",
+  "generatedAtHuman": "May 10, 2026 at 09:05 AM PDT",
   "source": "hourly-cache",
   "refreshCadenceMinutes": 60,
   "overview": {
@@ -11,9 +11,9 @@
     "premium": 14,
     "paidSubscribers": 4,
     "retainedUsers": 4,
-    "insights30": 50,
+    "insights30": 51,
     "entries30": 0,
-    "cardImages30": 38
+    "cardImages30": 39
   },
   "users": [
     {
@@ -216,12 +216,12 @@
       "displayName": "Dana Welch",
       "email": "y9m5njcnbd@privaterelay.appleid.com",
       "createdAt": "2026-05-05T22:54:53Z",
-      "lastLoginAt": "2026-05-07T14:19:26Z",
-      "lastActiveAt": "2026-05-07T14:19:26Z",
+      "lastLoginAt": "2026-05-10T15:20:34Z",
+      "lastActiveAt": "2026-05-10T15:20:34Z",
       "isPaidSubscriber": false,
       "grantedPremium": false,
-      "insights30": 1,
-      "cardImages30": 1,
+      "insights30": 2,
+      "cardImages30": 2,
       "retained": false
     },
     {
@@ -791,7 +791,7 @@
       {
         "date": "2026-05-10",
         "label": "May 10",
-        "count": 0
+        "count": 1
       }
     ],
     "dailyCardImages": [
@@ -943,7 +943,7 @@
       {
         "date": "2026-05-10",
         "label": "May 10",
-        "count": 0
+        "count": 1
       }
     ],
     "totalUsers": [
