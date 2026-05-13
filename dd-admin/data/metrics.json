@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-05-13T03:05:40Z",
-  "generatedAtHuman": "May 12, 2026 at 08:05 PM PDT",
+  "generatedAt": "2026-05-13T04:05:52Z",
+  "generatedAtHuman": "May 12, 2026 at 09:05 PM PDT",
   "source": "hourly-cache",
   "refreshCadenceMinutes": 60,
   "overview": {
@@ -10,8 +10,8 @@
     "active30": 49,
     "premium": 14,
     "paidSubscribers": 4,
-    "retainedUsers": 4,
-    "insights30": 51,
+    "retainedUsers": 5,
+    "insights30": 52,
     "entries30": 0,
     "cardImages30": 38
   },
@@ -73,13 +73,13 @@
       "displayName": "Andrew Zimmermann",
       "email": "tyqj7mk75c@privaterelay.appleid.com",
       "createdAt": "2026-05-08T19:36:08Z",
-      "lastLoginAt": "2026-05-08T19:37:04Z",
-      "lastActiveAt": "2026-05-08T19:37:04Z",
+      "lastLoginAt": "2026-05-13T03:14:34Z",
+      "lastActiveAt": "2026-05-13T03:14:34Z",
       "isPaidSubscriber": false,
       "grantedPremium": false,
-      "insights30": 1,
+      "insights30": 2,
       "cardImages30": 0,
-      "retained": false
+      "retained": true
     },
     {
       "id": "EimhzDlaLjOvwFV6pQ7vmy2tAFj2",
@@ -799,7 +799,7 @@
       {
         "date": "2026-05-12",
         "label": "May 12",
-        "count": 2
+        "count": 3
       },
       {
         "date": "2026-05-13",
