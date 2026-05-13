@@ -249,7 +249,7 @@
     const API_INPUT_MAX_BYTES = 24 * 1024 * 1024;
     const API_MAX_DIMENSION = 2048;
     const REJECTED_INPUT_TYPES = new Set(['image/svg+xml', 'image/gif']);
-    const state = { items: [], running: false };
+    const state = { items: [], running: false, cancelRequested: false, controllers: new Set() };
     const $ = (id) => document.getElementById(id);
     const els = {
       drop: $('drop'), file: $('fileInput'), prompt: $('prompt'), apiKey: $('apiKey'), proxyUrl: $('proxyUrl'), model: $('model'),
@@ -339,7 +339,9 @@
       else if (state.running) els.start.title = 'Processing is already running.';
       else els.start.title = 'Start processing. Missing prompt/key checks will appear in the log.';
       els.zip.disabled = done === 0;
-      els.clear.disabled = !total || state.running;
+      els.clear.disabled = !total && !state.running;
+      els.clear.textContent = state.running ? 'Stop & clear' : 'Clear';
+      els.clear.title = state.running ? 'Stop queued work, cancel in-flight requests where possible, and clear this batch.' : 'Clear this batch.';
 
       els.gallery.innerHTML = state.items.map(item => {
         const preview = item.resultUrl || URL.createObjectURL(item.file);
@@ -353,44 +355,53 @@
     function escapeHtml(s) { return String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
 
     async function processOne(item) {
+      if (state.cancelRequested) throw new Error('Batch stopped.');
       item.status = 'running'; render();
-      const endpoint = els.proxyUrl.value.trim() || 'https://api.openai.com/v1/images/edits';
-      const form = new FormData();
-      form.append('model', els.model.value.trim() || 'gpt-image-2');
-      form.append('prompt', els.prompt.value.trim());
-      if (els.size.value !== 'auto') form.append('size', els.size.value);
-      if (els.quality.value !== 'auto') form.append('quality', els.quality.value);
-      form.append('output_format', els.format.value);
-      const apiFile = await normalizeImageForApi(item.file);
-      if (apiFile.size !== item.file.size || apiFile.type !== item.file.type) log(`Prepared ${item.file.name} as API-safe JPG (${Math.round(apiFile.size / 1024)} KB).`);
-      form.append('image', apiFile, apiFile.name);
+      const controller = new AbortController();
+      state.controllers.add(controller);
+      try {
+        const endpoint = els.proxyUrl.value.trim() || 'https://api.openai.com/v1/images/edits';
+        const form = new FormData();
+        form.append('model', els.model.value.trim() || 'gpt-image-2');
+        form.append('prompt', els.prompt.value.trim());
+        if (els.size.value !== 'auto') form.append('size', els.size.value);
+        if (els.quality.value !== 'auto') form.append('quality', els.quality.value);
+        form.append('output_format', els.format.value);
+        const apiFile = await normalizeImageForApi(item.file);
+        if (state.cancelRequested || controller.signal.aborted) throw new DOMException('Batch stopped.', 'AbortError');
+        if (apiFile.size !== item.file.size || apiFile.type !== item.file.type) log(`Prepared ${item.file.name} as API-safe JPG (${Math.round(apiFile.size / 1024)} KB).`);
+        form.append('image', apiFile, apiFile.name);
 
-      const headers = {};
-      const key = els.apiKey.value.trim();
-      if (key) headers.Authorization = `Bearer ${key}`;
+        const headers = {};
+        const key = els.apiKey.value.trim();
+        if (key) headers.Authorization = `Bearer ${key}`;
 
-      const response = await fetch(endpoint, { method: 'POST', headers, body: form });
-      const text = await response.text();
-      if (!response.ok) throw new Error(text.slice(0, 420) || `${response.status} ${response.statusText}`);
-      let json;
-      try { json = JSON.parse(text); } catch { throw new Error('API did not return JSON. If this is a proxy, return OpenAI-compatible { data: [{ b64_json }] }.'); }
-      const b64 = json?.data?.[0]?.b64_json;
-      const url = json?.data?.[0]?.url;
-      if (b64) {
-        const bin = atob(b64);
-        const bytes = new Uint8Array(bin.length);
-        for (let i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
-        item.resultBlob = new Blob([bytes], { type: `image/${els.format.value}` });
-      } else if (url) {
-        const img = await fetch(url);
-        if (!img.ok) throw new Error('Generated image URL could not be downloaded.');
-        item.resultBlob = await img.blob();
-      } else {
-        throw new Error('No generated image found in API response.');
+        const response = await fetch(endpoint, { method: 'POST', headers, body: form, signal: controller.signal });
+        const text = await response.text();
+        if (!response.ok) throw new Error(text.slice(0, 420) || `${response.status} ${response.statusText}`);
+        let json;
+        try { json = JSON.parse(text); } catch { throw new Error('API did not return JSON. If this is a proxy, return OpenAI-compatible { data: [{ b64_json }] }.'); }
+        if (state.cancelRequested || controller.signal.aborted) throw new DOMException('Batch stopped.', 'AbortError');
+        const b64 = json?.data?.[0]?.b64_json;
+        const url = json?.data?.[0]?.url;
+        if (b64) {
+          const bin = atob(b64);
+          const bytes = new Uint8Array(bin.length);
+          for (let i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
+          item.resultBlob = new Blob([bytes], { type: `image/${els.format.value}` });
+        } else if (url) {
+          const img = await fetch(url, { signal: controller.signal });
+          if (!img.ok) throw new Error('Generated image URL could not be downloaded.');
+          item.resultBlob = await img.blob();
+        } else {
+          throw new Error('No generated image found in API response.');
+        }
+        item.resultUrl = URL.createObjectURL(item.resultBlob);
+        item.status = 'done';
+        log(`Done: ${item.file.name}`);
+      } finally {
+        state.controllers.delete(controller);
       }
-      item.resultUrl = URL.createObjectURL(item.resultBlob);
-      item.status = 'done';
-      log(`Done: ${item.file.name}`);
     }
 
     async function start() {
@@ -398,20 +409,24 @@
       if (!state.items.length) { log('Add images before starting.'); return; }
       if (!els.prompt.value.trim()) { log('Add a prompt before starting.'); els.prompt.focus(); return; }
       if (!els.apiKey.value.trim() && !els.proxyUrl.value.trim()) { log('Add an OpenAI API key or proxy URL before starting.'); els.apiKey.focus(); return; }
-      state.running = true; render();
+      state.running = true; state.cancelRequested = false; render();
       log('Processing started.');
       const workers = Array.from({ length: Number(els.concurrency.value) }, async () => {
-        while (true) {
+        while (!state.cancelRequested) {
           const item = state.items.find(i => i.status === 'queued');
           if (!item) return;
           try { await processOne(item); }
-          catch (err) { item.status = 'error'; item.error = String(err.message || err); log(`Failed: ${item.file.name} — ${item.error}`); }
+          catch (err) {
+            if (state.cancelRequested || err.name === 'AbortError') return;
+            item.status = 'error'; item.error = String(err.message || err); log(`Failed: ${item.file.name} — ${item.error}`);
+          }
           render();
         }
       });
       await Promise.all(workers);
-      state.running = false; render();
-      log('Processing finished.');
+      const stopped = state.cancelRequested;
+      state.running = false; state.cancelRequested = false; render();
+      log(stopped ? 'Processing stopped.' : 'Processing finished.');
     }
 
     async function downloadZip() {
@@ -433,8 +448,13 @@
     }
 
     function clearAll() {
+      const wasRunning = state.running;
+      if (wasRunning) {
+        state.cancelRequested = true;
+        for (const controller of state.controllers) controller.abort();
+      }
       for (const item of state.items) if (item.resultUrl) URL.revokeObjectURL(item.resultUrl);
-      state.items = []; els.file.value = ''; els.log.textContent = 'Ready.'; render();
+      state.items = []; els.file.value = ''; els.log.textContent = wasRunning ? 'Stopped current batch and cleared queued/results. In-flight API requests were cancelled where possible.' : 'Ready.'; render();
     }
 
     ['dragenter','dragover'].forEach(evt => els.drop.addEventListener(evt, e => { e.preventDefault(); els.drop.classList.add('drag'); }));
