@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CS Images · Batch Image Processor</title>
+  <meta name="description" content="Batch process product images with a shared prompt and download the results as a zip." />
+  <style>
+    :root {
+      --ink: #23170f;
+      --muted: #7b6355;
+      --paper: #fff8ed;
+      --card: rgba(255, 252, 246, .82);
+      --line: rgba(57, 36, 22, .16);
+      --coral: #f06f4f;
+      --coral-dark: #c94d32;
+      --sage: #687d62;
+      --honey: #f7c66b;
+      --rose: #f4b6a9;
+      --shadow: 0 24px 70px rgba(79, 42, 22, .18);
+      --radius: 28px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--ink);
+      font-family: ui-serif, Georgia, Cambria, "Times New Roman", serif;
+      background:
+        radial-gradient(circle at 12% 8%, rgba(244, 182, 169, .55), transparent 30vw),
+        radial-gradient(circle at 88% 12%, rgba(247, 198, 107, .42), transparent 28vw),
+        radial-gradient(circle at 72% 90%, rgba(104, 125, 98, .20), transparent 34vw),
+        linear-gradient(135deg, #fff9ef 0%, #f8eadb 48%, #efe4d2 100%);
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      opacity: .35;
+      background-image:
+        linear-gradient(rgba(35, 23, 15, .035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(35, 23, 15, .035) 1px, transparent 1px);
+      background-size: 34px 34px;
+      mask-image: linear-gradient(to bottom, black, transparent 85%);
+    }
+
+    .shell { width: min(1180px, calc(100vw - 32px)); margin: 0 auto; padding: 34px 0 64px; }
+
+    .hero {
+      position: relative;
+      padding: 32px;
+      border: 1px solid var(--line);
+      border-radius: calc(var(--radius) + 10px);
+      background: rgba(255, 248, 237, .58);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(18px);
+      overflow: hidden;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 380px;
+      height: 380px;
+      right: -110px;
+      top: -120px;
+      background: conic-gradient(from 30deg, var(--coral), var(--honey), var(--sage), var(--rose), var(--coral));
+      border-radius: 44% 56% 61% 39% / 46% 37% 63% 54%;
+      opacity: .18;
+      filter: blur(1px);
+      animation: breathe 12s ease-in-out infinite;
+    }
+    @keyframes breathe { 50% { transform: rotate(24deg) scale(1.08); } }
+
+    .brand { display: flex; align-items: center; justify-content: space-between; gap: 16px; position: relative; z-index: 1; }
+    .mark { display: flex; gap: 12px; align-items: center; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; font-size: 12px; color: var(--sage); }
+    .gem { width: 36px; height: 36px; border-radius: 12px; background: linear-gradient(135deg, var(--coral), var(--honey)); box-shadow: inset 0 0 0 1px rgba(255,255,255,.45), 0 10px 24px rgba(201,77,50,.22); transform: rotate(8deg); }
+    .pill { border: 1px solid var(--line); border-radius: 999px; padding: 9px 14px; background: rgba(255,255,255,.42); color: var(--muted); font: 600 12px/1.1 ui-sans-serif, system-ui, sans-serif; }
+
+    h1 { position: relative; z-index: 1; margin: 56px 0 12px; max-width: 820px; font-size: clamp(46px, 8vw, 94px); line-height: .88; letter-spacing: -.065em; }
+    .subtitle { position: relative; z-index: 1; max-width: 660px; margin: 0 0 28px; color: var(--muted); font-size: clamp(18px, 2vw, 22px); line-height: 1.42; }
+
+    .grid { display: grid; grid-template-columns: minmax(0, 1fr) 380px; gap: 18px; margin-top: 18px; }
+    .panel { border: 1px solid var(--line); border-radius: var(--radius); background: var(--card); box-shadow: 0 18px 50px rgba(79,42,22,.10); backdrop-filter: blur(16px); }
+    .panel.pad { padding: 22px; }
+
+    .drop {
+      min-height: 292px;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      padding: 28px;
+      border: 2px dashed rgba(104,125,98,.38);
+      background: linear-gradient(135deg, rgba(255,255,255,.55), rgba(247,198,107,.10));
+      transition: .2s ease;
+      cursor: pointer;
+    }
+    .drop.drag { transform: translateY(-2px); border-color: var(--coral); background: rgba(240,111,79,.12); }
+    .drop h2 { margin: 0 0 8px; font-size: 34px; letter-spacing: -.035em; }
+    .drop p { margin: 0; color: var(--muted); font: 15px/1.5 ui-sans-serif, system-ui, sans-serif; }
+    .drop input { display: none; }
+
+    label { display: block; margin: 0 0 8px; color: var(--sage); font: 800 11px/1 ui-sans-serif, system-ui, sans-serif; text-transform: uppercase; letter-spacing: .09em; }
+    textarea, input, select {
+      width: 100%; border: 1px solid var(--line); border-radius: 18px; background: rgba(255,255,255,.58); color: var(--ink);
+      padding: 14px 15px; outline: none; font: 15px/1.35 ui-sans-serif, system-ui, sans-serif; transition: .18s ease;
+    }
+    textarea:focus, input:focus, select:focus { border-color: rgba(240,111,79,.55); box-shadow: 0 0 0 4px rgba(240,111,79,.10); }
+    textarea { min-height: 148px; resize: vertical; }
+    .stack { display: grid; gap: 15px; }
+    .two { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .hint { margin-top: 7px; color: var(--muted); font: 12px/1.45 ui-sans-serif, system-ui, sans-serif; }
+
+    .actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 6px; }
+    button, .button {
+      appearance: none; border: 0; border-radius: 999px; padding: 13px 18px; cursor: pointer; font: 800 13px/1 ui-sans-serif, system-ui, sans-serif;
+      letter-spacing: .02em; transition: transform .14s ease, box-shadow .14s ease, opacity .14s ease; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;
+    }
+    button:hover, .button:hover { transform: translateY(-1px); }
+    button:disabled { opacity: .45; cursor: not-allowed; transform: none; }
+    .primary { background: var(--ink); color: #fff8ed; box-shadow: 0 14px 30px rgba(35,23,15,.22); }
+    .secondary { background: rgba(255,255,255,.62); color: var(--ink); border: 1px solid var(--line); }
+    .danger { background: rgba(240,111,79,.13); color: var(--coral-dark); border: 1px solid rgba(240,111,79,.25); }
+
+    .statusBar { margin-top: 18px; overflow: hidden; border-radius: 999px; background: rgba(35,23,15,.09); height: 12px; }
+    .bar { height: 100%; width: 0%; border-radius: inherit; background: linear-gradient(90deg, var(--sage), var(--honey), var(--coral)); transition: width .24s ease; }
+    .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-top: 14px; }
+    .stat { border: 1px solid var(--line); border-radius: 18px; padding: 13px; background: rgba(255,255,255,.42); }
+    .stat strong { display: block; font: 900 24px/1 ui-sans-serif, system-ui, sans-serif; letter-spacing: -.04em; }
+    .stat span { color: var(--muted); font: 11px/1.2 ui-sans-serif, system-ui, sans-serif; text-transform: uppercase; letter-spacing: .08em; }
+
+    .gallery { margin-top: 18px; display: grid; grid-template-columns: repeat(auto-fill, minmax(178px, 1fr)); gap: 14px; }
+    .tile { position: relative; border: 1px solid var(--line); border-radius: 22px; overflow: hidden; background: rgba(255,255,255,.52); min-height: 230px; box-shadow: 0 12px 30px rgba(79,42,22,.08); }
+    .tile img { width: 100%; height: 162px; object-fit: cover; display: block; background: #eadbc8; }
+    .tile .meta { padding: 11px; font: 12px/1.35 ui-sans-serif, system-ui, sans-serif; color: var(--muted); overflow-wrap: anywhere; }
+    .badge { position: absolute; top: 10px; left: 10px; border-radius: 999px; padding: 6px 9px; font: 800 10px/1 ui-sans-serif, system-ui, sans-serif; text-transform: uppercase; letter-spacing: .08em; background: rgba(255,248,237,.88); border: 1px solid var(--line); color: var(--sage); }
+    .badge.done { color: #3f6f39; } .badge.error { color: var(--coral-dark); } .badge.running { color: #9a6614; }
+
+    .log { max-height: 220px; overflow: auto; font: 12px/1.45 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; color: var(--muted); background: rgba(35,23,15,.055); border-radius: 18px; padding: 12px; white-space: pre-wrap; }
+    .notice { border-left: 4px solid var(--honey); background: rgba(247,198,107,.16); padding: 12px 14px; border-radius: 16px; color: var(--muted); font: 13px/1.45 ui-sans-serif, system-ui, sans-serif; }
+
+    @media (max-width: 920px) { .grid { grid-template-columns: 1fr; } .stats { grid-template-columns: repeat(2, 1fr); } h1 { margin-top: 38px; } }
+    @media (max-width: 560px) { .hero, .panel.pad { padding: 18px; } .two { grid-template-columns: 1fr; } .brand { align-items: flex-start; flex-direction: column; } }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <div class="brand">
+        <div class="mark"><span class="gem"></span><span>Cassie Stirman Studio</span></div>
+        <div class="pill">Batch prompt · live progress · zip export</div>
+      </div>
+      <h1>Image Processing v1</h1>
+      <p class="subtitle">Drop up to 200 product photos, apply one consistent image-generation prompt, watch each result land, then download everything as a clean zip.</p>
+    </section>
+
+    <section class="grid">
+      <div>
+        <label for="fileInput">Images</label>
+        <div id="drop" class="panel drop" role="button" tabindex="0" aria-label="Drop images or choose files">
+          <input id="fileInput" type="file" accept="image/*" multiple />
+          <div>
+            <h2>Drop the batch here</h2>
+            <p>JPG, PNG, WebP, HEIC if your browser supports it. Up to 200 files.</p>
+          </div>
+        </div>
+
+        <div class="panel pad" style="margin-top:18px;">
+          <div class="stats">
+            <div class="stat"><strong id="queued">0</strong><span>Queued</span></div>
+            <div class="stat"><strong id="complete">0</strong><span>Complete</span></div>
+            <div class="stat"><strong id="failed">0</strong><span>Failed</span></div>
+            <div class="stat"><strong id="total">0</strong><span>Total</span></div>
+          </div>
+          <div class="statusBar"><div id="bar" class="bar"></div></div>
+          <div class="actions">
+            <button id="start" class="primary" disabled>Start processing</button>
+            <button id="zip" class="secondary" disabled>Download zip</button>
+            <button id="clear" class="danger" disabled>Clear</button>
+          </div>
+        </div>
+
+        <div id="gallery" class="gallery" aria-live="polite"></div>
+      </div>
+
+      <aside class="panel pad stack">
+        <div>
+          <label for="prompt">Prompt</label>
+          <textarea id="prompt" placeholder="Example: Preserve the jewelry exactly, remove the background, create a warm editorial product image on soft ivory linen, natural shadow, square composition."></textarea>
+        </div>
+
+        <div>
+          <label for="apiKey">OpenAI API key</label>
+          <input id="apiKey" type="password" autocomplete="off" placeholder="sk-…" />
+          <div class="hint">Stored only in this browser tab. For daily use, put a tiny backend proxy in front of this so no secret lives in the page.</div>
+        </div>
+
+        <div>
+          <label for="proxyUrl">Optional API/proxy URL</label>
+          <input id="proxyUrl" type="url" placeholder="https://your-worker.example.com/v1/images/edits" />
+          <div class="hint">Defaults to OpenAI’s image edit endpoint. A proxy can forward the same multipart request and add the server-side key.</div>
+        </div>
+
+        <div class="two">
+          <div>
+            <label for="model">Model</label>
+            <input id="model" value="gpt-image-1" />
+          </div>
+          <div>
+            <label for="size">Size</label>
+            <select id="size">
+              <option value="1024x1024">1024 square</option>
+              <option value="1536x1024">Landscape</option>
+              <option value="1024x1536">Portrait</option>
+              <option value="auto">Auto</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="two">
+          <div>
+            <label for="concurrency">Parallel</label>
+            <select id="concurrency"><option>1</option><option selected>2</option><option>3</option><option>4</option></select>
+          </div>
+          <div>
+            <label for="format">Output</label>
+            <select id="format"><option value="png">PNG</option><option value="jpeg">JPEG</option><option value="webp">WebP</option></select>
+          </div>
+        </div>
+
+        <div class="notice">v1 processes files in the browser and packages finished images locally. If OpenAI blocks browser CORS, paste a proxy URL above and keep this same UI.</div>
+        <div id="log" class="log">Ready.</div>
+      </aside>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+  <script>
+    const MAX_FILES = 200;
+    const state = { items: [], running: false };
+    const $ = (id) => document.getElementById(id);
+    const els = {
+      drop: $('drop'), file: $('fileInput'), prompt: $('prompt'), apiKey: $('apiKey'), proxyUrl: $('proxyUrl'), model: $('model'),
+      size: $('size'), concurrency: $('concurrency'), format: $('format'), start: $('start'), zip: $('zip'), clear: $('clear'), gallery: $('gallery'),
+      queued: $('queued'), complete: $('complete'), failed: $('failed'), total: $('total'), bar: $('bar'), log: $('log')
+    };
+
+    function log(line) {
+      const stamp = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+      els.log.textContent += `\n${stamp} ${line}`;
+      els.log.scrollTop = els.log.scrollHeight;
+    }
+
+    function safeName(name) { return name.replace(/\.[^.]+$/, '').replace(/[^a-z0-9_-]+/gi, '-').replace(/^-|-$/g, '').toLowerCase() || 'image'; }
+    function extFromMime(mime) { return mime.includes('jpeg') ? 'jpg' : mime.includes('webp') ? 'webp' : 'png'; }
+
+    function addFiles(files) {
+      const incoming = [...files].filter(f => f.type.startsWith('image/')).slice(0, MAX_FILES - state.items.length);
+      if (!incoming.length) return;
+      for (const file of incoming) {
+        const id = crypto.randomUUID();
+        state.items.push({ id, file, status: 'queued', resultBlob: null, resultUrl: null, error: null });
+      }
+      render();
+      log(`Added ${incoming.length} image${incoming.length === 1 ? '' : 's'}.`);
+      if (state.items.length >= MAX_FILES) log(`Reached ${MAX_FILES} file cap.`);
+    }
+
+    function render() {
+      const done = state.items.filter(i => i.status === 'done').length;
+      const failed = state.items.filter(i => i.status === 'error').length;
+      const running = state.items.filter(i => i.status === 'running').length;
+      const queued = state.items.filter(i => i.status === 'queued').length;
+      const total = state.items.length;
+      els.queued.textContent = queued + running;
+      els.complete.textContent = done;
+      els.failed.textContent = failed;
+      els.total.textContent = total;
+      els.bar.style.width = total ? `${Math.round(((done + failed) / total) * 100)}%` : '0%';
+      els.start.disabled = !total || state.running || !els.prompt.value.trim() || (!els.apiKey.value.trim() && !els.proxyUrl.value.trim());
+      els.zip.disabled = done === 0;
+      els.clear.disabled = !total || state.running;
+
+      els.gallery.innerHTML = state.items.map(item => {
+        const preview = item.resultUrl || URL.createObjectURL(item.file);
+        const badge = item.status === 'done' ? 'done' : item.status === 'error' ? 'error' : item.status === 'running' ? 'running' : '';
+        const label = item.status === 'error' ? 'error' : item.status;
+        const detail = item.error ? item.error : item.file.name;
+        return `<article class="tile" data-id="${item.id}"><span class="badge ${badge}">${label}</span><img src="${preview}" alt="${item.file.name}"><div class="meta">${escapeHtml(detail)}</div></article>`;
+      }).join('');
+    }
+
+    function escapeHtml(s) { return String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
+
+    async function processOne(item) {
+      item.status = 'running'; render();
+      const endpoint = els.proxyUrl.value.trim() || 'https://api.openai.com/v1/images/edits';
+      const form = new FormData();
+      form.append('model', els.model.value.trim() || 'gpt-image-1');
+      form.append('prompt', els.prompt.value.trim());
+      if (els.size.value !== 'auto') form.append('size', els.size.value);
+      form.append('output_format', els.format.value);
+      form.append('image', item.file, item.file.name);
+
+      const headers = {};
+      const key = els.apiKey.value.trim();
+      if (key) headers.Authorization = `Bearer ${key}`;
+
+      const response = await fetch(endpoint, { method: 'POST', headers, body: form });
+      const text = await response.text();
+      if (!response.ok) throw new Error(text.slice(0, 420) || `${response.status} ${response.statusText}`);
+      let json;
+      try { json = JSON.parse(text); } catch { throw new Error('API did not return JSON. If this is a proxy, return OpenAI-compatible { data: [{ b64_json }] }.'); }
+      const b64 = json?.data?.[0]?.b64_json;
+      const url = json?.data?.[0]?.url;
+      if (b64) {
+        const bin = atob(b64);
+        const bytes = new Uint8Array(bin.length);
+        for (let i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
+        item.resultBlob = new Blob([bytes], { type: `image/${els.format.value}` });
+      } else if (url) {
+        const img = await fetch(url);
+        if (!img.ok) throw new Error('Generated image URL could not be downloaded.');
+        item.resultBlob = await img.blob();
+      } else {
+        throw new Error('No generated image found in API response.');
+      }
+      item.resultUrl = URL.createObjectURL(item.resultBlob);
+      item.status = 'done';
+      log(`Done: ${item.file.name}`);
+    }
+
+    async function start() {
+      if (state.running) return;
+      state.running = true; render();
+      log('Processing started.');
+      const workers = Array.from({ length: Number(els.concurrency.value) }, async () => {
+        while (true) {
+          const item = state.items.find(i => i.status === 'queued');
+          if (!item) return;
+          try { await processOne(item); }
+          catch (err) { item.status = 'error'; item.error = String(err.message || err); log(`Failed: ${item.file.name} — ${item.error}`); }
+          render();
+        }
+      });
+      await Promise.all(workers);
+      state.running = false; render();
+      log('Processing finished.');
+    }
+
+    async function downloadZip() {
+      const zip = new JSZip();
+      const folder = zip.folder('cs-images-results');
+      let count = 0;
+      for (const item of state.items.filter(i => i.status === 'done' && i.resultBlob)) {
+        const ext = extFromMime(item.resultBlob.type || `image/${els.format.value}`);
+        folder.file(`${String(++count).padStart(3, '0')}-${safeName(item.file.name)}.${ext}`, item.resultBlob);
+      }
+      folder.file('prompt.txt', els.prompt.value.trim());
+      const blob = await zip.generateAsync({ type: 'blob' });
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = `cs-images-results-${new Date().toISOString().slice(0,10)}.zip`;
+      a.click();
+      URL.revokeObjectURL(a.href);
+      log(`Downloaded zip with ${count} image${count === 1 ? '' : 's'}.`);
+    }
+
+    function clearAll() {
+      for (const item of state.items) if (item.resultUrl) URL.revokeObjectURL(item.resultUrl);
+      state.items = []; els.file.value = ''; els.log.textContent = 'Ready.'; render();
+    }
+
+    ['dragenter','dragover'].forEach(evt => els.drop.addEventListener(evt, e => { e.preventDefault(); els.drop.classList.add('drag'); }));
+    ['dragleave','drop'].forEach(evt => els.drop.addEventListener(evt, e => { e.preventDefault(); els.drop.classList.remove('drag'); }));
+    els.drop.addEventListener('drop', e => addFiles(e.dataTransfer.files));
+    els.drop.addEventListener('click', () => els.file.click());
+    els.drop.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') els.file.click(); });
+    els.file.addEventListener('change', e => addFiles(e.target.files));
+    ['input','change'].forEach(evt => [els.prompt, els.apiKey, els.proxyUrl, els.model, els.size, els.concurrency, els.format].forEach(el => el.addEventListener(evt, render)));
+    els.start.addEventListener('click', start);
+    els.zip.addEventListener('click', downloadZip);
+    els.clear.addEventListener('click', clearAll);
+    render();
+  </script>
+</body>
+</html>
