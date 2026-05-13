@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-05-13T12:05:54Z",
-  "generatedAtHuman": "May 13, 2026 at 05:05 AM PDT",
+  "generatedAt": "2026-05-13T13:06:54Z",
+  "generatedAtHuman": "May 13, 2026 at 06:06 AM PDT",
   "source": "hourly-cache",
   "refreshCadenceMinutes": 60,
   "overview": {
@@ -10,10 +10,10 @@
     "active30": 49,
     "premium": 14,
     "paidSubscribers": 4,
-    "retainedUsers": 5,
-    "insights30": 52,
+    "retainedUsers": 6,
+    "insights30": 53,
     "entries30": 0,
-    "cardImages30": 38
+    "cardImages30": 39
   },
   "users": [
     {
@@ -99,13 +99,13 @@
       "displayName": "Annetta Box",
       "email": "hzst5xtddy@privaterelay.appleid.com",
       "createdAt": "2026-05-06T10:03:49Z",
-      "lastLoginAt": "2026-05-07T12:11:51Z",
-      "lastActiveAt": "2026-05-07T12:11:51Z",
+      "lastLoginAt": "2026-05-13T12:11:57Z",
+      "lastActiveAt": "2026-05-13T12:11:57Z",
       "isPaidSubscriber": true,
       "grantedPremium": false,
-      "insights30": 2,
-      "cardImages30": 2,
-      "retained": false
+      "insights30": 3,
+      "cardImages30": 3,
+      "retained": true
     },
     {
       "id": "g19okJBjgKVRjf1O96J9TQVSSQk1",
@@ -804,7 +804,7 @@
       {
         "date": "2026-05-13",
         "label": "May 13",
-        "count": 0
+        "count": 1
       }
     ],
     "dailyCardImages": [
@@ -956,7 +956,7 @@
       {
         "date": "2026-05-13",
         "label": "May 13",
-        "count": 0
+        "count": 1
       }
     ],
     "totalUsers": [
