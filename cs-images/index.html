@@ -227,12 +227,17 @@
             <select id="concurrency"><option>1</option><option selected>2</option><option>3</option><option>4</option></select>
           </div>
           <div>
-            <label for="format">Output</label>
-            <select id="format"><option value="png">PNG</option><option value="jpeg">JPEG</option><option value="webp">WebP</option></select>
+            <label for="quality">Quality</label>
+            <select id="quality"><option value="low">Low</option><option value="medium" selected>Medium</option><option value="high">High</option><option value="auto">Auto</option></select>
           </div>
         </div>
 
-        <div class="notice">v1 defaults to GPT-Image 2 and packages finished images locally. Important: this static tool cannot use Rosie’s ChatGPT Max/OAuth plan, so direct processing will bill the API key/proxy account used here.</div>
+        <div>
+          <label for="format">Output</label>
+          <select id="format"><option value="png">PNG</option><option value="jpeg">JPEG</option><option value="webp">WebP</option></select>
+        </div>
+
+        <div class="notice">v1 defaults to GPT-Image 2 at medium quality and packages finished images locally. This static tool cannot use Rosie’s ChatGPT Max/OAuth plan, so direct processing will bill the API key/proxy account used here. Rough cost for 100 1024-square edits: about $6 at medium quality, $1.40 low, or $22 high, plus small prompt/input variation.</div>
         <div id="log" class="log">Ready.</div>
       </aside>
     </section>
@@ -245,7 +250,7 @@
     const $ = (id) => document.getElementById(id);
     const els = {
       drop: $('drop'), file: $('fileInput'), prompt: $('prompt'), apiKey: $('apiKey'), proxyUrl: $('proxyUrl'), model: $('model'),
-      size: $('size'), concurrency: $('concurrency'), format: $('format'), start: $('start'), zip: $('zip'), clear: $('clear'), gallery: $('gallery'),
+      size: $('size'), concurrency: $('concurrency'), quality: $('quality'), format: $('format'), start: $('start'), zip: $('zip'), clear: $('clear'), gallery: $('gallery'),
       queued: $('queued'), complete: $('complete'), failed: $('failed'), total: $('total'), bar: $('bar'), log: $('log')
     };
 
@@ -303,6 +308,7 @@
       form.append('model', els.model.value.trim() || 'gpt-image-2');
       form.append('prompt', els.prompt.value.trim());
       if (els.size.value !== 'auto') form.append('size', els.size.value);
+      if (els.quality.value !== 'auto') form.append('quality', els.quality.value);
       form.append('output_format', els.format.value);
       form.append('image', item.file, item.file.name);
 
@@ -381,7 +387,7 @@
     els.drop.addEventListener('click', () => els.file.click());
     els.drop.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') els.file.click(); });
     els.file.addEventListener('change', e => addFiles(e.target.files));
-    ['input','change'].forEach(evt => [els.prompt, els.apiKey, els.proxyUrl, els.model, els.size, els.concurrency, els.format].forEach(el => el.addEventListener(evt, render)));
+    ['input','change'].forEach(evt => [els.prompt, els.apiKey, els.proxyUrl, els.model, els.size, els.concurrency, els.quality, els.format].forEach(el => el.addEventListener(evt, render)));
     els.start.addEventListener('click', start);
     els.zip.addEventListener('click', downloadZip);
     els.clear.addEventListener('click', clearAll);
