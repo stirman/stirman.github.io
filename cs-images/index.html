@@ -165,7 +165,7 @@
           <input id="fileInput" type="file" accept="image/*" multiple />
           <div>
             <h2>Drop the batch here</h2>
-            <p>JPG, PNG, WebP, HEIC if your browser supports it. Up to 200 files.</p>
+            <p>JPG, PNG, WebP, and browser-readable HEIC/HEIF. Up to 200 files; each is normalized before upload.</p>
           </div>
         </div>
 
@@ -246,6 +246,9 @@
   <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
   <script>
     const MAX_FILES = 200;
+    const API_INPUT_MAX_BYTES = 24 * 1024 * 1024;
+    const API_MAX_DIMENSION = 2048;
+    const REJECTED_INPUT_TYPES = new Set(['image/svg+xml', 'image/gif']);
     const state = { items: [], running: false };
     const $ = (id) => document.getElementById(id);
     const els = {
@@ -262,17 +265,62 @@
 
     function safeName(name) { return name.replace(/\.[^.]+$/, '').replace(/[^a-z0-9_-]+/gi, '-').replace(/^-|-$/g, '').toLowerCase() || 'image'; }
     function extFromMime(mime) { return mime.includes('jpeg') ? 'jpg' : mime.includes('webp') ? 'webp' : 'png'; }
+    function isAcceptableInput(file) { return file.type.startsWith('image/') && !REJECTED_INPUT_TYPES.has(file.type); }
 
     function addFiles(files) {
-      const incoming = [...files].filter(f => f.type.startsWith('image/')).slice(0, MAX_FILES - state.items.length);
-      if (!incoming.length) return;
+      const candidates = [...files];
+      const accepted = candidates.filter(isAcceptableInput);
+      const incoming = accepted.slice(0, MAX_FILES - state.items.length);
+      const rejected = candidates.length - accepted.length;
+      if (!incoming.length) {
+        if (rejected) log(`Skipped ${rejected} unsupported file${rejected === 1 ? '' : 's'}; use raster photos, not SVG/GIF.`);
+        return;
+      }
       for (const file of incoming) {
         const id = crypto.randomUUID();
         state.items.push({ id, file, status: 'queued', resultBlob: null, resultUrl: null, error: null });
       }
       render();
       log(`Added ${incoming.length} image${incoming.length === 1 ? '' : 's'}.`);
+      if (rejected) log(`Skipped ${rejected} unsupported file${rejected === 1 ? '' : 's'}; use raster photos, not SVG/GIF.`);
+      if (accepted.length > incoming.length) log(`Only queued ${MAX_FILES} files; remove some images before adding more.`);
       if (state.items.length >= MAX_FILES) log(`Reached ${MAX_FILES} file cap.`);
+    }
+
+    function loadImage(file) {
+      return new Promise((resolve, reject) => {
+        const url = URL.createObjectURL(file);
+        const img = new Image();
+        img.onload = () => { URL.revokeObjectURL(url); resolve(img); };
+        img.onerror = () => { URL.revokeObjectURL(url); reject(new Error('Browser could not decode this image. Export it as JPG/PNG/WebP and try again.')); };
+        img.src = url;
+      });
+    }
+
+    function canvasToBlob(canvas, type, quality) {
+      return new Promise((resolve, reject) => {
+        canvas.toBlob(blob => blob ? resolve(blob) : reject(new Error('Could not normalize this image for upload.')), type, quality);
+      });
+    }
+
+    async function normalizeImageForApi(file) {
+      const img = await loadImage(file);
+      const scale = Math.min(1, API_MAX_DIMENSION / Math.max(img.naturalWidth || img.width, img.naturalHeight || img.height));
+      const width = Math.max(1, Math.round((img.naturalWidth || img.width) * scale));
+      const height = Math.max(1, Math.round((img.naturalHeight || img.height) * scale));
+      const canvas = document.createElement('canvas');
+      canvas.width = width;
+      canvas.height = height;
+      const ctx = canvas.getContext('2d', { alpha: false });
+      ctx.fillStyle = '#fff';
+      ctx.fillRect(0, 0, width, height);
+      ctx.drawImage(img, 0, 0, width, height);
+
+      let blob = await canvasToBlob(canvas, 'image/jpeg', .94);
+      if (blob.size > API_INPUT_MAX_BYTES) blob = await canvasToBlob(canvas, 'image/jpeg', .82);
+      if (blob.size > API_INPUT_MAX_BYTES) throw new Error('Image is still too large after normalization; resize it smaller and try again.');
+      const filename = `${safeName(file.name)}-api.jpg`;
+      return new File([blob], filename, { type: 'image/jpeg', lastModified: Date.now() });
     }
 
     function render() {
@@ -310,7 +358,9 @@
       if (els.size.value !== 'auto') form.append('size', els.size.value);
       if (els.quality.value !== 'auto') form.append('quality', els.quality.value);
       form.append('output_format', els.format.value);
-      form.append('image', item.file, item.file.name);
+      const apiFile = await normalizeImageForApi(item.file);
+      if (apiFile.size !== item.file.size || apiFile.type !== item.file.type) log(`Prepared ${item.file.name} as API-safe JPG (${Math.round(apiFile.size / 1024)} KB).`);
+      form.append('image', apiFile, apiFile.name);
 
       const headers = {};
       const key = els.apiKey.value.trim();
