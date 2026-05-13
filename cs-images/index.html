@@ -155,7 +155,7 @@
         <div class="pill">Batch prompt · live progress · zip export</div>
       </div>
       <h1>Image Processing v1</h1>
-      <p class="subtitle">Drop up to 200 product photos, apply one consistent image-generation prompt, watch each result land, then download everything as a clean zip.</p>
+      <p class="subtitle">Drop up to 200 product photos, apply one consistent GPT-Image 2 prompt, watch each result land, then download everything as a clean zip.</p>
     </section>
 
     <section class="grid">
@@ -208,7 +208,7 @@
         <div class="two">
           <div>
             <label for="model">Model</label>
-            <input id="model" value="gpt-image-1" />
+            <input id="model" value="gpt-image-2" />
           </div>
           <div>
             <label for="size">Size</label>
@@ -232,7 +232,7 @@
           </div>
         </div>
 
-        <div class="notice">v1 processes files in the browser and packages finished images locally. If OpenAI blocks browser CORS, paste a proxy URL above and keep this same UI.</div>
+        <div class="notice">v1 defaults to GPT-Image 2 and packages finished images locally. If we later want to hide the API key, paste a tiny proxy URL above and keep this same UI.</div>
         <div id="log" class="log">Ready.</div>
       </aside>
     </section>
@@ -300,7 +300,7 @@
       item.status = 'running'; render();
       const endpoint = els.proxyUrl.value.trim() || 'https://api.openai.com/v1/images/edits';
       const form = new FormData();
-      form.append('model', els.model.value.trim() || 'gpt-image-1');
+      form.append('model', els.model.value.trim() || 'gpt-image-2');
       form.append('prompt', els.prompt.value.trim());
       if (els.size.value !== 'auto') form.append('size', els.size.value);
       form.append('output_format', els.format.value);
