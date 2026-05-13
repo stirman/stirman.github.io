@@ -155,7 +155,7 @@
         <div class="pill">Batch prompt · live progress · zip export</div>
       </div>
       <h1>Image Processing v1</h1>
-      <p class="subtitle">Drop up to 200 product photos, apply one consistent GPT-Image 2 prompt, watch each result land, then download everything as a clean zip.</p>
+      <p class="subtitle">Drop up to 200 product photos, apply one consistent GPT-Image 2 prompt with an OpenAI API key or backend proxy, watch each result land, then download everything as a clean zip.</p>
     </section>
 
     <section class="grid">
@@ -194,15 +194,15 @@
         </div>
 
         <div>
-          <label for="apiKey">OpenAI API key</label>
-          <input id="apiKey" type="password" autocomplete="off" placeholder="sk-…" />
-          <div class="hint">Stored only in this browser tab. For daily use, put a tiny backend proxy in front of this so no secret lives in the page.</div>
+          <label for="apiKey">OpenAI API key (API billed)</label>
+          <input id="apiKey" type="password" autocomplete="off" placeholder="sk-proj-…" />
+          <div class="hint">Stored only in this browser tab. ChatGPT Max/OAuth is not usable from this static page; the OpenAI Images API needs an API key or a backend proxy that adds one.</div>
         </div>
 
         <div>
           <label for="proxyUrl">Optional API/proxy URL</label>
           <input id="proxyUrl" type="url" placeholder="https://your-worker.example.com/v1/images/edits" />
-          <div class="hint">Defaults to OpenAI’s image edit endpoint. A proxy can forward the same multipart request and add the server-side key.</div>
+          <div class="hint">Defaults to OpenAI’s image edit endpoint. A proxy can forward the same multipart request and add a server-side API key; ChatGPT session/OAuth cookies will not work here.</div>
         </div>
 
         <div class="two">
@@ -232,7 +232,7 @@
           </div>
         </div>
 
-        <div class="notice">v1 defaults to GPT-Image 2 and packages finished images locally. If we later want to hide the API key, paste a tiny proxy URL above and keep this same UI.</div>
+        <div class="notice">v1 defaults to GPT-Image 2 and packages finished images locally. Important: this static tool cannot use Rosie’s ChatGPT Max/OAuth plan, so direct processing will bill the API key/proxy account used here.</div>
         <div id="log" class="log">Ready.</div>
       </aside>
     </section>
