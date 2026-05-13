@@ -334,7 +334,10 @@
       els.failed.textContent = failed;
       els.total.textContent = total;
       els.bar.style.width = total ? `${Math.round(((done + failed) / total) * 100)}%` : '0%';
-      els.start.disabled = !total || state.running || !els.prompt.value.trim() || (!els.apiKey.value.trim() && !els.proxyUrl.value.trim());
+      els.start.disabled = !total || state.running;
+      if (!total) els.start.title = 'Add images before starting.';
+      else if (state.running) els.start.title = 'Processing is already running.';
+      else els.start.title = 'Start processing. Missing prompt/key checks will appear in the log.';
       els.zip.disabled = done === 0;
       els.clear.disabled = !total || state.running;
 
@@ -392,6 +395,9 @@
 
     async function start() {
       if (state.running) return;
+      if (!state.items.length) { log('Add images before starting.'); return; }
+      if (!els.prompt.value.trim()) { log('Add a prompt before starting.'); els.prompt.focus(); return; }
+      if (!els.apiKey.value.trim() && !els.proxyUrl.value.trim()) { log('Add an OpenAI API key or proxy URL before starting.'); els.apiKey.focus(); return; }
       state.running = true; render();
       log('Processing started.');
       const workers = Array.from({ length: Number(els.concurrency.value) }, async () => {
