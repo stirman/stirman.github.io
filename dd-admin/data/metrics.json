@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-05-13T13:06:54Z",
-  "generatedAtHuman": "May 13, 2026 at 06:06 AM PDT",
+  "generatedAt": "2026-05-13T14:05:52Z",
+  "generatedAtHuman": "May 13, 2026 at 07:05 AM PDT",
   "source": "hourly-cache",
   "refreshCadenceMinutes": 60,
   "overview": {
-    "totalUsers": 49,
-    "launchUsers": 45,
-    "active7": 18,
-    "active30": 49,
+    "totalUsers": 50,
+    "launchUsers": 46,
+    "active7": 19,
+    "active30": 50,
     "premium": 14,
     "paidSubscribers": 4,
     "retainedUsers": 6,
@@ -576,6 +576,19 @@
       "retained": false
     },
     {
+      "id": "oNN4e8rllvM8JNFbBniXsvmaKxF3",
+      "displayName": "Sally Shekou",
+      "email": "6sshp6h5w2@privaterelay.appleid.com",
+      "createdAt": "2026-05-13T13:48:03Z",
+      "lastLoginAt": "2026-05-13T13:48:03Z",
+      "lastActiveAt": "2026-05-13T13:48:03Z",
+      "isPaidSubscriber": false,
+      "grantedPremium": false,
+      "insights30": 0,
+      "cardImages30": 0,
+      "retained": false
+    },
+    {
       "id": "qTafH3dJD8dyLz3eT93RkkPVQm93",
       "displayName": "stirman@gmail.com",
       "email": "stirman@gmail.com",
@@ -1068,7 +1081,7 @@
       {
         "date": "2026-05-13",
         "label": "May 13",
-        "count": 47
+        "count": 48
       }
     ],
     "dailyCosts": [
