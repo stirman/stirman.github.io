@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-05-13T00:05:50Z",
-  "generatedAtHuman": "May 12, 2026 at 05:05 PM PDT",
+  "generatedAt": "2026-05-13T01:05:49Z",
+  "generatedAtHuman": "May 12, 2026 at 06:05 PM PDT",
   "source": "hourly-cache",
   "refreshCadenceMinutes": 60,
   "overview": {
@@ -11,7 +11,7 @@
     "premium": 14,
     "paidSubscribers": 4,
     "retainedUsers": 4,
-    "insights30": 50,
+    "insights30": 51,
     "entries30": 0,
     "cardImages30": 38
   },
@@ -255,11 +255,11 @@
       "displayName": "erin moore",
       "email": "rsc79zvxxx@privaterelay.appleid.com",
       "createdAt": "2026-05-10T05:15:42Z",
-      "lastLoginAt": "2026-05-12T00:25:22Z",
-      "lastActiveAt": "2026-05-12T00:25:22Z",
+      "lastLoginAt": "2026-05-13T00:29:01Z",
+      "lastActiveAt": "2026-05-13T00:29:01Z",
       "isPaidSubscriber": false,
       "grantedPremium": false,
-      "insights30": 1,
+      "insights30": 2,
       "cardImages30": 1,
       "retained": false
     },
@@ -799,7 +799,7 @@
       {
         "date": "2026-05-12",
         "label": "May 12",
-        "count": 1
+        "count": 2
       },
       {
         "date": "2026-05-13",
