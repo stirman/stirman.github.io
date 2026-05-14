@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-05-14T12:05:52Z",
-  "generatedAtHuman": "May 14, 2026 at 05:05 AM PDT",
+  "generatedAt": "2026-05-14T13:06:00Z",
+  "generatedAtHuman": "May 14, 2026 at 06:06 AM PDT",
   "source": "hourly-cache",
   "refreshCadenceMinutes": 60,
   "overview": {
     "totalUsers": 50,
     "launchUsers": 46,
-    "active7": 10,
+    "active7": 11,
     "active30": 50,
     "premium": 14,
     "paidSubscribers": 4,
     "retainedUsers": 6,
-    "insights30": 55,
+    "insights30": 56,
     "entries30": 0,
-    "cardImages30": 41
+    "cardImages30": 42
   },
   "users": [
     {
@@ -619,12 +619,12 @@
       "displayName": "Tiffany Nikolov",
       "email": "zbjrk7gfbc@privaterelay.appleid.com",
       "createdAt": "2026-05-07T19:15:00Z",
-      "lastLoginAt": "2026-05-07T19:15:00Z",
-      "lastActiveAt": "2026-05-07T19:15:00Z",
+      "lastLoginAt": "2026-05-14T12:34:17Z",
+      "lastActiveAt": "2026-05-14T12:34:17Z",
       "isPaidSubscriber": false,
       "grantedPremium": false,
-      "insights30": 0,
-      "cardImages30": 0,
+      "insights30": 1,
+      "cardImages30": 1,
       "retained": false
     },
     {
@@ -817,7 +817,7 @@
       {
         "date": "2026-05-14",
         "label": "May 14",
-        "count": 0
+        "count": 1
       }
     ],
     "dailyCardImages": [
@@ -969,7 +969,7 @@
       {
         "date": "2026-05-14",
         "label": "May 14",
-        "count": 0
+        "count": 1
       }
     ],
     "totalUsers": [
