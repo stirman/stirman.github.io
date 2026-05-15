@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-05-15T19:05:54Z",
-  "generatedAtHuman": "May 15, 2026 at 12:05 PM PDT",
+  "generatedAt": "2026-05-15T20:05:50Z",
+  "generatedAtHuman": "May 15, 2026 at 01:05 PM PDT",
   "source": "hourly-cache",
   "refreshCadenceMinutes": 60,
   "overview": {
@@ -11,7 +11,7 @@
     "premium": 14,
     "paidSubscribers": 4,
     "retainedUsers": 6,
-    "insights30": 58,
+    "insights30": 59,
     "entries30": 0,
     "cardImages30": 43
   },
@@ -593,11 +593,11 @@
       "displayName": "stirman@gmail.com",
       "email": "stirman@gmail.com",
       "createdAt": "2026-01-02T20:39:01Z",
-      "lastLoginAt": "2026-05-09T23:44:44Z",
-      "lastActiveAt": "2026-05-09T23:44:44Z",
+      "lastLoginAt": "2026-05-15T19:24:46Z",
+      "lastActiveAt": "2026-05-15T19:24:46Z",
       "isPaidSubscriber": false,
       "grantedPremium": false,
-      "insights30": 9,
+      "insights30": 10,
       "cardImages30": 6,
       "retained": true
     },
@@ -817,7 +817,7 @@
       {
         "date": "2026-05-15",
         "label": "May 15",
-        "count": 1
+        "count": 2
       }
     ],
     "dailyCardImages": [
