@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-05-16T14:05:51Z",
-  "generatedAtHuman": "May 16, 2026 at 07:05 AM PDT",
+  "generatedAt": "2026-05-16T15:05:48Z",
+  "generatedAtHuman": "May 16, 2026 at 08:05 AM PDT",
   "source": "hourly-cache",
   "refreshCadenceMinutes": 60,
   "overview": {
     "totalUsers": 50,
     "launchUsers": 46,
-    "active7": 9,
+    "active7": 10,
     "active30": 49,
     "premium": 14,
     "paidSubscribers": 4,
-    "retainedUsers": 6,
-    "insights30": 60,
+    "retainedUsers": 7,
+    "insights30": 61,
     "entries30": 0,
-    "cardImages30": 45
+    "cardImages30": 46
   },
   "users": [
     {
@@ -307,13 +307,13 @@
       "displayName": "Francesca McCartney",
       "email": "ff92b9cf9c@privaterelay.appleid.com",
       "createdAt": "2026-05-06T00:03:10Z",
-      "lastLoginAt": "2026-05-06T00:05:15Z",
-      "lastActiveAt": "2026-05-06T00:05:15Z",
+      "lastLoginAt": "2026-05-16T14:09:14Z",
+      "lastActiveAt": "2026-05-16T14:09:14Z",
       "isPaidSubscriber": false,
       "grantedPremium": true,
-      "insights30": 1,
-      "cardImages30": 1,
-      "retained": false
+      "insights30": 2,
+      "cardImages30": 2,
+      "retained": true
     },
     {
       "id": "iprKtebsgffegRGJP74wsxNY7wM2",
@@ -817,7 +817,7 @@
       {
         "date": "2026-05-16",
         "label": "May 16",
-        "count": 0
+        "count": 1
       }
     ],
     "dailyCardImages": [
@@ -969,7 +969,7 @@
       {
         "date": "2026-05-16",
         "label": "May 16",
-        "count": 0
+        "count": 1
       }
     ],
     "totalUsers": [
