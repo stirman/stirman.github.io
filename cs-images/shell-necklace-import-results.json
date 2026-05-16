@@ -1,0 +1,1715 @@
+{
+  "storePageId": "6a08dc5749069658966bc2d3",
+  "imageDir": "/Users/rosie/Documents/Shell Necklaces",
+  "createdCount": 52,
+  "skippedCount": 1,
+  "uploadCount": 98,
+  "created": [
+    {
+      "root": "2",
+      "sku": 2401,
+      "slug": "shell-necklace-2",
+      "productId": "6a08dfdf9120657df209d304",
+      "variantId": "2160d4d5-be0f-44c7-a1b0-a4127b58996f",
+      "url": "https://www.cassiestirman.com/shell-necklaces/p/shell-necklace-2",
+      "images": [
+        {
+          "file": "2.JPG",
+          "imageId": "6a08dfe02de870655389fc43",
+          "status": "READY"
+        },
+        {
+          "file": "2-2.JPG",
+          "imageId": "6a08dfe59120657df209d309",
+          "status": "READY"
+        }
+      ]
+    },
+    {
+      "root": "3",
+      "sku": 2402,
+      "slug": "shell-necklace-3",
+      "productId": "6a08dfec9120657df209d30f",
+      "variantId": "b562bade-9d8a-4a42-bbf7-95d0ce041af0",
+      "url": "https://www.cassiestirman.com/shell-necklaces/p/shell-necklace-3",
+      "images": [
+        {
+          "file": "3.JPG",
+          "imageId": "6a08dfed2de870655389fc4e",
+          "status": "READY"
+        },
+        {
+          "file": "3-2.JPG",
+          "imageId": "6a08dff33508e0735ce4d6b7",
+          "status": "READY"
+        }
+      ]
+    },
+    {
+      "root": "4",
+      "sku": 2403,
+      "slug": "shell-necklace-4",
+      "productId": "6a08dffd3508e0735ce4d6c0",
+      "variantId": "84285383-1353-42ef-af35-be51e0864411",
+      "url": "https://www.cassiestirman.com/shell-necklaces/p/shell-necklace-4",
+      "images": [
+        {
+          "file": "4.JPG",
+          "imageId": "6a08dffe9120657df209d325",
+          "status": "READY"
+        },
+        {
+          "file": "4-2.JPG",
+          "imageId": "6a08e0042de870655389fc65",
+          "status": "READY"
+        }
+      ]
+    },
+    {
+      "root": "5",
+      "sku": 2404,
+      "slug": "shell-necklace-5",
+      "productId": "6a08e00b9120657df209d330",
+      "variantId": "9c107013-bc05-432e-9d2f-7861b210209e",
+      "url": "https://www.cassiestirman.com/shell-necklaces/p/shell-necklace-5",
+      "images": [
+        {
+          "file": "5.JPG",
+          "imageId": "6a08e00c9120657df209d331",
+          "status": "READY"
+        }
+      ]
+    },
+    {
+      "root": "6",
+      "sku": 2405,
+      "slug": "shell-necklace-6",
+      "productId": "6a08e0139bbeeb1bb6114fab",
+      "variantId": "49eb6ba6-1578-44a2-8583-4e2b9cf2a858",
+      "url": "https://www.cassiestirman.com/shell-necklaces/p/shell-necklace-6",
+      "images": [
+        {
+          "file": "6.JPG",
+          "imageId": "6a08e0149bbeeb1bb6114fac",
+          "status": "READY"
+        },
+        {
+          "file": "6-2.JPG",
+          "imageId": "6a08e0199120657df209d33c",
+          "status": "READY"
+        }
+      ]
+    },
+    {
+      "root": "7",
+      "sku": 2406,
+      "slug": "shell-necklace-7",
+      "productId": "6a08e0203508e0735ce4d6e1",
+      "variantId": "cb6195a6-e226-4f0f-928d-a138ce8912a5",
+      "url": "https://www.cassiestirman.com/shell-necklaces/p/shell-necklace-7",
+      "images": [
+        {
+          "file": "7.JPG",
+          "imageId": "6a08e0229120657df209d343",
+          "status": "READY"
+        },
+        {
+          "file": "7-2.JPG",
+          "imageId": "6a08e0279120657df209d34a",
+          "status": "READY"
+        }
+      ]
+    },
+    {
+      "root": "8",
+      "sku": 2407,
+      "slug": "shell-necklace-8",
+      "productId": "6a08e02e2de870655389fc88",
+      "variantId": "8e808c7a-5244-4da1-be1a-e4f5a7700339",
+      "url": "https://www.cassiestirman.com/shell-necklaces/p/shell-necklace-8",
+      "images": [
+        {
+          "file": "8.JPG",
+          "imageId": "6a08e02f9bbeeb1bb6114fc4",
+          "status": "READY"
+        }
+      ]
+    },
+    {
+      "root": "9",
+      "sku": 2408,
+      "slug": "shell-necklace-9",
+      "productId": "6a08e0379120657df209d352",
+      "variantId": "cc5c650a-c1de-4a32-a69e-38be55aea78f",
+      "url": "https://www.cassiestirman.com/shell-necklaces/p/shell-necklace-9",
+      "images": [
+        {
+          "file": "9.JPG",
+          "imageId": "6a08e0382de870655389fc8f",
+          "status": "READY"
+        },
+        {
+          "file": "9-2.JPG",
+          "imageId": "6a08e0413508e0735ce4d704",
+          "status": "READY"
+        }
+      ]
+    },
+    {
+      "root": "10",
+      "sku": 2409,
+      "slug": "shell-necklace-10",
+      "productId": "6a08e0483508e0735ce4d70d",
+      "variantId": "93506b30-6f66-4e0a-a8ae-5ad3f9d76c84",
+      "url": "https://www.cassiestirman.com/shell-necklaces/p/shell-necklace-10",
+      "images": [
+        {
+          "file": "10.JPG",
+          "imageId": "6a08e0499120657df209d361",
+          "status": "READY"
+        },
+        {
+          "file": "10-2.JPG",
+          "imageId": "6a08e04f9bbeeb1bb6114fdf",
+          "status": "READY"
+        }
+      ]
+    },
+    {
+      "root": "11",
+      "sku": 2410,
+      "slug": "shell-necklace-11",
+      "productId": "6a08e0562de870655389fca9",
+      "variantId": "e20a1408-7927-4636-bd5e-93bb09eedadc",
+      "url": "https://www.cassiestirman.com/shell-necklaces/p/shell-necklace-11",
+      "images": [
+        {
+          "file": "11.JPG",
+          "imageId": "6a08e0573508e0735ce4d71b",
+          "status": "READY"
+        }
+      ]
+    },
+    {
+      "root": "12",
+      "sku": 2411,
+      "slug": "shell-necklace-12",
+      "productId": "6a08e05d9bbeeb1bb6114fe7",
+      "variantId": "280b91de-c69f-44b4-9dc2-fe09125673a4",
+      "url": "https://www.cassiestirman.com/shell-necklaces/p/shell-necklace-12",
+      "images": [
+        {
+          "file": "12.JPG",
+          "imageId": "6a08e05f9bbeeb1bb6114fea",
+          "status": "READY"
+        }
+      ]
+    },
+    {
+      "root": "13",
+      "sku": 2412,
+      "slug": "shell-necklace-13",
+      "productId": "6a08e0669bbeeb1bb6114fee",
+      "variantId": "d56c8607-92ca-4f22-846f-7404b0330c10",
+      "url": "https://www.cassiestirman.com/shell-necklaces/p/shell-necklace-13",
+      "images": [
+        {
+          "file": "13.JPG",
+          "imageId": "6a08e0672de870655389fcb7",
+          "status": "READY"
+        },
+        {
+          "file": "13-2.JPG",
+          "imageId": "6a08e06d2de870655389fcba",
+          "status": "READY"
+        }
+      ]
+    },
+    {
+      "root": "14",
+      "sku": 2413,
+      "slug": "shell-necklace-14",
+      "productId": "6a08e0732de870655389fcc2",
+      "variantId": "bc48ee33-6660-44b4-8614-4f0f86a8c764",
+      "url": "https://www.cassiestirman.com/shell-necklaces/p/shell-necklace-14",
+      "images": [
+        {
+          "file": "14.JPG",
+          "imageId": "6a08e0759120657df209d37b",
+          "status": "READY"
+        },
+        {
+          "file": "14-2.JPG",
+          "imageId": "6a08e07e9bbeeb1bb6114ffd",
+          "status": "READY"
+        }
+      ]
+    },
+    {
+      "root": "15",
+      "sku": 2414,
+      "slug": "shell-necklace-15",
+      "productId": "6a08e0859120657df209d386",
+      "variantId": "c91d9fb1-d2dc-4c83-90a2-0842120924c6",
+      "url": "https://www.cassiestirman.com/shell-necklaces/p/shell-necklace-15",
+      "images": [
+        {
+          "file": "15.JPG",
+          "imageId": "6a08e0863508e0735ce4d747",
+          "status": "READY"
+        },
+        {
+          "file": "15-2.JPG",
+          "imageId": "6a08e08c3508e0735ce4d748",
+          "status": "READY"
+        }
+      ]
+    },
+    {
+      "root": "16",
+      "sku": 2415,
+      "slug": "shell-necklace-16",
+      "productId": "6a08e0923508e0735ce4d749",
+      "variantId": "63e22661-7e01-468c-8ef1-98ce76f48422",
+      "url": "https://www.cassiestirman.com/shell-necklaces/p/shell-necklace-16",
+      "images": [
+        {
+          "file": "16.JPG",
+          "imageId": "6a08e0933508e0735ce4d74c",
+          "status": "READY"
+        },
+        {
+          "file": "16-2.JPG",
+          "imageId": "6a08e0999bbeeb1bb6115007",
+          "status": "READY"
+        }
+      ]
+    },
+    {
+      "root": "17",
+      "sku": 2416,
+      "slug": "shell-necklace-17",
+      "productId": "6a08e0a09120657df209d38e",
+      "variantId": "0cf63073-7a46-4ab4-bd4b-5f0689d0361a",
+      "url": "https://www.cassiestirman.com/shell-necklaces/p/shell-necklace-17",
+      "images": [
+        {
+          "file": "17.JPG",
+          "imageId": "6a08e0a19120657df209d38f",
+          "status": "READY"
+        },
+        {
+          "file": "17-2.JPG",
+          "imageId": "6a08e0a69bbeeb1bb611500f",
+          "status": "READY"
+        }
+      ]
+    },
+    {
+      "root": "18",
+      "sku": 2417,
+      "slug": "shell-necklace-18",
+      "productId": "6a08e0ad3508e0735ce4d757",
+      "variantId": "dcbaddfc-2922-47d9-9dd7-8fc7ec7535e7",
+      "url": "https://www.cassiestirman.com/shell-necklaces/p/shell-necklace-18",
+      "images": [
+        {
+          "file": "18.JPG",
+          "imageId": "6a08e0af9bbeeb1bb6115016",
+          "status": "READY"
+        }
+      ]
+    },
+    {
+      "root": "19",
+      "sku": 2418,
+      "slug": "shell-necklace-19",
+      "productId": "6a08e0b69bbeeb1bb611501c",
+      "variantId": "ede4eb32-8d02-4b6b-a56e-e5a8fca77eb6",
+      "url": "https://www.cassiestirman.com/shell-necklaces/p/shell-necklace-19",
+      "images": [
+        {
+          "file": "19.JPG",
+          "imageId": "6a08e0b79bbeeb1bb611501e",
+          "status": "READY"
+        },
+        {
+          "file": "19-2.JPG",
+          "imageId": "6a08e0bc3508e0735ce4d760",
+          "status": "READY"
+        }
+      ]
+    },
+    {
+      "root": "20",
+      "sku": 2419,
+      "slug": "shell-necklace-20",
+      "productId": "6a08e0c32de870655389fcff",
+      "variantId": "d60a7346-9e56-4145-a89d-b183690840d1",
+      "url": "https://www.cassiestirman.com/shell-necklaces/p/shell-necklace-20",
+      "images": [
+        {
+          "file": "20.JPG",
+          "imageId": "6a08e0c52de870655389fd02",
+          "status": "READY"
+        },
+        {
+          "file": "20-2.JPG",
+          "imageId": "6a08e0ca3508e0735ce4d780",
+          "status": "READY"
+        }
+      ]
+    },
+    {
+      "root": "21",
+      "sku": 2420,
+      "slug": "shell-necklace-21",
+      "productId": "6a08e0d19120657df209d3c0",
+      "variantId": "8d702a79-d3db-485c-989f-08b84a856246",
+      "url": "https://www.cassiestirman.com/shell-necklaces/p/shell-necklace-21",
+      "images": [
+        {
+          "file": "21.JPG",
+          "imageId": "6a08e0d29bbeeb1bb6115040",
+          "status": "READY"
+        },
+        {
+          "file": "21-2.JPG",
+          "imageId": "6a08e0d83508e0735ce4d789",
+          "status": "READY"
+        }
+      ]
+    },
+    {
+      "root": "22",
+      "sku": 2421,
+      "slug": "shell-necklace-22",
+      "productId": "6a08e0df9120657df209d3c6",
+      "variantId": "b4e80b05-25d6-4323-b9f2-aa391f4ed6b4",
+      "url": "https://www.cassiestirman.com/shell-necklaces/p/shell-necklace-22",
+      "images": [
+        {
+          "file": "22.JPG",
+          "imageId": "6a08e0e09120657df209d3c7",
+          "status": "READY"
+        },
+        {
+          "file": "22-2.JPG",
+          "imageId": "6a08e0e69120657df209d3cc",
+          "status": "READY"
+        }
+      ]
+    },
+    {
+      "root": "23",
+      "sku": 2422,
+      "slug": "shell-necklace-23",
+      "productId": "6a08e0ec2de870655389fd15",
+      "variantId": "355d1231-efe7-4f07-8b35-e9c5d581f305",
+      "url": "https://www.cassiestirman.com/shell-necklaces/p/shell-necklace-23",
+      "images": [
+        {
+          "file": "23.JPG",
+          "imageId": "6a08e0ed2de870655389fd16",
+          "status": "READY"
+        },
+        {
+          "file": "23-2.JPG",
+          "imageId": "6a08e0f39120657df209d3d6",
+          "status": "READY"
+        }
+      ]
+    },
+    {
+      "root": "24",
+      "sku": 2423,
+      "slug": "shell-necklace-24",
+      "productId": "6a08e0fa9120657df209d3da",
+      "variantId": "68910568-6443-42c3-8df7-a10816c4248e",
+      "url": "https://www.cassiestirman.com/shell-necklaces/p/shell-necklace-24",
+      "images": [
+        {
+          "file": "24.JPG",
+          "imageId": "6a08e0fb3508e0735ce4d79c",
+          "status": "READY"
+        }
+      ]
+    },
+    {
+      "root": "25",
+      "sku": 2424,
+      "slug": "shell-necklace-25",
+      "productId": "6a08e1029120657df209d3e1",
+      "variantId": "d5dc9400-3204-423c-a00b-06b6428bec4e",
+      "url": "https://www.cassiestirman.com/shell-necklaces/p/shell-necklace-25",
+      "images": [
+        {
+          "file": "25.JPG",
+          "imageId": "6a08e1039bbeeb1bb6115068",
+          "status": "READY"
+        },
+        {
+          "file": "25-2.JPG",
+          "imageId": "6a08e1099bbeeb1bb611506b",
+          "status": "READY"
+        }
+      ]
+    },
+    {
+      "root": "26",
+      "sku": 2425,
+      "slug": "shell-necklace-26",
+      "productId": "6a08e1102de870655389fd37",
+      "variantId": "30ef1b6e-d990-4db5-8aa6-bd6e1b55765f",
+      "url": "https://www.cassiestirman.com/shell-necklaces/p/shell-necklace-26",
+      "images": [
+        {
+          "file": "26.JPG",
+          "imageId": "6a08e1113508e0735ce4d7aa",
+          "status": "READY"
+        },
+        {
+          "file": "26-2.JPG",
+          "imageId": "6a08e1179120657df209d3f6",
+          "status": "READY"
+        }
+      ]
+    },
+    {
+      "root": "27",
+      "sku": 2426,
+      "slug": "shell-necklace-27",
+      "productId": "6a08e11d9bbeeb1bb611507a",
+      "variantId": "32aec3f8-35be-4a27-8c65-9362c3a7ac05",
+      "url": "https://www.cassiestirman.com/shell-necklaces/p/shell-necklace-27",
+      "images": [
+        {
+          "file": "27.JPG",
+          "imageId": "6a08e11f9bbeeb1bb611507b",
+          "status": "READY"
+        },
+        {
+          "file": "27-2.JPG",
+          "imageId": "6a08e1243508e0735ce4d7b4",
+          "status": "READY"
+        }
+      ]
+    },
+    {
+      "root": "28",
+      "sku": 2427,
+      "slug": "shell-necklace-28",
+      "productId": "6a08e12b3508e0735ce4d7bc",
+      "variantId": "f3d95f9f-c2e2-4388-aa10-0175d85fc870",
+      "url": "https://www.cassiestirman.com/shell-necklaces/p/shell-necklace-28",
+      "images": [
+        {
+          "file": "28.JPG",
+          "imageId": "6a08e12d9120657df209d406",
+          "status": "READY"
+        },
+        {
+          "file": "28-2.JPG",
+          "imageId": "6a08e1369120657df209d411",
+          "status": "READY"
+        }
+      ]
+    },
+    {
+      "root": "29",
+      "sku": 2428,
+      "slug": "shell-necklace-29",
+      "productId": "6a08e13d9bbeeb1bb6115082",
+      "variantId": "fa4905f9-189c-4a50-ba0b-44c53a5810b2",
+      "url": "https://www.cassiestirman.com/shell-necklaces/p/shell-necklace-29",
+      "images": [
+        {
+          "file": "29.JPG",
+          "imageId": "6a08e13e9120657df209d415",
+          "status": "READY"
+        },
+        {
+          "file": "29-2.JPG",
+          "imageId": "6a08e1433508e0735ce4d7c8",
+          "status": "READY"
+        }
+      ]
+    },
+    {
+      "root": "30",
+      "sku": 2429,
+      "slug": "shell-necklace-30",
+      "productId": "6a08e14d9120657df209d41f",
+      "variantId": "462b8380-5905-488b-b541-143be9a43595",
+      "url": "https://www.cassiestirman.com/shell-necklaces/p/shell-necklace-30",
+      "images": [
+        {
+          "file": "30.JPG",
+          "imageId": "6a08e14f9120657df209d420",
+          "status": "READY"
+        },
+        {
+          "file": "30-2.JPG",
+          "imageId": "6a08e1542de870655389fd58",
+          "status": "READY"
+        }
+      ]
+    },
+    {
+      "root": "31",
+      "sku": 2430,
+      "slug": "shell-necklace-31",
+      "productId": "6a08e15b9bbeeb1bb61150b0",
+      "variantId": "a57a5854-c5fc-4a04-9643-ee54ce05eab8",
+      "url": "https://www.cassiestirman.com/shell-necklaces/p/shell-necklace-31",
+      "images": [
+        {
+          "file": "31.JPG",
+          "imageId": "6a08e15d3508e0735ce4d7e3",
+          "status": "READY"
+        },
+        {
+          "file": "31-2.JPG",
+          "imageId": "6a08e1629bbeeb1bb61150b4",
+          "status": "READY"
+        }
+      ]
+    },
+    {
+      "root": "32",
+      "sku": 2431,
+      "slug": "shell-necklace-32",
+      "productId": "6a08e1739bbeeb1bb61150c3",
+      "variantId": "e093bb3f-153c-42b9-8aaf-f0712630f9e1",
+      "url": "https://www.cassiestirman.com/shell-necklaces/p/shell-necklace-32",
+      "images": [
+        {
+          "file": "32.JPG",
+          "imageId": "6a08e1759bbeeb1bb61150c5",
+          "status": "READY"
+        },
+        {
+          "file": "32-2.JPG",
+          "imageId": "6a08e17a9120657df209d457",
+          "status": "READY"
+        }
+      ]
+    },
+    {
+      "root": "33",
+      "sku": 2432,
+      "slug": "shell-necklace-33",
+      "productId": "6a08e1813508e0735ce4d7fb",
+      "variantId": "09e5a975-cb13-4de3-bc11-c036df1c4d19",
+      "url": "https://www.cassiestirman.com/shell-necklaces/p/shell-necklace-33",
+      "images": [
+        {
+          "file": "33.JPG",
+          "imageId": "6a08e1823508e0735ce4d7fd",
+          "status": "READY"
+        },
+        {
+          "file": "33-2.JPG",
+          "imageId": "6a08e18b2de870655389fd83",
+          "status": "READY"
+        }
+      ]
+    },
+    {
+      "root": "34",
+      "sku": 2433,
+      "slug": "shell-necklace-34",
+      "productId": "6a08e1929bbeeb1bb61150e2",
+      "variantId": "c1ada099-e57d-4143-b206-dcb7388d7431",
+      "url": "https://www.cassiestirman.com/shell-necklaces/p/shell-necklace-34",
+      "images": [
+        {
+          "file": "34.JPG",
+          "imageId": "6a08e1949bbeeb1bb61150e5",
+          "status": "READY"
+        },
+        {
+          "file": "34-2.JPG",
+          "imageId": "6a08e1993508e0735ce4d809",
+          "status": "READY"
+        }
+      ]
+    },
+    {
+      "root": "35",
+      "sku": 2434,
+      "slug": "shell-necklace-35",
+      "productId": "6a08e1a09120657df209d472",
+      "variantId": "33ac3626-36b0-4629-a7d0-58b58c490d04",
+      "url": "https://www.cassiestirman.com/shell-necklaces/p/shell-necklace-35",
+      "images": [
+        {
+          "file": "35.JPG",
+          "imageId": "6a08e1a19120657df209d473",
+          "status": "READY"
+        },
+        {
+          "file": "35-2.JPG",
+          "imageId": "6a08e1a79bbeeb1bb61150ec",
+          "status": "READY"
+        }
+      ]
+    },
+    {
+      "root": "36",
+      "sku": 2435,
+      "slug": "shell-necklace-36",
+      "productId": "6a08e1ad3508e0735ce4d80f",
+      "variantId": "d13b04e0-d53c-45cd-968c-56bd33f0ecfb",
+      "url": "https://www.cassiestirman.com/shell-necklaces/p/shell-necklace-36",
+      "images": [
+        {
+          "file": "36.JPG",
+          "imageId": "6a08e1af2de870655389fd94",
+          "status": "READY"
+        },
+        {
+          "file": "36-2.JPG",
+          "imageId": "6a08e1b49120657df209d482",
+          "status": "READY"
+        }
+      ]
+    },
+    {
+      "root": "37",
+      "sku": 2436,
+      "slug": "shell-necklace-37",
+      "productId": "6a08e1bb2de870655389fd99",
+      "variantId": "92a5c535-2c70-440c-acef-f0d824ed255e",
+      "url": "https://www.cassiestirman.com/shell-necklaces/p/shell-necklace-37",
+      "images": [
+        {
+          "file": "37.JPG",
+          "imageId": "6a08e1bc2de870655389fd9a",
+          "status": "READY"
+        },
+        {
+          "file": "37-2.JPG",
+          "imageId": "6a08e1c29120657df209d48c",
+          "status": "READY"
+        }
+      ]
+    },
+    {
+      "root": "38",
+      "sku": 2437,
+      "slug": "shell-necklace-38",
+      "productId": "6a08e1c82de870655389fda2",
+      "variantId": "599d04ee-412f-4735-b440-e10269126e0d",
+      "url": "https://www.cassiestirman.com/shell-necklaces/p/shell-necklace-38",
+      "images": [
+        {
+          "file": "38.JPG",
+          "imageId": "6a08e1ca9bbeeb1bb6115100",
+          "status": "READY"
+        },
+        {
+          "file": "38-2.JPG",
+          "imageId": "6a08e1cf9120657df209d497",
+          "status": "READY"
+        }
+      ]
+    },
+    {
+      "root": "39",
+      "sku": 2438,
+      "slug": "shell-necklace-39",
+      "productId": "6a08e1d69bbeeb1bb6115103",
+      "variantId": "c1ddef9a-dab8-4b76-9db2-f38e3055f9f6",
+      "url": "https://www.cassiestirman.com/shell-necklaces/p/shell-necklace-39",
+      "images": [
+        {
+          "file": "39.JPG",
+          "imageId": "6a08e1d79bbeeb1bb6115104",
+          "status": "READY"
+        },
+        {
+          "file": "39-2.JPG",
+          "imageId": "6a08e1dd2de870655389fdc0",
+          "status": "READY"
+        }
+      ]
+    },
+    {
+      "root": "40",
+      "sku": 2439,
+      "slug": "shell-necklace-40",
+      "productId": "6a08e1e42de870655389fdc2",
+      "variantId": "c17e9bb3-3eab-4272-99ec-5d6515b0110a",
+      "url": "https://www.cassiestirman.com/shell-necklaces/p/shell-necklace-40",
+      "images": [
+        {
+          "file": "40.JPG",
+          "imageId": "6a08e1e59bbeeb1bb6115118",
+          "status": "READY"
+        },
+        {
+          "file": "40-2.JPG",
+          "imageId": "6a08e1eb3508e0735ce4d836",
+          "status": "READY"
+        }
+      ]
+    },
+    {
+      "root": "41",
+      "sku": 2440,
+      "slug": "shell-necklace-41",
+      "productId": "6a08e1f13508e0735ce4d83a",
+      "variantId": "f1480c4f-8ddd-4f73-a5cd-ea2039ffbe10",
+      "url": "https://www.cassiestirman.com/shell-necklaces/p/shell-necklace-41",
+      "images": [
+        {
+          "file": "41.JPG",
+          "imageId": "6a08e1f33508e0735ce4d83b",
+          "status": "READY"
+        },
+        {
+          "file": "41-2.JPG",
+          "imageId": "6a08e1f99120657df209d4b8",
+          "status": "READY"
+        }
+      ]
+    },
+    {
+      "root": "42",
+      "sku": 2441,
+      "slug": "shell-necklace-42",
+      "productId": "6a08e2003508e0735ce4d844",
+      "variantId": "76bc6762-6990-4e48-94e4-24dcc3401792",
+      "url": "https://www.cassiestirman.com/shell-necklaces/p/shell-necklace-42",
+      "images": [
+        {
+          "file": "42.JPG",
+          "imageId": "6a08e2022de870655389fdce",
+          "status": "READY"
+        },
+        {
+          "file": "42-2.JPG",
+          "imageId": "6a08e2079bbeeb1bb611511d",
+          "status": "READY"
+        }
+      ]
+    },
+    {
+      "root": "43",
+      "sku": 2442,
+      "slug": "shell-necklace-43",
+      "productId": "6a08e20e9120657df209d4c5",
+      "variantId": "209b1445-cc64-4cb1-aef0-f21aa7ff952e",
+      "url": "https://www.cassiestirman.com/shell-necklaces/p/shell-necklace-43",
+      "images": [
+        {
+          "file": "43.JPG",
+          "imageId": "6a08e20f2de870655389fdd6",
+          "status": "READY"
+        },
+        {
+          "file": "43-2.JPG",
+          "imageId": "6a08e2153508e0735ce4d853",
+          "status": "READY"
+        }
+      ]
+    },
+    {
+      "root": "44",
+      "sku": 2443,
+      "slug": "shell-necklace-44",
+      "productId": "6a08e21c3508e0735ce4d856",
+      "variantId": "5b6e4e05-0e38-479a-9eee-917fff5b3323",
+      "url": "https://www.cassiestirman.com/shell-necklaces/p/shell-necklace-44",
+      "images": [
+        {
+          "file": "44.JPG",
+          "imageId": "6a08e21d3508e0735ce4d858",
+          "status": "READY"
+        },
+        {
+          "file": "44-2.JPG",
+          "imageId": "6a08e2229120657df209d4ca",
+          "status": "READY"
+        }
+      ]
+    },
+    {
+      "root": "45",
+      "sku": 2444,
+      "slug": "shell-necklace-45",
+      "productId": "6a08e2299bbeeb1bb6115131",
+      "variantId": "f000a139-f4e9-46d0-ab1b-d6961920dcee",
+      "url": "https://www.cassiestirman.com/shell-necklaces/p/shell-necklace-45",
+      "images": [
+        {
+          "file": "45.JPG",
+          "imageId": "6a08e22a9bbeeb1bb6115132",
+          "status": "READY"
+        },
+        {
+          "file": "45-2.JPG",
+          "imageId": "6a08e2309120657df209d4d4",
+          "status": "READY"
+        }
+      ]
+    },
+    {
+      "root": "46",
+      "sku": 2445,
+      "slug": "shell-necklace-46",
+      "productId": "6a08e2379bbeeb1bb6115138",
+      "variantId": "4c19a6cd-780a-4520-9ad1-722fba16047c",
+      "url": "https://www.cassiestirman.com/shell-necklaces/p/shell-necklace-46",
+      "images": [
+        {
+          "file": "46.JPG",
+          "imageId": "6a08e2382de870655389fded",
+          "status": "READY"
+        },
+        {
+          "file": "46-2.JPG",
+          "imageId": "6a08e23d3508e0735ce4d86d",
+          "status": "READY"
+        }
+      ]
+    },
+    {
+      "root": "47",
+      "sku": 2446,
+      "slug": "shell-necklace-47",
+      "productId": "6a08e2449120657df209d4e6",
+      "variantId": "200af2f2-65d5-45c8-b640-71cbd75a284a",
+      "url": "https://www.cassiestirman.com/shell-necklaces/p/shell-necklace-47",
+      "images": [
+        {
+          "file": "47.JPG",
+          "imageId": "6a08e2469bbeeb1bb6115142",
+          "status": "READY"
+        },
+        {
+          "file": "47-2.JPG",
+          "imageId": "6a08e24b3508e0735ce4d873",
+          "status": "READY"
+        }
+      ]
+    },
+    {
+      "root": "48",
+      "sku": 2447,
+      "slug": "shell-necklace-48",
+      "productId": "6a08e2522de870655389fdf9",
+      "variantId": "7357b8d4-9259-4aae-98da-34e5a783d621",
+      "url": "https://www.cassiestirman.com/shell-necklaces/p/shell-necklace-48",
+      "images": [
+        {
+          "file": "48.JPG",
+          "imageId": "6a08e2542de870655389fdfa",
+          "status": "READY"
+        },
+        {
+          "file": "48-2.JPG",
+          "imageId": "6a08e25a9120657df209d4ed",
+          "status": "READY"
+        }
+      ]
+    },
+    {
+      "root": "49",
+      "sku": 2448,
+      "slug": "shell-necklace-49",
+      "productId": "6a08e2613508e0735ce4d87f",
+      "variantId": "03157ec2-3449-4ba5-9775-1e6557bfa54f",
+      "url": "https://www.cassiestirman.com/shell-necklaces/p/shell-necklace-49",
+      "images": [
+        {
+          "file": "49.JPG",
+          "imageId": "6a08e2629bbeeb1bb6115153",
+          "status": "READY"
+        },
+        {
+          "file": "49-2.JPG",
+          "imageId": "6a08e2683508e0735ce4d8a2",
+          "status": "READY"
+        }
+      ]
+    },
+    {
+      "root": "50",
+      "sku": 2449,
+      "slug": "shell-necklace-50",
+      "productId": "6a08e26f9120657df209d50e",
+      "variantId": "5cb23d2a-23b2-43c9-957f-7ae52ab0b5a3",
+      "url": "https://www.cassiestirman.com/shell-necklaces/p/shell-necklace-50",
+      "images": [
+        {
+          "file": "50.JPG",
+          "imageId": "6a08e2702de870655389fe1b",
+          "status": "READY"
+        },
+        {
+          "file": "50-2.JPG",
+          "imageId": "6a08e2759bbeeb1bb611516f",
+          "status": "READY"
+        }
+      ]
+    },
+    {
+      "root": "52",
+      "sku": 2450,
+      "slug": "shell-necklace-52",
+      "productId": "6a08e27c9120657df209d51b",
+      "variantId": "e3b9e038-a855-49d7-8404-1c43cd4a8e4d",
+      "url": "https://www.cassiestirman.com/shell-necklaces/p/shell-necklace-52",
+      "images": [
+        {
+          "file": "52.JPG",
+          "imageId": "6a08e27d9120657df209d51c",
+          "status": "READY"
+        },
+        {
+          "file": "52-2.JPG",
+          "imageId": "6a08e2832de870655389fe23",
+          "status": "READY"
+        }
+      ]
+    },
+    {
+      "root": "53",
+      "sku": 2451,
+      "slug": "shell-necklace-53",
+      "productId": "6a08e28a9120657df209d528",
+      "variantId": "cc9f76d8-2b1a-4e13-984e-929e1781a493",
+      "url": "https://www.cassiestirman.com/shell-necklaces/p/shell-necklace-53",
+      "images": [
+        {
+          "file": "53.JPG",
+          "imageId": "6a08e28b3508e0735ce4d8b0",
+          "status": "READY"
+        },
+        {
+          "file": "53-2.JPG",
+          "imageId": "6a08e2949120657df209d530",
+          "status": "READY"
+        }
+      ]
+    },
+    {
+      "root": "54",
+      "sku": 2452,
+      "slug": "shell-necklace-54",
+      "productId": "6a08e29a9120657df209d535",
+      "variantId": "1f9cd74a-9182-4d91-bf1f-f3d12cfbb4a2",
+      "url": "https://www.cassiestirman.com/shell-necklaces/p/shell-necklace-54",
+      "images": [
+        {
+          "file": "54.JPG",
+          "imageId": "6a08e29c9bbeeb1bb6115187",
+          "status": "READY"
+        },
+        {
+          "file": "54-2.JPG",
+          "imageId": "6a08e2a19bbeeb1bb6115189",
+          "status": "READY"
+        }
+      ]
+    }
+  ],
+  "skipped": [
+    {
+      "root": "1",
+      "sku": 2400,
+      "slug": "shell-necklace-1",
+      "productId": "6a08dfbe9120657df209d2f6"
+    }
+  ],
+  "uploads": [
+    {
+      "productId": "6a08dfdf9120657df209d304",
+      "root": "2",
+      "file": "2.JPG",
+      "imageId": "6a08dfe02de870655389fc43",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08dfdf9120657df209d304",
+      "root": "2",
+      "file": "2-2.JPG",
+      "imageId": "6a08dfe59120657df209d309",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08dfec9120657df209d30f",
+      "root": "3",
+      "file": "3.JPG",
+      "imageId": "6a08dfed2de870655389fc4e",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08dfec9120657df209d30f",
+      "root": "3",
+      "file": "3-2.JPG",
+      "imageId": "6a08dff33508e0735ce4d6b7",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08dffd3508e0735ce4d6c0",
+      "root": "4",
+      "file": "4.JPG",
+      "imageId": "6a08dffe9120657df209d325",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08dffd3508e0735ce4d6c0",
+      "root": "4",
+      "file": "4-2.JPG",
+      "imageId": "6a08e0042de870655389fc65",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e00b9120657df209d330",
+      "root": "5",
+      "file": "5.JPG",
+      "imageId": "6a08e00c9120657df209d331",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e0139bbeeb1bb6114fab",
+      "root": "6",
+      "file": "6.JPG",
+      "imageId": "6a08e0149bbeeb1bb6114fac",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e0139bbeeb1bb6114fab",
+      "root": "6",
+      "file": "6-2.JPG",
+      "imageId": "6a08e0199120657df209d33c",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e0203508e0735ce4d6e1",
+      "root": "7",
+      "file": "7.JPG",
+      "imageId": "6a08e0229120657df209d343",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e0203508e0735ce4d6e1",
+      "root": "7",
+      "file": "7-2.JPG",
+      "imageId": "6a08e0279120657df209d34a",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e02e2de870655389fc88",
+      "root": "8",
+      "file": "8.JPG",
+      "imageId": "6a08e02f9bbeeb1bb6114fc4",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e0379120657df209d352",
+      "root": "9",
+      "file": "9.JPG",
+      "imageId": "6a08e0382de870655389fc8f",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e0379120657df209d352",
+      "root": "9",
+      "file": "9-2.JPG",
+      "imageId": "6a08e0413508e0735ce4d704",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e0483508e0735ce4d70d",
+      "root": "10",
+      "file": "10.JPG",
+      "imageId": "6a08e0499120657df209d361",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e0483508e0735ce4d70d",
+      "root": "10",
+      "file": "10-2.JPG",
+      "imageId": "6a08e04f9bbeeb1bb6114fdf",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e0562de870655389fca9",
+      "root": "11",
+      "file": "11.JPG",
+      "imageId": "6a08e0573508e0735ce4d71b",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e05d9bbeeb1bb6114fe7",
+      "root": "12",
+      "file": "12.JPG",
+      "imageId": "6a08e05f9bbeeb1bb6114fea",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e0669bbeeb1bb6114fee",
+      "root": "13",
+      "file": "13.JPG",
+      "imageId": "6a08e0672de870655389fcb7",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e0669bbeeb1bb6114fee",
+      "root": "13",
+      "file": "13-2.JPG",
+      "imageId": "6a08e06d2de870655389fcba",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e0732de870655389fcc2",
+      "root": "14",
+      "file": "14.JPG",
+      "imageId": "6a08e0759120657df209d37b",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e0732de870655389fcc2",
+      "root": "14",
+      "file": "14-2.JPG",
+      "imageId": "6a08e07e9bbeeb1bb6114ffd",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e0859120657df209d386",
+      "root": "15",
+      "file": "15.JPG",
+      "imageId": "6a08e0863508e0735ce4d747",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e0859120657df209d386",
+      "root": "15",
+      "file": "15-2.JPG",
+      "imageId": "6a08e08c3508e0735ce4d748",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e0923508e0735ce4d749",
+      "root": "16",
+      "file": "16.JPG",
+      "imageId": "6a08e0933508e0735ce4d74c",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e0923508e0735ce4d749",
+      "root": "16",
+      "file": "16-2.JPG",
+      "imageId": "6a08e0999bbeeb1bb6115007",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e0a09120657df209d38e",
+      "root": "17",
+      "file": "17.JPG",
+      "imageId": "6a08e0a19120657df209d38f",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e0a09120657df209d38e",
+      "root": "17",
+      "file": "17-2.JPG",
+      "imageId": "6a08e0a69bbeeb1bb611500f",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e0ad3508e0735ce4d757",
+      "root": "18",
+      "file": "18.JPG",
+      "imageId": "6a08e0af9bbeeb1bb6115016",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e0b69bbeeb1bb611501c",
+      "root": "19",
+      "file": "19.JPG",
+      "imageId": "6a08e0b79bbeeb1bb611501e",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e0b69bbeeb1bb611501c",
+      "root": "19",
+      "file": "19-2.JPG",
+      "imageId": "6a08e0bc3508e0735ce4d760",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e0c32de870655389fcff",
+      "root": "20",
+      "file": "20.JPG",
+      "imageId": "6a08e0c52de870655389fd02",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e0c32de870655389fcff",
+      "root": "20",
+      "file": "20-2.JPG",
+      "imageId": "6a08e0ca3508e0735ce4d780",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e0d19120657df209d3c0",
+      "root": "21",
+      "file": "21.JPG",
+      "imageId": "6a08e0d29bbeeb1bb6115040",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e0d19120657df209d3c0",
+      "root": "21",
+      "file": "21-2.JPG",
+      "imageId": "6a08e0d83508e0735ce4d789",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e0df9120657df209d3c6",
+      "root": "22",
+      "file": "22.JPG",
+      "imageId": "6a08e0e09120657df209d3c7",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e0df9120657df209d3c6",
+      "root": "22",
+      "file": "22-2.JPG",
+      "imageId": "6a08e0e69120657df209d3cc",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e0ec2de870655389fd15",
+      "root": "23",
+      "file": "23.JPG",
+      "imageId": "6a08e0ed2de870655389fd16",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e0ec2de870655389fd15",
+      "root": "23",
+      "file": "23-2.JPG",
+      "imageId": "6a08e0f39120657df209d3d6",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e0fa9120657df209d3da",
+      "root": "24",
+      "file": "24.JPG",
+      "imageId": "6a08e0fb3508e0735ce4d79c",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e1029120657df209d3e1",
+      "root": "25",
+      "file": "25.JPG",
+      "imageId": "6a08e1039bbeeb1bb6115068",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e1029120657df209d3e1",
+      "root": "25",
+      "file": "25-2.JPG",
+      "imageId": "6a08e1099bbeeb1bb611506b",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e1102de870655389fd37",
+      "root": "26",
+      "file": "26.JPG",
+      "imageId": "6a08e1113508e0735ce4d7aa",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e1102de870655389fd37",
+      "root": "26",
+      "file": "26-2.JPG",
+      "imageId": "6a08e1179120657df209d3f6",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e11d9bbeeb1bb611507a",
+      "root": "27",
+      "file": "27.JPG",
+      "imageId": "6a08e11f9bbeeb1bb611507b",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e11d9bbeeb1bb611507a",
+      "root": "27",
+      "file": "27-2.JPG",
+      "imageId": "6a08e1243508e0735ce4d7b4",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e12b3508e0735ce4d7bc",
+      "root": "28",
+      "file": "28.JPG",
+      "imageId": "6a08e12d9120657df209d406",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e12b3508e0735ce4d7bc",
+      "root": "28",
+      "file": "28-2.JPG",
+      "imageId": "6a08e1369120657df209d411",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e13d9bbeeb1bb6115082",
+      "root": "29",
+      "file": "29.JPG",
+      "imageId": "6a08e13e9120657df209d415",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e13d9bbeeb1bb6115082",
+      "root": "29",
+      "file": "29-2.JPG",
+      "imageId": "6a08e1433508e0735ce4d7c8",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e14d9120657df209d41f",
+      "root": "30",
+      "file": "30.JPG",
+      "imageId": "6a08e14f9120657df209d420",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e14d9120657df209d41f",
+      "root": "30",
+      "file": "30-2.JPG",
+      "imageId": "6a08e1542de870655389fd58",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e15b9bbeeb1bb61150b0",
+      "root": "31",
+      "file": "31.JPG",
+      "imageId": "6a08e15d3508e0735ce4d7e3",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e15b9bbeeb1bb61150b0",
+      "root": "31",
+      "file": "31-2.JPG",
+      "imageId": "6a08e1629bbeeb1bb61150b4",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e1739bbeeb1bb61150c3",
+      "root": "32",
+      "file": "32.JPG",
+      "imageId": "6a08e1759bbeeb1bb61150c5",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e1739bbeeb1bb61150c3",
+      "root": "32",
+      "file": "32-2.JPG",
+      "imageId": "6a08e17a9120657df209d457",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e1813508e0735ce4d7fb",
+      "root": "33",
+      "file": "33.JPG",
+      "imageId": "6a08e1823508e0735ce4d7fd",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e1813508e0735ce4d7fb",
+      "root": "33",
+      "file": "33-2.JPG",
+      "imageId": "6a08e18b2de870655389fd83",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e1929bbeeb1bb61150e2",
+      "root": "34",
+      "file": "34.JPG",
+      "imageId": "6a08e1949bbeeb1bb61150e5",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e1929bbeeb1bb61150e2",
+      "root": "34",
+      "file": "34-2.JPG",
+      "imageId": "6a08e1993508e0735ce4d809",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e1a09120657df209d472",
+      "root": "35",
+      "file": "35.JPG",
+      "imageId": "6a08e1a19120657df209d473",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e1a09120657df209d472",
+      "root": "35",
+      "file": "35-2.JPG",
+      "imageId": "6a08e1a79bbeeb1bb61150ec",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e1ad3508e0735ce4d80f",
+      "root": "36",
+      "file": "36.JPG",
+      "imageId": "6a08e1af2de870655389fd94",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e1ad3508e0735ce4d80f",
+      "root": "36",
+      "file": "36-2.JPG",
+      "imageId": "6a08e1b49120657df209d482",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e1bb2de870655389fd99",
+      "root": "37",
+      "file": "37.JPG",
+      "imageId": "6a08e1bc2de870655389fd9a",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e1bb2de870655389fd99",
+      "root": "37",
+      "file": "37-2.JPG",
+      "imageId": "6a08e1c29120657df209d48c",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e1c82de870655389fda2",
+      "root": "38",
+      "file": "38.JPG",
+      "imageId": "6a08e1ca9bbeeb1bb6115100",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e1c82de870655389fda2",
+      "root": "38",
+      "file": "38-2.JPG",
+      "imageId": "6a08e1cf9120657df209d497",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e1d69bbeeb1bb6115103",
+      "root": "39",
+      "file": "39.JPG",
+      "imageId": "6a08e1d79bbeeb1bb6115104",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e1d69bbeeb1bb6115103",
+      "root": "39",
+      "file": "39-2.JPG",
+      "imageId": "6a08e1dd2de870655389fdc0",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e1e42de870655389fdc2",
+      "root": "40",
+      "file": "40.JPG",
+      "imageId": "6a08e1e59bbeeb1bb6115118",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e1e42de870655389fdc2",
+      "root": "40",
+      "file": "40-2.JPG",
+      "imageId": "6a08e1eb3508e0735ce4d836",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e1f13508e0735ce4d83a",
+      "root": "41",
+      "file": "41.JPG",
+      "imageId": "6a08e1f33508e0735ce4d83b",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e1f13508e0735ce4d83a",
+      "root": "41",
+      "file": "41-2.JPG",
+      "imageId": "6a08e1f99120657df209d4b8",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e2003508e0735ce4d844",
+      "root": "42",
+      "file": "42.JPG",
+      "imageId": "6a08e2022de870655389fdce",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e2003508e0735ce4d844",
+      "root": "42",
+      "file": "42-2.JPG",
+      "imageId": "6a08e2079bbeeb1bb611511d",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e20e9120657df209d4c5",
+      "root": "43",
+      "file": "43.JPG",
+      "imageId": "6a08e20f2de870655389fdd6",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e20e9120657df209d4c5",
+      "root": "43",
+      "file": "43-2.JPG",
+      "imageId": "6a08e2153508e0735ce4d853",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e21c3508e0735ce4d856",
+      "root": "44",
+      "file": "44.JPG",
+      "imageId": "6a08e21d3508e0735ce4d858",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e21c3508e0735ce4d856",
+      "root": "44",
+      "file": "44-2.JPG",
+      "imageId": "6a08e2229120657df209d4ca",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e2299bbeeb1bb6115131",
+      "root": "45",
+      "file": "45.JPG",
+      "imageId": "6a08e22a9bbeeb1bb6115132",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e2299bbeeb1bb6115131",
+      "root": "45",
+      "file": "45-2.JPG",
+      "imageId": "6a08e2309120657df209d4d4",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e2379bbeeb1bb6115138",
+      "root": "46",
+      "file": "46.JPG",
+      "imageId": "6a08e2382de870655389fded",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e2379bbeeb1bb6115138",
+      "root": "46",
+      "file": "46-2.JPG",
+      "imageId": "6a08e23d3508e0735ce4d86d",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e2449120657df209d4e6",
+      "root": "47",
+      "file": "47.JPG",
+      "imageId": "6a08e2469bbeeb1bb6115142",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e2449120657df209d4e6",
+      "root": "47",
+      "file": "47-2.JPG",
+      "imageId": "6a08e24b3508e0735ce4d873",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e2522de870655389fdf9",
+      "root": "48",
+      "file": "48.JPG",
+      "imageId": "6a08e2542de870655389fdfa",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e2522de870655389fdf9",
+      "root": "48",
+      "file": "48-2.JPG",
+      "imageId": "6a08e25a9120657df209d4ed",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e2613508e0735ce4d87f",
+      "root": "49",
+      "file": "49.JPG",
+      "imageId": "6a08e2629bbeeb1bb6115153",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e2613508e0735ce4d87f",
+      "root": "49",
+      "file": "49-2.JPG",
+      "imageId": "6a08e2683508e0735ce4d8a2",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e26f9120657df209d50e",
+      "root": "50",
+      "file": "50.JPG",
+      "imageId": "6a08e2702de870655389fe1b",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e26f9120657df209d50e",
+      "root": "50",
+      "file": "50-2.JPG",
+      "imageId": "6a08e2759bbeeb1bb611516f",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e27c9120657df209d51b",
+      "root": "52",
+      "file": "52.JPG",
+      "imageId": "6a08e27d9120657df209d51c",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e27c9120657df209d51b",
+      "root": "52",
+      "file": "52-2.JPG",
+      "imageId": "6a08e2832de870655389fe23",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e28a9120657df209d528",
+      "root": "53",
+      "file": "53.JPG",
+      "imageId": "6a08e28b3508e0735ce4d8b0",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e28a9120657df209d528",
+      "root": "53",
+      "file": "53-2.JPG",
+      "imageId": "6a08e2949120657df209d530",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e29a9120657df209d535",
+      "root": "54",
+      "file": "54.JPG",
+      "imageId": "6a08e29c9bbeeb1bb6115187",
+      "status": "READY"
+    },
+    {
+      "productId": "6a08e29a9120657df209d535",
+      "root": "54",
+      "file": "54-2.JPG",
+      "imageId": "6a08e2a19bbeeb1bb6115189",
+      "status": "READY"
+    }
+  ]
+}
