@@ -24,7 +24,7 @@ DEFAULT_DESCRIPTION = (
 DEFAULT_PRICE = "111"
 DEFAULT_QUANTITY = "1"
 DEFAULT_TAGS = "Jewelry"
-DEFAULT_CATEGORY = "Shell Neclaces"
+DEFAULT_CATEGORY = "Shell Necklaces"
 DEFAULT_VISIBILITY = "Public"
 IMAGE_EXTS = {".jpg", ".jpeg", ".png", ".webp", ".heic", ".heif"}
 

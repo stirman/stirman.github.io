@@ -11,7 +11,7 @@ Every product should share these values:
 - Price: `$111`
 - Quantity: `1`
 - Tags: `Jewelry`
-- Categories: `Shell Neclaces`
+- Categories: `Shell Necklaces`
 - Visibility: `Public`
 
 Only these vary per product:
@@ -43,5 +43,4 @@ Before the final CSV import, confirm:
 
 1. The actual image folder path on the Mac mini.
 2. The public image URL prefix, if Squarespace needs image URLs rather than local file paths in the CSV.
-3. Whether `Shell Neclaces` is intentionally spelled that way or should be `Shell Necklaces`.
-4. The target Squarespace Product Page/store slug if the exported template requires a `Product Page` column.
+3. The target Squarespace Product Page/store slug if the exported template requires a `Product Page` column.
