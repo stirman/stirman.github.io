@@ -35,6 +35,12 @@ cd /Users/rosie/clawd/stirman/stirman.github.io/cs-images
 ./generate_shell_import_csv.py /path/to/images -o shell-necklace-import.csv --image-base-url 'https://example.com/path-to-uploaded-images'
 ```
 
+For a small trial batch, limit the output to specific filename roots:
+
+```bash
+./generate_shell_import_csv.py /path/to/images -o shell-necklace-import-trial-first-2.csv --leading-slash --roots 1,2
+```
+
 If the Squarespace import template expects slugs with a leading slash, add `--leading-slash`.
 
 ## Final import details still needed

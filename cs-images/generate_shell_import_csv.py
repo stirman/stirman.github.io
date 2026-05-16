@@ -60,11 +60,14 @@ def image_value(path: Path, image_base_url: str | None) -> str:
     return str(path)
 
 
-def build_rows(image_dir: Path, start_sku: int, image_base_url: str | None, leading_slash: bool):
+def build_rows(image_dir: Path, start_sku: int, image_base_url: str | None, leading_slash: bool, roots: set[str] | None = None):
     files = [p for p in image_dir.iterdir() if p.is_file() and p.suffix.lower() in IMAGE_EXTS]
     grouped: dict[str, list[Path]] = {}
     for path in files:
-        grouped.setdefault(filename_root(path), []).append(path)
+        root = filename_root(path)
+        if roots is not None and root not in roots:
+            continue
+        grouped.setdefault(root, []).append(path)
 
     rows = []
     for offset, root in enumerate(sorted(grouped, key=natural_key)):
@@ -95,12 +98,14 @@ def main() -> int:
     parser.add_argument("--start-sku", type=int, default=2400, help="First SKU; increments by 1 per product")
     parser.add_argument("--image-base-url", help="Optional public URL prefix for images; otherwise local paths are written")
     parser.add_argument("--leading-slash", action="store_true", help="Prefix URL Slug values with / if the import template requires it")
+    parser.add_argument("--roots", help="Optional comma-separated filename roots to include, e.g. 1,2 for a trial import")
     args = parser.parse_args()
 
     if not args.image_dir.is_dir():
         raise SystemExit(f"Image folder not found: {args.image_dir}")
 
-    rows = build_rows(args.image_dir, args.start_sku, args.image_base_url, args.leading_slash)
+    roots = {part.strip() for part in args.roots.split(",") if part.strip()} if args.roots else None
+    rows = build_rows(args.image_dir, args.start_sku, args.image_base_url, args.leading_slash, roots)
     if not rows:
         raise SystemExit(f"No supported image files found in {args.image_dir}")
 
