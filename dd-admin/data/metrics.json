@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-05-17T21:05:47Z",
-  "generatedAtHuman": "May 17, 2026 at 02:05 PM PDT",
+  "generatedAt": "2026-05-17T22:05:48Z",
+  "generatedAtHuman": "May 17, 2026 at 03:05 PM PDT",
   "source": "hourly-cache",
   "refreshCadenceMinutes": 60,
   "overview": {
@@ -11,7 +11,7 @@
     "premium": 14,
     "paidSubscribers": 4,
     "retainedUsers": 7,
-    "insights30": 61,
+    "insights30": 62,
     "entries30": 0,
     "cardImages30": 46
   },
@@ -138,11 +138,11 @@
       "displayName": "Cassandra Stirman",
       "email": "cassiestirman@gmail.com",
       "createdAt": "2025-11-01T22:59:06Z",
-      "lastLoginAt": "2026-05-16T04:47:14Z",
-      "lastActiveAt": "2026-05-16T04:47:14Z",
+      "lastLoginAt": "2026-05-17T21:22:53Z",
+      "lastActiveAt": "2026-05-17T21:22:53Z",
       "isPaidSubscriber": false,
       "grantedPremium": true,
-      "insights30": 21,
+      "insights30": 22,
       "cardImages30": 14,
       "retained": true
     },
@@ -817,7 +817,7 @@
       {
         "date": "2026-05-17",
         "label": "May 17",
-        "count": 0
+        "count": 1
       }
     ],
     "dailyCardImages": [
