@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-05-19T14:05:48Z",
-  "generatedAtHuman": "May 19, 2026 at 07:05 AM PDT",
+  "generatedAt": "2026-05-19T15:05:49Z",
+  "generatedAtHuman": "May 19, 2026 at 08:05 AM PDT",
   "source": "hourly-cache",
   "refreshCadenceMinutes": 60,
   "overview": {
-    "totalUsers": 50,
-    "launchUsers": 46,
-    "active7": 9,
-    "active30": 49,
-    "premium": 14,
-    "paidSubscribers": 4,
+    "totalUsers": 51,
+    "launchUsers": 47,
+    "active7": 10,
+    "active30": 50,
+    "premium": 15,
+    "paidSubscribers": 5,
     "retainedUsers": 7,
     "insights30": 62,
     "entries30": 0,
@@ -641,6 +641,19 @@
       "retained": false
     },
     {
+      "id": "AnbEeAOs2dNOCg09kThMN0gdtYH3",
+      "displayName": "Veronica Villa",
+      "email": "d64dmnd955@privaterelay.appleid.com",
+      "createdAt": "2026-05-19T14:14:04Z",
+      "lastLoginAt": "2026-05-19T14:14:04Z",
+      "lastActiveAt": "2026-05-19T14:14:04Z",
+      "isPaidSubscriber": true,
+      "grantedPremium": false,
+      "insights30": 0,
+      "cardImages30": 0,
+      "retained": false
+    },
+    {
       "id": "ZBcmc5cVeAblm8BSA0KG29PjxwU2",
       "displayName": "vpgsdy76p2@privaterelay.appleid.com",
       "email": "vpgsdy76p2@privaterelay.appleid.com",
@@ -1111,7 +1124,7 @@
       {
         "date": "2026-05-19",
         "label": "May 19",
-        "count": 48
+        "count": 49
       }
     ],
     "dailyCosts": [
@@ -1697,7 +1710,7 @@
     ],
     "error": null,
     "subscriptionPrice": 7.99,
-    "estimatedRevenue": 31.96,
-    "grossMargin": -154.65
+    "estimatedRevenue": 39.95,
+    "grossMargin": -146.66
   }
 }
