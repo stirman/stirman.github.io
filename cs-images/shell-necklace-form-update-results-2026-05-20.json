@@ -1,0 +1,26 @@
+{
+  "updatedAt": "2026-05-20T21:37:59.609Z",
+  "task": "HAR-3663 New Necklaces",
+  "targetCount": 6,
+  "formName": "Necklace Length",
+  "formId": "6a09f91a888e7f148c516238",
+  "results": [
+    {"id":"6a0e281f9bbeeb1bb6151abd","status":"already","slug":"shell-necklace-55","productFormId":"6a09f91a888e7f148c516238"},
+    {"id":"6a0e28323fda827df9c93bea","status":200,"slug":"shell-necklace-56","productFormId":"6a09f91a888e7f148c516238"},
+    {"id":"6a0e28433fda827df9c93bfd","status":200,"slug":"shell-necklace-57","productFormId":"6a09f91a888e7f148c516238"},
+    {"id":"6a0e28563fda827df9c93c11","status":200,"slug":"shell-necklace-58","productFormId":"6a09f91a888e7f148c516238"},
+    {"id":"6a0e286970b3434503891e3d","status":200,"slug":"shell-necklace-59","productFormId":"6a09f91a888e7f148c516238"},
+    {"id":"6a0e287c68dc3c55cb48db8a","status":200,"slug":"shell-necklace-60","productFormId":"6a09f91a888e7f148c516238"}
+  ],
+  "verification": {
+    "allHaveForm": true,
+    "allDescriptionsOk": true,
+    "allHaveTwoImages": true,
+    "skus": ["2453", "2454", "2455", "2456", "2457", "2458"],
+    "publicSmokeTest": {
+      "url": "https://www.cassiestirman.com/shell-necklaces/p/shell-necklace-60",
+      "result": "Add To Cart opens the Necklace Length dialog with required radio options 16\" and 18\"."
+    }
+  },
+  "note": "Applied the existing Necklace Length product form to the six 2026-05-20 add-on products through the authenticated Squarespace admin API, matching HAR-3660's completed setup."
+}

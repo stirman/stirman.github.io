@@ -1,0 +1,235 @@
+{
+  "storePageId": "6a08dc5749069658966bc2d3",
+  "imageDir": "/Users/rosie/Documents/Shell Necklaces 5-20-26",
+  "mappingNote": "Source filenames 54-59 were mapped to shell-necklace-55 through shell-necklace-60 because shell-necklace-54 already existed from the previous import.",
+  "createdCount": 6,
+  "skippedCount": 0,
+  "uploadCount": 12,
+  "created": [
+    {
+      "sourceRoot": "54",
+      "productNumber": 55,
+      "sku": 2453,
+      "slug": "shell-necklace-55",
+      "productId": "6a0e281f9bbeeb1bb6151abd",
+      "variantId": "a0a59f4b-8b48-4eae-b99b-ba4abd7f6e93",
+      "url": "https://www.cassiestirman.com/shell-necklaces/p/shell-necklace-55",
+      "images": [
+        {
+          "file": "54.png",
+          "imageId": "6a0e28239bbeeb1bb6151ac2",
+          "status": "READY"
+        },
+        {
+          "file": "54-1.png",
+          "imageId": "6a0e282b3fda827df9c93be2",
+          "status": "READY"
+        }
+      ]
+    },
+    {
+      "sourceRoot": "55",
+      "productNumber": 56,
+      "sku": 2454,
+      "slug": "shell-necklace-56",
+      "productId": "6a0e28323fda827df9c93bea",
+      "variantId": "9773cf56-fbc3-44a2-bba1-718496e54091",
+      "url": "https://www.cassiestirman.com/shell-necklaces/p/shell-necklace-56",
+      "images": [
+        {
+          "file": "55.png",
+          "imageId": "6a0e28343fda827df9c93beb",
+          "status": "READY"
+        },
+        {
+          "file": "55-1.png",
+          "imageId": "6a0e283d70b3434503891e18",
+          "status": "READY"
+        }
+      ]
+    },
+    {
+      "sourceRoot": "56",
+      "productNumber": 57,
+      "sku": 2455,
+      "slug": "shell-necklace-57",
+      "productId": "6a0e28433fda827df9c93bfd",
+      "variantId": "0af5d134-53dd-4e3a-9501-9ac68d587fa1",
+      "url": "https://www.cassiestirman.com/shell-necklaces/p/shell-necklace-57",
+      "images": [
+        {
+          "file": "56.png",
+          "imageId": "6a0e284770b3434503891e1f",
+          "status": "READY"
+        },
+        {
+          "file": "56-1.png",
+          "imageId": "6a0e284f3fda827df9c93c09",
+          "status": "READY"
+        }
+      ]
+    },
+    {
+      "sourceRoot": "57",
+      "productNumber": 58,
+      "sku": 2456,
+      "slug": "shell-necklace-58",
+      "productId": "6a0e28563fda827df9c93c11",
+      "variantId": "1a224298-8400-496c-a9f6-3f28074fb028",
+      "url": "https://www.cassiestirman.com/shell-necklaces/p/shell-necklace-58",
+      "images": [
+        {
+          "file": "57.png",
+          "imageId": "6a0e285a3fda827df9c93c17",
+          "status": "READY"
+        },
+        {
+          "file": "57-1.png",
+          "imageId": "6a0e28629bbeeb1bb6151b05",
+          "status": "READY"
+        }
+      ]
+    },
+    {
+      "sourceRoot": "58",
+      "productNumber": 59,
+      "sku": 2457,
+      "slug": "shell-necklace-59",
+      "productId": "6a0e286970b3434503891e3d",
+      "variantId": "ece28b5d-22f5-4bae-9a6d-7dfd6440aed1",
+      "url": "https://www.cassiestirman.com/shell-necklaces/p/shell-necklace-59",
+      "images": [
+        {
+          "file": "58.png",
+          "imageId": "6a0e286d3fda827df9c93c3d",
+          "status": "READY"
+        },
+        {
+          "file": "58-1.png",
+          "imageId": "6a0e287568dc3c55cb48db7e",
+          "status": "READY"
+        }
+      ]
+    },
+    {
+      "sourceRoot": "59",
+      "productNumber": 60,
+      "sku": 2458,
+      "slug": "shell-necklace-60",
+      "productId": "6a0e287c68dc3c55cb48db8a",
+      "variantId": "138984c5-23d8-4070-a838-8a68ac53cf45",
+      "url": "https://www.cassiestirman.com/shell-necklaces/p/shell-necklace-60",
+      "images": [
+        {
+          "file": "59.png",
+          "imageId": "6a0e28813fda827df9c93c47",
+          "status": "READY"
+        },
+        {
+          "file": "59-1.png",
+          "imageId": "6a0e28893fda827df9c93c4f",
+          "status": "READY"
+        }
+      ]
+    }
+  ],
+  "skipped": [],
+  "uploads": [
+    {
+      "productId": "6a0e281f9bbeeb1bb6151abd",
+      "sourceRoot": "54",
+      "productNumber": 55,
+      "file": "54.png",
+      "imageId": "6a0e28239bbeeb1bb6151ac2",
+      "status": "READY"
+    },
+    {
+      "productId": "6a0e281f9bbeeb1bb6151abd",
+      "sourceRoot": "54",
+      "productNumber": 55,
+      "file": "54-1.png",
+      "imageId": "6a0e282b3fda827df9c93be2",
+      "status": "READY"
+    },
+    {
+      "productId": "6a0e28323fda827df9c93bea",
+      "sourceRoot": "55",
+      "productNumber": 56,
+      "file": "55.png",
+      "imageId": "6a0e28343fda827df9c93beb",
+      "status": "READY"
+    },
+    {
+      "productId": "6a0e28323fda827df9c93bea",
+      "sourceRoot": "55",
+      "productNumber": 56,
+      "file": "55-1.png",
+      "imageId": "6a0e283d70b3434503891e18",
+      "status": "READY"
+    },
+    {
+      "productId": "6a0e28433fda827df9c93bfd",
+      "sourceRoot": "56",
+      "productNumber": 57,
+      "file": "56.png",
+      "imageId": "6a0e284770b3434503891e1f",
+      "status": "READY"
+    },
+    {
+      "productId": "6a0e28433fda827df9c93bfd",
+      "sourceRoot": "56",
+      "productNumber": 57,
+      "file": "56-1.png",
+      "imageId": "6a0e284f3fda827df9c93c09",
+      "status": "READY"
+    },
+    {
+      "productId": "6a0e28563fda827df9c93c11",
+      "sourceRoot": "57",
+      "productNumber": 58,
+      "file": "57.png",
+      "imageId": "6a0e285a3fda827df9c93c17",
+      "status": "READY"
+    },
+    {
+      "productId": "6a0e28563fda827df9c93c11",
+      "sourceRoot": "57",
+      "productNumber": 58,
+      "file": "57-1.png",
+      "imageId": "6a0e28629bbeeb1bb6151b05",
+      "status": "READY"
+    },
+    {
+      "productId": "6a0e286970b3434503891e3d",
+      "sourceRoot": "58",
+      "productNumber": 59,
+      "file": "58.png",
+      "imageId": "6a0e286d3fda827df9c93c3d",
+      "status": "READY"
+    },
+    {
+      "productId": "6a0e286970b3434503891e3d",
+      "sourceRoot": "58",
+      "productNumber": 59,
+      "file": "58-1.png",
+      "imageId": "6a0e287568dc3c55cb48db7e",
+      "status": "READY"
+    },
+    {
+      "productId": "6a0e287c68dc3c55cb48db8a",
+      "sourceRoot": "59",
+      "productNumber": 60,
+      "file": "59.png",
+      "imageId": "6a0e28813fda827df9c93c47",
+      "status": "READY"
+    },
+    {
+      "productId": "6a0e287c68dc3c55cb48db8a",
+      "sourceRoot": "59",
+      "productNumber": 60,
+      "file": "59-1.png",
+      "imageId": "6a0e28893fda827df9c93c4f",
+      "status": "READY"
+    }
+  ]
+}
