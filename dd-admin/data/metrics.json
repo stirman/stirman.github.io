@@ -1,17 +1,17 @@
 {
-  "generatedAt": "2026-05-21T18:05:51Z",
-  "generatedAtHuman": "May 21, 2026 at 11:05 AM PDT",
+  "generatedAt": "2026-05-21T19:05:46Z",
+  "generatedAtHuman": "May 21, 2026 at 12:05 PM PDT",
   "source": "hourly-cache",
   "refreshCadenceMinutes": 60,
   "overview": {
-    "totalUsers": 51,
-    "launchUsers": 47,
-    "active7": 6,
-    "active30": 50,
+    "totalUsers": 52,
+    "launchUsers": 48,
+    "active7": 7,
+    "active30": 51,
     "premium": 15,
     "paidSubscribers": 5,
     "retainedUsers": 8,
-    "insights30": 66,
+    "insights30": 68,
     "entries30": 0,
     "cardImages30": 50
   },
@@ -138,11 +138,11 @@
       "displayName": "Cassandra Stirman",
       "email": "cassiestirman@gmail.com",
       "createdAt": "2025-11-01T22:59:06Z",
-      "lastLoginAt": "2026-05-21T05:58:52Z",
-      "lastActiveAt": "2026-05-21T05:58:52Z",
+      "lastLoginAt": "2026-05-21T18:14:24Z",
+      "lastActiveAt": "2026-05-21T18:14:24Z",
       "isPaidSubscriber": false,
       "grantedPremium": true,
-      "insights30": 23,
+      "insights30": 24,
       "cardImages30": 15,
       "retained": true
     },
@@ -602,6 +602,19 @@
       "retained": true
     },
     {
+      "id": "f75ARwA5uWM0S1TbDPERJcfQhar2",
+      "displayName": "Tatum Ringlien",
+      "email": "tringlien@icloud.com",
+      "createdAt": "2026-05-21T18:42:01Z",
+      "lastLoginAt": "2026-05-21T18:42:37Z",
+      "lastActiveAt": "2026-05-21T18:42:37Z",
+      "isPaidSubscriber": false,
+      "grantedPremium": false,
+      "insights30": 1,
+      "cardImages30": 0,
+      "retained": false
+    },
+    {
       "id": "test-user-simulator",
       "displayName": "test@simulator.local",
       "email": "test@simulator.local",
@@ -830,7 +843,7 @@
       {
         "date": "2026-05-21",
         "label": "May 21",
-        "count": 1
+        "count": 3
       }
     ],
     "dailyCardImages": [
@@ -1134,593 +1147,22 @@
       {
         "date": "2026-05-21",
         "label": "May 21",
-        "count": 49
+        "count": 50
       }
     ],
-    "dailyCosts": [
-      {
-        "date": "2026-04-22",
-        "label": "Apr 22",
-        "textDollars": 0.002,
-        "imageDollars": 7.7154,
-        "otherDollars": 0.1405,
-        "totalDollars": 7.8579
-      },
-      {
-        "date": "2026-04-23",
-        "label": "Apr 23",
-        "textDollars": 0.0034,
-        "imageDollars": 0.5153,
-        "otherDollars": 0.0,
-        "totalDollars": 0.5188
-      },
-      {
-        "date": "2026-04-24",
-        "label": "Apr 24",
-        "textDollars": 0.0034,
-        "imageDollars": 4.4909,
-        "otherDollars": 0.0,
-        "totalDollars": 4.4943
-      },
-      {
-        "date": "2026-04-25",
-        "label": "Apr 25",
-        "textDollars": 0.0034,
-        "imageDollars": 34.5647,
-        "otherDollars": 0.0,
-        "totalDollars": 34.5681
-      },
-      {
-        "date": "2026-04-26",
-        "label": "Apr 26",
-        "textDollars": 0.0025,
-        "imageDollars": 4.1489,
-        "otherDollars": 0.0,
-        "totalDollars": 4.1514
-      },
-      {
-        "date": "2026-04-27",
-        "label": "Apr 27",
-        "textDollars": 0.0043,
-        "imageDollars": 4.7249,
-        "otherDollars": 91.9299,
-        "totalDollars": 96.6591
-      },
-      {
-        "date": "2026-04-28",
-        "label": "Apr 28",
-        "textDollars": 0.019,
-        "imageDollars": 0.7744,
-        "otherDollars": 7.5573,
-        "totalDollars": 8.3507
-      },
-      {
-        "date": "2026-04-29",
-        "label": "Apr 29",
-        "textDollars": 0.0073,
-        "imageDollars": 0.7738,
-        "otherDollars": 0.0,
-        "totalDollars": 0.781
-      },
-      {
-        "date": "2026-04-30",
-        "label": "Apr 30",
-        "textDollars": 0.0045,
-        "imageDollars": 0.4688,
-        "otherDollars": 0.0,
-        "totalDollars": 0.4733
-      },
-      {
-        "date": "2026-05-01",
-        "label": "May 1",
-        "textDollars": 0.0024,
-        "imageDollars": 0.2575,
-        "otherDollars": 0.0,
-        "totalDollars": 0.2599
-      },
-      {
-        "date": "2026-05-02",
-        "label": "May 2",
-        "textDollars": 0.002,
-        "imageDollars": 0.0,
-        "otherDollars": 0.0,
-        "totalDollars": 0.002
-      },
-      {
-        "date": "2026-05-03",
-        "label": "May 3",
-        "textDollars": 0.0,
-        "imageDollars": 0.2579,
-        "otherDollars": 0.0,
-        "totalDollars": 0.2579
-      },
-      {
-        "date": "2026-05-04",
-        "label": "May 4",
-        "textDollars": 0.0026,
-        "imageDollars": 0.2586,
-        "otherDollars": 0.0,
-        "totalDollars": 0.2611
-      },
-      {
-        "date": "2026-05-05",
-        "label": "May 5",
-        "textDollars": 0.0035,
-        "imageDollars": 1.0327,
-        "otherDollars": 0.0,
-        "totalDollars": 1.0362
-      },
-      {
-        "date": "2026-05-06",
-        "label": "May 6",
-        "textDollars": 0.0049,
-        "imageDollars": 2.0622,
-        "otherDollars": 0.0,
-        "totalDollars": 2.0671
-      },
-      {
-        "date": "2026-05-07",
-        "label": "May 7",
-        "textDollars": 0.0046,
-        "imageDollars": 2.3189,
-        "otherDollars": 0.0,
-        "totalDollars": 2.3235
-      },
-      {
-        "date": "2026-05-08",
-        "label": "May 8",
-        "textDollars": 0.0031,
-        "imageDollars": 0.5155,
-        "otherDollars": 0.0,
-        "totalDollars": 0.5186
-      },
-      {
-        "date": "2026-05-09",
-        "label": "May 9",
-        "textDollars": 0.0018,
-        "imageDollars": 0.7738,
-        "otherDollars": 0.0,
-        "totalDollars": 0.7756
-      },
-      {
-        "date": "2026-05-10",
-        "label": "May 10",
-        "textDollars": 0.0019,
-        "imageDollars": 0.7708,
-        "otherDollars": 0.0,
-        "totalDollars": 0.7727
-      },
-      {
-        "date": "2026-05-11",
-        "label": "May 11",
-        "textDollars": 0.0,
-        "imageDollars": 0.0,
-        "otherDollars": 0.0,
-        "totalDollars": 0.0
-      },
-      {
-        "date": "2026-05-12",
-        "label": "May 12",
-        "textDollars": 0.0017,
-        "imageDollars": 0.2567,
-        "otherDollars": 0.0,
-        "totalDollars": 0.2584
-      },
-      {
-        "date": "2026-05-13",
-        "label": "May 13",
-        "textDollars": 0.003,
-        "imageDollars": 14.1505,
-        "otherDollars": 0.0,
-        "totalDollars": 14.1535
-      },
-      {
-        "date": "2026-05-14",
-        "label": "May 14",
-        "textDollars": 0.0053,
-        "imageDollars": 0.7705,
-        "otherDollars": 0.0,
-        "totalDollars": 0.7758
-      },
-      {
-        "date": "2026-05-15",
-        "label": "May 15",
-        "textDollars": 0.0011,
-        "imageDollars": 0.7738,
-        "otherDollars": 0.0,
-        "totalDollars": 0.7749
-      },
-      {
-        "date": "2026-05-16",
-        "label": "May 16",
-        "textDollars": 0.0024,
-        "imageDollars": 1.0297,
-        "otherDollars": 0.0,
-        "totalDollars": 1.0321
-      },
-      {
-        "date": "2026-05-17",
-        "label": "May 17",
-        "textDollars": 0.0012,
-        "imageDollars": 0.0,
-        "otherDollars": 0.0,
-        "totalDollars": 0.0012
-      },
-      {
-        "date": "2026-05-18",
-        "label": "May 18",
-        "textDollars": 0.0,
-        "imageDollars": 0.2574,
-        "otherDollars": 0.0,
-        "totalDollars": 0.2574
-      },
-      {
-        "date": "2026-05-19",
-        "label": "May 19",
-        "textDollars": 0.0009,
-        "imageDollars": 0.5139,
-        "otherDollars": 0.0,
-        "totalDollars": 0.5148
-      },
-      {
-        "date": "2026-05-20",
-        "label": "May 20",
-        "textDollars": 0.0018,
-        "imageDollars": 1.4204,
-        "otherDollars": 0.0,
-        "totalDollars": 1.4221
-      },
-      {
-        "date": "2026-05-21",
-        "label": "May 21",
-        "textDollars": 0.0,
-        "imageDollars": 0.0,
-        "otherDollars": 0.0,
-        "totalDollars": 0.0
-      }
-    ]
+    "dailyCosts": []
   },
   "costs": {
-    "available": true,
-    "totalDollars": 185.3197,
-    "textDollars": 0.0941,
-    "imageDollars": 85.5979,
-    "otherDollars": 99.6277,
-    "byLineItem": [
-      {
-        "name": "gpt-5.5-2026-04-23, input",
-        "dollars": 87.6574
-      },
-      {
-        "name": "gpt-image-2-2026-04-21 image, output",
-        "dollars": 45.4721
-      },
-      {
-        "name": "gpt-image-1 image, output",
-        "dollars": 30.1427
-      },
-      {
-        "name": "gpt-5.5-2026-04-23, cached input",
-        "dollars": 7.5116
-      },
-      {
-        "name": "gpt-image-2-2026-04-21 image, input",
-        "dollars": 6.4626
-      },
-      {
-        "name": "gpt-5.5-2026-04-23, output",
-        "dollars": 4.2982
-      },
-      {
-        "name": "gpt-image-1 image, input",
-        "dollars": 2.365
-      },
-      {
-        "name": "gpt-image-1 text, input",
-        "dollars": 0.7416
-      },
-      {
-        "name": "gpt-image-2-2026-04-21 text, input",
-        "dollars": 0.4138
-      },
-      {
-        "name": "gpt-5.1-codex, input",
-        "dollars": 0.1149
-      },
-      {
-        "name": "gpt-4o-mini-2024-07-18, input",
-        "dollars": 0.0532
-      },
-      {
-        "name": "gpt-4o-mini-2024-07-18, output",
-        "dollars": 0.0378
-      },
-      {
-        "name": "web search tool calls",
-        "dollars": 0.02
-      },
-      {
-        "name": "gpt-5.1-codex, cached input",
-        "dollars": 0.0154
-      },
-      {
-        "name": "gpt-5.1-codex, output",
-        "dollars": 0.0102
-      },
-      {
-        "name": "text-embedding-3-small",
-        "dollars": 0.003
-      },
-      {
-        "name": "gpt-4o-mini-2024-07-18, cached input",
-        "dollars": 0.0001
-      },
-      {
-        "name": "gpt-image-1 image, cached input",
-        "dollars": 0.0
-      },
-      {
-        "name": "gpt-image-1 text, cached input",
-        "dollars": 0.0
-      },
-      {
-        "name": "gpt-image-2-2026-04-21 image, cached input",
-        "dollars": 0.0
-      },
-      {
-        "name": "gpt-image-2-2026-04-21 text, cached input",
-        "dollars": 0.0
-      },
-      {
-        "name": "gpt-image-2-2026-04-21 text, output",
-        "dollars": 0.0
-      }
-    ],
-    "daily": [
-      {
-        "date": "2026-04-22",
-        "label": "Apr 22",
-        "textDollars": 0.002,
-        "imageDollars": 7.7154,
-        "otherDollars": 0.1405,
-        "totalDollars": 7.8579
-      },
-      {
-        "date": "2026-04-23",
-        "label": "Apr 23",
-        "textDollars": 0.0034,
-        "imageDollars": 0.5153,
-        "otherDollars": 0.0,
-        "totalDollars": 0.5188
-      },
-      {
-        "date": "2026-04-24",
-        "label": "Apr 24",
-        "textDollars": 0.0034,
-        "imageDollars": 4.4909,
-        "otherDollars": 0.0,
-        "totalDollars": 4.4943
-      },
-      {
-        "date": "2026-04-25",
-        "label": "Apr 25",
-        "textDollars": 0.0034,
-        "imageDollars": 34.5647,
-        "otherDollars": 0.0,
-        "totalDollars": 34.5681
-      },
-      {
-        "date": "2026-04-26",
-        "label": "Apr 26",
-        "textDollars": 0.0025,
-        "imageDollars": 4.1489,
-        "otherDollars": 0.0,
-        "totalDollars": 4.1514
-      },
-      {
-        "date": "2026-04-27",
-        "label": "Apr 27",
-        "textDollars": 0.0043,
-        "imageDollars": 4.7249,
-        "otherDollars": 91.9299,
-        "totalDollars": 96.6591
-      },
-      {
-        "date": "2026-04-28",
-        "label": "Apr 28",
-        "textDollars": 0.019,
-        "imageDollars": 0.7744,
-        "otherDollars": 7.5573,
-        "totalDollars": 8.3507
-      },
-      {
-        "date": "2026-04-29",
-        "label": "Apr 29",
-        "textDollars": 0.0073,
-        "imageDollars": 0.7738,
-        "otherDollars": 0.0,
-        "totalDollars": 0.781
-      },
-      {
-        "date": "2026-04-30",
-        "label": "Apr 30",
-        "textDollars": 0.0045,
-        "imageDollars": 0.4688,
-        "otherDollars": 0.0,
-        "totalDollars": 0.4733
-      },
-      {
-        "date": "2026-05-01",
-        "label": "May 1",
-        "textDollars": 0.0024,
-        "imageDollars": 0.2575,
-        "otherDollars": 0.0,
-        "totalDollars": 0.2599
-      },
-      {
-        "date": "2026-05-02",
-        "label": "May 2",
-        "textDollars": 0.002,
-        "imageDollars": 0.0,
-        "otherDollars": 0.0,
-        "totalDollars": 0.002
-      },
-      {
-        "date": "2026-05-03",
-        "label": "May 3",
-        "textDollars": 0.0,
-        "imageDollars": 0.2579,
-        "otherDollars": 0.0,
-        "totalDollars": 0.2579
-      },
-      {
-        "date": "2026-05-04",
-        "label": "May 4",
-        "textDollars": 0.0026,
-        "imageDollars": 0.2586,
-        "otherDollars": 0.0,
-        "totalDollars": 0.2611
-      },
-      {
-        "date": "2026-05-05",
-        "label": "May 5",
-        "textDollars": 0.0035,
-        "imageDollars": 1.0327,
-        "otherDollars": 0.0,
-        "totalDollars": 1.0362
-      },
-      {
-        "date": "2026-05-06",
-        "label": "May 6",
-        "textDollars": 0.0049,
-        "imageDollars": 2.0622,
-        "otherDollars": 0.0,
-        "totalDollars": 2.0671
-      },
-      {
-        "date": "2026-05-07",
-        "label": "May 7",
-        "textDollars": 0.0046,
-        "imageDollars": 2.3189,
-        "otherDollars": 0.0,
-        "totalDollars": 2.3235
-      },
-      {
-        "date": "2026-05-08",
-        "label": "May 8",
-        "textDollars": 0.0031,
-        "imageDollars": 0.5155,
-        "otherDollars": 0.0,
-        "totalDollars": 0.5186
-      },
-      {
-        "date": "2026-05-09",
-        "label": "May 9",
-        "textDollars": 0.0018,
-        "imageDollars": 0.7738,
-        "otherDollars": 0.0,
-        "totalDollars": 0.7756
-      },
-      {
-        "date": "2026-05-10",
-        "label": "May 10",
-        "textDollars": 0.0019,
-        "imageDollars": 0.7708,
-        "otherDollars": 0.0,
-        "totalDollars": 0.7727
-      },
-      {
-        "date": "2026-05-11",
-        "label": "May 11",
-        "textDollars": 0.0,
-        "imageDollars": 0.0,
-        "otherDollars": 0.0,
-        "totalDollars": 0.0
-      },
-      {
-        "date": "2026-05-12",
-        "label": "May 12",
-        "textDollars": 0.0017,
-        "imageDollars": 0.2567,
-        "otherDollars": 0.0,
-        "totalDollars": 0.2584
-      },
-      {
-        "date": "2026-05-13",
-        "label": "May 13",
-        "textDollars": 0.003,
-        "imageDollars": 14.1505,
-        "otherDollars": 0.0,
-        "totalDollars": 14.1535
-      },
-      {
-        "date": "2026-05-14",
-        "label": "May 14",
-        "textDollars": 0.0053,
-        "imageDollars": 0.7705,
-        "otherDollars": 0.0,
-        "totalDollars": 0.7758
-      },
-      {
-        "date": "2026-05-15",
-        "label": "May 15",
-        "textDollars": 0.0011,
-        "imageDollars": 0.7738,
-        "otherDollars": 0.0,
-        "totalDollars": 0.7749
-      },
-      {
-        "date": "2026-05-16",
-        "label": "May 16",
-        "textDollars": 0.0024,
-        "imageDollars": 1.0297,
-        "otherDollars": 0.0,
-        "totalDollars": 1.0321
-      },
-      {
-        "date": "2026-05-17",
-        "label": "May 17",
-        "textDollars": 0.0012,
-        "imageDollars": 0.0,
-        "otherDollars": 0.0,
-        "totalDollars": 0.0012
-      },
-      {
-        "date": "2026-05-18",
-        "label": "May 18",
-        "textDollars": 0.0,
-        "imageDollars": 0.2574,
-        "otherDollars": 0.0,
-        "totalDollars": 0.2574
-      },
-      {
-        "date": "2026-05-19",
-        "label": "May 19",
-        "textDollars": 0.0009,
-        "imageDollars": 0.5139,
-        "otherDollars": 0.0,
-        "totalDollars": 0.5148
-      },
-      {
-        "date": "2026-05-20",
-        "label": "May 20",
-        "textDollars": 0.0018,
-        "imageDollars": 1.4204,
-        "otherDollars": 0.0,
-        "totalDollars": 1.4221
-      },
-      {
-        "date": "2026-05-21",
-        "label": "May 21",
-        "textDollars": 0.0,
-        "imageDollars": 0.0,
-        "otherDollars": 0.0,
-        "totalDollars": 0.0
-      }
-    ],
-    "error": null,
+    "available": false,
+    "totalDollars": 0,
+    "textDollars": 0,
+    "imageDollars": 0,
+    "otherDollars": 0,
+    "byLineItem": [],
+    "daily": [],
+    "error": "HTTP Error 500: Internal Server Error",
     "subscriptionPrice": 7.99,
     "estimatedRevenue": 39.95,
-    "grossMargin": -145.37
+    "grossMargin": 39.95
   }
 }
