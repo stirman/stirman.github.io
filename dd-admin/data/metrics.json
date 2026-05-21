@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-05-20T23:05:47Z",
-  "generatedAtHuman": "May 20, 2026 at 04:05 PM PDT",
+  "generatedAt": "2026-05-21T00:05:47Z",
+  "generatedAtHuman": "May 20, 2026 at 05:05 PM PDT",
   "source": "hourly-cache",
   "refreshCadenceMinutes": 60,
   "overview": {
     "totalUsers": 51,
     "launchUsers": 47,
-    "active7": 9,
+    "active7": 6,
     "active30": 50,
     "premium": 15,
     "paidSubscribers": 5,
@@ -683,11 +683,6 @@
   "series": {
     "dailyInsights": [
       {
-        "date": "2026-04-21",
-        "label": "Apr 21",
-        "count": 0
-      },
-      {
         "date": "2026-04-22",
         "label": "Apr 22",
         "count": 1
@@ -831,14 +826,14 @@
         "date": "2026-05-20",
         "label": "May 20",
         "count": 2
+      },
+      {
+        "date": "2026-05-21",
+        "label": "May 21",
+        "count": 0
       }
     ],
     "dailyCardImages": [
-      {
-        "date": "2026-04-21",
-        "label": "Apr 21",
-        "count": 0
-      },
       {
         "date": "2026-04-22",
         "label": "Apr 22",
@@ -983,6 +978,11 @@
         "date": "2026-05-20",
         "label": "May 20",
         "count": 1
+      },
+      {
+        "date": "2026-05-21",
+        "label": "May 21",
+        "count": 0
       }
     ],
     "totalUsers": [
@@ -1130,17 +1130,14 @@
         "date": "2026-05-20",
         "label": "May 20",
         "count": 49
+      },
+      {
+        "date": "2026-05-21",
+        "label": "May 21",
+        "count": 49
       }
     ],
     "dailyCosts": [
-      {
-        "date": "2026-04-21",
-        "label": "Apr 21",
-        "textDollars": 0.0,
-        "imageDollars": 2.2843,
-        "otherDollars": 0.245,
-        "totalDollars": 2.5293
-      },
       {
         "date": "2026-04-22",
         "label": "Apr 22",
@@ -1368,6 +1365,14 @@
       {
         "date": "2026-05-20",
         "label": "May 20",
+        "textDollars": 0.0018,
+        "imageDollars": 1.4204,
+        "otherDollars": 0.0,
+        "totalDollars": 1.4221
+      },
+      {
+        "date": "2026-05-21",
+        "label": "May 21",
         "textDollars": 0.0,
         "imageDollars": 0.0,
         "otherDollars": 0.0,
@@ -1377,10 +1382,10 @@
   },
   "costs": {
     "available": true,
-    "totalDollars": 186.4268,
-    "textDollars": 0.0923,
-    "imageDollars": 86.4618,
-    "otherDollars": 99.8726,
+    "totalDollars": 185.3197,
+    "textDollars": 0.0941,
+    "imageDollars": 85.5979,
+    "otherDollars": 99.6277,
     "byLineItem": [
       {
         "name": "gpt-5.5-2026-04-23, input",
@@ -1388,11 +1393,11 @@
       },
       {
         "name": "gpt-image-2-2026-04-21 image, output",
-        "dollars": 44.7346
+        "dollars": 45.4721
       },
       {
         "name": "gpt-image-1 image, output",
-        "dollars": 31.8221
+        "dollars": 30.1427
       },
       {
         "name": "gpt-5.5-2026-04-23, cached input",
@@ -1400,7 +1405,7 @@
       },
       {
         "name": "gpt-image-2-2026-04-21 image, input",
-        "dollars": 6.3
+        "dollars": 6.4626
       },
       {
         "name": "gpt-5.5-2026-04-23, output",
@@ -1408,39 +1413,39 @@
       },
       {
         "name": "gpt-image-1 image, input",
-        "dollars": 2.4613
+        "dollars": 2.365
       },
       {
         "name": "gpt-image-1 text, input",
-        "dollars": 0.7365
+        "dollars": 0.7416
       },
       {
         "name": "gpt-image-2-2026-04-21 text, input",
-        "dollars": 0.4075
+        "dollars": 0.4138
       },
       {
         "name": "gpt-5.1-codex, input",
-        "dollars": 0.267
-      },
-      {
-        "name": "gpt-5.1-codex, cached input",
-        "dollars": 0.0627
-      },
-      {
-        "name": "gpt-5.1-codex, output",
-        "dollars": 0.0558
+        "dollars": 0.1149
       },
       {
         "name": "gpt-4o-mini-2024-07-18, input",
-        "dollars": 0.0521
+        "dollars": 0.0532
       },
       {
         "name": "gpt-4o-mini-2024-07-18, output",
-        "dollars": 0.0371
+        "dollars": 0.0378
       },
       {
         "name": "web search tool calls",
         "dollars": 0.02
+      },
+      {
+        "name": "gpt-5.1-codex, cached input",
+        "dollars": 0.0154
+      },
+      {
+        "name": "gpt-5.1-codex, output",
+        "dollars": 0.0102
       },
       {
         "name": "text-embedding-3-small",
@@ -1473,14 +1478,6 @@
     ],
     "daily": [
       {
-        "date": "2026-04-21",
-        "label": "Apr 21",
-        "textDollars": 0.0,
-        "imageDollars": 2.2843,
-        "otherDollars": 0.245,
-        "totalDollars": 2.5293
-      },
-      {
         "date": "2026-04-22",
         "label": "Apr 22",
         "textDollars": 0.002,
@@ -1707,6 +1704,14 @@
       {
         "date": "2026-05-20",
         "label": "May 20",
+        "textDollars": 0.0018,
+        "imageDollars": 1.4204,
+        "otherDollars": 0.0,
+        "totalDollars": 1.4221
+      },
+      {
+        "date": "2026-05-21",
+        "label": "May 21",
         "textDollars": 0.0,
         "imageDollars": 0.0,
         "otherDollars": 0.0,
@@ -1716,6 +1721,6 @@
     "error": null,
     "subscriptionPrice": 7.99,
     "estimatedRevenue": 39.95,
-    "grossMargin": -146.48
+    "grossMargin": -145.37
   }
 }
