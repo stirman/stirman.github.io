@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-05-21T22:05:46Z",
-  "generatedAtHuman": "May 21, 2026 at 03:05 PM PDT",
+  "generatedAt": "2026-05-21T23:05:52Z",
+  "generatedAtHuman": "May 21, 2026 at 04:05 PM PDT",
   "source": "hourly-cache",
   "refreshCadenceMinutes": 60,
   "overview": {
-    "totalUsers": 53,
-    "launchUsers": 49,
-    "active7": 8,
-    "active30": 52,
+    "totalUsers": 54,
+    "launchUsers": 50,
+    "active7": 9,
+    "active30": 53,
     "premium": 15,
     "paidSubscribers": 5,
     "retainedUsers": 8,
@@ -134,12 +134,25 @@
       "retained": false
     },
     {
+      "id": "P3D5L6rGBpgCeIv0na8jycxQJa02",
+      "displayName": "Casey Lebwohl",
+      "email": "caseylebwohl@mac.com",
+      "createdAt": "2026-05-21T22:12:42Z",
+      "lastLoginAt": "2026-05-21T22:12:42Z",
+      "lastActiveAt": "2026-05-21T22:12:42Z",
+      "isPaidSubscriber": false,
+      "grantedPremium": false,
+      "insights30": 0,
+      "cardImages30": 0,
+      "retained": false
+    },
+    {
       "id": "9975i8o9qob6EdhhRafarig8ueD3",
       "displayName": "Cassandra Stirman",
       "email": "cassiestirman@gmail.com",
       "createdAt": "2025-11-01T22:59:06Z",
-      "lastLoginAt": "2026-05-21T20:12:19Z",
-      "lastActiveAt": "2026-05-21T20:12:19Z",
+      "lastLoginAt": "2026-05-21T22:33:33Z",
+      "lastActiveAt": "2026-05-21T22:33:33Z",
       "isPaidSubscriber": false,
       "grantedPremium": true,
       "insights30": 24,
@@ -1160,7 +1173,7 @@
       {
         "date": "2026-05-21",
         "label": "May 21",
-        "count": 51
+        "count": 52
       }
     ],
     "dailyCosts": [
