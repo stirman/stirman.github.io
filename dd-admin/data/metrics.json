@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-05-21T20:05:47Z",
-  "generatedAtHuman": "May 21, 2026 at 01:05 PM PDT",
+  "generatedAt": "2026-05-21T21:05:46Z",
+  "generatedAtHuman": "May 21, 2026 at 02:05 PM PDT",
   "source": "hourly-cache",
   "refreshCadenceMinutes": 60,
   "overview": {
-    "totalUsers": 52,
-    "launchUsers": 48,
-    "active7": 7,
-    "active30": 51,
+    "totalUsers": 53,
+    "launchUsers": 49,
+    "active7": 8,
+    "active30": 52,
     "premium": 15,
     "paidSubscribers": 5,
     "retainedUsers": 8,
@@ -73,8 +73,8 @@
       "displayName": "Andrew Zimmermann",
       "email": "tyqj7mk75c@privaterelay.appleid.com",
       "createdAt": "2026-05-08T19:36:08Z",
-      "lastLoginAt": "2026-05-21T17:37:15Z",
-      "lastActiveAt": "2026-05-21T17:37:15Z",
+      "lastLoginAt": "2026-05-21T20:44:59Z",
+      "lastActiveAt": "2026-05-21T20:44:59Z",
       "isPaidSubscriber": false,
       "grantedPremium": false,
       "insights30": 6,
@@ -138,8 +138,8 @@
       "displayName": "Cassandra Stirman",
       "email": "cassiestirman@gmail.com",
       "createdAt": "2025-11-01T22:59:06Z",
-      "lastLoginAt": "2026-05-21T18:14:24Z",
-      "lastActiveAt": "2026-05-21T18:14:24Z",
+      "lastLoginAt": "2026-05-21T20:12:19Z",
+      "lastActiveAt": "2026-05-21T20:12:19Z",
       "isPaidSubscriber": false,
       "grantedPremium": true,
       "insights30": 24,
@@ -439,6 +439,19 @@
       "createdAt": "2026-05-05T22:41:54Z",
       "lastLoginAt": "2026-05-05T22:41:54Z",
       "lastActiveAt": "2026-05-05T22:41:54Z",
+      "isPaidSubscriber": false,
+      "grantedPremium": false,
+      "insights30": 0,
+      "cardImages30": 0,
+      "retained": false
+    },
+    {
+      "id": "272sBtmhqrPJwyxzHje9i6BfjqB3",
+      "displayName": "Laura Sanchez",
+      "email": "laurasanchez09@gmail.com",
+      "createdAt": "2026-05-21T20:48:11Z",
+      "lastLoginAt": "2026-05-21T20:48:11Z",
+      "lastActiveAt": "2026-05-21T20:48:11Z",
       "isPaidSubscriber": false,
       "grantedPremium": false,
       "insights30": 0,
@@ -1147,7 +1160,7 @@
       {
         "date": "2026-05-21",
         "label": "May 21",
-        "count": 50
+        "count": 51
       }
     ],
     "dailyCosts": [
