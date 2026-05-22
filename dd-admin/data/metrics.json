@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-05-22T05:05:51Z",
-  "generatedAtHuman": "May 21, 2026 at 10:05 PM PDT",
+  "generatedAt": "2026-05-22T06:05:51Z",
+  "generatedAtHuman": "May 21, 2026 at 11:05 PM PDT",
   "source": "hourly-cache",
   "refreshCadenceMinutes": 60,
   "overview": {
@@ -11,9 +11,9 @@
     "premium": 15,
     "paidSubscribers": 5,
     "retainedUsers": 8,
-    "insights30": 68,
+    "insights30": 69,
     "entries30": 0,
-    "cardImages30": 50
+    "cardImages30": 51
   },
   "users": [
     {
@@ -268,12 +268,12 @@
       "displayName": "Erica Joub\u00e9rt",
       "email": "28vvv4r8sh@privaterelay.appleid.com",
       "createdAt": "2026-05-22T02:29:56Z",
-      "lastLoginAt": "2026-05-22T02:29:56Z",
-      "lastActiveAt": "2026-05-22T02:29:56Z",
+      "lastLoginAt": "2026-05-22T05:12:18Z",
+      "lastActiveAt": "2026-05-22T05:12:18Z",
       "isPaidSubscriber": false,
       "grantedPremium": false,
-      "insights30": 0,
-      "cardImages30": 0,
+      "insights30": 1,
+      "cardImages30": 1,
       "retained": false
     },
     {
@@ -877,7 +877,7 @@
       {
         "date": "2026-05-21",
         "label": "May 21",
-        "count": 4
+        "count": 5
       },
       {
         "date": "2026-05-22",
@@ -1029,7 +1029,7 @@
       {
         "date": "2026-05-21",
         "label": "May 21",
-        "count": 2
+        "count": 3
       },
       {
         "date": "2026-05-22",
