@@ -106,12 +106,12 @@ function renderBarChart(container, series, singular, plural, sparseLabels = fals
   container.innerHTML = "";
   container.style.setProperty("--bar-count", Math.max(1, items.length));
   const max = Math.max(1, ...items.map((item) => item.count || 0));
-  const labelEvery = sparseLabels ? Math.max(1, Math.ceil(items.length / 12)) : 1;
+  const labelIndexes = getBarLabelIndexes(items.length, sparseLabels);
   items.forEach((item, index) => {
     const bar = document.createElement("div");
     bar.className = "bar";
     bar.style.height = `${Math.max(4, ((item.count || 0) / max) * 100)}%`;
-    const showsLabel = index % labelEvery === 0 || index === items.length - 1;
+    const showsLabel = labelIndexes.has(index);
     bar.dataset.label = showsLabel ? compactLabel(item.label) : "";
     if (showsLabel && index === 0) bar.classList.add("label-start");
     if (showsLabel && index === items.length - 1) bar.classList.add("label-end");
@@ -119,6 +119,14 @@ function renderBarChart(container, series, singular, plural, sparseLabels = fals
     bar.dataset.tip = `${item.label} · ${formatNumber(item.count || 0)} ${noun}`;
     container.appendChild(bar);
   });
+}
+
+function getBarLabelIndexes(count, sparseLabels) {
+  if (!sparseLabels) return new Set(Array.from({ length: count }, (_, index) => index));
+  if (count <= 0) return new Set();
+  if (count <= 4) return new Set(Array.from({ length: count }, (_, index) => index));
+  const last = count - 1;
+  return new Set([0, Math.round(last / 3), Math.round((last * 2) / 3), last]);
 }
 
 function renderRetention(retained, totalUsers) {
