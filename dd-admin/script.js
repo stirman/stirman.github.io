@@ -111,7 +111,10 @@ function renderBarChart(container, series, singular, plural, sparseLabels = fals
     const bar = document.createElement("div");
     bar.className = "bar";
     bar.style.height = `${Math.max(4, ((item.count || 0) / max) * 100)}%`;
-    bar.dataset.label = index % labelEvery === 0 || index === items.length - 1 ? compactLabel(item.label) : "";
+    const showsLabel = index % labelEvery === 0 || index === items.length - 1;
+    bar.dataset.label = showsLabel ? compactLabel(item.label) : "";
+    if (showsLabel && index === 0) bar.classList.add("label-start");
+    if (showsLabel && index === items.length - 1) bar.classList.add("label-end");
     const noun = item.count === 1 ? singular : plural;
     bar.dataset.tip = `${item.label} · ${formatNumber(item.count || 0)} ${noun}`;
     container.appendChild(bar);
