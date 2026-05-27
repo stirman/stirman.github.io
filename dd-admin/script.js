@@ -93,7 +93,7 @@ function renderAll() {
   setText("metric-card-images", formatNumber(overview.cardImages30));
   setText("metric-card-image-rate", `${percent(overview.cardImages30, Math.max(1, overview.insights30))} of insights have cards`);
 
-  renderBarChart($("insight-chart"), state.metrics.series.dailyInsights, "insight", "insights");
+  renderBarChart($("insight-chart"), state.metrics.series.dailyInsights, "insight", "insights", true);
   renderBarChart($("users-growth-chart"), state.metrics.series.totalUsers, "total user", "total users", true);
   renderRetention(overview.retainedUsers, overview.totalUsers);
   renderInteresting();
@@ -104,6 +104,7 @@ function renderAll() {
 function renderBarChart(container, series, singular, plural, sparseLabels = false) {
   const items = series || [];
   container.innerHTML = "";
+  container.classList.toggle("sparse-labels", sparseLabels);
   container.style.setProperty("--bar-count", Math.max(1, items.length));
   const max = Math.max(1, ...items.map((item) => item.count || 0));
   const labelIndexes = getBarLabelIndexes(items.length, sparseLabels);

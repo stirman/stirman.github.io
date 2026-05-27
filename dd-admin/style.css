@@ -70,11 +70,11 @@ h2 { font-size: clamp(22px, 3vw, 30px); }
 .bar { position: relative; min-height: 6px; border-radius: 999px 999px 4px 4px; background: linear-gradient(180deg, #d36f86, #f2a46a); box-shadow: inset 0 1px 0 rgba(255,255,255,.34); }
 .bar::after { content: attr(data-label); position: absolute; left: 50%; bottom: -28px; transform: translateX(-50%) rotate(-45deg); transform-origin: center; color: var(--muted); font-size: 10px; opacity: .86; }
 .bar:hover::before { content: attr(data-tip); position: absolute; z-index: 3; bottom: calc(100% + 8px); left: 50%; transform: translateX(-50%); white-space: nowrap; border-radius: 10px; padding: 7px 9px; background: var(--plum); color: white; font-size: 12px; }
+.bar-chart.sparse-labels .bar::after { bottom: -24px; transform: translateX(-50%); white-space: nowrap; }
+.bar-chart.sparse-labels .bar.label-start::after { left: 0; transform: none; text-align: left; }
+.bar-chart.sparse-labels .bar.label-end::after { left: auto; right: 0; transform: none; text-align: right; }
 .growth-chart { grid-template-columns: repeat(var(--bar-count, 1), minmax(8px, 1fr)); overflow-x: auto; overflow-y: visible; }
 .growth-chart .bar { background: linear-gradient(180deg, #8f6fb8, #d36f86); }
-.growth-chart .bar::after { bottom: -24px; transform: translateX(-50%); white-space: nowrap; }
-.growth-chart .bar.label-start::after { left: 0; transform: none; text-align: left; }
-.growth-chart .bar.label-end::after { left: auto; right: 0; transform: none; text-align: right; }
 .line-chart { width: 100%; min-height: 278px; height: 278px; overflow: visible; }
 .axis-label { fill: var(--muted); font-size: 11px; }
 .chart-line { fill: none; stroke: var(--rose); stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; }
