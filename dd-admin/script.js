@@ -102,14 +102,16 @@ function renderAll() {
 }
 
 function renderBarChart(container, series, singular, plural, sparseLabels = false) {
+  const items = series || [];
   container.innerHTML = "";
-  const max = Math.max(1, ...(series || []).map((item) => item.count || 0));
-  const labelEvery = sparseLabels ? Math.max(1, Math.ceil(series.length / 12)) : 1;
-  (series || []).forEach((item, index) => {
+  container.style.setProperty("--bar-count", Math.max(1, items.length));
+  const max = Math.max(1, ...items.map((item) => item.count || 0));
+  const labelEvery = sparseLabels ? Math.max(1, Math.ceil(items.length / 12)) : 1;
+  items.forEach((item, index) => {
     const bar = document.createElement("div");
     bar.className = "bar";
     bar.style.height = `${Math.max(4, ((item.count || 0) / max) * 100)}%`;
-    bar.dataset.label = index % labelEvery === 0 || index === series.length - 1 ? compactLabel(item.label) : "";
+    bar.dataset.label = index % labelEvery === 0 || index === items.length - 1 ? compactLabel(item.label) : "";
     const noun = item.count === 1 ? singular : plural;
     bar.dataset.tip = `${item.label} · ${formatNumber(item.count || 0)} ${noun}`;
     container.appendChild(bar);
