@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-05-27T17:05:35Z",
-  "generatedAtHuman": "May 27, 2026 at 10:05 AM PDT",
+  "generatedAt": "2026-05-27T18:05:40Z",
+  "generatedAtHuman": "May 27, 2026 at 11:05 AM PDT",
   "source": "hourly-cache",
   "refreshCadenceMinutes": 60,
   "overview": {
@@ -11,7 +11,7 @@
     "premium": 16,
     "paidSubscribers": 5,
     "retainedUsers": 9,
-    "insights30": 70,
+    "insights30": 72,
     "entries30": 0,
     "cardImages30": 50
   },
@@ -73,11 +73,11 @@
       "displayName": "Andrew Zimmermann",
       "email": "tyqj7mk75c@privaterelay.appleid.com",
       "createdAt": "2026-05-08T19:36:08Z",
-      "lastLoginAt": "2026-05-23T05:11:57Z",
-      "lastActiveAt": "2026-05-23T05:11:57Z",
+      "lastLoginAt": "2026-05-27T17:11:22Z",
+      "lastActiveAt": "2026-05-27T17:11:22Z",
       "isPaidSubscriber": false,
       "grantedPremium": false,
-      "insights30": 8,
+      "insights30": 9,
       "cardImages30": 3,
       "retained": true
     },
@@ -268,11 +268,11 @@
       "displayName": "Erica Joub\u00e9rt",
       "email": "28vvv4r8sh@privaterelay.appleid.com",
       "createdAt": "2026-05-22T02:29:56Z",
-      "lastLoginAt": "2026-05-26T23:44:27Z",
-      "lastActiveAt": "2026-05-26T23:44:27Z",
+      "lastLoginAt": "2026-05-27T17:12:25Z",
+      "lastActiveAt": "2026-05-27T17:12:25Z",
       "isPaidSubscriber": false,
       "grantedPremium": true,
-      "insights30": 6,
+      "insights30": 7,
       "cardImages30": 4,
       "retained": true
     },
@@ -882,7 +882,7 @@
       {
         "date": "2026-05-27",
         "label": "May 27",
-        "count": 0
+        "count": 2
       }
     ],
     "dailyCardImages": [
