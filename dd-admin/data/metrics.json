@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-05-27T23:05:38Z",
-  "generatedAtHuman": "May 27, 2026 at 04:05 PM PDT",
+  "generatedAt": "2026-05-28T00:05:46Z",
+  "generatedAtHuman": "May 27, 2026 at 05:05 PM PDT",
   "source": "hourly-cache",
   "refreshCadenceMinutes": 60,
   "overview": {
     "totalUsers": 55,
     "launchUsers": 51,
-    "active7": 9,
-    "active30": 47,
+    "active7": 6,
+    "active30": 46,
     "premium": 16,
     "paidSubscribers": 5,
     "retainedUsers": 9,
-    "insights30": 73,
+    "insights30": 68,
     "entries30": 0,
-    "cardImages30": 51
+    "cardImages30": 48
   },
   "users": [
     {
@@ -116,8 +116,8 @@
       "lastActiveAt": "2026-04-29T04:54:51Z",
       "isPaidSubscriber": false,
       "grantedPremium": false,
-      "insights30": 1,
-      "cardImages30": 1,
+      "insights30": 0,
+      "cardImages30": 0,
       "retained": false
     },
     {
@@ -155,8 +155,8 @@
       "lastActiveAt": "2026-05-25T22:52:18Z",
       "isPaidSubscriber": false,
       "grantedPremium": true,
-      "insights30": 22,
-      "cardImages30": 15,
+      "insights30": 21,
+      "cardImages30": 14,
       "retained": true
     },
     {
@@ -311,8 +311,8 @@
       "lastActiveAt": "2026-04-29T13:08:38Z",
       "isPaidSubscriber": true,
       "grantedPremium": false,
-      "insights30": 2,
-      "cardImages30": 2,
+      "insights30": 1,
+      "cardImages30": 1,
       "retained": false
     },
     {
@@ -636,7 +636,7 @@
       "lastActiveAt": "2026-05-27T19:59:46Z",
       "isPaidSubscriber": false,
       "grantedPremium": false,
-      "insights30": 7,
+      "insights30": 6,
       "cardImages30": 4,
       "retained": true
     },
@@ -662,7 +662,7 @@
       "lastActiveAt": "2026-04-28T22:44:16Z",
       "isPaidSubscriber": false,
       "grantedPremium": false,
-      "insights30": 1,
+      "insights30": 0,
       "cardImages30": 0,
       "retained": true
     },
@@ -735,11 +735,6 @@
   "series": {
     "dailyInsights": [
       {
-        "date": "2026-04-28",
-        "label": "Apr 28",
-        "count": 5
-      },
-      {
         "date": "2026-04-29",
         "label": "Apr 29",
         "count": 2
@@ -883,15 +878,15 @@
         "date": "2026-05-27",
         "label": "May 27",
         "count": 3
+      },
+      {
+        "date": "2026-05-28",
+        "label": "May 28",
+        "count": 0
       }
     ],
     "dailyCardImages": [
       {
-        "date": "2026-04-28",
-        "label": "Apr 28",
-        "count": 3
-      },
-      {
         "date": "2026-04-29",
         "label": "Apr 29",
         "count": 2
@@ -1035,6 +1030,11 @@
         "date": "2026-05-27",
         "label": "May 27",
         "count": 1
+      },
+      {
+        "date": "2026-05-28",
+        "label": "May 28",
+        "count": 0
       }
     ],
     "totalUsers": [
@@ -1217,17 +1217,14 @@
         "date": "2026-05-27",
         "label": "May 27",
         "count": 53
+      },
+      {
+        "date": "2026-05-28",
+        "label": "May 28",
+        "count": 53
       }
     ],
     "dailyCosts": [
-      {
-        "date": "2026-04-28",
-        "label": "Apr 28",
-        "textDollars": 0.019,
-        "imageDollars": 0.7744,
-        "otherDollars": 7.5573,
-        "totalDollars": 8.3507
-      },
       {
         "date": "2026-04-29",
         "label": "Apr 29",
@@ -1455,6 +1452,14 @@
       {
         "date": "2026-05-27",
         "label": "May 27",
+        "textDollars": 0.0026,
+        "imageDollars": 0.2579,
+        "otherDollars": 0.0,
+        "totalDollars": 0.2605
+      },
+      {
+        "date": "2026-05-28",
+        "label": "May 28",
         "textDollars": 0.0,
         "imageDollars": 0.0,
         "otherDollars": 0.0,
@@ -1464,38 +1469,26 @@
   },
   "costs": {
     "available": true,
-    "totalDollars": 43.2591,
-    "textDollars": 0.0965,
-    "imageDollars": 35.6053,
-    "otherDollars": 7.5573,
+    "totalDollars": 35.1688,
+    "textDollars": 0.0801,
+    "imageDollars": 35.0888,
+    "otherDollars": 0.0,
     "byLineItem": [
       {
         "name": "gpt-image-1 image, output",
-        "dollars": 21.216
+        "dollars": 20.7168
       },
       {
         "name": "gpt-image-2-2026-04-21 image, output",
         "dollars": 11.2208
       },
       {
-        "name": "gpt-5.5-2026-04-23, input",
-        "dollars": 6.3734
-      },
-      {
         "name": "gpt-image-2-2026-04-21 image, input",
         "dollars": 2.3996
       },
       {
-        "name": "gpt-5.5-2026-04-23, cached input",
-        "dollars": 1.0103
-      },
-      {
         "name": "gpt-image-1 text, input",
-        "dollars": 0.6638
-      },
-      {
-        "name": "gpt-5.5-2026-04-23, output",
-        "dollars": 0.1736
+        "dollars": 0.6465
       },
       {
         "name": "gpt-image-2-2026-04-21 text, input",
@@ -1503,15 +1496,15 @@
       },
       {
         "name": "gpt-4o-mini-2024-07-18, input",
-        "dollars": 0.0555
+        "dollars": 0.0457
       },
       {
         "name": "gpt-4o-mini-2024-07-18, output",
-        "dollars": 0.0377
+        "dollars": 0.0308
       },
       {
         "name": "text-embedding-3-small",
-        "dollars": 0.0031
+        "dollars": 0.0034
       },
       {
         "name": "gpt-4o-mini-2024-07-18, cached input",
@@ -1544,14 +1537,6 @@
     ],
     "daily": [
       {
-        "date": "2026-04-28",
-        "label": "Apr 28",
-        "textDollars": 0.019,
-        "imageDollars": 0.7744,
-        "otherDollars": 7.5573,
-        "totalDollars": 8.3507
-      },
-      {
         "date": "2026-04-29",
         "label": "Apr 29",
         "textDollars": 0.0073,
@@ -1778,6 +1763,14 @@
       {
         "date": "2026-05-27",
         "label": "May 27",
+        "textDollars": 0.0026,
+        "imageDollars": 0.2579,
+        "otherDollars": 0.0,
+        "totalDollars": 0.2605
+      },
+      {
+        "date": "2026-05-28",
+        "label": "May 28",
         "textDollars": 0.0,
         "imageDollars": 0.0,
         "otherDollars": 0.0,
@@ -1787,6 +1780,6 @@
     "error": null,
     "subscriptionPrice": 7.99,
     "estimatedRevenue": 39.95,
-    "grossMargin": -3.31
+    "grossMargin": 4.78
   }
 }
