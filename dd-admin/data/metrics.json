@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-05-28T23:05:37Z",
-  "generatedAtHuman": "May 28, 2026 at 04:05 PM PDT",
+  "generatedAt": "2026-05-29T00:05:35Z",
+  "generatedAtHuman": "May 28, 2026 at 05:05 PM PDT",
   "source": "hourly-cache",
   "refreshCadenceMinutes": 60,
   "overview": {
     "totalUsers": 55,
     "launchUsers": 51,
     "active7": 6,
-    "active30": 46,
+    "active30": 43,
     "premium": 16,
     "paidSubscribers": 5,
     "retainedUsers": 9,
-    "insights30": 70,
+    "insights30": 68,
     "entries30": 0,
-    "cardImages30": 49
+    "cardImages30": 47
   },
   "users": [
     {
@@ -155,8 +155,8 @@
       "lastActiveAt": "2026-05-28T20:25:57Z",
       "isPaidSubscriber": false,
       "grantedPremium": true,
-      "insights30": 22,
-      "cardImages30": 14,
+      "insights30": 21,
+      "cardImages30": 13,
       "retained": true
     },
     {
@@ -311,8 +311,8 @@
       "lastActiveAt": "2026-04-29T13:08:38Z",
       "isPaidSubscriber": true,
       "grantedPremium": false,
-      "insights30": 1,
-      "cardImages30": 1,
+      "insights30": 0,
+      "cardImages30": 0,
       "retained": false
     },
     {
@@ -735,11 +735,6 @@
   "series": {
     "dailyInsights": [
       {
-        "date": "2026-04-29",
-        "label": "Apr 29",
-        "count": 2
-      },
-      {
         "date": "2026-04-30",
         "label": "Apr 30",
         "count": 1
@@ -883,14 +878,14 @@
         "date": "2026-05-28",
         "label": "May 28",
         "count": 2
+      },
+      {
+        "date": "2026-05-29",
+        "label": "May 29",
+        "count": 0
       }
     ],
     "dailyCardImages": [
-      {
-        "date": "2026-04-29",
-        "label": "Apr 29",
-        "count": 2
-      },
       {
         "date": "2026-04-30",
         "label": "Apr 30",
@@ -1034,6 +1029,11 @@
       {
         "date": "2026-05-28",
         "label": "May 28",
+        "count": 0
+      },
+      {
+        "date": "2026-05-29",
+        "label": "May 29",
         "count": 0
       }
     ],
@@ -1222,17 +1222,14 @@
         "date": "2026-05-28",
         "label": "May 28",
         "count": 53
+      },
+      {
+        "date": "2026-05-29",
+        "label": "May 29",
+        "count": 53
       }
     ],
     "dailyCosts": [
-      {
-        "date": "2026-04-29",
-        "label": "Apr 29",
-        "textDollars": 0.0073,
-        "imageDollars": 0.7738,
-        "otherDollars": 0.0,
-        "totalDollars": 0.781
-      },
       {
         "date": "2026-04-30",
         "label": "Apr 30",
@@ -1460,6 +1457,14 @@
       {
         "date": "2026-05-28",
         "label": "May 28",
+        "textDollars": 0.0023,
+        "imageDollars": 0.2569,
+        "otherDollars": 0.0,
+        "totalDollars": 0.2592
+      },
+      {
+        "date": "2026-05-29",
+        "label": "May 29",
         "textDollars": 0.0,
         "imageDollars": 0.0,
         "otherDollars": 0.0,
@@ -1469,14 +1474,14 @@
   },
   "costs": {
     "available": true,
-    "totalDollars": 35.1688,
-    "textDollars": 0.0801,
-    "imageDollars": 35.0888,
+    "totalDollars": 34.647,
+    "textDollars": 0.0751,
+    "imageDollars": 34.5719,
     "otherDollars": 0.0,
     "byLineItem": [
       {
         "name": "gpt-image-1 image, output",
-        "dollars": 20.7168
+        "dollars": 20.2176
       },
       {
         "name": "gpt-image-2-2026-04-21 image, output",
@@ -1488,7 +1493,7 @@
       },
       {
         "name": "gpt-image-1 text, input",
-        "dollars": 0.6465
+        "dollars": 0.6289
       },
       {
         "name": "gpt-image-2-2026-04-21 text, input",
@@ -1496,15 +1501,15 @@
       },
       {
         "name": "gpt-4o-mini-2024-07-18, input",
-        "dollars": 0.0457
+        "dollars": 0.0432
       },
       {
         "name": "gpt-4o-mini-2024-07-18, output",
-        "dollars": 0.0308
+        "dollars": 0.0287
       },
       {
         "name": "text-embedding-3-small",
-        "dollars": 0.0034
+        "dollars": 0.003
       },
       {
         "name": "gpt-4o-mini-2024-07-18, cached input",
@@ -1537,14 +1542,6 @@
     ],
     "daily": [
       {
-        "date": "2026-04-29",
-        "label": "Apr 29",
-        "textDollars": 0.0073,
-        "imageDollars": 0.7738,
-        "otherDollars": 0.0,
-        "totalDollars": 0.781
-      },
-      {
         "date": "2026-04-30",
         "label": "Apr 30",
         "textDollars": 0.0045,
@@ -1771,6 +1768,14 @@
       {
         "date": "2026-05-28",
         "label": "May 28",
+        "textDollars": 0.0023,
+        "imageDollars": 0.2569,
+        "otherDollars": 0.0,
+        "totalDollars": 0.2592
+      },
+      {
+        "date": "2026-05-29",
+        "label": "May 29",
         "textDollars": 0.0,
         "imageDollars": 0.0,
         "otherDollars": 0.0,
@@ -1780,6 +1785,6 @@
     "error": null,
     "subscriptionPrice": 7.99,
     "estimatedRevenue": 39.95,
-    "grossMargin": 4.78
+    "grossMargin": 5.3
   }
 }
