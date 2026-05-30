@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-05-30T02:05:35Z",
-  "generatedAtHuman": "May 29, 2026 at 07:05 PM PDT",
+  "generatedAt": "2026-05-30T03:05:36Z",
+  "generatedAtHuman": "May 29, 2026 at 08:05 PM PDT",
   "source": "hourly-cache",
   "refreshCadenceMinutes": 60,
   "overview": {
@@ -11,9 +11,9 @@
     "premium": 16,
     "paidSubscribers": 5,
     "retainedUsers": 10,
-    "insights30": 69,
+    "insights30": 70,
     "entries30": 0,
-    "cardImages30": 49
+    "cardImages30": 50
   },
   "users": [
     {
@@ -268,12 +268,12 @@
       "displayName": "Erica Joub\u00e9rt",
       "email": "28vvv4r8sh@privaterelay.appleid.com",
       "createdAt": "2026-05-22T02:29:56Z",
-      "lastLoginAt": "2026-05-29T02:34:35Z",
-      "lastActiveAt": "2026-05-29T02:34:35Z",
+      "lastLoginAt": "2026-05-30T02:31:51Z",
+      "lastActiveAt": "2026-05-30T02:31:51Z",
       "isPaidSubscriber": false,
       "grantedPremium": true,
-      "insights30": 8,
-      "cardImages30": 6,
+      "insights30": 9,
+      "cardImages30": 7,
       "retained": true
     },
     {
@@ -671,8 +671,8 @@
       "displayName": "Tiffany Nikolov",
       "email": "zbjrk7gfbc@privaterelay.appleid.com",
       "createdAt": "2026-05-07T19:15:00Z",
-      "lastLoginAt": "2026-05-29T13:53:55Z",
-      "lastActiveAt": "2026-05-29T13:53:55Z",
+      "lastLoginAt": "2026-05-30T02:10:31Z",
+      "lastActiveAt": "2026-05-30T02:10:31Z",
       "isPaidSubscriber": false,
       "grantedPremium": false,
       "insights30": 2,
@@ -877,7 +877,7 @@
       {
         "date": "2026-05-29",
         "label": "May 29",
-        "count": 1
+        "count": 2
       },
       {
         "date": "2026-05-30",
@@ -1029,7 +1029,7 @@
       {
         "date": "2026-05-29",
         "label": "May 29",
-        "count": 1
+        "count": 2
       },
       {
         "date": "2026-05-30",
