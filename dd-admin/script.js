@@ -86,8 +86,10 @@ function renderAll() {
   setText("metric-active-7", formatNumber(overview.active7));
   setText("metric-active-rate", `${percent(overview.active7, overview.totalUsers)} of total users`);
   setText("metric-active-30", formatNumber(overview.active30));
-  setText("metric-premium", formatNumber(overview.premium));
-  setText("metric-premium-rate", `${percent(overview.premium, overview.totalUsers)} premium / granted`);
+  const paidSubscribers = overview.paidSubscribers ?? state.users.filter((user) => user.isPaidSubscriber).length;
+  const grantedPremium = overview.grantedPremium ?? Math.max(0, (overview.premium || 0) - paidSubscribers);
+  setText("metric-premium", `${formatNumber(paidSubscribers)} / ${formatNumber(grantedPremium)}`);
+  setText("metric-premium-rate", `${formatNumber(paidSubscribers)} subscribed · ${formatNumber(grantedPremium)} granted`);
   setText("metric-insights", formatNumber(overview.insights30));
   setText("metric-entries", `${formatNumber(overview.entries30)} entries captured`);
   setText("metric-card-images", formatNumber(overview.cardImages30));
