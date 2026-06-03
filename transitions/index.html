@@ -1,0 +1,980 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Transition Gallery</title>
+
+<!-- ───────────────────────── CDN LIBRARIES ─────────────────────────
+     GSAP : timeline + easing engine (drives the tween-based transitions)
+     Melt + Gradient wipe run on raw WebGL shaders; Shatter uses a 2D canvas
+     with a tiny self-contained physics loop. No other dependencies.
+------------------------------------------------------------------- -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+<style>
+  :root {
+    --bg: #0d0d12;
+    --card: #16161e;
+    --line: #262633;
+    --text: #e9e9f1;
+    --muted: #9595a8;
+    --accent: #7c5cff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 15px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  header {
+    padding: 40px 32px 8px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  header h1 { margin: 0 0 6px; font-size: 28px; letter-spacing: -0.02em; }
+  header p { margin: 0; color: var(--muted); max-width: 70ch; }
+  header .playall {
+    margin-top: 18px;
+  }
+  .grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px 32px 80px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 28px;
+  }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    overflow: hidden;
+  }
+  /* A persistent `base` image shows the current photo; the transition
+     canvas sits on top, runs the effect, then hides — leaving `base`
+     (now updated to the destination image) showing. */
+  .stage {
+    position: relative;
+    width: 100%;
+    background: #000;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .stage img,
+  .stage canvas {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .stage .base  { z-index: 1; }
+  .stage canvas { z-index: 2; pointer-events: none; }
+  .meta { padding: 14px 16px 4px; }
+  .meta h3 { margin: 0; font-size: 16px; }
+  .meta .tag {
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--muted);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 2px 8px;
+    margin-left: 6px;
+    vertical-align: middle;
+  }
+  .meta p  { margin: 4px 0 0; color: var(--muted); font-size: 13px; }
+  .controls { display: flex; gap: 8px; padding: 12px 16px 16px; }
+  button {
+    appearance: none;
+    border: 1px solid var(--line);
+    background: #20202c;
+    color: var(--text);
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: background .15s, border-color .15s;
+  }
+  button:hover { background: #2a2a3a; border-color: #3a3a4d; }
+  button.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+  button.primary:hover { filter: brightness(1.1); }
+  button:disabled { opacity: .4; cursor: default; }
+  .hint { color: var(--muted); font-size: 12px; margin-top: 6px; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Transition Gallery</h1>
+  <p>
+    A playground for image-to-image transitions. Click a stage (or its Play
+    button) to transition to the other image — click again to transition back,
+    so you can see each effect run both ways.
+  </p>
+</header>
+
+<div class="grid" id="grid"></div>
+
+<script>
+/* ════════════════════════════════════════════════════════════════════
+   1.  IMAGE PAIRS  —  each transition cycles through these in order.
+       before = the front layer that transforms away.
+       after  = the layer revealed behind it.
+   ════════════════════════════════════════════════════════════════════ */
+
+const PAIRS = [
+  { label: 'Couple', before: 'couple1.png', after: 'couple2.png' },
+  { label: 'PS',     before: 'ps1.png',     after: 'ps2.png'     },
+];
+
+
+/* ════════════════════════════════════════════════════════════════════
+   2.  TRANSITIONS  —  each is a factory: (ctx) => { play(reverse) }
+       ctx = { stage, baseEl, before(Image), after(Image), dpr }
+       play(false) goes image1 → image2; play(true) goes image2 → image1.
+       The overlay canvas runs the effect then hides, leaving ctx.baseEl
+       (set to the destination by the gallery) showing.
+       Add a new transition by pushing another entry into TRANSITIONS.
+   ════════════════════════════════════════════════════════════════════ */
+
+const TRANSITIONS = [];
+
+/* ---- helper: size a canvas to the stage at device-pixel resolution ---- */
+function fitCanvas(canvas, stage, dpr) {
+  const r = stage.getBoundingClientRect();
+  canvas.width  = Math.round(r.width  * dpr);
+  canvas.height = Math.round(r.height * dpr);
+  return r;
+}
+
+/* ---- helper: a full-screen WebGL quad that blends the before + after images
+        in a fragment shader. The shader gets `uBefore`, `uAfter` (samplers) and
+        `uProgress` for free; set any extra uniforms via the returned `loc()`.
+        render(p) sizes the canvas, sets uProgress, and draws. ---- */
+function glScene(canvas, fragSrc, ctx) {
+  // preserveDrawingBuffer keeps the final frame on screen after the animation
+  // stops (otherwise the buffer is cleared on the next composite → black flash).
+  const gl = canvas.getContext('webgl', { premultipliedAlpha: false, alpha: true, preserveDrawingBuffer: true });
+  const VERT = `attribute vec2 aPos; varying vec2 vUv;
+    void main(){ vUv = aPos * 0.5 + 0.5; gl_Position = vec4(aPos, 0.0, 1.0); }`;
+  const compile = (type, src) => {
+    const s = gl.createShader(type);
+    gl.shaderSource(s, src); gl.compileShader(s);
+    if (!gl.getShaderParameter(s, gl.COMPILE_STATUS)) console.error(gl.getShaderInfoLog(s));
+    return s;
+  };
+  const prog = gl.createProgram();
+  gl.attachShader(prog, compile(gl.VERTEX_SHADER, VERT));
+  gl.attachShader(prog, compile(gl.FRAGMENT_SHADER, fragSrc));
+  gl.linkProgram(prog); gl.useProgram(prog);
+
+  const buf = gl.createBuffer();
+  gl.bindBuffer(gl.ARRAY_BUFFER, buf);
+  gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1,-1, 1,-1, -1,1, 1,1]), gl.STATIC_DRAW);
+  const aPos = gl.getAttribLocation(prog, 'aPos');
+  gl.enableVertexAttribArray(aPos);
+  gl.vertexAttribPointer(aPos, 2, gl.FLOAT, false, 0, 0);
+
+  ['uBefore', 'uAfter'].forEach((name, unit) => {
+    const tex = gl.createTexture();
+    gl.activeTexture(gl.TEXTURE0 + unit);
+    gl.bindTexture(gl.TEXTURE_2D, tex);
+    gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL, true);
+    gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, unit === 0 ? ctx.before : ctx.after);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
+    gl.uniform1i(gl.getUniformLocation(prog, name), unit);
+  });
+
+  gl.enable(gl.BLEND);
+  gl.blendFunc(gl.SRC_ALPHA, gl.ONE_MINUS_SRC_ALPHA);
+  gl.clearColor(0, 0, 0, 0);
+  const uProgress = gl.getUniformLocation(prog, 'uProgress');
+
+  return {
+    gl,
+    loc: (n) => gl.getUniformLocation(prog, n),
+    render(p) {
+      fitCanvas(canvas, ctx.stage, ctx.dpr);
+      gl.viewport(0, 0, canvas.width, canvas.height);
+      gl.clear(gl.COLOR_BUFFER_BIT);
+      gl.uniform1f(uProgress, p);
+      gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
+    }
+  };
+}
+
+/* ---- helper: wrap a two-texture shader into a transition. The shader must
+        blend uBefore/uAfter and honour `uReverse` (0 = before→after, 1 = the
+        reverse). `setup(scene, reverse)` sets any per-play random uniforms.
+        After the tween the canvas hides, leaving ctx.baseEl (= destination). ---- */
+function glTransition({ name, desc, frag, duration, ease, setup }) {
+  return {
+    name, desc,
+    factory(ctx) {
+      const canvas = document.createElement('canvas');
+      ctx.stage.appendChild(canvas);
+      canvas.style.opacity = '0';
+      const scene = glScene(canvas, frag, ctx);
+      const uReverse = scene.loc('uReverse');
+      let tween = null;
+      return {
+        play(reverse) {
+          if (tween) tween.kill();
+          scene.gl.uniform1f(uReverse, reverse ? 1.0 : 0.0);
+          if (setup) setup(scene, reverse);
+          scene.render(0);                              // identity (the "from" image)
+          canvas.style.opacity = '1';
+          const o = { p: 0 };
+          // canvas stays visible showing the final frame (= destination image);
+          // preserveDrawingBuffer keeps it painted, so no black flash at the end.
+          tween = gsap.to(o, { p: 1, duration, ease, onUpdate: () => scene.render(o.p) });
+        }
+      };
+    }
+  };
+}
+
+/* ───────────────────────── CLOTH (WebGL) ─────────────────────────────
+   A fragment shader drops the front image like an unpinned blanket: a
+   release front sweeps left→right (top-left lets go first), each section
+   then falls with an accelerating, billowing motion to reveal the layer
+   behind. Noise makes the sections release and fall unevenly. */
+TRANSITIONS.push(glTransition({
+  name: 'Cloth',
+  desc: 'The front image falls away like a blanket unpinned from the top-left, blown down in the wind.',
+  duration: 1.2, ease: 'power1.in',
+  setup: (scene) => scene.gl.uniform1f(scene.loc('uSeed'), Math.random() * 100.0),
+  frag: `
+    precision mediump float;
+    varying vec2 vUv;
+    uniform sampler2D uBefore, uAfter;
+    uniform float uProgress, uReverse, uSeed;
+    float hash(vec2 p){ return fract(sin(dot(p, vec2(127.1, 311.7))) * 43758.5453123); }
+    float noise(vec2 p){
+      vec2 i = floor(p), f = fract(p); f = f*f*(3.0 - 2.0*f);
+      float a = hash(i), b = hash(i + vec2(1.0,0.0));
+      float c = hash(i + vec2(0.0,1.0)), d = hash(i + vec2(1.0,1.0));
+      return mix(mix(a,b,f.x), mix(c,d,f.x), f.y);
+    }
+    // smooth fractal field across x — broad lobes + fine detail, no hard lanes.
+    float fbm(float x){
+      return noise(vec2(x*1.5 + uSeed,     0.0)) * 0.6
+           + noise(vec2(x*4.0 + uSeed*1.7, 3.1)) * 0.3
+           + noise(vec2(x*9.0 + uSeed*2.3, 7.7)) * 0.1;
+    }
+    void main(){
+      float p = uProgress;
+      // release front sweeps left→right (top-left lets go first); noise staggers
+      // it so sections drop irregularly rather than as one clean line.
+      float delay = vUv.x * 0.28 + (noise(vec2(vUv.x * 4.0 + uSeed, 1.3)) - 0.5) * 0.36;
+      delay = max(delay, 0.0);
+      float cp = clamp((p - delay) / 0.40, 0.0, 1.0);
+      cp = cp * cp;                                     // accelerate like gravity
+      float field = fbm(vUv.x);
+      float sway = (sin(vUv.y * 7.0 - p * 5.0 + uSeed * 6.2831) * 0.035
+                  + (noise(vec2(vUv.x * 5.0 + uSeed, vUv.y * 4.0 - p * 2.0)) - 0.5) * 0.05) * cp;
+      float sy = vUv.y + cp * (1.15 + 1.0 * field);     // content flows down out of frame
+      vec2 fromUv = vec2(vUv.x + sway, sy);
+      vec3 fromCol = mix(texture2D(uBefore, fromUv).rgb, texture2D(uAfter, fromUv).rgb, uReverse);
+      vec3 toCol   = mix(texture2D(uAfter, vUv).rgb,     texture2D(uBefore, vUv).rgb,   uReverse);
+      gl_FragColor = vec4(sy > 1.0 ? toCol : fromCol, 1.0); // past the top → revealed
+    }`
+}));
+
+/* ─────────────────── SHATTER / FALL IN PIECES (canvas + physics) ───────
+   The front image is split into many small irregular triangular shards
+   (jittered grid, random diagonals). On play each shard is blasted outward
+   from the centre, then a tiny gravity loop pulls them down out of frame —
+   revealing the layer behind. No physics library needed. */
+TRANSITIONS.push({
+  name: 'Shatter / fall in pieces',
+  desc: 'Front image fractures into small irregular glass shards that blast out and fall.',
+  factory(ctx) {
+    const GRID = 12;            // seed density — higher = smaller shards
+    const G = 2200;             // gravity  (px / s²)
+    const canvas = document.createElement('canvas');
+    ctx.stage.appendChild(canvas);
+    canvas.style.opacity = '0';
+    const c2d = canvas.getContext('2d');
+    let raf = null, shards = [], off = null, cover = null;
+
+    // pre-render the front image at cover-size once, so each shard's clipped
+    // redraw is a cheap blit instead of rescaling the source every frame.
+    function buildOffscreen(W, H, img) {
+      const iw = img.naturalWidth, ih = img.naturalHeight;
+      const scale = Math.max(W / iw, H / ih);
+      const dw = iw * scale, dh = ih * scale;
+      off = document.createElement('canvas');
+      off.width = Math.round(W * ctx.dpr);
+      off.height = Math.round(H * ctx.dpr);
+      const octx = off.getContext('2d');
+      octx.setTransform(ctx.dpr, 0, 0, ctx.dpr, 0, 0);
+      octx.drawImage(img, (W - dw) / 2, (H - dh) / 2, dw, dh);
+      cover = { W, H };
+    }
+
+    function makeShard(a, b, c, W, H) {
+      const cx = (a[0] + b[0] + c[0]) / 3, cy = (a[1] + b[1] + c[1]) / 3;
+      const dx = cx - W / 2, dy = cy - H / 2;
+      const dist = Math.hypot(dx, dy) || 1;
+      const speed = 120 + Math.random() * 360;        // outward blast (px/s)
+      return {
+        verts: [a, b, c], cx, cy,         // original geometry (stage coords)
+        x: cx, y: cy, angle: 0,           // live transform state
+        vx: dx / dist * speed + (Math.random() - 0.5) * 160,
+        vy: dy / dist * speed - 120 - Math.random() * 260,  // slight upward pop
+        va: (Math.random() - 0.5) * 7                 // spin (rad/s)
+      };
+    }
+
+    function build(fromImg) {
+      const r = fitCanvas(canvas, ctx.stage, ctx.dpr);
+      c2d.setTransform(ctx.dpr, 0, 0, ctx.dpr, 0, 0); // draw in CSS pixels
+      const W = r.width, H = r.height;
+      buildOffscreen(W, H, fromImg);
+
+      // jittered lattice of points; edges/corners fixed so shards tile the rect.
+      const cw = W / GRID, ch = H / GRID;
+      const P = [];
+      for (let i = 0; i <= GRID; i++) {
+        P[i] = [];
+        for (let j = 0; j <= GRID; j++) {
+          let x = i * cw, y = j * ch;
+          if (i > 0 && i < GRID) x += (Math.random() - 0.5) * cw * 0.85;
+          if (j > 0 && j < GRID) y += (Math.random() - 0.5) * ch * 0.85;
+          P[i][j] = [x, y];
+        }
+      }
+      // split each cell into two triangles along a random diagonal → irregular shards
+      shards = [];
+      for (let i = 0; i < GRID; i++) {
+        for (let j = 0; j < GRID; j++) {
+          const p00 = P[i][j], p10 = P[i+1][j], p01 = P[i][j+1], p11 = P[i+1][j+1];
+          if (Math.random() < 0.5) {
+            shards.push(makeShard(p00, p10, p11, W, H));
+            shards.push(makeShard(p00, p11, p01, W, H));
+          } else {
+            shards.push(makeShard(p00, p10, p01, W, H));
+            shards.push(makeShard(p10, p11, p01, W, H));
+          }
+        }
+      }
+    }
+
+    function draw() {
+      const r = canvas.getBoundingClientRect();
+      c2d.clearRect(0, 0, r.width, r.height);
+      for (const s of shards) {
+        c2d.save();
+        // rigid motion: rotate the shard about its original centroid, then
+        // translate that centroid to its current position.
+        c2d.translate(s.x, s.y);
+        c2d.rotate(s.angle);
+        c2d.translate(-s.cx, -s.cy);
+        c2d.beginPath();
+        c2d.moveTo(s.verts[0][0], s.verts[0][1]);
+        c2d.lineTo(s.verts[1][0], s.verts[1][1]);
+        c2d.lineTo(s.verts[2][0], s.verts[2][1]);
+        c2d.closePath();
+        c2d.clip();
+        c2d.drawImage(off, 0, 0, cover.W, cover.H); // full image, clipped to shard
+        c2d.restore();
+      }
+    }
+
+    return {
+      play(reverse) {
+        if (raf) cancelAnimationFrame(raf);
+        build(reverse ? ctx.after : ctx.before); // shards = the image we're leaving
+        canvas.style.opacity = '1';              // ctx.baseEl (= destination) sits behind
+        let last = performance.now();
+        const start = last;
+        const loop = (now) => {
+          const dt = Math.min((now - last) / 1000, 1 / 30); // clamp big frame gaps
+          last = now;
+          for (const s of shards) {
+            s.vy += G * dt;
+            s.x += s.vx * dt;
+            s.y += s.vy * dt;
+            s.angle += s.va * dt;
+          }
+          draw();
+          if (now - start < 2600) raf = requestAnimationFrame(loop);
+          else canvas.style.opacity = '0'; // shards gone → base image shows through
+        };
+        raf = requestAnimationFrame(loop);
+      }
+    };
+  }
+});
+
+/* ───────────────────────── GRADIENT WIPE (WebGL) ─────────────────────
+   A soft gradient sweep with a noise-warped wavy edge crosses the frame,
+   blending from one image to the other. Direction + curve randomized. */
+TRANSITIONS.push(glTransition({
+  name: 'Gradient wipe',
+  desc: 'A soft gradient sweep with a wavy edge — direction and curve randomized each play.',
+  duration: 1.3, ease: 'power2.inOut',
+  setup: (scene) => {
+    const ang = Math.random() * Math.PI * 2;
+    scene.gl.uniform2f(scene.loc('uDir'), Math.cos(ang), Math.sin(ang));
+    scene.gl.uniform1f(scene.loc('uSeed'), Math.random() * 50.0);
+  },
+  frag: `
+    precision mediump float;
+    varying vec2 vUv;
+    uniform sampler2D uBefore, uAfter;
+    uniform float uProgress, uReverse, uSeed;
+    uniform vec2  uDir;
+    float hash(vec2 p){ return fract(sin(dot(p, vec2(127.1, 311.7))) * 43758.5453123); }
+    float noise(vec2 p){
+      vec2 i = floor(p), f = fract(p); f = f*f*(3.0 - 2.0*f);
+      float a = hash(i), b = hash(i + vec2(1.0,0.0));
+      float c = hash(i + vec2(0.0,1.0)), d = hash(i + vec2(1.0,1.0));
+      return mix(mix(a,b,f.x), mix(c,d,f.x), f.y);
+    }
+    void main(){
+      vec2 q = vUv - 0.5;
+      float proj = dot(q, uDir) + 0.5;
+      float t = dot(q, vec2(-uDir.y, uDir.x));   // across the wipe line
+      float wave = sin(t * 6.0 + uSeed * 6.2831) * 0.05
+                 + (noise(vec2(t * 3.0 + uSeed, uSeed)) - 0.5) * 0.14;
+      float edge = uProgress * 2.2 - 0.6;
+      float vis = smoothstep(edge - 0.13, edge + 0.13, proj + wave); // 1 = from, 0 = to
+      vec3 fromCol = mix(texture2D(uBefore, vUv).rgb, texture2D(uAfter, vUv).rgb, uReverse);
+      vec3 toCol   = mix(texture2D(uAfter, vUv).rgb,  texture2D(uBefore, vUv).rgb, uReverse);
+      gl_FragColor = vec4(mix(toCol, fromCol, vis), 1.0);
+    }`
+}));
+
+
+/* ───────────────────────────── GLOW (WebGL) ──────────────────────────
+   A cyan-white light blooms from a random point, floods the frame toward
+   white, then the destination resolves out of the light as the bloom
+   recedes. (Recreated from glow.mp4.) */
+TRANSITIONS.push(glTransition({
+  name: 'Glow bloom',
+  desc: 'A bright bloom of light floods the frame, then the new image resolves out of the glow.',
+  duration: 1.3, ease: 'power2.inOut',
+  setup: (scene) => {
+    // random bloom origin, kept away from the very edges
+    scene.gl.uniform2f(scene.loc('uOrigin'), 0.25 + Math.random() * 0.5, 0.25 + Math.random() * 0.5);
+  },
+  frag: `
+    precision mediump float;
+    varying vec2 vUv;
+    uniform sampler2D uBefore, uAfter;
+    uniform float uProgress, uReverse;
+    uniform vec2  uOrigin;
+    void main(){
+      float t = uProgress;
+      vec3 fromCol = mix(texture2D(uBefore, vUv).rgb, texture2D(uAfter, vUv).rgb, uReverse);
+      vec3 toCol   = mix(texture2D(uAfter, vUv).rgb,  texture2D(uBefore, vUv).rgb, uReverse);
+      vec3 base = mix(fromCol, toCol, smoothstep(0.40, 0.62, t)); // crossfade through the flash
+      float g = pow(max(sin(t * 3.14159265), 0.0), 1.25);         // 0 → 1 (mid) → 0 (max() avoids NaN)
+      float radial = smoothstep(0.95, 0.0, distance(vUv, uOrigin)); // bright at the origin
+      vec3 glowCol = vec3(0.70, 0.92, 1.0);                       // cyan-white
+      vec3 col = base + glowCol * g * (0.35 + 1.1 * radial) * 1.5;
+      col = mix(col, vec3(1.0), g * radial * 0.55);               // blow out to white at the peak
+      gl_FragColor = vec4(col, 1.0);
+    }`
+}));
+
+/* ──────────────────────── PIXEL BURN (WebGL) ──────────────────────────
+   The burn ignites at a few random hot-spots and spreads outward from each.
+   Along the burn front the image breaks into small pixel blocks that speckle
+   and scatter, reading as an RGB pixel field — mostly white / light grey
+   with red, blue and yellow specks. (Recreated from pixel-burn.mp4.) */
+TRANSITIONS.push(glTransition({
+  name: 'Pixel burn',
+  desc: 'The image disintegrates into scattering RGB pixels, burning outward from a few random hot-spots.',
+  duration: 1.8, ease: 'power1.inOut',
+  setup: (scene) => {
+    const spots = [];
+    const n = 2 + Math.floor(Math.random() * 2);     // 2 or 3 ignition points
+    for (let i = 0; i < 3; i++) {
+      if (i < n) spots.push(0.2 + Math.random() * 0.6, 0.2 + Math.random() * 0.6, Math.random() * 0.18);
+      else spots.push(9, 9, 0);                       // park unused spots off-screen
+    }
+    scene.gl.uniform3fv(scene.loc('uSpots'), new Float32Array(spots));
+    scene.gl.uniform1f(scene.loc('uSeed'), Math.random() * 50.0);
+  },
+  frag: `
+    precision mediump float;
+    varying vec2 vUv;
+    uniform sampler2D uBefore, uAfter;
+    uniform float uProgress, uReverse, uSeed;
+    uniform vec3  uSpots[3];          // xy = hot-spot centre, z = head-start size
+    float hash(vec2 p){ return fract(sin(dot(p, vec2(127.1, 311.7))) * 43758.5453123); }
+    float noise(vec2 p){
+      vec2 i = floor(p), f = fract(p); f = f*f*(3.0 - 2.0*f);
+      float a = hash(i), b = hash(i+vec2(1.0,0.0)), c = hash(i+vec2(0.0,1.0)), d = hash(i+vec2(1.0,1.0));
+      return mix(mix(a,b,f.x), mix(c,d,f.x), f.y);
+    }
+    const float CELLS = 200.0;        // pixel-block resolution (smaller pixels)
+    void main(){
+      vec2 cell = floor(vUv * CELLS);
+      float cr = hash(cell + uSeed);
+      // burn field = distance to the nearest hot-spot → spreads outward from each
+      float field = 9.0; vec2 nearest = vec2(0.5);
+      for (int i = 0; i < 3; i++) {
+        float dd = distance(vUv, uSpots[i].xy) - uSpots[i].z;
+        if (dd < field) { field = dd; nearest = uSpots[i].xy; }
+      }
+      field += (noise(vUv * 4.0 + uSeed) - 0.5) * 0.18 + cr * 0.05;
+      float t = uProgress * 1.8 - 0.45;
+      float d = field - t;            // >0 intact · ~0 burning · <0 gone
+      float band = 0.14;
+      float burning = 1.0 - smoothstep(0.0, band, abs(d));
+      vec2 cellUv = (cell + 0.5) / CELLS;
+      vec2 outward = normalize(vUv - nearest + 0.0001);   // scatter away from the spot
+      vec2 disp = (outward * 0.05 + vec2(cr - 0.5, hash(cell + 7.0) - 0.5) * 0.05) * burning;
+      vec2 fromUv = mix(vUv, cellUv, burning) + disp;
+      vec3 fromCol = mix(texture2D(uBefore, fromUv).rgb, texture2D(uAfter, fromUv).rgb, uReverse);
+      vec3 toCol   = mix(texture2D(uAfter, vUv).rgb,     texture2D(uBefore, vUv).rgb,   uReverse);
+      float a = smoothstep(-band, band * 0.4, d);
+      a *= 1.0 - step(cr, burning * 0.9) * burning;       // speckle blocks out at the edge
+      vec3 col = mix(toCol, fromCol, a);
+      // RGB pixel field on the burn front: mostly white/grey, with colour specks
+      float glow = pow(burning, 2.0);
+      float pick = hash(cell + uSeed * 3.0);
+      vec3 ember = vec3(0.92) + (hash(cell + 1.3) - 0.5) * 0.12;       // light grey/white base
+      ember = mix(ember, vec3(1.0, 0.20, 0.20), step(0.88, pick));     // red
+      ember = mix(ember, vec3(0.25, 0.5, 1.0),  step(0.76, pick) * step(pick, 0.88)); // blue
+      ember = mix(ember, vec3(1.0, 0.90, 0.20), step(0.64, pick) * step(pick, 0.76)); // yellow
+      col += ember * glow * 1.5;
+      gl_FragColor = vec4(col, 1.0);
+    }`
+}));
+
+/* ───────────────────────────── GLITCH (WebGL) ────────────────────────
+   Horizontal slices tear and shift, the RGB channels split apart, and
+   coloured data-blocks flicker — then it settles into the new image.
+   (Recreated from glitch.mp4.) */
+TRANSITIONS.push(glTransition({
+  name: 'Glitch',
+  desc: 'Horizontal slices tear and shift with RGB channel split and data-block flicker.',
+  duration: 0.9, ease: 'power1.inOut',
+  setup: (scene) => scene.gl.uniform1f(scene.loc('uSeed'), Math.random() * 50.0),
+  frag: `
+    precision mediump float;
+    varying vec2 vUv;
+    uniform sampler2D uBefore, uAfter;
+    uniform float uProgress, uReverse, uSeed;
+    float hash(vec2 p){ return fract(sin(dot(p, vec2(127.1, 311.7)) + uSeed) * 43758.5453123); }
+    // sample the "from" image (before, or after when reversed) with RGB split
+    vec3 splitFrom(vec2 uv, float ca){
+      vec3 b = vec3(texture2D(uBefore, uv + vec2(ca,0.0)).r, texture2D(uBefore, uv).g, texture2D(uBefore, uv - vec2(ca,0.0)).b);
+      vec3 a = vec3(texture2D(uAfter,  uv + vec2(ca,0.0)).r, texture2D(uAfter,  uv).g, texture2D(uAfter,  uv - vec2(ca,0.0)).b);
+      return mix(b, a, uReverse);
+    }
+    vec3 splitTo(vec2 uv, float ca){
+      vec3 b = vec3(texture2D(uBefore, uv + vec2(ca,0.0)).r, texture2D(uBefore, uv).g, texture2D(uBefore, uv - vec2(ca,0.0)).b);
+      vec3 a = vec3(texture2D(uAfter,  uv + vec2(ca,0.0)).r, texture2D(uAfter,  uv).g, texture2D(uAfter,  uv - vec2(ca,0.0)).b);
+      return mix(a, b, uReverse);
+    }
+    void main(){
+      float p = uProgress;
+      float gi = pow(max(sin(p * 3.14159265), 0.0), 0.7); // glitch intensity 0 → 1 → 0 (max() avoids NaN)
+      float rows = 22.0;
+      float row = floor(vUv.y * rows);
+      float tBlk = floor(p * 14.0);                  // quantize time → blocky jumps
+      float rr = hash(vec2(row, tBlk));
+      // horizontal slice shift: most rows a little, a few rows a lot
+      float shift = (rr - 0.5) * step(0.55, rr) * 0.3 * gi
+                  + (hash(vec2(row + 3.0, tBlk)) - 0.5) * step(0.90, rr) * 0.5 * gi;
+      vec2 uv = vec2(vUv.x + shift, vUv.y);
+      float ca = 0.02 * gi * (0.5 + rr);             // chromatic aberration (0 at the ends)
+      // per-row staggered reveal while glitching, settling to a clean crossfade
+      float sel = step(rr, smoothstep(0.35, 0.65, p));
+      sel = mix(smoothstep(0.4, 0.6, p), sel, gi);
+      vec3 col = mix(splitFrom(uv, ca), splitTo(uv, ca), sel);
+      // occasional coloured data-blocks
+      float blk = hash(vec2(floor(vUv.x * 30.0) + tBlk * 3.0, row));
+      col += step(0.96, blk) * gi * 0.8 * vec3(hash(vec2(row,1.0)), hash(vec2(row,2.0)), hash(vec2(row,3.0)));
+      gl_FragColor = vec4(col, 1.0);
+    }`
+}));
+
+/* ───────────────────────────── RIPPLE (WebGL) ────────────────────────
+   A water-drop wave expands from a random point, distorting the image in
+   concentric rings; the new image settles in behind the wavefront.
+   (Recreated from ripple.mp4.) */
+TRANSITIONS.push(glTransition({
+  name: 'Ripple',
+  desc: 'A water-drop wave expands from a random point, rippling into the new image.',
+  duration: 1.4, ease: 'power1.inOut',
+  setup: (scene) => scene.gl.uniform2f(scene.loc('uCenter'), 0.3 + Math.random() * 0.4, 0.3 + Math.random() * 0.4),
+  frag: `
+    precision mediump float;
+    varying vec2 vUv;
+    uniform sampler2D uBefore, uAfter;
+    uniform float uProgress, uReverse;
+    uniform vec2  uCenter;
+    void main(){
+      float p = uProgress;
+      vec2 d = vUv - uCenter;
+      float dist = length(d);
+      float radius = p * 1.6;                        // expanding wavefront
+      float w = dist - radius;                       // signed distance to the front
+      float envelope = sin(p * 3.14159265);          // 0 at the ends → no distortion
+      float amp = 0.045 * sin(w * 38.0) * exp(-abs(w) * 7.0) * envelope;
+      vec2 uv = vUv + (d / max(dist, 0.001)) * amp;  // radial displacement
+      float sel = smoothstep(0.08, -0.08, w);        // 1 inside the ring → show "to"
+      vec3 fromCol = mix(texture2D(uBefore, uv).rgb, texture2D(uAfter, uv).rgb, uReverse);
+      vec3 toCol   = mix(texture2D(uAfter, uv).rgb,  texture2D(uBefore, uv).rgb, uReverse);
+      gl_FragColor = vec4(mix(fromCol, toCol, sel), 1.0);
+    }`
+}));
+
+/* ─────────────────────────── LASER CURVE (WebGL) ─────────────────────
+   A glowing cyan→blue light ribbon sweeps across a curved path; the new
+   image is revealed behind the beam as it passes. (From laser-curve.mp4.) */
+TRANSITIONS.push(glTransition({
+  name: 'Laser curve',
+  desc: 'A glowing cyan-to-blue light ribbon sweeps a curved path, revealing the new image.',
+  duration: 1.4, ease: 'power2.inOut',
+  setup: (scene) => scene.gl.uniform1f(scene.loc('uSeed'), Math.random() * 6.28),
+  frag: `
+    precision mediump float;
+    varying vec2 vUv;
+    uniform sampler2D uBefore, uAfter;
+    uniform float uProgress, uReverse, uSeed;
+    void main(){
+      float p = uProgress;
+      float env = max(sin(p * 3.14159265), 0.0);            // beam visible only mid-sweep
+      float band = vUv.y * 0.7 + vUv.x * 0.3 + 0.22 * sin(vUv.x * 3.0 + uSeed); // curved front
+      float dd = band - mix(-0.5, 1.5, p);                  // signed distance to the beam
+      float sel = smoothstep(0.02, -0.02, dd);              // behind the beam → "to"
+      vec3 fromCol = mix(texture2D(uBefore, vUv).rgb, texture2D(uAfter, vUv).rgb, uReverse);
+      vec3 toCol   = mix(texture2D(uAfter, vUv).rgb,  texture2D(uBefore, vUv).rgb, uReverse);
+      vec3 base = mix(fromCol, toCol, sel);
+      float beam = exp(-abs(dd) * 22.0);                    // bright core
+      float glow = exp(-abs(dd) * 6.0) * 0.5;               // soft halo
+      vec3 laserCol = mix(vec3(0.15, 1.0, 0.85), vec3(0.25, 0.45, 1.0), clamp(vUv.x, 0.0, 1.0));
+      gl_FragColor = vec4(base + laserCol * (beam + glow) * env * 1.6, 1.0);
+    }`
+}));
+
+/* ────────────────────────── SHIMMER BLUR (WebGL) ─────────────────────
+   A soft, dreamy blur-crossfade: the image goes out of focus with a subtle
+   wavy shimmer and a moving sheen, then sharpens into the new image.
+   (From shimmer-blur.mp4.) */
+TRANSITIONS.push(glTransition({
+  name: 'Shimmer blur',
+  desc: 'A soft blur-crossfade with a wavy shimmer and a moving sheen of light.',
+  duration: 1.5, ease: 'power2.inOut',
+  setup: (scene) => scene.gl.uniform1f(scene.loc('uSeed'), Math.random() * 50.0),
+  frag: `
+    precision mediump float;
+    varying vec2 vUv;
+    uniform sampler2D uBefore, uAfter;
+    uniform float uProgress, uReverse, uSeed;
+    vec3 blurTex(sampler2D tex, vec2 uv, float r){
+      vec3 c = texture2D(tex, uv).rgb;
+      c += texture2D(tex, uv + vec2(r, 0.0)).rgb;
+      c += texture2D(tex, uv + vec2(-r, 0.0)).rgb;
+      c += texture2D(tex, uv + vec2(0.0, r)).rgb;
+      c += texture2D(tex, uv + vec2(0.0, -r)).rgb;
+      c += texture2D(tex, uv + vec2(r, r) * 0.7).rgb;
+      c += texture2D(tex, uv + vec2(-r, r) * 0.7).rgb;
+      c += texture2D(tex, uv + vec2(r, -r) * 0.7).rgb;
+      c += texture2D(tex, uv + vec2(-r, -r) * 0.7).rgb;
+      return c / 9.0;
+    }
+    void main(){
+      float p = uProgress;
+      float env = max(sin(p * 3.14159265), 0.0);            // blur/shimmer peaks mid
+      vec2 warp = vec2(sin(vUv.y * 18.0 + uSeed + p * 6.0),
+                       cos(vUv.x * 16.0 + uSeed * 1.3 + p * 5.0)) * 0.012 * env;
+      vec2 uv = vUv + warp;
+      float r = env * 0.05;                                 // blur radius
+      vec3 B = blurTex(uBefore, uv, r);
+      vec3 A = blurTex(uAfter, uv, r);
+      vec3 fromCol = mix(B, A, uReverse);
+      vec3 toCol   = mix(A, B, uReverse);
+      vec3 col = mix(fromCol, toCol, smoothstep(0.30, 0.70, p));
+      float sweep = sin((vUv.x + vUv.y) * 3.0 - p * 8.0);   // moving diagonal sheen
+      col += env * (0.06 + 0.10 * smoothstep(0.7, 1.0, sweep));
+      gl_FragColor = vec4(col, 1.0);
+    }`
+}));
+
+/* ────────────────────────── OVERLAY MORPH (WebGL) ────────────────────
+   A liquid morph: a swirling flow field warps both images and smears them
+   along the flow (directional streaks) while crossfading, so one image
+   appears to melt and flow into the other. (From overlay-morph.mp4.) */
+TRANSITIONS.push(glTransition({
+  name: 'Overlay morph',
+  desc: 'A swirling liquid flow warps and smears one image as it morphs into the other.',
+  duration: 1.5, ease: 'power2.inOut',
+  setup: (scene) => scene.gl.uniform1f(scene.loc('uSeed'), Math.random() * 50.0),
+  frag: `
+    precision mediump float;
+    varying vec2 vUv;
+    uniform sampler2D uBefore, uAfter;
+    uniform float uProgress, uReverse, uSeed;
+    float hash(vec2 p){ return fract(sin(dot(p, vec2(127.1, 311.7))) * 43758.5453123); }
+    float noise(vec2 p){
+      vec2 i = floor(p), f = fract(p); f = f*f*(3.0 - 2.0*f);
+      float a = hash(i), b = hash(i+vec2(1.0,0.0)), c = hash(i+vec2(0.0,1.0)), d = hash(i+vec2(1.0,1.0));
+      return mix(mix(a,b,f.x), mix(c,d,f.x), f.y);
+    }
+    // average several taps along dir → directional motion-blur smear
+    vec3 smear(sampler2D tex, vec2 uv, vec2 dir){
+      vec3 c = vec3(0.0);
+      for (int k = 0; k < 5; k++){
+        c += texture2D(tex, uv + dir * (float(k) / 4.0 - 0.5)).rgb;
+      }
+      return c / 5.0;
+    }
+    void main(){
+      float p = uProgress;
+      float env = sin(p * 3.14159265);                    // flow strength 0 → 1 → 0
+      // swirling flow field (two noise channels) → liquid domain warp
+      vec2 flow = vec2(noise(vUv * 3.0 + vec2(uSeed, p * 1.6)),
+                       noise(vUv * 3.0 + vec2(uSeed + 5.2, 1.3 + p * 1.6))) - 0.5;
+      flow *= 0.28 * env;
+      vec2 uv  = vUv + flow * 0.5;                         // overall warp
+      vec2 dir = flow * 1.3;                               // smear along the flow
+      vec3 B = smear(uBefore, uv, dir);
+      vec3 A = smear(uAfter, uv, dir);
+      vec3 fromCol = mix(B, A, uReverse);
+      vec3 toCol   = mix(A, B, uReverse);
+      gl_FragColor = vec4(mix(fromCol, toCol, smoothstep(0.30, 0.70, p)), 1.0);
+    }`
+}));
+
+/* ────────────────────── PARTICLE DUST (WebGL points) ─────────────────
+   The image is a grid of ~50k GPU point-sprites, each taking the colour of
+   the image at its position. They blast outward with turbulence and fade,
+   dissolving the top image into drifting dust to reveal the image behind. */
+TRANSITIONS.push({
+  name: 'Particle dust',
+  desc: 'The image scatters into ~50,000 drifting dust particles, revealing the image behind.',
+  factory(ctx) {
+    const N = 224;                       // grid → N*N ≈ 50,176 particles
+    const count = N * N;
+    const canvas = document.createElement('canvas');
+    ctx.stage.appendChild(canvas);
+    canvas.style.opacity = '0';
+    const gl = canvas.getContext('webgl', { premultipliedAlpha: false, alpha: true });
+
+    // crisp full-res overlay shown at progress ≈ 0, then faded to the particles
+    const fromEl = document.createElement('img');
+    fromEl.alt = '';
+    Object.assign(fromEl.style, { zIndex: '3', opacity: '0' });
+    ctx.stage.appendChild(fromEl);
+
+    const VERT = `
+      attribute vec2 aHome;
+      attribute vec2 aRand;
+      uniform float uProgress, uPx;
+      varying vec2 vHome;
+      varying float vAlpha;
+      void main(){
+        float p = uProgress;
+        float local = clamp((p - aRand.x * 0.35) / 0.65, 0.0, 1.0); // staggered dissolve
+        float e = local * local;                                    // accelerate
+        vec2 outward = normalize(aHome - vec2(0.5) + vec2(0.0001));
+        vec2 turb = vec2(sin(aRand.x*40.0 + aRand.y*13.0), cos(aRand.y*37.0 + aRand.x*7.0));
+        vec2 pos = aHome + outward * e * 0.18 + turb * e * 0.33 + vec2(0.0, -e * 0.22);
+        vHome = aHome;
+        vAlpha = 1.0 - local;
+        gl_PointSize = uPx * (1.0 + e * 2.5) + 1.0;                  // grow as they fly (+1 = no seams)
+        gl_Position = vec4(pos.x * 2.0 - 1.0, -(pos.y * 2.0 - 1.0), 0.0, 1.0);
+      }`;
+    const FRAG = `
+      precision mediump float;
+      uniform sampler2D uTex;
+      varying vec2 vHome;
+      varying float vAlpha;
+      void main(){
+        vec3 c = texture2D(uTex, vHome).rgb;       // solid colour from the particle's home position
+        float d = length(gl_PointCoord - 0.5);
+        float round = smoothstep(0.5, 0.25, d);    // soft round dot once it starts to fly
+        float mask = mix(1.0, round, clamp((1.0 - vAlpha) * 1.5, 0.0, 1.0)); // square at rest → seamless
+        gl_FragColor = vec4(c, vAlpha * mask);
+      }`;
+    const compile = (type, src) => {
+      const s = gl.createShader(type);
+      gl.shaderSource(s, src); gl.compileShader(s);
+      if (!gl.getShaderParameter(s, gl.COMPILE_STATUS)) console.error(gl.getShaderInfoLog(s));
+      return s;
+    };
+    const prog = gl.createProgram();
+    gl.attachShader(prog, compile(gl.VERTEX_SHADER, VERT));
+    gl.attachShader(prog, compile(gl.FRAGMENT_SHADER, FRAG));
+    gl.linkProgram(prog); gl.useProgram(prog);
+
+    const home = new Float32Array(count * 2), rand = new Float32Array(count * 2);
+    let k = 0;
+    for (let j = 0; j < N; j++) for (let i = 0; i < N; i++) {
+      home[k*2] = (i + 0.5) / N; home[k*2+1] = (j + 0.5) / N;
+      rand[k*2] = Math.random(); rand[k*2+1] = Math.random();
+      k++;
+    }
+    const homeBuf = gl.createBuffer();
+    gl.bindBuffer(gl.ARRAY_BUFFER, homeBuf); gl.bufferData(gl.ARRAY_BUFFER, home, gl.STATIC_DRAW);
+    const aHome = gl.getAttribLocation(prog, 'aHome');
+    gl.enableVertexAttribArray(aHome); gl.vertexAttribPointer(aHome, 2, gl.FLOAT, false, 0, 0);
+    const randBuf = gl.createBuffer();
+    gl.bindBuffer(gl.ARRAY_BUFFER, randBuf); gl.bufferData(gl.ARRAY_BUFFER, rand, gl.STATIC_DRAW);
+    const aRand = gl.getAttribLocation(prog, 'aRand');
+    gl.enableVertexAttribArray(aRand); gl.vertexAttribPointer(aRand, 2, gl.FLOAT, false, 0, 0);
+
+    const tex = gl.createTexture();
+    gl.bindTexture(gl.TEXTURE_2D, tex);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
+    gl.uniform1i(gl.getUniformLocation(prog, 'uTex'), 0);
+    const uProgress = gl.getUniformLocation(prog, 'uProgress');
+    const uPx = gl.getUniformLocation(prog, 'uPx');
+    let tween = null;
+
+    gl.enable(gl.BLEND);
+    gl.blendFunc(gl.SRC_ALPHA, gl.ONE_MINUS_SRC_ALPHA);
+    gl.clearColor(0, 0, 0, 0);
+
+    function render(p) {
+      fitCanvas(canvas, ctx.stage, ctx.dpr);
+      gl.viewport(0, 0, canvas.width, canvas.height);
+      gl.clear(gl.COLOR_BUFFER_BIT);
+      gl.uniform1f(uProgress, p);
+      gl.uniform1f(uPx, canvas.width / N);
+      gl.drawArrays(gl.POINTS, 0, count);
+    }
+
+    return {
+      play(reverse) {
+        if (tween) tween.kill();
+        const fromImg = reverse ? ctx.after : ctx.before;
+        gl.bindTexture(gl.TEXTURE_2D, tex);
+        gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL, false);
+        gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, fromImg);
+        render(0);
+        canvas.style.opacity = '1';                  // ctx.baseEl (= destination) sits behind
+        fromEl.src = fromImg.src;                     // crisp image covers the particle grid at the start
+        fromEl.style.opacity = '1';
+        const o = { p: 0 };
+        tween = gsap.to(o, {
+          p: 1, duration: 1.6, ease: 'power1.in',
+          onUpdate: () => {
+            render(o.p);
+            fromEl.style.opacity = String(Math.max(0, 1 - o.p / 0.1)); // hand off to particles by ~10%
+          },
+          onComplete: () => { canvas.style.opacity = '0'; fromEl.style.opacity = '0'; }
+        });
+      }
+    };
+  }
+});
+
+/* ───────────────────────────── VORTEX (WebGL) ────────────────────────
+   A swirling vortex twists the image around the centre — strongest near
+   the middle — with a slight zoom and a bright ring at the peak, spinning
+   one image into the other. Spin direction randomized each play. */
+TRANSITIONS.push(glTransition({
+  name: 'Vortex twist',
+  desc: 'A swirling vortex spins one image into the other with a bright ring at the peak.',
+  duration: 1.3, ease: 'power2.inOut',
+  setup: (scene) => scene.gl.uniform1f(scene.loc('uSeed'), Math.random()),
+  frag: `
+    precision mediump float;
+    varying vec2 vUv;
+    uniform sampler2D uBefore, uAfter;
+    uniform float uProgress, uReverse, uSeed;
+    void main(){
+      float p = uProgress;
+      float env = sin(p * 3.14159265);                 // swirl 0 → 1 → 0
+      vec2 c = vUv - 0.5;
+      float r = length(c);
+      float ang = atan(c.y, c.x);
+      float dir = uSeed > 0.5 ? 1.0 : -1.0;            // random spin
+      ang += dir * env * 7.0 * (0.6 - r);              // twist stronger near centre
+      vec2 uv = vec2(0.5) + vec2(cos(ang), sin(ang)) * r * (1.0 - 0.25 * env);
+      vec3 fromCol = mix(texture2D(uBefore, uv).rgb, texture2D(uAfter, uv).rgb, uReverse);
+      vec3 toCol   = mix(texture2D(uAfter, uv).rgb,  texture2D(uBefore, uv).rgb, uReverse);
+      vec3 col = mix(fromCol, toCol, smoothstep(0.4, 0.6, p));
+      col += exp(-pow((r - 0.5 * env) * 8.0, 2.0)) * env * 0.15;  // bright ring at the wavefront
+      gl_FragColor = vec4(col, 1.0);
+    }`
+}));
+
+/* ════════════════════════════════════════════════════════════════════
+   3.  GALLERY WIRING  —  builds a card per transition once images load.
+   ════════════════════════════════════════════════════════════════════ */
+
+function loadImage(src) {
+  return new Promise((res, rej) => {
+    const img = new Image();
+    img.crossOrigin = 'anonymous';     // allow WebGL/canvas use of remote images
+    img.onload = () => res(img);
+    img.onerror = rej;
+    img.src = src;
+  });
+}
+
+// preload every unique image once, then build the gallery
+const srcs = [...new Set(PAIRS.flatMap(p => [p.before, p.after]))];
+
+Promise.all(srcs.map(loadImage)).then((imgs) => {
+  const bySrc = new Map(srcs.map((s, i) => [s, imgs[i]]));
+  const dpr = Math.min(window.devicePixelRatio || 1, 2);
+  const grid = document.getElementById('grid');
+
+  TRANSITIONS.forEach((t, i) => {
+    const pair = PAIRS[i % PAIRS.length];      // rotate pairs across transitions
+    const before = bySrc.get(pair.before);
+    const after  = bySrc.get(pair.after);
+    const aspect = before.naturalWidth / before.naturalHeight;
+
+    const card = document.createElement('div');
+    card.className = 'card';
+    card.innerHTML = `
+      <div class="stage">
+        <img class="base" src="${pair.before}" alt="">
+      </div>
+      <div class="meta"><h3>${t.name} <span class="tag">${pair.label}</span></h3><p>${t.desc}</p></div>
+      <div class="controls">
+        <button class="primary play">▶ Play</button>
+      </div>`;
+    grid.appendChild(card);
+
+    const stage = card.querySelector('.stage');
+    const baseEl = card.querySelector('.base');
+    stage.dataset.aspect = aspect;
+    stage.style.height = (stage.getBoundingClientRect().width / aspect) + 'px';
+
+    const inst = t.factory({ stage, baseEl, before, after, dpr });
+
+    // Play toggles: image1 → image2, then image2 → image1, …
+    // The destination is shown on baseEl (behind the effect canvas) up front,
+    // so when the canvas finishes and hides, the new image is already there.
+    let showing = 0; // 0 = image1 (before) · 1 = image2 (after)
+    const play = () => {
+      const reverse = showing === 1;
+      baseEl.src = reverse ? pair.before : pair.after;
+      inst.play(reverse);
+      showing = reverse ? 0 : 1;
+    };
+    card.querySelector('.play').addEventListener('click', play);
+    stage.addEventListener('click', play);
+  });
+
+  // keep stage heights correct on resize
+  window.addEventListener('resize', () => {
+    document.querySelectorAll('.stage').forEach(s => {
+      s.style.height = (s.getBoundingClientRect().width / s.dataset.aspect) + 'px';
+    });
+  });
+});
+</script>
+</body>
+</html>
