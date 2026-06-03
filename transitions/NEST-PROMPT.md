@@ -1,13 +1,13 @@
-# NEST prompt — image-to-image transition effects for before/after video export
+# Agent prompt — image-to-image transition effects for before/after video export
 
-Paste everything below to the NEST agent.
+Paste everything below to your coding agent.
 
 ---
 
 ## What I want to build
 
 I have a working set of **11 image-to-image transition effects** (WebGL shaders + a GPU
-particle system + one 2D-canvas physics effect). I want to integrate them into this NEST
+particle system + one 2D-canvas physics effect). I want to integrate them into my web app
 prototype so that, when a user finishes editing an image, they can **export a short
 before→after video** and **pick which transition effect** plays between the original and
 the edited image.
@@ -604,7 +604,7 @@ rec.stop();
 // await 'stop' → new Blob(chunks, { type: 'video/webm' })
 ```
 WebM is widely supported but some sharing targets prefer MP4 — prefer Option A if WebCodecs
-is available (Chromium-based; most Meta internal contexts are).
+is available (Chromium-based browsers).
 
 ### Export details that matter
 - **Resolution:** export at the edited image's native size (cap the long edge at ~1440–2160
@@ -620,7 +620,7 @@ is available (Chromium-based; most Meta internal contexts are).
 
 ---
 
-## Suggested integration / UX in NEST
+## Suggested integration / UX
 
 1. **Registry:** one object mapping `id → { name, family, frag|builder, duration, ease, setup }`
    (table above). Adding an effect = one entry.
