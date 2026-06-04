@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-04T05:05:37Z",
-  "generatedAtHuman": "Jun 03, 2026 at 10:05 PM PDT",
+  "generatedAt": "2026-06-04T06:05:35Z",
+  "generatedAtHuman": "Jun 03, 2026 at 11:05 PM PDT",
   "source": "hourly-cache",
   "refreshCadenceMinutes": 60,
   "overview": {
@@ -152,8 +152,8 @@
       "displayName": "Cassandra Stirman",
       "email": "cassiestirman@gmail.com",
       "createdAt": "2025-11-01T22:59:06Z",
-      "lastLoginAt": "2026-06-04T04:56:13Z",
-      "lastActiveAt": "2026-06-04T04:56:13Z",
+      "lastLoginAt": "2026-06-04T05:10:29Z",
+      "lastActiveAt": "2026-06-04T05:10:29Z",
       "isPaidSubscriber": false,
       "grantedPremium": true,
       "insights30": 17,
