@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-09T18:05:48Z",
-  "generatedAtHuman": "Jun 09, 2026 at 11:05 AM PDT",
+  "generatedAt": "2026-06-09T19:05:48Z",
+  "generatedAtHuman": "Jun 09, 2026 at 12:05 PM PDT",
   "source": "hourly-cache",
   "refreshCadenceMinutes": 60,
   "overview": {
@@ -11,10 +11,10 @@
     "premium": 15,
     "paidSubscribers": 4,
     "grantedPremium": 11,
-    "retainedUsers": 11,
-    "insights30": 63,
-    "entries30": 119,
-    "cardImages30": 44
+    "retainedUsers": 12,
+    "insights30": 64,
+    "entries30": 122,
+    "cardImages30": 45
   },
   "users": [
     {
@@ -399,13 +399,13 @@
       "displayName": "Jane Russell",
       "email": "groovystarr@hotmail.co.uk",
       "createdAt": "2026-06-07T10:11:54Z",
-      "lastLoginAt": "2026-06-08T13:36:03Z",
-      "lastActiveAt": "2026-06-08T13:36:03Z",
+      "lastLoginAt": "2026-06-09T18:13:42Z",
+      "lastActiveAt": "2026-06-09T18:13:42Z",
       "isPaidSubscriber": false,
       "grantedPremium": false,
-      "insights30": 2,
-      "cardImages30": 1,
-      "retained": false
+      "insights30": 3,
+      "cardImages30": 2,
+      "retained": true
     },
     {
       "id": "rPmSAnOIdQcaJtb11jIAqMapfR83",
@@ -774,7 +774,7 @@
     },
     {
       "title": "Retention pulse",
-      "body": "19% of users have returned across multiple weeks."
+      "body": "21% of users have returned across multiple weeks."
     },
     {
       "title": "Most engaged recently",
@@ -930,7 +930,7 @@
       {
         "date": "2026-06-08",
         "label": "Jun 8",
-        "count": 2
+        "count": 3
       },
       {
         "date": "2026-06-09",
@@ -1082,7 +1082,7 @@
       {
         "date": "2026-06-08",
         "label": "Jun 8",
-        "count": 2
+        "count": 3
       },
       {
         "date": "2026-06-09",
