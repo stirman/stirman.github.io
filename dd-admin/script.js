@@ -11,6 +11,7 @@ const state = {
 };
 
 const status = $("status");
+const chartTooltip = $("chart-tooltip");
 
 $("login-form").addEventListener("submit", (event) => {
   event.preventDefault();
@@ -56,7 +57,8 @@ function unlock() {
 }
 
 async function loadMetrics(force = false) {
-  setStatus(force ? "Refreshing cached metrics…" : "Loading cached metrics…");
+  const previousGeneratedAt = state.metrics?.generatedAt || null;
+  setStatus(force ? "Checking latest published snapshot…" : "Loading cached metrics…");
   try {
     const url = `${METRICS_URL}?t=${Date.now()}`;
     const response = await fetch(url, { cache: "no-store" });
@@ -71,7 +73,12 @@ async function loadMetrics(force = false) {
       $("assumption-sub-price").value = Number(state.metrics.costs.subscriptionPrice).toFixed(2);
     }
     renderAll();
-    setStatus(buildStatusMessage(state.metrics));
+    const statusMessage = buildStatusMessage(state.metrics);
+    if (force && previousGeneratedAt === state.metrics.generatedAt) {
+      setStatus(`${statusMessage} Latest published snapshot loaded.`);
+    } else {
+      setStatus(statusMessage);
+    }
   } catch (error) {
     console.error(error);
     setStatus("Couldn’t load cached metrics yet. The hourly updater may not have published the first snapshot yet.", true);
@@ -120,8 +127,11 @@ function renderBarChart(container, series, singular, plural, sparseLabels = fals
     if (showsLabel && index === items.length - 1) bar.classList.add("label-end");
     const noun = item.count === 1 ? singular : plural;
     bar.dataset.tip = `${item.label} · ${formatNumber(item.count || 0)} ${noun}`;
+    bar.setAttribute("aria-label", bar.dataset.tip);
+    bar.tabIndex = 0;
     container.appendChild(bar);
   });
+  wireChartTooltip(container);
 }
 
 function getBarLabelIndexes(count, sparseLabels) {
@@ -142,6 +152,13 @@ function renderRetention(retained, totalUsers) {
 }
 
 function renderInteresting() {
+  if (Array.isArray(state.metrics.patterns) && state.metrics.patterns.length) {
+    $("insights-list").innerHTML = state.metrics.patterns.map((item) => `
+      <div class="insight-item"><strong>${escapeHtml(item.title)}:</strong> ${escapeHtml(item.body)}</div>
+    `).join("");
+    return;
+  }
+
   const overview = state.metrics.overview;
   const users = state.users;
   const items = [];
@@ -269,6 +286,39 @@ function renderTopLineItem(items) {
   if (!items.length) return "No cost line items yet";
   const top = items[0];
   return `${escapeHtml(top.name)} at ${money(top.dollars)}`;
+}
+
+function wireChartTooltip(container) {
+  container.querySelectorAll(".bar").forEach((bar) => {
+    bar.addEventListener("pointerenter", showChartTooltip);
+    bar.addEventListener("pointermove", showChartTooltip);
+    bar.addEventListener("pointerleave", hideChartTooltip);
+    bar.addEventListener("focus", showChartTooltip);
+    bar.addEventListener("blur", hideChartTooltip);
+  });
+}
+
+function showChartTooltip(event) {
+  const target = event.currentTarget;
+  const tip = target.dataset.tip;
+  if (!tip) return;
+  const rect = target.getBoundingClientRect();
+  chartTooltip.textContent = tip;
+  chartTooltip.setAttribute("aria-hidden", "false");
+  chartTooltip.classList.add("visible");
+  const tooltipRect = chartTooltip.getBoundingClientRect();
+  const pointerX = "clientX" in event ? event.clientX : rect.left + rect.width / 2;
+  const left = Math.min(
+    window.innerWidth - tooltipRect.width - 10,
+    Math.max(10, pointerX - tooltipRect.width / 2)
+  );
+  const top = Math.max(10, rect.top - tooltipRect.height - 10);
+  chartTooltip.style.transform = `translate(${left}px, ${top}px)`;
+}
+
+function hideChartTooltip() {
+  chartTooltip.classList.remove("visible");
+  chartTooltip.setAttribute("aria-hidden", "true");
 }
 
 function busiestDay(series) { return [...(series || [])].sort((a, b) => (b.count || 0) - (a.count || 0))[0]; }
