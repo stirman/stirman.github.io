@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-11T04:05:45Z",
-  "generatedAtHuman": "Jun 10, 2026 at 09:05 PM PDT",
+  "generatedAt": "2026-06-11T05:05:48Z",
+  "generatedAtHuman": "Jun 10, 2026 at 10:05 PM PDT",
   "source": "hourly-cache",
   "refreshCadenceMinutes": 60,
   "overview": {
@@ -12,8 +12,8 @@
     "paidSubscribers": 4,
     "grantedPremium": 11,
     "retainedUsers": 12,
-    "insights30": 64,
-    "entries30": 124,
+    "insights30": 65,
+    "entries30": 125,
     "cardImages30": 45
   },
   "users": [
@@ -412,11 +412,11 @@
       "displayName": "Jane Russell",
       "email": "groovystarr@hotmail.co.uk",
       "createdAt": "2026-06-07T10:11:54Z",
-      "lastLoginAt": "2026-06-10T21:00:15Z",
-      "lastActiveAt": "2026-06-10T21:00:15Z",
+      "lastLoginAt": "2026-06-11T04:55:55Z",
+      "lastActiveAt": "2026-06-11T04:55:55Z",
       "isPaidSubscriber": false,
       "grantedPremium": false,
-      "insights30": 4,
+      "insights30": 5,
       "cardImages30": 3,
       "retained": true
     },
@@ -943,7 +943,7 @@
       {
         "date": "2026-06-10",
         "label": "Jun 10",
-        "count": 2
+        "count": 3
       },
       {
         "date": "2026-06-11",
