@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-06-14T20:05:44Z",
-  "generatedAtHuman": "Jun 14, 2026 at 01:05 PM PDT",
+  "generatedAt": "2026-06-14T21:05:44Z",
+  "generatedAtHuman": "Jun 14, 2026 at 02:05 PM PDT",
   "source": "hourly-cache",
   "refreshCadenceMinutes": 60,
   "overview": {
-    "totalUsers": 58,
-    "launchUsers": 54,
-    "active7": 7,
-    "active30": 16,
+    "totalUsers": 59,
+    "launchUsers": 55,
+    "active7": 8,
+    "active30": 17,
     "premium": 15,
     "paidSubscribers": 4,
     "grantedPremium": 11,
@@ -473,6 +473,19 @@
       "retained": false
     },
     {
+      "id": "VC3munYWi3N1Tf40V7B6hlxDWaG3",
+      "displayName": "karen pallete",
+      "email": "scriptydoo@yahoo.com",
+      "createdAt": "2026-06-14T20:46:08Z",
+      "lastLoginAt": "2026-06-14T20:46:08Z",
+      "lastActiveAt": "2026-06-14T20:46:08Z",
+      "isPaidSubscriber": false,
+      "grantedPremium": false,
+      "insights30": 0,
+      "cardImages30": 0,
+      "retained": false
+    },
+    {
       "id": "gsjzhZNeF5Tipx85rToVgMy9Jxa2",
       "displayName": "Kathryn Rogers",
       "email": "h5rykkzm5k@privaterelay.appleid.com",
@@ -787,7 +800,7 @@
     },
     {
       "title": "Retention pulse",
-      "body": "21% of users have returned across multiple weeks."
+      "body": "20% of users have returned across multiple weeks."
     },
     {
       "title": "Most engaged recently",
@@ -1372,7 +1385,7 @@
       {
         "date": "2026-06-14",
         "label": "Jun 14",
-        "count": 56
+        "count": 57
       }
     ],
     "dailyCosts": [
