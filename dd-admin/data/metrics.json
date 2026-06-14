@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-06-13T23:05:44Z",
-  "generatedAtHuman": "Jun 13, 2026 at 04:05 PM PDT",
+  "generatedAt": "2026-06-14T00:05:47Z",
+  "generatedAtHuman": "Jun 13, 2026 at 05:05 PM PDT",
   "source": "hourly-cache",
   "refreshCadenceMinutes": 60,
   "overview": {
     "totalUsers": 58,
     "launchUsers": 54,
-    "active7": 7,
+    "active7": 6,
     "active30": 15,
     "premium": 15,
     "paidSubscribers": 4,
     "grantedPremium": 11,
     "retainedUsers": 12,
-    "insights30": 66,
-    "entries30": 130,
-    "cardImages30": 42
+    "insights30": 63,
+    "entries30": 129,
+    "cardImages30": 40
   },
   "users": [
     {
@@ -78,7 +78,7 @@
       "lastActiveAt": "2026-05-27T17:11:22Z",
       "isPaidSubscriber": false,
       "grantedPremium": false,
-      "insights30": 7,
+      "insights30": 6,
       "cardImages30": 3,
       "retained": true
     },
@@ -152,12 +152,12 @@
       "displayName": "Cassandra Stirman",
       "email": "cassiestirman@gmail.com",
       "createdAt": "2025-11-01T22:59:06Z",
-      "lastLoginAt": "2026-06-13T21:35:23Z",
-      "lastActiveAt": "2026-06-13T21:35:23Z",
+      "lastLoginAt": "2026-06-13T23:44:13Z",
+      "lastActiveAt": "2026-06-13T23:44:13Z",
       "isPaidSubscriber": false,
       "grantedPremium": true,
-      "insights30": 13,
-      "cardImages30": 7,
+      "insights30": 12,
+      "cardImages30": 6,
       "retained": true
     },
     {
@@ -663,8 +663,8 @@
       "lastActiveAt": "2026-06-05T00:33:48Z",
       "isPaidSubscriber": false,
       "grantedPremium": false,
-      "insights30": 6,
-      "cardImages30": 3,
+      "insights30": 5,
+      "cardImages30": 2,
       "retained": true
     },
     {
@@ -791,7 +791,7 @@
     },
     {
       "title": "Most engaged recently",
-      "body": "Erica Joub\u00e9rt, Cassandra Stirman, Andrew Zimmermann generated the most insights in the last 30 days."
+      "body": "Erica Joub\u00e9rt, Cassandra Stirman, Jane Russell generated the most insights in the last 30 days."
     },
     {
       "title": "Win-back opportunity",
@@ -801,11 +801,6 @@
   "series": {
     "dailyInsights": [
       {
-        "date": "2026-05-15",
-        "label": "May 15",
-        "count": 3
-      },
-      {
         "date": "2026-05-16",
         "label": "May 16",
         "count": 1
@@ -949,15 +944,15 @@
         "date": "2026-06-13",
         "label": "Jun 13",
         "count": 1
+      },
+      {
+        "date": "2026-06-14",
+        "label": "Jun 14",
+        "count": 0
       }
     ],
     "dailyCardImages": [
       {
-        "date": "2026-05-15",
-        "label": "May 15",
-        "count": 2
-      },
-      {
         "date": "2026-05-16",
         "label": "May 16",
         "count": 1
@@ -1100,6 +1095,11 @@
       {
         "date": "2026-06-13",
         "label": "Jun 13",
+        "count": 0
+      },
+      {
+        "date": "2026-06-14",
+        "label": "Jun 14",
         "count": 0
       }
     ],
@@ -1368,17 +1368,14 @@
         "date": "2026-06-13",
         "label": "Jun 13",
         "count": 56
+      },
+      {
+        "date": "2026-06-14",
+        "label": "Jun 14",
+        "count": 56
       }
     ],
     "dailyCosts": [
-      {
-        "date": "2026-05-15",
-        "label": "May 15",
-        "textDollars": 0.0011,
-        "imageDollars": 0.7738,
-        "otherDollars": 0.0,
-        "totalDollars": 0.7749
-      },
       {
         "date": "2026-05-16",
         "label": "May 16",
@@ -1606,6 +1603,14 @@
       {
         "date": "2026-06-13",
         "label": "Jun 13",
+        "textDollars": 0.0049,
+        "imageDollars": 0.2571,
+        "otherDollars": 0.0,
+        "totalDollars": 0.262
+      },
+      {
+        "date": "2026-06-14",
+        "label": "Jun 14",
         "textDollars": 0.0,
         "imageDollars": 0.0,
         "otherDollars": 0.0,
@@ -1615,14 +1620,14 @@
   },
   "costs": {
     "available": true,
-    "totalDollars": 18.3841,
-    "textDollars": 0.0703,
-    "imageDollars": 18.3138,
+    "totalDollars": 17.8712,
+    "textDollars": 0.0742,
+    "imageDollars": 17.7971,
     "otherDollars": 0.0,
     "byLineItem": [
       {
         "name": "gpt-image-1 image, output",
-        "dollars": 15.7248
+        "dollars": 15.2256
       },
       {
         "name": "gpt-image-2-2026-04-21 image, output",
@@ -1630,7 +1635,7 @@
       },
       {
         "name": "gpt-image-1 text, input",
-        "dollars": 0.4717
+        "dollars": 0.4542
       },
       {
         "name": "gpt-image-2-2026-04-21 image, input",
@@ -1642,11 +1647,11 @@
       },
       {
         "name": "gpt-4o-mini-2024-07-18, input",
-        "dollars": 0.0414
+        "dollars": 0.0437
       },
       {
         "name": "gpt-4o-mini-2024-07-18, output",
-        "dollars": 0.0267
+        "dollars": 0.0283
       },
       {
         "name": "text-embedding-3-small",
@@ -1683,14 +1688,6 @@
     ],
     "daily": [
       {
-        "date": "2026-05-15",
-        "label": "May 15",
-        "textDollars": 0.0011,
-        "imageDollars": 0.7738,
-        "otherDollars": 0.0,
-        "totalDollars": 0.7749
-      },
-      {
         "date": "2026-05-16",
         "label": "May 16",
         "textDollars": 0.0024,
@@ -1917,6 +1914,14 @@
       {
         "date": "2026-06-13",
         "label": "Jun 13",
+        "textDollars": 0.0049,
+        "imageDollars": 0.2571,
+        "otherDollars": 0.0,
+        "totalDollars": 0.262
+      },
+      {
+        "date": "2026-06-14",
+        "label": "Jun 14",
         "textDollars": 0.0,
         "imageDollars": 0.0,
         "otherDollars": 0.0,
@@ -1926,6 +1931,6 @@
     "error": null,
     "subscriptionPrice": 7.99,
     "estimatedRevenue": 31.96,
-    "grossMargin": 13.58
+    "grossMargin": 14.09
   }
 }
