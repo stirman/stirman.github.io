@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-06-14T02:05:44Z",
-  "generatedAtHuman": "Jun 13, 2026 at 07:05 PM PDT",
+  "generatedAt": "2026-06-14T03:05:44Z",
+  "generatedAtHuman": "Jun 13, 2026 at 08:05 PM PDT",
   "source": "hourly-cache",
   "refreshCadenceMinutes": 60,
   "overview": {
     "totalUsers": 58,
     "launchUsers": 54,
-    "active7": 6,
-    "active30": 15,
+    "active7": 7,
+    "active30": 16,
     "premium": 15,
     "paidSubscribers": 4,
     "grantedPremium": 11,
     "retainedUsers": 12,
-    "insights30": 64,
-    "entries30": 130,
-    "cardImages30": 40
+    "insights30": 65,
+    "entries30": 132,
+    "cardImages30": 41
   },
   "users": [
     {
@@ -282,12 +282,12 @@
       "displayName": "Erica Joub\u00e9rt",
       "email": "28vvv4r8sh@privaterelay.appleid.com",
       "createdAt": "2026-05-22T02:29:56Z",
-      "lastLoginAt": "2026-06-13T04:06:28Z",
-      "lastActiveAt": "2026-06-13T04:06:28Z",
+      "lastLoginAt": "2026-06-14T02:30:56Z",
+      "lastActiveAt": "2026-06-14T02:30:56Z",
       "isPaidSubscriber": false,
       "grantedPremium": true,
-      "insights30": 22,
-      "cardImages30": 17,
+      "insights30": 23,
+      "cardImages30": 18,
       "retained": true
     },
     {
@@ -490,8 +490,8 @@
       "displayName": "Kristine Bautista",
       "email": "gc4ct86hk4@privaterelay.appleid.com",
       "createdAt": "2026-05-05T22:41:54Z",
-      "lastLoginAt": "2026-05-05T22:41:54Z",
-      "lastActiveAt": "2026-05-05T22:41:54Z",
+      "lastLoginAt": "2026-06-14T02:16:37Z",
+      "lastActiveAt": "2026-06-14T02:16:37Z",
       "isPaidSubscriber": false,
       "grantedPremium": false,
       "insights30": 0,
@@ -943,7 +943,7 @@
       {
         "date": "2026-06-13",
         "label": "Jun 13",
-        "count": 2
+        "count": 3
       },
       {
         "date": "2026-06-14",
@@ -1095,7 +1095,7 @@
       {
         "date": "2026-06-13",
         "label": "Jun 13",
-        "count": 0
+        "count": 1
       },
       {
         "date": "2026-06-14",
