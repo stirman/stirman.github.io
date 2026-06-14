@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-14T00:05:47Z",
-  "generatedAtHuman": "Jun 13, 2026 at 05:05 PM PDT",
+  "generatedAt": "2026-06-14T01:05:44Z",
+  "generatedAtHuman": "Jun 13, 2026 at 06:05 PM PDT",
   "source": "hourly-cache",
   "refreshCadenceMinutes": 60,
   "overview": {
@@ -12,8 +12,8 @@
     "paidSubscribers": 4,
     "grantedPremium": 11,
     "retainedUsers": 12,
-    "insights30": 63,
-    "entries30": 129,
+    "insights30": 64,
+    "entries30": 130,
     "cardImages30": 40
   },
   "users": [
@@ -139,11 +139,11 @@
       "displayName": "Casey Lebwohl",
       "email": "caseylebwohl@mac.com",
       "createdAt": "2026-05-21T22:12:42Z",
-      "lastLoginAt": "2026-06-13T03:36:31Z",
-      "lastActiveAt": "2026-06-13T03:36:31Z",
+      "lastLoginAt": "2026-06-14T00:22:35Z",
+      "lastActiveAt": "2026-06-14T00:22:35Z",
       "isPaidSubscriber": false,
       "grantedPremium": false,
-      "insights30": 2,
+      "insights30": 3,
       "cardImages30": 2,
       "retained": false
     },
@@ -943,7 +943,7 @@
       {
         "date": "2026-06-13",
         "label": "Jun 13",
-        "count": 1
+        "count": 2
       },
       {
         "date": "2026-06-14",
@@ -1603,10 +1603,10 @@
       {
         "date": "2026-06-13",
         "label": "Jun 13",
-        "textDollars": 0.0049,
+        "textDollars": 0.0055,
         "imageDollars": 0.2571,
         "otherDollars": 0.0,
-        "totalDollars": 0.262
+        "totalDollars": 0.2626
       },
       {
         "date": "2026-06-14",
@@ -1620,8 +1620,8 @@
   },
   "costs": {
     "available": true,
-    "totalDollars": 17.8712,
-    "textDollars": 0.0742,
+    "totalDollars": 17.8718,
+    "textDollars": 0.0748,
     "imageDollars": 17.7971,
     "otherDollars": 0.0,
     "byLineItem": [
@@ -1647,11 +1647,11 @@
       },
       {
         "name": "gpt-4o-mini-2024-07-18, input",
-        "dollars": 0.0437
+        "dollars": 0.0441
       },
       {
         "name": "gpt-4o-mini-2024-07-18, output",
-        "dollars": 0.0283
+        "dollars": 0.0285
       },
       {
         "name": "text-embedding-3-small",
@@ -1914,10 +1914,10 @@
       {
         "date": "2026-06-13",
         "label": "Jun 13",
-        "textDollars": 0.0049,
+        "textDollars": 0.0055,
         "imageDollars": 0.2571,
         "otherDollars": 0.0,
-        "totalDollars": 0.262
+        "totalDollars": 0.2626
       },
       {
         "date": "2026-06-14",
