@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-21T03:05:51Z",
-  "generatedAtHuman": "Jun 20, 2026 at 08:05 PM PDT",
+  "generatedAt": "2026-06-21T04:05:46Z",
+  "generatedAtHuman": "Jun 20, 2026 at 09:05 PM PDT",
   "source": "hourly-cache",
   "refreshCadenceMinutes": 60,
   "overview": {
@@ -12,9 +12,9 @@
     "paidSubscribers": 4,
     "grantedPremium": 11,
     "retainedUsers": 13,
-    "insights30": 63,
-    "entries30": 135,
-    "cardImages30": 33
+    "insights30": 65,
+    "entries30": 139,
+    "cardImages30": 34
   },
   "users": [
     {
@@ -139,11 +139,11 @@
       "displayName": "Casey Lebwohl",
       "email": "caseylebwohl@mac.com",
       "createdAt": "2026-05-21T22:12:42Z",
-      "lastLoginAt": "2026-06-20T05:25:09Z",
-      "lastActiveAt": "2026-06-20T05:25:09Z",
+      "lastLoginAt": "2026-06-21T03:54:36Z",
+      "lastActiveAt": "2026-06-21T03:54:36Z",
       "isPaidSubscriber": false,
       "grantedPremium": false,
-      "insights30": 8,
+      "insights30": 9,
       "cardImages30": 3,
       "retained": true
     },
@@ -282,12 +282,12 @@
       "displayName": "Erica Joub\u00e9rt",
       "email": "28vvv4r8sh@privaterelay.appleid.com",
       "createdAt": "2026-05-22T02:29:56Z",
-      "lastLoginAt": "2026-06-20T02:30:47Z",
-      "lastActiveAt": "2026-06-20T02:30:47Z",
+      "lastLoginAt": "2026-06-21T03:16:24Z",
+      "lastActiveAt": "2026-06-21T03:16:24Z",
       "isPaidSubscriber": false,
       "grantedPremium": true,
-      "insights30": 24,
-      "cardImages30": 17,
+      "insights30": 25,
+      "cardImages30": 18,
       "retained": true
     },
     {
@@ -969,7 +969,7 @@
       {
         "date": "2026-06-20",
         "label": "Jun 20",
-        "count": 0
+        "count": 2
       },
       {
         "date": "2026-06-21",
@@ -1121,7 +1121,7 @@
       {
         "date": "2026-06-20",
         "label": "Jun 20",
-        "count": 0
+        "count": 1
       },
       {
         "date": "2026-06-21",
