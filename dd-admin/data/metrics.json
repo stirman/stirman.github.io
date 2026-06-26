@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-26T21:05:50Z",
-  "generatedAtHuman": "Jun 26, 2026 at 02:05 PM PDT",
+  "generatedAt": "2026-06-26T22:05:46Z",
+  "generatedAtHuman": "Jun 26, 2026 at 03:05 PM PDT",
   "source": "hourly-cache",
   "refreshCadenceMinutes": 60,
   "overview": {
@@ -12,8 +12,8 @@
     "paidSubscribers": 4,
     "grantedPremium": 11,
     "retainedUsers": 15,
-    "insights30": 63,
-    "entries30": 142,
+    "insights30": 64,
+    "entries30": 144,
     "cardImages30": 33
   },
   "users": [
@@ -620,11 +620,11 @@
       "displayName": "Miquelle Hardy",
       "email": "hs2c8wryfg@privaterelay.appleid.com",
       "createdAt": "2026-06-18T00:56:55Z",
-      "lastLoginAt": "2026-06-25T19:39:19Z",
-      "lastActiveAt": "2026-06-25T19:39:19Z",
+      "lastLoginAt": "2026-06-26T21:08:11Z",
+      "lastActiveAt": "2026-06-26T21:08:11Z",
       "isPaidSubscriber": false,
       "grantedPremium": false,
-      "insights30": 6,
+      "insights30": 7,
       "cardImages30": 4,
       "retained": true
     },
@@ -809,7 +809,7 @@
     },
     {
       "title": "Depth signal",
-      "body": "Users averaged about 2.3 inputs per generated insight in the last 30 days."
+      "body": "Users averaged about 2.2 inputs per generated insight in the last 30 days."
     },
     {
       "title": "Retention pulse",
@@ -974,7 +974,7 @@
       {
         "date": "2026-06-26",
         "label": "Jun 26",
-        "count": 1
+        "count": 2
       }
     ],
     "dailyCardImages": [
