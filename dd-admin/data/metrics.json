@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-28T05:05:24Z",
-  "generatedAtHuman": "Jun 27, 2026 at 10:05 PM PDT",
+  "generatedAt": "2026-06-28T06:05:27Z",
+  "generatedAtHuman": "Jun 27, 2026 at 11:05 PM PDT",
   "source": "hourly-cache",
   "refreshCadenceMinutes": 60,
   "overview": {
@@ -1752,6 +1752,34 @@
       {
         "name": "gpt-4o-mini-2024-07-18, cached input",
         "dollars": 0.0001
+      },
+      {
+        "name": "gpt-image-1 image, cached input",
+        "dollars": 0.0
+      },
+      {
+        "name": "gpt-image-1 image, input",
+        "dollars": 0.0
+      },
+      {
+        "name": "gpt-image-1 text, cached input",
+        "dollars": 0.0
+      },
+      {
+        "name": "gpt-image-2-2026-04-21 image, cached input",
+        "dollars": 0.0
+      },
+      {
+        "name": "gpt-image-2-2026-04-21 image, input",
+        "dollars": 0.0
+      },
+      {
+        "name": "gpt-image-2-2026-04-21 text, cached input",
+        "dollars": 0.0
+      },
+      {
+        "name": "gpt-image-2-2026-04-21 text, output",
+        "dollars": 0.0
       }
     ],
     "daily": [
