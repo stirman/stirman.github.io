@@ -1,0 +1,28 @@
+{
+  "season": "Big Brother 28",
+  "siteTitle": "BB28 Fantasy Draft",
+  "tagline": "The family draft is entering the house.",
+  "lastUpdated": "2026-07-07T16:18:22Z",
+  "status": "cast-reveal-pending",
+  "liveRefreshSeconds": 60,
+  "seasonCalendar": {
+    "premiere": "2026-07-07",
+    "finaleWindow": "October 2026",
+    "notes": "Contestants reveal today. Draft results will be added after the family draft."
+  },
+  "familyMembers": [],
+  "houseguests": [],
+  "events": [
+    {
+      "date": "2026-07-07",
+      "type": "cast_reveal",
+      "title": "Cast reveal day",
+      "description": "The BB28 house is about to open. Official contestants and family draft picks will be added as soon as they are available."
+    }
+  ],
+  "scoring": {
+    "activeHouseguestPoints": 1,
+    "winnerBonus": 5,
+    "notes": "Initial scoring is simple: count active drafted houseguests, then highlight the winner. We can adjust this if the family uses custom rules."
+  }
+}

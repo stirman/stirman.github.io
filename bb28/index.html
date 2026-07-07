@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BB28 Fantasy Draft</title>
+  <meta name="description" content="Big Brother 28 family fantasy draft tracker: contestants, draft picks, evictions, and winner watch.">
+  <meta property="og:title" content="BB28 Fantasy Draft">
+  <meta property="og:description" content="Who drafted the next Big Brother winner? Follow the family BB28 draft board live.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#050816">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="stage-glow" aria-hidden="true"></div>
+  <main class="shell">
+    <section class="hero" aria-labelledby="page-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="live-dot"></span> Live from the family HOH room</p>
+        <h1 id="page-title">BB28 Fantasy Draft</h1>
+        <p class="tagline" id="tagline">The family draft is entering the house.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#draft-board">View draft board</a>
+          <a class="button ghost" href="#houseguests">Meet the houseguests</a>
+        </div>
+      </div>
+      <div class="hero-card" aria-label="Big Brother inspired eye graphic">
+        <div class="eye-logo">
+          <div class="eye-ring"></div>
+          <div class="eye-core"></div>
+          <div class="eye-shine"></div>
+        </div>
+        <div class="ticker" id="status-ticker">Awaiting cast reveal</div>
+      </div>
+    </section>
+
+    <section class="score-strip" aria-label="Season summary">
+      <article class="stat-card">
+        <span class="stat-label">Houseguests</span>
+        <strong id="stat-total">—</strong>
+        <small>Total revealed</small>
+      </article>
+      <article class="stat-card">
+        <span class="stat-label">Still in the house</span>
+        <strong id="stat-active">—</strong>
+        <small>Avoiding eviction night</small>
+      </article>
+      <article class="stat-card">
+        <span class="stat-label">Drafted</span>
+        <strong id="stat-drafted">—</strong>
+        <small>Claimed by family</small>
+      </article>
+      <article class="stat-card">
+        <span class="stat-label">Last update</span>
+        <strong id="stat-updated">—</strong>
+        <small id="stat-checked">Checking live data…</small>
+      </article>
+    </section>
+
+    <section class="panel" id="draft-board">
+      <div class="section-heading">
+        <p class="eyebrow">Draft board</p>
+        <h2>Who owns the house?</h2>
+        <p>Once the family draft is done, every houseguest card will show the drafter, status, and eviction/winner path.</p>
+      </div>
+      <div class="owner-grid" id="owner-grid"></div>
+    </section>
+
+    <section class="panel split-panel">
+      <div>
+        <p class="eyebrow">Power rankings</p>
+        <h2>Family leaderboard</h2>
+        <p class="muted">Simple starter scoring: active drafted houseguests count as points, winner gets a bonus. We can tune the scoring rules after the family confirms how you want to play.</p>
+      </div>
+      <div class="leaderboard" id="leaderboard"></div>
+    </section>
+
+    <section class="panel" id="houseguests">
+      <div class="section-heading">
+        <p class="eyebrow">The house</p>
+        <h2>Current contestants</h2>
+        <p>Cast reveal today. Draft picks can be dropped into the data file after tonight/tomorrow’s draft.</p>
+      </div>
+      <div class="houseguest-grid" id="houseguest-grid"></div>
+    </section>
+
+    <section class="panel diary-room">
+      <div>
+        <p class="eyebrow">Diary room feed</p>
+        <h2>Season events</h2>
+      </div>
+      <ol class="timeline" id="timeline"></ol>
+    </section>
+
+    <section class="panel update-guide">
+      <p class="eyebrow">Production notes</p>
+      <h2>How we’ll run this all season</h2>
+      <div class="guide-grid">
+        <div>
+          <strong>Tonight/tomorrow</strong>
+          <p>Send me the official cast list and who drafted each person. I’ll update the JSON and publish it.</p>
+        </div>
+        <div>
+          <strong>Eviction nights</strong>
+          <p>When someone is evicted, I’ll mark their status and the site will refresh the live data automatically.</p>
+        </div>
+        <div>
+          <strong>Finale</strong>
+          <p>When only one houseguest remains, the winner gets the crown treatment and the winning drafter gets the confetti.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="./app.js" defer></script>
+</body>
+</html>

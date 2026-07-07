@@ -1,0 +1,188 @@
+const DATA_URL = './data/season.json';
+let liveTimer;
+
+const $ = (id) => document.getElementById(id);
+const fmtDate = (value) => {
+  if (!value) return 'TBD';
+  if (/^\d{4}-\d{2}-\d{2}$/.test(value)) {
+    const [year, month, day] = value.split('-').map(Number);
+    return new Date(year, month - 1, day).toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' });
+  }
+  const d = new Date(value);
+  if (Number.isNaN(d.getTime())) return value;
+  return d.toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' });
+};
+const initials = (name = '?') => name.split(/\s+/).filter(Boolean).slice(0,2).map(part => part[0]).join('').toUpperCase() || '?';
+const statusLabel = (status = 'active') => ({
+  active: 'In the house',
+  evicted: 'Evicted',
+  jury: 'Jury house',
+  winner: 'Winner',
+  pending: 'Awaiting reveal'
+}[status] || status.replaceAll('-', ' '));
+
+async function loadSeason() {
+  const url = `${DATA_URL}?v=${Date.now()}`;
+  const response = await fetch(url, { cache: 'no-store' });
+  if (!response.ok) throw new Error(`Could not load season data: ${response.status}`);
+  return response.json();
+}
+
+function familyById(data) {
+  return new Map((data.familyMembers || []).map(member => [member.id, member]));
+}
+
+function picksForOwner(data, ownerId) {
+  return (data.houseguests || []).filter(guest => guest.draftOwner === ownerId);
+}
+
+function scoreOwner(data, owner) {
+  const picks = picksForOwner(data, owner.id);
+  const active = picks.filter(guest => !['evicted'].includes(guest.status)).length;
+  const winners = picks.filter(guest => guest.status === 'winner').length;
+  const activePoints = data.scoring?.activeHouseguestPoints ?? 1;
+  const winnerBonus = data.scoring?.winnerBonus ?? 5;
+  return active * activePoints + winners * winnerBonus;
+}
+
+function renderStats(data) {
+  const guests = data.houseguests || [];
+  const total = guests.length;
+  const active = guests.filter(guest => !['evicted'].includes(guest.status)).length;
+  const drafted = guests.filter(guest => guest.draftOwner).length;
+  $('tagline').textContent = data.tagline || 'The family draft is entering the house.';
+  $('status-ticker').textContent = statusText(data);
+  $('stat-total').textContent = total || 'TBD';
+  $('stat-active').textContent = total ? active : 'TBD';
+  $('stat-drafted').textContent = total ? `${drafted}/${total}` : 'TBD';
+  $('stat-updated').textContent = fmtDate(data.lastUpdated);
+  $('stat-checked').textContent = `Live checked ${new Date().toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' })}`;
+}
+
+function statusText(data) {
+  const guests = data.houseguests || [];
+  const winner = guests.find(guest => guest.status === 'winner');
+  if (winner) return `${winner.name} wins BB28 — ${ownerName(data, winner.draftOwner)} takes the draft!`;
+  const active = guests.filter(guest => !['evicted'].includes(guest.status));
+  if (guests.length && active.length === 1) return `${active[0].name} is the final houseguest standing.`;
+  if (guests.length) return `${active.length} houseguests still fighting for the key.`;
+  return 'Awaiting cast reveal';
+}
+
+function ownerName(data, ownerId) {
+  return familyById(data).get(ownerId)?.name || 'Undrafted';
+}
+
+function ownerColor(data, ownerId) {
+  return familyById(data).get(ownerId)?.color || '#00d5ff';
+}
+
+function renderDraftBoard(data) {
+  const owners = data.familyMembers || [];
+  const grid = $('owner-grid');
+  if (!owners.length) {
+    grid.innerHTML = emptyState('Draft board locked', 'Send the family member list and draft results after the draft. This board is ready for picks, evictions, jury status, and the final winner.');
+    return;
+  }
+  grid.innerHTML = owners.map(owner => {
+    const picks = picksForOwner(data, owner.id);
+    const pickItems = picks.length
+      ? picks.map(guest => `<li><span>${guest.name}</span><small>${statusLabel(guest.status)}</small></li>`).join('')
+      : '<li><span>No picks yet</span><small>Draft pending</small></li>';
+    return `
+      <article class="owner-card" style="--owner-color:${owner.color || '#00d5ff'}">
+        <div class="owner-name"><strong>${escapeHtml(owner.name)}</strong><span>${picks.length} picks</span></div>
+        <ul class="pick-list">${pickItems}</ul>
+      </article>
+    `;
+  }).join('');
+}
+
+function renderLeaderboard(data) {
+  const board = $('leaderboard');
+  const owners = data.familyMembers || [];
+  if (!owners.length) {
+    board.innerHTML = '<div class="empty-state"><div><strong>Leaderboard warming up</strong><p>Scores appear as soon as draft owners are added.</p></div></div>';
+    return;
+  }
+  const ranked = owners.map(owner => ({ owner, score: scoreOwner(data, owner), active: picksForOwner(data, owner.id).filter(g => g.status !== 'evicted').length }))
+    .sort((a,b) => b.score - a.score || b.active - a.active || a.owner.name.localeCompare(b.owner.name));
+  board.innerHTML = ranked.map((entry, index) => `
+    <article class="leader-card">
+      <span class="rank">${index + 1}</span>
+      <div><strong>${escapeHtml(entry.owner.name)}</strong><br><small>${entry.active} still in the house</small></div>
+      <span class="score">${entry.score}</span>
+    </article>
+  `).join('');
+}
+
+function renderHouseguests(data) {
+  const guests = data.houseguests || [];
+  const grid = $('houseguest-grid');
+  if (!guests.length) {
+    grid.innerHTML = emptyState('The front door is still closed', 'Contestants will appear here after the official BB28 reveal. Draft owner badges and eviction status are already wired up.');
+    return;
+  }
+  grid.innerHTML = guests.map(guest => {
+    const status = guest.status || 'active';
+    const owner = guest.draftOwner ? ownerName(data, guest.draftOwner) : 'Undrafted';
+    const meta = [guest.age && `${guest.age}`, guest.hometown, guest.occupation].filter(Boolean).join(' • ');
+    return `
+      <article class="guest-card ${escapeAttr(status)}" style="border-color:${ownerColor(data, guest.draftOwner)}66">
+        <div class="guest-top">
+          <div>
+            <div class="avatar">${escapeHtml(initials(guest.name))}</div>
+          </div>
+          <span class="status-pill ${escapeAttr(status)}">${escapeHtml(statusLabel(status))}</span>
+        </div>
+        <div>
+          <h3>${escapeHtml(guest.name)}</h3>
+          <p class="guest-meta">${escapeHtml(meta || 'Details coming soon')}</p>
+        </div>
+        ${guest.notes ? `<p class="guest-meta">${escapeHtml(guest.notes)}</p>` : ''}
+        <div class="draft-owner">Drafted by: ${escapeHtml(owner)}</div>
+      </article>
+    `;
+  }).join('');
+}
+
+function renderTimeline(data) {
+  const events = data.events || [];
+  $('timeline').innerHTML = events.length ? events.map(event => `
+    <li>
+      <time>${escapeHtml(fmtDate(event.date))} • ${escapeHtml((event.type || 'event').replaceAll('_', ' '))}</time>
+      <strong>${escapeHtml(event.title || 'Season update')}</strong>
+      <p>${escapeHtml(event.description || '')}</p>
+    </li>
+  `).join('') : '<li><strong>No diary room entries yet.</strong></li>';
+}
+
+function emptyState(title, message) {
+  return `<div class="empty-state"><div><strong>${escapeHtml(title)}</strong><p>${escapeHtml(message)}</p></div></div>`;
+}
+
+function escapeHtml(value = '') {
+  return String(value).replace(/[&<>'"]/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[char]));
+}
+function escapeAttr(value = '') { return escapeHtml(value).replace(/\s+/g, '-'); }
+
+async function render() {
+  try {
+    const data = await loadSeason();
+    renderStats(data);
+    renderDraftBoard(data);
+    renderLeaderboard(data);
+    renderHouseguests(data);
+    renderTimeline(data);
+    const seconds = Number(data.liveRefreshSeconds || 60);
+    clearTimeout(liveTimer);
+    liveTimer = setTimeout(render, Math.max(15, seconds) * 1000);
+  } catch (error) {
+    console.error(error);
+    $('status-ticker').textContent = 'Diary room technical difficulty — retrying live data.';
+    clearTimeout(liveTimer);
+    liveTimer = setTimeout(render, 30000);
+  }
+}
+
+render();
