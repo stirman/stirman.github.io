@@ -267,7 +267,7 @@ h3 { font-size: 19px; }
 .rank { width: 36px; height: 36px; border-radius: 999px; display: grid; place-items: center; background: rgba(255,255,255,.08); font-weight: 900; }
 .score { font: 900 26px/1 Inter, sans-serif; color: var(--gold); }
 
-.guest-card { min-height: 220px; display: flex; flex-direction: column; gap: 14px; position: relative; overflow: hidden; }
+.guest-card { min-height: 280px; display: flex; flex-direction: column; gap: 14px; position: relative; overflow: hidden; }
 .guest-card.evicted { opacity: .55; filter: grayscale(.3); }
 .guest-card.winner { border-color: rgba(255,209,102,.7); box-shadow: 0 0 52px rgba(255,209,102,.18); }
 .guest-card::after {
@@ -277,6 +277,36 @@ h3 { font-size: 19px; }
   height: 120px;
   background: radial-gradient(circle, rgba(0,213,255,.2), transparent 70%);
   pointer-events: none;
+}
+.guest-image {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  min-height: 170px;
+  margin: -18px -18px 0;
+  padding: 14px;
+  position: relative;
+  background:
+    radial-gradient(circle at 24% 12%, rgba(255,43,214,.42), transparent 34%),
+    linear-gradient(135deg, rgba(0,213,255,.26), rgba(255,211,77,.14));
+  border-bottom: 1px solid rgba(255,255,255,.12);
+}
+.guest-image::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  height: 58%;
+  background: linear-gradient(transparent, rgba(4,6,21,.88));
+  pointer-events: none;
+}
+.guest-image.photo-fallback { align-items: center; justify-content: center; }
+.guest-photo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(1.06) contrast(1.04);
 }
 .avatar {
   width: 74px;
@@ -289,8 +319,10 @@ h3 { font-size: 19px; }
   font: 900 26px/1 "Archivo Black", sans-serif;
   color: #fff;
 }
-.guest-top { display: flex; justify-content: space-between; gap: 12px; }
+.guest-image .avatar,
+.guest-image .status-pill { position: relative; z-index: 2; }
 .guest-meta { color: var(--muted); font-size: 14px; line-height: 1.45; }
+.guest-bio { color: rgba(246,249,255,.88); font-size: 14px; line-height: 1.55; margin: 10px 0 0; }
 .status-pill {
   align-self: flex-start;
   padding: 7px 9px;
@@ -302,6 +334,8 @@ h3 { font-size: 19px; }
 .status-pill.evicted { color: var(--red); border-color: rgba(255,93,115,.28); background: rgba(255,93,115,.12); }
 .status-pill.winner { color: #2b2100; background: var(--gold); border-color: transparent; }
 .draft-owner { margin-top: auto; color: var(--gold); }
+.source-link { color: var(--gold); float: right; text-decoration: none; opacity: .88; }
+.source-link:hover { text-decoration: underline; opacity: 1; }
 
 .empty-state {
   grid-column: 1 / -1;

@@ -126,21 +126,22 @@ function renderHouseguests(data) {
   grid.innerHTML = guests.map(guest => {
     const status = guest.status || 'active';
     const owner = guest.draftOwner ? ownerName(data, guest.draftOwner) : 'Undrafted';
-    const meta = [guest.age && `${guest.age}`, guest.hometown, guest.occupation].filter(Boolean).join(' • ');
+    const meta = [guest.age && `Age ${guest.age}`, guest.hometown, guest.occupation].filter(Boolean).join(' • ');
+    const photo = guest.photoUrl ? `<img class="guest-photo" src="${escapeAttr(guest.photoUrl)}" alt="${escapeAttr(`${guest.name} BB28 cast photo`)}" decoding="async" referrerpolicy="no-referrer" onerror="this.remove(); this.parentElement.classList.add('photo-fallback')">` : '';
+    const source = guest.sourceUrl ? `<a class="source-link" href="${escapeAttr(guest.sourceUrl)}" target="_blank" rel="noreferrer">Source</a>` : '';
     return `
       <article class="guest-card ${escapeAttr(status)}" style="border-color:${ownerColor(data, guest.draftOwner)}66">
-        <div class="guest-top">
-          <div>
-            <div class="avatar">${escapeHtml(initials(guest.name))}</div>
-          </div>
+        <div class="guest-image ${photo ? '' : 'photo-fallback'}">
+          ${photo || `<div class="avatar">${escapeHtml(initials(guest.name))}</div>`}
           <span class="status-pill ${escapeAttr(status)}">${escapeHtml(statusLabel(status))}</span>
         </div>
         <div>
           <h3>${escapeHtml(guest.name)}</h3>
           <p class="guest-meta">${escapeHtml(meta || 'Details coming soon')}</p>
+          ${guest.bio ? `<p class="guest-bio">${escapeHtml(guest.bio)}</p>` : ''}
         </div>
         ${guest.notes ? `<p class="guest-meta">${escapeHtml(guest.notes)}</p>` : ''}
-        <div class="draft-owner">Drafted by: ${escapeHtml(owner)}</div>
+        <div class="draft-owner">Drafted by: ${escapeHtml(owner)} ${source}</div>
       </article>
     `;
   }).join('');
