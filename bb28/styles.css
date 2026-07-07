@@ -59,10 +59,8 @@ body::before {
 }
 
 .hero {
-  min-height: 560px;
+  min-height: 390px;
   display: grid;
-  grid-template-columns: minmax(0, 1.1fr) minmax(320px, .9fr);
-  gap: 32px;
   align-items: center;
 }
 
@@ -108,6 +106,18 @@ h3 { font-size: 19px; }
 }
 
 .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 34px; }
+.hero-status {
+  max-width: 760px;
+  margin-top: 22px;
+  border-radius: 20px;
+  padding: 16px 18px;
+  background: rgba(2,7,20,.64);
+  border: 1px solid rgba(255,255,255,.16);
+  color: #e6f7ff;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
 .button {
   display: inline-flex;
   align-items: center;
@@ -129,79 +139,13 @@ h3 { font-size: 19px; }
 }
 .button.ghost:hover { border-color: rgba(0,213,255,.58); }
 
-.hero-card, .panel, .stat-card {
+.panel, .stat-card {
   border: 1px solid var(--line);
   background: linear-gradient(145deg, rgba(255,255,255,.09), rgba(255,255,255,.03));
   box-shadow: var(--shadow);
   backdrop-filter: blur(18px);
 }
 
-.hero-card {
-  position: relative;
-  min-height: 430px;
-  border-radius: 36px;
-  display: grid;
-  place-items: center;
-  overflow: hidden;
-}
-.hero-card::before, .hero-card::after {
-  content: "";
-  position: absolute;
-  inset: -35%;
-  background: conic-gradient(from 80deg, transparent, rgba(0,213,255,.18), transparent, rgba(255,43,214,.18), transparent);
-  animation: rotate 9s linear infinite;
-}
-.hero-card::after { animation-direction: reverse; filter: blur(22px); opacity: .75; }
-@keyframes rotate { to { transform: rotate(360deg); } }
-
-.eye-logo {
-  position: relative;
-  z-index: 1;
-  width: min(78%, 410px);
-  aspect-ratio: 1.72;
-  border-radius: 50%;
-  background: radial-gradient(circle at 50% 50%, rgba(255,255,255,.96), rgba(0,213,255,.5) 18%, rgba(49,93,255,.32) 36%, transparent 37%),
-              linear-gradient(135deg, rgba(0,213,255,.26), rgba(255,43,214,.24));
-  border: 5px solid rgba(255,255,255,.85);
-  transform: rotate(-7deg);
-  box-shadow: inset 0 0 35px rgba(0,0,0,.7), 0 0 80px rgba(0,213,255,.34);
-  clip-path: polygon(50% 0, 92% 18%, 100% 50%, 92% 82%, 50% 100%, 8% 82%, 0 50%, 8% 18%);
-}
-.eye-ring {
-  position: absolute;
-  inset: 18%;
-  border-radius: 50%;
-  border: 20px solid rgba(2,8,27,.9);
-  box-shadow: 0 0 0 12px rgba(0,213,255,.35), inset 0 0 24px rgba(255,43,214,.52);
-}
-.eye-core {
-  position: absolute;
-  inset: 37%;
-  border-radius: 50%;
-  background: radial-gradient(circle, #fff 0 16%, var(--gold) 17% 31%, #061020 32% 100%);
-  box-shadow: 0 0 38px var(--gold);
-}
-.eye-shine {
-  position: absolute;
-  left: 56%; top: 30%;
-  width: 38px; height: 12px;
-  border-radius: 999px;
-  background: rgba(255,255,255,.84);
-  transform: rotate(28deg);
-}
-.ticker {
-  position: absolute;
-  z-index: 2;
-  left: 22px; right: 22px; bottom: 22px;
-  border-radius: 20px;
-  padding: 16px 18px;
-  background: rgba(2,7,20,.74);
-  border: 1px solid rgba(255,255,255,.16);
-  color: #e6f7ff;
-  font-weight: 900;
-  text-transform: uppercase;
-  letter-spacing: .08em;
-}
 
 .score-strip {
   display: grid;
@@ -234,14 +178,14 @@ h3 { font-size: 19px; }
   background-color: var(--panel);
 }
 .section-heading { max-width: 760px; margin-bottom: 24px; }
-.section-heading p:not(.eyebrow), .panel > p, .split-panel p { color: var(--muted); line-height: 1.6; }
+.section-heading p:not(.eyebrow), .panel > p { color: var(--muted); line-height: 1.6; }
 
 .owner-grid, .houseguest-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 16px;
 }
-.owner-card, .guest-card, .leader-card, .empty-state {
+.owner-card, .guest-card, .week-card, .empty-state {
   border: 1px solid rgba(255,255,255,.13);
   border-radius: 24px;
   background: rgba(2,8,27,.58);
@@ -261,11 +205,16 @@ h3 { font-size: 19px; }
 .pick-list { list-style: none; margin: 16px 0 0; padding: 0; display: grid; gap: 10px; }
 .pick-list li { display: flex; justify-content: space-between; gap: 12px; padding: 10px 12px; border-radius: 14px; background: rgba(255,255,255,.06); }
 
-.split-panel { display: grid; grid-template-columns: .9fr 1.1fr; gap: 26px; align-items: start; }
-.leaderboard { display: grid; gap: 12px; }
-.leader-card { display: grid; grid-template-columns: auto 1fr auto; gap: 14px; align-items: center; }
-.rank { width: 36px; height: 36px; border-radius: 999px; display: grid; place-items: center; background: rgba(255,255,255,.08); font-weight: 900; }
-.score { font: 900 26px/1 Inter, sans-serif; color: var(--gold); }
+.weekly-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; }
+.week-card { display: grid; gap: 14px; position: relative; overflow: hidden; }
+.week-card::before { content: ""; position: absolute; inset: 0 auto 0 0; width: 6px; background: linear-gradient(var(--cyan), var(--gold)); box-shadow: 0 0 24px rgba(0,213,255,.42); }
+.week-heading { display: flex; justify-content: space-between; gap: 12px; align-items: start; }
+.week-kicker, .week-status, .competition-row span { font: 800 11px/1 JetBrains Mono, monospace; letter-spacing: .12em; text-transform: uppercase; color: var(--cyan); }
+.week-heading time { display: block; margin-top: 6px; color: var(--muted); font-size: 13px; }
+.week-status { color: var(--gold); }
+.competition-row { display: grid; grid-template-columns: 62px 1fr; gap: 12px; align-items: baseline; padding: 13px 14px; border-radius: 16px; background: rgba(255,255,255,.06); }
+.competition-row strong { font-size: 22px; }
+.week-notes { color: var(--muted); line-height: 1.5; margin: 0; }
 
 .guest-card { min-height: 280px; display: flex; flex-direction: column; gap: 14px; position: relative; overflow: hidden; }
 .guest-card.evicted { opacity: .55; filter: grayscale(.3); }
@@ -361,8 +310,7 @@ h3 { font-size: 19px; }
 .guide-grid p { color: var(--muted); line-height: 1.55; }
 
 @media (max-width: 860px) {
-  .hero, .split-panel { grid-template-columns: 1fr; min-height: auto; padding-top: 34px; }
-  .hero-card { min-height: 320px; }
+  .hero { min-height: auto; padding-top: 34px; }
   .score-strip { grid-template-columns: repeat(2, 1fr); }
   .guide-grid { grid-template-columns: 1fr; }
 }

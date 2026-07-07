@@ -1,7 +1,7 @@
 {
   "season": "Big Brother 28",
   "siteTitle": "BB28 Fantasy Draft",
-  "tagline": "Meet the BB28 houseguests \u2014 draft night is next.",
+  "tagline": "Track the BB28 family draft, weekly HOH/POV wins, and the final winner.",
   "lastUpdated": "2026-07-07T19:16:22Z",
   "status": "cast-revealed",
   "liveRefreshSeconds": 60,
@@ -195,6 +195,7 @@
       "sourceUrl": "https://bigbrothernetwork.com/big-brother-28-cast/"
     }
   ],
+  "weeklyResults": [],
   "events": [
     {
       "date": "2026-07-07T17:13:14Z",
@@ -209,11 +210,6 @@
       "description": "The BB28 house is about to open. Official contestants and family draft picks will be added as soon as they are available."
     }
   ],
-  "scoring": {
-    "activeHouseguestPoints": 1,
-    "winnerBonus": 5,
-    "notes": "Initial scoring is simple: count active drafted houseguests, then highlight the winner. We can adjust this if the family uses custom rules."
-  },
   "sources": [
     {
       "name": "Big Brother Network",

@@ -36,15 +36,6 @@ function picksForOwner(data, ownerId) {
   return (data.houseguests || []).filter(guest => guest.draftOwner === ownerId);
 }
 
-function scoreOwner(data, owner) {
-  const picks = picksForOwner(data, owner.id);
-  const active = picks.filter(guest => !['evicted'].includes(guest.status)).length;
-  const winners = picks.filter(guest => guest.status === 'winner').length;
-  const activePoints = data.scoring?.activeHouseguestPoints ?? 1;
-  const winnerBonus = data.scoring?.winnerBonus ?? 5;
-  return active * activePoints + winners * winnerBonus;
-}
-
 function renderStats(data) {
   const guests = data.houseguests || [];
   const total = guests.length;
@@ -98,22 +89,45 @@ function renderDraftBoard(data) {
   }).join('');
 }
 
-function renderLeaderboard(data) {
-  const board = $('leaderboard');
-  const owners = data.familyMembers || [];
-  if (!owners.length) {
-    board.innerHTML = '<div class="empty-state"><div><strong>Leaderboard warming up</strong><p>Scores appear as soon as draft owners are added.</p></div></div>';
+function renderWeeklyWinners(data) {
+  const weeks = data.weeklyResults || [];
+  const grid = $('weekly-grid');
+  if (!weeks.length) {
+    grid.innerHTML = emptyState('Waiting on the first competitions', 'Head of Household and Power of Veto winners will appear here week by week once the season starts.');
     return;
   }
-  const ranked = owners.map(owner => ({ owner, score: scoreOwner(data, owner), active: picksForOwner(data, owner.id).filter(g => g.status !== 'evicted').length }))
-    .sort((a,b) => b.score - a.score || b.active - a.active || a.owner.name.localeCompare(b.owner.name));
-  board.innerHTML = ranked.map((entry, index) => `
-    <article class="leader-card">
-      <span class="rank">${index + 1}</span>
-      <div><strong>${escapeHtml(entry.owner.name)}</strong><br><small>${entry.active} still in the house</small></div>
-      <span class="score">${entry.score}</span>
-    </article>
-  `).join('');
+  grid.innerHTML = weeks.map(week => {
+    const hoh = competitionWinner(week.hoh);
+    const pov = competitionWinner(week.pov);
+    const weekLabel = week.label || `Week ${week.week}`;
+    const date = week.date ? `<time>${escapeHtml(fmtDate(week.date))}</time>` : '';
+    return `
+      <article class="week-card">
+        <div class="week-heading">
+          <div>
+            <span class="week-kicker">${escapeHtml(weekLabel)}</span>
+            ${date}
+          </div>
+          ${week.status ? `<span class="week-status">${escapeHtml(week.status)}</span>` : ''}
+        </div>
+        <div class="competition-row">
+          <span>HOH</span>
+          <strong>${escapeHtml(hoh)}</strong>
+        </div>
+        <div class="competition-row">
+          <span>POV</span>
+          <strong>${escapeHtml(pov)}</strong>
+        </div>
+        ${week.notes ? `<p class="week-notes">${escapeHtml(week.notes)}</p>` : ''}
+      </article>
+    `;
+  }).join('');
+}
+
+function competitionWinner(value) {
+  if (!value) return 'TBD';
+  if (typeof value === 'string') return value;
+  return value.winner || value.name || value.houseguest || 'TBD';
 }
 
 function renderHouseguests(data) {
@@ -172,7 +186,7 @@ async function render() {
     const data = await loadSeason();
     renderStats(data);
     renderDraftBoard(data);
-    renderLeaderboard(data);
+    renderWeeklyWinners(data);
     renderHouseguests(data);
     renderTimeline(data);
     const seconds = Number(data.liveRefreshSeconds || 60);

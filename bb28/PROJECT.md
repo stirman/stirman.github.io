@@ -10,7 +10,8 @@ Shows:
 - Current BB28 contestants / houseguests
 - Which family member drafted each houseguest
 - Live season status as houseguests are evicted
-- A simple family leaderboard until one houseguest remains
+- Weekly Head of Household and Power of Veto winners
+- No season-long family leaderboard; the draft has one winner at the finale
 
 ## Update flow
 
@@ -47,12 +48,31 @@ Supported statuses:
 - `winner`
 - `pending`
 
+### Add weekly HOH / POV winners
+
+```json
+"weeklyResults": [
+  {
+    "week": 1,
+    "label": "Week 1",
+    "date": "2026-07-12",
+    "status": "Complete",
+    "hoh": { "winner": "First Last" },
+    "pov": { "winner": "Second Last" },
+    "notes": "Optional short recap."
+  }
+]
+```
+
+Use `null`, `{ "winner": "TBD" }`, or omit a comp until the winner is known.
+
 ### Eviction night update
 
 1. Set evicted player status to `evicted` or `jury`.
-2. Add an event to `events`.
-3. Update `lastUpdated`.
-4. Commit/push.
+2. Add HOH/POV winners to `weeklyResults` when known.
+3. Add an event to `events`.
+4. Update `lastUpdated`.
+5. Commit/push.
 
 ## Deploy
 
@@ -68,4 +88,4 @@ git push origin master
 
 - The current foundation intentionally uses no build step, no npm dependencies, and no server so it works reliably on GitHub Pages at `/bb28/`.
 - The design uses Big Brother-inspired house/eye/neon/stage visuals via CSS, not official copyrighted assets.
-- Once the official cast and family draft results are known, update `data/season.json` only.
+- Once weekly HOH/POV winners, evictions, or family draft results are known, update `data/season.json` only.

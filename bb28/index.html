@@ -24,17 +24,10 @@
         <p class="tagline" id="tagline">The family draft is entering the house.</p>
         <div class="hero-actions">
           <a class="button primary" href="#draft-board">View draft board</a>
-          <a class="button ghost" href="#houseguests">Meet the houseguests</a>
+          <a class="button ghost" href="#weekly-winners">Weekly winners</a>
         </div>
       </div>
-      <div class="hero-card" aria-label="Big Brother inspired eye graphic">
-        <div class="eye-logo">
-          <div class="eye-ring"></div>
-          <div class="eye-core"></div>
-          <div class="eye-shine"></div>
-        </div>
-        <div class="ticker" id="status-ticker">Awaiting cast reveal</div>
-      </div>
+      <div class="hero-status" id="status-ticker">Awaiting cast reveal</div>
     </section>
 
     <section class="score-strip" aria-label="Season summary">
@@ -69,13 +62,13 @@
       <div class="owner-grid" id="owner-grid"></div>
     </section>
 
-    <section class="panel split-panel">
-      <div>
-        <p class="eyebrow">Power rankings</p>
-        <h2>Family leaderboard</h2>
-        <p class="muted">Simple starter scoring: active drafted houseguests count as points, winner gets a bonus. We can tune the scoring rules after the family confirms how you want to play.</p>
+    <section class="panel" id="weekly-winners">
+      <div class="section-heading">
+        <p class="eyebrow">Weekly power watch</p>
+        <h2>HOH + Power of Veto winners</h2>
+        <p>Track which houseguest wins Head of Household and Power of Veto each week. No season-long leaderboard — just weekly power shifts until the final draft winner is crowned.</p>
       </div>
-      <div class="leaderboard" id="leaderboard"></div>
+      <div class="weekly-grid" id="weekly-grid"></div>
     </section>
 
     <section class="panel" id="houseguests">
@@ -105,7 +98,7 @@
         </div>
         <div>
           <strong>Eviction nights</strong>
-          <p>When someone is evicted, I’ll mark their status and the site will refresh the live data automatically.</p>
+          <p>Each week I’ll add HOH/POV winners, then mark evictions as they happen so the site stays current.</p>
         </div>
         <div>
           <strong>Finale</strong>
