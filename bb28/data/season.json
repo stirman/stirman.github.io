@@ -1,9 +1,9 @@
 {
   "season": "Big Brother 28",
   "siteTitle": "BB28 Fantasy Draft",
-  "tagline": "The family draft is entering the house.",
-  "lastUpdated": "2026-07-07T16:18:22Z",
-  "status": "cast-reveal-pending",
+  "tagline": "Meet the BB28 houseguests \u2014 draft night is next.",
+  "lastUpdated": "2026-07-07T17:14:07Z",
+  "status": "cast-revealed",
   "liveRefreshSeconds": 60,
   "seasonCalendar": {
     "premiere": "2026-07-07",
@@ -11,8 +11,197 @@
     "notes": "Contestants reveal today. Draft results will be added after the family draft."
   },
   "familyMembers": [],
-  "houseguests": [],
+  "houseguests": [
+    {
+      "id": "ashley",
+      "name": "Ashley",
+      "age": 24,
+      "hometown": "Chicago, IL",
+      "occupation": "Bartender",
+      "status": "active",
+      "draftOwner": null,
+      "photoUrl": "https://bigbrothernetwork.com/wp-content/uploads/2026/07/bb28-cast-ashley-00.jpg",
+      "bio": "Ashley is a 24-year-old bartender from Chicago, IL.",
+      "sourceName": "Big Brother Network",
+      "sourceUrl": "https://bigbrothernetwork.com/big-brother-28-cast/"
+    },
+    {
+      "id": "barrett",
+      "name": "Barrett",
+      "age": 27,
+      "hometown": "Texas",
+      "occupation": "Jumbotron Engineer",
+      "status": "active",
+      "draftOwner": null,
+      "photoUrl": "https://bigbrothernetwork.com/wp-content/uploads/2026/07/bb28-cast-barrett-00.jpg",
+      "bio": "Barrett is a 27-year-old jumbotron Engineer from Texas.",
+      "sourceName": "Big Brother Network",
+      "sourceUrl": "https://bigbrothernetwork.com/big-brother-28-cast/"
+    },
+    {
+      "id": "chuk",
+      "name": "Chuk",
+      "age": 27,
+      "hometown": "Dallas, TX",
+      "occupation": "Supply Chain Analyst",
+      "status": "active",
+      "draftOwner": null,
+      "photoUrl": "https://bigbrothernetwork.com/wp-content/uploads/2026/07/bb28-cast-chuk-01-680x382.jpg",
+      "bio": "Chuk is a 27-year-old supply Chain Analyst from Dallas, TX.",
+      "sourceName": "Big Brother Network",
+      "sourceUrl": "https://bigbrothernetwork.com/big-brother-28-cast/"
+    },
+    {
+      "id": "drew",
+      "name": "Drew",
+      "age": 22,
+      "hometown": "",
+      "occupation": "Dental Assistant",
+      "status": "active",
+      "draftOwner": null,
+      "photoUrl": "https://bigbrothernetwork.com/wp-content/uploads/2026/07/bb28-cast-drew-00.jpg",
+      "bio": "Drew is a 22-year-old dental Assistant.",
+      "sourceName": "Big Brother Network",
+      "sourceUrl": "https://bigbrothernetwork.com/big-brother-28-cast/"
+    },
+    {
+      "id": "haley",
+      "name": "Haley",
+      "age": 29,
+      "hometown": "",
+      "occupation": "Telemedicine Exec",
+      "status": "active",
+      "draftOwner": null,
+      "photoUrl": "https://bigbrothernetwork.com/wp-content/uploads/2026/07/bb28-cast-haley-00.jpg",
+      "bio": "Haley is a 29-year-old telemedicine Exec.",
+      "sourceName": "Big Brother Network",
+      "sourceUrl": "https://bigbrothernetwork.com/big-brother-28-cast/"
+    },
+    {
+      "id": "jason",
+      "name": "Jason",
+      "age": 35,
+      "hometown": "West Hollywood, CA",
+      "occupation": "Drag Queen",
+      "status": "active",
+      "draftOwner": null,
+      "photoUrl": "https://bigbrothernetwork.com/wp-content/uploads/2026/07/bb28-cast-jason-00.jpg",
+      "bio": "Jason is a 35-year-old drag Queen from West Hollywood, CA.",
+      "sourceName": "Big Brother Network",
+      "sourceUrl": "https://bigbrothernetwork.com/big-brother-28-cast/"
+    },
+    {
+      "id": "kamu",
+      "name": "Kamu",
+      "age": 32,
+      "hometown": "Phoenix, AZ",
+      "occupation": "MMA Fighter",
+      "status": "active",
+      "draftOwner": null,
+      "photoUrl": "https://bigbrothernetwork.com/wp-content/uploads/2026/07/bb28-cast-kamu-00.jpg",
+      "bio": "Kamu is a 32-year-old mMA Fighter from Phoenix, AZ.",
+      "sourceName": "Big Brother Network",
+      "sourceUrl": "https://bigbrothernetwork.com/big-brother-28-cast/"
+    },
+    {
+      "id": "la-trice",
+      "name": "La Trice",
+      "age": 57,
+      "hometown": "Maplewood, NJ",
+      "occupation": "Boutique Salesperson",
+      "status": "active",
+      "draftOwner": null,
+      "photoUrl": "https://bigbrothernetwork.com/wp-content/uploads/2026/07/bb28-cast-latrice-00.jpg",
+      "bio": "La Trice is a 57-year-old boutique Salesperson from Maplewood, NJ.",
+      "sourceName": "Big Brother Network",
+      "sourceUrl": "https://bigbrothernetwork.com/big-brother-28-cast/"
+    },
+    {
+      "id": "lyric",
+      "name": "Lyric",
+      "age": 25,
+      "hometown": "Honolulu, HI",
+      "occupation": "Attorney",
+      "status": "active",
+      "draftOwner": null,
+      "photoUrl": "https://bigbrothernetwork.com/wp-content/uploads/2026/07/bb28-cast-lyric-00.jpg",
+      "bio": "Lyric is a 25-year-old attorney from Honolulu, HI.",
+      "sourceName": "Big Brother Network",
+      "sourceUrl": "https://bigbrothernetwork.com/big-brother-28-cast/"
+    },
+    {
+      "id": "mallory",
+      "name": "Mallory",
+      "age": 24,
+      "hometown": "Washington, NJ",
+      "occupation": "Rocket Scientist",
+      "status": "active",
+      "draftOwner": null,
+      "photoUrl": "https://bigbrothernetwork.com/wp-content/uploads/2026/07/bb28-cast-mallory-00.jpg",
+      "bio": "Mallory is a 24-year-old rocket Scientist from Washington, NJ.",
+      "sourceName": "Big Brother Network",
+      "sourceUrl": "https://bigbrothernetwork.com/big-brother-28-cast/"
+    },
+    {
+      "id": "melody",
+      "name": "Melody",
+      "age": 24,
+      "hometown": "Maricopa, AZ",
+      "occupation": "Game Show Host",
+      "status": "active",
+      "draftOwner": null,
+      "photoUrl": "https://bigbrothernetwork.com/wp-content/uploads/2026/07/bb28-cast-melody-00.jpg",
+      "bio": "Melody is a 24-year-old game Show Host from Maricopa, AZ.",
+      "sourceName": "Big Brother Network",
+      "sourceUrl": "https://bigbrothernetwork.com/big-brother-28-cast/"
+    },
+    {
+      "id": "rome",
+      "name": "Rome",
+      "age": 28,
+      "hometown": "Delray Beach, FL",
+      "occupation": "Pickleball Coach",
+      "status": "active",
+      "draftOwner": null,
+      "photoUrl": "https://bigbrothernetwork.com/wp-content/uploads/2026/07/bb28-cast-rome-00.jpg",
+      "bio": "Rome is a 28-year-old pickleball Coach from Delray Beach, FL.",
+      "sourceName": "Big Brother Network",
+      "sourceUrl": "https://bigbrothernetwork.com/big-brother-28-cast/"
+    },
+    {
+      "id": "taylor",
+      "name": "Taylor",
+      "age": 27,
+      "hometown": "Deerfield Beach, FL",
+      "occupation": "Elementary School Counselor",
+      "status": "active",
+      "draftOwner": null,
+      "photoUrl": "https://bigbrothernetwork.com/wp-content/uploads/2026/07/bb28-cast-taylor-00.jpg",
+      "bio": "Taylor is a 27-year-old elementary School Counselor from Deerfield Beach, FL.",
+      "sourceName": "Big Brother Network",
+      "sourceUrl": "https://bigbrothernetwork.com/big-brother-28-cast/"
+    },
+    {
+      "id": "yash",
+      "name": "Yash",
+      "age": 24,
+      "hometown": "Monroe, NJ",
+      "occupation": "Financial Analyst",
+      "status": "active",
+      "draftOwner": null,
+      "photoUrl": "https://bigbrothernetwork.com/wp-content/uploads/2026/07/bb28-cast-yash-00.jpg",
+      "bio": "Yash is a 24-year-old financial Analyst from Monroe, NJ.",
+      "sourceName": "Big Brother Network",
+      "sourceUrl": "https://bigbrothernetwork.com/big-brother-28-cast/"
+    }
+  ],
   "events": [
+    {
+      "date": "2026-07-07T17:13:14Z",
+      "type": "cast_revealed",
+      "title": "Houseguests revealed",
+      "description": "14 BB28 houseguests added with photos, ages, hometowns, and occupations. Draft owners will be added after the family draft."
+    },
     {
       "date": "2026-07-07",
       "type": "cast_reveal",
@@ -24,5 +213,12 @@
     "activeHouseguestPoints": 1,
     "winnerBonus": 5,
     "notes": "Initial scoring is simple: count active drafted houseguests, then highlight the winner. We can adjust this if the family uses custom rules."
-  }
+  },
+  "sources": [
+    {
+      "name": "Big Brother Network",
+      "url": "https://bigbrothernetwork.com/big-brother-28-cast/",
+      "checkedAt": "2026-07-07T17:14:07Z"
+    }
+  ]
 }
