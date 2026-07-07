@@ -10,7 +10,73 @@
     "finaleWindow": "October 2026",
     "notes": "Contestants reveal today. Draft results will be added after the family draft."
   },
-  "familyMembers": [],
+  "familyMembers": [
+    {
+      "id": "mimi",
+      "name": "Mimi",
+      "color": "#00d5ff"
+    },
+    {
+      "id": "pa",
+      "name": "Pa",
+      "color": "#ff2bd6"
+    },
+    {
+      "id": "bruin",
+      "name": "Bruin",
+      "color": "#ffd166"
+    },
+    {
+      "id": "cannan",
+      "name": "Cannan",
+      "color": "#5cffb1"
+    },
+    {
+      "id": "stacey",
+      "name": "Stacey",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "cru",
+      "name": "Cru",
+      "color": "#ff7a59"
+    },
+    {
+      "id": "greenley",
+      "name": "Greenley",
+      "color": "#7dd3fc"
+    },
+    {
+      "id": "cadence",
+      "name": "Cadence",
+      "color": "#f9a8d4"
+    },
+    {
+      "id": "cassie",
+      "name": "Cassie",
+      "color": "#c4ff4d"
+    },
+    {
+      "id": "jason",
+      "name": "Jason",
+      "color": "#ff5d73"
+    },
+    {
+      "id": "ca-stirmans",
+      "name": "CA Stirmans",
+      "color": "#38bdf8"
+    },
+    {
+      "id": "mimi-pa",
+      "name": "Mimi + Pa",
+      "color": "#facc15"
+    },
+    {
+      "id": "claghorns",
+      "name": "Claghorns",
+      "color": "#a78bfa"
+    }
+  ],
   "houseguests": [
     {
       "id": "ashley-trail",

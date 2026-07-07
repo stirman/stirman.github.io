@@ -89,6 +89,25 @@ function renderDraftBoard(data) {
   }).join('');
 }
 
+function renderPlayers(data) {
+  const players = data.familyMembers || [];
+  const grid = $('player-grid');
+  if (!players.length) {
+    grid.innerHTML = emptyState('Players pending', 'Draft players will appear here before houseguests are assigned.');
+    return;
+  }
+  grid.innerHTML = players.map(player => {
+    const picks = picksForOwner(data, player.id);
+    const pickCount = picks.length;
+    return `
+      <article class="player-card" style="--owner-color:${escapeAttr(player.color || '#00d5ff')}">
+        <strong>${escapeHtml(player.name)}</strong>
+        <span>${pickCount ? `${pickCount} pick${pickCount === 1 ? '' : 's'}` : 'Awaiting draft'}</span>
+      </article>
+    `;
+  }).join('');
+}
+
 function renderWeeklyWinners(data) {
   const weeks = data.weeklyResults || [];
   const grid = $('weekly-grid');
@@ -141,14 +160,16 @@ function renderHouseguests(data) {
     const status = guest.status || 'active';
     const owner = guest.draftOwner ? ownerName(data, guest.draftOwner) : 'Undrafted';
     const meta = [guest.age && `Age ${guest.age}`, guest.hometown, guest.occupation].filter(Boolean).join(' • ');
-    const photo = guest.photoUrl ? `<img class="guest-photo" src="${escapeAttr(guest.photoUrl)}" alt="${escapeAttr(`${guest.name} BB28 cast photo`)}" decoding="async" referrerpolicy="no-referrer" onerror="this.remove(); this.parentElement.classList.add('photo-fallback')">` : '';
+    const photo = guest.photoUrl ? `
+      <button class="guest-image guest-image-button" type="button" data-lightbox-src="${escapeAttr(guest.photoUrl)}" data-lightbox-caption="${escapeAttr(guest.name)}" aria-label="Open larger photo of ${escapeAttr(guest.name)}">
+        <img class="guest-photo" src="${escapeAttr(guest.photoUrl)}" alt="${escapeAttr(`${guest.name} BB28 cast photo`)}" decoding="async" referrerpolicy="no-referrer" onerror="this.remove(); this.parentElement.classList.add('photo-fallback')">
+        <span class="image-expand-hint">Tap to enlarge</span>
+      </button>
+    ` : '';
     const source = guest.sourceUrl ? `<a class="source-link" href="${escapeAttr(guest.sourceUrl)}" target="_blank" rel="noreferrer">Source</a>` : '';
     return `
       <article class="guest-card ${escapeAttr(status)}" style="border-color:${ownerColor(data, guest.draftOwner)}66">
-        <div class="guest-image ${photo ? '' : 'photo-fallback'}">
-          ${photo || `<div class="avatar">${escapeHtml(initials(guest.name))}</div>`}
-          <span class="status-pill ${escapeAttr(status)}">${escapeHtml(statusLabel(status))}</span>
-        </div>
+        ${photo || `<div class="guest-image photo-fallback"><div class="avatar">${escapeHtml(initials(guest.name))}</div></div>`}
         <div>
           <h3>${escapeHtml(guest.name)}</h3>
           <p class="guest-meta">${escapeHtml(meta || 'Details coming soon')}</p>
@@ -179,13 +200,14 @@ function emptyState(title, message) {
 function escapeHtml(value = '') {
   return String(value).replace(/[&<>'"]/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[char]));
 }
-function escapeAttr(value = '') { return escapeHtml(value).replace(/\s+/g, '-'); }
+function escapeAttr(value = '') { return escapeHtml(value); }
 
 async function render() {
   try {
     const data = await loadSeason();
     renderStats(data);
     renderDraftBoard(data);
+    renderPlayers(data);
     renderWeeklyWinners(data);
     renderHouseguests(data);
     renderTimeline(data);
@@ -199,5 +221,40 @@ async function render() {
     liveTimer = setTimeout(render, 30000);
   }
 }
+
+function openLightbox(src, caption) {
+  const lightbox = $('image-lightbox');
+  const image = $('lightbox-image');
+  const label = $('lightbox-caption');
+  image.src = src;
+  image.alt = caption ? `${caption} BB28 cast photo` : 'BB28 cast photo';
+  label.textContent = caption || '';
+  lightbox.hidden = false;
+  document.body.classList.add('lightbox-open');
+}
+
+function closeLightbox() {
+  const lightbox = $('image-lightbox');
+  const image = $('lightbox-image');
+  lightbox.hidden = true;
+  image.src = '';
+  image.alt = '';
+  document.body.classList.remove('lightbox-open');
+}
+
+document.addEventListener('click', (event) => {
+  const trigger = event.target.closest('[data-lightbox-src]');
+  if (trigger) {
+    openLightbox(trigger.dataset.lightboxSrc, trigger.dataset.lightboxCaption);
+    return;
+  }
+  if (event.target.closest('[data-lightbox-close]')) {
+    closeLightbox();
+  }
+});
+
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape' && !$('image-lightbox').hidden) closeLightbox();
+});
 
 render();

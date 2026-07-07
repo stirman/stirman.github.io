@@ -8,7 +8,7 @@ Static, data-driven Big Brother 28 family fantasy draft tracker published at:
 
 Shows:
 - Current BB28 contestants / houseguests
-- Which family member drafted each houseguest
+- Draft players and which houseguest each player drafts
 - Live season status as houseguests are evicted
 - Weekly Head of Household and Power of Veto winners
 - No season-long family leaderboard; the draft has one winner at the finale
@@ -25,6 +25,24 @@ Edit `data/season.json`, then publish the repo. The page fetches that JSON with 
   { "id": "cassie", "name": "Cassie", "color": "#ff2bd6" }
 ]
 ```
+
+
+### Draft players
+
+Current player IDs in `familyMembers`:
+- `mimi` — Mimi
+- `pa` — Pa
+- `bruin` — Bruin
+- `cannan` — Cannan
+- `stacey` — Stacey
+- `cru` — Cru
+- `greenley` — Greenley
+- `cadence` — Cadence
+- `cassie` — Cassie
+- `jason` — Jason
+- `ca-stirmans` — CA Stirmans
+- `mimi-pa` — Mimi + Pa
+- `claghorns` — Claghorns
 
 ### Add / update contestants
 
