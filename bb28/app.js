@@ -68,26 +68,6 @@ function ownerColor(data, ownerId) {
   return familyById(data).get(ownerId)?.color || '#00d5ff';
 }
 
-function renderDraftBoard(data) {
-  const owners = data.familyMembers || [];
-  const grid = $('owner-grid');
-  if (!owners.length) {
-    grid.innerHTML = emptyState('Draft board locked', 'Send the family member list and draft results after the draft. This board is ready for picks, evictions, jury status, and the final winner.');
-    return;
-  }
-  grid.innerHTML = owners.map(owner => {
-    const picks = picksForOwner(data, owner.id);
-    const pickItems = picks.length
-      ? picks.map(guest => `<li><span>${guest.name}</span><small>${statusLabel(guest.status)}</small></li>`).join('')
-      : '<li><span>No picks yet</span><small>Draft pending</small></li>';
-    return `
-      <article class="owner-card" style="--owner-color:${owner.color || '#00d5ff'}">
-        <div class="owner-name"><strong>${escapeHtml(owner.name)}</strong><span>${picks.length} picks</span></div>
-        <ul class="pick-list">${pickItems}</ul>
-      </article>
-    `;
-  }).join('');
-}
 
 function renderPlayers(data) {
   const players = data.familyMembers || [];
@@ -153,7 +133,7 @@ function renderHouseguests(data) {
   const guests = data.houseguests || [];
   const grid = $('houseguest-grid');
   if (!guests.length) {
-    grid.innerHTML = emptyState('The front door is still closed', 'Contestants will appear here after the official BB28 reveal. Draft owner badges and eviction status are already wired up.');
+    grid.innerHTML = emptyState('The front door is still closed', 'Contestants will appear here after the official BB28 reveal. Photos open larger when tapped.');
     return;
   }
   grid.innerHTML = guests.map(guest => {
@@ -161,10 +141,10 @@ function renderHouseguests(data) {
     const owner = guest.draftOwner ? ownerName(data, guest.draftOwner) : 'Undrafted';
     const meta = [guest.age && `Age ${guest.age}`, guest.hometown, guest.occupation].filter(Boolean).join(' • ');
     const photo = guest.photoUrl ? `
-      <button class="guest-image guest-image-button" type="button" data-lightbox-src="${escapeAttr(guest.photoUrl)}" data-lightbox-caption="${escapeAttr(guest.name)}" aria-label="Open larger photo of ${escapeAttr(guest.name)}">
+      <div class="guest-image">
         <img class="guest-photo" src="${escapeAttr(guest.photoUrl)}" alt="${escapeAttr(`${guest.name} BB28 cast photo`)}" decoding="async" referrerpolicy="no-referrer" onerror="this.remove(); this.parentElement.classList.add('photo-fallback')">
-        <span class="image-expand-hint">Tap to enlarge</span>
-      </button>
+        <button class="guest-image-button" type="button" data-lightbox-src="${escapeAttr(guest.photoUrl)}" data-lightbox-caption="${escapeAttr(guest.name)}" aria-label="Open larger photo of ${escapeAttr(guest.name)}"></button>
+      </div>
     ` : '';
     const source = guest.sourceUrl ? `<a class="source-link" href="${escapeAttr(guest.sourceUrl)}" target="_blank" rel="noreferrer">Source</a>` : '';
     return `
@@ -206,7 +186,6 @@ async function render() {
   try {
     const data = await loadSeason();
     renderStats(data);
-    renderDraftBoard(data);
     renderPlayers(data);
     renderWeeklyWinners(data);
     renderHouseguests(data);

@@ -8,7 +8,7 @@ Static, data-driven Big Brother 28 family fantasy draft tracker published at:
 
 Shows:
 - Current BB28 contestants / houseguests
-- Draft players and which houseguest each player drafts
+- Draft players and each houseguest’s assigned player after the draft
 - Live season status as houseguests are evicted
 - Weekly Head of Household and Power of Veto winners
 - No season-long family leaderboard; the draft has one winner at the finale
