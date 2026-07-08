@@ -1,14 +1,14 @@
 {
   "season": "Big Brother 28",
   "siteTitle": "BB28 Fantasy Draft",
-  "tagline": "Meet the BB28 houseguests \u2014 draft night is next.",
-  "lastUpdated": "2026-07-08T04:17:35Z",
-  "status": "cast-revealed",
+  "tagline": "Picks are locked: track every BB28 draft pick, weekly HOH/POV wins, and the final family winner.",
+  "lastUpdated": "2026-07-08T04:45:20Z",
+  "status": "draft-complete",
   "liveRefreshSeconds": 60,
   "seasonCalendar": {
     "premiere": "2026-07-07",
     "finaleWindow": "October 2026",
-    "notes": "Family draft picks are locked for the current BB28 houseguests."
+    "notes": "Family draft picks are locked, including Angela Murray and Rick Devens as Claghorns picks."
   },
   "familyMembers": [
     {
@@ -259,6 +259,32 @@
       "bio": "Yash Patel is a 24-year-old financial Analyst from Monroe, NJ.",
       "sourceName": "Big Brother Network",
       "sourceUrl": "https://bigbrothernetwork.com/big-brother-28-cast/"
+    },
+    {
+      "id": "angela-murray",
+      "name": "Angela Murray",
+      "age": 51,
+      "hometown": "Syracuse, UT",
+      "occupation": "Real estate agent",
+      "status": "active",
+      "draftOwner": "claghorns",
+      "photoUrl": "./assets/angela-murray.jpg",
+      "bio": "Angela Murray is a Big Brother 26 alum joining the BB28 draft board as a returnee pick.",
+      "sourceName": "Screen Rant",
+      "sourceUrl": "https://screenrant.com/big-brother-season-26-cast-guide/"
+    },
+    {
+      "id": "rick-devens",
+      "name": "Rick Devens",
+      "age": 42,
+      "hometown": "Macon, GA",
+      "occupation": "News anchor / Survivor alum",
+      "status": "active",
+      "draftOwner": "claghorns",
+      "photoUrl": "./assets/rick-devens.jpg",
+      "bio": "Rick Devens is a Survivor: Edge of Extinction fan favorite joining the BB28 draft board as a crossover pick.",
+      "sourceName": "Parade",
+      "sourceUrl": "https://parade.com/tv/rick-devens-survivor-50-interview"
     }
   ],
   "weeklyResults": [],
@@ -267,13 +293,13 @@
       "date": "2026-07-08T03:43:16Z",
       "type": "draft_complete",
       "title": "Family draft picks are in",
-      "description": "All current BB28 houseguest picks have been assigned to family players."
+      "description": "All BB28 picks have been assigned, with Angela Murray and Rick Devens added as Claghorns picks."
     },
     {
       "date": "2026-07-07T17:13:14Z",
       "type": "cast_revealed",
       "title": "Houseguests revealed",
-      "description": "14 BB28 houseguests are listed with photos and family draft ownership highlighted on every card."
+      "description": "16 BB28 houseguests are listed with photos and family draft ownership highlighted on every card."
     },
     {
       "date": "2026-07-07",
@@ -286,7 +312,17 @@
     {
       "name": "Big Brother Network",
       "url": "https://bigbrothernetwork.com/big-brother-28-cast/",
-      "checkedAt": "2026-07-08T04:17:35Z"
+      "checkedAt": "2026-07-08T04:45:20Z"
+    },
+    {
+      "name": "Screen Rant",
+      "url": "https://screenrant.com/big-brother-season-26-cast-guide/",
+      "checkedAt": "2026-07-08T03:43:16Z"
+    },
+    {
+      "name": "Parade",
+      "url": "https://parade.com/tv/rick-devens-survivor-50-interview",
+      "checkedAt": "2026-07-08T03:43:16Z"
     }
   ]
 }
