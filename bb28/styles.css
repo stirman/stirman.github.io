@@ -149,13 +149,34 @@ h3 { font-size: 19px; }
 
 .score-strip {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: minmax(0, 1fr);
   gap: 14px;
   margin: 8px 0 22px;
 }
 .stat-card {
   border-radius: 24px;
   padding: 22px;
+}
+.in-game-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: clamp(22px, 3vw, 30px) clamp(24px, 4vw, 42px);
+  background:
+    radial-gradient(circle at 12% 20%, rgba(0,213,255,.20), transparent 32%),
+    linear-gradient(135deg, rgba(0,213,255,.16), rgba(255,211,77,.11)),
+    rgba(255,255,255,.06);
+}
+.in-game-card strong {
+  margin: 0;
+  font-size: clamp(44px, 8vw, 88px);
+  letter-spacing: -.06em;
+}
+.in-game-card small {
+  font-size: clamp(18px, 2vw, 28px);
+  font-weight: 900;
+  color: #f6f9ff;
 }
 .stat-label {
   font: 800 11px/1 JetBrains Mono, monospace;

@@ -36,14 +36,10 @@ function renderStats(data) {
   const guests = data.houseguests || [];
   const total = guests.length;
   const active = guests.filter(guest => !['evicted'].includes(guest.status)).length;
-  const drafted = guests.filter(guest => guest.draftOwner).length;
   $('tagline').textContent = data.tagline || 'The family draft is entering the house.';
   $('status-ticker').textContent = statusText(data);
-  $('stat-total').textContent = total || 'TBD';
-  $('stat-active').textContent = total ? active : 'TBD';
-  $('stat-drafted').textContent = total ? `${drafted}/${total}` : 'TBD';
-  $('stat-updated').textContent = fmtDate(data.lastUpdated);
-  $('stat-checked').textContent = `Live checked ${new Date().toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' })}`;
+  $('stat-in-game').textContent = total ? `${active}/${total}` : 'TBD';
+  $('stat-in-game-caption').textContent = total ? 'Still in the game' : 'Houseguests remaining';
 }
 
 function statusText(data) {

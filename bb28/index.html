@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles.css?v=20260708-owner-pill">
+  <link rel="stylesheet" href="./styles.css?v=20260708-in-game">
 </head>
 <body>
   <div class="stage-glow" aria-hidden="true"></div>
@@ -30,26 +30,11 @@
       <div class="hero-status" id="status-ticker">Awaiting cast reveal</div>
     </section>
 
-    <section class="score-strip" aria-label="Season summary">
-      <article class="stat-card">
-        <span class="stat-label">Houseguests</span>
-        <strong id="stat-total">—</strong>
-        <small>Total revealed</small>
-      </article>
-      <article class="stat-card">
-        <span class="stat-label">Still in the house</span>
-        <strong id="stat-active">—</strong>
-        <small>Avoiding eviction night</small>
-      </article>
-      <article class="stat-card">
-        <span class="stat-label">Drafted</span>
-        <strong id="stat-drafted">—</strong>
-        <small>Claimed by family</small>
-      </article>
-      <article class="stat-card">
-        <span class="stat-label">Last update</span>
-        <strong id="stat-updated">—</strong>
-        <small id="stat-checked">Checking live data…</small>
+    <section class="score-strip in-game-strip" aria-label="Houseguests still in the game">
+      <article class="stat-card in-game-card">
+        <span class="stat-label">Still in the game</span>
+        <strong id="stat-in-game">—</strong>
+        <small id="stat-in-game-caption">Houseguests remaining</small>
       </article>
     </section>
 
@@ -99,6 +84,6 @@
       </div>
     </section>
   </main>
-  <script src="./app.js?v=20260708-owner-pill" defer></script>
+  <script src="./app.js?v=20260708-in-game" defer></script>
 </body>
 </html>
