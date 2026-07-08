@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles.css?v=20260708-draft">
+  <link rel="stylesheet" href="./styles.css?v=20260708-houseguests">
 </head>
 <body>
   <div class="stage-glow" aria-hidden="true"></div>
@@ -23,8 +23,7 @@
         <h1 id="page-title">BB28 Fantasy Draft</h1>
         <p class="tagline" id="tagline">The family draft is entering the house.</p>
         <div class="hero-actions">
-          <a class="button primary" href="#players">See the picks</a>
-          <a class="button ghost" href="#houseguests">Meet the cast</a>
+          <a class="button primary" href="#houseguests">Meet the houseguests</a>
           <a class="button ghost" href="#weekly-winners">Weekly winners</a>
         </div>
       </div>
@@ -54,15 +53,15 @@
       </article>
     </section>
 
-    <section class="panel" id="players">
-      <div class="section-heading">
-        <p class="eyebrow">Players</p>
-        <h2>Who picked who</h2>
-        <p>Picks are locked. Each family player now has a photo grid of their drafted houseguests.</p>
-      </div>
-      <div class="player-grid" id="player-grid"></div>
-    </section>
 
+    <section class="panel featured-houseguests" id="houseguests">
+      <div class="section-heading">
+        <p class="eyebrow">The house</p>
+        <h2>Houseguests</h2>
+        <p>Every BB28 houseguest is led by the family player who drafted them.</p>
+      </div>
+      <div class="houseguest-grid" id="houseguest-grid"></div>
+    </section>
 
     <section class="panel" id="weekly-winners">
       <div class="section-heading">
@@ -71,15 +70,6 @@
         <p>Track which houseguest wins Head of Household and Power of Veto each week. No season-long leaderboard — just weekly power shifts until the final draft winner is crowned.</p>
       </div>
       <div class="weekly-grid" id="weekly-grid"></div>
-    </section>
-
-    <section class="panel" id="houseguests">
-      <div class="section-heading">
-        <p class="eyebrow">The house</p>
-        <h2>Current contestants</h2>
-        <p>Every BB28 houseguest is tagged with their family drafter.</p>
-      </div>
-      <div class="houseguest-grid" id="houseguest-grid"></div>
     </section>
 
     <section class="panel diary-room">
@@ -109,6 +99,6 @@
       </div>
     </section>
   </main>
-  <script src="./app.js?v=20260708-draft" defer></script>
+  <script src="./app.js?v=20260708-houseguests" defer></script>
 </body>
 </html>

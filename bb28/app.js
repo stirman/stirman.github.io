@@ -32,10 +32,6 @@ function familyById(data) {
   return new Map((data.familyMembers || []).map(member => [member.id, member]));
 }
 
-function picksForOwner(data, ownerId) {
-  return (data.houseguests || []).filter(guest => guest.draftOwner === ownerId);
-}
-
 function renderStats(data) {
   const guests = data.houseguests || [];
   const total = guests.length;
@@ -68,39 +64,6 @@ function ownerName(data, ownerId) {
 
 function ownerColor(data, ownerId) {
   return familyById(data).get(ownerId)?.color || '#00d5ff';
-}
-
-
-function renderPlayers(data) {
-  const players = data.familyMembers || [];
-  const grid = $('player-grid');
-  if (!players.length) {
-    grid.innerHTML = emptyState('Players pending', 'Draft players will appear here before houseguests are assigned.');
-    return;
-  }
-  grid.innerHTML = players.map(player => {
-    const picks = picksForOwner(data, player.id);
-    const pickCount = picks.length;
-    const pickGrid = picks.length ? picks.map(pick => `
-      <div class="pick-chip">
-        <div class="pick-photo-wrap${pick.photoUrl ? ' has-photo' : ''}"${pick.photoUrl ? ` style="background-image: url('${escapeAttr(pick.photoUrl)}')" role="img" aria-label="${escapeAttr(pick.name)}"` : ''}>
-          ${pick.photoUrl ? '' : `<div class="avatar small">${escapeHtml(initials(pick.name))}</div>`}
-        </div>
-        <span>${escapeHtml(shortName(pick.name))}</span>
-      </div>
-    `).join('') : '<p class="no-picks">No picks yet</p>';
-    return `
-      <article class="player-card draft-card" style="--owner-color:${escapeAttr(player.color || '#00d5ff')}">
-        <div class="player-card-heading">
-          <div>
-            <strong>${escapeHtml(player.name)}</strong>
-            <span>${pickCount ? `${pickCount} pick${pickCount === 1 ? '' : 's'}` : 'Awaiting draft'}</span>
-          </div>
-        </div>
-        <div class="pick-grid">${pickGrid}</div>
-      </article>
-    `;
-  }).join('');
 }
 
 function renderWeeklyWinners(data) {
@@ -160,17 +123,19 @@ function renderHouseguests(data) {
         <div class="owner-ribbon" style="--owner-color:${ownerColor(data, guest.draftOwner)}">${escapeHtml(owner)}</div>
       </div>
     ` : '';
-    const source = guest.sourceUrl ? `<a class="source-link" href="${escapeAttr(guest.sourceUrl)}" target="_blank" rel="noreferrer">Source</a>` : '';
     return `
-      <article class="guest-card ${escapeAttr(status)}" style="border-color:${ownerColor(data, guest.draftOwner)}66">
+      <article class="guest-card ${escapeAttr(status)}" style="--owner-color:${ownerColor(data, guest.draftOwner)}; border-color:${ownerColor(data, guest.draftOwner)}88">
         ${photo || `<div class="guest-image photo-fallback"><div class="avatar">${escapeHtml(initials(guest.name))}</div></div>`}
-        <div>
+        <div class="owner-callout">
+          <span>Picked by</span>
+          <strong>${escapeHtml(owner)}</strong>
+        </div>
+        <div class="guest-copy">
           <h3>${escapeHtml(guest.name)}</h3>
           <p class="guest-meta">${escapeHtml(meta || 'Details coming soon')}</p>
           ${guest.bio ? `<p class="guest-bio">${escapeHtml(guest.bio)}</p>` : ''}
+          ${guest.notes ? `<p class="guest-meta guest-notes">${escapeHtml(guest.notes)}</p>` : ''}
         </div>
-        ${guest.notes ? `<p class="guest-meta">${escapeHtml(guest.notes)}</p>` : ''}
-        <div class="draft-owner">Picked by: ${escapeHtml(owner)} ${source}</div>
       </article>
     `;
   }).join('');
@@ -205,7 +170,6 @@ async function render() {
   try {
     const data = await loadSeason();
     renderStats(data);
-    renderPlayers(data);
     renderWeeklyWinners(data);
     renderHouseguests(data);
     renderTimeline(data);
