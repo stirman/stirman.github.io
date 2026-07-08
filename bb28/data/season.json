@@ -8,7 +8,7 @@
   "seasonCalendar": {
     "premiere": "2026-07-07",
     "finaleWindow": "October 2026",
-    "notes": "Family draft picks are locked, including Angela Murray and Rick Devens as Claghorns picks."
+    "notes": "Family draft picks are locked for the current BB28 houseguests."
   },
   "familyMembers": [
     {
@@ -267,13 +267,13 @@
       "date": "2026-07-08T03:43:16Z",
       "type": "draft_complete",
       "title": "Family draft picks are in",
-      "description": "All BB28 picks have been assigned, with Angela Murray and Rick Devens added as Claghorns picks."
+      "description": "All current BB28 houseguest picks have been assigned to family players."
     },
     {
       "date": "2026-07-07T17:13:14Z",
       "type": "cast_revealed",
       "title": "Houseguests revealed",
-      "description": "16 BB28 houseguests are listed with photos and family draft ownership highlighted on every card."
+      "description": "14 BB28 houseguests are listed with photos and family draft ownership highlighted on every card."
     },
     {
       "date": "2026-07-07",

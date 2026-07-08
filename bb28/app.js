@@ -126,10 +126,6 @@ function renderHouseguests(data) {
     return `
       <article class="guest-card ${escapeAttr(status)}" style="--owner-color:${ownerColor(data, guest.draftOwner)}; border-color:${ownerColor(data, guest.draftOwner)}88">
         ${photo || `<div class="guest-image photo-fallback"><div class="avatar">${escapeHtml(initials(guest.name))}</div></div>`}
-        <div class="owner-callout">
-          <span>Picked by</span>
-          <strong>${escapeHtml(owner)}</strong>
-        </div>
         <div class="guest-copy">
           <h3>${escapeHtml(guest.name)}</h3>
           <p class="guest-meta">${escapeHtml(meta || 'Details coming soon')}</p>

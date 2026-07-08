@@ -157,7 +157,7 @@ h3 { font-size: 19px; }
   border-radius: 24px;
   padding: 22px;
 }
-.stat-label, .owner-callout span {
+.stat-label {
   font: 800 11px/1 JetBrains Mono, monospace;
   letter-spacing: .12em;
   text-transform: uppercase;
@@ -245,9 +245,6 @@ h3 { font-size: 19px; }
 }
 .guest-image .avatar { position: relative; z-index: 2; }
 .owner-ribbon { position: relative; z-index: 2; align-self: end; max-width: 100%; padding: 10px 13px; border-radius: 999px; background: color-mix(in srgb, var(--owner-color, var(--cyan)) 88%, #071024 12%); color: #04101a; box-shadow: 0 10px 28px rgba(0,0,0,.32); font: 900 12px/1 JetBrains Mono, monospace; letter-spacing: .1em; text-transform: uppercase; }
-.owner-callout { display: grid; gap: 6px; margin: -2px 0 2px; padding: 14px 15px; border-radius: 18px; background: linear-gradient(135deg, color-mix(in srgb, var(--owner-color, var(--cyan)) 82%, #071024 18%), color-mix(in srgb, var(--owner-color, var(--cyan)) 50%, #09122e 50%)); color: #04101a; box-shadow: 0 16px 34px color-mix(in srgb, var(--owner-color, var(--cyan)) 24%, transparent); }
-.owner-callout span { color: rgba(4,16,26,.78); }
-.owner-callout strong { font-size: clamp(22px, 2.4vw, 32px); line-height: .95; letter-spacing: -.04em; }
 .guest-copy h3 { margin-top: 2px; }
 .guest-meta { color: var(--muted); font-size: 13px; line-height: 1.4; margin: 8px 0 0; }
 .guest-bio { color: rgba(246,249,255,.74); font-size: 13px; line-height: 1.45; margin: 8px 0 0; }
