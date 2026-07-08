@@ -8,8 +8,8 @@ Static, data-driven Big Brother 28 family fantasy draft tracker published at:
 
 Shows:
 - Current BB28 contestants / houseguests
-- Draft players and each houseguest’s assigned player after the draft
-- Live season status as houseguests are evicted
+- Each houseguest’s assigned family owner on the houseguest card
+- A dynamic Houseguests section eyebrow in the form `active/total still in the house` (starts `16/16 still in the house` and drops when statuses become `evicted` or `jury`)
 - Weekly Head of Household and Power of Veto winners
 - No season-long family leaderboard; the draft has one winner at the finale
 
@@ -109,7 +109,7 @@ git push origin master
 - Once weekly HOH/POV winners, evictions, or family draft results are known, update `data/season.json` only.
 
 
-## 2026-07-07 draft picks update
-- All 16 picks assigned in `data/season.json`, including Angela Murray (BB26) and Rick Devens (Survivor) as Claghorns picks.
-- The Players section now renders grouped image pick grids by family drafter.
-- The old photo lightbox modal was removed; cards are static image tiles.
+## 2026-07-08 house count update
+- Removed the standalone `Still in the game` summary module entirely.
+- The Houseguests section eyebrow now renders the dynamic `active/total still in the house` count from `app.js`.
+- Angela Murray (BB26) and Rick Devens (Survivor) remain in `data/season.json` as unofficial Thursday additions, both assigned to `claghorns`, using local images in `assets/`.

@@ -35,10 +35,9 @@ function familyById(data) {
 function renderStats(data) {
   const guests = data.houseguests || [];
   const total = guests.length;
-  const active = guests.filter(guest => !['evicted'].includes(guest.status)).length;
+  const active = guests.filter(guest => !['evicted', 'jury'].includes(guest.status)).length;
   $('tagline').textContent = data.tagline || 'The family draft is entering the house.';
-  $('stat-in-game').textContent = total ? `${active}/${total}` : 'TBD';
-  $('stat-in-game-caption').textContent = total ? 'Still in the game' : 'Houseguests remaining';
+  $('house-status-count').textContent = total ? `${active}/${total} still in the house` : 'Houseguests';
 }
 
 function ownerName(data, ownerId) {
