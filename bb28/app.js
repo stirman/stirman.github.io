@@ -37,21 +37,8 @@ function renderStats(data) {
   const total = guests.length;
   const active = guests.filter(guest => !['evicted'].includes(guest.status)).length;
   $('tagline').textContent = data.tagline || 'The family draft is entering the house.';
-  $('status-ticker').textContent = statusText(data);
   $('stat-in-game').textContent = total ? `${active}/${total}` : 'TBD';
   $('stat-in-game-caption').textContent = total ? 'Still in the game' : 'Houseguests remaining';
-}
-
-function statusText(data) {
-  const guests = data.houseguests || [];
-  const winner = guests.find(guest => guest.status === 'winner');
-  if (winner) return `${winner.name} wins BB28 — ${ownerName(data, winner.draftOwner)} takes the draft!`;
-  const active = guests.filter(guest => !['evicted'].includes(guest.status));
-  const drafted = guests.filter(guest => guest.draftOwner).length;
-  if (guests.length && active.length === 1) return `${active[0].name} is the final houseguest standing.`;
-  if (guests.length && drafted === guests.length) return `Draft locked: ${drafted} picks are claimed by the family.`;
-  if (guests.length) return `${active.length} houseguests still fighting for the key.`;
-  return 'Awaiting cast reveal';
 }
 
 function ownerName(data, ownerId) {
@@ -170,7 +157,6 @@ async function render() {
     liveTimer = setTimeout(render, Math.max(15, seconds) * 1000);
   } catch (error) {
     console.error(error);
-    $('status-ticker').textContent = 'Diary room technical difficulty — retrying live data.';
     clearTimeout(liveTimer);
     liveTimer = setTimeout(render, 30000);
   }

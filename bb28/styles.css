@@ -106,18 +106,6 @@ h3 { font-size: 19px; }
 }
 
 .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 34px; }
-.hero-status {
-  max-width: 760px;
-  margin-top: 22px;
-  border-radius: 20px;
-  padding: 16px 18px;
-  background: rgba(2,7,20,.64);
-  border: 1px solid rgba(255,255,255,.16);
-  color: #e6f7ff;
-  font-weight: 900;
-  text-transform: uppercase;
-  letter-spacing: .08em;
-}
 .button {
   display: inline-flex;
   align-items: center;
