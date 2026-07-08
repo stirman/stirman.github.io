@@ -1,9 +1,9 @@
 {
   "season": "Big Brother 28",
   "siteTitle": "BB28 Fantasy Draft",
-  "tagline": "Picks are locked: track every BB28 draft pick, weekly HOH/POV wins, and the final family winner.",
-  "lastUpdated": "2026-07-08T04:45:20Z",
-  "status": "draft-complete",
+  "tagline": "Meet the BB28 houseguests \u2014 draft night is next.",
+  "lastUpdated": "2026-07-08T05:17:43Z",
+  "status": "cast-revealed",
   "liveRefreshSeconds": 60,
   "seasonCalendar": {
     "premiere": "2026-07-07",
@@ -259,32 +259,6 @@
       "bio": "Yash Patel is a 24-year-old financial Analyst from Monroe, NJ.",
       "sourceName": "Big Brother Network",
       "sourceUrl": "https://bigbrothernetwork.com/big-brother-28-cast/"
-    },
-    {
-      "id": "angela-murray",
-      "name": "Angela Murray",
-      "age": 51,
-      "hometown": "Syracuse, UT",
-      "occupation": "Real estate agent",
-      "status": "active",
-      "draftOwner": "claghorns",
-      "photoUrl": "./assets/angela-murray.jpg",
-      "bio": "Angela Murray is a Big Brother 26 alum joining the BB28 draft board as a returnee pick.",
-      "sourceName": "Screen Rant",
-      "sourceUrl": "https://screenrant.com/big-brother-season-26-cast-guide/"
-    },
-    {
-      "id": "rick-devens",
-      "name": "Rick Devens",
-      "age": 42,
-      "hometown": "Macon, GA",
-      "occupation": "News anchor / Survivor alum",
-      "status": "active",
-      "draftOwner": "claghorns",
-      "photoUrl": "./assets/rick-devens.jpg",
-      "bio": "Rick Devens is a Survivor: Edge of Extinction fan favorite joining the BB28 draft board as a crossover pick.",
-      "sourceName": "Parade",
-      "sourceUrl": "https://parade.com/tv/rick-devens-survivor-50-interview"
     }
   ],
   "weeklyResults": [],
@@ -312,17 +286,7 @@
     {
       "name": "Big Brother Network",
       "url": "https://bigbrothernetwork.com/big-brother-28-cast/",
-      "checkedAt": "2026-07-08T04:45:20Z"
-    },
-    {
-      "name": "Screen Rant",
-      "url": "https://screenrant.com/big-brother-season-26-cast-guide/",
-      "checkedAt": "2026-07-08T03:43:16Z"
-    },
-    {
-      "name": "Parade",
-      "url": "https://parade.com/tv/rick-devens-survivor-50-interview",
-      "checkedAt": "2026-07-08T03:43:16Z"
+      "checkedAt": "2026-07-08T05:17:43Z"
     }
   ]
 }
