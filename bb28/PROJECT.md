@@ -107,3 +107,9 @@ git push origin master
 - The current foundation intentionally uses no build step, no npm dependencies, and no server so it works reliably on GitHub Pages at `/bb28/`.
 - The design uses Big Brother-inspired house/eye/neon/stage visuals via CSS, not official copyrighted assets.
 - Once weekly HOH/POV winners, evictions, or family draft results are known, update `data/season.json` only.
+
+
+## 2026-07-07 draft picks update
+- All 16 picks assigned in `data/season.json`, including Angela Murray (BB26) and Rick Devens (Survivor) as Claghorns picks.
+- The Players section now renders grouped image pick grids by family drafter.
+- The old photo lightbox modal was removed; cards are static image tiles.

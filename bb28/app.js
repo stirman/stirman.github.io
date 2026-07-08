@@ -55,7 +55,9 @@ function statusText(data) {
   const winner = guests.find(guest => guest.status === 'winner');
   if (winner) return `${winner.name} wins BB28 — ${ownerName(data, winner.draftOwner)} takes the draft!`;
   const active = guests.filter(guest => !['evicted'].includes(guest.status));
+  const drafted = guests.filter(guest => guest.draftOwner).length;
   if (guests.length && active.length === 1) return `${active[0].name} is the final houseguest standing.`;
+  if (guests.length && drafted === guests.length) return `Draft locked: ${drafted} picks are claimed by the family.`;
   if (guests.length) return `${active.length} houseguests still fighting for the key.`;
   return 'Awaiting cast reveal';
 }
@@ -79,10 +81,23 @@ function renderPlayers(data) {
   grid.innerHTML = players.map(player => {
     const picks = picksForOwner(data, player.id);
     const pickCount = picks.length;
+    const pickGrid = picks.length ? picks.map(pick => `
+      <div class="pick-chip">
+        <div class="pick-photo-wrap${pick.photoUrl ? ' has-photo' : ''}"${pick.photoUrl ? ` style="background-image: url('${escapeAttr(pick.photoUrl)}')" role="img" aria-label="${escapeAttr(pick.name)}"` : ''}>
+          ${pick.photoUrl ? '' : `<div class="avatar small">${escapeHtml(initials(pick.name))}</div>`}
+        </div>
+        <span>${escapeHtml(shortName(pick.name))}</span>
+      </div>
+    `).join('') : '<p class="no-picks">No picks yet</p>';
     return `
-      <article class="player-card" style="--owner-color:${escapeAttr(player.color || '#00d5ff')}">
-        <strong>${escapeHtml(player.name)}</strong>
-        <span>${pickCount ? `${pickCount} pick${pickCount === 1 ? '' : 's'}` : 'Awaiting draft'}</span>
+      <article class="player-card draft-card" style="--owner-color:${escapeAttr(player.color || '#00d5ff')}">
+        <div class="player-card-heading">
+          <div>
+            <strong>${escapeHtml(player.name)}</strong>
+            <span>${pickCount ? `${pickCount} pick${pickCount === 1 ? '' : 's'}` : 'Awaiting draft'}</span>
+          </div>
+        </div>
+        <div class="pick-grid">${pickGrid}</div>
       </article>
     `;
   }).join('');
@@ -133,7 +148,7 @@ function renderHouseguests(data) {
   const guests = data.houseguests || [];
   const grid = $('houseguest-grid');
   if (!guests.length) {
-    grid.innerHTML = emptyState('The front door is still closed', 'Contestants will appear here after the official BB28 reveal. Photos open larger when tapped.');
+    grid.innerHTML = emptyState('The front door is still closed', 'Contestants will appear here after the official BB28 reveal.');
     return;
   }
   grid.innerHTML = guests.map(guest => {
@@ -141,9 +156,8 @@ function renderHouseguests(data) {
     const owner = guest.draftOwner ? ownerName(data, guest.draftOwner) : 'Undrafted';
     const meta = [guest.age && `Age ${guest.age}`, guest.hometown, guest.occupation].filter(Boolean).join(' • ');
     const photo = guest.photoUrl ? `
-      <div class="guest-image">
-        <img class="guest-photo" src="${escapeAttr(guest.photoUrl)}" alt="${escapeAttr(`${guest.name} BB28 cast photo`)}" decoding="async" referrerpolicy="no-referrer" onerror="this.remove(); this.parentElement.classList.add('photo-fallback')">
-        <button class="guest-image-button" type="button" data-lightbox-src="${escapeAttr(guest.photoUrl)}" data-lightbox-caption="${escapeAttr(guest.name)}" aria-label="Open larger photo of ${escapeAttr(guest.name)}"></button>
+      <div class="guest-image has-photo" style="background-image: url('${escapeAttr(guest.photoUrl)}')" role="img" aria-label="${escapeAttr(`${guest.name} BB28 cast photo`)}">
+        <div class="owner-ribbon" style="--owner-color:${ownerColor(data, guest.draftOwner)}">${escapeHtml(owner)}</div>
       </div>
     ` : '';
     const source = guest.sourceUrl ? `<a class="source-link" href="${escapeAttr(guest.sourceUrl)}" target="_blank" rel="noreferrer">Source</a>` : '';
@@ -156,7 +170,7 @@ function renderHouseguests(data) {
           ${guest.bio ? `<p class="guest-bio">${escapeHtml(guest.bio)}</p>` : ''}
         </div>
         ${guest.notes ? `<p class="guest-meta">${escapeHtml(guest.notes)}</p>` : ''}
-        <div class="draft-owner">Drafted by: ${escapeHtml(owner)} ${source}</div>
+        <div class="draft-owner">Picked by: ${escapeHtml(owner)} ${source}</div>
       </article>
     `;
   }).join('');
@@ -171,6 +185,11 @@ function renderTimeline(data) {
       <p>${escapeHtml(event.description || '')}</p>
     </li>
   `).join('') : '<li><strong>No diary room entries yet.</strong></li>';
+}
+
+function shortName(name = '') {
+  const parts = String(name).split(/\s+/).filter(Boolean);
+  return parts.length > 1 ? parts[0] : String(name);
 }
 
 function emptyState(title, message) {
@@ -201,39 +220,5 @@ async function render() {
   }
 }
 
-function openLightbox(src, caption) {
-  const lightbox = $('image-lightbox');
-  const image = $('lightbox-image');
-  const label = $('lightbox-caption');
-  image.src = src;
-  image.alt = caption ? `${caption} BB28 cast photo` : 'BB28 cast photo';
-  label.textContent = caption || '';
-  lightbox.hidden = false;
-  document.body.classList.add('lightbox-open');
-}
-
-function closeLightbox() {
-  const lightbox = $('image-lightbox');
-  const image = $('lightbox-image');
-  lightbox.hidden = true;
-  image.src = '';
-  image.alt = '';
-  document.body.classList.remove('lightbox-open');
-}
-
-document.addEventListener('click', (event) => {
-  const trigger = event.target.closest('[data-lightbox-src]');
-  if (trigger) {
-    openLightbox(trigger.dataset.lightboxSrc, trigger.dataset.lightboxCaption);
-    return;
-  }
-  if (event.target.closest('[data-lightbox-close]')) {
-    closeLightbox();
-  }
-});
-
-document.addEventListener('keydown', (event) => {
-  if (event.key === 'Escape' && !$('image-lightbox').hidden) closeLightbox();
-});
 
 render();

@@ -1,14 +1,14 @@
 {
   "season": "Big Brother 28",
   "siteTitle": "BB28 Fantasy Draft",
-  "tagline": "Track the BB28 family draft, weekly HOH/POV wins, and the final winner.",
-  "lastUpdated": "2026-07-07T19:16:22Z",
-  "status": "cast-revealed",
+  "tagline": "Picks are locked: track every BB28 draft pick, weekly HOH/POV wins, and the final family winner.",
+  "lastUpdated": "2026-07-08T03:43:16Z",
+  "status": "draft-complete",
   "liveRefreshSeconds": 60,
   "seasonCalendar": {
     "premiere": "2026-07-07",
     "finaleWindow": "October 2026",
-    "notes": "Contestants reveal today. Draft results will be added after the family draft."
+    "notes": "Family draft picks are locked, including Angela Murray and Rick Devens as Claghorns picks."
   },
   "familyMembers": [
     {
@@ -68,7 +68,7 @@
     },
     {
       "id": "mimi-pa",
-      "name": "Mimi + Pa",
+      "name": "Mimi & Pa",
       "color": "#facc15"
     },
     {
@@ -85,7 +85,7 @@
       "hometown": "Chicago, IL",
       "occupation": "Bartender",
       "status": "active",
-      "draftOwner": null,
+      "draftOwner": "ca-stirmans",
       "photoUrl": "https://bigbrothernetwork.com/wp-content/uploads/2026/07/bb28-cast-ashley-00.jpg",
       "bio": "Ashley Trail is a 24-year-old bartender from Chicago, IL.",
       "sourceName": "Big Brother Network",
@@ -98,7 +98,7 @@
       "hometown": "Texas",
       "occupation": "Jumbotron Engineer",
       "status": "active",
-      "draftOwner": null,
+      "draftOwner": "stacey",
       "photoUrl": "https://bigbrothernetwork.com/wp-content/uploads/2026/07/bb28-cast-barrett-00.jpg",
       "bio": "Barrett Pfeiffer is a 27-year-old jumbotron Engineer from Texas.",
       "sourceName": "Big Brother Network",
@@ -111,7 +111,7 @@
       "hometown": "Dallas, TX",
       "occupation": "Supply Chain Analyst",
       "status": "active",
-      "draftOwner": null,
+      "draftOwner": "cadence",
       "photoUrl": "https://bigbrothernetwork.com/wp-content/uploads/2026/07/bb28-cast-chuk-01-680x382.jpg",
       "bio": "Chuk Anyanwu is a 27-year-old supply Chain Analyst from Dallas, TX.",
       "sourceName": "Big Brother Network",
@@ -124,7 +124,7 @@
       "hometown": "",
       "occupation": "Dental Assistant",
       "status": "active",
-      "draftOwner": null,
+      "draftOwner": "bruin",
       "photoUrl": "https://bigbrothernetwork.com/wp-content/uploads/2026/07/bb28-cast-drew-00.jpg",
       "bio": "Drew Campbell is a 22-year-old dental Assistant.",
       "sourceName": "Big Brother Network",
@@ -137,7 +137,7 @@
       "hometown": "",
       "occupation": "Telemedicine Exec",
       "status": "active",
-      "draftOwner": null,
+      "draftOwner": "ca-stirmans",
       "photoUrl": "https://bigbrothernetwork.com/wp-content/uploads/2026/07/bb28-cast-haley-00.jpg",
       "bio": "Haley Thogmartin is a 29-year-old telemedicine Exec.",
       "sourceName": "Big Brother Network",
@@ -150,7 +150,7 @@
       "hometown": "West Hollywood, CA",
       "occupation": "Drag Queen",
       "status": "active",
-      "draftOwner": null,
+      "draftOwner": "mimi-pa",
       "photoUrl": "https://bigbrothernetwork.com/wp-content/uploads/2026/07/bb28-cast-jason-00.jpg",
       "bio": "Jason De Puy is a 35-year-old drag Queen from West Hollywood, CA.",
       "sourceName": "Big Brother Network",
@@ -163,7 +163,7 @@
       "hometown": "Phoenix, AZ",
       "occupation": "MMA Fighter",
       "status": "active",
-      "draftOwner": null,
+      "draftOwner": "cru",
       "photoUrl": "https://bigbrothernetwork.com/wp-content/uploads/2026/07/bb28-cast-kamu-00.jpg",
       "bio": "Kamu Kirk is a 32-year-old mMA Fighter from Phoenix, AZ.",
       "sourceName": "Big Brother Network",
@@ -176,7 +176,7 @@
       "hometown": "Maplewood, NJ",
       "occupation": "Boutique Salesperson",
       "status": "active",
-      "draftOwner": null,
+      "draftOwner": "mimi-pa",
       "photoUrl": "https://bigbrothernetwork.com/wp-content/uploads/2026/07/bb28-cast-latrice-00.jpg",
       "bio": "LaTrice Verrett is a 57-year-old boutique Salesperson from Maplewood, NJ.",
       "sourceName": "Big Brother Network",
@@ -189,7 +189,7 @@
       "hometown": "Honolulu, HI",
       "occupation": "Attorney",
       "status": "active",
-      "draftOwner": null,
+      "draftOwner": "cassie",
       "photoUrl": "https://bigbrothernetwork.com/wp-content/uploads/2026/07/bb28-cast-lyric-00.jpg",
       "bio": "Lyric Medeiros is a 25-year-old attorney from Honolulu, HI.",
       "sourceName": "Big Brother Network",
@@ -202,7 +202,7 @@
       "hometown": "Washington, NJ",
       "occupation": "Rocket Scientist",
       "status": "active",
-      "draftOwner": null,
+      "draftOwner": "cannan",
       "photoUrl": "https://bigbrothernetwork.com/wp-content/uploads/2026/07/bb28-cast-mallory-00.jpg",
       "bio": "Mallory Aurichio is a 24-year-old rocket Scientist from Washington, NJ.",
       "sourceName": "Big Brother Network",
@@ -215,7 +215,7 @@
       "hometown": "Maricopa, AZ",
       "occupation": "Game Show Host",
       "status": "active",
-      "draftOwner": null,
+      "draftOwner": "pa",
       "photoUrl": "https://bigbrothernetwork.com/wp-content/uploads/2026/07/bb28-cast-melody-00.jpg",
       "bio": "Melody Morris is a 24-year-old game Show Host from Maricopa, AZ.",
       "sourceName": "Big Brother Network",
@@ -228,7 +228,7 @@
       "hometown": "Delray Beach, FL",
       "occupation": "Pickleball Coach",
       "status": "active",
-      "draftOwner": null,
+      "draftOwner": "mimi",
       "photoUrl": "https://bigbrothernetwork.com/wp-content/uploads/2026/07/bb28-cast-rome-00.jpg",
       "bio": "Rome Seymour is a 28-year-old pickleball Coach from Delray Beach, FL.",
       "sourceName": "Big Brother Network",
@@ -241,7 +241,7 @@
       "hometown": "Deerfield Beach, FL",
       "occupation": "Elementary School Counselor",
       "status": "active",
-      "draftOwner": null,
+      "draftOwner": "greenley",
       "photoUrl": "https://bigbrothernetwork.com/wp-content/uploads/2026/07/bb28-cast-taylor-00.jpg",
       "bio": "Taylor Brown is a 27-year-old elementary School Counselor from Deerfield Beach, FL.",
       "sourceName": "Big Brother Network",
@@ -254,15 +254,47 @@
       "hometown": "Monroe, NJ",
       "occupation": "Financial Analyst",
       "status": "active",
-      "draftOwner": null,
+      "draftOwner": "jason",
       "photoUrl": "https://bigbrothernetwork.com/wp-content/uploads/2026/07/bb28-cast-yash-00.jpg",
       "bio": "Yash Patel is a 24-year-old financial Analyst from Monroe, NJ.",
       "sourceName": "Big Brother Network",
       "sourceUrl": "https://bigbrothernetwork.com/big-brother-28-cast/"
+    },
+    {
+      "id": "angela-murray",
+      "name": "Angela Murray",
+      "age": 51,
+      "hometown": "Syracuse, UT",
+      "occupation": "Real estate agent",
+      "status": "active",
+      "draftOwner": "claghorns",
+      "photoUrl": "./assets/angela-murray.jpg",
+      "bio": "Angela Murray is a Big Brother 26 alum joining the BB28 draft board as a returnee pick.",
+      "sourceName": "Screen Rant",
+      "sourceUrl": "https://screenrant.com/big-brother-season-26-cast-guide/"
+    },
+    {
+      "id": "rick-devens",
+      "name": "Rick Devens",
+      "age": 42,
+      "hometown": "Macon, GA",
+      "occupation": "News anchor / Survivor alum",
+      "status": "active",
+      "draftOwner": "claghorns",
+      "photoUrl": "./assets/rick-devens.jpg",
+      "bio": "Rick Devens is a Survivor: Edge of Extinction fan favorite joining the BB28 draft board as a crossover pick.",
+      "sourceName": "Parade",
+      "sourceUrl": "https://parade.com/tv/rick-devens-survivor-50-interview"
     }
   ],
   "weeklyResults": [],
   "events": [
+    {
+      "date": "2026-07-08T03:43:16Z",
+      "type": "draft_complete",
+      "title": "Family draft picks are in",
+      "description": "All BB28 picks have been assigned, with Angela Murray and Rick Devens added as Claghorns picks."
+    },
     {
       "date": "2026-07-07T17:13:14Z",
       "type": "cast_revealed",
@@ -281,6 +313,16 @@
       "name": "Big Brother Network",
       "url": "https://bigbrothernetwork.com/big-brother-28-cast/",
       "checkedAt": "2026-07-07T19:16:22Z"
+    },
+    {
+      "name": "Screen Rant",
+      "url": "https://screenrant.com/big-brother-season-26-cast-guide/",
+      "checkedAt": "2026-07-08T03:43:16Z"
+    },
+    {
+      "name": "Parade",
+      "url": "https://parade.com/tv/rick-devens-survivor-50-interview",
+      "checkedAt": "2026-07-08T03:43:16Z"
     }
   ]
 }
