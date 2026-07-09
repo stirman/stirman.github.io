@@ -17,6 +17,8 @@ Shows:
 
 Edit `data/season.json`, then publish the repo. The page fetches that JSON with cache-busting and refreshes automatically every `liveRefreshSeconds` seconds.
 
+Important: when Jason asks for a Big Brother / BB28 season update, update both `/bb28/data/season.json` and `/bigbrother28/data/season.json`. Keep season-progress fields in sync, but preserve each site's separate `familyMembers` and `houseguests[].draftOwner` picks.
+
 ### Add family members
 
 ```json

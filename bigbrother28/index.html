@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BB28 Fantasy Draft</title>
+  <meta name="description" content="Big Brother 28 family fantasy draft tracker: contestants, draft picks, evictions, and winner watch.">
+  <meta property="og:title" content="BB28 Fantasy Draft">
+  <meta property="og:description" content="Who drafted the next Big Brother winner? Follow the family BB28 draft board live.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#050816">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css?v=20260708-house-count">
+</head>
+<body>
+  <div class="stage-glow" aria-hidden="true"></div>
+  <main class="shell" id="page-content">
+    <section class="hero" aria-labelledby="page-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="live-dot"></span> Live from the family HOH room</p>
+        <h1 id="page-title">BB28 Fantasy Draft</h1>
+        <p class="tagline" id="tagline">The family draft is entering the house.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#houseguests">Meet the houseguests</a>
+          <a class="button ghost" href="#weekly-winners">Weekly winners</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel featured-houseguests" id="houseguests">
+      <div class="section-heading">
+        <p class="eyebrow" id="house-status-count">16/16 still in the house</p>
+        <h2>Houseguests</h2>
+        <p>Every BB28 houseguest is led by the family player who drafted them.</p>
+      </div>
+      <div class="houseguest-grid" id="houseguest-grid"></div>
+    </section>
+
+    <section class="panel" id="weekly-winners">
+      <div class="section-heading">
+        <p class="eyebrow">Weekly power watch</p>
+        <h2>HOH + Power of Veto winners</h2>
+        <p>Track which houseguest wins Head of Household and Power of Veto each week. No season-long leaderboard — just weekly power shifts until the final draft winner is crowned.</p>
+      </div>
+      <div class="weekly-grid" id="weekly-grid"></div>
+    </section>
+
+    <section class="panel diary-room">
+      <div>
+        <p class="eyebrow">Diary room feed</p>
+        <h2>Season events</h2>
+      </div>
+      <ol class="timeline" id="timeline"></ol>
+    </section>
+
+    <section class="panel update-guide">
+      <p class="eyebrow">Production notes</p>
+      <h2>How we’ll run this all season</h2>
+      <div class="guide-grid">
+        <div>
+          <strong>Tonight/tomorrow</strong>
+          <p>The draft board is live with all 16 houseguest picks assigned.</p>
+        </div>
+        <div>
+          <strong>Eviction nights</strong>
+          <p>Each week I’ll add HOH/POV winners, then mark evictions as they happen so the site stays current.</p>
+        </div>
+        <div>
+          <strong>Finale</strong>
+          <p>When only one houseguest remains, the winner gets the crown treatment and the winning drafter gets the confetti.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="./app.js?v=20260708-house-count" defer></script>
+</body>
+</html>
