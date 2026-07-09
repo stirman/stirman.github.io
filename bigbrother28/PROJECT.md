@@ -1,4 +1,4 @@
-# BB28 Fantasy Draft — Monjies/Cassie/Crush/Mike
+# BB28 Fantasy Draft — Monjies/Cassie/Crush/Mike/Fins
 
 Static, data-driven Big Brother 28 family fantasy draft tracker published at:
 
@@ -10,15 +10,16 @@ This is an exact visual/functionality replica of `/bb28/`, with separate family 
 
 - Monjies: Ashley Trail, Drew Campbell, Barrett Pfeiffer, Yash Patel
 - Cassie: Chuk Anyanwu, Lyric Medeiros, Mallory Aurichio, Rick Devens
-- Crush: Haley Thogmartin, Jason De Puy, Rome Seymour, Angela Murray
-- Mike: Kamu Kirk, LaTrice Verrett, Melody Morris, Taylor Brown
+- Crush: Haley Thogmartin, Rome Seymour, Angela Murray
+- Mike: Kamu Kirk, Melody Morris, Taylor Brown
+- Fins: Jason De Puy, LaTrice Verrett
 
 ## Keep both BB28 sites updated together
 
 When Jason asks for a Big Brother / BB28 season update, update both:
 
 - `/bb28/data/season.json` — original family draft picks
-- `/bigbrother28/data/season.json` — Monjies/Cassie/Crush/Mike picks
+- `/bigbrother28/data/season.json` — Monjies/Cassie/Crush/Mike/Fins picks
 
 Sync season-progress fields between both sites, especially:
 

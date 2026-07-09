@@ -1,14 +1,14 @@
 {
   "season": "Big Brother 28",
   "siteTitle": "BB28 Fantasy Draft",
-  "tagline": "Meet the BB28 houseguests \u2014 the Monjies/Cassie/Crush/Mike family draft is live.",
-  "lastUpdated": "2026-07-09T02:41:55Z",
+  "tagline": "Meet the BB28 houseguests \u2014 the Monjies/Cassie/Crush/Mike/Fins family draft is live.",
+  "lastUpdated": "2026-07-09T02:46:17Z",
   "status": "cast-revealed",
   "liveRefreshSeconds": 60,
   "seasonCalendar": {
     "premiere": "2026-07-07",
     "finaleWindow": "October 2026",
-    "notes": "Monjies, Cassie, Crush, and Mike draft picks are locked for the /bigbrother28 family draft. Keep season updates in sync with /bb28 while preserving separate draftOwner assignments."
+    "notes": "Monjies, Cassie, Crush, Mike, and Fins draft picks are locked for the /bigbrother28 family draft. Keep season updates in sync with /bb28 while preserving separate draftOwner assignments."
   },
   "familyMembers": [
     {
@@ -30,6 +30,11 @@
       "id": "mike",
       "name": "Mike",
       "color": "#5cffb1"
+    },
+    {
+      "id": "fins",
+      "name": "Fins",
+      "color": "#7c5cff"
     }
   ],
   "houseguests": [
@@ -105,7 +110,7 @@
       "hometown": "West Hollywood, CA",
       "occupation": "Drag Queen",
       "status": "active",
-      "draftOwner": "crush",
+      "draftOwner": "fins",
       "photoUrl": "https://bigbrothernetwork.com/wp-content/uploads/2026/07/bb28-cast-jason-00.jpg",
       "bio": "Jason De Puy is a 35-year-old drag Queen from West Hollywood, CA.",
       "sourceName": "Big Brother Network",
@@ -131,7 +136,7 @@
       "hometown": "Maplewood, NJ",
       "occupation": "Boutique Salesperson",
       "status": "active",
-      "draftOwner": "mike",
+      "draftOwner": "fins",
       "photoUrl": "https://bigbrothernetwork.com/wp-content/uploads/2026/07/bb28-cast-latrice-00.jpg",
       "bio": "LaTrice Verrett is a 57-year-old boutique Salesperson from Maplewood, NJ.",
       "sourceName": "Big Brother Network",
@@ -244,6 +249,12 @@
   ],
   "weeklyResults": [],
   "events": [
+    {
+      "date": "2026-07-09T02:46:17Z",
+      "type": "draft_update",
+      "title": "Fins picks updated",
+      "description": "Jason De Puy and LaTrice Verrett are assigned to Fins for this family draft."
+    },
     {
       "date": "2026-07-09T02:41:55Z",
       "type": "draft_complete",
