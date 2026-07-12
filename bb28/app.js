@@ -200,12 +200,12 @@ function renderHouseguests(data) {
     const owner = guest.draftOwner ? ownerName(data, guest.draftOwner) : 'Undrafted';
     const meta = [guest.age && `Age ${guest.age}`, guest.hometown, guest.occupation].filter(Boolean).join(' • ');
     const photo = guest.photoUrl ? `
-      <div class="guest-image has-photo" style="background-image: url('${escapeAttr(guest.photoUrl)}')" role="img" aria-label="${escapeAttr(`${guest.name} BB28 cast photo`)}">
+      <div class="guest-image has-photo" style="background-image: url('${escapeAttr(guest.photoUrl)}'); background-position: ${escapeAttr(guest.photoPosition || 'center')}" role="img" aria-label="${escapeAttr(`${guest.name} BB28 cast photo`)}">
         <div class="owner-ribbon" style="--owner-color:${ownerColor(data, guest.draftOwner)}">${escapeHtml(owner)}</div>
       </div>
     ` : '';
     return `
-      <article class="guest-card ${escapeAttr(status)}" style="--owner-color:${ownerColor(data, guest.draftOwner)}; border-color:${ownerColor(data, guest.draftOwner)}88">
+      <article class="guest-card ${escapeAttr(status)}" style="--owner-color:${ownerColor(data, guest.draftOwner)}; --photo-position:${escapeAttr(guest.photoPosition || 'center')}; border-color:${ownerColor(data, guest.draftOwner)}88">
         ${photo || `<div class="guest-image photo-fallback"><div class="avatar">${escapeHtml(initials(guest.name))}</div><div class="owner-ribbon" style="--owner-color:${ownerColor(data, guest.draftOwner)}">${escapeHtml(owner)}</div></div>`}
         <div class="guest-copy">
           <h3>${escapeHtml(guest.name)}</h3>

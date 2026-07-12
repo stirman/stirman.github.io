@@ -252,9 +252,10 @@
       "status": "active",
       "bio": "Dee Valladares recently entered the BB28 house and is temporarily listed as undrafted until the family decides who gets her.",
       "notes": "Undrafted pending family discussion.",
-      "photoUrl": "./assets/dee-valladares.webp",
+      "photoUrl": "./assets/dee-valladares-headshot.png",
       "sourceName": "Survivor Wiki",
-      "sourceUrl": "https://survivor.fandom.com/wiki/Dee_Valladares"
+      "sourceUrl": "https://survivor.fandom.com/wiki/Dee_Valladares",
+      "photoPosition": "center 18%"
     }
   ],
   "weeklyResults": [],

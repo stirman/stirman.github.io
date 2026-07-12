@@ -198,7 +198,7 @@ h3 { font-size: 19px; }
     radial-gradient(circle at 24% 12%, rgba(255,43,214,.42), transparent 34%),
     linear-gradient(135deg, rgba(0,213,255,.26), rgba(255,211,77,.14));
   background-size: cover;
-  background-position: center;
+  background-position: var(--photo-position, center);
   border-bottom: 1px solid rgba(255,255,255,.12);
 }
 .guest-image.has-photo::before {
