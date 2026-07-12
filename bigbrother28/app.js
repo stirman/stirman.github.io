@@ -206,7 +206,7 @@ function renderHouseguests(data) {
     ` : '';
     return `
       <article class="guest-card ${escapeAttr(status)}" style="--owner-color:${ownerColor(data, guest.draftOwner)}; border-color:${ownerColor(data, guest.draftOwner)}88">
-        ${photo || `<div class="guest-image photo-fallback"><div class="avatar">${escapeHtml(initials(guest.name))}</div></div>`}
+        ${photo || `<div class="guest-image photo-fallback"><div class="avatar">${escapeHtml(initials(guest.name))}</div><div class="owner-ribbon" style="--owner-color:${ownerColor(data, guest.draftOwner)}">${escapeHtml(owner)}</div></div>`}
         <div class="guest-copy">
           <h3>${escapeHtml(guest.name)}</h3>
           <p class="guest-meta">${escapeHtml(meta || 'Details coming soon')}</p>

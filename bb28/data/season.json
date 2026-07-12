@@ -1,14 +1,14 @@
 {
   "season": "Big Brother 28",
   "siteTitle": "BB28 Fantasy Draft",
-  "tagline": "Meet the BB28 houseguests \u2014 draft night is next.",
-  "lastUpdated": "2026-07-08T13:56:50Z",
+  "tagline": "Meet the BB28 houseguests — draft night is next.",
+  "lastUpdated": "2026-07-12T20:38:57Z",
   "status": "cast-revealed",
   "liveRefreshSeconds": 60,
   "seasonCalendar": {
     "premiere": "2026-07-07",
     "finaleWindow": "October 2026",
-    "notes": "Family draft picks are locked, including Angela Murray and Rick Devens as Claghorns picks."
+    "notes": "Family draft picks are locked, including Angela Murray and Rick Devens as Claghorns picks. Dee Valladares is currently undrafted pending family discussion."
   },
   "familyMembers": [
     {
@@ -285,10 +285,23 @@
       "bio": "Rick Devens is a Survivor: Edge of Extinction fan favorite joining the BB28 draft board as a crossover pick.",
       "sourceName": "Parade",
       "sourceUrl": "https://parade.com/tv/rick-devens-survivor-50-interview"
+    },
+    {
+      "id": "dee-valladares",
+      "name": "Dee Valladares",
+      "status": "active",
+      "bio": "Dee Valladares recently entered the BB28 house and is temporarily listed as undrafted until the family decides who gets her.",
+      "notes": "Undrafted pending family discussion."
     }
   ],
   "weeklyResults": [],
   "events": [
+    {
+      "date": "2026-07-12T20:38:57Z",
+      "type": "cast_update",
+      "title": "Dee Valladares enters the house",
+      "description": "Dee Valladares has been added to the board as undrafted until the family assigns her."
+    },
     {
       "date": "2026-07-08T03:43:16Z",
       "type": "draft_complete",
@@ -299,7 +312,7 @@
       "date": "2026-07-07T17:13:14Z",
       "type": "cast_revealed",
       "title": "Houseguests revealed",
-      "description": "16 BB28 houseguests are listed with photos and family draft ownership highlighted on every card."
+      "description": "17 BB28 houseguests are listed with photos and family draft ownership highlighted on every card."
     },
     {
       "date": "2026-07-07",
