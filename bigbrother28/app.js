@@ -48,16 +48,18 @@ function ownerColor(data, ownerId) {
   return familyById(data).get(ownerId)?.color || '#00d5ff';
 }
 
+const POWER_POINTS = { hoh: 5, veto: 3, pov: 3, blockbuster: 3 };
+
 function renderWeeklyWinners(data) {
   const weeks = data.weeklyResults || [];
+  renderPowerLeaderboard(data, weeks);
   const grid = $('weekly-grid');
   if (!weeks.length) {
-    grid.innerHTML = emptyState('Waiting on the first competitions', 'Head of Household and Power of Veto winners will appear here week by week once the season starts.');
+    grid.innerHTML = emptyState('Waiting on the first competitions', 'Head of Household, Veto, and Blockbuster winners will appear here week by week once the season starts.');
     return;
   }
   grid.innerHTML = weeks.map(week => {
-    const hoh = competitionWinner(week.hoh);
-    const pov = competitionWinner(week.pov);
+    const competitions = weeklyCompetitions(week);
     const weekLabel = week.label || `Week ${week.week}`;
     const date = week.date ? `<time>${escapeHtml(fmtDate(week.date))}</time>` : '';
     return `
@@ -69,24 +71,121 @@ function renderWeeklyWinners(data) {
           </div>
           ${week.status ? `<span class="week-status">${escapeHtml(week.status)}</span>` : ''}
         </div>
-        <div class="competition-row">
-          <span>HOH</span>
-          <strong>${escapeHtml(hoh)}</strong>
-        </div>
-        <div class="competition-row">
-          <span>POV</span>
-          <strong>${escapeHtml(pov)}</strong>
-        </div>
+        ${competitions.map(comp => `
+          <div class="competition-row">
+            <span>${escapeHtml(comp.label)}</span>
+            <strong>${escapeHtml(competitionWinner(comp.value))}</strong>
+          </div>
+        `).join('')}
         ${week.notes ? `<p class="week-notes">${escapeHtml(week.notes)}</p>` : ''}
       </article>
     `;
   }).join('');
 }
 
+function weeklyCompetitions(week) {
+  const base = [
+    { key: 'hoh', label: 'HOH', value: week.hoh },
+    { key: 'veto', label: 'Veto', value: week.veto ?? week.pov },
+    { key: 'blockbuster', label: 'Blockbuster', value: week.blockbuster }
+  ];
+  const extras = Array.isArray(week.competitions) ? week.competitions.map(comp => ({
+    key: normalizeCompetitionKey(comp.type || comp.key || comp.label),
+    label: comp.label || competitionLabel(comp.type || comp.key),
+    value: comp.winner || comp.houseguest || comp
+  })) : [];
+  return [...base, ...extras].filter(comp => comp.value);
+}
+
+function normalizeCompetitionKey(value = '') {
+  const key = String(value).toLowerCase().replace(/[^a-z]/g, '');
+  if (key === 'pov' || key === 'powerofveto') return 'veto';
+  if (key.includes('blockbuster')) return 'blockbuster';
+  if (key.includes('hoh') || key.includes('head')) return 'hoh';
+  return key;
+}
+
+function competitionLabel(value = '') {
+  const key = normalizeCompetitionKey(value);
+  if (key === 'hoh') return 'HOH';
+  if (key === 'veto') return 'Veto';
+  if (key === 'blockbuster') return 'Blockbuster';
+  return value || 'Power';
+}
+
 function competitionWinner(value) {
   if (!value) return 'TBD';
   if (typeof value === 'string') return value;
   return value.winner || value.name || value.houseguest || 'TBD';
+}
+
+function competitionWinnerId(value, data) {
+  if (!value) return '';
+  if (typeof value === 'object' && (value.houseguestId || value.id)) return value.houseguestId || value.id;
+  const winner = competitionWinner(value).toLowerCase();
+  return (data.houseguests || []).find(guest => guest.name.toLowerCase() === winner)?.id || '';
+}
+
+function renderPowerLeaderboard(data, weeks) {
+  const target = $('power-leaderboard');
+  const rows = buildPowerLeaderboard(data, weeks);
+  if (!rows.length) {
+    target.innerHTML = emptyState('Power leaderboard starts soon', 'Once the first HOH, Veto, or Blockbuster winner is known, season-long points will rank every winning houseguest and family member here.');
+    return;
+  }
+  target.innerHTML = `
+    <div class="leaderboard-header">
+      <div>
+        <span class="week-kicker">Season leaderboard</span>
+        <h3>Strongest houseguest + family member</h3>
+      </div>
+      <span class="scoring-key">HOH 5 · Veto/Blockbuster 3</span>
+    </div>
+    <ol class="leaderboard-list">
+      ${rows.map((row, index) => `
+        <li class="leaderboard-row" style="--owner-color:${ownerColor(data, row.ownerId)}">
+          <span class="rank">#${index + 1}</span>
+          <div class="leaderboard-copy">
+            <strong>${escapeHtml(row.houseguestName)}</strong>
+            <span>${escapeHtml(row.ownerName)} · ${escapeHtml(row.breakdown)}</span>
+          </div>
+          <b>${row.points}</b>
+        </li>
+      `).join('')}
+    </ol>
+  `;
+}
+
+function buildPowerLeaderboard(data, weeks) {
+  const guestMap = new Map((data.houseguests || []).map(guest => [guest.id, guest]));
+  const scores = new Map();
+  weeks.forEach(week => weeklyCompetitions(week).forEach(comp => {
+    const key = normalizeCompetitionKey(comp.key || comp.label);
+    const points = POWER_POINTS[key] || 0;
+    if (!points) return;
+    const guestId = competitionWinnerId(comp.value, data);
+    const guest = guestMap.get(guestId);
+    if (!guest) return;
+    const current = scores.get(guest.id) || { guest, points: 0, wins: { hoh: 0, veto: 0, blockbuster: 0 } };
+    current.points += points;
+    current.wins[key] = (current.wins[key] || 0) + 1;
+    scores.set(guest.id, current);
+  }));
+  return [...scores.values()].map(row => ({
+    houseguestName: row.guest.name,
+    ownerId: row.guest.draftOwner,
+    ownerName: ownerName(data, row.guest.draftOwner),
+    points: row.points,
+    breakdown: scoreBreakdown(row.wins)
+  })).sort((a, b) => b.points - a.points || a.houseguestName.localeCompare(b.houseguestName));
+}
+
+function scoreBreakdown(wins) {
+  const parts = [];
+  if (wins.hoh) parts.push(`${wins.hoh} HOH`);
+  if (wins.veto) parts.push(`${wins.veto} Veto`);
+  if (wins.blockbuster) parts.push(`${wins.blockbuster} Blockbuster`);
+  return parts.join(' · ') || 'No wins yet';
 }
 
 function renderHouseguests(data) {

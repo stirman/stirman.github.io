@@ -10,8 +10,8 @@ Shows:
 - Current BB28 contestants / houseguests
 - Each houseguest’s assigned family owner on the houseguest card
 - A dynamic Houseguests section eyebrow in the form `active/total still in the house` (starts `16/16 still in the house` and drops when statuses become `evicted` or `jury`)
-- Weekly Head of Household and Power of Veto winners
-- No season-long family leaderboard; the draft has one winner at the finale
+- Weekly Head of Household, Veto, and Blockbuster winners
+- A season-long Weekly Power Watch leaderboard ranking each winning houseguest with their family member by points: HOH = 5, Veto/Blockbuster = 3
 
 ## Update flow
 
@@ -68,7 +68,7 @@ Supported statuses:
 - `winner`
 - `pending`
 
-### Add weekly HOH / POV winners
+### Add weekly HOH / Veto / Blockbuster winners
 
 ```json
 "weeklyResults": [
@@ -77,19 +77,20 @@ Supported statuses:
     "label": "Week 1",
     "date": "2026-07-12",
     "status": "Complete",
-    "hoh": { "winner": "First Last" },
-    "pov": { "winner": "Second Last" },
+    "hoh": { "houseguestId": "first-last", "winner": "First Last" },
+    "veto": { "houseguestId": "second-last", "winner": "Second Last" },
+    "blockbuster": { "houseguestId": "third-last", "winner": "Third Last" },
     "notes": "Optional short recap."
   }
 ]
 ```
 
-Use `null`, `{ "winner": "TBD" }`, or omit a comp until the winner is known.
+Use `null`, `{ "winner": "TBD" }`, or omit a comp until the winner is known. Prefer `houseguestId` plus `winner` so the leaderboard can reliably map points to the correct family member. Legacy `pov` is still supported as Veto.
 
 ### Eviction night update
 
 1. Set evicted player status to `evicted` or `jury`.
-2. Add HOH/POV winners to `weeklyResults` when known.
+2. Add HOH/Veto/Blockbuster winners to `weeklyResults` when known; the power leaderboard is computed automatically.
 3. Add an event to `events`.
 4. Update `lastUpdated`.
 5. Commit/push.
@@ -108,10 +109,15 @@ git push origin master
 
 - The current foundation intentionally uses no build step, no npm dependencies, and no server so it works reliably on GitHub Pages at `/bb28/`.
 - The design uses Big Brother-inspired house/eye/neon/stage visuals via CSS, not official copyrighted assets.
-- Once weekly HOH/POV winners, evictions, or family draft results are known, update `data/season.json` only.
+- Once weekly HOH/Veto/Blockbuster winners, evictions, or family draft results are known, update `data/season.json` only; power scores are computed in `app.js`.
 
 
 ## 2026-07-08 house count update
 - Removed the standalone `Still in the game` summary module entirely.
 - The Houseguests section eyebrow now renders the dynamic `active/total still in the house` count from `app.js`.
 - Angela Murray (BB26) and Rick Devens (Survivor) remain in `data/season.json` as unofficial Thursday additions, both assigned to `claghorns`, using local images in `assets/`.
+
+## 2026-07-12 power leaderboard update
+- Weekly Power Watch now includes a season-long leaderboard for strongest houseguest + family member.
+- Scoring: HOH = 5 points; Veto and Blockbuster = 3 points.
+- Update both `/bb28` and `/bigbrother28` weekly data together after Pacific airtime; do not text spoiler notifications.

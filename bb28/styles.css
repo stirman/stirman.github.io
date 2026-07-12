@@ -162,6 +162,19 @@ h3 { font-size: 19px; }
 .competition-row strong { font-size: 22px; }
 .week-notes { color: var(--muted); line-height: 1.5; margin: 0; }
 
+.power-leaderboard { margin: 0 0 18px; }
+.power-leaderboard .empty-state { min-height: 150px; }
+.leaderboard-header { display: flex; justify-content: space-between; gap: 16px; align-items: end; margin-bottom: 12px; }
+.leaderboard-header h3 { margin-top: 8px; font-size: clamp(22px, 3vw, 32px); }
+.scoring-key { padding: 9px 12px; border-radius: 999px; background: rgba(255,255,255,.08); color: var(--gold); font: 800 11px/1 JetBrains Mono, monospace; letter-spacing: .1em; text-transform: uppercase; white-space: nowrap; }
+.leaderboard-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+.leaderboard-row { display: grid; grid-template-columns: auto 1fr auto; gap: 14px; align-items: center; padding: 14px 16px; border-radius: 18px; border: 1px solid color-mix(in srgb, var(--owner-color, var(--cyan)) 55%, rgba(255,255,255,.14)); background: linear-gradient(135deg, color-mix(in srgb, var(--owner-color, var(--cyan)) 18%, rgba(2,8,27,.72)), rgba(255,255,255,.05)); }
+.leaderboard-row .rank { color: var(--cyan); font: 900 13px/1 JetBrains Mono, monospace; }
+.leaderboard-copy { display: grid; gap: 4px; }
+.leaderboard-copy span { color: var(--muted); font-size: 13px; }
+.leaderboard-row b { min-width: 48px; text-align: center; padding: 10px 12px; border-radius: 14px; color: #04101a; background: var(--gold); font: 900 22px/1 Archivo Black, sans-serif; }
+
+
 .guest-card { min-height: 300px; display: flex; flex-direction: column; gap: 12px; position: relative; overflow: hidden; border-width: 2px; }
 .guest-card.evicted { opacity: .55; filter: grayscale(.3); }
 .guest-card.winner { border-color: rgba(255,209,102,.7); box-shadow: 0 0 52px rgba(255,209,102,.18); }
@@ -239,6 +252,7 @@ h3 { font-size: 19px; }
 @media (max-width: 860px) {
   .hero { min-height: auto; padding-top: 34px; }
   .guide-grid { grid-template-columns: 1fr; }
+  .leaderboard-header { align-items: start; flex-direction: column; }
 }
 @media (max-width: 540px) {
   .shell { width: min(100vw - 20px, 1180px); padding-top: 14px; }
