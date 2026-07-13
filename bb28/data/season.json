@@ -359,7 +359,8 @@
       "name": "Greenley",
       "scoringGroup": "ca-stirmans",
       "photoUrl": "./assets/players/greenley.jpeg",
-      "color": "#7dd3fc"
+      "color": "#7dd3fc",
+      "photoPosition": "center 28%"
     },
     {
       "id": "cadence",

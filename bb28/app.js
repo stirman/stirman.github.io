@@ -201,7 +201,7 @@ function renderPlayerLeaderboard(data, weeks) {
   target.innerHTML = rows.map((row, index) => `
     <article class="player-card" style="--player-color:${escapeAttr(row.color || '#00d5ff')}">
       <div class="player-rank">#${index + 1}</div>
-      <div class="player-photo" style="background-image:url('${escapeAttr(row.photoUrl)}')" role="img" aria-label="${escapeAttr(`${row.name} player photo`)}"></div>
+      <div class="player-photo" style="background-image:url('${escapeAttr(row.photoUrl)}'); background-position:${escapeAttr(row.photoPosition || 'center')}" role="img" aria-label="${escapeAttr(`${row.name} player photo`)}"></div>
       <div class="player-copy">
         <h3>${escapeHtml(row.name)}</h3>
         <p>${escapeHtml(row.groupName)}</p>
