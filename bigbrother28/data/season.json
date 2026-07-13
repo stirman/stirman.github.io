@@ -2,7 +2,7 @@
   "season": "Big Brother 28",
   "siteTitle": "BB28 Fantasy Draft",
   "tagline": "Meet the BB28 houseguests \u2014 the Monjies/Cassie/Crush/Mike/Fins family draft is live.",
-  "lastUpdated": "2026-07-12T20:38:57Z",
+  "lastUpdated": "2026-07-13T13:50:10Z",
   "status": "cast-revealed",
   "liveRefreshSeconds": 60,
   "seasonCalendar": {
@@ -259,8 +259,26 @@
       "draftOwner": "fins"
     }
   ],
-  "weeklyResults": [],
+  "weeklyResults": [
+    {
+      "week": 1,
+      "label": "Week 1",
+      "date": "2026-07-12",
+      "status": "HOH crowned",
+      "hoh": {
+        "houseguestId": "dee-valladares",
+        "winner": "Dee Valladares"
+      },
+      "notes": "Dee beat Angela Murray and Rick Devens to become the first Head of Household."
+    }
+  ],
   "events": [
+    {
+      "date": "2026-07-13T13:50:10Z",
+      "type": "competition_result",
+      "title": "Dee wins the first HOH",
+      "description": "Dee Valladares won the Week 1 Head of Household competition."
+    },
     {
       "date": "2026-07-12T20:38:57Z",
       "type": "cast_update",
