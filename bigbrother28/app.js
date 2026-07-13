@@ -48,7 +48,7 @@ function ownerColor(data, ownerId) {
   return familyById(data).get(ownerId)?.color || '#00d5ff';
 }
 
-const POWER_POINTS = { hoh: 5, veto: 3, pov: 3, blockbuster: 3 };
+const POWER_POINTS = { hoh: 5, veto: 3, pov: 3, blockbuster: 2 };
 
 function renderWeeklyWinners(data) {
   const weeks = data.weeklyResults || [];
@@ -140,7 +140,7 @@ function renderPowerLeaderboard(data, weeks) {
         <span class="week-kicker">Season leaderboard</span>
         <h3>Strongest houseguest + family member</h3>
       </div>
-      <span class="scoring-key">HOH 5 · Veto/Blockbuster 3</span>
+      <span class="scoring-key">HOH 5 · Veto 3 · Blockbuster 2</span>
     </div>
     <ol class="leaderboard-list">
       ${rows.map((row, index) => `
