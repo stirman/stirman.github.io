@@ -333,7 +333,7 @@ function nextEpisodes(data, count = 3) {
           date: new Date(cursor),
           dayLabel: cursor.toLocaleDateString(undefined, { weekday: 'long' }),
           dateLabel: cursor.toLocaleDateString(undefined, { month: 'short', day: 'numeric' }),
-          timeLabel: `${schedule.airtime || '8:00 PM'} · ${schedule.airtimeLabel || 'CBS'}`,
+          timeLabel: schedule.airtimeLabel || 'CBS',
           durationLabel: duration === 90 ? '90 min' : duration === 60 ? '1 hr' : `${duration} min`
         });
       }
