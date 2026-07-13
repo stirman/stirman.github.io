@@ -175,6 +175,24 @@ h3 { font-size: 19px; }
 .leaderboard-row b { min-width: 48px; text-align: center; padding: 10px 12px; border-radius: 14px; color: #04101a; background: var(--gold); font: 900 22px/1 Archivo Black, sans-serif; }
 
 
+.player-leaderboard { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 14px; }
+.player-card { position: relative; overflow: hidden; border: 1px solid color-mix(in srgb, var(--player-color, var(--cyan)) 55%, rgba(255,255,255,.14)); border-radius: 26px; padding: 14px; min-height: 390px; background: linear-gradient(160deg, color-mix(in srgb, var(--player-color, var(--cyan)) 20%, rgba(2,8,27,.9)), rgba(255,255,255,.05)); box-shadow: 0 18px 50px rgba(0,0,0,.25); }
+.player-card::before { content: ""; position: absolute; inset: -30% -20% auto auto; width: 170px; height: 170px; border-radius: 999px; background: color-mix(in srgb, var(--player-color, var(--cyan)) 34%, transparent); filter: blur(10px); opacity: .7; }
+.player-rank { position: absolute; top: 12px; left: 12px; z-index: 2; padding: 8px 10px; border-radius: 999px; background: rgba(2,8,27,.72); border: 1px solid rgba(255,255,255,.16); color: var(--gold); font: 900 12px/1 JetBrains Mono, monospace; }
+.player-photo { height: 190px; margin: -14px -14px 14px; background-size: cover; background-position: center; border-bottom: 1px solid rgba(255,255,255,.13); }
+.player-copy { position: relative; z-index: 1; display: grid; gap: 8px; }
+.player-copy h3 { font-size: 24px; }
+.player-copy p { margin: 0; color: var(--muted); font-size: 13px; }
+.player-score { display: inline-flex; align-items: end; gap: 6px; margin: 4px 0; }
+.player-score strong { font: 900 46px/.85 Archivo Black, sans-serif; color: var(--gold); text-shadow: 0 0 20px rgba(255,209,102,.2); }
+.player-score span { color: var(--muted); font: 800 12px/1 JetBrains Mono, monospace; letter-spacing: .12em; text-transform: uppercase; }
+.player-breakdown { padding: 10px 12px; border-radius: 15px; background: rgba(255,255,255,.07); color: #eef7ff; font: 800 12px/1.25 JetBrains Mono, monospace; letter-spacing: .03em; }
+.player-sources { margin: 0; padding: 0; list-style: none; display: grid; gap: 6px; color: var(--muted); font-size: 12px; line-height: 1.35; }
+.player-sources li { padding-left: 14px; position: relative; }
+.player-sources li::before { content: "•"; position: absolute; left: 0; color: var(--player-color, var(--cyan)); }
+.player-sources-empty { color: var(--muted); font-size: 12px; line-height: 1.45; }
+
+
 .guest-card { min-height: 300px; display: flex; flex-direction: column; gap: 12px; position: relative; overflow: hidden; border-width: 2px; }
 .guest-card.evicted { opacity: .55; filter: grayscale(.3); }
 .guest-card.winner { border-color: rgba(255,209,102,.7); box-shadow: 0 0 52px rgba(255,209,102,.18); }

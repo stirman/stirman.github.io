@@ -1,7 +1,7 @@
 {
   "season": "Big Brother 28",
   "siteTitle": "BB28 Fantasy Draft",
-  "tagline": "Meet the BB28 houseguests — draft night is next.",
+  "tagline": "Meet the BB28 houseguests \u2014 draft night is next.",
   "lastUpdated": "2026-07-12T20:38:57Z",
   "status": "cast-revealed",
   "liveRefreshSeconds": 60,
@@ -331,5 +331,95 @@
       "url": "https://bigbrothernetwork.com/big-brother-28-cast/",
       "checkedAt": "2026-07-08T05:17:43Z"
     }
-  ]
+  ],
+  "players": [
+    {
+      "id": "jason",
+      "name": "Jason",
+      "scoringGroup": "ca-stirmans",
+      "photoUrl": "./assets/players/jason.jpeg",
+      "color": "#ff5d73"
+    },
+    {
+      "id": "cassie",
+      "name": "Cassie",
+      "scoringGroup": "ca-stirmans",
+      "photoUrl": "./assets/players/cassie.jpeg",
+      "color": "#c4ff4d"
+    },
+    {
+      "id": "cru",
+      "name": "Cru",
+      "scoringGroup": "ca-stirmans",
+      "photoUrl": "./assets/players/cru.jpeg",
+      "color": "#ff7a59"
+    },
+    {
+      "id": "greenley",
+      "name": "Greenley",
+      "scoringGroup": "ca-stirmans",
+      "photoUrl": "./assets/players/greenley.jpeg",
+      "color": "#7dd3fc"
+    },
+    {
+      "id": "cadence",
+      "name": "Cadence",
+      "scoringGroup": "ca-stirmans",
+      "photoUrl": "./assets/players/cadence.jpeg",
+      "color": "#f9a8d4"
+    },
+    {
+      "id": "stacey",
+      "name": "Stacey",
+      "scoringGroup": "claghorns",
+      "photoUrl": "./assets/players/stacey.png",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "cannan",
+      "name": "Cannan",
+      "scoringGroup": "claghorns",
+      "photoUrl": "./assets/players/cannan.jpeg",
+      "color": "#5cffb1"
+    },
+    {
+      "id": "bruin",
+      "name": "Bruin",
+      "scoringGroup": "claghorns",
+      "photoUrl": "./assets/players/bruin.jpeg",
+      "color": "#ffd166"
+    },
+    {
+      "id": "mimi",
+      "name": "Mimi",
+      "scoringGroup": "mimi-pa",
+      "photoUrl": "./assets/players/mimi.png",
+      "color": "#00d5ff"
+    },
+    {
+      "id": "pa",
+      "name": "Pa",
+      "scoringGroup": "mimi-pa",
+      "photoUrl": "./assets/players/pa.jpeg",
+      "color": "#ff2bd6"
+    }
+  ],
+  "playerGroups": {
+    "ca-stirmans": [
+      "jason",
+      "cassie",
+      "cru",
+      "greenley",
+      "cadence"
+    ],
+    "claghorns": [
+      "stacey",
+      "cannan",
+      "bruin"
+    ],
+    "mimi-pa": [
+      "mimi",
+      "pa"
+    ]
+  }
 }
