@@ -289,6 +289,97 @@ function renderTimeline(data) {
   `).join('') : '<li><strong>No diary room entries yet.</strong></li>';
 }
 
+function renderUpcomingEpisodes(data) {
+  const target = $('upcoming-grid');
+  if (!target) return;
+  const episodes = nextEpisodes(data, 3);
+  if (!episodes.length) {
+    target.innerHTML = emptyState('Schedule coming soon', 'Upcoming episode times will appear here once the season schedule is available.');
+    return;
+  }
+  target.innerHTML = episodes.map((episode, index) => `
+    <article class="episode-card ${index === 0 ? 'next' : ''}">
+      <span class="episode-number">${index === 0 ? 'Next' : `#${index + 1}`}</span>
+      <div>
+        <time>${escapeHtml(episode.dayLabel)}</time>
+        <h3>${escapeHtml(episode.dateLabel)}</h3>
+        <p>${escapeHtml(episode.timeLabel)}${episode.durationLabel ? ` · ${escapeHtml(episode.durationLabel)}` : ''}</p>
+      </div>
+    </article>
+  `).join('');
+}
+
+function nextEpisodes(data, count = 3) {
+  const schedule = data.seasonCalendar?.episodeSchedule;
+  if (!schedule) return [];
+  const weekdayNames = schedule.weekdays || ['Wednesday', 'Thursday', 'Sunday'];
+  const weekdaySet = new Set(weekdayNames.map(weekdayIndex));
+  const start = parseLocalDate(schedule.startDate || data.seasonCalendar?.premiere);
+  const end = parseLocalDate(schedule.endDate || `${new Date().getFullYear()}-12-31`);
+  if (!start || !end || !weekdaySet.size) return [];
+
+  const today = new Date();
+  const todayStart = new Date(today.getFullYear(), today.getMonth(), today.getDate());
+  const cursor = new Date(Math.max(start.getTime(), todayStart.getTime()));
+  const [airHour, airMinute] = parseAirtime(schedule.airtime || '8:00 PM');
+  const episodes = [];
+  while (cursor <= end && episodes.length < count) {
+    const iso = localIsoDate(cursor);
+    if (weekdaySet.has(cursor.getDay())) {
+      const episodeStart = new Date(cursor.getFullYear(), cursor.getMonth(), cursor.getDate(), airHour, airMinute);
+      if (episodeStart > today) {
+        const duration = Number(schedule.explicitDurations?.[iso] || schedule.defaultDurationMinutes || 60);
+        episodes.push({
+          date: new Date(cursor),
+          dayLabel: cursor.toLocaleDateString(undefined, { weekday: 'long' }),
+          dateLabel: cursor.toLocaleDateString(undefined, { month: 'short', day: 'numeric' }),
+          timeLabel: `${schedule.airtime || '8:00 PM'} · ${schedule.airtimeLabel || 'CBS'}`,
+          durationLabel: duration === 90 ? '90 min' : duration === 60 ? '1 hr' : `${duration} min`
+        });
+      }
+    }
+    cursor.setDate(cursor.getDate() + 1);
+  }
+  return episodes;
+}
+
+function parseAirtime(value) {
+  const match = String(value).trim().match(/^(\d{1,2})(?::(\d{2}))?\s*(AM|PM)?$/i);
+  if (!match) return [20, 0];
+  let hour = Number(match[1]);
+  const minute = Number(match[2] || 0);
+  const meridiem = (match[3] || '').toUpperCase();
+  if (meridiem === 'PM' && hour < 12) hour += 12;
+  if (meridiem === 'AM' && hour === 12) hour = 0;
+  return [hour, minute];
+}
+
+function parseLocalDate(value) {
+  if (!value) return null;
+  const [year, month, day] = String(value).split('-').map(Number);
+  if (!year || !month || !day) return null;
+  return new Date(year, month - 1, day);
+}
+
+function localIsoDate(date) {
+  const y = date.getFullYear();
+  const m = String(date.getMonth() + 1).padStart(2, '0');
+  const d = String(date.getDate()).padStart(2, '0');
+  return `${y}-${m}-${d}`;
+}
+
+function weekdayIndex(name) {
+  return {
+    sunday: 0,
+    monday: 1,
+    tuesday: 2,
+    wednesday: 3,
+    thursday: 4,
+    friday: 5,
+    saturday: 6
+  }[String(name).toLowerCase()];
+}
+
 function shortName(name = '') {
   const parts = String(name).split(/\s+/).filter(Boolean);
   return parts.length > 1 ? parts[0] : String(name);
@@ -310,6 +401,7 @@ async function render() {
     renderWeeklyWinners(data);
     renderHouseguests(data);
     renderTimeline(data);
+    renderUpcomingEpisodes(data);
     const seconds = Number(data.liveRefreshSeconds || 60);
     clearTimeout(liveTimer);
     liveTimer = setTimeout(render, Math.max(15, seconds) * 1000);

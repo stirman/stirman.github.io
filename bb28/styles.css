@@ -263,13 +263,21 @@ h3 { font-size: 19px; }
 .timeline time { display: block; color: var(--cyan); font: 800 11px/1 JetBrains Mono, monospace; letter-spacing: .12em; text-transform: uppercase; margin-bottom: 8px; }
 .timeline p { color: var(--muted); margin: 6px 0 0; line-height: 1.5; }
 
+.upcoming-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+.episode-card { position: relative; overflow: hidden; min-height: 180px; display: grid; align-content: space-between; gap: 24px; padding: 20px; border: 1px solid rgba(255,255,255,.13); border-radius: 24px; background: radial-gradient(circle at 100% 0%, rgba(0,213,255,.18), transparent 38%), rgba(2,8,27,.58); }
+.episode-card.next { border-color: rgba(255,209,102,.55); box-shadow: 0 0 34px rgba(255,209,102,.12); }
+.episode-number { width: max-content; padding: 8px 11px; border-radius: 999px; background: rgba(255,255,255,.08); color: var(--gold); font: 900 11px/1 JetBrains Mono, monospace; letter-spacing: .12em; text-transform: uppercase; }
+.episode-card time { display: block; margin-bottom: 8px; color: var(--cyan); font: 900 12px/1 JetBrains Mono, monospace; letter-spacing: .14em; text-transform: uppercase; }
+.episode-card h3 { font-size: clamp(26px, 4vw, 42px); }
+.episode-card p { margin: 8px 0 0; color: var(--muted); font-weight: 800; }
+
 .guide-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin-top: 20px; }
 .guide-grid > div { padding: 18px; border-radius: 20px; background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.1); }
 .guide-grid p { color: var(--muted); line-height: 1.55; }
 
 @media (max-width: 860px) {
   .hero { min-height: auto; padding-top: 34px; }
-  .guide-grid { grid-template-columns: 1fr; }
+  .guide-grid, .upcoming-grid { grid-template-columns: 1fr; }
   .leaderboard-header { align-items: start; flex-direction: column; }
 }
 @media (max-width: 540px) {

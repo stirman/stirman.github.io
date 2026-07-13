@@ -8,7 +8,24 @@
   "seasonCalendar": {
     "premiere": "2026-07-07",
     "finaleWindow": "October 2026",
-    "notes": "Monjies, Cassie, Crush, Mike, and Fins draft picks are locked for the /bigbrother28 family draft. Dee Valladares is assigned to Fins. Keep season updates in sync with /bb28 while preserving separate draftOwner assignments."
+    "notes": "Monjies, Cassie, Crush, Mike, and Fins draft picks are locked for the /bigbrother28 family draft. Dee Valladares is assigned to Fins. Keep season updates in sync with /bb28 while preserving separate draftOwner assignments.",
+    "episodeSchedule": {
+      "startDate": "2026-07-15",
+      "endDate": "2026-10-31",
+      "weekdays": [
+        "Wednesday",
+        "Thursday",
+        "Sunday"
+      ],
+      "airtime": "8:00 PM",
+      "airtimeLabel": "8/7c on CBS",
+      "defaultDurationMinutes": 60,
+      "explicitDurations": {
+        "2026-07-15": 90
+      },
+      "sourceName": "Big Brother Network / CBS schedule",
+      "sourceUrl": "https://bigbrothernetwork.com/big-brother-28-schedule/"
+    }
   },
   "familyMembers": [
     {
