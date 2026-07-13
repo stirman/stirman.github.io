@@ -1,14 +1,14 @@
 {
   "season": "Big Brother 28",
   "siteTitle": "BB28 Fantasy Draft",
-  "tagline": "Meet the BB28 houseguests — the Monjies/Cassie/Crush/Mike/Fins family draft is live.",
+  "tagline": "Meet the BB28 houseguests \u2014 the Monjies/Cassie/Crush/Mike/Fins family draft is live.",
   "lastUpdated": "2026-07-12T20:38:57Z",
   "status": "cast-revealed",
   "liveRefreshSeconds": 60,
   "seasonCalendar": {
     "premiere": "2026-07-07",
     "finaleWindow": "October 2026",
-    "notes": "Monjies, Cassie, Crush, Mike, and Fins draft picks are locked for the /bigbrother28 family draft. Keep season updates in sync with /bb28 while preserving separate draftOwner assignments. Dee Valladares is currently undrafted pending family discussion."
+    "notes": "Monjies, Cassie, Crush, Mike, and Fins draft picks are locked for the /bigbrother28 family draft. Dee Valladares is assigned to Fins. Keep season updates in sync with /bb28 while preserving separate draftOwner assignments."
   },
   "familyMembers": [
     {
@@ -250,12 +250,13 @@
       "id": "dee-valladares",
       "name": "Dee Valladares",
       "status": "active",
-      "bio": "Dee Valladares recently entered the BB28 house and is temporarily listed as undrafted until the family decides who gets her.",
-      "notes": "Undrafted pending family discussion.",
+      "bio": "Dee Valladares recently entered the BB28 house and is assigned to Fins for this family draft.",
+      "notes": "Assigned to Fins for this family draft.",
       "photoUrl": "./assets/dee-valladares-headshot.png",
       "sourceName": "Survivor Wiki",
       "sourceUrl": "https://survivor.fandom.com/wiki/Dee_Valladares",
-      "photoPosition": "center 18%"
+      "photoPosition": "center 18%",
+      "draftOwner": "fins"
     }
   ],
   "weeklyResults": [],
@@ -264,7 +265,7 @@
       "date": "2026-07-12T20:38:57Z",
       "type": "cast_update",
       "title": "Dee Valladares enters the house",
-      "description": "Dee Valladares has been added to the board as undrafted until the family assigns her."
+      "description": "Dee Valladares has been added to the board and assigned to Fins for this family draft."
     },
     {
       "date": "2026-07-09T02:46:17Z",
@@ -296,6 +297,48 @@
       "name": "Big Brother Network",
       "url": "https://bigbrothernetwork.com/big-brother-28-cast/",
       "checkedAt": "2026-07-08T05:17:43Z"
+    }
+  ],
+  "players": [
+    {
+      "id": "monjies",
+      "name": "Monjies",
+      "scoringGroup": "monjies",
+      "photoUrl": "./assets/players/monjies.jpeg",
+      "color": "#00d5ff",
+      "photoPosition": "center 28%"
+    },
+    {
+      "id": "cassie",
+      "name": "Cassie",
+      "scoringGroup": "cassie",
+      "photoUrl": "./assets/players/cassie.jpeg",
+      "color": "#ff2bd6",
+      "photoPosition": "center 30%"
+    },
+    {
+      "id": "crush",
+      "name": "Crush",
+      "scoringGroup": "crush",
+      "photoUrl": "./assets/players/crush.jpeg",
+      "color": "#ffd166",
+      "photoPosition": "center"
+    },
+    {
+      "id": "mike",
+      "name": "Mike",
+      "scoringGroup": "mike",
+      "photoUrl": "./assets/players/mike.jpeg",
+      "color": "#5cffb1",
+      "photoPosition": "center"
+    },
+    {
+      "id": "fins",
+      "name": "Fins",
+      "scoringGroup": "fins",
+      "photoUrl": "./assets/players/fins.jpg",
+      "color": "#7c5cff",
+      "photoPosition": "center"
     }
   ]
 }

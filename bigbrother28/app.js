@@ -53,6 +53,7 @@ const POWER_POINTS = { hoh: 5, veto: 3, pov: 3, blockbuster: 3 };
 function renderWeeklyWinners(data) {
   const weeks = data.weeklyResults || [];
   renderPowerLeaderboard(data, weeks);
+  renderPlayerLeaderboard(data, weeks);
   const grid = $('weekly-grid');
   if (!weeks.length) {
     grid.innerHTML = emptyState('Waiting on the first competitions', 'Head of Household, Veto, and Blockbuster winners will appear here week by week once the season starts.');
@@ -186,6 +187,65 @@ function scoreBreakdown(wins) {
   if (wins.veto) parts.push(`${wins.veto} Veto`);
   if (wins.blockbuster) parts.push(`${wins.blockbuster} Blockbuster`);
   return parts.join(' · ') || 'No wins yet';
+}
+
+
+function renderPlayerLeaderboard(data, weeks) {
+  const target = $('player-leaderboard-grid');
+  if (!target) return;
+  const rows = buildPlayerLeaderboard(data, weeks);
+  if (!rows.length) {
+    target.innerHTML = emptyState('Player photos are warming up', 'Individual family player standings will appear here once player data is added.');
+    return;
+  }
+  target.innerHTML = rows.map((row, index) => `
+    <article class="player-card" style="--player-color:${escapeAttr(row.color || '#00d5ff')}">
+      <div class="player-rank">#${index + 1}</div>
+      <div class="player-photo" style="background-image:url('${escapeAttr(row.photoUrl)}'); background-position:${escapeAttr(row.photoPosition || 'center')}" role="img" aria-label="${escapeAttr(`${row.name} player photo`)}"></div>
+      <div class="player-copy">
+        <h3>${escapeHtml(row.name)}</h3>
+        <p>${escapeHtml(row.groupName)}</p>
+        <div class="player-score"><strong>${row.points}</strong><span>pts</span></div>
+        <div class="player-breakdown">${escapeHtml(row.breakdown)}</div>
+        ${row.sources.length ? `<ul class="player-sources">${row.sources.map(source => `<li>${escapeHtml(source)}</li>`).join('')}</ul>` : '<p class="player-sources-empty">Waiting on first competition points</p>'}
+      </div>
+    </article>
+  `).join('');
+}
+
+function buildPlayerLeaderboard(data, weeks) {
+  const players = data.players || [];
+  const familyMap = familyById(data);
+  const playerGroups = data.playerGroups || {};
+  const playersById = new Map(players.map(player => [player.id, player]));
+  const rows = new Map(players.map((player, index) => [player.id, {
+    ...player,
+    sortOrder: index,
+    points: 0,
+    wins: { hoh: 0, veto: 0, blockbuster: 0 },
+    sources: [],
+    groupName: familyMap.get(player.scoringGroup)?.name || player.scoringGroup || 'Solo pick'
+  }]));
+  const guestMap = new Map((data.houseguests || []).map(guest => [guest.id, guest]));
+  weeks.forEach(week => weeklyCompetitions(week).forEach(comp => {
+    const key = normalizeCompetitionKey(comp.key || comp.label);
+    const points = POWER_POINTS[key] || 0;
+    if (!points) return;
+    const guest = guestMap.get(competitionWinnerId(comp.value, data));
+    if (!guest?.draftOwner) return;
+    const playerIds = playerGroups[guest.draftOwner] || (playersById.has(guest.draftOwner) ? [guest.draftOwner] : []);
+    playerIds.forEach(playerId => {
+      const row = rows.get(playerId);
+      if (!row) return;
+      row.points += points;
+      row.wins[key] = (row.wins[key] || 0) + 1;
+      row.sources.push(`${competitionLabel(key)}: ${guest.name} (+${points})`);
+    });
+  }));
+  return [...rows.values()].map(row => ({
+    ...row,
+    breakdown: scoreBreakdown(row.wins)
+  })).sort((a, b) => b.points - a.points || a.sortOrder - b.sortOrder || a.name.localeCompare(b.name));
 }
 
 function renderHouseguests(data) {

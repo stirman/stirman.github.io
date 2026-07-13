@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles.css?v=20260712-no-production-notes">
+  <link rel="stylesheet" href="./styles.css?v=20260712-player-leaderboard">
 </head>
 <body>
   <div class="stage-glow" aria-hidden="true"></div>
@@ -24,7 +24,7 @@
         <p class="tagline" id="tagline">The family draft is entering the house.</p>
         <div class="hero-actions">
           <a class="button primary" href="#houseguests">Meet the houseguests</a>
-          <a class="button ghost" href="#weekly-winners">Weekly winners</a>
+          <a class="button ghost" href="#player-leaderboard">Player leaderboard</a>
         </div>
       </div>
     </section>
@@ -48,14 +48,23 @@
       <div class="weekly-grid" id="weekly-grid"></div>
     </section>
 
-    <section class="panel diary-room">
-      <div>
+
+    <section class="panel player-panel" id="player-leaderboard">
+      <div class="section-heading">
+        <p class="eyebrow">Family player leaderboard</p>
+        <h2>Individual player points</h2>
+        <p>Each family member scores when one of their drafted houseguests wins HOH, Veto, or Blockbuster. Dee is assigned to Fins on this board.</p>
+      </div>
+      <div class="player-leaderboard" id="player-leaderboard-grid"></div>
+    </section>
+
+    <section class="panel diary-room">      <div>
         <p class="eyebrow">Diary room feed</p>
         <h2>Season events</h2>
       </div>
       <ol class="timeline" id="timeline"></ol>
     </section>
   </main>
-  <script src="./app.js?v=20260712-no-production-notes" defer></script>
+  <script src="./app.js?v=20260712-player-leaderboard" defer></script>
 </body>
 </html>
