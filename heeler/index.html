@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Heeler Watch · Bay Area adoptable cattle dogs</title>
+  <meta name="description" content="Hourly watch for red and blue heelers available from Bay Area shelters and rescues." />
+  <link rel="stylesheet" href="./styles.css?v=20260714-heeler" />
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <div>
+        <p class="eyebrow">Bay Area Heeler Watch</p>
+        <h1>Red & blue heelers looking for homes nearby.</h1>
+        <p class="lede">An hourly scan for Australian Cattle Dogs, Blue Heelers, Red Heelers, and cattle-dog mixes at Bay Area shelters and rescues.</p>
+        <div class="stats" aria-live="polite">
+          <span><strong id="dogCount">—</strong> matches</span>
+          <span id="updatedAt">Scanning…</span>
+        </div>
+      </div>
+      <div class="hero-card">
+        <span class="paw">●</span><span class="paw red">●</span><span class="paw">●</span>
+        <h2>Adoption radius</h2>
+        <p>San Francisco, Oakland, San Jose, Marin, Peninsula, North Bay, Sacramento-adjacent rescue listings — roughly a couple hours by car.</p>
+      </div>
+    </section>
+
+    <section class="toolbar">
+      <label><input type="checkbox" id="puppyToggle" /> Puppies only</label>
+      <label><input type="checkbox" id="withPhotoToggle" /> With photo</label>
+      <input id="searchBox" type="search" placeholder="Filter by name, shelter, city, color…" />
+    </section>
+
+    <section id="empty" class="empty" hidden>
+      <h2>No heelers found right now.</h2>
+      <p>The scanner is still watching hourly. Use the source links below for manual checking if you want to browse broader shelter listings.</p>
+    </section>
+
+    <section id="dogs" class="grid" aria-label="Adoptable heelers"></section>
+
+    <section class="sources">
+      <h2>Sources being watched</h2>
+      <p>The scanner currently pulls structured listings from Adopt-a-Pet breed/location pages and keeps direct/manual source links for the major Bay Area shelters and rescues that also cross-post listings.</p>
+      <div id="sources" class="source-list"></div>
+    </section>
+  </main>
+  <script src="./app.js?v=20260714-heeler"></script>
+</body>
+</html>
