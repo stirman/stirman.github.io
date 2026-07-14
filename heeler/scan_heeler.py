@@ -16,6 +16,9 @@ SEARCH_URLS = [
     ('Adopt-a-Pet · Santa Rosa 50mi', 'https://www.adoptapet.com/s/adopt-an-australian-cattle-dog/california/santa-rosa'),
     ('Adopt-a-Pet · Sacramento 50mi', 'https://www.adoptapet.com/s/adopt-an-australian-cattle-dog/california/sacramento'),
 ]
+SHELTERLUV_SOURCES = [
+    ('Milo Foundation · Shelterluv', 11413, 'https://www.milofoundation.org/dogs-for-adoption/'),
+]
 SOURCE_LINKS = [
     {'name':'Adopt-a-Pet Australian Cattle Dog search','url':'https://www.adoptapet.com/s/adopt-an-australian-cattle-dog/california/san-francisco','status':'active'},
     {'name':'Petfinder breed search (manual/API fallback)','url':'https://www.petfinder.com/search/dogs-for-adoption/us/ca/san-francisco/?breed%5B0%5D=Australian%20Cattle%20Dog%20%2F%20Blue%20Heeler','status':'listed; API requires credentials'},
@@ -24,7 +27,7 @@ SOURCE_LINKS = [
     {'name':'Oakland Animal Services','url':'https://www.oaklandanimalservices.org/adopt/dogs/','status':'monitored via Adopt-a-Pet listings'},
     {'name':'Peninsula Humane Society/SPCA','url':'https://phs-spca.org/adopt/dogs/','status':'manual source link'},
     {'name':'Rocket Dog Rescue','url':'https://www.rocketdogrescue.org/available-dogs','status':'monitored if cross-posted to Adopt-a-Pet'},
-    {'name':'Milo Foundation','url':'https://www.milofoundation.org/dogs-for-adoption/','status':'monitored if cross-posted to Adopt-a-Pet'},
+    {'name':'Milo Foundation','url':'https://www.milofoundation.org/dogs-for-adoption/','status':'active direct Shelterluv scanner'},
 ]
 HEELER_TERMS = re.compile(r'(australian cattle dog|cattle dog|blue heeler|red heeler|heeler)', re.I)
 CITY_DISTANCE_FROM_SF = {
@@ -33,6 +36,7 @@ CITY_DISTANCE_FROM_SF = {
     'Mountain View': 39, 'San Jose': 49, 'Santa Clara': 46, 'Sunnyvale': 42, 'Fremont': 38, 'Hayward': 26,
     'Walnut Creek': 25, 'Concord': 29, 'Pleasanton': 40, 'Vallejo': 32, 'Novato': 29, 'Petaluma': 39,
     'Santa Rosa': 55, 'Napa': 47, 'Fairfield': 45, 'Vacaville': 55, 'Sacramento': 88, 'Davis': 73, 'Stockton': 83,
+    'Point Richmond': 18, 'Richmond': 18, 'Willits': 140,
 }
 
 def approx_distance(city, scraped):
@@ -152,6 +156,71 @@ def extract_pets(page, source_name):
             })
     return pets
 
+def fetch_shelterluv_animals(shelter_id):
+    url = f'https://www.shelterluv.com/api/v3/available-animals/{shelter_id}?species=Dog'
+    req = urllib.request.Request(url, headers={
+        'User-Agent': USER_AGENT,
+        'Accept': 'application/json',
+        'Referer': f'https://www.shelterluv.com/embed/{shelter_id}?species=Dog',
+    })
+    with urllib.request.urlopen(req, timeout=45) as r:
+        return json.loads(r.read().decode('utf-8', 'ignore'))
+
+def age_from_birthday(ts, fallback=''):
+    try:
+        days = (datetime.now(timezone.utc) - datetime.fromtimestamp(int(ts), timezone.utc)).days
+        if days < 60:
+            return f'{max(1, days // 7)} weeks'
+        if days < 730:
+            return f'{max(2, round(days / 30))} mos'
+        years = round(days / 365, 1)
+        return f'{years:g} yrs'
+    except Exception:
+        return fallback or ''
+
+def extract_shelterluv_pets(source_name, shelter_id, source_url):
+    payload = fetch_shelterluv_animals(shelter_id)
+    pets=[]
+    for a in payload.get('animals', []):
+        breed = ' / '.join([clean_text(a.get('breed')), clean_text(a.get('secondary_breed'))]).strip(' /')
+        desc = clean_text(a.get('kennel_description'))
+        attrs = ', '.join(clean_text(x) for x in (a.get('attributes') or [])[:8])
+        text = ' '.join([breed, desc, attrs, clean_text(a.get('name')), clean_text(a.get('primary_color')), clean_text(a.get('secondary_color'))])
+        if not HEELER_TERMS.search(text):
+            continue
+        photo_items = [p for p in (a.get('photos') or []) if isinstance(p, dict)]
+        photos = sorted(photo_items, key=lambda p: (not p.get('isCover'), p.get('order_column') or 999, p.get('id') or 0))
+        photo = normalize_img((photos[0] or {}).get('url') if photos else '')
+        location = clean_text(a.get('location') or a.get('campus') or 'Point Richmond')
+        city = 'Point Richmond'
+        if 'Willits' in location:
+            city = 'Willits'
+        elif 'Foster' in location:
+            city = 'Foster Home'
+        elif 'Richmond' in location or 'Main Campus' in location:
+            city = 'Point Richmond'
+        pets.append({
+            'id':'shelterluv-'+clean_text(a.get('uniqueId') or str(a.get('nid'))),
+            'name':clean_text(a.get('name')) or 'Unnamed heeler',
+            'breed':breed,
+            'sex':clean_text(a.get('sex')),
+            'age':age_from_birthday(a.get('birthday'), clean_text((a.get('age_group') or {}).get('name'))),
+            'color':' / '.join([x for x in [clean_text(a.get('primary_color')), clean_text(a.get('secondary_color'))] if x]),
+            'size':clean_text(a.get('weight_group')),
+            'description':(desc or attrs)[:900],
+            'city':city,
+            'state':'CA',
+            'postalCode':'94801' if city != 'Willits' else '95490',
+            'distanceMiles': approx_distance('Point Richmond' if city == 'Foster Home' else city, None),
+            'shelterName':'Milo Foundation',
+            'contactPhone':'',
+            'contactEmail':'',
+            'url':clean_text(a.get('public_url')) or source_url,
+            'source':source_name,
+            'imageRemote':photo,
+        })
+    return pets
+
 def main():
     SITE.mkdir(parents=True, exist_ok=True); (SITE/'data').mkdir(exist_ok=True); ASSET_DIR.mkdir(parents=True, exist_ok=True)
     old={}
@@ -163,6 +232,11 @@ def main():
         try:
             page=fetch(url)
             all_pets.extend(extract_pets(page,name))
+        except Exception as e:
+            errors.append({'source':name,'url':url,'error':repr(e)})
+    for name,shelter_id,url in SHELTERLUV_SOURCES:
+        try:
+            all_pets.extend(extract_shelterluv_pets(name, shelter_id, url))
         except Exception as e:
             errors.append({'source':name,'url':url,'error':repr(e)})
     dedup={}
