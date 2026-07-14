@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-07-14T18:41:11Z",
+  "generatedAt": "2026-07-14T18:41:51Z",
   "generatedAtHuman": "Jul 14, 2026 at 11:41 AM PDT",
-  "source": "hourly-cache",
-  "refreshCadenceMinutes": 60,
+  "source": "scheduled-cache",
+  "refreshCadenceMinutes": 180,
   "overview": {
     "totalUsers": 60,
     "launchUsers": 56,
