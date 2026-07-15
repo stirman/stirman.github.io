@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-14T23:00:32+00:00",
+  "updatedAt": "2026-07-15T00:00:45+00:00",
   "location": "San Francisco Bay Area + couple-hour drive",
   "breedTerms": [
     "Australian Cattle Dog",
@@ -454,28 +454,6 @@
       "image": "./assets/dogs/adoptapet-48038746.jpg"
     },
     {
-      "id": "adoptapet-48652521",
-      "name": "*CAPTAIN CRUNCH",
-      "breed": "Australian Cattle Dog / Boxer",
-      "sex": "Male",
-      "age": "2 mos",
-      "color": "Black",
-      "size": "Small 25 lbs (11 kg) or less",
-      "description": "To meet me, visit the Bradshaw Animal Shelter Tuesday-Sunday, Noon - 5:00 pm, Wednesdays, Noon - 6:00 pm. All adoptions are on a first-come, first-served basis. To help expedite the meet and greet process, please make note of my Animal ID number, and those of other dogs you might be interested in meeting. Be sure to bring your ID with you, too. We are located at 3839 Bradshaw Road, Sacramento. I look forward to getting to know you!",
-      "city": "Sacramento",
-      "state": "CA",
-      "postalCode": "95827",
-      "distanceMiles": 88,
-      "sourceDistanceMiles": 9.5,
-      "shelterName": "Sacramento County Animal Care (Bradshaw Animal Shelter)",
-      "contactPhone": "916-368-7387",
-      "contactEmail": "",
-      "url": "https://www.adoptapet.com/pet/48652521-sacramento-california-australian-cattle-dog-boxer-mix",
-      "source": "Adopt-a-Pet · Sacramento 50mi",
-      "imageRemote": "https://pet-uploads.adoptapet.com/8/b/1/1319652259.jpg",
-      "image": "./assets/dogs/adoptapet-48652521.jpg"
-    },
-    {
       "id": "adoptapet-48652071",
       "name": "*DOMINO",
       "breed": "Australian Cattle Dog / Boxer",
@@ -518,6 +496,28 @@
       "source": "Adopt-a-Pet · Sacramento 50mi",
       "imageRemote": "https://pet-uploads.adoptapet.com/c/0/d/1314281603.jpg",
       "image": "./assets/dogs/adoptapet-48383803.jpg"
+    },
+    {
+      "id": "adoptapet-48662366",
+      "name": "*KATIA",
+      "breed": "Husky / Australian Cattle Dog",
+      "sex": "Female",
+      "age": "2 yrs",
+      "color": "Brown/Chocolate",
+      "size": "Large 61-100 lbs (28-45 kg)",
+      "description": "Katia has participated in shelter playgroups and may enjoy a compatible canine friend in her new home. She`s also sharing her shelter suite with a friend she met at the shelter. Looking for a buddy for your dog? Bring him/her to the shelter for a meet and greet and see if we`re a match! Check out her playgroup video here: To meet me, visit the Bradshaw Animal Shelter Tuesday-Sunday, Noon - 5:00 pm, Wednesdays, Noon - 6:00 pm. All adoptions are on a first-come, first-served basis. To help expedite the meet and greet process, please make note of my Animal ID number, and those of other dogs you might be interested in meeting. Be sure to bring your ID with you, too. We are located at 3839 Bradshaw Road, Sacramento. I look forward to getting to know you!",
+      "city": "Sacramento",
+      "state": "CA",
+      "postalCode": "95827",
+      "distanceMiles": 88,
+      "sourceDistanceMiles": 9.5,
+      "shelterName": "Sacramento County Animal Care (Bradshaw Animal Shelter)",
+      "contactPhone": "916-368-7387",
+      "contactEmail": "",
+      "url": "https://www.adoptapet.com/pet/48662366-sacramento-california-husky-australian-cattle-dog-mix",
+      "source": "Adopt-a-Pet · Sacramento 50mi",
+      "imageRemote": "https://pet-uploads.adoptapet.com/9/f/a/1320226678.jpg",
+      "image": "./assets/dogs/adoptapet-48662366.jpg"
     },
     {
       "id": "adoptapet-48650944",
@@ -1237,7 +1237,7 @@
       "shelterName": "Yoyo's Love of Rescue",
       "contactPhone": "415-828-5737",
       "contactEmail": "",
-      "url": "https://www.adoptapet.com/pet/47923091-san-francisco-california-cattle-dog-mix",
+      "url": "https://www.adoptapet.com/pet/47923091-san-francisco-cattle-dog-mix",
       "source": "Adopt-a-Pet · San Francisco 50mi",
       "imageRemote": "https://pet-uploads.adoptapet.com/b/7/0/1303390390.jpg",
       "image": "./assets/dogs/adoptapet-47923091.jpg"
