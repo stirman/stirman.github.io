@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-16T02:00:54+00:00",
+  "updatedAt": "2026-07-16T03:01:04+00:00",
   "location": "San Francisco Bay Area + couple-hour drive",
   "breedTerms": [
     "Australian Cattle Dog",
@@ -7,7 +7,7 @@
     "Red Heeler",
     "Cattle Dog"
   ],
-  "count": 60,
+  "count": 59,
   "dogs": [
     {
       "id": "shelterluv-MILO-A-10109",
@@ -452,28 +452,6 @@
       "source": "Adopt-a-Pet · Santa Rosa 50mi",
       "imageRemote": "https://pet-uploads.adoptapet.com/2/3/4/1318310979.jpg",
       "image": "./assets/dogs/adoptapet-48038746.jpg"
-    },
-    {
-      "id": "adoptapet-48652071",
-      "name": "*DOMINO",
-      "breed": "Australian Cattle Dog / Boxer",
-      "sex": "Male",
-      "age": "2 mos",
-      "color": "Black - with White",
-      "size": "Small 25 lbs (11 kg) or less",
-      "description": "To meet me, visit the Bradshaw Animal Shelter Tuesday-Sunday, Noon - 5:00 pm, Wednesdays, Noon - 6:00 pm. All adoptions are on a first-come, first-served basis. To help expedite the meet and greet process, please make note of my Animal ID number, and those of other dogs you might be interested in meeting. Be sure to bring your ID with you, too. We are located at 3839 Bradshaw Road, Sacramento. I look forward to getting to know you!",
-      "city": "Sacramento",
-      "state": "CA",
-      "postalCode": "95827",
-      "distanceMiles": 88,
-      "sourceDistanceMiles": 9.5,
-      "shelterName": "Sacramento County Animal Care (Bradshaw Animal Shelter)",
-      "contactPhone": "916-368-7387",
-      "contactEmail": "",
-      "url": "https://www.adoptapet.com/pet/48652071-sacramento-california-australian-cattle-dog-boxer-mix",
-      "source": "Adopt-a-Pet · Sacramento 50mi",
-      "imageRemote": "https://pet-uploads.adoptapet.com/1/4/0/1319640994.jpg",
-      "image": "./assets/dogs/adoptapet-48652071.jpg"
     },
     {
       "id": "adoptapet-48383803",
