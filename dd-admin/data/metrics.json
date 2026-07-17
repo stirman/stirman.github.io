@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-07-17T19:01:32Z",
-  "generatedAtHuman": "Jul 17, 2026 at 12:01 PM PDT",
+  "generatedAt": "2026-07-17T22:01:12Z",
+  "generatedAtHuman": "Jul 17, 2026 at 03:01 PM PDT",
   "source": "scheduled-cache",
   "refreshCadenceMinutes": 180,
   "overview": {
-    "totalUsers": 60,
-    "launchUsers": 56,
-    "active7": 6,
-    "active30": 7,
+    "totalUsers": 61,
+    "launchUsers": 57,
+    "active7": 7,
+    "active30": 8,
     "premium": 15,
     "paidSubscribers": 4,
     "grantedPremium": 11,
@@ -681,6 +681,19 @@
       "retained": false
     },
     {
+      "id": "qeNxsyNqUohq8lzuGVNmWvZkZn43",
+      "displayName": "Sheri Sentelle",
+      "email": "sheri.sentelle@icloud.com",
+      "createdAt": "2026-07-17T21:19:12Z",
+      "lastLoginAt": "2026-07-17T21:19:12Z",
+      "lastActiveAt": "2026-07-17T21:19:12Z",
+      "isPaidSubscriber": false,
+      "grantedPremium": false,
+      "insights30": 0,
+      "cardImages30": 0,
+      "retained": false
+    },
+    {
       "id": "qTafH3dJD8dyLz3eT93RkkPVQm93",
       "displayName": "stirman@gmail.com",
       "email": "stirman@gmail.com",
@@ -813,7 +826,7 @@
     },
     {
       "title": "Retention pulse",
-      "body": "27% of users have returned across multiple weeks."
+      "body": "26% of users have returned across multiple weeks."
     },
     {
       "title": "Most engaged recently",
@@ -1563,7 +1576,7 @@
       {
         "date": "2026-07-17",
         "label": "Jul 17",
-        "count": 58
+        "count": 59
       }
     ],
     "dailyCosts": [
