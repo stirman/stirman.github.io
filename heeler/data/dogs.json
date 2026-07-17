@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-17T20:00:14+00:00",
+  "updatedAt": "2026-07-17T21:00:21+00:00",
   "location": "San Francisco Bay Area + couple-hour drive",
   "breedTerms": [
     "Australian Cattle Dog",
@@ -512,6 +512,27 @@
       "source": "Milo Foundation · Shelterluv",
       "imageRemote": "https://new-s3.shelterluv.com/profile-pictures/c87ee24343d98adc787f3c637230d180/a6d66a89bc52a33712d1666adf58f24e.jpeg",
       "image": "./assets/dogs/shelterluv-MILO-A-11414.jpg"
+    },
+    {
+      "id": "shelterluv-MILO-A-11535",
+      "name": "UNCLE ALBERT (blue)",
+      "breed": "Great Dane / Cattle Dog",
+      "sex": "Male",
+      "age": "2 mos",
+      "color": "White",
+      "size": "Large (60-99)",
+      "description": "",
+      "city": "Point Richmond",
+      "state": "CA",
+      "postalCode": "94801",
+      "distanceMiles": 18,
+      "shelterName": "Milo Foundation",
+      "contactPhone": "",
+      "contactEmail": "",
+      "url": "https://www.shelterluv.com/embed/animal/MILO-A-11535",
+      "source": "Milo Foundation · Shelterluv",
+      "imageRemote": "https://new-s3.shelterluv.com/profile-pictures/f645f9150545bbe529af15b5ca1bf51c/f549b3f0d3fc8c950c0497678c5e4377.jpeg",
+      "image": "./assets/dogs/shelterluv-MILO-A-11535.jpg"
     },
     {
       "id": "shelterluv-MILO-A-11493",
@@ -1068,27 +1089,6 @@
       "source": "Milo Foundation · Shelterluv",
       "imageRemote": "",
       "image": ""
-    },
-    {
-      "id": "shelterluv-MILO-A-11535",
-      "name": "UNCLE ALBERT (blue)",
-      "breed": "Great Dane / Cattle Dog",
-      "sex": "Male",
-      "age": "2 mos",
-      "color": "White",
-      "size": "Large (60-99)",
-      "description": "",
-      "city": "Willits",
-      "state": "CA",
-      "postalCode": "95490",
-      "distanceMiles": 140,
-      "shelterName": "Milo Foundation",
-      "contactPhone": "",
-      "contactEmail": "",
-      "url": "https://www.shelterluv.com/embed/animal/MILO-A-11535",
-      "source": "Milo Foundation · Shelterluv",
-      "imageRemote": "https://new-s3.shelterluv.com/profile-pictures/f645f9150545bbe529af15b5ca1bf51c/f549b3f0d3fc8c950c0497678c5e4377.jpeg",
-      "image": "./assets/dogs/shelterluv-MILO-A-11535.jpg"
     },
     {
       "id": "shelterluv-MILO-A-10700",
