@@ -74,7 +74,7 @@ function renderWeeklyWinners(data) {
         </div>
         ${competitions.map(comp => `
           <div class="competition-row">
-            <span>${escapeHtml(comp.label)}</span>
+            <span class="competition-label ${normalizeCompetitionKey(comp.key || comp.label) === 'blockbuster' ? 'competition-label-blockbuster' : ''}">${normalizeCompetitionKey(comp.key || comp.label) === 'blockbuster' ? 'Block<br>Buster' : escapeHtml(comp.label)}</span>
             <strong>${escapeHtml(competitionWinner(comp.value))}</strong>
           </div>
         `).join('')}
@@ -203,9 +203,11 @@ function renderPlayerLeaderboard(data, weeks) {
       <div class="player-rank">#${index + 1}</div>
       <div class="player-photo" style="background-image:url('${escapeAttr(row.photoUrl)}'); background-position:${escapeAttr(row.photoPosition || 'center')}" role="img" aria-label="${escapeAttr(`${row.name} player photo`)}"></div>
       <div class="player-copy">
-        <h3>${escapeHtml(row.name)}</h3>
+        <div class="player-title-row">
+          <h3>${escapeHtml(row.name)}</h3>
+          <div class="player-score"><strong>${row.points}</strong><span>pts</span></div>
+        </div>
         <p>${escapeHtml(row.groupName)}</p>
-        <div class="player-score"><strong>${row.points}</strong><span>pts</span></div>
         <div class="player-breakdown">${escapeHtml(row.breakdown)}</div>
         ${row.sources.length ? `<ul class="player-sources">${row.sources.map(source => `<li>${escapeHtml(source)}</li>`).join('')}</ul>` : '<p class="player-sources-empty">Waiting on first competition points</p>'}
       </div>
