@@ -469,7 +469,8 @@
       "id": "pa",
       "name": "Pa",
       "scoringGroup": "mimi-pa",
-      "photoUrl": "./assets/players/pa.jpeg",
+      "photoUrl": "./assets/players/pa.jpg",
+      "photoPosition": "center 42%",
       "color": "#ff2bd6"
     }
   ],
