@@ -204,10 +204,12 @@ function renderPlayerLeaderboard(data, weeks) {
       <div class="player-photo" style="background-image:url('${escapeAttr(row.photoUrl)}'); background-position:${escapeAttr(row.photoPosition || 'center')}" role="img" aria-label="${escapeAttr(`${row.name} player photo`)}"></div>
       <div class="player-copy">
         <div class="player-title-row">
-          <h3>${escapeHtml(row.name)}</h3>
+          <div class="player-identity">
+            <h3>${escapeHtml(row.name)}</h3>
+            <p>${escapeHtml(row.groupName)}</p>
+          </div>
           <div class="player-score"><strong>${row.points}</strong><span>pts</span></div>
         </div>
-        <p>${escapeHtml(row.groupName)}</p>
         <div class="player-breakdown">${escapeHtml(row.breakdown)}</div>
         ${row.sources.length ? `<ul class="player-sources">${row.sources.map(source => `<li>${escapeHtml(source)}</li>`).join('')}</ul>` : '<p class="player-sources-empty">Waiting on first competition points</p>'}
       </div>
