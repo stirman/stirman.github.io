@@ -61,3 +61,7 @@ Prefer weekly result records like:
 ```
 
 Update after Pacific airtime and do not send spoiler texts when the watcher/site updates.
+
+## Dee Valladares assignment rule
+
+For this `/bigbrother28` family draft, Dee Valladares is explicitly assigned to **Fins**. Preserve that assignment during eviction and season-progress updates; do not replace it from `/bb28`’s separate first-eviction rule.

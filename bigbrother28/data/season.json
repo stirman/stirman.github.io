@@ -1,9 +1,9 @@
 {
   "season": "Big Brother 28",
   "siteTitle": "BB28 Fantasy Draft",
-  "tagline": "Meet the BB28 houseguests \u2014 the Monjies/Cassie/Crush/Mike/Fins family draft is live.",
-  "lastUpdated": "2026-07-13T13:50:10Z",
-  "status": "cast-revealed",
+  "tagline": "Meet the BB28 houseguests — the Monjies/Cassie/Crush/Mike/Fins family draft is live.",
+  "lastUpdated": "2026-07-18T05:58:49Z",
+  "status": "week-1-complete",
   "liveRefreshSeconds": 60,
   "seasonCalendar": {
     "premiere": "2026-07-07",
@@ -61,12 +61,13 @@
       "age": 24,
       "hometown": "Chicago, IL",
       "occupation": "Bartender",
-      "status": "active",
+      "status": "evicted",
       "draftOwner": "monjies",
       "photoUrl": "https://bigbrothernetwork.com/wp-content/uploads/2026/07/bb28-cast-ashley-00.jpg",
       "bio": "Ashley Trail is a 24-year-old bartender from Chicago, IL.",
       "sourceName": "Big Brother Network",
-      "sourceUrl": "https://bigbrothernetwork.com/big-brother-28-cast/"
+      "sourceUrl": "https://bigbrothernetwork.com/big-brother-28-cast/",
+      "notes": "Evicted Week 1 by a unanimous 14-0 vote."
     },
     {
       "id": "barrett-pfeiffer",
@@ -280,16 +281,41 @@
     {
       "week": 1,
       "label": "Week 1",
-      "date": "2026-07-12",
-      "status": "HOH crowned",
+      "date": "2026-07-16",
+      "status": "Complete",
       "hoh": {
         "houseguestId": "dee-valladares",
         "winner": "Dee Valladares"
       },
-      "notes": "Dee beat Angela Murray and Rick Devens to become the first Head of Household."
+      "notes": "Mallory won the Power of Veto. Yash won the BB Blockbuster and came off the block. Ashley was evicted 14-0.",
+      "pov": {
+        "houseguestId": "mallory-aurichio",
+        "winner": "Mallory Aurichio"
+      },
+      "blockbuster": {
+        "houseguestId": "yash-patel",
+        "winner": "Yash Patel"
+      },
+      "evicted": {
+        "houseguestId": "ashley-trail",
+        "name": "Ashley Trail",
+        "vote": "14-0"
+      }
     }
   ],
   "events": [
+    {
+      "date": "2026-07-16T21:00:00-07:00",
+      "type": "eviction",
+      "title": "Ashley is the first houseguest evicted",
+      "description": "Ashley Trail was evicted by a unanimous 14-0 vote."
+    },
+    {
+      "date": "2026-07-16T20:45:00-07:00",
+      "type": "competition_result",
+      "title": "Yash wins the first BB Blockbuster",
+      "description": "Yash Patel won the Week 1 BB Blockbuster and came off the block."
+    },
     {
       "date": "2026-07-13T13:50:10Z",
       "type": "competition_result",
@@ -332,6 +358,11 @@
       "name": "Big Brother Network",
       "url": "https://bigbrothernetwork.com/big-brother-28-cast/",
       "checkedAt": "2026-07-08T05:17:43Z"
+    },
+    {
+      "name": "TV Grapevine",
+      "url": "https://www.tvgrapevine.com/big-brother-28-recap-for-7-16-2026/",
+      "checkedAt": "2026-07-18T05:58:49Z"
     }
   ],
   "players": [

@@ -121,3 +121,7 @@ git push origin master
 - Weekly Power Watch now includes a season-long leaderboard for strongest houseguest + family member.
 - Scoring: HOH = 5 points; Veto and Blockbuster = 3 points.
 - Update both `/bb28` and `/bigbrother28` weekly data together after Pacific airtime; do not text spoiler notifications.
+
+## Dee Valladares assignment rule
+
+Dee Valladares stays **Undrafted** until the first eviction. Whichever family member owns/drafted the first evicted houseguest gets Dee assigned to them. Apply this to both `/bb28` and `/bigbrother28` using each route’s own `houseguests[].draftOwner` mapping.
