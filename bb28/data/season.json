@@ -461,7 +461,8 @@
       "id": "mimi",
       "name": "Mimi",
       "scoringGroup": "mimi-pa",
-      "photoUrl": "./assets/players/mimi.png",
+      "photoUrl": "./assets/players/mimi.jpg",
+      "photoPosition": "center 44%",
       "color": "#00d5ff"
     },
     {

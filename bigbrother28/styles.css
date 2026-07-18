@@ -194,7 +194,7 @@ h3 { font-size: 19px; }
 
 
 .guest-card { min-height: 300px; display: flex; flex-direction: column; gap: 12px; position: relative; overflow: hidden; border-width: 2px; }
-.guest-card.evicted { opacity: .55; filter: grayscale(.3); }
+.guest-card.evicted .guest-copy { opacity: .58; }
 .guest-card.winner { border-color: rgba(255,209,102,.7); box-shadow: 0 0 52px rgba(255,209,102,.18); }
 .guest-card::after {
   content: "";
@@ -224,6 +224,21 @@ h3 { font-size: 19px; }
   position: absolute;
   inset: 0;
   background: linear-gradient(to top, rgba(2,8,27,.34), transparent 48%);
+}
+.guest-card.evicted .guest-image.has-photo::before {
+  background: rgba(2, 8, 27, .34);
+  backdrop-filter: grayscale(.38) brightness(.72);
+}
+.evicted-stamp {
+  position: absolute;
+  z-index: 3;
+  top: 47%;
+  left: 50%;
+  width: min(78%, 300px);
+  height: auto;
+  transform: translate(-50%, -50%);
+  filter: drop-shadow(0 10px 10px rgba(0, 0, 0, .48));
+  pointer-events: none;
 }
 .guest-image.photo-fallback { align-items: center; justify-content: center; }
 .avatar {

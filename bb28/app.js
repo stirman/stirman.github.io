@@ -259,14 +259,18 @@ function renderHouseguests(data) {
     const status = guest.status || 'active';
     const owner = guest.draftOwner ? ownerName(data, guest.draftOwner) : 'Undrafted';
     const meta = [guest.age && `Age ${guest.age}`, guest.hometown, guest.occupation].filter(Boolean).join(' • ');
+    const evictedStamp = status === 'evicted'
+      ? '<img class="evicted-stamp" src="./assets/evicted-stamp.png" alt="Evicted">'
+      : '';
     const photo = guest.photoUrl ? `
       <div class="guest-image has-photo" style="background-image: url('${escapeAttr(guest.photoUrl)}'); background-position: ${escapeAttr(guest.photoPosition || 'center')}" role="img" aria-label="${escapeAttr(`${guest.name} BB28 cast photo`)}">
+        ${evictedStamp}
         <div class="owner-ribbon" style="--owner-color:${ownerColor(data, guest.draftOwner)}">${escapeHtml(owner)}</div>
       </div>
     ` : '';
     return `
       <article class="guest-card ${escapeAttr(status)}" style="--owner-color:${ownerColor(data, guest.draftOwner)}; --photo-position:${escapeAttr(guest.photoPosition || 'center')}; border-color:${ownerColor(data, guest.draftOwner)}88">
-        ${photo || `<div class="guest-image photo-fallback"><div class="avatar">${escapeHtml(initials(guest.name))}</div><div class="owner-ribbon" style="--owner-color:${ownerColor(data, guest.draftOwner)}">${escapeHtml(owner)}</div></div>`}
+        ${photo || `<div class="guest-image photo-fallback">${evictedStamp}<div class="avatar">${escapeHtml(initials(guest.name))}</div><div class="owner-ribbon" style="--owner-color:${ownerColor(data, guest.draftOwner)}">${escapeHtml(owner)}</div></div>`}
         <div class="guest-copy">
           <h3>${escapeHtml(guest.name)}</h3>
           <p class="guest-meta">${escapeHtml(meta || 'Details coming soon')}</p>
