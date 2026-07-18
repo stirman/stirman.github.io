@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-18T20:00:22+00:00",
+  "updatedAt": "2026-07-18T21:00:28+00:00",
   "location": "San Francisco Bay Area + couple-hour drive",
   "breedTerms": [
     "Australian Cattle Dog",
@@ -7,7 +7,7 @@
     "Red Heeler",
     "Cattle Dog"
   ],
-  "count": 59,
+  "count": 58,
   "dogs": [
     {
       "id": "shelterluv-MILO-A-10109",
@@ -197,27 +197,6 @@
       "source": "Milo Foundation · Shelterluv",
       "imageRemote": "https://new-s3.shelterluv.com/profile-pictures/1290d70b7ef00cfb9296153337777ad3/1f768121a336be17673fa59a6f525b4d.jpeg",
       "image": "./assets/dogs/shelterluv-MILO-A-11633.jpg"
-    },
-    {
-      "id": "shelterluv-MILO-A-11634",
-      "name": "FREEDA",
-      "breed": "Terrier, American Staffordshire / Cattle Dog",
-      "sex": "Female",
-      "age": "3 mos",
-      "color": "Red/Mahogany / White",
-      "size": "Medium (25-59)",
-      "description": "*No Refunds on puppies",
-      "city": "Point Richmond",
-      "state": "CA",
-      "postalCode": "94801",
-      "distanceMiles": 18,
-      "shelterName": "Milo Foundation",
-      "contactPhone": "",
-      "contactEmail": "",
-      "url": "https://www.shelterluv.com/embed/animal/MILO-A-11634",
-      "source": "Milo Foundation · Shelterluv",
-      "imageRemote": "https://new-s3.shelterluv.com/profile-pictures/c2a07f65043653020fb0c38aa6339863/12a0daf0958a0a04751118bebcbbc04f.jpeg",
-      "image": "./assets/dogs/shelterluv-MILO-A-11634.jpg"
     },
     {
       "id": "shelterluv-MILO-A-11668",
