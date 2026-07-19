@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Heeler Watch · Bay Area adoptable cattle dogs</title>
   <meta name="description" content="Hourly watch for red and blue heelers available from Bay Area shelters and rescues." />
-  <link rel="stylesheet" href="./styles.css?v=20260714-milo-filter" />
+  <link rel="stylesheet" href="./styles.css?v=20260719-sort" />
 </head>
 <body>
   <main>
@@ -24,6 +24,11 @@
     <section class="toolbar">
       <label><input type="checkbox" id="miloToggle" /> Milo Foundation</label>
       <label><input type="checkbox" id="withPhotoToggle" /> With photo</label>
+      <div class="sort-control" role="group" aria-label="Sort heelers">
+        <span>Sort</span>
+        <button type="button" id="sortRecent" class="active" aria-pressed="true">Recent additions</button>
+        <button type="button" id="sortName" aria-pressed="false">Name</button>
+      </div>
       <input id="searchBox" type="search" placeholder="Filter by name, shelter, city, color…" />
     </section>
 
@@ -40,6 +45,6 @@
       <div id="sources" class="source-list"></div>
     </section>
   </main>
-  <script src="./app.js?v=20260714-live-count"></script>
+  <script src="./app.js?v=20260719-sort"></script>
 </body>
 </html>

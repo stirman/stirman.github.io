@@ -13,8 +13,8 @@ Source links shown on the site include Petfinder, SF Animal Care & Control, SF S
 ## Files
 
 - `scan_heeler.py` — pulls listings, localizes dog images into `assets/dogs/`, writes `data/dogs.json`.
-- `data/dogs.json` — public rendered dog data.
-- `index.html`, `styles.css`, `app.js` — static site.
+- `data/dogs.json` — public rendered dog data, including a persistent `foundAt` timestamp for each listing.
+- `index.html`, `styles.css`, `app.js` — static site. Listings default to newest-found first, with a Recent additions / Name sort toggle.
 
 ## Update / deploy
 

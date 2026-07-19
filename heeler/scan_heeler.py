@@ -221,6 +221,12 @@ def extract_shelterluv_pets(source_name, shelter_id, source_url):
         })
     return pets
 
+def apply_found_at(pets, old, now):
+    old_by_id={d.get('id'): d for d in old.get('dogs',[]) if d.get('id')}
+    for p in pets:
+        p['foundAt']=old_by_id.get(p.get('id'), {}).get('foundAt') or now
+
+
 def main():
     SITE.mkdir(parents=True, exist_ok=True); (SITE/'data').mkdir(exist_ok=True); ASSET_DIR.mkdir(parents=True, exist_ok=True)
     old={}
@@ -249,6 +255,7 @@ def main():
     for p in pets:
         p['image']=localize_image(p['id'].replace('/','-'), p.get('imageRemote',''))
     now=datetime.now(timezone.utc).isoformat(timespec='seconds')
+    apply_found_at(pets, old, now)
     payload={
         'updatedAt':now,
         'location':'San Francisco Bay Area + couple-hour drive',
