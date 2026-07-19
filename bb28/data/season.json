@@ -454,7 +454,8 @@
       "id": "bruin",
       "name": "Bruin",
       "scoringGroup": "claghorns",
-      "photoUrl": "./assets/players/bruin.jpeg",
+      "photoUrl": "./assets/players/bruin.jpg",
+      "photoPosition": "center 24%",
       "color": "#ffd166"
     },
     {
