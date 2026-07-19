@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#123c33">
+  <title>Pura Vida, Family — Costa Rica 2026</title>
+  <meta name="description" content="Our family Costa Rica itinerary, July 28 through August 5, 2026.">
+  <meta property="og:title" content="Pura Vida, Family — Costa Rica 2026">
+  <meta property="og:description" content="Activities, meals and plans for our family trip to Costa Rica.">
+  <meta property="og:image" content="https://stirman.net/costa-rica/assets/costa-rica-hero.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://stirman.net/costa-rica/">
+  <link rel="canonical" href="https://stirman.net/costa-rica/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css?v=20260719-family-itinerary">
+  <script src="./app.js?v=20260719-family-itinerary" defer></script>
+</head>
+<body>
+  <header class="hero" id="top">
+    <img class="hero-art" src="./assets/costa-rica-hero.jpg" alt="Illustration of Costa Rica’s Pacific coast, jungle, macaws and a boat">
+    <div class="hero-shade" aria-hidden="true"></div>
+    <div class="hero-topline">
+      <span class="wordmark">Costa Rica · 2026</span>
+      <button class="share-button" id="shareButton" type="button" aria-label="Share this itinerary">
+        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 16V3m0 0L7 8m5-5 5 5M5 13v7h14v-7"/></svg>
+        <span>Share</span>
+      </button>
+    </div>
+    <div class="hero-copy">
+      <p class="hero-kicker">July 28 – August 5 · Guanacaste</p>
+      <h1>Pura vida,<br><em>family.</em></h1>
+      <p class="hero-intro">Nine sun-soaked days of boats, beaches, birthdays, jungle adventures and long meals together.</p>
+      <a class="hero-cta" href="#itinerary">See the plan <span aria-hidden="true">↓</span></a>
+    </div>
+  </header>
+
+  <nav class="date-rail" aria-label="Jump to a day">
+    <div class="date-rail-inner" id="dateRail"></div>
+  </nav>
+
+  <main>
+    <section class="opening" aria-labelledby="trip-heading">
+      <div class="opening-mark" aria-hidden="true">CR</div>
+      <div>
+        <p class="section-kicker">The family field guide</p>
+        <h2 id="trip-heading">What’s happening,<br>and when.</h2>
+      </div>
+      <p class="opening-note">Plans are organized by day with meal locations, activity times, group sizes and transportation notes—all in one place.</p>
+    </section>
+
+    <section class="itinerary" id="itinerary" aria-label="Daily itinerary">
+      <div class="loading" id="loading">Loading the family plan…</div>
+    </section>
+
+    <section class="legend" aria-labelledby="legend-heading">
+      <p class="section-kicker">A quick note</p>
+      <h2 id="legend-heading">The little details</h2>
+      <div class="legend-copy">
+        <p><strong>Confirmed</strong> means transportation is marked with a check in the family itinerary. <strong>Included</strong> means transportation is part of the activity.</p>
+        <p>Times and group sizes appear only where they were listed. Anything not shown is intentionally left open.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a href="#top" class="footer-mark" aria-label="Back to the top">Pura vida</a>
+    <p>Made for the family · Costa Rica 2026</p>
+    <button class="print-button" type="button" onclick="window.print()">Print itinerary</button>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

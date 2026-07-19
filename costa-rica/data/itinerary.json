@@ -1,0 +1,134 @@
+{
+  "trip": {
+    "title": "Pura Vida, Family",
+    "subtitle": "Our Costa Rica itinerary",
+    "dates": "July 28 – August 5, 2026",
+    "location": "Guanacaste, Costa Rica",
+    "source": "CR-itinerary.csv"
+  },
+  "days": [
+    {
+      "date": "2026-07-28",
+      "weekday": "Tuesday",
+      "shortDate": "Jul 28",
+      "kicker": "Settle in",
+      "title": "Welcome to Costa Rica",
+      "summary": "Get comfortable at the house and ease into the trip together.",
+      "events": [
+        {"type": "meal", "title": "Dinner at the house", "meal": "Dinner", "location": "House", "people": 6, "transport": "Confirmed"}
+      ]
+    },
+    {
+      "date": "2026-07-29",
+      "weekday": "Wednesday",
+      "shortDate": "Jul 29",
+      "kicker": "Beach day",
+      "title": "Town, sand & sunset",
+      "summary": "A relaxed day at the beach, followed by dinner in town.",
+      "events": [
+        {"type": "meal", "title": "Breakfast at the house", "meal": "Breakfast", "location": "House", "people": 6},
+        {"type": "activity", "title": "Beach in town", "time": "10:00 AM – 2:00 PM", "location": "Town", "meal": "Lunch in town", "transport": "10:00 AM – 7:00 PM"},
+        {"type": "meal", "title": "Dinner in town", "meal": "Dinner", "time": "5:00 – 7:00 PM", "location": "Town", "transport": "Confirmed"}
+      ]
+    },
+    {
+      "date": "2026-07-30",
+      "weekday": "Thursday",
+      "shortDate": "Jul 30",
+      "kicker": "On the water",
+      "title": "Kingfisher fishing day",
+      "summary": "A full day aboard Kingfisher for four, with lunch on the boat and the catch back at the house.",
+      "art": "./assets/ocean-adventures.jpg",
+      "artAlt": "Illustration of a fishing boat and catamaran on Costa Rica’s Pacific coast",
+      "events": [
+        {"type": "meal", "title": "Breakfast at the house", "meal": "Breakfast", "location": "House", "people": 6},
+        {"type": "activity", "title": "Fishing aboard Kingfisher", "time": "7:00 AM – 4:30 PM", "location": "Boat", "people": 4, "meal": "Lunch on the boat", "transport": "Confirmed"},
+        {"type": "meal", "title": "Fish dinner at the house", "meal": "Dinner", "location": "House", "people": 6}
+      ]
+    },
+    {
+      "date": "2026-07-31",
+      "weekday": "Friday",
+      "shortDate": "Jul 31",
+      "kicker": "Easy Friday",
+      "title": "Beach day for six",
+      "summary": "A beach outing and lunch in town, followed by dinner for twelve at the house.",
+      "events": [
+        {"type": "meal", "title": "Breakfast at the house", "meal": "Breakfast", "location": "House", "people": 6},
+        {"type": "activity", "title": "Beach in town", "time": "10:00 AM – 2:00 PM", "location": "Town", "people": 6, "meal": "Lunch in town", "transport": "Confirmed"},
+        {"type": "meal", "title": "Family dinner at the house", "meal": "Dinner", "location": "House", "people": 12}
+      ]
+    },
+    {
+      "date": "2026-08-01",
+      "weekday": "Saturday",
+      "shortDate": "Aug 1",
+      "kicker": "Big celebration day",
+      "title": "Catamaran & Pa’s birthday",
+      "summary": "Private snorkeling by day, birthday cake and a family celebration at sunset.",
+      "art": "./assets/villa-celebration.jpg",
+      "artAlt": "Illustration of a birthday dinner at a tropical villa overlooking the ocean",
+      "events": [
+        {"type": "meal", "title": "Breakfast at the house", "meal": "Breakfast", "location": "House", "people": 12},
+        {"type": "activity", "title": "Private catamaran & snorkeling", "time": "8:00 AM – 3:00 PM", "location": "Boat", "people": 12, "meal": "Lunch on the boat", "transport": "Included"},
+        {"type": "celebration", "title": "Pa’s birthday celebration", "meal": "Dinner & cake", "location": "House", "people": 12}
+      ]
+    },
+    {
+      "date": "2026-08-02",
+      "weekday": "Sunday",
+      "shortDate": "Aug 2",
+      "kicker": "Slow Sunday",
+      "title": "Massages at the house",
+      "summary": "A restorative day at home with meals together and four two-person massage appointments.",
+      "events": [
+        {"type": "wellness", "title": "Massage appointments", "location": "House", "people": 2, "slots": ["9:00 AM", "10:30 AM", "12:00 PM", "1:30 PM"]},
+        {"type": "meal", "title": "Breakfast at the house", "meal": "Breakfast", "location": "House", "people": 12},
+        {"type": "meal", "title": "Lunch at the house", "meal": "Lunch", "location": "House", "people": 12},
+        {"type": "meal", "title": "Dinner at the house", "meal": "Dinner", "location": "House", "people": 12}
+      ]
+    },
+    {
+      "date": "2026-08-03",
+      "weekday": "Monday",
+      "shortDate": "Aug 3",
+      "kicker": "Jungle day",
+      "title": "Sámara hike & dinner out",
+      "summary": "Explore the Sámara landscape, then finish the day with dinner in town.",
+      "art": "./assets/jungle-macaws.jpg",
+      "artAlt": "Illustration of a lush Costa Rica jungle trail with scarlet macaws and the Pacific beyond",
+      "events": [
+        {"type": "meal", "title": "Breakfast at the house", "meal": "Breakfast", "location": "House", "people": 12},
+        {"type": "activity", "title": "Sámara hike", "time": "10:00 AM – 2:00 PM", "location": "Town", "people": 12, "meal": "Lunch in town", "transport": "Included"},
+        {"type": "meal", "title": "Dinner in town", "meal": "Dinner", "time": "5:00 – 7:00 PM", "location": "Town", "transport": "Confirmed"}
+      ]
+    },
+    {
+      "date": "2026-08-04",
+      "weekday": "Tuesday",
+      "shortDate": "Aug 4",
+      "kicker": "Wild Costa Rica",
+      "title": "Beach, macaws & Mimi’s birthday",
+      "summary": "A long beach-and-macaw outing for four, then birthday dinner and cake with everyone.",
+      "art": "./assets/jungle-macaws.jpg",
+      "artAlt": "Illustration of scarlet macaws flying above a tropical path to the beach",
+      "events": [
+        {"type": "meal", "title": "Breakfast at the house", "meal": "Breakfast", "location": "House", "people": 12},
+        {"type": "activity", "title": "Beach & macaws", "time": "10:00 AM – 6:00 PM", "location": "Town", "people": 4, "meal": "Lunch in town", "transport": "Included"},
+        {"type": "celebration", "title": "Mimi’s birthday celebration", "meal": "Dinner & cake", "location": "House", "people": 12}
+      ]
+    },
+    {
+      "date": "2026-08-05",
+      "weekday": "Wednesday",
+      "shortDate": "Aug 5",
+      "kicker": "Travel day",
+      "title": "One last meal together",
+      "summary": "Breakfast for twelve and lunch at the house for six, with transportation confirmed.",
+      "events": [
+        {"type": "meal", "title": "Breakfast at the house", "meal": "Breakfast", "location": "House", "people": 12},
+        {"type": "meal", "title": "Lunch at the house", "meal": "Lunch", "location": "House", "people": 6, "transport": "Confirmed"}
+      ]
+    }
+  ]
+}
