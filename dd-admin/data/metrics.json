@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-07-19T10:00:30Z",
-  "generatedAtHuman": "Jul 19, 2026 at 03:00 AM PDT",
+  "generatedAt": "2026-07-19T13:00:52Z",
+  "generatedAtHuman": "Jul 19, 2026 at 06:00 AM PDT",
   "source": "scheduled-cache",
   "refreshCadenceMinutes": 180,
   "overview": {
     "totalUsers": 62,
     "launchUsers": 58,
-    "active7": 6,
-    "active30": 9,
+    "active7": 7,
+    "active30": 10,
     "premium": 15,
     "paidSubscribers": 4,
     "grantedPremium": 11,
     "retainedUsers": 16,
-    "insights30": 43,
-    "entries30": 116,
+    "insights30": 44,
+    "entries30": 117,
     "cardImages30": 26
   },
   "users": [
@@ -178,11 +178,11 @@
       "displayName": "CHRISTINA MASSEY",
       "email": "themasseyfamily@gmail.com",
       "createdAt": "2026-04-23T19:52:48Z",
-      "lastLoginAt": "2026-04-23T19:52:48Z",
-      "lastActiveAt": "2026-04-23T19:52:48Z",
+      "lastLoginAt": "2026-07-19T12:47:56Z",
+      "lastActiveAt": "2026-07-19T12:47:56Z",
       "isPaidSubscriber": false,
       "grantedPremium": true,
-      "insights30": 0,
+      "insights30": 1,
       "cardImages30": 0,
       "retained": false
     },
@@ -847,7 +847,7 @@
     },
     {
       "title": "Win-back opportunity",
-      "body": "13 premium/granted users have not been active in 14+ days."
+      "body": "12 premium/granted users have not been active in 14+ days."
     }
   ],
   "series": {
@@ -1000,7 +1000,7 @@
       {
         "date": "2026-07-19",
         "label": "Jul 19",
-        "count": 0
+        "count": 1
       }
     ],
     "dailyCardImages": [
