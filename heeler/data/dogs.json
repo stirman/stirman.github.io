@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-19T20:00:45+00:00",
+  "updatedAt": "2026-07-19T21:00:53+00:00",
   "location": "San Francisco Bay Area + couple-hour drive",
   "breedTerms": [
     "Australian Cattle Dog",
@@ -7,7 +7,7 @@
     "Red Heeler",
     "Cattle Dog"
   ],
-  "count": 59,
+  "count": 58,
   "dogs": [
     {
       "id": "shelterluv-MILO-A-10109",
@@ -341,27 +341,6 @@
       "contactPhone": "",
       "contactEmail": "",
       "url": "https://www.shelterluv.com/embed/animal/MILO-A-11497",
-      "source": "Milo Foundation · Shelterluv",
-      "imageRemote": "",
-      "image": ""
-    },
-    {
-      "id": "shelterluv-MILO-A-11498",
-      "name": "MR. KITE (orange)",
-      "breed": "Great Dane / Cattle Dog",
-      "sex": "Male",
-      "age": "2 mos",
-      "color": "White",
-      "size": "Large (60-99)",
-      "description": "Behavior: Family Friendly",
-      "city": "Foster Home",
-      "state": "CA",
-      "postalCode": "94801",
-      "distanceMiles": 18,
-      "shelterName": "Milo Foundation",
-      "contactPhone": "",
-      "contactEmail": "",
-      "url": "https://www.shelterluv.com/embed/animal/MILO-A-11498",
       "source": "Milo Foundation · Shelterluv",
       "imageRemote": "",
       "image": ""
