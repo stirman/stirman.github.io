@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-19T23:00:10+00:00",
+  "updatedAt": "2026-07-20T00:00:17+00:00",
   "location": "San Francisco Bay Area + couple-hour drive",
   "breedTerms": [
     "Australian Cattle Dog",
@@ -7,7 +7,7 @@
     "Red Heeler",
     "Cattle Dog"
   ],
-  "count": 51,
+  "count": 50,
   "dogs": [
     {
       "id": "shelterluv-MILO-A-10109",
@@ -447,28 +447,6 @@
       "source": "Milo Foundation · Shelterluv",
       "imageRemote": "https://new-s3.shelterluv.com/profile-pictures/f8f167a4d10601eee7ae1e915996b9cb/70de4f43507bb9d59512f32af6573c33.jpg",
       "image": "./assets/dogs/shelterluv-MILO-A-11499.jpg",
-      "foundAt": "2026-07-14T10:52:24-07:00"
-    },
-    {
-      "id": "shelterluv-MILO-A-11414",
-      "name": "SIENNA",
-      "breed": "Cattle Dog, Australian (Red Heeler) / Mixed Breed (Medium)",
-      "sex": "Female",
-      "age": "20 mos",
-      "color": "Red/Mahogany / White",
-      "size": "Medium (25-59)",
-      "description": "Behavior: Medium Energy, Behavior: Shy - Takes time to adjust, Good with Dogs, Training: Affection Motivated, Behavior: Soft Mouth, Behavior: Leans in, Behavior: Quick Learner, Playstyle: Submissive",
-      "city": "Foster Home",
-      "state": "CA",
-      "postalCode": "94801",
-      "distanceMiles": 18,
-      "shelterName": "Milo Foundation",
-      "contactPhone": "",
-      "contactEmail": "",
-      "url": "https://www.shelterluv.com/embed/animal/MILO-A-11414",
-      "source": "Milo Foundation · Shelterluv",
-      "imageRemote": "https://new-s3.shelterluv.com/profile-pictures/c87ee24343d98adc787f3c637230d180/a6d66a89bc52a33712d1666adf58f24e.jpeg",
-      "image": "./assets/dogs/shelterluv-MILO-A-11414.jpg",
       "foundAt": "2026-07-14T10:52:24-07:00"
     },
     {
