@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-20T22:00:17+00:00",
+  "updatedAt": "2026-07-20T23:00:33+00:00",
   "location": "San Francisco Bay Area + couple-hour drive",
   "breedTerms": [
     "Australian Cattle Dog",
@@ -7,7 +7,7 @@
     "Red Heeler",
     "Cattle Dog"
   ],
-  "count": 49,
+  "count": 50,
   "dogs": [
     {
       "id": "shelterluv-MILO-A-10109",
@@ -225,7 +225,7 @@
       "contactEmail": "",
       "url": "https://www.shelterluv.com/embed/animal/MILO-A-11635",
       "source": "Milo Foundation · Shelterluv",
-      "imageRemote": "https://new-s3.shelterluv.com/profile-pictures/af07905a03a52dd30d6ab46e10fc157a/602bca67f8e26bc790129f256f8a4079.jpeg",
+      "imageRemote": "https://new-s3.shelterluv.com/profile-pictures/1dd6c9899f319d8d9036fbcaa8e6563c/9d7f40e40d1da718f8578d54b1a70a3e.jpeg",
       "image": "./assets/dogs/shelterluv-MILO-A-11635.jpg",
       "foundAt": "2026-07-14T10:52:24-07:00"
     },
@@ -495,6 +495,29 @@
       "foundAt": "2026-07-18T20:00:19-07:00"
     },
     {
+      "id": "adoptapet-48738754",
+      "name": "CHROMIE",
+      "breed": "Australian Cattle Dog",
+      "sex": "Female",
+      "age": "5 yrs 3 mos",
+      "color": "Red/Golden/Orange/Chestnut - with White",
+      "size": "Med. 26-60 lbs (12-27 kg)",
+      "description": "",
+      "city": "San Jose",
+      "state": "CA",
+      "postalCode": "95111",
+      "distanceMiles": 49,
+      "sourceDistanceMiles": 8.1,
+      "shelterName": "San Jose Animal Care Center",
+      "contactPhone": "408-794-7297",
+      "contactEmail": "",
+      "url": "https://www.adoptapet.com/pet/48738754-san-jose-california-australian-cattle-dog-mix",
+      "source": "Adopt-a-Pet · San Jose 50mi",
+      "imageRemote": "https://pet-uploads.adoptapet.com/e/2/4/1321835352.jpg",
+      "image": "./assets/dogs/adoptapet-48738754.jpg",
+      "foundAt": "2026-07-20T23:00:33+00:00"
+    },
+    {
       "id": "adoptapet-47316463",
       "name": "Gordon",
       "breed": "Labrador Retriever / Cattle Dog",
@@ -628,7 +651,7 @@
       "contactEmail": "",
       "url": "https://www.adoptapet.com/pet/48650944-sacramento-california-australian-cattle-dog",
       "source": "Adopt-a-Pet · Sacramento 50mi",
-      "imageRemote": "https://pet-uploads.adoptapet.com/9/6/c/1319630773.jpg",
+      "imageRemote": "https://pet-uploads.adoptapet.com/0/c/f/1321831755.jpg",
       "image": "./assets/dogs/adoptapet-48650944.jpg",
       "foundAt": "2026-07-14T10:41:57-07:00"
     },
@@ -649,7 +672,7 @@
       "shelterName": "For Adoption by Private Owner (Sacramento)",
       "contactPhone": "",
       "contactEmail": "",
-      "url": "https://www.adoptapet.com/pet/43764717-sacramento-california-australian-cattle-dog-german-shepherd-dog-mix",
+      "url": "https://www.adoptapet.com/pet/43764717-sacramento-california-australian-cattle-dog-mix",
       "source": "Adopt-a-Pet · Sacramento 50mi",
       "imageRemote": "https://pet-uploads.adoptapet.com/7/2/9/1319692210.jpg",
       "image": "./assets/dogs/adoptapet-43764717.jpg",
@@ -743,7 +766,7 @@
       "contactEmail": "",
       "url": "https://www.adoptapet.com/pet/48581949-sacramento-california-australian-cattle-dog-mix",
       "source": "Adopt-a-Pet · Sacramento 50mi",
-      "imageRemote": "https://pet-uploads.adoptapet.com/b/7/4/1318056659.jpg",
+      "imageRemote": "https://pet-uploads.adoptapet.com/f/6/5/1321831609.jpg",
       "image": "./assets/dogs/adoptapet-48581949.jpg",
       "foundAt": "2026-07-14T10:41:57-07:00"
     },
