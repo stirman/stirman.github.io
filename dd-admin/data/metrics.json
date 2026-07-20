@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-19T22:01:30Z",
-  "generatedAtHuman": "Jul 19, 2026 at 03:01 PM PDT",
+  "generatedAt": "2026-07-20T01:00:48Z",
+  "generatedAtHuman": "Jul 19, 2026 at 06:00 PM PDT",
   "source": "scheduled-cache",
   "refreshCadenceMinutes": 180,
   "overview": {
@@ -12,9 +12,9 @@
     "paidSubscribers": 4,
     "grantedPremium": 11,
     "retainedUsers": 16,
-    "insights30": 44,
-    "entries30": 117,
-    "cardImages30": 26
+    "insights30": 43,
+    "entries30": 116,
+    "cardImages30": 25
   },
   "users": [
     {
@@ -143,7 +143,7 @@
       "lastActiveAt": "2026-07-16T02:30:37Z",
       "isPaidSubscriber": false,
       "grantedPremium": false,
-      "insights30": 4,
+      "insights30": 3,
       "cardImages30": 0,
       "retained": true
     },
@@ -286,8 +286,8 @@
       "lastActiveAt": "2026-07-18T02:30:26Z",
       "isPaidSubscriber": false,
       "grantedPremium": true,
-      "insights30": 16,
-      "cardImages30": 15,
+      "insights30": 15,
+      "cardImages30": 14,
       "retained": true
     },
     {
@@ -633,11 +633,11 @@
       "displayName": "Miquelle Hardy",
       "email": "hs2c8wryfg@privaterelay.appleid.com",
       "createdAt": "2026-06-18T00:56:55Z",
-      "lastLoginAt": "2026-07-17T22:51:32Z",
-      "lastActiveAt": "2026-07-17T22:51:32Z",
+      "lastLoginAt": "2026-07-20T00:39:06Z",
+      "lastActiveAt": "2026-07-20T00:39:06Z",
       "isPaidSubscriber": false,
       "grantedPremium": false,
-      "insights30": 12,
+      "insights30": 13,
       "cardImages30": 5,
       "retained": true
     },
@@ -853,11 +853,6 @@
   "series": {
     "dailyInsights": [
       {
-        "date": "2026-06-20",
-        "label": "Jun 20",
-        "count": 2
-      },
-      {
         "date": "2026-06-21",
         "label": "Jun 21",
         "count": 1
@@ -1000,15 +995,15 @@
       {
         "date": "2026-07-19",
         "label": "Jul 19",
-        "count": 1
+        "count": 2
+      },
+      {
+        "date": "2026-07-20",
+        "label": "Jul 20",
+        "count": 0
       }
     ],
     "dailyCardImages": [
-      {
-        "date": "2026-06-20",
-        "label": "Jun 20",
-        "count": 1
-      },
       {
         "date": "2026-06-21",
         "label": "Jun 21",
@@ -1152,6 +1147,11 @@
       {
         "date": "2026-07-19",
         "label": "Jul 19",
+        "count": 0
+      },
+      {
+        "date": "2026-07-20",
+        "label": "Jul 20",
         "count": 0
       }
     ],
@@ -1600,17 +1600,14 @@
         "date": "2026-07-19",
         "label": "Jul 19",
         "count": 60
+      },
+      {
+        "date": "2026-07-20",
+        "label": "Jul 20",
+        "count": 60
       }
     ],
     "dailyCosts": [
-      {
-        "date": "2026-06-20",
-        "label": "Jun 20",
-        "textDollars": 0.0011,
-        "imageDollars": 0.0,
-        "otherDollars": 0.0,
-        "totalDollars": 0.0011
-      },
       {
         "date": "2026-06-21",
         "label": "Jun 21",
@@ -1838,6 +1835,14 @@
       {
         "date": "2026-07-19",
         "label": "Jul 19",
+        "textDollars": 0.0005,
+        "imageDollars": 0.514,
+        "otherDollars": 0.0,
+        "totalDollars": 0.5145
+      },
+      {
+        "date": "2026-07-20",
+        "label": "Jul 20",
         "textDollars": 0.0,
         "imageDollars": 0.0,
         "otherDollars": 0.0,
@@ -1847,14 +1852,14 @@
   },
   "costs": {
     "available": true,
-    "totalDollars": 10.3894,
-    "textDollars": 0.0525,
-    "imageDollars": 8.2287,
+    "totalDollars": 10.9029,
+    "textDollars": 0.052,
+    "imageDollars": 8.7427,
     "otherDollars": 2.1082,
     "byLineItem": [
       {
         "name": "gpt-image-1 image, output",
-        "dollars": 7.9872
+        "dollars": 8.4864
       },
       {
         "name": "gpt-5.5-2026-04-23, cached input",
@@ -1870,15 +1875,15 @@
       },
       {
         "name": "gpt-image-1 text, input",
-        "dollars": 0.2415
+        "dollars": 0.2563
       },
       {
         "name": "gpt-4o-mini-2024-07-18, input",
-        "dollars": 0.026
+        "dollars": 0.0257
       },
       {
         "name": "gpt-4o-mini-2024-07-18, output",
-        "dollars": 0.018
+        "dollars": 0.0178
       },
       {
         "name": "text-embedding-3-small",
@@ -1903,14 +1908,6 @@
     ],
     "daily": [
       {
-        "date": "2026-06-20",
-        "label": "Jun 20",
-        "textDollars": 0.0011,
-        "imageDollars": 0.0,
-        "otherDollars": 0.0,
-        "totalDollars": 0.0011
-      },
-      {
         "date": "2026-06-21",
         "label": "Jun 21",
         "textDollars": 0.0022,
@@ -2137,6 +2134,14 @@
       {
         "date": "2026-07-19",
         "label": "Jul 19",
+        "textDollars": 0.0005,
+        "imageDollars": 0.514,
+        "otherDollars": 0.0,
+        "totalDollars": 0.5145
+      },
+      {
+        "date": "2026-07-20",
+        "label": "Jul 20",
         "textDollars": 0.0,
         "imageDollars": 0.0,
         "otherDollars": 0.0,
@@ -2146,6 +2151,6 @@
     "error": null,
     "subscriptionPrice": 7.99,
     "estimatedRevenue": 31.96,
-    "grossMargin": 21.57
+    "grossMargin": 21.06
   }
 }
