@@ -2,8 +2,8 @@
   "season": "Big Brother 28",
   "siteTitle": "BB28 Fantasy Draft",
   "tagline": "Meet the BB28 houseguests — draft night is next.",
-  "lastUpdated": "2026-07-18T05:58:49Z",
-  "status": "week-1-complete",
+  "lastUpdated": "2026-07-20T05:41:45Z",
+  "status": "week-2-in-progress",
   "liveRefreshSeconds": 60,
   "seasonCalendar": {
     "premiere": "2026-07-07",
@@ -302,7 +302,8 @@
       "photoUrl": "./assets/rick-devens.jpg",
       "bio": "Rick Devens is a Survivor: Edge of Extinction fan favorite joining the BB28 draft board as a crossover pick.",
       "sourceName": "Parade",
-      "sourceUrl": "https://parade.com/tv/rick-devens-survivor-50-interview"
+      "sourceUrl": "https://parade.com/tv/rick-devens-survivor-50-interview",
+      "notes": "Week 2 Head of Household."
     },
     {
       "id": "dee-valladares",
@@ -341,9 +342,57 @@
         "name": "Ashley Trail",
         "vote": "14-0"
       }
+    },
+    {
+      "week": 2,
+      "label": "Week 2",
+      "date": "2026-07-19",
+      "status": "In progress",
+      "hoh": {
+        "houseguestId": "rick-devens",
+        "winner": "Rick Devens"
+      },
+      "nominees": [
+        {
+          "houseguestId": "melody-morris",
+          "name": "Melody Morris"
+        },
+        {
+          "houseguestId": "lyric-medeiros",
+          "name": "Lyric Medeiros"
+        },
+        {
+          "houseguestId": "jason-de-puy",
+          "name": "Jason De Puy"
+        }
+      ],
+      "timeCapsule": {
+        "houseguestId": "angela-murray",
+        "name": "Angela Murray",
+        "outcome": "Hard Boiled Detective punishment"
+      },
+      "notes": "Rick Devens won Head of Household. Melody Morris, Lyric Medeiros, and Jason De Puy were nominated. Angela Murray received the first Time Capsule result and punishment."
     }
   ],
   "events": [
+    {
+      "date": "2026-07-19T21:00:00-07:00",
+      "type": "nomination",
+      "title": "Week 2 nominations are set",
+      "description": "Melody Morris, Lyric Medeiros, and Jason De Puy were nominated for eviction."
+    },
+    {
+      "date": "2026-07-19T20:45:00-07:00",
+      "type": "twist_result",
+      "title": "The first Time Capsule result is revealed",
+      "description": "Angela Murray received the Hard Boiled Detective punishment."
+    },
+    {
+      "date": "2026-07-19T20:30:00-07:00",
+      "type": "competition_result",
+      "title": "Rick Devens wins Week 2 HOH",
+      "description": "Rick Devens won the Week 2 Head of Household competition."
+    },
     {
       "date": "2026-07-16T21:00:00-07:00",
       "type": "eviction",
@@ -397,6 +446,11 @@
       "name": "TV Grapevine",
       "url": "https://www.tvgrapevine.com/big-brother-28-recap-for-7-16-2026/",
       "checkedAt": "2026-07-18T05:58:49Z"
+    },
+    {
+      "name": "Big Brother Network Episode 5 recap",
+      "url": "https://bigbrothernetwork.com/big-brother-28-episode-5-recap-a-new-hoh-and-a-house-ready-to-explode/",
+      "checkedAt": "2026-07-20T05:41:45Z"
     }
   ],
   "players": [
