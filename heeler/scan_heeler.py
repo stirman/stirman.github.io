@@ -266,9 +266,28 @@ def main():
         'scanErrors':errors,
     }
     DATA_PATH.write_text(json.dumps(payload, indent=2, ensure_ascii=False)+'\n')
-    old_ids=set(d.get('id') for d in old.get('dogs',[]))
-    new=[p for p in pets if p.get('id') not in old_ids]
-    STATE_PATH.write_text(json.dumps({'lastRunAt':now,'count':len(pets),'newIds':[p['id'] for p in new]}, indent=2)+'\n')
+    old_ids={d.get('id') for d in old.get('dogs',[]) if d.get('id')}
+    # Compare against a durable all-time ledger, not just the previous scan.
+    # Adopt-a-Pet sometimes omits a location's results for an hour; comparing
+    # only with `old_ids` would announce the same dogs every time they return.
+    seen_ids=set()
+    if STATE_PATH.exists():
+        try:
+            state=json.loads(STATE_PATH.read_text())
+            seen_ids={str(i) for i in state.get('seenIds',[]) if i}
+        except Exception:
+            seen_ids=set()
+    # Backward-compatible migration: every dog in the prior snapshot is old.
+    if not seen_ids:
+        seen_ids=old_ids
+    new=[p for p in pets if p.get('id') not in seen_ids]
+    seen_ids.update(p['id'] for p in pets if p.get('id'))
+    STATE_PATH.write_text(json.dumps({
+        'lastRunAt':now,
+        'count':len(pets),
+        'newIds':[p['id'] for p in new],
+        'seenIds':sorted(seen_ids),
+    }, indent=2)+'\n')
     print(f'Heeler scan complete: {len(pets)} dogs, {len(new)} new, {len(errors)} source errors')
     if new:
         print('New: ' + ', '.join(f"{p['name']} ({p.get('city','')})" for p in new[:8]))
