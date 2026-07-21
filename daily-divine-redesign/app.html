@@ -1,0 +1,650 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Daily Divine — Prototype</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body class="app-body">
+<main class="phone" id="phone">
+  <div class="sky" aria-hidden="true">
+    <div class="sun"></div>
+    <div class="ridge"></div>
+    <div class="ridge near"></div>
+    <span class="spark s1">✦</span>
+    <span class="spark s2">✧</span>
+    <span class="spark s3">✦</span>
+  </div>
+
+  <!-- ============ WELCOME ============ -->
+  <section class="screen" data-screen="welcome" aria-label="Welcome">
+    <div class="welcome-copy">
+      <div class="mark" aria-hidden="true">☼</div>
+      <h1>Daily Divine</h1>
+      <p>Notice the signs. Trust the timing.<br />A gentle journal for synchronicities, guidance, and the moments that feel meant for you.</p>
+    </div>
+    <div class="welcome-stack">
+      <a class="btn apple" href="?screen=daily"><span aria-hidden="true"></span> Sign in with Apple</a>
+      <button class="btn secondary" type="button" data-toast="We’ll email you a sign-in link ✦">Continue with email</button>
+      <p class="legal-note">By continuing you agree to our <a href="?screen=settings">Terms &amp; Privacy Policy</a>.</p>
+    </div>
+  </section>
+
+  <!-- ============ DAILY ============ -->
+  <section class="screen" data-screen="daily" aria-label="Today">
+    <header class="topbar">
+      <a class="avatar" href="?screen=settings" aria-label="Settings">☰</a>
+      <span class="brand">DAILY DIVINE</span>
+      <a class="avatar" href="?screen=profile" aria-label="Your profile">C</a>
+    </header>
+    <div class="hero">
+      <div class="date">YOUR DAY · MONDAY, JULY 21</div>
+      <h1>Good morning,<br />Cassie.</h1>
+      <p>You are exactly where you need to be.</p>
+    </div>
+    <section class="sheet">
+      <div class="handle" aria-hidden="true"></div>
+      <a class="card message-card" href="?screen=guidance" style="text-decoration:none;color:inherit">
+        <div class="seal" aria-hidden="true">☼</div>
+        <div>
+          <div class="eyebrow">Today’s message</div>
+          <h2>Trust what keeps returning to you.</h2>
+        </div>
+        <span class="chev" aria-hidden="true">›</span>
+      </a>
+
+      <div class="section-head">
+        <h2>What did you notice?</h2>
+      </div>
+      <p class="muted" style="margin:-4px 4px 10px">Capture a sign, feeling, dream, or meaningful moment.</p>
+      <a class="btn peach" href="?screen=add-sign">＋ Add a synchronicity</a>
+
+      <div class="section-head">
+        <h2>Your day so far</h2>
+        <a href="?screen=guidance">View pattern</a>
+      </div>
+      <div class="entry">
+        <div class="line"><div class="dot" aria-hidden="true">11:11</div></div>
+        <div>
+          <b>A moment of perfect timing</b>
+          <p>I looked at the clock just as I was thinking about taking the leap.</p>
+          <small>11:11 AM · Number</small>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="line"><div class="dot" aria-hidden="true">❧</div></div>
+        <div>
+          <b>A white feather</b>
+          <p>Found beside the path on my afternoon walk.</p>
+          <small>2:23 PM · Nature</small>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="line"><div class="dot" aria-hidden="true">♫</div></div>
+        <div>
+          <b>Our song, twice in one day</b>
+          <p>Once in the café, once in a stranger’s car at the light.</p>
+          <small>6:45 PM · Sound</small>
+        </div>
+      </div>
+
+      <a class="insight-band" href="?screen=guidance" style="display:block;text-decoration:none">
+        <b>✦ Today’s thread: Reassurance</b>
+        <p>Your signs are reflecting trust, timing, and gentle forward movement. Tap to read your full pattern.</p>
+      </a>
+
+      <div class="btn-row">
+        <a class="btn secondary" href="?screen=moon">☾ Moon phase</a>
+        <a class="btn secondary" href="?screen=intention">✦ Intention</a>
+      </div>
+    </section>
+  </section>
+
+  <!-- ============ ADD SIGN ============ -->
+  <section class="screen" data-screen="add-sign" aria-label="Add a synchronicity">
+    <header class="topbar">
+      <a class="back-link" href="?screen=daily">‹ Today</a>
+      <span class="brand">NEW SIGN</span>
+      <span class="spacer" aria-hidden="true"></span>
+    </header>
+    <section class="sheet" style="margin-top:16px">
+      <div class="handle" aria-hidden="true"></div>
+      <h2 class="sheet-title">What did you notice?</h2>
+      <p class="muted">There are no small signs. If it made you pause, it belongs here.</p>
+
+      <div class="field">
+        <label id="sign-type-label">Type of sign</label>
+        <div class="chips" role="group" aria-labelledby="sign-type-label">
+          <button class="chip" type="button" aria-pressed="true">11:11 · Numbers</button>
+          <button class="chip" type="button" aria-pressed="false">❧ Nature</button>
+          <button class="chip" type="button" aria-pressed="false">♫ Song</button>
+          <button class="chip" type="button" aria-pressed="false">☾ Dream</button>
+          <button class="chip" type="button" aria-pressed="false">🦋 Animal</button>
+          <button class="chip" type="button" aria-pressed="false">✦ Other</button>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="sign-note">Describe the moment</label>
+        <textarea id="sign-note" placeholder="I glanced at my phone right at 11:11, just as I was thinking about…"></textarea>
+      </div>
+
+      <div class="field">
+        <label for="sign-time">When it happened</label>
+        <input id="sign-time" type="time" value="11:11" />
+      </div>
+
+      <div class="field">
+        <label for="sign-feeling">How it felt</label>
+        <select id="sign-feeling">
+          <option>Reassured</option>
+          <option>Curious</option>
+          <option>Grateful</option>
+          <option>Emotional</option>
+          <option>Goosebumps</option>
+        </select>
+      </div>
+
+      <div class="btn-row">
+        <button class="btn" type="button" data-nav="daily" data-toast="Sign saved to your journal ✦">Save sign</button>
+      </div>
+      <p class="muted center mt">Your signs stay private and shape tomorrow’s guidance.</p>
+    </section>
+  </section>
+
+  <!-- ============ GUIDANCE ============ -->
+  <section class="screen" data-screen="guidance" aria-label="Daily guidance">
+    <header class="topbar">
+      <a class="back-link" href="?screen=daily">‹ Today</a>
+      <span class="brand">GUIDANCE</span>
+      <span class="spacer" aria-hidden="true"></span>
+    </header>
+    <div class="hero">
+      <div class="date">PATTERN READING · JULY 21</div>
+      <h1>Today’s thread:<br />Reassurance.</h1>
+    </div>
+    <section class="sheet">
+      <div class="handle" aria-hidden="true"></div>
+      <div class="card center">
+        <div class="eyebrow">Today’s divine message</div>
+        <p style="font: 400 22px/1.3 Georgia, serif; margin: 10px 0 12px">“Trust the unfolding. Everything is aligning for you.”</p>
+        <hr class="divider" />
+        <p class="muted">Notice what feels gently repeated today.</p>
+      </div>
+
+      <div class="section-head"><h2>Your pattern</h2></div>
+      <div class="card">
+        <p class="muted" style="margin:0"><b style="color:var(--ink)">3 signs · Theme: Alignment.</b> The 11:11 you keep meeting, the feather on your usual path, and a song surfacing twice all point the same direction: you already know the answer — the signs are agreeing with you. This is a week for saying yes slowly and out loud.</p>
+      </div>
+
+      <div class="section-head"><h2>A gentle practice</h2></div>
+      <div class="card">
+        <p class="muted" style="margin:0">Before bed, reread today’s three signs and write one sentence: <i>“What I think you were telling me is…”</i></p>
+      </div>
+
+      <div class="btn-row">
+        <a class="btn secondary" href="?screen=moon">☾ Moon context</a>
+        <a class="btn" href="?screen=intention">Set tomorrow’s intention</a>
+      </div>
+    </section>
+  </section>
+
+  <!-- ============ MOON ============ -->
+  <section class="screen" data-screen="moon" aria-label="Moon phase">
+    <header class="topbar">
+      <a class="back-link" href="?screen=daily">‹ Today</a>
+      <span class="brand">MOON</span>
+      <span class="spacer" aria-hidden="true"></span>
+    </header>
+    <div class="hero center">
+      <div class="date">LUNAR GUIDE · JULY 21</div>
+      <h1>First Quarter</h1>
+      <p>Waxing · 54% illuminated · Moon in Libra</p>
+    </div>
+    <section class="sheet">
+      <div class="handle" aria-hidden="true"></div>
+      <div class="moon-visual" role="img" aria-label="First quarter moon, half illuminated"></div>
+      <div class="stat-grid three mt">
+        <div class="stat"><span>Next full</span><strong>Jul 29</strong><small>Sturgeon Moon</small></div>
+        <div class="stat"><span>Next new</span><strong>Aug 12</strong><small>in Leo</small></div>
+        <div class="stat"><span>Energy</span><strong>Action</strong><small>momentum</small></div>
+      </div>
+      <div class="section-head"><h2>What this phase asks</h2></div>
+      <div class="card">
+        <p class="muted" style="margin:0">The first quarter is the push-through moon — the intention you set at the new moon meets its first resistance now. Your recent signs of reassurance are well timed: keep going, adjust, don’t abandon.</p>
+      </div>
+      <div class="section-head"><h2>Tonight’s ritual</h2></div>
+      <div class="card">
+        <p class="muted" style="margin:0">Light a candle, name one obstacle out loud, and one small step you’ll take past it tomorrow.</p>
+      </div>
+      <a class="btn mt" href="?screen=intention">Set an intention for this phase</a>
+    </section>
+  </section>
+
+  <!-- ============ INTENTION ============ -->
+  <section class="screen" data-screen="intention" aria-label="Daily intention">
+    <header class="topbar">
+      <a class="back-link" href="?screen=daily">‹ Today</a>
+      <span class="brand">INTENTION</span>
+      <span class="spacer" aria-hidden="true"></span>
+    </header>
+    <div class="hero">
+      <div class="date">DAILY INTENTION</div>
+      <h1>What are you<br />calling in?</h1>
+    </div>
+    <section class="sheet">
+      <div class="handle" aria-hidden="true"></div>
+      <div class="card">
+        <div class="eyebrow">Today you set</div>
+        <p style="font: italic 400 19px/1.4 Georgia, serif; margin: 8px 0 0">“I move at the pace of trust, not the pace of fear.”</p>
+      </div>
+      <div class="field">
+        <label for="intention-text">Tomorrow’s intention</label>
+        <textarea id="intention-text" placeholder="I am open to…"></textarea>
+      </div>
+      <div class="field">
+        <label id="intention-sugg-label">Or begin from a whisper</label>
+        <div class="chips" role="group" aria-labelledby="intention-sugg-label">
+          <button class="chip" type="button" aria-pressed="false">I welcome aligned timing</button>
+          <button class="chip" type="button" aria-pressed="false">I say yes slowly</button>
+          <button class="chip" type="button" aria-pressed="false">I release what circles</button>
+        </div>
+      </div>
+      <button class="btn mt" type="button" data-nav="daily" data-toast="Intention set for tomorrow ✦">Set intention</button>
+      <p class="muted center mt">Your intention gently colors tomorrow’s message and card pull.</p>
+    </section>
+  </section>
+
+  <!-- ============ DECK ============ -->
+  <section class="screen" data-screen="deck" aria-label="Oracle deck">
+    <header class="topbar">
+      <a class="avatar" href="?screen=settings" aria-label="Settings">☰</a>
+      <span class="brand">YOUR DECK</span>
+      <a class="avatar" href="?screen=profile" aria-label="Your profile">C</a>
+    </header>
+    <div class="hero">
+      <div class="date">ORACLE DECK · 6 CARDS</div>
+      <h1>Cards made<br />from your signs.</h1>
+      <p>Each card is drawn from patterns in your own journal.</p>
+    </div>
+    <section class="sheet">
+      <div class="handle" aria-hidden="true"></div>
+      <div class="deck-grid">
+        <a class="oracle-card" href="?screen=card-detail">
+          <span class="border-line" aria-hidden="true"></span>
+          <div class="art" aria-hidden="true">☼</div>
+          <h3>The Returning Sun</h3>
+          <p>TRUST · TIMING</p>
+        </a>
+        <a class="oracle-card dawn" href="?screen=card-detail">
+          <span class="border-line" aria-hidden="true"></span>
+          <div class="art" aria-hidden="true">❧</div>
+          <h3>The White Feather</h3>
+          <p>REASSURANCE</p>
+        </a>
+        <a class="oracle-card dusk" href="?screen=card-detail">
+          <span class="border-line" aria-hidden="true"></span>
+          <div class="art" aria-hidden="true">☾</div>
+          <h3>The Quiet Moon</h3>
+          <p>PATIENCE</p>
+        </a>
+        <a class="oracle-card ember" href="?screen=card-detail">
+          <span class="border-line" aria-hidden="true"></span>
+          <div class="art" aria-hidden="true">♫</div>
+          <h3>The Twice-Heard Song</h3>
+          <p>ATTENTION</p>
+        </a>
+        <a class="oracle-card" href="?screen=card-detail">
+          <span class="border-line" aria-hidden="true"></span>
+          <div class="art" aria-hidden="true">✦</div>
+          <h3>The Open Door</h3>
+          <p>COURAGE</p>
+        </a>
+        <a class="oracle-card dawn" href="?screen=card-detail">
+          <span class="border-line" aria-hidden="true"></span>
+          <div class="art" aria-hidden="true">⌛</div>
+          <h3>Eleven Eleven</h3>
+          <p>ALIGNMENT</p>
+        </a>
+      </div>
+      <button class="btn mt" type="button" data-toast="A new card is forming from this week’s signs…">✧ Draw a new card</button>
+      <p class="muted center mt">New cards appear as themes repeat in your journal.</p>
+    </section>
+  </section>
+
+  <!-- ============ CARD DETAIL ============ -->
+  <section class="screen" data-screen="card-detail" aria-label="Card detail">
+    <header class="topbar">
+      <a class="back-link" href="?screen=deck">‹ Deck</a>
+      <span class="brand">ORACLE CARD</span>
+      <span class="spacer" aria-hidden="true"></span>
+    </header>
+    <div style="padding-top: 12px">
+      <div class="card-hero">
+        <span class="border-line" aria-hidden="true"></span>
+        <div class="art" aria-hidden="true">☼</div>
+        <h2>The Returning Sun</h2>
+        <div class="eyebrow" style="color:#ffd9a8">Trust · Timing</div>
+        <p class="mantra" id="card-mantra">“What is meant for you circles back softly, as many times as you need.”</p>
+      </div>
+    </div>
+    <section class="sheet" style="margin-top:18px">
+      <div class="handle" aria-hidden="true"></div>
+      <div class="card">
+        <div class="eyebrow">Why you drew this</div>
+        <p class="muted" style="margin-top:8px">Born from your 11:11 sightings on July 14, 18, and 21 — each logged while you were weighing the same decision. When a sign repeats, it isn’t nagging; it’s agreeing.</p>
+      </div>
+      <div class="btn-row">
+        <button class="btn" type="button" id="card-keep" aria-pressed="true" data-toast-on="Added back to your deck ✦" data-toast-off="Removed from your deck">✓ In your deck</button>
+        <button class="btn secondary" type="button" id="card-regenerate">↻ New mantra</button>
+      </div>
+      <div class="btn-row">
+        <button class="btn secondary" type="button" data-toast="Card image copied — ready to share ✦">↗ Share card</button>
+      </div>
+    </section>
+  </section>
+
+  <!-- ============ PROFILE ============ -->
+  <section class="screen" data-screen="profile" aria-label="Profile">
+    <header class="topbar">
+      <a class="avatar" href="?screen=settings" aria-label="Settings">☰</a>
+      <span class="brand">PROFILE</span>
+      <span class="spacer" aria-hidden="true"></span>
+    </header>
+    <div class="hero center">
+      <div class="avatar" style="width:64px;height:64px;margin:0 auto;font:400 26px Georgia,serif;display:grid;place-items:center;border-radius:50%;background:#ffffff2b;border:1px solid #ffffff66">C</div>
+      <h1 style="font-size:26px">Cassie</h1>
+      <p>Noticing signs since March 2026 · Leo sun, Pisces moon</p>
+    </div>
+    <section class="sheet">
+      <div class="handle" aria-hidden="true"></div>
+      <div class="stat-grid three">
+        <div class="stat"><span>Signs</span><strong>142</strong><small>+3 today</small></div>
+        <div class="stat"><span>Streak</span><strong>18 days</strong><small>best: 31</small></div>
+        <div class="stat"><span>Cards</span><strong>6</strong><small>1 forming</small></div>
+      </div>
+
+      <div class="section-head"><h2>Your Daily Divine</h2></div>
+      <div class="list">
+        <a class="row" href="?screen=personalization"><span class="orb" aria-hidden="true">✦</span><span class="grow">Personalization<small>About you, birth details, astrology</small></span><span class="chev" aria-hidden="true">›</span></a>
+        <a class="row" href="?screen=prompt-settings"><span class="orb peachy" aria-hidden="true">☼</span><span class="grow">Daily reminder<small>8:00 AM · morning message</small></span><span class="chev" aria-hidden="true">›</span></a>
+        <a class="row" href="?screen=premium"><span class="orb plummy" aria-hidden="true">✧</span><span class="grow">Divine Plus<small>Free trial · manage subscription</small></span><span class="chev" aria-hidden="true">›</span></a>
+        <a class="row" href="?screen=settings"><span class="orb" aria-hidden="true">⚙</span><span class="grow">Settings<small>Appearance, account, legal</small></span><span class="chev" aria-hidden="true">›</span></a>
+      </div>
+
+      <div class="section-head"><h2>Studio</h2></div>
+      <div class="list">
+        <a class="row" href="?screen=admin"><span class="orb plummy" aria-hidden="true">▦</span><span class="grow">Admin dashboard<small>API costs &amp; usage</small></span><span class="chev" aria-hidden="true">›</span></a>
+        <a class="row" href="?screen=users"><span class="orb peachy" aria-hidden="true">♙</span><span class="grow">Users<small>Search, sort, premium access</small></span><span class="chev" aria-hidden="true">›</span></a>
+      </div>
+    </section>
+  </section>
+
+  <!-- ============ PERSONALIZATION ============ -->
+  <section class="screen" data-screen="personalization" aria-label="Personalization">
+    <header class="topbar">
+      <a class="back-link" href="?screen=profile">‹ Profile</a>
+      <span class="brand">PERSONALIZATION</span>
+      <span class="spacer" aria-hidden="true"></span>
+    </header>
+    <section class="sheet" style="margin-top:16px">
+      <div class="handle" aria-hidden="true"></div>
+      <h2 class="sheet-title">Make it yours</h2>
+      <p class="muted">The more Daily Divine knows, the more your guidance sounds like it was written for you — because it is.</p>
+
+      <div class="section-head"><h2>About you</h2></div>
+      <div class="field"><label for="pz-name">What should we call you?</label><input type="text" id="pz-name" value="Cassie" /></div>
+      <div class="field">
+        <label for="pz-focus">Right now, life is mostly about…</label>
+        <select id="pz-focus"><option>A big decision</option><option selected>A new chapter</option><option>Healing</option><option>Love &amp; relationships</option><option>Career &amp; purpose</option></select>
+      </div>
+
+      <div class="section-head"><h2>Birth details</h2></div>
+      <div class="field"><label for="pz-bdate">Birth date</label><input type="date" id="pz-bdate" value="1996-08-09" /></div>
+      <div class="field"><label for="pz-btime">Birth time (optional)</label><input type="time" id="pz-btime" value="07:42" /></div>
+      <div class="field"><label for="pz-bplace">Birth place</label><input type="text" id="pz-bplace" value="Austin, Texas" /></div>
+
+      <div class="section-head"><h2>Personality</h2></div>
+      <div class="field">
+        <label id="pz-tone-label">Guidance tone</label>
+        <div class="segmented" role="group" aria-labelledby="pz-tone-label">
+          <button type="button" aria-pressed="false">Gentle</button>
+          <button type="button" aria-pressed="true">Warm</button>
+          <button type="button" aria-pressed="false">Direct</button>
+        </div>
+      </div>
+
+      <div class="section-head"><h2>Moon &amp; astrology</h2></div>
+      <div class="list">
+        <div class="switch-row"><span class="grow"><b>Moon phases in guidance</b><small>Weave the lunar cycle into your messages</small></span><button class="switch" type="button" role="switch" aria-checked="true" aria-label="Moon phases in guidance"></button></div>
+        <div class="switch-row"><span class="grow"><b>Astrology transits</b><small>Reference your chart when it matters</small></span><button class="switch" type="button" role="switch" aria-checked="true" aria-label="Astrology transits"></button></div>
+        <div class="switch-row"><span class="grow"><b>Numerology</b><small>Interpret repeating numbers like 11:11</small></span><button class="switch" type="button" role="switch" aria-checked="false" aria-label="Numerology"></button></div>
+      </div>
+
+      <button class="btn mt" type="button" data-nav="profile" data-toast="Personalization saved ✦">Save changes</button>
+    </section>
+  </section>
+
+  <!-- ============ PROMPT SETTINGS ============ -->
+  <section class="screen" data-screen="prompt-settings" aria-label="Daily reminder">
+    <header class="topbar">
+      <a class="back-link" href="?screen=profile">‹ Profile</a>
+      <span class="brand">DAILY REMINDER</span>
+      <span class="spacer" aria-hidden="true"></span>
+    </header>
+    <section class="sheet" style="margin-top:16px">
+      <div class="handle" aria-hidden="true"></div>
+      <h2 class="sheet-title">Your morning message</h2>
+      <p class="muted">One quiet notification a day — your message, your moon, and a nudge to notice.</p>
+
+      <div class="field"><label for="pr-time">Deliver at</label><input type="time" id="pr-time" value="08:00" /></div>
+
+      <div class="section-head"><h2>Notifications</h2></div>
+      <div class="list">
+        <div class="switch-row"><span class="grow"><b>Morning message</b><small>Your daily divine message at 8:00 AM</small></span><button class="switch" type="button" role="switch" aria-checked="true" aria-label="Morning message"></button></div>
+        <div class="switch-row"><span class="grow"><b>Evening reflection</b><small>A gentle prompt to log the day’s signs</small></span><button class="switch" type="button" role="switch" aria-checked="true" aria-label="Evening reflection"></button></div>
+        <div class="switch-row"><span class="grow"><b>New card ready</b><small>When a pattern becomes an oracle card</small></span><button class="switch" type="button" role="switch" aria-checked="true" aria-label="New card ready"></button></div>
+        <div class="switch-row"><span class="grow"><b>Full &amp; new moons</b><small>Ritual reminders on lunar turning points</small></span><button class="switch" type="button" role="switch" aria-checked="false" aria-label="Full and new moons"></button></div>
+      </div>
+
+      <button class="btn mt" type="button" data-nav="profile" data-toast="Reminder set for 8:00 AM ✦">Save reminder</button>
+    </section>
+  </section>
+
+  <!-- ============ PREMIUM ============ -->
+  <section class="screen" data-screen="premium" aria-label="Divine Plus subscription">
+    <header class="topbar">
+      <a class="back-link" href="?screen=profile">‹ Profile</a>
+      <span class="brand">DIVINE PLUS</span>
+      <span class="spacer" aria-hidden="true"></span>
+    </header>
+    <div class="hero center">
+      <div class="date">✧ PREMIUM</div>
+      <h1>Go deeper with<br />Divine Plus.</h1>
+    </div>
+    <section class="sheet">
+      <div class="handle" aria-hidden="true"></div>
+      <button class="plan" type="button" aria-pressed="true">
+        <span class="badge">SAVE 40%</span>
+        <span class="grow"><b>Yearly</b><small>7-day free trial · then $39.99/yr</small></span>
+        <span class="price">$3.33<small style="font:11px var(--sans);color:var(--ink-soft)">/mo</small></span>
+      </button>
+      <button class="plan" type="button" aria-pressed="false">
+        <span class="grow"><b>Monthly</b><small>7-day free trial · cancel anytime</small></span>
+        <span class="price">$5.99<small style="font:11px var(--sans);color:var(--ink-soft)">/mo</small></span>
+      </button>
+
+      <ul class="feature-list">
+        <li>Unlimited synchronicity captures &amp; photo signs</li>
+        <li>Full pattern readings across weeks and moons</li>
+        <li>Unlimited oracle cards with custom art &amp; mantras</li>
+        <li>Birth-chart personalization &amp; transit guidance</li>
+        <li>Export &amp; share your journal beautifully</li>
+      </ul>
+
+      <button class="btn peach mt" type="button" data-toast="Free trial started — welcome to Divine Plus ✧">Start 7-day free trial</button>
+      <button class="btn secondary mt" type="button" data-toast="Purchases restored">Restore purchases</button>
+      <p class="muted center mt">Billed through the App Store. Cancel anytime in Settings.</p>
+    </section>
+  </section>
+
+  <!-- ============ SETTINGS ============ -->
+  <section class="screen" data-screen="settings" aria-label="Settings">
+    <header class="topbar">
+      <a class="back-link" href="?screen=profile">‹ Profile</a>
+      <span class="brand">SETTINGS</span>
+      <span class="spacer" aria-hidden="true"></span>
+    </header>
+    <section class="sheet" style="margin-top:16px">
+      <div class="handle" aria-hidden="true"></div>
+      <div class="section-head" style="margin-top:4px"><h2>Appearance</h2></div>
+      <div class="field">
+        <label id="st-theme-label">Theme</label>
+        <div class="segmented" role="group" aria-labelledby="st-theme-label">
+          <button type="button" aria-pressed="false">Light</button>
+          <button type="button" aria-pressed="false">Dark</button>
+          <button type="button" aria-pressed="true">Sunset (auto)</button>
+        </div>
+      </div>
+      <div class="list mt">
+        <div class="switch-row"><span class="grow"><b>App icon glow</b><small>Amber glow on the home screen icon</small></span><button class="switch" type="button" role="switch" aria-checked="true" aria-label="App icon glow"></button></div>
+        <div class="switch-row"><span class="grow"><b>Haptics</b><small>A soft pulse when you log a sign</small></span><button class="switch" type="button" role="switch" aria-checked="true" aria-label="Haptics"></button></div>
+      </div>
+
+      <div class="section-head"><h2>Account</h2></div>
+      <div class="list">
+        <div class="row"><span class="orb" aria-hidden="true"></span><span class="grow">Signed in with Apple<small>c•••••e@privaterelay.appleid.com</small></span></div>
+        <a class="row" href="?screen=premium"><span class="orb plummy" aria-hidden="true">✧</span><span class="grow">Manage subscription<small>Divine Plus · trial</small></span><span class="chev" aria-hidden="true">›</span></a>
+      </div>
+
+      <div class="section-head"><h2>Legal</h2></div>
+      <div class="list">
+        <button class="row" type="button" data-toast="Opening Terms of Service…"><span class="orb" aria-hidden="true">§</span><span class="grow">Terms of Service</span><span class="chev" aria-hidden="true">›</span></button>
+        <button class="row" type="button" data-toast="Opening Privacy Policy…"><span class="orb" aria-hidden="true">✲</span><span class="grow">Privacy Policy</span><span class="chev" aria-hidden="true">›</span></button>
+      </div>
+
+      <div class="btn-row">
+        <button class="btn secondary" type="button" data-nav="welcome" data-toast="Signed out. See you soon ✦">Log out</button>
+      </div>
+      <div class="btn-row">
+        <button class="btn danger" type="button" id="delete-account">Delete account</button>
+      </div>
+      <p class="muted center mt">Daily Divine 2.0 (214) · Made with wonder</p>
+    </section>
+  </section>
+
+  <!-- ============ ADMIN ============ -->
+  <section class="screen" data-screen="admin" aria-label="Admin dashboard">
+    <header class="topbar">
+      <a class="back-link" href="?screen=profile">‹ Profile</a>
+      <span class="brand">DIVINE STATS</span>
+      <a class="avatar" href="?screen=users" aria-label="Users">♙</a>
+    </header>
+    <div class="hero">
+      <div class="date">ADMIN · API COSTS · LAST 30 DAYS</div>
+      <h1 style="font-size:26px">$412.86 spent,<br />$0.14 per active user.</h1>
+    </div>
+    <section class="sheet">
+      <div class="handle" aria-hidden="true"></div>
+      <div class="stat-grid">
+        <div class="stat"><span>API cost (30d)</span><strong>$412.86</strong><small>▼ 8% vs prior 30d</small></div>
+        <div class="stat"><span>Cost / active user</span><strong>$0.14</strong><small>2,941 active</small></div>
+        <div class="stat"><span>Requests (30d)</span><strong>188.4k</strong><small>6.3k/day avg</small></div>
+        <div class="stat"><span>MRR vs cost</span><strong>7.9×</strong><small>$3,264 MRR</small></div>
+      </div>
+
+      <div class="section-head"><h2>Cost by feature</h2></div>
+      <div class="card">
+        <div class="bars">
+          <div class="bar-row"><span>Daily messages</span><span class="track"><span class="fill" style="width:88%"></span></span><span class="amt">$168.20</span></div>
+          <div class="bar-row"><span>Pattern readings</span><span class="track"><span class="fill" style="width:62%"></span></span><span class="amt">$117.44</span></div>
+          <div class="bar-row"><span>Card art</span><span class="track"><span class="fill" style="width:41%"></span></span><span class="amt">$78.12</span></div>
+          <div class="bar-row"><span>Mantras</span><span class="track"><span class="fill" style="width:18%"></span></span><span class="amt">$33.60</span></div>
+          <div class="bar-row"><span>Moon &amp; astro</span><span class="track"><span class="fill" style="width:8%"></span></span><span class="amt">$15.50</span></div>
+        </div>
+      </div>
+
+      <div class="section-head"><h2>By model</h2></div>
+      <div class="list">
+        <div class="row"><span class="orb plummy" aria-hidden="true">✦</span><span class="grow">claude-sonnet-4-6<small>142.1k requests · guidance &amp; patterns</small></span><span class="meta">$286.11</span></div>
+        <div class="row"><span class="orb peachy" aria-hidden="true">☼</span><span class="grow">claude-haiku-4-5<small>39.8k requests · mantras &amp; titles</small></span><span class="meta">$48.63</span></div>
+        <div class="row"><span class="orb" aria-hidden="true">✧</span><span class="grow">image generation<small>6.5k renders · oracle card art</small></span><span class="meta">$78.12</span></div>
+      </div>
+
+      <div class="btn-row">
+        <a class="btn secondary" href="?screen=users">Manage users</a>
+        <button class="btn" type="button" data-toast="Metrics refreshed just now ↻">↻ Refresh metrics</button>
+      </div>
+    </section>
+  </section>
+
+  <!-- ============ USERS ============ -->
+  <section class="screen" data-screen="users" aria-label="User management">
+    <header class="topbar">
+      <a class="back-link" href="?screen=admin">‹ Admin</a>
+      <span class="brand">USERS</span>
+      <span class="spacer" aria-hidden="true"></span>
+    </header>
+    <section class="sheet" style="margin-top:16px">
+      <div class="handle" aria-hidden="true"></div>
+      <h2 class="sheet-title">3,208 users</h2>
+      <p class="muted">Search, sort, and grant premium access.</p>
+
+      <div class="field">
+        <label for="user-search" class="visually-hidden">Search users</label>
+        <input type="search" id="user-search" placeholder="Search by name or email…" />
+      </div>
+      <div class="field">
+        <label for="user-sort">Sort by</label>
+        <select id="user-sort">
+          <option value="recent" selected>Most recently active</option>
+          <option value="signs">Most signs logged</option>
+          <option value="name">Name A–Z</option>
+        </select>
+      </div>
+
+      <div class="list mt" id="user-list">
+        <div class="switch-row" data-name="Maya Torres" data-signs="212" data-recency="1">
+          <span class="grow"><b>Maya Torres</b><small>maya.t@icloud.com · 212 signs · active 2h ago</small></span>
+          <button class="switch" type="button" role="switch" aria-checked="true" aria-label="Premium for Maya Torres" data-user="Maya Torres"></button>
+        </div>
+        <div class="switch-row" data-name="Cassie Bell" data-signs="142" data-recency="2">
+          <span class="grow"><b>Cassie Bell</b><small>cassie@stirman.net · 142 signs · active 5h ago</small></span>
+          <button class="switch" type="button" role="switch" aria-checked="true" aria-label="Premium for Cassie Bell" data-user="Cassie Bell"></button>
+        </div>
+        <div class="switch-row" data-name="Jordan Lee" data-signs="89" data-recency="3">
+          <span class="grow"><b>Jordan Lee</b><small>jordan.lee@gmail.com · 89 signs · active 1d ago</small></span>
+          <button class="switch" type="button" role="switch" aria-checked="false" aria-label="Premium for Jordan Lee" data-user="Jordan Lee"></button>
+        </div>
+        <div class="switch-row" data-name="Priya Nair" data-signs="167" data-recency="4">
+          <span class="grow"><b>Priya Nair</b><small>priya.n@outlook.com · 167 signs · active 2d ago</small></span>
+          <button class="switch" type="button" role="switch" aria-checked="true" aria-label="Premium for Priya Nair" data-user="Priya Nair"></button>
+        </div>
+        <div class="switch-row" data-name="Sam Whitfield" data-signs="34" data-recency="5">
+          <span class="grow"><b>Sam Whitfield</b><small>samw@hey.com · 34 signs · active 4d ago</small></span>
+          <button class="switch" type="button" role="switch" aria-checked="false" aria-label="Premium for Sam Whitfield" data-user="Sam Whitfield"></button>
+        </div>
+        <div class="switch-row" data-name="Elena Ruiz" data-signs="121" data-recency="6">
+          <span class="grow"><b>Elena Ruiz</b><small>elena.ruiz@me.com · 121 signs · active 6d ago</small></span>
+          <button class="switch" type="button" role="switch" aria-checked="false" aria-label="Premium for Elena Ruiz" data-user="Elena Ruiz"></button>
+        </div>
+      </div>
+      <p class="muted center mt" id="user-count-note">Showing 6 of 3,208 users</p>
+    </section>
+  </section>
+
+  <!-- ============ TAB BAR ============ -->
+  <nav class="tabbar" aria-label="Main navigation">
+    <a href="?screen=daily" data-tab="daily"><i aria-hidden="true">☼</i>Daily</a>
+    <a href="?screen=deck" data-tab="deck"><i aria-hidden="true">✧</i>Deck</a>
+    <a class="add" href="?screen=add-sign" aria-label="Add a synchronicity">＋</a>
+    <a href="?screen=moon" data-tab="moon"><i aria-hidden="true">☾</i>Moon</a>
+    <a href="?screen=profile" data-tab="profile"><i aria-hidden="true">♙</i>Profile</a>
+  </nav>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
