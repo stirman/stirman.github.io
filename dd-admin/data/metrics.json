@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-07-22T13:00:43Z",
-  "generatedAtHuman": "Jul 22, 2026 at 06:00 AM PDT",
+  "generatedAt": "2026-07-22T16:01:12Z",
+  "generatedAtHuman": "Jul 22, 2026 at 09:01 AM PDT",
   "source": "scheduled-cache",
   "refreshCadenceMinutes": 180,
   "overview": {
-    "totalUsers": 62,
-    "launchUsers": 58,
-    "active7": 6,
-    "active30": 10,
+    "totalUsers": 63,
+    "launchUsers": 59,
+    "active7": 7,
+    "active30": 11,
     "premium": 15,
     "paidSubscribers": 4,
     "grantedPremium": 11,
     "retainedUsers": 16,
-    "insights30": 44,
-    "entries30": 112,
-    "cardImages30": 25
+    "insights30": 45,
+    "entries30": 115,
+    "cardImages30": 26
   },
   "users": [
     {
@@ -694,6 +694,19 @@
       "retained": false
     },
     {
+      "id": "55sElihD2sdX0beWxuw6mUg0L9I3",
+      "displayName": "Shanna Pouyamehr",
+      "email": "shannamp2000@yahoo.com",
+      "createdAt": "2026-07-22T13:59:44Z",
+      "lastLoginAt": "2026-07-22T14:08:01Z",
+      "lastActiveAt": "2026-07-22T14:08:01Z",
+      "isPaidSubscriber": false,
+      "grantedPremium": false,
+      "insights30": 1,
+      "cardImages30": 1,
+      "retained": false
+    },
+    {
       "id": "qeNxsyNqUohq8lzuGVNmWvZkZn43",
       "displayName": "Sheri Sentelle",
       "email": "sheri.sentelle@icloud.com",
@@ -835,11 +848,11 @@
     },
     {
       "title": "Depth signal",
-      "body": "Users averaged about 2.5 inputs per generated insight in the last 30 days."
+      "body": "Users averaged about 2.6 inputs per generated insight in the last 30 days."
     },
     {
       "title": "Retention pulse",
-      "body": "26% of users have returned across multiple weeks."
+      "body": "25% of users have returned across multiple weeks."
     },
     {
       "title": "Most engaged recently",
@@ -1000,7 +1013,7 @@
       {
         "date": "2026-07-22",
         "label": "Jul 22",
-        "count": 0
+        "count": 1
       }
     ],
     "dailyCardImages": [
@@ -1152,7 +1165,7 @@
       {
         "date": "2026-07-22",
         "label": "Jul 22",
-        "count": 0
+        "count": 1
       }
     ],
     "totalUsers": [
@@ -1614,7 +1627,7 @@
       {
         "date": "2026-07-22",
         "label": "Jul 22",
-        "count": 60
+        "count": 61
       }
     ],
     "dailyCosts": [
