@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-07-23T10:01:15Z",
-  "generatedAtHuman": "Jul 23, 2026 at 03:01 AM PDT",
+  "generatedAt": "2026-07-23T19:01:12Z",
+  "generatedAtHuman": "Jul 23, 2026 at 12:01 PM PDT",
   "source": "scheduled-cache",
   "refreshCadenceMinutes": 180,
   "overview": {
     "totalUsers": 63,
     "launchUsers": 59,
-    "active7": 8,
+    "active7": 9,
     "active30": 12,
     "premium": 15,
     "paidSubscribers": 4,
     "grantedPremium": 11,
     "retainedUsers": 16,
-    "insights30": 43,
-    "entries30": 115,
-    "cardImages30": 26
+    "insights30": 45,
+    "entries30": 122,
+    "cardImages30": 27
   },
   "users": [
     {
@@ -412,11 +412,11 @@
       "displayName": "Jane Russell",
       "email": "groovystarr@hotmail.co.uk",
       "createdAt": "2026-06-07T10:11:54Z",
-      "lastLoginAt": "2026-07-15T17:31:44Z",
-      "lastActiveAt": "2026-07-15T17:31:44Z",
+      "lastLoginAt": "2026-07-23T10:41:02Z",
+      "lastActiveAt": "2026-07-23T10:41:02Z",
       "isPaidSubscriber": false,
       "grantedPremium": false,
-      "insights30": 2,
+      "insights30": 3,
       "cardImages30": 0,
       "retained": true
     },
@@ -698,12 +698,12 @@
       "displayName": "Shanna Pouyamehr",
       "email": "shannamp2000@yahoo.com",
       "createdAt": "2026-07-22T13:59:44Z",
-      "lastLoginAt": "2026-07-23T00:57:58Z",
-      "lastActiveAt": "2026-07-23T00:57:58Z",
+      "lastLoginAt": "2026-07-23T13:57:30Z",
+      "lastActiveAt": "2026-07-23T13:57:30Z",
       "isPaidSubscriber": false,
       "grantedPremium": false,
-      "insights30": 1,
-      "cardImages30": 1,
+      "insights30": 2,
+      "cardImages30": 2,
       "retained": false
     },
     {
@@ -1008,12 +1008,12 @@
       {
         "date": "2026-07-22",
         "label": "Jul 22",
-        "count": 2
+        "count": 3
       },
       {
         "date": "2026-07-23",
         "label": "Jul 23",
-        "count": 0
+        "count": 1
       }
     ],
     "dailyCardImages": [
@@ -1165,7 +1165,7 @@
       {
         "date": "2026-07-23",
         "label": "Jul 23",
-        "count": 0
+        "count": 1
       }
     ],
     "totalUsers": [
