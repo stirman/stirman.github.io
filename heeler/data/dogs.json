@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-23T20:00:57+00:00",
+  "updatedAt": "2026-07-23T22:00:11+00:00",
   "location": "San Francisco Bay Area + couple-hour drive",
   "breedTerms": [
     "Australian Cattle Dog",
@@ -7,7 +7,7 @@
     "Red Heeler",
     "Cattle Dog"
   ],
-  "count": 57,
+  "count": 56,
   "dogs": [
     {
       "id": "shelterluv-MILO-A-10109",
@@ -677,29 +677,6 @@
       "imageRemote": "https://pet-uploads.adoptapet.com/9/f/a/1320226678.jpg",
       "image": "./assets/dogs/adoptapet-48662366.jpg",
       "foundAt": "2026-07-14T17:00:45-07:00"
-    },
-    {
-      "id": "adoptapet-48757594",
-      "name": "FLIP FLOPS",
-      "breed": "Australian Cattle Dog",
-      "sex": "Female",
-      "age": "1 yr",
-      "color": "Merle",
-      "size": "Med. 26-60 lbs (12-27 kg)",
-      "description": "",
-      "city": "Sacramento",
-      "state": "CA",
-      "postalCode": "95818",
-      "distanceMiles": 88,
-      "sourceDistanceMiles": 1.3,
-      "shelterName": "Front Street Animal Shelter - City of Sacramento",
-      "contactPhone": "916-808-3786",
-      "contactEmail": "",
-      "url": "https://www.adoptapet.com/pet/48757594-sacramento-california-australian-cattle-dog",
-      "source": "Adopt-a-Pet · Sacramento 50mi",
-      "imageRemote": "https://pet-uploads.adoptapet.com/0/1/7/1322290844.jpg",
-      "image": "./assets/dogs/adoptapet-48757594.jpg",
-      "foundAt": "2026-07-22T19:00:40+00:00"
     },
     {
       "id": "adoptapet-43764717",
