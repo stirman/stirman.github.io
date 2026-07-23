@@ -2,7 +2,7 @@
   "season": "Big Brother 28",
   "siteTitle": "BB28 Fantasy Draft",
   "tagline": "Meet the BB28 houseguests — draft night is next.",
-  "lastUpdated": "2026-07-20T05:41:45Z",
+  "lastUpdated": "2026-07-23T08:48:17Z",
   "status": "week-2-in-progress",
   "liveRefreshSeconds": 60,
   "seasonCalendar": {
@@ -211,7 +211,8 @@
       "photoUrl": "https://bigbrothernetwork.com/wp-content/uploads/2026/07/bb28-cast-lyric-00.jpg",
       "bio": "Lyric Medeiros is a 25-year-old attorney from Honolulu, HI.",
       "sourceName": "Big Brother Network",
-      "sourceUrl": "https://bigbrothernetwork.com/big-brother-28-cast/"
+      "sourceUrl": "https://bigbrothernetwork.com/big-brother-28-cast/",
+      "notes": "Saved from the block when Rick Devens used the Week 2 Power of Veto on her."
     },
     {
       "id": "mallory-aurichio",
@@ -250,7 +251,8 @@
       "photoUrl": "https://bigbrothernetwork.com/wp-content/uploads/2026/07/bb28-cast-rome-00.jpg",
       "bio": "Rome Seymour is a 28-year-old pickleball Coach from Delray Beach, FL.",
       "sourceName": "Big Brother Network",
-      "sourceUrl": "https://bigbrothernetwork.com/big-brother-28-cast/"
+      "sourceUrl": "https://bigbrothernetwork.com/big-brother-28-cast/",
+      "notes": "Week 2 replacement nominee after the Power of Veto ceremony."
     },
     {
       "id": "taylor-brown",
@@ -303,7 +305,7 @@
       "bio": "Rick Devens is a Survivor: Edge of Extinction fan favorite joining the BB28 draft board as a crossover pick.",
       "sourceName": "Parade",
       "sourceUrl": "https://parade.com/tv/rick-devens-survivor-50-interview",
-      "notes": "Week 2 Head of Household."
+      "notes": "Week 2 Head of Household and Power of Veto winner."
     },
     {
       "id": "dee-valladares",
@@ -358,12 +360,12 @@
           "name": "Melody Morris"
         },
         {
-          "houseguestId": "lyric-medeiros",
-          "name": "Lyric Medeiros"
-        },
-        {
           "houseguestId": "jason-de-puy",
           "name": "Jason De Puy"
+        },
+        {
+          "houseguestId": "rome-seymour",
+          "name": "Rome Seymour"
         }
       ],
       "timeCapsule": {
@@ -371,10 +373,28 @@
         "name": "Angela Murray",
         "outcome": "Hard Boiled Detective punishment"
       },
-      "notes": "Rick Devens won Head of Household. Melody Morris, Lyric Medeiros, and Jason De Puy were nominated. Angela Murray received the first Time Capsule result and punishment."
+      "notes": "Rick Devens won the Power of Veto and used it on Lyric Medeiros. Rome Seymour became the replacement nominee; Rome, Jason De Puy, and Melody Morris face Thursday’s BB Blockbuster and eviction.",
+      "veto": {
+        "houseguestId": "rick-devens",
+        "winner": "Rick Devens"
+      },
+      "vetoUsedOn": {
+        "houseguestId": "lyric-medeiros",
+        "name": "Lyric Medeiros"
+      },
+      "replacementNominee": {
+        "houseguestId": "rome-seymour",
+        "name": "Rome Seymour"
+      }
     }
   ],
   "events": [
+    {
+      "date": "2026-07-22T21:00:00-07:00",
+      "type": "competition_result",
+      "title": "Rick wins and uses the Week 2 Veto",
+      "description": "Rick Devens won the Power of Veto, saved Lyric Medeiros, and named Rome Seymour as the replacement nominee."
+    },
     {
       "date": "2026-07-19T21:00:00-07:00",
       "type": "nomination",
@@ -451,6 +471,11 @@
       "name": "Big Brother Network Episode 5 recap",
       "url": "https://bigbrothernetwork.com/big-brother-28-episode-5-recap-a-new-hoh-and-a-house-ready-to-explode/",
       "checkedAt": "2026-07-20T05:41:45Z"
+    },
+    {
+      "name": "Big Brother Network Episode 6 recap",
+      "url": "https://bigbrothernetwork.com/big-brother-28-episode-6-recap-fights-tears-and-a-questionable-veto-decision/",
+      "checkedAt": "2026-07-23T08:48:17Z"
     }
   ],
   "players": [
