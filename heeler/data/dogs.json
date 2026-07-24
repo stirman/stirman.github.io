@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-23T23:00:21+00:00",
+  "updatedAt": "2026-07-24T00:00:31+00:00",
   "location": "San Francisco Bay Area + couple-hour drive",
   "breedTerms": [
     "Australian Cattle Dog",
@@ -7,7 +7,7 @@
     "Red Heeler",
     "Cattle Dog"
   ],
-  "count": 56,
+  "count": 58,
   "dogs": [
     {
       "id": "shelterluv-MILO-A-10109",
@@ -495,6 +495,29 @@
       "foundAt": "2026-07-18T20:00:19-07:00"
     },
     {
+      "id": "adoptapet-48774047",
+      "name": "BRIOCHE",
+      "breed": "Australian Cattle Dog",
+      "sex": "Male",
+      "age": "1 yr",
+      "color": "Tan/Yellow/Fawn - with White",
+      "size": "Large 61-100 lbs (28-45 kg)",
+      "description": "",
+      "city": "San Jose",
+      "state": "CA",
+      "postalCode": "95111",
+      "distanceMiles": 49,
+      "sourceDistanceMiles": 8.1,
+      "shelterName": "San Jose Animal Care Center",
+      "contactPhone": "408-794-7297",
+      "contactEmail": "",
+      "url": "https://www.adoptapet.com/pet/48774047-san-jose-california-australian-cattle-dog-mix",
+      "source": "Adopt-a-Pet · San Jose 50mi",
+      "imageRemote": "https://pet-uploads.adoptapet.com/2/b/4/1322678181.jpg",
+      "image": "./assets/dogs/adoptapet-48774047.jpg",
+      "foundAt": "2026-07-24T00:00:31+00:00"
+    },
+    {
       "id": "adoptapet-48738754",
       "name": "CHROMIE",
       "breed": "Australian Cattle Dog",
@@ -522,7 +545,7 @@
       "name": "Gordon",
       "breed": "Labrador Retriever / Cattle Dog",
       "sex": "Male",
-      "age": "3 yrs 4 mos",
+      "age": "3 yrs 5 mos",
       "color": "White",
       "size": "Large 61-100 lbs (28-45 kg)",
       "description": "Meet Gordon! Gordy came to us during one of the hardest moments of his life. His family, facing heartbreaking circumstances, was told he would be euthanized if surrendered to a local shelter. Desperate to save him, they reached out to rescues — and we said yes. And we are so glad we did. Gordy is young, happy, and full of love. He didn’t deserve to suffer — and despite everything, his gentle heart is still wide open. He’s a sweet, slightly shy boy who has lived peacefully with three small dogs and truly enjoys the company of other pups (he has a soft spot for Chihuahuas!). He’s crate trained, potty trained, and wonderfully well-mannered — the kind of dog who quietly fits into your routine and your heart. Right now, Gordy needs a little extra care. He’s battling severe allergies, a skin infection, and a serious ear infection — one of the toughest we’ve seen. We’re doing everything we can:",
@@ -723,6 +746,29 @@
       "imageRemote": "https://pet-uploads.adoptapet.com/5/1/6/1319712573.jpg",
       "image": "./assets/dogs/adoptapet-48654924.jpg",
       "foundAt": "2026-07-14T10:41:57-07:00"
+    },
+    {
+      "id": "adoptapet-48774045",
+      "name": "Manicotti Scottie",
+      "breed": "Australian Cattle Dog",
+      "sex": "Male",
+      "age": "2 mos",
+      "color": "Brindle - with White",
+      "size": "Small 25 lbs (11 kg) or less",
+      "description": "Manicotti Scottie is a 2 month old, __ pound (and GROWING) Cattle Dog mix looking for their forever home! Please keep in mind, puppies require consistent training, socialization and desensitization to become well rounded family members and good K9 citizens. I have no known history with other dogs, I may do well with proper introductions. I have no known history with cats, I may do well with proper introductions and management. I have no known history with children, I may do well with proper supervision and management.",
+      "city": "Sacramento",
+      "state": "CA",
+      "postalCode": "95828",
+      "distanceMiles": 88,
+      "sourceDistanceMiles": 8.7,
+      "shelterName": "Sacramento SPCA",
+      "contactPhone": "916-383-7387-9154",
+      "contactEmail": "",
+      "url": "https://www.adoptapet.com/pet/48774045-sacramento-california-australian-cattle-dog-mix",
+      "source": "Adopt-a-Pet · Sacramento 50mi",
+      "imageRemote": "https://pet-uploads.adoptapet.com/1/5/9/1322677992.jpg",
+      "image": "./assets/dogs/adoptapet-48774045.jpg",
+      "foundAt": "2026-07-24T00:00:31+00:00"
     },
     {
       "id": "adoptapet-48581949",
