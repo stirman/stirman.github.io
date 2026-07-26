@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-26T19:00:49+00:00",
+  "updatedAt": "2026-07-26T22:00:16+00:00",
   "location": "San Francisco Bay Area + couple-hour drive",
   "breedTerms": [
     "Australian Cattle Dog",
@@ -7,7 +7,7 @@
     "Red Heeler",
     "Cattle Dog"
   ],
-  "count": 60,
+  "count": 59,
   "dogs": [
     {
       "id": "shelterluv-MILO-A-10109",
@@ -406,28 +406,6 @@
       "foundAt": "2026-07-14T10:52:24-07:00"
     },
     {
-      "id": "shelterluv-MILO-A-11535",
-      "name": "UNCLE ALBERT (blue)",
-      "breed": "Great Dane / Cattle Dog",
-      "sex": "Male",
-      "age": "3 mos",
-      "color": "White",
-      "size": "Large (60-99)",
-      "description": "",
-      "city": "Foster Home",
-      "state": "CA",
-      "postalCode": "94801",
-      "distanceMiles": 18,
-      "shelterName": "Milo Foundation",
-      "contactPhone": "",
-      "contactEmail": "",
-      "url": "https://www.shelterluv.com/embed/animal/MILO-A-11535",
-      "source": "Milo Foundation · Shelterluv",
-      "imageRemote": "https://new-s3.shelterluv.com/profile-pictures/36531bdd83fa861d3faa0c172f6e5d39/855015112acd95dc6e01d7c034d557bb.jpg",
-      "image": "./assets/dogs/shelterluv-MILO-A-11535.jpg",
-      "foundAt": "2026-07-14T10:52:24-07:00"
-    },
-    {
       "id": "shelterluv-MILO-A-11493",
       "name": "WINSTON",
       "breed": "Queensland Heeler / Cattle Dog, Australian (Blue Heeler)",
@@ -788,7 +766,7 @@
       "shelterName": "For Adoption by Private Owner (Sacramento)",
       "contactPhone": "",
       "contactEmail": "",
-      "url": "https://www.adoptapet.com/pet/48654924-sacramento-california-australian-cattle-dog-mix",
+      "url": "https://www.adoptapet.com/pet/48654924-sacramento-california-australian-cattle-dog-australian-shepherd",
       "source": "Adopt-a-Pet · Sacramento 50mi",
       "imageRemote": "https://pet-uploads.adoptapet.com/5/1/6/1319712573.jpg",
       "image": "./assets/dogs/adoptapet-48654924.jpg",
@@ -1209,7 +1187,7 @@
       "shelterName": "Reunion Rescue West",
       "contactPhone": "",
       "contactEmail": "",
-      "url": "https://www.adoptapet.com/pet/46064472-san-francisco-california-cattle-dog-shepherd-unknown-type-mix",
+      "url": "https://www.adoptapet.com/pet/46064472-san-francisco-california-cattle-dog-mix",
       "source": "Adopt-a-Pet · San Francisco 50mi",
       "imageRemote": "https://pet-uploads.adoptapet.com/3/b/3/1259272030.jpg",
       "image": "./assets/dogs/adoptapet-46064472.jpg",
