@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-07-25T16:00:43Z",
-  "generatedAtHuman": "Jul 25, 2026 at 09:00 AM PDT",
+  "generatedAt": "2026-07-26T01:00:51Z",
+  "generatedAtHuman": "Jul 25, 2026 at 06:00 PM PDT",
   "source": "scheduled-cache",
   "refreshCadenceMinutes": 180,
   "overview": {
     "totalUsers": 63,
     "launchUsers": 59,
-    "active7": 8,
+    "active7": 7,
     "active30": 12,
     "premium": 15,
     "paidSubscribers": 4,
     "grantedPremium": 11,
     "retainedUsers": 16,
-    "insights30": 45,
-    "entries30": 137,
-    "cardImages30": 28
+    "insights30": 44,
+    "entries30": 141,
+    "cardImages30": 27
   },
   "users": [
     {
@@ -143,7 +143,7 @@
       "lastActiveAt": "2026-07-16T02:30:37Z",
       "isPaidSubscriber": false,
       "grantedPremium": false,
-      "insights30": 2,
+      "insights30": 1,
       "cardImages30": 0,
       "retained": true
     },
@@ -152,11 +152,11 @@
       "displayName": "Cassandra Stirman",
       "email": "cassiestirman@gmail.com",
       "createdAt": "2025-11-01T22:59:06Z",
-      "lastLoginAt": "2026-07-25T00:06:04Z",
-      "lastActiveAt": "2026-07-25T00:06:04Z",
+      "lastLoginAt": "2026-07-25T22:33:40Z",
+      "lastActiveAt": "2026-07-25T22:33:40Z",
       "isPaidSubscriber": false,
       "grantedPremium": true,
-      "insights30": 7,
+      "insights30": 8,
       "cardImages30": 5,
       "retained": true
     },
@@ -286,8 +286,8 @@
       "lastActiveAt": "2026-07-25T02:30:33Z",
       "isPaidSubscriber": false,
       "grantedPremium": true,
-      "insights30": 14,
-      "cardImages30": 13,
+      "insights30": 13,
+      "cardImages30": 12,
       "retained": true
     },
     {
@@ -637,7 +637,7 @@
       "lastActiveAt": "2026-07-21T21:03:24Z",
       "isPaidSubscriber": false,
       "grantedPremium": false,
-      "insights30": 11,
+      "insights30": 10,
       "cardImages30": 3,
       "retained": true
     },
@@ -698,11 +698,11 @@
       "displayName": "Shanna Pouyamehr",
       "email": "shannamp2000@yahoo.com",
       "createdAt": "2026-07-22T13:59:44Z",
-      "lastLoginAt": "2026-07-25T03:05:57Z",
-      "lastActiveAt": "2026-07-25T03:05:57Z",
+      "lastLoginAt": "2026-07-25T20:12:21Z",
+      "lastActiveAt": "2026-07-25T20:12:21Z",
       "isPaidSubscriber": false,
       "grantedPremium": false,
-      "insights30": 3,
+      "insights30": 4,
       "cardImages30": 3,
       "retained": false
     },
@@ -848,7 +848,7 @@
     },
     {
       "title": "Depth signal",
-      "body": "Users averaged about 3.0 inputs per generated insight in the last 30 days."
+      "body": "Users averaged about 3.2 inputs per generated insight in the last 30 days."
     },
     {
       "title": "Retention pulse",
@@ -865,11 +865,6 @@
   ],
   "series": {
     "dailyInsights": [
-      {
-        "date": "2026-06-26",
-        "label": "Jun 26",
-        "count": 3
-      },
       {
         "date": "2026-06-27",
         "label": "Jun 27",
@@ -1013,15 +1008,15 @@
       {
         "date": "2026-07-25",
         "label": "Jul 25",
+        "count": 2
+      },
+      {
+        "date": "2026-07-26",
+        "label": "Jul 26",
         "count": 0
       }
     ],
     "dailyCardImages": [
-      {
-        "date": "2026-06-26",
-        "label": "Jun 26",
-        "count": 1
-      },
       {
         "date": "2026-06-27",
         "label": "Jun 27",
@@ -1165,6 +1160,11 @@
       {
         "date": "2026-07-25",
         "label": "Jul 25",
+        "count": 0
+      },
+      {
+        "date": "2026-07-26",
+        "label": "Jul 26",
         "count": 0
       }
     ],
@@ -1643,17 +1643,14 @@
         "date": "2026-07-25",
         "label": "Jul 25",
         "count": 61
+      },
+      {
+        "date": "2026-07-26",
+        "label": "Jul 26",
+        "count": 61
       }
     ],
     "dailyCosts": [
-      {
-        "date": "2026-06-26",
-        "label": "Jun 26",
-        "textDollars": 0.0042,
-        "imageDollars": 0.514,
-        "otherDollars": 0.0,
-        "totalDollars": 0.5182
-      },
       {
         "date": "2026-06-27",
         "label": "Jun 27",
@@ -1881,6 +1878,14 @@
       {
         "date": "2026-07-25",
         "label": "Jul 25",
+        "textDollars": 0.0121,
+        "imageDollars": 0.5147,
+        "otherDollars": 0.0,
+        "totalDollars": 0.5268
+      },
+      {
+        "date": "2026-07-26",
+        "label": "Jul 26",
         "textDollars": 0.0,
         "imageDollars": 0.0,
         "otherDollars": 0.0,
@@ -1890,9 +1895,9 @@
   },
   "costs": {
     "available": true,
-    "totalDollars": 11.4279,
-    "textDollars": 0.0634,
-    "imageDollars": 9.2563,
+    "totalDollars": 11.4365,
+    "textDollars": 0.0712,
+    "imageDollars": 9.2571,
     "otherDollars": 2.1082,
     "byLineItem": [
       {
@@ -1913,15 +1918,15 @@
       },
       {
         "name": "gpt-image-1 text, input",
-        "dollars": 0.2707
+        "dollars": 0.2715
       },
       {
         "name": "gpt-4o-mini-2024-07-18, input",
-        "dollars": 0.0315
+        "dollars": 0.0352
       },
       {
         "name": "gpt-4o-mini-2024-07-18, output",
-        "dollars": 0.0234
+        "dollars": 0.0275
       },
       {
         "name": "text-embedding-3-small",
@@ -1946,14 +1951,6 @@
     ],
     "daily": [
       {
-        "date": "2026-06-26",
-        "label": "Jun 26",
-        "textDollars": 0.0042,
-        "imageDollars": 0.514,
-        "otherDollars": 0.0,
-        "totalDollars": 0.5182
-      },
-      {
         "date": "2026-06-27",
         "label": "Jun 27",
         "textDollars": 0.0006,
@@ -2180,6 +2177,14 @@
       {
         "date": "2026-07-25",
         "label": "Jul 25",
+        "textDollars": 0.0121,
+        "imageDollars": 0.5147,
+        "otherDollars": 0.0,
+        "totalDollars": 0.5268
+      },
+      {
+        "date": "2026-07-26",
+        "label": "Jul 26",
         "textDollars": 0.0,
         "imageDollars": 0.0,
         "otherDollars": 0.0,
@@ -2189,6 +2194,6 @@
     "error": null,
     "subscriptionPrice": 7.99,
     "estimatedRevenue": 31.96,
-    "grossMargin": 20.53
+    "grossMargin": 20.52
   }
 }
