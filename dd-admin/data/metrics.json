@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-26T16:00:48Z",
-  "generatedAtHuman": "Jul 26, 2026 at 09:00 AM PDT",
+  "generatedAt": "2026-07-26T19:01:11Z",
+  "generatedAtHuman": "Jul 26, 2026 at 12:01 PM PDT",
   "source": "scheduled-cache",
   "refreshCadenceMinutes": 180,
   "overview": {
@@ -14,7 +14,7 @@
     "retainedUsers": 16,
     "insights30": 44,
     "entries30": 142,
-    "cardImages30": 27
+    "cardImages30": 28
   },
   "users": [
     {
@@ -157,7 +157,7 @@
       "isPaidSubscriber": false,
       "grantedPremium": true,
       "insights30": 8,
-      "cardImages30": 5,
+      "cardImages30": 6,
       "retained": true
     },
     {
@@ -1160,7 +1160,7 @@
       {
         "date": "2026-07-25",
         "label": "Jul 25",
-        "count": 0
+        "count": 1
       },
       {
         "date": "2026-07-26",
