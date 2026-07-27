@@ -2,8 +2,8 @@
   "season": "Big Brother 28",
   "siteTitle": "BB28 Fantasy Draft",
   "tagline": "Meet the BB28 houseguests — draft night is next.",
-  "lastUpdated": "2026-07-24T05:46:46Z",
-  "status": "week-2-complete",
+  "lastUpdated": "2026-07-27T19:04:39Z",
+  "status": "week-3-in-progress",
   "liveRefreshSeconds": 60,
   "seasonCalendar": {
     "premiere": "2026-07-07",
@@ -185,7 +185,8 @@
       "photoUrl": "https://bigbrothernetwork.com/wp-content/uploads/2026/07/bb28-cast-kamu-00.jpg",
       "bio": "Kamu Kirk is a 32-year-old mMA Fighter from Phoenix, AZ.",
       "sourceName": "Big Brother Network",
-      "sourceUrl": "https://bigbrothernetwork.com/big-brother-28-cast/"
+      "sourceUrl": "https://bigbrothernetwork.com/big-brother-28-cast/",
+      "notes": "Week 3 Head of Household."
     },
     {
       "id": "latrice-verrett",
@@ -305,7 +306,7 @@
       "bio": "Rick Devens is a Survivor: Edge of Extinction fan favorite joining the BB28 draft board as a crossover pick.",
       "sourceName": "Parade",
       "sourceUrl": "https://parade.com/tv/rick-devens-survivor-50-interview",
-      "notes": "Week 2 Head of Household and Power of Veto winner."
+      "notes": "Week 2 Head of Household and Power of Veto winner. Received the Week 3 Diamond Power of Veto from the BB Time Capsule."
     },
     {
       "id": "dee-valladares",
@@ -395,9 +396,57 @@
         "name": "Rome Seymour",
         "vote": "12-1"
       }
+    },
+    {
+      "week": 3,
+      "label": "Week 3",
+      "date": "2026-07-26",
+      "status": "In Progress",
+      "hoh": {
+        "houseguestId": "kamu-kirk",
+        "winner": "Kamu Kirk"
+      },
+      "nominees": [
+        {
+          "houseguestId": "lyric-medeiros",
+          "name": "Lyric Medeiros"
+        },
+        {
+          "houseguestId": "latrice-verrett",
+          "name": "LaTrice Verrett"
+        },
+        {
+          "houseguestId": "mallory-aurichio",
+          "name": "Mallory Aurichio"
+        }
+      ],
+      "timeCapsule": {
+        "houseguestId": "rick-devens",
+        "name": "Rick Devens",
+        "outcome": "Diamond Power of Veto"
+      },
+      "notes": "Kamu Kirk won Head of Household. Rick Devens received the Diamond Power of Veto from the BB Time Capsule. Lyric Medeiros, LaTrice Verrett, and Mallory Aurichio were nominated."
     }
   ],
   "events": [
+    {
+      "date": "2026-07-26T21:00:00-07:00",
+      "type": "nomination",
+      "title": "Week 3 nominations are set",
+      "description": "Lyric Medeiros, LaTrice Verrett, and Mallory Aurichio were nominated for eviction."
+    },
+    {
+      "date": "2026-07-26T20:45:00-07:00",
+      "type": "twist_result",
+      "title": "Rick wins the Diamond Power of Veto",
+      "description": "Rick Devens received the Diamond Power of Veto from the BB Time Capsule."
+    },
+    {
+      "date": "2026-07-26T20:30:00-07:00",
+      "type": "competition_result",
+      "title": "Kamu Kirk wins Week 3 HOH",
+      "description": "Kamu Kirk won the Week 3 Head of Household competition."
+    },
     {
       "date": "2026-07-23T21:00:00-07:00",
       "type": "eviction",
