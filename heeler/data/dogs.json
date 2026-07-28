@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-28T18:00:18+00:00",
+  "updatedAt": "2026-07-28T19:00:21+00:00",
   "location": "San Francisco Bay Area + couple-hour drive",
   "breedTerms": [
     "Australian Cattle Dog",
@@ -7,7 +7,7 @@
     "Red Heeler",
     "Cattle Dog"
   ],
-  "count": 58,
+  "count": 59,
   "dogs": [
     {
       "id": "shelterluv-MILO-A-10109",
@@ -294,6 +294,28 @@
       "imageRemote": "",
       "image": "",
       "foundAt": "2026-07-14T10:52:24-07:00"
+    },
+    {
+      "id": "shelterluv-MILO-A-11501",
+      "name": "MARTHA MY DEAR (green)",
+      "breed": "Great Dane / Cattle Dog",
+      "sex": "Female",
+      "age": "3 mos",
+      "color": "White / Black",
+      "size": "Large (60-99)",
+      "description": "Available for Foster, Behavior: Family Friendly",
+      "city": "Point Richmond",
+      "state": "CA",
+      "postalCode": "94801",
+      "distanceMiles": 18,
+      "shelterName": "Milo Foundation",
+      "contactPhone": "",
+      "contactEmail": "",
+      "url": "https://www.shelterluv.com/embed/animal/MILO-A-11501",
+      "source": "Milo Foundation · Shelterluv",
+      "imageRemote": "https://new-s3.shelterluv.com/profile-pictures/8c770361bdb0551239b18da2a08bb387/3c38a2cd2d0e0e53c506679d5eaa6185.jpg",
+      "image": "./assets/dogs/shelterluv-MILO-A-11501.jpg",
+      "foundAt": "2026-07-28T19:00:21+00:00"
     },
     {
       "id": "shelterluv-MILO-A-11497",
@@ -1256,7 +1278,7 @@
       "shelterName": "Beyond Rescue",
       "contactPhone": "415-570-8931",
       "contactEmail": "",
-      "url": "https://www.adoptapet.com/pet/35421675-san-francisco-california-australian-cattle-dog-mix",
+      "url": "https://www.adoptapet.com/pet/35421675-san-francisco-australian-cattle-dog-mix",
       "source": "Adopt-a-Pet · San Francisco 50mi",
       "imageRemote": "https://pet-uploads.adoptapet.com/8/c/4/1234705136.jpg",
       "image": "./assets/dogs/adoptapet-35421675.jpg",
