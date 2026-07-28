@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-28T01:01:15Z",
-  "generatedAtHuman": "Jul 27, 2026 at 06:01 PM PDT",
+  "generatedAt": "2026-07-28T04:00:50Z",
+  "generatedAtHuman": "Jul 27, 2026 at 09:00 PM PDT",
   "source": "scheduled-cache",
   "refreshCadenceMinutes": 180,
   "overview": {
@@ -13,7 +13,7 @@
     "grantedPremium": 11,
     "retainedUsers": 16,
     "insights30": 45,
-    "entries30": 143,
+    "entries30": 146,
     "cardImages30": 27
   },
   "users": [
@@ -152,8 +152,8 @@
       "displayName": "Cassandra Stirman",
       "email": "cassiestirman@gmail.com",
       "createdAt": "2025-11-01T22:59:06Z",
-      "lastLoginAt": "2026-07-28T00:10:55Z",
-      "lastActiveAt": "2026-07-28T00:10:55Z",
+      "lastLoginAt": "2026-07-28T03:11:03Z",
+      "lastActiveAt": "2026-07-28T03:11:03Z",
       "isPaidSubscriber": false,
       "grantedPremium": true,
       "insights30": 10,
