@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-07-28T22:01:10Z",
-  "generatedAtHuman": "Jul 28, 2026 at 03:01 PM PDT",
+  "generatedAt": "2026-07-29T01:01:15Z",
+  "generatedAtHuman": "Jul 28, 2026 at 06:01 PM PDT",
   "source": "scheduled-cache",
   "refreshCadenceMinutes": 180,
   "overview": {
     "totalUsers": 63,
     "launchUsers": 59,
-    "active7": 7,
+    "active7": 6,
     "active30": 13,
     "premium": 15,
     "paidSubscribers": 4,
     "grantedPremium": 11,
-    "retainedUsers": 16,
-    "insights30": 47,
-    "entries30": 150,
+    "retainedUsers": 17,
+    "insights30": 48,
+    "entries30": 156,
     "cardImages30": 27
   },
   "users": [
@@ -698,13 +698,13 @@
       "displayName": "Shanna Pouyamehr",
       "email": "shannamp2000@yahoo.com",
       "createdAt": "2026-07-22T13:59:44Z",
-      "lastLoginAt": "2026-07-26T02:04:23Z",
-      "lastActiveAt": "2026-07-26T02:04:23Z",
+      "lastLoginAt": "2026-07-29T00:52:42Z",
+      "lastActiveAt": "2026-07-29T00:52:42Z",
       "isPaidSubscriber": false,
       "grantedPremium": false,
-      "insights30": 4,
+      "insights30": 5,
       "cardImages30": 3,
-      "retained": false
+      "retained": true
     },
     {
       "id": "qeNxsyNqUohq8lzuGVNmWvZkZn43",
@@ -737,8 +737,8 @@
       "displayName": "Tatum Ringlien",
       "email": "tringlien@icloud.com",
       "createdAt": "2026-05-21T18:42:01Z",
-      "lastLoginAt": "2026-07-28T21:39:14Z",
-      "lastActiveAt": "2026-07-28T21:39:14Z",
+      "lastLoginAt": "2026-07-28T23:06:36Z",
+      "lastActiveAt": "2026-07-28T23:06:36Z",
       "isPaidSubscriber": false,
       "grantedPremium": false,
       "insights30": 1,
@@ -852,7 +852,7 @@
     },
     {
       "title": "Retention pulse",
-      "body": "25% of users have returned across multiple weeks."
+      "body": "27% of users have returned across multiple weeks."
     },
     {
       "title": "Most engaged recently",
@@ -865,11 +865,6 @@
   ],
   "series": {
     "dailyInsights": [
-      {
-        "date": "2026-06-29",
-        "label": "Jun 29",
-        "count": 0
-      },
       {
         "date": "2026-06-30",
         "label": "Jun 30",
@@ -1013,15 +1008,15 @@
       {
         "date": "2026-07-28",
         "label": "Jul 28",
-        "count": 2
+        "count": 3
+      },
+      {
+        "date": "2026-07-29",
+        "label": "Jul 29",
+        "count": 0
       }
     ],
     "dailyCardImages": [
-      {
-        "date": "2026-06-29",
-        "label": "Jun 29",
-        "count": 0
-      },
       {
         "date": "2026-06-30",
         "label": "Jun 30",
@@ -1165,6 +1160,11 @@
       {
         "date": "2026-07-28",
         "label": "Jul 28",
+        "count": 0
+      },
+      {
+        "date": "2026-07-29",
+        "label": "Jul 29",
         "count": 0
       }
     ],
@@ -1658,17 +1658,14 @@
         "date": "2026-07-28",
         "label": "Jul 28",
         "count": 61
+      },
+      {
+        "date": "2026-07-29",
+        "label": "Jul 29",
+        "count": 61
       }
     ],
     "dailyCosts": [
-      {
-        "date": "2026-06-29",
-        "label": "Jun 29",
-        "textDollars": 0.0011,
-        "imageDollars": 0.7715,
-        "otherDollars": 0.0,
-        "totalDollars": 0.7726
-      },
       {
         "date": "2026-06-30",
         "label": "Jun 30",
@@ -1896,6 +1893,14 @@
       {
         "date": "2026-07-28",
         "label": "Jul 28",
+        "textDollars": 0.0041,
+        "imageDollars": 0.0,
+        "otherDollars": 0.0,
+        "totalDollars": 0.0041
+      },
+      {
+        "date": "2026-07-29",
+        "label": "Jul 29",
         "textDollars": 0.0,
         "imageDollars": 0.0,
         "otherDollars": 0.0,
@@ -1905,14 +1910,14 @@
   },
   "costs": {
     "available": true,
-    "totalDollars": 11.9469,
-    "textDollars": 0.0652,
-    "imageDollars": 9.7734,
+    "totalDollars": 11.1784,
+    "textDollars": 0.0683,
+    "imageDollars": 9.0019,
     "otherDollars": 2.1082,
     "byLineItem": [
       {
         "name": "gpt-image-1 image, output",
-        "dollars": 9.4848
+        "dollars": 8.736
       },
       {
         "name": "gpt-5.5-2026-04-23, cached input",
@@ -1928,15 +1933,15 @@
       },
       {
         "name": "gpt-image-1 text, input",
-        "dollars": 0.2886
+        "dollars": 0.2659
       },
       {
         "name": "gpt-4o-mini-2024-07-18, input",
-        "dollars": 0.0367
+        "dollars": 0.0386
       },
       {
         "name": "gpt-4o-mini-2024-07-18, output",
-        "dollars": 0.0285
+        "dollars": 0.0296
       },
       {
         "name": "gpt-4o-mini-2024-07-18, cached input",
@@ -1957,14 +1962,6 @@
     ],
     "daily": [
       {
-        "date": "2026-06-29",
-        "label": "Jun 29",
-        "textDollars": 0.0011,
-        "imageDollars": 0.7715,
-        "otherDollars": 0.0,
-        "totalDollars": 0.7726
-      },
-      {
         "date": "2026-06-30",
         "label": "Jun 30",
         "textDollars": 0.0012,
@@ -2191,6 +2188,14 @@
       {
         "date": "2026-07-28",
         "label": "Jul 28",
+        "textDollars": 0.0041,
+        "imageDollars": 0.0,
+        "otherDollars": 0.0,
+        "totalDollars": 0.0041
+      },
+      {
+        "date": "2026-07-29",
+        "label": "Jul 29",
         "textDollars": 0.0,
         "imageDollars": 0.0,
         "otherDollars": 0.0,
@@ -2200,6 +2205,6 @@
     "error": null,
     "subscriptionPrice": 7.99,
     "estimatedRevenue": 31.96,
-    "grossMargin": 20.01
+    "grossMargin": 20.78
   }
 }
