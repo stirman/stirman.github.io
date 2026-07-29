@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-29T16:01:33Z",
-  "generatedAtHuman": "Jul 29, 2026 at 09:01 AM PDT",
+  "generatedAt": "2026-07-29T19:00:53Z",
+  "generatedAtHuman": "Jul 29, 2026 at 12:00 PM PDT",
   "source": "scheduled-cache",
   "refreshCadenceMinutes": 180,
   "overview": {
@@ -13,7 +13,7 @@
     "grantedPremium": 11,
     "retainedUsers": 17,
     "insights30": 51,
-    "entries30": 163,
+    "entries30": 166,
     "cardImages30": 29
   },
   "users": [
@@ -152,8 +152,8 @@
       "displayName": "Cassandra Stirman",
       "email": "cassiestirman@gmail.com",
       "createdAt": "2025-11-01T22:59:06Z",
-      "lastLoginAt": "2026-07-29T15:57:06Z",
-      "lastActiveAt": "2026-07-29T15:57:06Z",
+      "lastLoginAt": "2026-07-29T17:12:57Z",
+      "lastActiveAt": "2026-07-29T17:12:57Z",
       "isPaidSubscriber": false,
       "grantedPremium": true,
       "insights30": 12,
@@ -848,7 +848,7 @@
     },
     {
       "title": "Depth signal",
-      "body": "Users averaged about 3.2 inputs per generated insight in the last 30 days."
+      "body": "Users averaged about 3.3 inputs per generated insight in the last 30 days."
     },
     {
       "title": "Retention pulse",
