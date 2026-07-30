@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-30T20:00:31+00:00",
+  "updatedAt": "2026-07-30T21:00:46+00:00",
   "location": "San Francisco Bay Area + couple-hour drive",
   "breedTerms": [
     "Australian Cattle Dog",
@@ -7,7 +7,7 @@
     "Red Heeler",
     "Cattle Dog"
   ],
-  "count": 60,
+  "count": 61,
   "dogs": [
     {
       "id": "shelterluv-MILO-A-10109",
@@ -360,6 +360,28 @@
       "imageRemote": "",
       "image": "",
       "foundAt": "2026-07-14T10:52:24-07:00"
+    },
+    {
+      "id": "shelterluv-MILO-A-11751",
+      "name": "MISTY",
+      "breed": "Cattle Dog, Australian (Blue Heeler) / Mixed Breed (Medium)",
+      "sex": "Female",
+      "age": "3 yrs",
+      "color": "White / Black",
+      "size": "Medium (25-59)",
+      "description": "Available for Foster, Behavior: Medium Energy, Behavior: Quick Learner, Good with Dogs, Behavior: Social Butterfly, Behavior: Must keep on leash",
+      "city": "Foster Home",
+      "state": "CA",
+      "postalCode": "94801",
+      "distanceMiles": 18,
+      "shelterName": "Milo Foundation",
+      "contactPhone": "",
+      "contactEmail": "",
+      "url": "https://www.shelterluv.com/embed/animal/MILO-A-11751",
+      "source": "Milo Foundation · Shelterluv",
+      "imageRemote": "https://new-s3.shelterluv.com/profile-pictures/6f27e092d2273713d363a30a2e3ec911/a10598f51566078bcbac765fb59b5a54.jpeg",
+      "image": "./assets/dogs/shelterluv-MILO-A-11751.jpg",
+      "foundAt": "2026-07-30T21:00:46+00:00"
     },
     {
       "id": "shelterluv-MILO-A-10955",
