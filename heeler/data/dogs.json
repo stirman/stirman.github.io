@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-30T00:00:11+00:00",
+  "updatedAt": "2026-07-30T01:00:11+00:00",
   "location": "San Francisco Bay Area + couple-hour drive",
   "breedTerms": [
     "Australian Cattle Dog",
@@ -7,7 +7,7 @@
     "Red Heeler",
     "Cattle Dog"
   ],
-  "count": 59,
+  "count": 60,
   "dogs": [
     {
       "id": "shelterluv-MILO-A-10109",
@@ -250,6 +250,28 @@
       "imageRemote": "",
       "image": "",
       "foundAt": "2026-07-14T10:52:24-07:00"
+    },
+    {
+      "id": "shelterluv-MILO-A-11748",
+      "name": "KYLIE",
+      "breed": "Cattle Dog, Australian (Red Heeler)",
+      "sex": "Female",
+      "age": "12 mos",
+      "color": "White",
+      "size": "Medium (25-59)",
+      "description": "Behavior: Can be left alone for up to 4 hours, Behavior: Hiker, Behavior: Lap dog, Behavior: Medium Energy, Behavior: Playful, Behavior: Quick Learner, Behavior: Social Butterfly, Training: Sports Candidate",
+      "city": "Point Richmond",
+      "state": "CA",
+      "postalCode": "94801",
+      "distanceMiles": 18,
+      "shelterName": "Milo Foundation",
+      "contactPhone": "",
+      "contactEmail": "",
+      "url": "https://www.shelterluv.com/embed/animal/MILO-A-11748",
+      "source": "Milo Foundation · Shelterluv",
+      "imageRemote": "https://new-s3.shelterluv.com/profile-pictures/2a8477db72fade892cec09cedcd0cbc7/faa823c0998ebf7c7fce1ab81d302c34.jpeg",
+      "image": "./assets/dogs/shelterluv-MILO-A-11748.jpg",
+      "foundAt": "2026-07-30T01:00:11+00:00"
     },
     {
       "id": "shelterluv-MILO-A-11500",
