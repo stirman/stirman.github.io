@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-07-30T13:00:45Z",
-  "generatedAtHuman": "Jul 30, 2026 at 06:00 AM PDT",
+  "generatedAt": "2026-07-30T16:01:07Z",
+  "generatedAtHuman": "Jul 30, 2026 at 09:01 AM PDT",
   "source": "scheduled-cache",
   "refreshCadenceMinutes": 180,
   "overview": {
     "totalUsers": 63,
     "launchUsers": 59,
-    "active7": 4,
+    "active7": 5,
     "active30": 13,
     "premium": 15,
     "paidSubscribers": 4,
     "grantedPremium": 11,
     "retainedUsers": 17,
-    "insights30": 50,
-    "entries30": 170,
+    "insights30": 51,
+    "entries30": 171,
     "cardImages30": 28
   },
   "users": [
@@ -139,11 +139,11 @@
       "displayName": "Casey Lebwohl",
       "email": "caseylebwohl@mac.com",
       "createdAt": "2026-05-21T22:12:42Z",
-      "lastLoginAt": "2026-07-16T02:30:37Z",
-      "lastActiveAt": "2026-07-16T02:30:37Z",
+      "lastLoginAt": "2026-07-30T14:04:11Z",
+      "lastActiveAt": "2026-07-30T14:04:11Z",
       "isPaidSubscriber": false,
       "grantedPremium": false,
-      "insights30": 1,
+      "insights30": 2,
       "cardImages30": 0,
       "retained": true
     },
@@ -1013,7 +1013,7 @@
       {
         "date": "2026-07-30",
         "label": "Jul 30",
-        "count": 0
+        "count": 1
       }
     ],
     "dailyCardImages": [
