@@ -2,8 +2,8 @@
   "season": "Big Brother 28",
   "siteTitle": "BB28 Fantasy Draft",
   "tagline": "Meet the BB28 houseguests — draft night is next.",
-  "lastUpdated": "2026-07-27T19:04:39Z",
-  "status": "week-3-in-progress",
+  "lastUpdated": "2026-07-31T15:36:53Z",
+  "status": "week-3-complete",
   "liveRefreshSeconds": 60,
   "seasonCalendar": {
     "premiere": "2026-07-07",
@@ -167,12 +167,13 @@
       "age": 35,
       "hometown": "West Hollywood, CA",
       "occupation": "Drag Queen",
-      "status": "active",
+      "status": "evicted",
       "draftOwner": "mimi-pa",
       "photoUrl": "https://bigbrothernetwork.com/wp-content/uploads/2026/07/bb28-cast-jason-00.jpg",
       "bio": "Jason De Puy is a 35-year-old drag Queen from West Hollywood, CA.",
       "sourceName": "Big Brother Network",
-      "sourceUrl": "https://bigbrothernetwork.com/big-brother-28-cast/"
+      "sourceUrl": "https://bigbrothernetwork.com/big-brother-28-cast/",
+      "notes": "Evicted Week 3 by a unanimous 12-0 vote after Mallory Aurichio won the BB Blockbuster."
     },
     {
       "id": "kamu-kirk",
@@ -213,7 +214,7 @@
       "bio": "Lyric Medeiros is a 25-year-old attorney from Honolulu, HI.",
       "sourceName": "Big Brother Network",
       "sourceUrl": "https://bigbrothernetwork.com/big-brother-28-cast/",
-      "notes": "Saved from the block when Rick Devens used the Week 2 Power of Veto on her."
+      "notes": "Saved from the block in Weeks 2 and 3; won the Week 3 Power of Veto and used it on herself."
     },
     {
       "id": "mallory-aurichio",
@@ -226,7 +227,8 @@
       "photoUrl": "https://bigbrothernetwork.com/wp-content/uploads/2026/07/bb28-cast-mallory-00.jpg",
       "bio": "Mallory Aurichio is a 24-year-old rocket Scientist from Washington, NJ.",
       "sourceName": "Big Brother Network",
-      "sourceUrl": "https://bigbrothernetwork.com/big-brother-28-cast/"
+      "sourceUrl": "https://bigbrothernetwork.com/big-brother-28-cast/",
+      "notes": "Week 1 Power of Veto winner and Week 3 BB Blockbuster winner."
     },
     {
       "id": "melody-morris",
@@ -400,8 +402,8 @@
     {
       "week": 3,
       "label": "Week 3",
-      "date": "2026-07-26",
-      "status": "In Progress",
+      "date": "2026-07-30",
+      "status": "Complete",
       "hoh": {
         "houseguestId": "kamu-kirk",
         "winner": "Kamu Kirk"
@@ -425,10 +427,55 @@
         "name": "Rick Devens",
         "outcome": "Diamond Power of Veto"
       },
-      "notes": "Kamu Kirk won Head of Household. Rick Devens received the Diamond Power of Veto from the BB Time Capsule. Lyric Medeiros, LaTrice Verrett, and Mallory Aurichio were nominated."
+      "notes": "Kamu Kirk won Head of Household. Rick Devens received the Diamond Power of Veto from the BB Time Capsule. Lyric Medeiros won the Power of Veto and used it on herself, making Jason De Puy the replacement nominee. Mallory Aurichio won the BB Blockbuster, and Jason De Puy was evicted 12-0.",
+      "veto": {
+        "houseguestId": "lyric-medeiros",
+        "winner": "Lyric Medeiros"
+      },
+      "vetoUsedOn": {
+        "houseguestId": "lyric-medeiros",
+        "name": "Lyric Medeiros"
+      },
+      "replacementNominee": {
+        "houseguestId": "jason-de-puy",
+        "name": "Jason De Puy"
+      },
+      "blockbuster": {
+        "houseguestId": "mallory-aurichio",
+        "winner": "Mallory Aurichio"
+      },
+      "evicted": {
+        "houseguestId": "jason-de-puy",
+        "name": "Jason De Puy",
+        "vote": "12-0"
+      }
     }
   ],
   "events": [
+    {
+      "date": "2026-07-30T21:00:00-07:00",
+      "type": "eviction",
+      "title": "Jason is evicted in Week 3",
+      "description": "Jason De Puy was evicted by a unanimous 12-0 vote."
+    },
+    {
+      "date": "2026-07-30T20:45:00-07:00",
+      "type": "competition_result",
+      "title": "Mallory wins the Week 3 BB Blockbuster",
+      "description": "Mallory Aurichio won the Week 3 BB Blockbuster and came off the block."
+    },
+    {
+      "date": "2026-07-29T21:00:00-07:00",
+      "type": "nomination",
+      "title": "Week 3 Veto changes the nominees",
+      "description": "Lyric Medeiros won the Power of Veto and used it on herself; Jason De Puy became the replacement nominee."
+    },
+    {
+      "date": "2026-07-29T20:45:00-07:00",
+      "type": "competition_result",
+      "title": "Lyric wins the Week 3 Veto",
+      "description": "Lyric Medeiros won the Week 3 Power of Veto."
+    },
     {
       "date": "2026-07-26T21:00:00-07:00",
       "type": "nomination",
@@ -556,6 +603,21 @@
       "name": "TVLine Week 2 eviction recap",
       "url": "https://www.tvline.com/2222271/big-brother-recap-rome-evicted-season-28/",
       "checkedAt": "2026-07-24T05:46:46Z"
+    },
+    {
+      "name": "TV Grapevine July 29 episode recap",
+      "url": "https://www.tvgrapevine.com/big-brother-28-recap-for-7-29-2026/",
+      "checkedAt": "2026-07-31T15:36:53Z"
+    },
+    {
+      "name": "TV Grapevine July 30 eviction recap",
+      "url": "https://www.tvgrapevine.com/big-brother-28-recap-for-7-30-2026/",
+      "checkedAt": "2026-07-31T15:36:53Z"
+    },
+    {
+      "name": "TVLine Week 3 eviction recap",
+      "url": "https://www.tvline.com/2227597/big-brother-recap-jason-evicted-season-28-week-3-results/",
+      "checkedAt": "2026-07-31T15:36:53Z"
     }
   ],
   "players": [
