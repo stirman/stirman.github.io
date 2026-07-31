@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-31T21:00:48+00:00",
+  "updatedAt": "2026-07-31T22:00:57+00:00",
   "location": "San Francisco Bay Area + couple-hour drive",
   "breedTerms": [
     "Australian Cattle Dog",
@@ -252,28 +252,6 @@
       "foundAt": "2026-07-14T10:52:24-07:00"
     },
     {
-      "id": "shelterluv-MILO-A-11748",
-      "name": "KYLIE",
-      "breed": "Cattle Dog, Australian (Red Heeler)",
-      "sex": "Female",
-      "age": "12 mos",
-      "color": "White",
-      "size": "Medium (25-59)",
-      "description": "Behavior: Can be left alone for up to 4 hours, Behavior: Hiker, Behavior: Lap dog, Behavior: Medium Energy, Behavior: Playful, Behavior: Quick Learner, Behavior: Social Butterfly, Training: Sports Candidate",
-      "city": "Point Richmond",
-      "state": "CA",
-      "postalCode": "94801",
-      "distanceMiles": 18,
-      "shelterName": "Milo Foundation",
-      "contactPhone": "",
-      "contactEmail": "",
-      "url": "https://www.shelterluv.com/embed/animal/MILO-A-11748",
-      "source": "Milo Foundation · Shelterluv",
-      "imageRemote": "https://new-s3.shelterluv.com/profile-pictures/2a8477db72fade892cec09cedcd0cbc7/faa823c0998ebf7c7fce1ab81d302c34.jpeg",
-      "image": "./assets/dogs/shelterluv-MILO-A-11748.jpg",
-      "foundAt": "2026-07-30T01:00:11+00:00"
-    },
-    {
       "id": "shelterluv-MILO-A-11500",
       "name": "LADY MADONNA (pink)",
       "breed": "Great Dane / Cattle Dog",
@@ -448,6 +426,28 @@
       "imageRemote": "https://new-s3.shelterluv.com/profile-pictures/e261f41eda934d5083b0ab9ca333b45b/0bde60ebc9e186ed0a1d106b73208a8b.jpeg",
       "image": "./assets/dogs/shelterluv-MILO-A-11582.jpg",
       "foundAt": "2026-07-14T10:52:24-07:00"
+    },
+    {
+      "id": "shelterluv-MILO-A-11749",
+      "name": "RANGER",
+      "breed": "Cattle Dog, Australian (Blue Heeler) / Mixed Breed (Medium)",
+      "sex": "Male",
+      "age": "8 mos",
+      "color": "White",
+      "size": "Medium (25-59)",
+      "description": "Available for Foster, Behavior: Family Friendly, Behavior: Hiker, Behavior: Medium Energy, Behavior: Playful, Behavior: Quick Learner, Good with Dogs, Behavior: Dog savvy children 13+",
+      "city": "Point Richmond",
+      "state": "CA",
+      "postalCode": "94801",
+      "distanceMiles": 18,
+      "shelterName": "Milo Foundation",
+      "contactPhone": "",
+      "contactEmail": "",
+      "url": "https://www.shelterluv.com/embed/animal/MILO-A-11749",
+      "source": "Milo Foundation · Shelterluv",
+      "imageRemote": "https://new-s3.shelterluv.com/profile-pictures/47b546810067f38e8261c2e80fdff0eb/f7312c26a31c9f800258f4bfb2ff93a8.jpeg",
+      "image": "./assets/dogs/shelterluv-MILO-A-11749.jpg",
+      "foundAt": "2026-07-31T22:00:57+00:00"
     },
     {
       "id": "shelterluv-MILO-A-11493",
