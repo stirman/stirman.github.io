@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-31T00:00:34+00:00",
+  "updatedAt": "2026-07-31T01:00:13+00:00",
   "location": "San Francisco Bay Area + couple-hour drive",
   "breedTerms": [
     "Australian Cattle Dog",
@@ -326,7 +326,7 @@
       "color": "White / Black",
       "size": "Large (60-99)",
       "description": "Available for Foster, Behavior: Family Friendly",
-      "city": "Point Richmond",
+      "city": "Foster Home",
       "state": "CA",
       "postalCode": "94801",
       "distanceMiles": 18,
@@ -1260,29 +1260,6 @@
       "foundAt": "2026-07-23T07:00:14+00:00"
     },
     {
-      "id": "adoptapet-48802976",
-      "name": "Jewel",
-      "breed": "Australian Cattle Dog",
-      "sex": "Female",
-      "age": "2 mos",
-      "color": "Tan/Yellow/Fawn - with White",
-      "size": "Small 25 lbs (11 kg) or less",
-      "description": "",
-      "city": "San Francisco",
-      "state": "CA",
-      "postalCode": "94103",
-      "distanceMiles": 0,
-      "sourceDistanceMiles": 0.6,
-      "shelterName": "The San Francisco SPCA",
-      "contactPhone": "415-522-3500",
-      "contactEmail": "",
-      "url": "https://www.adoptapet.com/pet/48802976-san-francisco-california-australian-cattle-dog-mix",
-      "source": "Adopt-a-Pet · San Francisco 50mi",
-      "imageRemote": "https://pet-uploads.adoptapet.com/f/e/1/1323781632.jpg",
-      "image": "./assets/dogs/adoptapet-48802976.jpg",
-      "foundAt": "2026-07-26T06:00:10+00:00"
-    },
-    {
       "id": "adoptapet-48802977",
       "name": "Joker",
       "breed": "Australian Cattle Dog",
@@ -1373,6 +1350,29 @@
       "imageRemote": "https://pet-uploads.adoptapet.com/3/7/2/1311112267.jpg",
       "image": "./assets/dogs/adoptapet-48271527.jpg",
       "foundAt": "2026-07-23T07:00:14+00:00"
+    },
+    {
+      "id": "adoptapet-48764059",
+      "name": "Royal",
+      "breed": "American Pit Bull Terrier / Australian Cattle Dog",
+      "sex": "Male",
+      "age": "adult",
+      "color": "Gray/Blue/Silver/Salt & Pepper",
+      "size": "Med. 26-60 lbs (12-27 kg)",
+      "description": "Royal is a handsome 6yo Pitbull/Cattle Dog mix (55lbs) with a heart of gold! Rescued at 8 weeks, he’s grown into a smart, affectionate boy and is a proud Canine Good Citizen graduate. Why You’ll Love Him: • Fully house-trained, great on leash, and knows basic commands. • The ultimate hybrid: loves hikes, beach trips, and fetch, but is just as happy snuggling on the couch for movie night! • Deeply affectionate and loyal to his people. His Ideal Home: Royal is a sensitive soul with some anxiety who thrives in a calm environment. With a new baby in our home, the extra noise and dynamic have been stressful for him, and we can no longer give him the undivided attention he deserves. Royal will do best in a calm, adult-only home (no young kids) with no large dogs, where he can be the center of your world!",
+      "city": "San Francisco",
+      "state": "CA",
+      "postalCode": "94146",
+      "distanceMiles": 0,
+      "sourceDistanceMiles": 1.7,
+      "shelterName": "For Adoption By Private Owner (San Francisco, CA)",
+      "contactPhone": "",
+      "contactEmail": "",
+      "url": "https://www.adoptapet.com/pet/48764059-san-francisco-california-american-pit-bull-terrier-australian-cattle-dog-mix",
+      "source": "Adopt-a-Pet · San Francisco 50mi",
+      "imageRemote": "https://pet-uploads.adoptapet.com/b/0/e/1322445661.jpg",
+      "image": "./assets/dogs/adoptapet-48764059.jpg",
+      "foundAt": "2026-07-31T01:00:13+00:00"
     }
   ],
   "sources": [
