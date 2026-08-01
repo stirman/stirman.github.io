@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-01T22:00:18+00:00",
+  "updatedAt": "2026-08-01T23:00:20+00:00",
   "location": "San Francisco Bay Area + couple-hour drive",
   "breedTerms": [
     "Australian Cattle Dog",
@@ -7,7 +7,7 @@
     "Red Heeler",
     "Cattle Dog"
   ],
-  "count": 59,
+  "count": 58,
   "dogs": [
     {
       "id": "shelterluv-MILO-A-10109",
@@ -448,29 +448,6 @@
       "imageRemote": "https://new-s3.shelterluv.com/profile-pictures/0510565a4e2a577a53202007d5de2f21/5090dbe16e811cba729663882575a71a.jpeg",
       "image": "./assets/dogs/shelterluv-MILO-A-11493.jpg",
       "foundAt": "2026-07-14T10:52:24-07:00"
-    },
-    {
-      "id": "adoptapet-48142113",
-      "name": "BERTRAM",
-      "breed": "German Shepherd Dog / Australian Cattle Dog",
-      "sex": "Male",
-      "age": "3 yrs 2 mos",
-      "color": "Black - with White",
-      "size": "Large 61-100 lbs (28-45 kg)",
-      "description": "Meet Oreo — a gentle German Shepherd mix who is looking for a patient family to help him build confidence. Oreo is a sweet, sensitive dog who is still learning that the world isn`t so scary. He can be startled by sudden noises and unfamiliar situations, but he continues to show that he is willing to work through his uncertainty with calm guidance and positive experiences. In play yards, Oreo enjoys exploring his environment and watching the world around him. He has shown appropriate interest in other dogs, greeting politely through a fence and remaining neutral around dogs that were playing nearby. When interactions become too fast or overwhelming, he tends to create distance rather than escalate, suggesting he prefers a slower, more thoughtful approach to social situations.Oreo has been cooperative with handling and veterinary care, allowing restraint, vaccinations, nail trims, and gene",
-      "city": "San Jose",
-      "state": "CA",
-      "postalCode": "95111",
-      "distanceMiles": 49,
-      "sourceDistanceMiles": 8.1,
-      "shelterName": "San Jose Animal Care Center",
-      "contactPhone": "408-794-7297",
-      "contactEmail": "",
-      "url": "https://www.adoptapet.com/pet/48142113-san-jose-california-german-shepherd-dog-australian-cattle-dog-mix",
-      "source": "Adopt-a-Pet · San Jose 50mi",
-      "imageRemote": "https://pet-uploads.adoptapet.com/f/c/b/1313799422.jpg",
-      "image": "./assets/dogs/adoptapet-48142113.jpg",
-      "foundAt": "2026-07-18T20:00:19-07:00"
     },
     {
       "id": "adoptapet-48774047",
