@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-01T23:00:20+00:00",
+  "updatedAt": "2026-08-02T00:00:15+00:00",
   "location": "San Francisco Bay Area + couple-hour drive",
   "breedTerms": [
     "Australian Cattle Dog",
@@ -7,7 +7,7 @@
     "Red Heeler",
     "Cattle Dog"
   ],
-  "count": 58,
+  "count": 57,
   "dogs": [
     {
       "id": "shelterluv-MILO-A-10109",
@@ -436,7 +436,7 @@
       "color": "White / Black",
       "size": "Medium (25-59)",
       "description": "*No Refunds on puppies, Available for Foster, No walks yet, I am a puppy!, Good with Dogs, Behavior: Family Friendly, Training: Needs mental stimulation, Training: Jumpy, Behavior: High Energy",
-      "city": "Foster Home",
+      "city": "Point Richmond",
       "state": "CA",
       "postalCode": "94801",
       "distanceMiles": 18,
@@ -678,29 +678,6 @@
       "imageRemote": "https://pet-uploads.adoptapet.com/1/2/d/1323120148.jpg",
       "image": "./assets/dogs/adoptapet-48794373.jpg",
       "foundAt": "2026-07-25T09:00:25+00:00"
-    },
-    {
-      "id": "adoptapet-48755982",
-      "name": "*ANGEL CAKES",
-      "breed": "Australian Cattle Dog",
-      "sex": "Female",
-      "age": "4 yrs",
-      "color": "Black - with White",
-      "size": "Med. 26-60 lbs (12-27 kg)",
-      "description": "This girl is truly a little angel. She just loves to love! Snuggles and belly rubs are her thing. She walks great on a leash and can get playful once she warms up. Although we haven’t seen her try to herd us at the shelter, these traits could come out in a home once she settles in. Please research the breed before committing to a dog that needs consistent exercise and mental stimulation. Cattle dogs are VERY smart! To meet me, visit the Bradshaw Animal Shelter Tuesday-Sunday, Noon - 5:00 pm, Wednesdays, Noon - 6:00 pm. All adoptions are on a first-come, first-served basis. To help expedite the meet and greet process, please make note of my Animal ID number, and those of other dogs you might be interested in meeting. Be sure to bring your ID with you, too. We are located at 3839 Bradshaw Road, Sacramento. I look forward to getting to know you!",
-      "city": "Sacramento",
-      "state": "CA",
-      "postalCode": "95827",
-      "distanceMiles": 88,
-      "sourceDistanceMiles": 9.5,
-      "shelterName": "Sacramento County Animal Care (Bradshaw Animal Shelter)",
-      "contactPhone": "916-368-7387",
-      "contactEmail": "",
-      "url": "https://www.adoptapet.com/pet/48755982-sacramento-california-australian-cattle-dog",
-      "source": "Adopt-a-Pet · Sacramento 50mi",
-      "imageRemote": "https://pet-uploads.adoptapet.com/2/b/e/1324941062.jpg",
-      "image": "./assets/dogs/adoptapet-48755982.jpg",
-      "foundAt": "2026-07-22T17:00:38+00:00"
     },
     {
       "id": "adoptapet-48662366",
