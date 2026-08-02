@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T19:00:36+00:00",
+  "updatedAt": "2026-08-02T20:00:37+00:00",
   "location": "San Francisco Bay Area + couple-hour drive",
   "breedTerms": [
     "Australian Cattle Dog",
@@ -7,7 +7,7 @@
     "Red Heeler",
     "Cattle Dog"
   ],
-  "count": 57,
+  "count": 56,
   "dogs": [
     {
       "id": "shelterluv-MILO-A-10109",
@@ -249,28 +249,6 @@
       "source": "Milo Foundation · Shelterluv",
       "imageRemote": "",
       "image": "",
-      "foundAt": "2026-07-14T10:52:24-07:00"
-    },
-    {
-      "id": "shelterluv-MILO-A-11500",
-      "name": "LADY MADONNA (pink)",
-      "breed": "Great Dane / Cattle Dog",
-      "sex": "Female",
-      "age": "3 mos",
-      "color": "Brown / White",
-      "size": "Large (60-99)",
-      "description": "Behavior: Family Friendly",
-      "city": "Point Richmond",
-      "state": "CA",
-      "postalCode": "94801",
-      "distanceMiles": 18,
-      "shelterName": "Milo Foundation",
-      "contactPhone": "",
-      "contactEmail": "",
-      "url": "https://www.shelterluv.com/embed/animal/MILO-A-11500",
-      "source": "Milo Foundation · Shelterluv",
-      "imageRemote": "https://new-s3.shelterluv.com/profile-pictures/ca7647d4c5246c6f91a40b60517bf3e1/604a522c1072be4a8dbb5c99db535b0f.jpeg",
-      "image": "./assets/dogs/shelterluv-MILO-A-11500.jpg",
       "foundAt": "2026-07-14T10:52:24-07:00"
     },
     {
@@ -742,7 +720,7 @@
       "shelterName": "For Adoption by Private Owner (Sacramento)",
       "contactPhone": "",
       "contactEmail": "",
-      "url": "https://www.adoptapet.com/pet/48654924-sacramento-california-australian-cattle-dog-australian-shepherd",
+      "url": "https://www.adoptapet.com/pet/48654924-sacramento-california-australian-cattle-dog-mix",
       "source": "Adopt-a-Pet · Sacramento 50mi",
       "imageRemote": "https://pet-uploads.adoptapet.com/5/1/6/1319712573.jpg",
       "image": "./assets/dogs/adoptapet-48654924.jpg",
