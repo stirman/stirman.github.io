@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T00:00:16+00:00",
+  "updatedAt": "2026-08-03T01:00:21+00:00",
   "location": "San Francisco Bay Area + couple-hour drive",
   "breedTerms": [
     "Australian Cattle Dog",
@@ -7,7 +7,7 @@
     "Red Heeler",
     "Cattle Dog"
   ],
-  "count": 56,
+  "count": 54,
   "dogs": [
     {
       "id": "shelterluv-MILO-A-10109",
@@ -29,28 +29,6 @@
       "source": "Milo Foundation · Shelterluv",
       "imageRemote": "https://new-s3.shelterluv.com/profile-pictures/7f9d343b446f5c8048c800f1ea69baa3/dc754b0f91e8fd0053427975eb4ed1b5.jpg",
       "image": "./assets/dogs/shelterluv-MILO-A-10109.jpg",
-      "foundAt": "2026-07-14T10:52:24-07:00"
-    },
-    {
-      "id": "shelterluv-MILO-A-11642",
-      "name": "BOONIE",
-      "breed": "Cattle Dog, Australian (Blue Heeler) / Queensland Heeler",
-      "sex": "Male",
-      "age": "2.1 yrs",
-      "color": "Black / Grey",
-      "size": "Medium (25-59)",
-      "description": "Behavior: Good off leash, Behavior: Hiker, Behavior: Lap dog, Behavior: Medium Energy, Good with Dogs, Playstyle: Herds/Herding Tendencies, Training: Needs mental stimulation, Training: Food/Treat Motivated",
-      "city": "Foster Home",
-      "state": "CA",
-      "postalCode": "94801",
-      "distanceMiles": 18,
-      "shelterName": "Milo Foundation",
-      "contactPhone": "",
-      "contactEmail": "",
-      "url": "https://www.shelterluv.com/embed/animal/MILO-A-11642",
-      "source": "Milo Foundation · Shelterluv",
-      "imageRemote": "https://new-s3.shelterluv.com/profile-pictures/930a0fcee147517154baf4d0386fddd1/7c5a38ff1e38788f9a9b72938848cd21.jpg",
-      "image": "./assets/dogs/shelterluv-MILO-A-11642.jpg",
       "foundAt": "2026-07-14T10:52:24-07:00"
     },
     {
@@ -724,29 +702,6 @@
       "source": "Adopt-a-Pet · Sacramento 50mi",
       "imageRemote": "https://pet-uploads.adoptapet.com/5/1/6/1319712573.jpg",
       "image": "./assets/dogs/adoptapet-48654924.jpg",
-      "foundAt": "2026-07-14T10:41:57-07:00"
-    },
-    {
-      "id": "adoptapet-48581949",
-      "name": "SERGIO",
-      "breed": "Australian Cattle Dog",
-      "sex": "Male",
-      "age": "3 yrs 1 mo",
-      "color": "White - with Black",
-      "size": "Med. 26-60 lbs (12-27 kg)",
-      "description": "Meet Sergio—the fun-sized package with a heart that`s just waiting for the right person to unlock it. This adorable cattle dog mix is a rock star in playgroups! He`s social, respectful, and loves a good wrestling match with his canine buddies. Whether he`s romping around the yard or making new four-legged friends, Sergio knows how to have a good time. People, though? That`s where Sergio is still finding his confidence.The shelter can be a scary place, and Sergio is learning every day that humans can be kind. Thanks to patient staff and dedicated volunteers, he`s making progress and slowly discovering that treats, gentle words, and caring hands aren`t so bad after all. We believe the day Sergio truly trusts someone will be the day they gain a loyal best friend for life. You`ll be part of his inner circle—a place reserved for the people who earn his heart. Sergio isn`t looking for perfecti",
-      "city": "Sacramento",
-      "state": "CA",
-      "postalCode": "95827",
-      "distanceMiles": 88,
-      "sourceDistanceMiles": 9.5,
-      "shelterName": "Sacramento County Animal Care (Bradshaw Animal Shelter)",
-      "contactPhone": "916-368-7387",
-      "contactEmail": "",
-      "url": "https://www.adoptapet.com/pet/48581949-sacramento-california-australian-cattle-dog-mix",
-      "source": "Adopt-a-Pet · Sacramento 50mi",
-      "imageRemote": "https://pet-uploads.adoptapet.com/d/f/7/1324077904.jpg",
-      "image": "./assets/dogs/adoptapet-48581949.jpg",
       "foundAt": "2026-07-14T10:41:57-07:00"
     },
     {
