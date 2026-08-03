@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T03:00:36+00:00",
+  "updatedAt": "2026-08-03T04:00:44+00:00",
   "location": "San Francisco Bay Area + couple-hour drive",
   "breedTerms": [
     "Australian Cattle Dog",
@@ -281,7 +281,7 @@
       "age": "3 yrs",
       "color": "White / Black",
       "size": "Medium (25-59)",
-      "description": "Behavior: Medium Energy, Behavior: Quick Learner, Good with Dogs, Behavior: Social Butterfly, Behavior: Must keep on leash",
+      "description": "Behavior: Medium Energy, Behavior: Quick Learner, Good with Dogs, Behavior: Social Butterfly, Behavior: Must keep on leash, Behavior: Hiker, Behavior: Can be left alone up to 2 hours, Behavior: Dog-savvy Children 10+",
       "city": "Foster Home",
       "state": "CA",
       "postalCode": "94801",
@@ -291,8 +291,8 @@
       "contactEmail": "",
       "url": "https://www.shelterluv.com/embed/animal/MILO-A-11751",
       "source": "Milo Foundation · Shelterluv",
-      "imageRemote": "https://new-s3.shelterluv.com/profile-pictures/6f27e092d2273713d363a30a2e3ec911/a10598f51566078bcbac765fb59b5a54.jpeg",
-      "image": "./assets/dogs/shelterluv-MILO-A-11751.jpg",
+      "imageRemote": "",
+      "image": "",
       "foundAt": "2026-07-30T21:00:46+00:00"
     },
     {
