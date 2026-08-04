@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-08-04T10:00:39Z",
-  "generatedAtHuman": "Aug 04, 2026 at 03:00 AM PDT",
+  "generatedAt": "2026-08-04T13:01:27Z",
+  "generatedAtHuman": "Aug 04, 2026 at 06:01 AM PDT",
   "source": "scheduled-cache",
   "refreshCadenceMinutes": 180,
   "overview": {
-    "totalUsers": 63,
-    "launchUsers": 59,
-    "active7": 8,
-    "active30": 14,
+    "totalUsers": 64,
+    "launchUsers": 60,
+    "active7": 9,
+    "active30": 15,
     "premium": 15,
     "paidSubscribers": 4,
     "grantedPremium": 11,
@@ -531,6 +531,19 @@
       "createdAt": "2026-05-21T20:48:11Z",
       "lastLoginAt": "2026-05-21T20:48:11Z",
       "lastActiveAt": "2026-05-21T20:48:11Z",
+      "isPaidSubscriber": false,
+      "grantedPremium": false,
+      "insights30": 0,
+      "cardImages30": 0,
+      "retained": false
+    },
+    {
+      "id": "gDnkrLLN0UggVNDQjwMxlgDU5Hx2",
+      "displayName": "Lauren Huck",
+      "email": "76bw9g7ynk@privaterelay.appleid.com",
+      "createdAt": "2026-08-04T12:46:46Z",
+      "lastLoginAt": "2026-08-04T12:46:46Z",
+      "lastActiveAt": "2026-08-04T12:46:46Z",
       "isPaidSubscriber": false,
       "grantedPremium": false,
       "insights30": 0,
@@ -1692,7 +1705,7 @@
       {
         "date": "2026-08-04",
         "label": "Aug 4",
-        "count": 61
+        "count": 62
       }
     ],
     "dailyCosts": [
