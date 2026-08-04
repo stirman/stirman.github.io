@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-04T21:00:24+00:00",
+  "updatedAt": "2026-08-04T22:00:26+00:00",
   "location": "San Francisco Bay Area + couple-hour drive",
   "breedTerms": [
     "Australian Cattle Dog",
@@ -7,7 +7,7 @@
     "Red Heeler",
     "Cattle Dog"
   ],
-  "count": 54,
+  "count": 55,
   "dogs": [
     {
       "id": "shelterluv-MILO-A-10109",
@@ -858,6 +858,28 @@
       "imageRemote": "",
       "image": "",
       "foundAt": "2026-07-14T10:52:24-07:00"
+    },
+    {
+      "id": "shelterluv-MILO-A-10841",
+      "name": "HOPE",
+      "breed": "Cattle Dog, Australian (Red Heeler) / Mixed Breed (Medium)",
+      "sex": "Female",
+      "age": "2.5 yrs",
+      "color": "Red/Mahogany / White",
+      "size": "Medium (25-59)",
+      "description": "Behavior: Resource Guards, Not Good with Cats, Training: Affection Motivated, Behavior: Shy - Takes time to adjust, Behavior: Medium Energy, Behavior: Dog savvy children 13+, Training: Leash Reactive, Adult-Only Home Preferred",
+      "city": "Willits",
+      "state": "CA",
+      "postalCode": "95490",
+      "distanceMiles": 140,
+      "shelterName": "Milo Foundation",
+      "contactPhone": "",
+      "contactEmail": "",
+      "url": "https://www.shelterluv.com/embed/animal/MILO-A-10841",
+      "source": "Milo Foundation · Shelterluv",
+      "imageRemote": "https://new-s3.shelterluv.com/profile-pictures/d868ce692bc3a490529924fcc55170ab/67a95bc9ba1b050db9271d6ef64ae875.jpg",
+      "image": "./assets/dogs/shelterluv-MILO-A-10841.jpg",
+      "foundAt": "2026-08-04T22:00:26+00:00"
     },
     {
       "id": "shelterluv-MILO-A-472",
