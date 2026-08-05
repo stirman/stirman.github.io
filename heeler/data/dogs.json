@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-05T19:00:50+00:00",
+  "updatedAt": "2026-08-05T20:00:46+00:00",
   "location": "San Francisco Bay Area + couple-hour drive",
   "breedTerms": [
     "Australian Cattle Dog",
@@ -492,7 +492,7 @@
       "shelterName": "Sonoma County Animal Care and Control",
       "contactPhone": "707-565-7100",
       "contactEmail": "",
-      "url": "https://www.adoptapet.com/pet/48839132-santa-rosa-california-australian-cattle-dog-catahoula-leopard-dog-mix",
+      "url": "https://www.adoptapet.com/pet/48839132-santa-rosa-california-australian-cattle-dog-mix",
       "source": "Adopt-a-Pet · Santa Rosa 50mi",
       "imageRemote": "https://pet-uploads.adoptapet.com/d/a/0/1324209397.jpg",
       "image": "./assets/dogs/adoptapet-48839132.jpg",
@@ -856,7 +856,7 @@
       "contactEmail": "",
       "url": "https://www.shelterluv.com/embed/animal/MILO-A-3695",
       "source": "Milo Foundation · Shelterluv",
-      "imageRemote": "https://new-s3.shelterluv.com/profile-pictures/64d14a1e85a1ab0542e27fbd8f4f2095/20220530162850.png",
+      "imageRemote": "https://new-s3.shelterluv.com/profile-pictures/9b574aef5726cb6a7d5bf74354b51c88/20220530162912.png",
       "image": "./assets/dogs/shelterluv-MILO-A-3695.jpg",
       "foundAt": "2026-07-14T10:52:24-07:00"
     },
@@ -1022,7 +1022,7 @@
       "age": "7.2 yrs",
       "color": "Red/Mahogany",
       "size": "Medium (20-59)",
-      "description": "Adult-Only Home Preferred, Behavior: Dog Selective, Behavior: Escape Artist, Training: Good Recall",
+      "description": "Adult-Only Home Preferred, Behavior: Dog Selective, Behavior: Escape Artist, Behavior: Medium Energy, Behavior: Must keep on leash, Behavior: Needs Yard, Behavior: Shy - Takes time to adjust, Experienced Foster",
       "city": "Willits",
       "state": "CA",
       "postalCode": "95490",
@@ -1032,7 +1032,7 @@
       "contactEmail": "",
       "url": "https://www.shelterluv.com/embed/animal/MILO-A-3658",
       "source": "Milo Foundation · Shelterluv",
-      "imageRemote": "https://new-s3.shelterluv.com/profile-pictures/e46870d6b01a4c41926269d16b311b65/20240507112548.png",
+      "imageRemote": "https://new-s3.shelterluv.com/profile-pictures/6b428e197956ed4d5901629335487c1f/af5def4167841398fb533f535c6eb682.png",
       "image": "./assets/dogs/shelterluv-MILO-A-3658.jpg",
       "foundAt": "2026-07-14T10:52:24-07:00"
     },
