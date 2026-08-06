@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-06T21:00:10+00:00",
+  "updatedAt": "2026-08-06T22:00:14+00:00",
   "location": "San Francisco Bay Area + couple-hour drive",
   "breedTerms": [
     "Australian Cattle Dog",
@@ -7,7 +7,7 @@
     "Red Heeler",
     "Cattle Dog"
   ],
-  "count": 47,
+  "count": 46,
   "dogs": [
     {
       "id": "shelterluv-MILO-A-10109",
@@ -878,28 +878,6 @@
       "source": "Milo Foundation · Shelterluv",
       "imageRemote": "https://new-s3.shelterluv.com/profile-pictures/0eeeda28f3481243a772bf204b9230ca/20200810085641.png",
       "image": "./assets/dogs/shelterluv-MILO-A-472.jpg",
-      "foundAt": "2026-07-14T10:52:24-07:00"
-    },
-    {
-      "id": "shelterluv-MILO-A-945",
-      "name": "LEXI",
-      "breed": "Catahoula Leopard Dog / Cattle Dog, Australian (Red Heeler)",
-      "sex": "Female",
-      "age": "7.7 yrs",
-      "color": "Brindle / Red/Mahogany",
-      "size": "Medium (20-59)",
-      "description": "Behavior: High Energy, Adult-Only Home Preferred, Training: Food/Treat Motivated, Behavior: Needs a large space, Behavior: Prey Drive, Available for Foster, Behavior: Dog Selective, Behavior: Good in car",
-      "city": "Willits",
-      "state": "CA",
-      "postalCode": "95490",
-      "distanceMiles": 140,
-      "shelterName": "Milo Foundation",
-      "contactPhone": "",
-      "contactEmail": "",
-      "url": "https://www.shelterluv.com/embed/animal/MILO-A-945",
-      "source": "Milo Foundation · Shelterluv",
-      "imageRemote": "",
-      "image": "",
       "foundAt": "2026-07-14T10:52:24-07:00"
     },
     {
