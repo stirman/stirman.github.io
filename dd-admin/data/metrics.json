@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-08-05T22:00:45Z",
-  "generatedAtHuman": "Aug 05, 2026 at 03:00 PM PDT",
+  "generatedAt": "2026-08-06T04:01:22Z",
+  "generatedAtHuman": "Aug 05, 2026 at 09:01 PM PDT",
   "source": "scheduled-cache",
   "refreshCadenceMinutes": 180,
   "overview": {
     "totalUsers": 64,
     "launchUsers": 60,
-    "active7": 8,
+    "active7": 7,
     "active30": 15,
     "premium": 15,
     "paidSubscribers": 4,
     "grantedPremium": 11,
     "retainedUsers": 17,
     "insights30": 58,
-    "entries30": 223,
+    "entries30": 238,
     "cardImages30": 34
   },
   "users": [
@@ -542,8 +542,8 @@
       "displayName": "Lauren Huck",
       "email": "76bw9g7ynk@privaterelay.appleid.com",
       "createdAt": "2026-08-05T12:24:28Z",
-      "lastLoginAt": "2026-08-05T12:29:06Z",
-      "lastActiveAt": "2026-08-05T12:29:06Z",
+      "lastLoginAt": "2026-08-06T00:37:49Z",
+      "lastActiveAt": "2026-08-06T00:37:49Z",
       "isPaidSubscriber": false,
       "grantedPremium": false,
       "insights30": 1,
@@ -650,8 +650,8 @@
       "lastActiveAt": "2026-08-02T07:07:46Z",
       "isPaidSubscriber": false,
       "grantedPremium": false,
-      "insights30": 9,
-      "cardImages30": 2,
+      "insights30": 8,
+      "cardImages30": 1,
       "retained": true
     },
     {
@@ -711,12 +711,12 @@
       "displayName": "Shanna Pouyamehr",
       "email": "shannamp2000@yahoo.com",
       "createdAt": "2026-07-22T13:59:44Z",
-      "lastLoginAt": "2026-08-05T00:44:37Z",
-      "lastActiveAt": "2026-08-05T00:44:37Z",
+      "lastLoginAt": "2026-08-06T01:57:33Z",
+      "lastActiveAt": "2026-08-06T01:57:33Z",
       "isPaidSubscriber": false,
       "grantedPremium": false,
-      "insights30": 8,
-      "cardImages30": 5,
+      "insights30": 9,
+      "cardImages30": 6,
       "retained": true
     },
     {
@@ -861,7 +861,7 @@
     },
     {
       "title": "Depth signal",
-      "body": "Users averaged about 3.8 inputs per generated insight in the last 30 days."
+      "body": "Users averaged about 4.1 inputs per generated insight in the last 30 days."
     },
     {
       "title": "Retention pulse",
@@ -869,7 +869,7 @@
     },
     {
       "title": "Most engaged recently",
-      "body": "Erica Joub\u00e9rt, Cassandra Stirman, Miquelle Hardy generated the most insights in the last 30 days."
+      "body": "Erica Joub\u00e9rt, Cassandra Stirman, Shanna Pouyamehr generated the most insights in the last 30 days."
     },
     {
       "title": "Win-back opportunity",
@@ -879,11 +879,6 @@
   "series": {
     "dailyInsights": [
       {
-        "date": "2026-07-07",
-        "label": "Jul 7",
-        "count": 1
-      },
-      {
         "date": "2026-07-08",
         "label": "Jul 8",
         "count": 2
@@ -1026,16 +1021,16 @@
       {
         "date": "2026-08-05",
         "label": "Aug 5",
-        "count": 1
+        "count": 2
+      },
+      {
+        "date": "2026-08-06",
+        "label": "Aug 6",
+        "count": 0
       }
     ],
     "dailyCardImages": [
       {
-        "date": "2026-07-07",
-        "label": "Jul 7",
-        "count": 1
-      },
-      {
         "date": "2026-07-08",
         "label": "Jul 8",
         "count": 2
@@ -1178,7 +1173,12 @@
       {
         "date": "2026-08-05",
         "label": "Aug 5",
-        "count": 1
+        "count": 2
+      },
+      {
+        "date": "2026-08-06",
+        "label": "Aug 6",
+        "count": 0
       }
     ],
     "totalUsers": [
@@ -1711,17 +1711,14 @@
         "date": "2026-08-05",
         "label": "Aug 5",
         "count": 62
+      },
+      {
+        "date": "2026-08-06",
+        "label": "Aug 6",
+        "count": 62
       }
     ],
     "dailyCosts": [
-      {
-        "date": "2026-07-07",
-        "label": "Jul 7",
-        "textDollars": 0.0005,
-        "imageDollars": 0.2566,
-        "otherDollars": 0.0,
-        "totalDollars": 0.257
-      },
       {
         "date": "2026-07-08",
         "label": "Jul 8",
@@ -1949,6 +1946,14 @@
       {
         "date": "2026-08-05",
         "label": "Aug 5",
+        "textDollars": 0.0136,
+        "imageDollars": 0.7726,
+        "otherDollars": 0.0,
+        "totalDollars": 0.7862
+      },
+      {
+        "date": "2026-08-06",
+        "label": "Aug 6",
         "textDollars": 0.0,
         "imageDollars": 0.0,
         "otherDollars": 0.0,
@@ -1958,26 +1963,26 @@
   },
   "costs": {
     "available": true,
-    "totalDollars": 11.1441,
-    "textDollars": 0.0867,
-    "imageDollars": 11.0574,
+    "totalDollars": 11.6733,
+    "textDollars": 0.0998,
+    "imageDollars": 11.5735,
     "otherDollars": 0.0,
     "byLineItem": [
       {
         "name": "gpt-image-1 image, output",
-        "dollars": 10.7328
+        "dollars": 11.232
       },
       {
         "name": "gpt-image-1 text, input",
-        "dollars": 0.3246
+        "dollars": 0.3415
       },
       {
         "name": "gpt-4o-mini-2024-07-18, input",
-        "dollars": 0.049
+        "dollars": 0.0562
       },
       {
         "name": "gpt-4o-mini-2024-07-18, output",
-        "dollars": 0.0376
+        "dollars": 0.0436
       },
       {
         "name": "gpt-4o-mini-2024-07-18, cached input",
@@ -1998,14 +2003,6 @@
     ],
     "daily": [
       {
-        "date": "2026-07-07",
-        "label": "Jul 7",
-        "textDollars": 0.0005,
-        "imageDollars": 0.2566,
-        "otherDollars": 0.0,
-        "totalDollars": 0.257
-      },
-      {
         "date": "2026-07-08",
         "label": "Jul 8",
         "textDollars": 0.0049,
@@ -2232,6 +2229,14 @@
       {
         "date": "2026-08-05",
         "label": "Aug 5",
+        "textDollars": 0.0136,
+        "imageDollars": 0.7726,
+        "otherDollars": 0.0,
+        "totalDollars": 0.7862
+      },
+      {
+        "date": "2026-08-06",
+        "label": "Aug 6",
         "textDollars": 0.0,
         "imageDollars": 0.0,
         "otherDollars": 0.0,
@@ -2241,6 +2246,6 @@
     "error": null,
     "subscriptionPrice": 7.99,
     "estimatedRevenue": 31.96,
-    "grossMargin": 20.82
+    "grossMargin": 20.29
   }
 }
