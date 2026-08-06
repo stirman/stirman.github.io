@@ -1,7 +1,9 @@
 {
-  "lastRunAt": "2026-08-06T19:00:08+00:00",
+  "lastRunAt": "2026-08-06T20:00:10+00:00",
   "count": 48,
-  "newIds": [],
+  "newIds": [
+    "adoptapet-48926138"
+  ],
   "seenIds": [
     "adoptapet-35421675",
     "adoptapet-43764717",
@@ -46,6 +48,7 @@
     "adoptapet-48834571",
     "adoptapet-48839132",
     "adoptapet-48865087",
+    "adoptapet-48926138",
     "shelterluv-MILO-A-10060",
     "shelterluv-MILO-A-10080",
     "shelterluv-MILO-A-10109",
