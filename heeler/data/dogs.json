@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-06T20:00:10+00:00",
+  "updatedAt": "2026-08-06T21:00:10+00:00",
   "location": "San Francisco Bay Area + couple-hour drive",
   "breedTerms": [
     "Australian Cattle Dog",
@@ -7,7 +7,7 @@
     "Red Heeler",
     "Cattle Dog"
   ],
-  "count": 48,
+  "count": 47,
   "dogs": [
     {
       "id": "shelterluv-MILO-A-10109",
@@ -680,29 +680,6 @@
       "source": "Adopt-a-Pet · Sacramento 50mi",
       "imageRemote": "https://pet-uploads.adoptapet.com/7/2/9/1319692210.jpg",
       "image": "./assets/dogs/adoptapet-43764717.jpg",
-      "foundAt": "2026-07-14T10:41:57-07:00"
-    },
-    {
-      "id": "adoptapet-48654924",
-      "name": "Lola",
-      "breed": "Australian Cattle Dog / Australian Shepherd",
-      "sex": "Female",
-      "age": "puppy",
-      "color": "Black - with White",
-      "size": "Small 25 lbs (11 kg) or less",
-      "description": "It was a gift I was planning to take it to Mexico but plans changed and I was unable to make the trip, she is the best puppy she is very active and she know commands like sit, spin, jump, crate and wait. She is 8 weeks but unfortunately I cannot longer have her in my apartment. I’m trying to find her a home that will take care of her and will seek for her too. :)",
-      "city": "Sacramento",
-      "state": "CA",
-      "postalCode": "95834",
-      "distanceMiles": 88,
-      "sourceDistanceMiles": 4.7,
-      "shelterName": "For Adoption by Private Owner (Sacramento)",
-      "contactPhone": "",
-      "contactEmail": "",
-      "url": "https://www.adoptapet.com/pet/48654924-sacramento-california-australian-cattle-dog-australian-shepherd",
-      "source": "Adopt-a-Pet · Sacramento 50mi",
-      "imageRemote": "https://pet-uploads.adoptapet.com/5/1/6/1319712573.jpg",
-      "image": "./assets/dogs/adoptapet-48654924.jpg",
       "foundAt": "2026-07-14T10:41:57-07:00"
     },
     {
