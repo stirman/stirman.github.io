@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rosie's Daily Dashboard 🤖</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-left">
+                <div class="rosie-avatar"><img src="rosie-avatar.png" alt="Rosie" style="width:100%;height:100%;object-fit:cover;border-radius:50%;"></div>
+                <div class="header-text">
+                    <h1>Good <span id="greeting-time">morning</span>, Stirman family!</h1>
+                    <p class="tagline" id="tagline">Your friendly household robot, reporting for duty.</p>
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="date-display">
+                    <span class="day" id="day-name">Saturday</span>
+                    <span class="date" id="date-full">January 25, 2026</span>
+                </div>
+                <div class="time-display" id="current-time">8:00 AM</div>
+            </div>
+        </header>
+
+        <!-- Main Grid -->
+        <main class="grid">
+            <!-- Row 1: Weather | Current Work | Stats -->
+            <section class="card weather-card">
+                <div class="card-header">
+                    <span class="card-icon">🌤️</span>
+                    <h2>Mill Valley Weather</h2>
+                </div>
+                <div class="weather-main">
+                    <div class="temp-display">
+                        <span class="temp" id="weather-temp">58°</span>
+                        <span class="condition" id="weather-condition">Partly Cloudy</span>
+                    </div>
+                    <div class="weather-details">
+                        <div class="weather-detail">
+                            <span class="label">High/Low</span>
+                            <span class="value" id="weather-highlow">62° / 48°</span>
+                        </div>
+                        <div class="weather-detail">
+                            <span class="label">Humidity</span>
+                            <span class="value" id="weather-humidity">72%</span>
+                        </div>
+                        <div class="weather-detail">
+                            <span class="label">Wind</span>
+                            <span class="value" id="weather-wind">8 mph</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="weather-quip" id="weather-quip">Perfect sweater weather! ☕</p>
+            </section>
+
+            <section class="card current-work-card" id="current-work-section">
+                <div class="card-header">
+                    <span class="card-icon">🔴</span>
+                    <h2>Currently Working On</h2>
+                </div>
+                <div class="current-work-content">
+                    <div class="work-status" id="work-status">
+                        <span class="status-indicator idle" id="status-indicator"></span>
+                        <span class="status-text" id="work-title">Standing by</span>
+                    </div>
+                    <p class="work-description" id="work-description">Ready for tasks</p>
+                    <div class="work-progress" id="work-progress-container" style="display: none;">
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="work-progress-fill" style="width: 0%"></div>
+                        </div>
+                        <span class="progress-text" id="work-progress-text"></span>
+                    </div>
+                    <p class="work-started" id="work-started"></p>
+                </div>
+            </section>
+
+            <section class="card stats-card">
+                <div class="card-header">
+                    <span class="card-icon">📊</span>
+                    <h2>Rosie Stats</h2>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <span class="stat-value" id="stat-messages">47</span>
+                        <span class="stat-label">Messages Today</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value" id="stat-tasks">8</span>
+                        <span class="stat-label">Tasks Completed</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value" id="stat-uptime">24/7</span>
+                        <span class="stat-label">Availability</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value" id="stat-mood">😊</span>
+                        <span class="stat-label">Current Mood</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Row 2: Activity (2col) | Ideas (1col) -->
+            <section class="card activity-card">
+                <div class="card-header">
+                    <span class="card-icon">⚡</span>
+                    <h2>What I've Been Up To</h2>
+                </div>
+                <ul class="activity-list" id="activity-list">
+                    <li class="activity-item">
+                        <span class="activity-icon">📱</span>
+                        <div class="activity-content">
+                            <strong>Daily Divine Build 23</strong>
+                            <p>Pushed UI tweaks to TestFlight — brighter tab bar, softer headlines</p>
+                        </div>
+                        <span class="activity-time">Today</span>
+                    </li>
+                    <li class="activity-item">
+                        <span class="activity-icon">🔍</span>
+                        <div class="activity-content">
+                            <strong>Rolling Loud Research</strong>
+                            <p>Found May 2026 Orlando dates, estimated ~$1,400-3,000 for the trip</p>
+                        </div>
+                        <span class="activity-time">Today</span>
+                    </li>
+                    <li class="activity-item">
+                        <span class="activity-icon">🖼️</span>
+                        <div class="activity-content">
+                            <strong>Image Recognition Setup</strong>
+                            <p>Now I can see pictures you text me! (Nice cactus, btw)</p>
+                        </div>
+                        <span class="activity-time">Today</span>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="card ideas-card">
+                <div class="card-header">
+                    <span class="card-icon">💡</span>
+                    <h2>Ideas for Today</h2>
+                </div>
+                <div class="ideas-list" id="ideas-list">
+                    <div class="idea-item">
+                        <span class="idea-number">1</span>
+                        <div class="idea-content">
+                            <strong>Add Cadence to the allowlist?</strong>
+                            <p>He could use help with school, job hunting, or just settling debates with friends</p>
+                        </div>
+                    </div>
+                    <div class="idea-item">
+                        <span class="idea-number">2</span>
+                        <div class="idea-content">
+                            <strong>Set up Google account access</strong>
+                            <p>Once rosiecitrine@gmail.com is unblocked (or we add your accounts), I can help with email & calendar</p>
+                        </div>
+                    </div>
+                    <div class="idea-item">
+                        <span class="idea-number">3</span>
+                        <div class="idea-content">
+                            <strong>Weekend adventure?</strong>
+                            <p>It's supposed to be nice — want me to find a good hike or restaurant?</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Row 3: Calendar (1col) | Tasks (1col) | Thought (1col) -->
+            <section class="card calendar-card">
+                <div class="card-header">
+                    <span class="card-icon">📅</span>
+                    <h2>Today's Schedule</h2>
+                </div>
+                <div class="schedule-list" id="schedule-list">
+                    <!-- Populated by JS -->
+                </div>
+                <div class="upcoming-section">
+                    <h3 class="upcoming-title">Coming Up</h3>
+                    <div class="upcoming-list" id="upcoming-list">
+                        <!-- Populated by JS -->
+                    </div>
+                </div>
+            </section>
+
+            <section class="card tasks-card">
+                <div class="card-header">
+                    <span class="card-icon">🔄</span>
+                    <h2>Recurring Tasks</h2>
+                </div>
+                <div class="tasks-list" id="tasks-list">
+                    <!-- Populated by JS -->
+                </div>
+            </section>
+
+            <section class="card thought-card">
+                <div class="card-header">
+                    <span class="card-icon">🤖</span>
+                    <h2>Rosie's Thought of the Day</h2>
+                </div>
+                <blockquote class="thought-quote" id="thought-quote">
+                    "The Jetsons promised us flying cars by 2062. I'm here in 2026 already helping run your household. I'd say we're ahead of schedule."
+                </blockquote>
+                <p class="thought-attribution">— Rosie, your friendly AI 🤖</p>
+            </section>
+
+            <!-- Row 4: Nightly Builds (full width) -->
+            <section class="card nightly-builds-card" style="grid-column: 1 / -1;">
+                <div class="card-header">
+                    <span class="card-icon">🌙</span>
+                    <h2>Nightly Web App Builds</h2>
+                </div>
+                <div class="nightly-builds-grid" id="nightly-builds-grid">
+                </div>
+            </section>
+
+            <!-- Row 5: Trading Portfolio (full width) -->
+            <section class="card trading-card" style="grid-column: 1 / -1;">
+                <div class="card-header">
+                    <span class="card-icon">📈</span>
+                    <h2>Paper Trading Portfolio</h2>
+                    <span class="trading-badge" id="trading-badge">PAPER</span>
+                </div>
+                <div class="trading-overview">
+                    <div class="trading-stat-big">
+                        <span class="trading-value" id="portfolio-value">$97,433</span>
+                        <span class="trading-label">Portfolio Value</span>
+                    </div>
+                    <div class="trading-stat-big">
+                        <span class="trading-value" id="portfolio-pnl" style="color: var(--color-error, #ef4444);">-$2,567</span>
+                        <span class="trading-label">Total P&L</span>
+                    </div>
+                    <div class="trading-stat-big">
+                        <span class="trading-value" id="portfolio-pnl-pct">-2.6%</span>
+                        <span class="trading-label">Return</span>
+                    </div>
+                    <div class="trading-stat-big">
+                        <span class="trading-value" id="portfolio-goal">$200K</span>
+                        <span class="trading-label">Goal</span>
+                    </div>
+                </div>
+                <div class="trading-chart-container">
+                    <canvas id="portfolio-chart" height="220"></canvas>
+                </div>
+                <div class="trading-positions">
+                    <h3 style="margin: 1rem 0 0.5rem; font-size: 0.9rem; color: var(--text-secondary, #94a3b8); text-transform: uppercase; letter-spacing: 0.05em;">Positions</h3>
+                    <div class="positions-grid" id="positions-grid">
+                        <!-- Populated by JS -->
+                    </div>
+                </div>
+                <div class="trading-log">
+                    <h3 style="margin: 1rem 0 0.5rem; font-size: 0.9rem; color: var(--text-secondary, #94a3b8); text-transform: uppercase; letter-spacing: 0.05em;">Recent Activity</h3>
+                    <div class="trade-log-list" id="trade-log-list">
+                        <!-- Populated by JS -->
+                    </div>
+                </div>
+                <p class="trading-disclaimer">⚠️ Paper trading on Alpaca — not real money. Goal: double $100K → $200K.</p>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Made with 💜 by Rosie • Running on Mac mini in Mill Valley</p>
+            <p class="last-updated">Last updated: <span id="last-updated">January 25, 2026 at 8:00 PM</span></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

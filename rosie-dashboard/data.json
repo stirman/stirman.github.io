@@ -1,0 +1,208 @@
+{
+  "lastUpdated": "2026-08-07T13:00:00Z",
+  "weather": {
+    "temp": "54°",
+    "condition": "Fog now, dry and mild later",
+    "highLow": "80° / 54°",
+    "humidity": "99%",
+    "wind": "NE 1 mph",
+    "quip": "Open-Meteo has Mill Valley wearing the full coastal-morning cloak at 6 AM: 54°, feels 55°, fog, humidity 99%, and barely-there northeast wind around 1 mph. The fog should give way to a dry, mild day near 80° with only about 1% rain odds, UV around 7.7, sunrise at 6:18 AM, and sunset at 8:12 PM. Friendly morning, sunscreen afternoon, smug evening."
+  },
+  "currentWork": {
+    "title": "🤖 Friday dashboard: fog, weekend runway, green systems",
+    "status": "fresh",
+    "description": "Friday's dashboard is refreshed with Mill Valley fog weather, real weekend calendar items, quiet overnight memory, three open reminders, green Paperclip/OpenClaw health, and a few useful ideas for the day.",
+    "progress": 100,
+    "startedAt": "Aug 7 · 06:00 PT"
+  },
+  "schedule": [
+    {
+      "time": "6:00 AM",
+      "title": "🤖 Rosie dashboard refresh",
+      "type": "ritual",
+      "duration": "weather + memory + calendar + repo push"
+    },
+    {
+      "time": "6:18 AM",
+      "title": "🌄 Sunrise",
+      "type": "weather",
+      "duration": "foggy 54° start"
+    },
+    {
+      "time": "Morning",
+      "title": "🌫️ Fog-window walk or errand",
+      "type": "life",
+      "duration": "cool, still, and civilized"
+    },
+    {
+      "time": "Today",
+      "title": "📅 No timed calendar events found",
+      "type": "calendar",
+      "duration": "calendar connector worked"
+    },
+    {
+      "time": "Lunch",
+      "title": "🧴 Sunscreen checkpoint",
+      "type": "life",
+      "duration": "UV near 7.7 even if the morning looks soft"
+    },
+    {
+      "time": "Afternoon",
+      "title": "☀️ Mild dry peak",
+      "type": "weather",
+      "duration": "high around 80°, low drama"
+    },
+    {
+      "time": "8:12 PM",
+      "title": "🌅 Sunset",
+      "type": "weather",
+      "duration": "Friday evening fade-out"
+    }
+  ],
+  "upcoming": [
+    {
+      "date": "Saturday",
+      "title": "Kim Neidel's birthday",
+      "time": "All day"
+    },
+    {
+      "date": "Saturday",
+      "title": "Flight to San Francisco (UA 589)",
+      "time": "1:30 PM-5:35 PM PT · from Houston IAH"
+    },
+    {
+      "date": "Saturday forecast",
+      "title": "Dry and partly cloudy",
+      "time": "About 80° / 56°, UV around 7.8"
+    },
+    {
+      "date": "Sunday forecast",
+      "title": "Dry and mostly clear",
+      "time": "About 78° / 56°, UV around 7.7"
+    },
+    {
+      "date": "Travel",
+      "title": "Rome stay remains confirmed",
+      "time": "Singer Palace, Sept. 6-10, 2026"
+    },
+    {
+      "date": "Home tech",
+      "title": "Paperclip and OpenClaw are green",
+      "time": "Paperclip 2026.722.0, fresh 6:00 AM backup, gateway live"
+    }
+  ],
+  "activities": [
+    {
+      "icon": "🌫️",
+      "title": "Dashboard got its Friday weather brain",
+      "description": "Updated the live data with Open-Meteo's 6 AM Mill Valley read: 54° fog, feels 55°, 99% humidity, northeast wind around 1 mph, 80° high, almost no rain, and UV around 7.7.",
+      "time": "Aug 7 · 06:00 PT"
+    },
+    {
+      "icon": "📅",
+      "title": "Calendar connector is behaving",
+      "description": "The Calendar connector found no timed events today after the refresh, plus Kim Neidel's birthday and UA 589 from Houston to SFO on Saturday.",
+      "time": "Aug 7 · calendar check"
+    },
+    {
+      "icon": "💚",
+      "title": "Paperclip health stayed green",
+      "description": "The local Paperclip health endpoint is OK on version 2026.722.0 with auth ready, private local-trusted exposure, and a fresh backup named paperclip-20260807-060035.sql.gz.",
+      "time": "Aug 7 · health check"
+    },
+    {
+      "icon": "🟢",
+      "title": "OpenClaw gateway is live",
+      "description": "The local gateway health endpoint returned live, and there was no active Claude Code, Xcode, or Fastlane build process needing rescue.",
+      "time": "Aug 7 · service check"
+    },
+    {
+      "icon": "✅",
+      "title": "Reminder list is readable",
+      "description": "The open household nudges are unchanged: downgrade Xfinity, schedule the renal ultrasound, and sell the TR-1000 on Reverb.",
+      "time": "Aug 7 · reminders check"
+    },
+    {
+      "icon": "📞",
+      "title": "Cadence reminder stayed quiet",
+      "description": "The 3:23 AM Cadence call reminder triggered, but the instruction said not to relay unless requested, so no sleepy-hours text went out.",
+      "time": "Aug 7 · overnight memory"
+    },
+    {
+      "icon": "✈️",
+      "title": "Yesterday's travel stack resolved into weekend context",
+      "description": "Thursday's dashboard had several LAX flight holds; today's connector window is calmer and only shows Saturday's UA 589 from Houston to San Francisco.",
+      "time": "Aug 6 · memory review"
+    },
+    {
+      "icon": "🏛️",
+      "title": "Rome remains in the durable pile",
+      "description": "Recent memory still has Singer Palace Hotel Rome confirmed for Sept. 6-10, 2026 after the prepayment was received.",
+      "time": "recent memory"
+    }
+  ],
+  "ideas": [
+    {
+      "icon": "🌫️",
+      "title": "Use the fog before it clocks out",
+      "description": "A 54° still morning is built for a walk, quick errand, or garage task before the day opens up into mild sunny confidence."
+    },
+    {
+      "icon": "☎️",
+      "title": "Pick one grown-up nuisance",
+      "description": "Xfinity downgrade or renal ultrasound scheduling are the two reminder-list items most likely to feel amazing once they stop existing."
+    },
+    {
+      "icon": "🎂",
+      "title": "Saturday birthday ping",
+      "description": "Kim Neidel's birthday is tomorrow. Easy win: queue the text, card, or calendar nudge while Friday is still quiet."
+    },
+    {
+      "icon": "✈️",
+      "title": "Travel sanity glance",
+      "description": "UA 589 is on Saturday from Houston to SFO. One quick confirmation of who is flying and whether it matters to today keeps the weekend clean."
+    },
+    {
+      "icon": "🧴",
+      "title": "Do not trust cute fog",
+      "description": "UV near 7.7 means the morning may look gentle and still roast your plans. Sunscreen belongs in the day, even when the sky starts theatrical."
+    },
+    {
+      "icon": "🏀",
+      "title": "Tiny Rockets brain snack",
+      "description": "Five minutes of offseason roster reading pairs nicely with the fog lifting. No spreadsheet unless the coffee gets ambitious."
+    }
+  ],
+  "stats": {
+    "messages": "No blocker text sent",
+    "tasks": "Dashboard refreshed + weather checked + calendar included + memory reviewed + services green + repo push handled",
+    "mood": "🤖 Foggy start, tidy checklist"
+  },
+  "recurringTasks": [
+    {
+      "name": "Dashboard update",
+      "schedule": "Daily · 6:00 AM",
+      "description": "Fresh weather, calendar, memory highlights, ideas, and GitHub Pages push.",
+      "status": "ok"
+    },
+    {
+      "name": "Paperclip backup",
+      "schedule": "Hourly",
+      "description": "Latest backup: paperclip-20260807-060035.sql.gz.",
+      "status": "ok"
+    },
+    {
+      "name": "Shared reminders",
+      "schedule": "Open household nudges",
+      "description": "Downgrade Xfinity, schedule the renal ultrasound, and sell the TR-1000 on Reverb.",
+      "status": "ok"
+    },
+    {
+      "name": "Google CLI auth",
+      "schedule": "Known issue",
+      "description": "`gog` Gmail/Calendar have known OAuth invalid_grant noise; connector fallback worked for calendar.",
+      "status": "warning"
+    }
+  ],
+  "thought": "Friday is starting like a soft reboot: fog, green services, no urgent calendar today, and just enough useful admin to make future-you annoyingly pleased."
+}
