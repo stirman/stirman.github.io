@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-07T00:00:13+00:00",
+  "updatedAt": "2026-08-07T01:00:13+00:00",
   "location": "San Francisco Bay Area + couple-hour drive",
   "breedTerms": [
     "Australian Cattle Dog",
@@ -7,7 +7,7 @@
     "Red Heeler",
     "Cattle Dog"
   ],
-  "count": 46,
+  "count": 47,
   "dogs": [
     {
       "id": "shelterluv-MILO-A-10109",
@@ -681,6 +681,29 @@
       "imageRemote": "https://pet-uploads.adoptapet.com/7/2/9/1319692210.jpg",
       "image": "./assets/dogs/adoptapet-43764717.jpg",
       "foundAt": "2026-07-14T10:41:57-07:00"
+    },
+    {
+      "id": "adoptapet-48930586",
+      "name": "Pippi",
+      "breed": "Cattle Dog",
+      "sex": "Female",
+      "age": "2 yrs",
+      "color": "Brown/Chocolate - with White",
+      "size": "Med. 26-60 lbs (12-27 kg)",
+      "description": "THIS IS A COURTESY POST. Please contact Sheryl with OAKDALE TINY PAWS RESCUE, text+1 (209) 606-3640 or email at tinypawsoakdale@gmail.com, Pippi is being fostered in Modesto. Pippi is a 2-year-old Cattle Dog mix with the biggest heart. She is spayed; house trained, knows basic commands, weighs 50 pounds, loves kids, and absolutely loves to cuddle. She gets along well with other dogs, although her playful, high-energy personality can sometimes be a little much for more laid-back pups. She is curious about cats but has done well around them and doesn’t bother them much. Pippi is happiest when she has room to run and something to do. She would thrive on a ranch, farm, or large property with an active family who can give her the time, attention, exercise, and purpose she craves. Our rescue is looking for a forever home where she will be treated like family and loved as much as she deserves. ",
+      "city": "Sacramento",
+      "state": "CA",
+      "postalCode": "95843",
+      "distanceMiles": 88,
+      "sourceDistanceMiles": 10.3,
+      "shelterName": "No Kill CA",
+      "contactPhone": "",
+      "contactEmail": "",
+      "url": "https://www.adoptapet.com/pet/48930586-sacramento-california-cattle-dog-mix",
+      "source": "Adopt-a-Pet · Sacramento 50mi",
+      "imageRemote": "https://pet-uploads.adoptapet.com/7/b/a/1326412395.jpg",
+      "image": "./assets/dogs/adoptapet-48930586.jpg",
+      "foundAt": "2026-08-07T01:00:13+00:00"
     },
     {
       "id": "shelterluv-MILO-A-9100",
