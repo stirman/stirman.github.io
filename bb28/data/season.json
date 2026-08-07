@@ -2,8 +2,8 @@
   "season": "Big Brother 28",
   "siteTitle": "BB28 Fantasy Draft",
   "tagline": "Meet the BB28 houseguests — draft night is next.",
-  "lastUpdated": "2026-08-06T04:17:02Z",
-  "status": "week-4-veto-complete",
+  "lastUpdated": "2026-08-07T04:15:39Z",
+  "status": "week-4-complete",
   "liveRefreshSeconds": 60,
   "seasonCalendar": {
     "premiere": "2026-07-07",
@@ -209,13 +209,13 @@
       "age": 25,
       "hometown": "Honolulu, HI",
       "occupation": "Attorney",
-      "status": "active",
+      "status": "evicted",
       "draftOwner": "cassie",
       "photoUrl": "https://bigbrothernetwork.com/wp-content/uploads/2026/07/bb28-cast-lyric-00.jpg",
       "bio": "Lyric Medeiros is a 25-year-old attorney from Honolulu, HI.",
       "sourceName": "Big Brother Network",
       "sourceUrl": "https://bigbrothernetwork.com/big-brother-28-cast/",
-      "notes": "Saved from the block in Weeks 2 and 3; won the Week 3 Power of Veto and used it on herself."
+      "notes": "Evicted Week 4 by an 8-3 vote after Drew Campbell won the BB Blockbuster. Previously saved from the block in Weeks 2 and 3 and won the Week 3 Power of Veto."
     },
     {
       "id": "mallory-aurichio",
@@ -456,7 +456,7 @@
       "week": 4,
       "label": "Week 4",
       "date": "2026-08-06",
-      "status": "Veto complete",
+      "status": "Complete",
       "hoh": {
         "houseguestId": "haley-thogmartin",
         "winner": "Haley Thogmartin"
@@ -475,7 +475,7 @@
           "name": "Taylor Brown"
         }
       ],
-      "notes": "Haley Thogmartin won Head of Household and nominated Melody Morris, Drew Campbell, and Taylor Brown. Taylor won the Power of Veto and used it on herself; Haley named Lyric Medeiros as the replacement nominee.",
+      "notes": "Haley Thogmartin won Head of Household and nominated Melody Morris, Drew Campbell, and Taylor Brown. Taylor won the Power of Veto and used it on herself; Haley named Lyric Medeiros as the replacement nominee. Drew won the BB Blockbuster, and Lyric was evicted 8-3.",
       "veto": {
         "houseguestId": "taylor-brown",
         "winner": "Taylor Brown"
@@ -487,10 +487,31 @@
       "replacementNominee": {
         "houseguestId": "lyric-medeiros",
         "name": "Lyric Medeiros"
+      },
+      "blockbuster": {
+        "houseguestId": "drew-campbell",
+        "winner": "Drew Campbell"
+      },
+      "evicted": {
+        "houseguestId": "lyric-medeiros",
+        "name": "Lyric Medeiros",
+        "vote": "8-3"
       }
     }
   ],
   "events": [
+    {
+      "date": "2026-08-06T21:00:00-07:00",
+      "type": "eviction",
+      "title": "Lyric is evicted in Week 4",
+      "description": "Lyric Medeiros was evicted by an 8-3 vote."
+    },
+    {
+      "date": "2026-08-06T20:45:00-07:00",
+      "type": "competition_result",
+      "title": "Drew wins the Week 4 BB Blockbuster",
+      "description": "Drew Campbell won the Week 4 BB Blockbuster and came off the block."
+    },
     {
       "date": "2026-08-05T21:00:00-07:00",
       "type": "competition_result",
@@ -674,6 +695,11 @@
       "name": "Big Brother Network Episode 12 recap",
       "url": "https://bigbrothernetwork.com/big-brother-28-episode-12-recap-pick-your-poison/",
       "checkedAt": "2026-08-06T04:17:02Z"
+    },
+    {
+      "name": "TVLine Week 4 eviction recap",
+      "url": "https://www.tvline.com/2232184/big-brother-recap-lyric-evicted-season-28-week-4-results/",
+      "checkedAt": "2026-08-07T04:15:39Z"
     }
   ],
   "players": [
