@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-07T19:01:02Z",
-  "generatedAtHuman": "Aug 07, 2026 at 12:01 PM PDT",
+  "generatedAt": "2026-08-07T22:00:48Z",
+  "generatedAtHuman": "Aug 07, 2026 at 03:00 PM PDT",
   "source": "scheduled-cache",
   "refreshCadenceMinutes": 180,
   "overview": {
@@ -12,9 +12,9 @@
     "paidSubscribers": 4,
     "grantedPremium": 11,
     "retainedUsers": 18,
-    "insights30": 58,
-    "entries30": 227,
-    "cardImages30": 34
+    "insights30": 59,
+    "entries30": 267,
+    "cardImages30": 35
   },
   "users": [
     {
@@ -542,12 +542,12 @@
       "displayName": "Lauren Huck",
       "email": "76bw9g7ynk@privaterelay.appleid.com",
       "createdAt": "2026-08-05T12:24:28Z",
-      "lastLoginAt": "2026-08-06T00:37:49Z",
-      "lastActiveAt": "2026-08-06T00:37:49Z",
+      "lastLoginAt": "2026-08-07T21:57:10Z",
+      "lastActiveAt": "2026-08-07T21:57:10Z",
       "isPaidSubscriber": false,
       "grantedPremium": false,
-      "insights30": 1,
-      "cardImages30": 1,
+      "insights30": 2,
+      "cardImages30": 2,
       "retained": false
     },
     {
@@ -861,7 +861,7 @@
     },
     {
       "title": "Depth signal",
-      "body": "Users averaged about 3.9 inputs per generated insight in the last 30 days."
+      "body": "Users averaged about 4.5 inputs per generated insight in the last 30 days."
     },
     {
       "title": "Retention pulse",
@@ -1026,7 +1026,7 @@
       {
         "date": "2026-08-07",
         "label": "Aug 7",
-        "count": 0
+        "count": 1
       }
     ],
     "dailyCardImages": [
@@ -1178,7 +1178,7 @@
       {
         "date": "2026-08-07",
         "label": "Aug 7",
-        "count": 0
+        "count": 1
       }
     ],
     "totalUsers": [
