@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-08T19:01:18Z",
-  "generatedAtHuman": "Aug 08, 2026 at 12:01 PM PDT",
+  "generatedAt": "2026-08-08T22:00:48Z",
+  "generatedAtHuman": "Aug 08, 2026 at 03:00 PM PDT",
   "source": "scheduled-cache",
   "refreshCadenceMinutes": 180,
   "overview": {
@@ -13,7 +13,7 @@
     "grantedPremium": 11,
     "retainedUsers": 18,
     "insights30": 60,
-    "entries30": 281,
+    "entries30": 284,
     "cardImages30": 35
   },
   "users": [
@@ -711,8 +711,8 @@
       "displayName": "Shanna Pouyamehr",
       "email": "shannamp2000@yahoo.com",
       "createdAt": "2026-07-22T13:59:44Z",
-      "lastLoginAt": "2026-08-08T18:26:32Z",
-      "lastActiveAt": "2026-08-08T18:26:32Z",
+      "lastLoginAt": "2026-08-08T21:50:17Z",
+      "lastActiveAt": "2026-08-08T21:50:17Z",
       "isPaidSubscriber": false,
       "grantedPremium": false,
       "insights30": 11,
