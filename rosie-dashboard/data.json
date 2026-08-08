@@ -1,19 +1,19 @@
 {
-  "lastUpdated": "2026-08-07T13:00:00Z",
+  "lastUpdated": "2026-08-08T13:00:00Z",
   "weather": {
-    "temp": "54°",
-    "condition": "Fog now, dry and mild later",
-    "highLow": "80° / 54°",
-    "humidity": "99%",
-    "wind": "NE 1 mph",
-    "quip": "Open-Meteo has Mill Valley wearing the full coastal-morning cloak at 6 AM: 54°, feels 55°, fog, humidity 99%, and barely-there northeast wind around 1 mph. The fog should give way to a dry, mild day near 80° with only about 1% rain odds, UV around 7.7, sunrise at 6:18 AM, and sunset at 8:12 PM. Friendly morning, sunscreen afternoon, smug evening."
+    "temp": "55°",
+    "condition": "Clear now, sunny and dry later",
+    "highLow": "80° / 55°",
+    "humidity": "89%",
+    "wind": "SSW 3 mph",
+    "quip": "Open-Meteo has Mill Valley starting Saturday at 55°, feeling like 54°, clear, humid but not swampy, with a tiny south-southwest breeze around 3 mph. The day should climb to about 80° with basically no rain, UV around 7.7, sunrise at 6:19 AM, and sunset at 8:11 PM. Morning is gentle. Afternoon is sunscreen with confidence."
   },
   "currentWork": {
-    "title": "🤖 Friday dashboard: fog, weekend runway, green systems",
+    "title": "🤖 Saturday dashboard: clear start, travel day, green systems",
     "status": "fresh",
-    "description": "Friday's dashboard is refreshed with Mill Valley fog weather, real weekend calendar items, quiet overnight memory, three open reminders, green Paperclip/OpenClaw health, and a few useful ideas for the day.",
+    "description": "Saturday's dashboard is refreshed with current Mill Valley weather, today's birthday and flight context, recent reminder activity, green Paperclip/OpenClaw health, and a few useful ideas for the day.",
     "progress": 100,
-    "startedAt": "Aug 7 · 06:00 PT"
+    "startedAt": "Aug 8 · 06:00 PT"
   },
   "schedule": [
     {
@@ -23,67 +23,67 @@
       "duration": "weather + memory + calendar + repo push"
     },
     {
-      "time": "6:18 AM",
+      "time": "6:19 AM",
       "title": "🌄 Sunrise",
       "type": "weather",
-      "duration": "foggy 54° start"
+      "duration": "clear 55° start"
+    },
+    {
+      "time": "All day",
+      "title": "🎂 Kim Neidel's birthday",
+      "type": "calendar",
+      "duration": "calendar connector worked"
     },
     {
       "time": "Morning",
-      "title": "🌫️ Fog-window walk or errand",
+      "title": "☀️ Gentle outside window",
       "type": "life",
-      "duration": "cool, still, and civilized"
+      "duration": "cool enough to move before the 80° peak"
     },
     {
-      "time": "Today",
-      "title": "📅 No timed calendar events found",
+      "time": "1:30 PM",
+      "title": "✈️ Flight to San Francisco (UA 589)",
       "type": "calendar",
-      "duration": "calendar connector worked"
+      "duration": "Houston IAH to SFO · lands 5:35 PM PT"
     },
     {
       "time": "Lunch",
       "title": "🧴 Sunscreen checkpoint",
       "type": "life",
-      "duration": "UV near 7.7 even if the morning looks soft"
+      "duration": "UV near 7.7"
     },
     {
-      "time": "Afternoon",
-      "title": "☀️ Mild dry peak",
-      "type": "weather",
-      "duration": "high around 80°, low drama"
-    },
-    {
-      "time": "8:12 PM",
+      "time": "8:11 PM",
       "title": "🌅 Sunset",
       "type": "weather",
-      "duration": "Friday evening fade-out"
+      "duration": "Saturday evening landing"
     }
   ],
   "upcoming": [
     {
-      "date": "Saturday",
+      "date": "Today",
       "title": "Kim Neidel's birthday",
       "time": "All day"
     },
     {
-      "date": "Saturday",
+      "date": "Today",
       "title": "Flight to San Francisco (UA 589)",
       "time": "1:30 PM-5:35 PM PT · from Houston IAH"
     },
     {
-      "date": "Saturday forecast",
-      "title": "Dry and partly cloudy",
-      "time": "About 80° / 56°, UV around 7.8"
-    },
-    {
       "date": "Sunday forecast",
-      "title": "Dry and mostly clear",
-      "time": "About 78° / 56°, UV around 7.7"
+      "title": "Hotter and sunny",
+      "time": "About 95° / 58°, UV around 7.6"
     },
     {
-      "date": "Travel",
-      "title": "Rome stay remains confirmed",
-      "time": "Singer Palace, Sept. 6-10, 2026"
+      "date": "Monday forecast",
+      "title": "Cooler coastal reset",
+      "time": "About 71° / 55°, dry with possible fog"
+    },
+    {
+      "date": "Tuesday",
+      "title": "Cru haircut",
+      "time": "9:00-9:30 AM"
     },
     {
       "date": "Home tech",
@@ -93,90 +93,90 @@
   ],
   "activities": [
     {
-      "icon": "🌫️",
-      "title": "Dashboard got its Friday weather brain",
-      "description": "Updated the live data with Open-Meteo's 6 AM Mill Valley read: 54° fog, feels 55°, 99% humidity, northeast wind around 1 mph, 80° high, almost no rain, and UV around 7.7.",
-      "time": "Aug 7 · 06:00 PT"
+      "icon": "☀️",
+      "title": "Dashboard got its Saturday weather brain",
+      "description": "Updated the live data with Open-Meteo's 6 AM Mill Valley read: 55° clear, feels 54°, 89% humidity, SSW wind around 3 mph, 80° high, almost no rain, and UV around 7.7.",
+      "time": "Aug 8 · 06:00 PT"
     },
     {
       "icon": "📅",
       "title": "Calendar connector is behaving",
-      "description": "The Calendar connector found no timed events today after the refresh, plus Kim Neidel's birthday and UA 589 from Houston to SFO on Saturday.",
-      "time": "Aug 7 · calendar check"
+      "description": "Today's calendar has Kim Neidel's birthday and UA 589 from Houston IAH to San Francisco at 1:30 PM PT, with Cru's haircut coming Tuesday morning.",
+      "time": "Aug 8 · calendar check"
+    },
+    {
+      "icon": "☎️",
+      "title": "Reminder nudge already went out",
+      "description": "The 3:23 AM reminder cron checked the list and texted Stirman once about the three open household items: Xfinity, renal ultrasound scheduling, and the TR-1000 Reverb listing.",
+      "time": "Aug 8 · overnight memory"
     },
     {
       "icon": "💚",
       "title": "Paperclip health stayed green",
-      "description": "The local Paperclip health endpoint is OK on version 2026.722.0 with auth ready, private local-trusted exposure, and a fresh backup named paperclip-20260807-060035.sql.gz.",
-      "time": "Aug 7 · health check"
+      "description": "The local Paperclip health endpoint is OK on version 2026.722.0 with auth ready, private local-trusted exposure, and a fresh backup named paperclip-20260808-060035.sql.gz.",
+      "time": "Aug 8 · health check"
     },
     {
       "icon": "🟢",
       "title": "OpenClaw gateway is live",
-      "description": "The local gateway health endpoint returned live, and there was no active Claude Code, Xcode, or Fastlane build process needing rescue.",
-      "time": "Aug 7 · service check"
+      "description": "The local gateway health endpoint returned live. A Claude agent process is active for this automation, and there was no Xcode or Fastlane build needing rescue.",
+      "time": "Aug 8 · service check"
     },
     {
       "icon": "✅",
       "title": "Reminder list is readable",
-      "description": "The open household nudges are unchanged: downgrade Xfinity, schedule the renal ultrasound, and sell the TR-1000 on Reverb.",
-      "time": "Aug 7 · reminders check"
-    },
-    {
-      "icon": "📞",
-      "title": "Cadence reminder stayed quiet",
-      "description": "The 3:23 AM Cadence call reminder triggered, but the instruction said not to relay unless requested, so no sleepy-hours text went out.",
-      "time": "Aug 7 · overnight memory"
+      "description": "The shared reminders CLI returned cleanly and still shows three open household nudges: downgrade Xfinity, schedule the renal ultrasound, and sell the TR-1000 on Reverb.",
+      "time": "Aug 8 · reminders check"
     },
     {
       "icon": "✈️",
-      "title": "Yesterday's travel stack resolved into weekend context",
-      "description": "Thursday's dashboard had several LAX flight holds; today's connector window is calmer and only shows Saturday's UA 589 from Houston to San Francisco.",
-      "time": "Aug 6 · memory review"
+      "title": "Travel stack narrowed to today",
+      "description": "Yesterday's dashboard had Saturday travel as upcoming; now it is today's 1:30 PM PT UA 589 Houston-to-SFO block.",
+      "time": "Aug 7 · memory review"
     },
     {
       "icon": "🏛️",
       "title": "Rome remains in the durable pile",
-      "description": "Recent memory still has Singer Palace Hotel Rome confirmed for Sept. 6-10, 2026 after the prepayment was received.",
+      "description": "Recent project memory still carries the Singer Palace Hotel Rome stay as confirmed for Sept. 6-10, 2026 after prepayment.",
       "time": "recent memory"
     }
   ],
   "ideas": [
     {
-      "icon": "🌫️",
-      "title": "Use the fog before it clocks out",
-      "description": "A 54° still morning is built for a walk, quick errand, or garage task before the day opens up into mild sunny confidence."
-    },
-    {
-      "icon": "☎️",
-      "title": "Pick one grown-up nuisance",
-      "description": "Xfinity downgrade or renal ultrasound scheduling are the two reminder-list items most likely to feel amazing once they stop existing."
+      "icon": "☀️",
+      "title": "Steal the good morning air",
+      "description": "A clear 55° start is perfect for a walk, a garage reset, or any errand that feels worse once the day climbs toward 80°."
     },
     {
       "icon": "🎂",
-      "title": "Saturday birthday ping",
-      "description": "Kim Neidel's birthday is tomorrow. Easy win: queue the text, card, or calendar nudge while Friday is still quiet."
+      "title": "Birthday ping while coffee is still legal",
+      "description": "Kim Neidel's birthday is today. A quick text now beats the classic 8:47 PM calendar-guilt sprint."
     },
     {
       "icon": "✈️",
-      "title": "Travel sanity glance",
-      "description": "UA 589 is on Saturday from Houston to SFO. One quick confirmation of who is flying and whether it matters to today keeps the weekend clean."
+      "title": "Give UA 589 one sanity glance",
+      "description": "Houston to SFO is on the calendar from 1:30 to 5:35 PM PT. Check whether it affects pickup, dinner, or the household handoff."
+    },
+    {
+      "icon": "☎️",
+      "title": "One adulting dragon, not all three",
+      "description": "Since the reminders nudge already went out, pick the smallest win: Xfinity downgrade, renal ultrasound scheduling, or the TR-1000 Reverb listing."
     },
     {
       "icon": "🧴",
-      "title": "Do not trust cute fog",
-      "description": "UV near 7.7 means the morning may look gentle and still roast your plans. Sunscreen belongs in the day, even when the sky starts theatrical."
+      "title": "Sunscreen before the smug part of the day",
+      "description": "The sky is being charming, but UV near 7.7 does not care. Apply before lunch and enjoy feeling unfairly prepared."
     },
     {
       "icon": "🏀",
       "title": "Tiny Rockets brain snack",
-      "description": "Five minutes of offseason roster reading pairs nicely with the fog lifting. No spreadsheet unless the coffee gets ambitious."
+      "description": "Five minutes of offseason roster reading is a nice Saturday treat. Stop before it becomes a trade-machine ceremony."
     }
   ],
   "stats": {
     "messages": "No blocker text sent",
     "tasks": "Dashboard refreshed + weather checked + calendar included + memory reviewed + services green + repo push handled",
-    "mood": "🤖 Foggy start, tidy checklist"
+    "mood": "🤖 Clear start, tidy runway"
   },
   "recurringTasks": [
     {
@@ -188,7 +188,7 @@
     {
       "name": "Paperclip backup",
       "schedule": "Hourly",
-      "description": "Latest backup: paperclip-20260807-060035.sql.gz.",
+      "description": "Latest backup: paperclip-20260808-060035.sql.gz.",
       "status": "ok"
     },
     {
@@ -204,5 +204,5 @@
       "status": "warning"
     }
   ],
-  "thought": "Friday is starting like a soft reboot: fog, green services, no urgent calendar today, and just enough useful admin to make future-you annoyingly pleased."
+  "thought": "Saturday starts with the rare dashboard combo platter: clear weather, one real travel block, a birthday ping, green systems, and just enough adulting to pretend we are extremely responsible."
 }
