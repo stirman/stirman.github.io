@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-08T22:00:24+00:00",
+  "updatedAt": "2026-08-08T23:00:32+00:00",
   "location": "San Francisco Bay Area + couple-hour drive",
   "breedTerms": [
     "Australian Cattle Dog",
@@ -7,7 +7,7 @@
     "Red Heeler",
     "Cattle Dog"
   ],
-  "count": 51,
+  "count": 50,
   "dogs": [
     {
       "id": "shelterluv-MILO-A-10109",
@@ -62,7 +62,7 @@
       "color": "Black",
       "size": "Medium (25-59)",
       "description": "Available for Foster, Behavior: Dog-savvy Children 10+, Behavior: Good in car, Behavior: Good off leash, Behavior: High Energy, Behavior: Hiker, Behavior: Quick Learner, Behavior: Requires high energy activities like off-leash running and hiking",
-      "city": "Point Richmond",
+      "city": "Foster Home",
       "state": "CA",
       "postalCode": "94801",
       "distanceMiles": 18,
@@ -228,28 +228,6 @@
       "imageRemote": "",
       "image": "",
       "foundAt": "2026-07-30T21:00:46+00:00"
-    },
-    {
-      "id": "shelterluv-MILO-A-10955",
-      "name": "PAXTON now BARNABUS",
-      "breed": "Queensland Heeler",
-      "sex": "Male",
-      "age": "23 mos",
-      "color": "White",
-      "size": "Medium (25-59)",
-      "description": "Behavior: Family Friendly, Good with Dogs, Behavior: Leans in, Behavior: Shy - Takes time to adjust, Good with Kids, Training: Leash Trained, Behavior: High Energy, Behavior: Requires high energy activities like off-leash running and hiking",
-      "city": "Foster Home",
-      "state": "CA",
-      "postalCode": "94801",
-      "distanceMiles": 18,
-      "shelterName": "Milo Foundation",
-      "contactPhone": "",
-      "contactEmail": "",
-      "url": "https://www.shelterluv.com/embed/animal/MILO-A-10955",
-      "source": "Milo Foundation · Shelterluv",
-      "imageRemote": "",
-      "image": "",
-      "foundAt": "2026-07-14T10:52:24-07:00"
     },
     {
       "id": "shelterluv-MILO-A-10534",
@@ -973,7 +951,7 @@
       "name": "ZITI",
       "breed": "Cattle Dog, Australian (Red Heeler) / Mixed Breed (Small)",
       "sex": "Male",
-      "age": "3.5 yrs",
+      "age": "3.6 yrs",
       "color": "Red/Mahogany / White",
       "size": "Medium (25-59)",
       "description": "Available for Foster, Training: Pulls on leash, Behavior: Quick Learner, Behavior: Playful with cats - may chase, Behavior: Leans in, Training: Affection Motivated, Behavior: Family Friendly, Good with Kids",
