@@ -1,19 +1,19 @@
 {
-  "lastUpdated": "2026-08-08T13:00:00Z",
+  "lastUpdated": "2026-08-09T13:00:00Z",
   "weather": {
-    "temp": "55°",
-    "condition": "Clear now, sunny and dry later",
-    "highLow": "80° / 55°",
+    "temp": "57°",
+    "condition": "Clear now, hot and dry later",
+    "highLow": "86° / 56°",
     "humidity": "89%",
-    "wind": "SSW 3 mph",
-    "quip": "Open-Meteo has Mill Valley starting Saturday at 55°, feeling like 54°, clear, humid but not swampy, with a tiny south-southwest breeze around 3 mph. The day should climb to about 80° with basically no rain, UV around 7.7, sunrise at 6:19 AM, and sunset at 8:11 PM. Morning is gentle. Afternoon is sunscreen with confidence."
+    "wind": "SW 5 mph",
+    "quip": "Open-Meteo has Mill Valley starting Sunday at 57°, feeling like 56°, clear, humid, and lightly breezy from the southwest around 5 mph. The day should climb to about 86° with basically no rain, UV around 7.8, sunrise at 6:20 AM, and sunset at 8:10 PM. wttr sees nearby mist, so trust the cool morning but plan for sunscreen and heat by afternoon."
   },
   "currentWork": {
-    "title": "🤖 Saturday dashboard: clear start, travel day, green systems",
+    "title": "🤖 Sunday dashboard: clear start, quiet calendar, green systems",
     "status": "fresh",
-    "description": "Saturday's dashboard is refreshed with current Mill Valley weather, today's birthday and flight context, recent reminder activity, green Paperclip/OpenClaw health, and a few useful ideas for the day.",
+    "description": "Sunday's dashboard is refreshed with current Mill Valley weather, a quiet calendar window, recent memory and reminder context, green Paperclip/OpenClaw health, and a few useful ideas for the day.",
     "progress": 100,
-    "startedAt": "Aug 8 · 06:00 PT"
+    "startedAt": "Aug 9 · 06:00 PT"
   },
   "schedule": [
     {
@@ -23,67 +23,56 @@
       "duration": "weather + memory + calendar + repo push"
     },
     {
-      "time": "6:19 AM",
+      "time": "6:20 AM",
       "title": "🌄 Sunrise",
       "type": "weather",
-      "duration": "clear 55° start"
-    },
-    {
-      "time": "All day",
-      "title": "🎂 Kim Neidel's birthday",
-      "type": "calendar",
-      "duration": "calendar connector worked"
+      "duration": "clear 57° start"
     },
     {
       "time": "Morning",
-      "title": "☀️ Gentle outside window",
+      "title": "☀️ Best outside window",
       "type": "life",
-      "duration": "cool enough to move before the 80° peak"
+      "duration": "cool before the 86° peak"
     },
     {
-      "time": "1:30 PM",
-      "title": "✈️ Flight to San Francisco (UA 589)",
-      "type": "calendar",
-      "duration": "Houston IAH to SFO · lands 5:35 PM PT"
-    },
-    {
-      "time": "Lunch",
+      "time": "Midday",
       "title": "🧴 Sunscreen checkpoint",
       "type": "life",
-      "duration": "UV near 7.7"
+      "duration": "UV near 7.8"
     },
     {
-      "time": "8:11 PM",
+      "time": "Afternoon",
+      "title": "🔥 Heat-management mode",
+      "type": "weather",
+      "duration": "clear, dry, and hotter than yesterday"
+    },
+    {
+      "time": "8:10 PM",
       "title": "🌅 Sunset",
       "type": "weather",
-      "duration": "Saturday evening landing"
+      "duration": "Sunday evening landing"
     }
   ],
   "upcoming": [
     {
       "date": "Today",
-      "title": "Kim Neidel's birthday",
-      "time": "All day"
-    },
-    {
-      "date": "Today",
-      "title": "Flight to San Francisco (UA 589)",
-      "time": "1:30 PM-5:35 PM PT · from Houston IAH"
-    },
-    {
-      "date": "Sunday forecast",
-      "title": "Hotter and sunny",
-      "time": "About 95° / 58°, UV around 7.6"
+      "title": "No visible timed calendar events",
+      "time": "Calendar connector checked Aug 9-13"
     },
     {
       "date": "Monday forecast",
       "title": "Cooler coastal reset",
-      "time": "About 71° / 55°, dry with possible fog"
+      "time": "About 76° / 56°, dry with some cloud"
     },
     {
       "date": "Tuesday",
       "title": "Cru haircut",
       "time": "9:00-9:30 AM"
+    },
+    {
+      "date": "Tuesday forecast",
+      "title": "Milder, possibly foggy",
+      "time": "About 70° / 55°, dry, UV around 7.8"
     },
     {
       "date": "Home tech",
@@ -94,89 +83,89 @@
   "activities": [
     {
       "icon": "☀️",
-      "title": "Dashboard got its Saturday weather brain",
-      "description": "Updated the live data with Open-Meteo's 6 AM Mill Valley read: 55° clear, feels 54°, 89% humidity, SSW wind around 3 mph, 80° high, almost no rain, and UV around 7.7.",
-      "time": "Aug 8 · 06:00 PT"
+      "title": "Dashboard got its Sunday weather brain",
+      "description": "Updated the live data with Open-Meteo's 6 AM Mill Valley read: 57° clear, feels 56°, 89% humidity, southwest wind around 5 mph, 86° high, nearly no rain, and UV around 7.8.",
+      "time": "Aug 9 · 06:00 PT"
     },
     {
       "icon": "📅",
-      "title": "Calendar connector is behaving",
-      "description": "Today's calendar has Kim Neidel's birthday and UA 589 from Houston IAH to San Francisco at 1:30 PM PT, with Cru's haircut coming Tuesday morning.",
-      "time": "Aug 8 · calendar check"
+      "title": "Calendar is mostly open",
+      "description": "Google Calendar connector worked and found no visible timed events today. The next visible item is Cru's haircut on Tuesday from 9:00 to 9:30 AM.",
+      "time": "Aug 9 · calendar check"
     },
     {
       "icon": "☎️",
-      "title": "Reminder nudge already went out",
-      "description": "The 3:23 AM reminder cron checked the list and texted Stirman once about the three open household items: Xfinity, renal ultrasound scheduling, and the TR-1000 Reverb listing.",
-      "time": "Aug 8 · overnight memory"
+      "title": "Reminder list is readable",
+      "description": "The shared reminders CLI returned cleanly and still shows three open household nudges: downgrade Xfinity, schedule the renal ultrasound, and sell the TR-1000 on Reverb.",
+      "time": "Aug 9 · reminders check"
     },
     {
       "icon": "💚",
       "title": "Paperclip health stayed green",
-      "description": "The local Paperclip health endpoint is OK on version 2026.722.0 with auth ready, private local-trusted exposure, and a fresh backup named paperclip-20260808-060035.sql.gz.",
-      "time": "Aug 8 · health check"
+      "description": "The local Paperclip health endpoint is OK on version 2026.722.0 with auth ready, private local-trusted exposure, and a fresh backup named paperclip-20260809-060036.sql.gz.",
+      "time": "Aug 9 · health check"
     },
     {
       "icon": "🟢",
       "title": "OpenClaw gateway is live",
-      "description": "The local gateway health endpoint returned live. A Claude agent process is active for this automation, and there was no Xcode or Fastlane build needing rescue.",
-      "time": "Aug 8 · service check"
-    },
-    {
-      "icon": "✅",
-      "title": "Reminder list is readable",
-      "description": "The shared reminders CLI returned cleanly and still shows three open household nudges: downgrade Xfinity, schedule the renal ultrasound, and sell the TR-1000 on Reverb.",
-      "time": "Aug 8 · reminders check"
+      "description": "The local gateway health endpoint returned live. No external message was needed because there was no blocker.",
+      "time": "Aug 9 · service check"
     },
     {
       "icon": "✈️",
-      "title": "Travel stack narrowed to today",
-      "description": "Yesterday's dashboard had Saturday travel as upcoming; now it is today's 1:30 PM PT UA 589 Houston-to-SFO block.",
-      "time": "Aug 7 · memory review"
+      "title": "Yesterday's travel block has passed",
+      "description": "Saturday's dashboard carried UA 589 from Houston to SFO as the main calendar item. Today's visible calendar is much quieter.",
+      "time": "Aug 8 · memory review"
+    },
+    {
+      "icon": "🧠",
+      "title": "Known auth noise stayed non-blocking",
+      "description": "Recent project memory still treats local `gog` OAuth invalid_grant messages as cleanup noise, not a blocker, because the Calendar connector works.",
+      "time": "recent memory"
     },
     {
       "icon": "🏛️",
-      "title": "Rome remains in the durable pile",
-      "description": "Recent project memory still carries the Singer Palace Hotel Rome stay as confirmed for Sept. 6-10, 2026 after prepayment.",
+      "title": "Rome stays in the durable pile",
+      "description": "Recent memory continues to carry the Singer Palace Hotel Rome stay as confirmed for Sept. 6-10, 2026 after prepayment.",
       "time": "recent memory"
     }
   ],
   "ideas": [
     {
       "icon": "☀️",
-      "title": "Steal the good morning air",
-      "description": "A clear 55° start is perfect for a walk, a garage reset, or any errand that feels worse once the day climbs toward 80°."
+      "title": "Use the cool morning before it gets bossy",
+      "description": "A clear 57° start is the good part of the day. Walk, errand, garage reset, or anything mildly physical before the 86° afternoon."
     },
     {
-      "icon": "🎂",
-      "title": "Birthday ping while coffee is still legal",
-      "description": "Kim Neidel's birthday is today. A quick text now beats the classic 8:47 PM calendar-guilt sprint."
+      "icon": "📅",
+      "title": "Protect the empty calendar",
+      "description": "No visible timed events today is a gift. Pick one useful thing and leave the rest of the day breathable."
     },
     {
-      "icon": "✈️",
-      "title": "Give UA 589 one sanity glance",
-      "description": "Houston to SFO is on the calendar from 1:30 to 5:35 PM PT. Check whether it affects pickup, dinner, or the household handoff."
+      "icon": "✂️",
+      "title": "Put Cru's haircut on the runway",
+      "description": "Tuesday 9 AM is close enough to avoid a Tuesday morning scramble. Confirm ride/logistics while the weekend brain is still online."
     },
     {
       "icon": "☎️",
-      "title": "One adulting dragon, not all three",
-      "description": "Since the reminders nudge already went out, pick the smallest win: Xfinity downgrade, renal ultrasound scheduling, or the TR-1000 Reverb listing."
+      "title": "One adulting task, not the whole hydra",
+      "description": "The open list is still Xfinity, renal ultrasound, and TR-1000. Choose the smallest one and declare victory early."
     },
     {
       "icon": "🧴",
-      "title": "Sunscreen before the smug part of the day",
-      "description": "The sky is being charming, but UV near 7.7 does not care. Apply before lunch and enjoy feeling unfairly prepared."
+      "title": "Sunscreen before the sun starts negotiating",
+      "description": "UV near 7.8 means the day is pretending to be casual while absolutely not being casual."
     },
     {
       "icon": "🏀",
       "title": "Tiny Rockets brain snack",
-      "description": "Five minutes of offseason roster reading is a nice Saturday treat. Stop before it becomes a trade-machine ceremony."
+      "description": "Five minutes of offseason roster reading fits nicely into a quiet Sunday. Close the trade machine before it becomes a second calendar."
     }
   ],
   "stats": {
     "messages": "No blocker text sent",
     "tasks": "Dashboard refreshed + weather checked + calendar included + memory reviewed + services green + repo push handled",
-    "mood": "🤖 Clear start, tidy runway"
+    "mood": "🤖 Clear, hot, suspiciously organized"
   },
   "recurringTasks": [
     {
@@ -188,7 +177,7 @@
     {
       "name": "Paperclip backup",
       "schedule": "Hourly",
-      "description": "Latest backup: paperclip-20260808-060035.sql.gz.",
+      "description": "Latest backup: paperclip-20260809-060036.sql.gz.",
       "status": "ok"
     },
     {
@@ -204,5 +193,5 @@
       "status": "warning"
     }
   ],
-  "thought": "Saturday starts with the rare dashboard combo platter: clear weather, one real travel block, a birthday ping, green systems, and just enough adulting to pretend we are extremely responsible."
+  "thought": "Sunday has a clean little shape: cool clear morning, a hotter afternoon, no visible calendar traps, green systems, and exactly one adulting task if we are all being emotionally realistic."
 }
