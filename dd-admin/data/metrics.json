@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-08-09T01:01:12Z",
-  "generatedAtHuman": "Aug 08, 2026 at 06:01 PM PDT",
+  "generatedAt": "2026-08-09T04:00:48Z",
+  "generatedAtHuman": "Aug 08, 2026 at 09:00 PM PDT",
   "source": "scheduled-cache",
   "refreshCadenceMinutes": 180,
   "overview": {
-    "totalUsers": 64,
-    "launchUsers": 60,
-    "active7": 5,
-    "active30": 15,
+    "totalUsers": 65,
+    "launchUsers": 61,
+    "active7": 6,
+    "active30": 16,
     "premium": 15,
     "paidSubscribers": 4,
     "grantedPremium": 11,
     "retainedUsers": 18,
-    "insights30": 59,
-    "entries30": 280,
+    "insights30": 60,
+    "entries30": 284,
     "cardImages30": 35
   },
   "users": [
@@ -37,6 +37,19 @@
       "createdAt": "2026-05-09T23:02:41Z",
       "lastLoginAt": "2026-05-09T23:02:41Z",
       "lastActiveAt": "2026-05-09T23:02:41Z",
+      "isPaidSubscriber": false,
+      "grantedPremium": false,
+      "insights30": 0,
+      "cardImages30": 0,
+      "retained": false
+    },
+    {
+      "id": "mVfcAVReVqXRyeqXp02EusQnvWm2",
+      "displayName": "Amber Baker",
+      "email": "dramberbaker@icloud.com",
+      "createdAt": "2026-08-09T01:24:22Z",
+      "lastLoginAt": "2026-08-09T01:24:22Z",
+      "lastActiveAt": "2026-08-09T01:24:22Z",
       "isPaidSubscriber": false,
       "grantedPremium": false,
       "insights30": 0,
@@ -282,11 +295,11 @@
       "displayName": "Erica Joub\u00e9rt",
       "email": "28vvv4r8sh@privaterelay.appleid.com",
       "createdAt": "2026-05-22T02:29:56Z",
-      "lastLoginAt": "2026-08-08T02:30:27Z",
-      "lastActiveAt": "2026-08-08T02:30:27Z",
+      "lastLoginAt": "2026-08-09T02:31:25Z",
+      "lastActiveAt": "2026-08-09T02:31:25Z",
       "isPaidSubscriber": false,
       "grantedPremium": true,
-      "insights30": 15,
+      "insights30": 16,
       "cardImages30": 11,
       "retained": true
     },
@@ -711,8 +724,8 @@
       "displayName": "Shanna Pouyamehr",
       "email": "shannamp2000@yahoo.com",
       "createdAt": "2026-07-22T13:59:44Z",
-      "lastLoginAt": "2026-08-08T23:57:02Z",
-      "lastActiveAt": "2026-08-08T23:57:02Z",
+      "lastLoginAt": "2026-08-09T01:09:55Z",
+      "lastActiveAt": "2026-08-09T01:09:55Z",
       "isPaidSubscriber": false,
       "grantedPremium": false,
       "insights30": 11,
@@ -1021,7 +1034,7 @@
       {
         "date": "2026-08-08",
         "label": "Aug 8",
-        "count": 1
+        "count": 2
       },
       {
         "date": "2026-08-09",
@@ -1730,7 +1743,7 @@
       {
         "date": "2026-08-09",
         "label": "Aug 9",
-        "count": 62
+        "count": 63
       }
     ],
     "dailyCosts": [
