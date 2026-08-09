@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-09T01:00:47+00:00",
+  "updatedAt": "2026-08-09T02:00:55+00:00",
   "location": "San Francisco Bay Area + couple-hour drive",
   "breedTerms": [
     "Australian Cattle Dog",
@@ -410,29 +410,6 @@
       "foundAt": "2026-07-29T19:00:24+00:00"
     },
     {
-      "id": "adoptapet-48937902",
-      "name": "*SOUFFLE'",
-      "breed": "Australian Cattle Dog / Catahoula Leopard Dog",
-      "sex": "Female",
-      "age": "5 mos",
-      "color": "Brown/Chocolate",
-      "size": "Small 25 lbs (11 kg) or less",
-      "description": "",
-      "city": "Santa Rosa",
-      "state": "CA",
-      "postalCode": "95403",
-      "distanceMiles": 55,
-      "sourceDistanceMiles": 0,
-      "shelterName": "Sonoma County Animal Care and Control",
-      "contactPhone": "707-565-7100",
-      "contactEmail": "",
-      "url": "https://www.adoptapet.com/pet/48937902-santa-rosa-california-australian-cattle-dog-catahoula-leopard-dog-mix",
-      "source": "Adopt-a-Pet · Santa Rosa 50mi",
-      "imageRemote": "https://pet-uploads.adoptapet.com/f/2/6/1326591669.jpg",
-      "image": "./assets/dogs/adoptapet-48937902.jpg",
-      "foundAt": "2026-08-07T20:00:32+00:00"
-    },
-    {
       "id": "adoptapet-48794372",
       "name": "Daphne",
       "breed": "Blue Heeler",
@@ -500,6 +477,29 @@
       "imageRemote": "https://pet-uploads.adoptapet.com/1/2/6/1324110890.jpg",
       "image": "./assets/dogs/adoptapet-48834571.jpg",
       "foundAt": "2026-07-29T08:00:58+00:00"
+    },
+    {
+      "id": "adoptapet-48950758",
+      "name": "Rhinestone Cowboy",
+      "breed": "Australian Cattle Dog",
+      "sex": "Male",
+      "age": "young",
+      "color": "",
+      "size": "Med. 26-60 lbs (12-27 kg)",
+      "description": "Rhinestone Cowboy is a tiny cattledog with tons of sparkly personality! He only weighs about 40lbs. He used to be on the shy side, but now he loves greeting new people with his wiggly nub tail and leaning in for scritches. Rhinestone Cowboy also LOVES playing with squeaky toys and balls. He's not super comfortable around other dogs so would need to be your one and only. To learn more about Rhinestone Cowboy, call our adoptions team at 707-542-0882. Primary Color: Tri Color Weight: 11.1 Age: 1yrs 0mths 1wks",
+      "city": "Santa Rosa",
+      "state": "CA",
+      "postalCode": "95407",
+      "distanceMiles": 55,
+      "sourceDistanceMiles": 5.2,
+      "shelterName": "Humane Society of Sonoma County",
+      "contactPhone": "707-542-0882",
+      "contactEmail": "",
+      "url": "https://www.adoptapet.com/pet/48950758-santa-rosa-california-australian-cattle-dog-mix",
+      "source": "Adopt-a-Pet · Santa Rosa 50mi",
+      "imageRemote": "https://pet-uploads.adoptapet.com/8/0/f/1326874938.jpg",
+      "image": "./assets/dogs/adoptapet-48950758.jpg",
+      "foundAt": "2026-08-09T02:00:55+00:00"
     },
     {
       "id": "adoptapet-48794371",
