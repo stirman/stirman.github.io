@@ -2,8 +2,8 @@
   "season": "Big Brother 28",
   "siteTitle": "BB28 Fantasy Draft",
   "tagline": "Meet the BB28 houseguests — the Monjies/Cassie/Crush/Mike/Fins family draft is live.",
-  "lastUpdated": "2026-08-07T04:15:39Z",
-  "status": "week-4-complete",
+  "lastUpdated": "2026-08-10T04:15:57Z",
+  "status": "week-5-in-progress",
   "liveRefreshSeconds": 60,
   "seasonCalendar": {
     "premiere": "2026-07-07",
@@ -153,15 +153,16 @@
     {
       "id": "latrice-verrett",
       "name": "LaTrice Verrett",
-      "age": 57,
+      "age": 58,
       "hometown": "Maplewood, NJ",
       "occupation": "Boutique Salesperson",
       "status": "active",
       "draftOwner": "fins",
       "photoUrl": "https://bigbrothernetwork.com/wp-content/uploads/2026/07/bb28-cast-latrice-00.jpg",
-      "bio": "LaTrice Verrett is a 57-year-old boutique Salesperson from Maplewood, NJ.",
+      "bio": "LaTrice Verrett is a 58-year-old boutique salesperson from Maplewood, NJ.",
       "sourceName": "Big Brother Network",
-      "sourceUrl": "https://bigbrothernetwork.com/big-brother-28-cast/"
+      "sourceUrl": "https://bigbrothernetwork.com/big-brother-28-cast/",
+      "notes": "Won the Week 5 Head of Household wall competition, becoming the oldest HOH winner in Big Brother history."
     },
     {
       "id": "lyric-medeiros",
@@ -457,9 +458,26 @@
         "name": "Lyric Medeiros",
         "vote": "8-3"
       }
+    },
+    {
+      "week": 5,
+      "label": "Week 5",
+      "date": "2026-08-13",
+      "status": "In progress",
+      "hoh": {
+        "houseguestId": "latrice-verrett",
+        "winner": "LaTrice Verrett"
+      },
+      "notes": "LaTrice “Lala” Verrett won the Head of Household wall competition. Veto, BB Blockbuster, and eviction results are pending."
     }
   ],
   "events": [
+    {
+      "date": "2026-08-09T21:00:00-07:00",
+      "type": "competition_result",
+      "title": "LaTrice wins Week 5 HOH",
+      "description": "LaTrice “Lala” Verrett won the Week 5 Head of Household wall competition and became the oldest HOH winner in Big Brother history."
+    },
     {
       "date": "2026-08-06T21:00:00-07:00",
       "type": "eviction",
@@ -666,6 +684,11 @@
       "name": "TVLine Week 4 eviction recap",
       "url": "https://www.tvline.com/2232184/big-brother-recap-lyric-evicted-season-28-week-4-results/",
       "checkedAt": "2026-08-07T04:15:39Z"
+    },
+    {
+      "name": "Big Brother Network Episode 14 recap",
+      "url": "https://bigbrothernetwork.com/big-brother-28-episode-14-recap-historic-hoh-shakes-up-the-game/",
+      "checkedAt": "2026-08-10T04:15:57Z"
     }
   ],
   "players": [
