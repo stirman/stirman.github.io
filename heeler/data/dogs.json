@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-10T22:00:32+00:00",
+  "updatedAt": "2026-08-10T23:00:37+00:00",
   "location": "San Francisco Bay Area + couple-hour drive",
   "breedTerms": [
     "Australian Cattle Dog",
@@ -7,7 +7,7 @@
     "Red Heeler",
     "Cattle Dog"
   ],
-  "count": 50,
+  "count": 51,
   "dogs": [
     {
       "id": "shelterluv-MILO-A-10109",
@@ -569,6 +569,29 @@
       "imageRemote": "https://pet-uploads.adoptapet.com/9/f/a/1320226678.jpg",
       "image": "./assets/dogs/adoptapet-48662366.jpg",
       "foundAt": "2026-07-14T17:00:45-07:00"
+    },
+    {
+      "id": "adoptapet-48966994",
+      "name": "DUKE",
+      "breed": "German Shepherd Dog / Australian Cattle Dog",
+      "sex": "Male",
+      "age": "6 yrs 6 mos",
+      "color": "Tan/Yellow/Fawn - with Black",
+      "size": "Large 61-100 lbs (28-45 kg)",
+      "description": "",
+      "city": "Sacramento",
+      "state": "CA",
+      "postalCode": "95827",
+      "distanceMiles": 88,
+      "sourceDistanceMiles": 9.5,
+      "shelterName": "Sacramento County Animal Care (Bradshaw Animal Shelter)",
+      "contactPhone": "916-368-7387",
+      "contactEmail": "",
+      "url": "https://www.adoptapet.com/pet/48966994-sacramento-california-german-shepherd-dog-mix",
+      "source": "Adopt-a-Pet · Sacramento 50mi",
+      "imageRemote": "https://pet-uploads.adoptapet.com/b/a/f/1327301121.jpg",
+      "image": "./assets/dogs/adoptapet-48966994.jpg",
+      "foundAt": "2026-08-10T23:00:37+00:00"
     },
     {
       "id": "adoptapet-43764717",
