@@ -1,19 +1,19 @@
 {
-  "lastUpdated": "2026-08-09T13:00:00Z",
+  "lastUpdated": "2026-08-10T13:00:00Z",
   "weather": {
-    "temp": "57°",
-    "condition": "Clear now, hot and dry later",
-    "highLow": "86° / 56°",
-    "humidity": "89%",
-    "wind": "SW 5 mph",
-    "quip": "Open-Meteo has Mill Valley starting Sunday at 57°, feeling like 56°, clear, humid, and lightly breezy from the southwest around 5 mph. The day should climb to about 86° with basically no rain, UV around 7.8, sunrise at 6:20 AM, and sunset at 8:10 PM. wttr sees nearby mist, so trust the cool morning but plan for sunscreen and heat by afternoon."
+    "temp": "55°",
+    "condition": "Cloudy/foggy start, mild and dry",
+    "highLow": "74° / 55°",
+    "humidity": "100%",
+    "wind": "WSW 10 mph",
+    "quip": "Open-Meteo has Mill Valley starting Monday at 55°, feeling like 53°, very humid, cloudy, and breezy from the west-southwest around 10 mph. The local forecast climbs to about 74° with almost no rain, UV around 7.6, sunrise at 6:21 AM, and sunset at 8:09 PM. wttr sees the same 55° start but runs much hotter later, so assume the exact afternoon temperature depends on where you are in the Mill Valley microclimate maze."
   },
   "currentWork": {
-    "title": "🤖 Sunday dashboard: clear start, quiet calendar, green systems",
+    "title": "🤖 Monday dashboard: fog reset, open calendar, green systems",
     "status": "fresh",
-    "description": "Sunday's dashboard is refreshed with current Mill Valley weather, a quiet calendar window, recent memory and reminder context, green Paperclip/OpenClaw health, and a few useful ideas for the day.",
+    "description": "Monday's dashboard is refreshed with current Mill Valley weather, a quiet same-day calendar, Tuesday/Friday calendar markers, recent memory and reminder context, green Paperclip/OpenClaw health, and useful ideas for the day.",
     "progress": 100,
-    "startedAt": "Aug 9 · 06:00 PT"
+    "startedAt": "Aug 10 · 06:00 PT"
   },
   "schedule": [
     {
@@ -23,46 +23,41 @@
       "duration": "weather + memory + calendar + repo push"
     },
     {
-      "time": "6:20 AM",
+      "time": "6:21 AM",
       "title": "🌄 Sunrise",
       "type": "weather",
-      "duration": "clear 57° start"
+      "duration": "cloudy/foggy 55° start"
     },
     {
       "time": "Morning",
-      "title": "☀️ Best outside window",
+      "title": "🌫️ Best reset window",
       "type": "life",
-      "duration": "cool before the 86° peak"
+      "duration": "cool and dry before afternoon breeze"
     },
     {
       "time": "Midday",
       "title": "🧴 Sunscreen checkpoint",
       "type": "life",
-      "duration": "UV near 7.8"
+      "duration": "UV near 7.6"
     },
     {
       "time": "Afternoon",
-      "title": "🔥 Heat-management mode",
+      "title": "🌤️ Mild dry stretch",
       "type": "weather",
-      "duration": "clear, dry, and hotter than yesterday"
+      "duration": "Open-Meteo high around 74°"
     },
     {
-      "time": "8:10 PM",
+      "time": "8:09 PM",
       "title": "🌅 Sunset",
       "type": "weather",
-      "duration": "Sunday evening landing"
+      "duration": "Monday evening landing"
     }
   ],
   "upcoming": [
     {
       "date": "Today",
       "title": "No visible timed calendar events",
-      "time": "Calendar connector checked Aug 9-13"
-    },
-    {
-      "date": "Monday forecast",
-      "title": "Cooler coastal reset",
-      "time": "About 76° / 56°, dry with some cloud"
+      "time": "Calendar connector checked Aug 10-14"
     },
     {
       "date": "Tuesday",
@@ -70,9 +65,14 @@
       "time": "9:00-9:30 AM"
     },
     {
+      "date": "Friday",
+      "title": "Freshmen orientation",
+      "time": "8:30-9:30 AM"
+    },
+    {
       "date": "Tuesday forecast",
-      "title": "Milder, possibly foggy",
-      "time": "About 70° / 55°, dry, UV around 7.8"
+      "title": "Cooler fog pattern sticks around",
+      "time": "About 65° / 55°, dry, UV around 7.7"
     },
     {
       "date": "Home tech",
@@ -82,90 +82,90 @@
   ],
   "activities": [
     {
-      "icon": "☀️",
-      "title": "Dashboard got its Sunday weather brain",
-      "description": "Updated the live data with Open-Meteo's 6 AM Mill Valley read: 57° clear, feels 56°, 89% humidity, southwest wind around 5 mph, 86° high, nearly no rain, and UV around 7.8.",
-      "time": "Aug 9 · 06:00 PT"
+      "icon": "🌫️",
+      "title": "Dashboard got its Monday weather brain",
+      "description": "Updated the live data with Open-Meteo's 6 AM Mill Valley read: 55° cloudy, feels 53°, 100% humidity, WSW wind around 10 mph, 74° high, almost no rain, and UV around 7.6.",
+      "time": "Aug 10 · 06:00 PT"
     },
     {
       "icon": "📅",
-      "title": "Calendar is mostly open",
-      "description": "Google Calendar connector worked and found no visible timed events today. The next visible item is Cru's haircut on Tuesday from 9:00 to 9:30 AM.",
-      "time": "Aug 9 · calendar check"
+      "title": "Calendar is quiet today",
+      "description": "Google Calendar connector worked and found no visible timed events today. Coming up: Cru haircut Tuesday 9:00-9:30 AM and Freshmen orientation Friday 8:30-9:30 AM.",
+      "time": "Aug 10 · calendar check"
     },
     {
       "icon": "☎️",
-      "title": "Reminder list is readable",
+      "title": "Reminder list is still readable",
       "description": "The shared reminders CLI returned cleanly and still shows three open household nudges: downgrade Xfinity, schedule the renal ultrasound, and sell the TR-1000 on Reverb.",
-      "time": "Aug 9 · reminders check"
+      "time": "Aug 10 · reminders check"
     },
     {
       "icon": "💚",
       "title": "Paperclip health stayed green",
-      "description": "The local Paperclip health endpoint is OK on version 2026.722.0 with auth ready, private local-trusted exposure, and a fresh backup named paperclip-20260809-060036.sql.gz.",
-      "time": "Aug 9 · health check"
+      "description": "The local Paperclip health endpoint is OK on version 2026.722.0 with auth ready, private local-trusted exposure, and a fresh backup named paperclip-20260810-060036.sql.gz.",
+      "time": "Aug 10 · health check"
     },
     {
       "icon": "🟢",
       "title": "OpenClaw gateway is live",
       "description": "The local gateway health endpoint returned live. No external message was needed because there was no blocker.",
-      "time": "Aug 9 · service check"
-    },
-    {
-      "icon": "✈️",
-      "title": "Yesterday's travel block has passed",
-      "description": "Saturday's dashboard carried UA 589 from Houston to SFO as the main calendar item. Today's visible calendar is much quieter.",
-      "time": "Aug 8 · memory review"
+      "time": "Aug 10 · service check"
     },
     {
       "icon": "🧠",
-      "title": "Known auth noise stayed non-blocking",
-      "description": "Recent project memory still treats local `gog` OAuth invalid_grant messages as cleanup noise, not a blocker, because the Calendar connector works.",
+      "title": "Recent memory stayed tidy",
+      "description": "Reviewed the weekend dashboard notes: Saturday's travel item passed, Sunday's live mirror push completed, and the Aug. 8 reminder nudge already texted Stirman about the open household tasks.",
+      "time": "recent memory"
+    },
+    {
+      "icon": "🔐",
+      "title": "Known auth noise stayed boxed up",
+      "description": "Project memory still treats local `gog` OAuth invalid_grant messages as cleanup noise, not a blocker, because the Calendar connector continues to work.",
       "time": "recent memory"
     },
     {
       "icon": "🏛️",
-      "title": "Rome stays in the durable pile",
-      "description": "Recent memory continues to carry the Singer Palace Hotel Rome stay as confirmed for Sept. 6-10, 2026 after prepayment.",
-      "time": "recent memory"
+      "title": "Rome and MSU markers remain saved",
+      "description": "Long-term memory still carries the confirmed Singer Palace Rome stay for Sept. 6-10 and MSU Parent & Family Weekend dates for Oct. 23-24.",
+      "time": "long-term memory"
     }
   ],
   "ideas": [
     {
-      "icon": "☀️",
-      "title": "Use the cool morning before it gets bossy",
-      "description": "A clear 57° start is the good part of the day. Walk, errand, garage reset, or anything mildly physical before the 86° afternoon."
+      "icon": "🌫️",
+      "title": "Use the fog reset before the day fills in",
+      "description": "A 55° cloudy morning is good for a walk, quick errand, or clearing a tiny pile before the afternoon breeze starts bossing everybody around."
     },
     {
       "icon": "📅",
-      "title": "Protect the empty calendar",
-      "description": "No visible timed events today is a gift. Pick one useful thing and leave the rest of the day breathable."
+      "title": "Keep Monday boring on purpose",
+      "description": "No visible timed events today means the calendar is offering a clean runway. Pick one important thing and leave the rest of the day unclenched."
     },
     {
       "icon": "✂️",
-      "title": "Put Cru's haircut on the runway",
-      "description": "Tuesday 9 AM is close enough to avoid a Tuesday morning scramble. Confirm ride/logistics while the weekend brain is still online."
+      "title": "Stage Cru's haircut tonight",
+      "description": "Tuesday 9 AM is early enough to deserve a Monday setup: ride, timing, and whatever hair-related negotiation needs to happen."
     },
     {
       "icon": "☎️",
-      "title": "One adulting task, not the whole hydra",
-      "description": "The open list is still Xfinity, renal ultrasound, and TR-1000. Choose the smallest one and declare victory early."
+      "title": "Choose one adulting boss fight",
+      "description": "The open list is still Xfinity, renal ultrasound, and TR-1000. The most satisfying Monday move is finishing exactly one of them."
     },
     {
       "icon": "🧴",
-      "title": "Sunscreen before the sun starts negotiating",
-      "description": "UV near 7.8 means the day is pretending to be casual while absolutely not being casual."
+      "title": "Trust UV, not vibes",
+      "description": "Foggy starts are deeply untrustworthy. UV near 7.6 means sunscreen still belongs in the plot."
     },
     {
       "icon": "🏀",
-      "title": "Tiny Rockets brain snack",
-      "description": "Five minutes of offseason roster reading fits nicely into a quiet Sunday. Close the trade machine before it becomes a second calendar."
+      "title": "Tiny Rockets sanity break",
+      "description": "Five minutes of offseason roster reading is a treat. Twenty-five minutes in the trade machine is technically a lifestyle choice."
     }
   ],
   "stats": {
     "messages": "No blocker text sent",
-    "tasks": "Dashboard refreshed + weather checked + calendar included + memory reviewed + services green + repo push handled",
-    "mood": "🤖 Clear, hot, suspiciously organized"
+    "tasks": "Dashboard refreshed + weather checked + calendar included + memory reviewed + services green + live mirror handled",
+    "mood": "🤖 Fog-calibrated and operational"
   },
   "recurringTasks": [
     {
@@ -177,7 +177,7 @@
     {
       "name": "Paperclip backup",
       "schedule": "Hourly",
-      "description": "Latest backup: paperclip-20260809-060036.sql.gz.",
+      "description": "Latest backup: paperclip-20260810-060036.sql.gz.",
       "status": "ok"
     },
     {
@@ -193,5 +193,5 @@
       "status": "warning"
     }
   ],
-  "thought": "Sunday has a clean little shape: cool clear morning, a hotter afternoon, no visible calendar traps, green systems, and exactly one adulting task if we are all being emotionally realistic."
+  "thought": "Monday is doing the merciful thing: foggy edges, no visible meetings, and just enough adulting on the menu to let one tiny victory count as a respectable campaign."
 }
