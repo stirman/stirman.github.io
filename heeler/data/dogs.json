@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-11T21:00:32+00:00",
+  "updatedAt": "2026-08-11T22:00:36+00:00",
   "location": "San Francisco Bay Area + couple-hour drive",
   "breedTerms": [
     "Australian Cattle Dog",
@@ -7,7 +7,7 @@
     "Red Heeler",
     "Cattle Dog"
   ],
-  "count": 51,
+  "count": 52,
   "dogs": [
     {
       "id": "shelterluv-MILO-A-10109",
@@ -339,6 +339,29 @@
       "imageRemote": "https://pet-uploads.adoptapet.com/5/8/2/1326167265.jpg",
       "image": "./assets/dogs/adoptapet-48774047.jpg",
       "foundAt": "2026-07-24T00:00:31+00:00"
+    },
+    {
+      "id": "adoptapet-48977437",
+      "name": "FOXY",
+      "breed": "Australian Cattle Dog",
+      "sex": "Female",
+      "age": "2 yrs",
+      "color": "Brown/Chocolate - with Tan",
+      "size": "Med. 26-60 lbs (12-27 kg)",
+      "description": "",
+      "city": "San Jose",
+      "state": "CA",
+      "postalCode": "95111",
+      "distanceMiles": 49,
+      "sourceDistanceMiles": 8.1,
+      "shelterName": "San Jose Animal Care Center",
+      "contactPhone": "408-794-7297",
+      "contactEmail": "",
+      "url": "https://www.adoptapet.com/pet/48977437-san-jose-california-australian-cattle-dog-mix",
+      "source": "Adopt-a-Pet · San Jose 50mi",
+      "imageRemote": "https://pet-uploads.adoptapet.com/f/8/2/1327625899.jpg",
+      "image": "./assets/dogs/adoptapet-48977437.jpg",
+      "foundAt": "2026-08-11T22:00:36+00:00"
     },
     {
       "id": "adoptapet-47316463",
