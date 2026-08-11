@@ -1,19 +1,19 @@
 {
-  "lastUpdated": "2026-08-10T13:00:00Z",
+  "lastUpdated": "2026-08-11T13:00:00Z",
   "weather": {
     "temp": "55°",
-    "condition": "Cloudy/foggy start, mild and dry",
-    "highLow": "74° / 55°",
+    "condition": "Foggy start, cool and dry",
+    "highLow": "70° / 55°",
     "humidity": "100%",
-    "wind": "WSW 10 mph",
-    "quip": "Open-Meteo has Mill Valley starting Monday at 55°, feeling like 53°, very humid, cloudy, and breezy from the west-southwest around 10 mph. The local forecast climbs to about 74° with almost no rain, UV around 7.6, sunrise at 6:21 AM, and sunset at 8:09 PM. wttr sees the same 55° start but runs much hotter later, so assume the exact afternoon temperature depends on where you are in the Mill Valley microclimate maze."
+    "wind": "WSW 9 mph",
+    "quip": "Open-Meteo has Mill Valley starting Tuesday at 55°, feeling like 53°, foggy, 100% humid, and breezy from the west-southwest around 9 mph. The local forecast tops out near 70° with about 1% rain odds, UV around 7.6, sunrise at 6:22 AM, and sunset at 8:08 PM. wttr agrees on the 55° foggy start but runs much warmer later, so this is another classic Mill Valley microclimate day: trust the fog now, keep layers flexible later."
   },
   "currentWork": {
-    "title": "🤖 Monday dashboard: fog reset, open calendar, green systems",
+    "title": "🤖 Tuesday dashboard: fog layer, haircut marker, green systems",
     "status": "fresh",
-    "description": "Monday's dashboard is refreshed with current Mill Valley weather, a quiet same-day calendar, Tuesday/Friday calendar markers, recent memory and reminder context, green Paperclip/OpenClaw health, and useful ideas for the day.",
+    "description": "Tuesday's dashboard is refreshed with current Mill Valley weather, today's Cru haircut, Friday's orientation marker, recent memory and reminder context, green Paperclip/OpenClaw health, and practical ideas for the day.",
     "progress": 100,
-    "startedAt": "Aug 10 · 06:00 PT"
+    "startedAt": "Aug 11 · 06:00 PT"
   },
   "schedule": [
     {
@@ -23,16 +23,16 @@
       "duration": "weather + memory + calendar + repo push"
     },
     {
-      "time": "6:21 AM",
+      "time": "6:22 AM",
       "title": "🌄 Sunrise",
       "type": "weather",
-      "duration": "cloudy/foggy 55° start"
+      "duration": "foggy 55° start"
     },
     {
-      "time": "Morning",
-      "title": "🌫️ Best reset window",
-      "type": "life",
-      "duration": "cool and dry before afternoon breeze"
+      "time": "9:00 AM",
+      "title": "✂️ Cru haircut",
+      "type": "calendar",
+      "duration": "9:00-9:30 AM"
     },
     {
       "time": "Midday",
@@ -42,25 +42,20 @@
     },
     {
       "time": "Afternoon",
-      "title": "🌤️ Mild dry stretch",
+      "title": "🌤️ Cool dry stretch",
       "type": "weather",
-      "duration": "Open-Meteo high around 74°"
+      "duration": "Open-Meteo high around 70°"
     },
     {
-      "time": "8:09 PM",
+      "time": "8:08 PM",
       "title": "🌅 Sunset",
       "type": "weather",
-      "duration": "Monday evening landing"
+      "duration": "Tuesday evening landing"
     }
   ],
   "upcoming": [
     {
       "date": "Today",
-      "title": "No visible timed calendar events",
-      "time": "Calendar connector checked Aug 10-14"
-    },
-    {
-      "date": "Tuesday",
       "title": "Cru haircut",
       "time": "9:00-9:30 AM"
     },
@@ -70,51 +65,56 @@
       "time": "8:30-9:30 AM"
     },
     {
-      "date": "Tuesday forecast",
-      "title": "Cooler fog pattern sticks around",
-      "time": "About 65° / 55°, dry, UV around 7.7"
+      "date": "Wednesday forecast",
+      "title": "Fog pattern cools things down",
+      "time": "About 63° / 54°, dry, UV around 6.8"
     },
     {
       "date": "Home tech",
       "title": "Paperclip and OpenClaw are green",
       "time": "Paperclip 2026.722.0, fresh 6:00 AM backup, gateway live"
+    },
+    {
+      "date": "Reminders",
+      "title": "Three household nudges remain open",
+      "time": "Xfinity, renal ultrasound, TR-1000"
     }
   ],
   "activities": [
     {
       "icon": "🌫️",
-      "title": "Dashboard got its Monday weather brain",
-      "description": "Updated the live data with Open-Meteo's 6 AM Mill Valley read: 55° cloudy, feels 53°, 100% humidity, WSW wind around 10 mph, 74° high, almost no rain, and UV around 7.6.",
-      "time": "Aug 10 · 06:00 PT"
+      "title": "Dashboard got its Tuesday weather brain",
+      "description": "Updated the live data with Open-Meteo's 6 AM Mill Valley read: 55° fog, feels 53°, 100% humidity, WSW wind around 9 mph, 70° high, almost no rain, and UV around 7.6.",
+      "time": "Aug 11 · 06:00 PT"
     },
     {
       "icon": "📅",
-      "title": "Calendar is quiet today",
-      "description": "Google Calendar connector worked and found no visible timed events today. Coming up: Cru haircut Tuesday 9:00-9:30 AM and Freshmen orientation Friday 8:30-9:30 AM.",
-      "time": "Aug 10 · calendar check"
+      "title": "Calendar has one morning marker",
+      "description": "Google Calendar connector worked and found Cru haircut today from 9:00-9:30 AM. The next visible event is Freshmen orientation Friday from 8:30-9:30 AM.",
+      "time": "Aug 11 · calendar check"
     },
     {
       "icon": "☎️",
       "title": "Reminder list is still readable",
       "description": "The shared reminders CLI returned cleanly and still shows three open household nudges: downgrade Xfinity, schedule the renal ultrasound, and sell the TR-1000 on Reverb.",
-      "time": "Aug 10 · reminders check"
+      "time": "Aug 11 · reminders check"
     },
     {
       "icon": "💚",
       "title": "Paperclip health stayed green",
-      "description": "The local Paperclip health endpoint is OK on version 2026.722.0 with auth ready, private local-trusted exposure, and a fresh backup named paperclip-20260810-060036.sql.gz.",
-      "time": "Aug 10 · health check"
+      "description": "The local Paperclip health endpoint is OK on version 2026.722.0 with auth ready, private local-trusted exposure, and a fresh backup named paperclip-20260811-060037.sql.gz.",
+      "time": "Aug 11 · health check"
     },
     {
       "icon": "🟢",
       "title": "OpenClaw gateway is live",
-      "description": "The local gateway health endpoint returned live. No external message was needed because there was no blocker.",
-      "time": "Aug 10 · service check"
+      "description": "The local gateway health endpoint returned live. No dashboard blocker message was needed.",
+      "time": "Aug 11 · service check"
     },
     {
       "icon": "🧠",
       "title": "Recent memory stayed tidy",
-      "description": "Reviewed the weekend dashboard notes: Saturday's travel item passed, Sunday's live mirror push completed, and the Aug. 8 reminder nudge already texted Stirman about the open household tasks.",
+      "description": "Reviewed Aug. 11-9 memory: the pre-dawn reminders nudge already texted Stirman once, Monday's dashboard/live mirror push verified, and Sunday's dashboard refresh completed cleanly.",
       "time": "recent memory"
     },
     {
@@ -125,47 +125,47 @@
     },
     {
       "icon": "🏛️",
-      "title": "Rome and MSU markers remain saved",
-      "description": "Long-term memory still carries the confirmed Singer Palace Rome stay for Sept. 6-10 and MSU Parent & Family Weekend dates for Oct. 23-24.",
+      "title": "Longer runway notes remain saved",
+      "description": "Rome Sept. 6-10 and MSU Parent & Family Weekend Oct. 23-24 remain preserved in long-term context for future planning nudges.",
       "time": "long-term memory"
     }
   ],
   "ideas": [
     {
-      "icon": "🌫️",
-      "title": "Use the fog reset before the day fills in",
-      "description": "A 55° cloudy morning is good for a walk, quick errand, or clearing a tiny pile before the afternoon breeze starts bossing everybody around."
-    },
-    {
-      "icon": "📅",
-      "title": "Keep Monday boring on purpose",
-      "description": "No visible timed events today means the calendar is offering a clean runway. Pick one important thing and leave the rest of the day unclenched."
-    },
-    {
       "icon": "✂️",
-      "title": "Stage Cru's haircut tonight",
-      "description": "Tuesday 9 AM is early enough to deserve a Monday setup: ride, timing, and whatever hair-related negotiation needs to happen."
+      "title": "Treat the haircut like the morning anchor",
+      "description": "Cru's 9 AM haircut is the one hard calendar edge. Build the early part of the day around getting there calmly, then let the rest breathe."
+    },
+    {
+      "icon": "🌫️",
+      "title": "Use the fog layer while it is useful",
+      "description": "A 55° foggy start is friendly for a walk, errand, or garage poke-around before the afternoon gets brighter and breezier."
     },
     {
       "icon": "☎️",
-      "title": "Choose one adulting boss fight",
-      "description": "The open list is still Xfinity, renal ultrasound, and TR-1000. The most satisfying Monday move is finishing exactly one of them."
+      "title": "Pick one boring dragon",
+      "description": "Xfinity, renal ultrasound, and TR-1000 are still sitting there. One completed call or listing would make the whole day feel unfairly productive."
+    },
+    {
+      "icon": "🎒",
+      "title": "Stage Friday orientation early",
+      "description": "Freshmen orientation is Friday at 8:30 AM. A tiny Tuesday check for timing, parking, and paperwork keeps Friday from turning into a scavenger hunt."
     },
     {
       "icon": "🧴",
-      "title": "Trust UV, not vibes",
-      "description": "Foggy starts are deeply untrustworthy. UV near 7.6 means sunscreen still belongs in the plot."
+      "title": "Do the sunscreen anyway",
+      "description": "Fog is not a legally binding contract. UV near 7.6 means sunscreen belongs in the plot even if the morning looks harmless."
     },
     {
       "icon": "🏀",
-      "title": "Tiny Rockets sanity break",
-      "description": "Five minutes of offseason roster reading is a treat. Twenty-five minutes in the trade machine is technically a lifestyle choice."
+      "title": "Rockets break with a timer",
+      "description": "Five minutes of offseason reading is medicinal. The trade machine after minute fifteen starts billing as a hobby."
     }
   ],
   "stats": {
-    "messages": "No blocker text sent",
-    "tasks": "Dashboard refreshed + weather checked + calendar included + memory reviewed + services green + live mirror handled",
-    "mood": "🤖 Fog-calibrated and operational"
+    "messages": "Dashboard sent no blocker text",
+    "tasks": "Dashboard refreshed + weather checked + calendar included + memory reviewed + services green + mirror ready",
+    "mood": "🤖 Fog-aware and pleasantly useful"
   },
   "recurringTasks": [
     {
@@ -177,7 +177,7 @@
     {
       "name": "Paperclip backup",
       "schedule": "Hourly",
-      "description": "Latest backup: paperclip-20260810-060036.sql.gz.",
+      "description": "Latest backup: paperclip-20260811-060037.sql.gz.",
       "status": "ok"
     },
     {
@@ -193,5 +193,5 @@
       "status": "warning"
     }
   ],
-  "thought": "Monday is doing the merciful thing: foggy edges, no visible meetings, and just enough adulting on the menu to let one tiny victory count as a respectable campaign."
+  "thought": "Tuesday is a fog machine with one haircut appointment hiding inside it. Handle the 9 AM thing, steal one adulting win, and call it operational elegance."
 }
