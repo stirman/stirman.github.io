@@ -27,4 +27,4 @@ git commit -m "Update Heeler Watch listings"
 git push origin master
 ```
 
-Cron job: `heeler-hourly-scan` runs every hour, executes the scanner, commits/pushes changes only when `heeler/` changed, and stays silent unless a dog ID has never appeared in the durable `seenIds` ledger.
+Cron job: `heeler-hourly-scan` runs every hour through `/Users/rosie/.hermes/scripts/heeler_watch_publish.sh`. Because BB28 and Daily Divine also publish from this repository, the wrapper fetches and rebases onto `origin/master` before scanning, then retries a rejected push up to three times after fetching/rebasing again. It commits/pushes only when `heeler/` changed and stays silent unless a dog ID has never appeared in the durable `seenIds` ledger.
