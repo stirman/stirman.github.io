@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-12T18:01:00+00:00",
+  "updatedAt": "2026-08-12T19:00:08+00:00",
   "location": "San Francisco Bay Area + couple-hour drive",
   "breedTerms": [
     "Australian Cattle Dog",
@@ -7,7 +7,7 @@
     "Red Heeler",
     "Cattle Dog"
   ],
-  "count": 50,
+  "count": 49,
   "dogs": [
     {
       "id": "shelterluv-MILO-A-10109",
@@ -702,28 +702,6 @@
       "source": "Milo Foundation · Shelterluv",
       "imageRemote": "",
       "image": "",
-      "foundAt": "2026-08-12T02:44:22+00:00"
-    },
-    {
-      "id": "shelterluv-MILO-A-1472",
-      "name": "CINNAMON",
-      "breed": "Coonhound, Treeing Walker / Cattle Dog",
-      "sex": "Female",
-      "age": "9.3 yrs",
-      "color": "White / Tan",
-      "size": "Medium (20-59)",
-      "description": "",
-      "city": "Willits",
-      "state": "CA",
-      "postalCode": "95490",
-      "distanceMiles": 140,
-      "shelterName": "Milo Foundation",
-      "contactPhone": "",
-      "contactEmail": "",
-      "url": "https://www.shelterluv.com/embed/animal/MILO-A-1472",
-      "source": "Milo Foundation · Shelterluv",
-      "imageRemote": "https://new-s3.shelterluv.com/profile-pictures/f4295c71dbea63195faff0e8622585fd/20210916153645.png",
-      "image": "./assets/dogs/shelterluv-MILO-A-1472.jpg",
       "foundAt": "2026-08-12T02:44:22+00:00"
     },
     {
