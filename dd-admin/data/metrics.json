@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-08-13T19:01:29Z",
-  "generatedAtHuman": "Aug 13, 2026 at 12:01 PM PDT",
+  "generatedAt": "2026-08-13T22:00:36Z",
+  "generatedAtHuman": "Aug 13, 2026 at 03:00 PM PDT",
   "source": "scheduled-cache",
   "refreshCadenceMinutes": 180,
   "overview": {
-    "totalUsers": 65,
-    "launchUsers": 61,
-    "active7": 6,
-    "active30": 16,
+    "totalUsers": 66,
+    "launchUsers": 62,
+    "active7": 7,
+    "active30": 17,
     "premium": 15,
     "paidSubscribers": 4,
     "grantedPremium": 11,
@@ -120,6 +120,19 @@
       "insights30": 0,
       "cardImages30": 0,
       "retained": true
+    },
+    {
+      "id": "LPpV7eZzsicoqtzwy4tjAsXhral1",
+      "displayName": "Brandee Carlson",
+      "email": "fwhc7gp2b7@privaterelay.appleid.com",
+      "createdAt": "2026-08-13T20:12:23Z",
+      "lastLoginAt": "2026-08-13T20:12:23Z",
+      "lastActiveAt": "2026-08-13T20:12:23Z",
+      "isPaidSubscriber": false,
+      "grantedPremium": false,
+      "insights30": 0,
+      "cardImages30": 0,
+      "retained": false
     },
     {
       "id": "g19okJBjgKVRjf1O96J9TQVSSQk1",
@@ -878,7 +891,7 @@
     },
     {
       "title": "Retention pulse",
-      "body": "28% of users have returned across multiple weeks."
+      "body": "27% of users have returned across multiple weeks."
     },
     {
       "title": "Most engaged recently",
@@ -1763,7 +1776,7 @@
       {
         "date": "2026-08-13",
         "label": "Aug 13",
-        "count": 63
+        "count": 64
       }
     ],
     "dailyCosts": [
