@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-14T21:00:15+00:00",
+  "updatedAt": "2026-08-14T22:00:22+00:00",
   "location": "San Francisco Bay Area + couple-hour drive",
   "breedTerms": [
     "Australian Cattle Dog",
@@ -7,7 +7,7 @@
     "Red Heeler",
     "Cattle Dog"
   ],
-  "count": 48,
+  "count": 47,
   "dogs": [
     {
       "id": "shelterluv-MILO-A-10109",
@@ -259,7 +259,7 @@
       "age": "8 mos",
       "color": "White / Tan",
       "size": "Medium (25-59)",
-      "description": "*No Refunds on puppies, Behavior: Can be left alone up to 2 hours, Behavior: Good in car, Behavior: High Energy, Training: Food/Treat Motivated, Training: Toy Motivated, Training: Good with corrections, Behavior: Quick Learner",
+      "description": "Behavior: Can be left alone up to 2 hours, Behavior: Good in car, Training: Food/Treat Motivated, Training: Toy Motivated, Training: Good with corrections, Behavior: Quick Learner, Behavior: Needs Yard, Behavior: Playful",
       "city": "Point Richmond",
       "state": "CA",
       "postalCode": "94801",
@@ -406,29 +406,6 @@
       "source": "Adopt-a-Pet · Santa Rosa 50mi",
       "imageRemote": "https://pet-uploads.adoptapet.com/b/e/6/1326591375.jpg",
       "image": "./assets/dogs/adoptapet-48937901.jpg",
-      "foundAt": "2026-08-12T02:44:22+00:00"
-    },
-    {
-      "id": "adoptapet-48839132",
-      "name": "*PÂTE À CHOUX",
-      "breed": "Australian Cattle Dog / Catahoula Leopard Dog",
-      "sex": "Female",
-      "age": "5 mos",
-      "color": "Tan/Yellow/Fawn - with White",
-      "size": "Small 25 lbs (11 kg) or less",
-      "description": "",
-      "city": "Santa Rosa",
-      "state": "CA",
-      "postalCode": "95403",
-      "distanceMiles": 55,
-      "sourceDistanceMiles": 0,
-      "shelterName": "Sonoma County Animal Care and Control",
-      "contactPhone": "707-565-7100",
-      "contactEmail": "",
-      "url": "https://www.adoptapet.com/pet/48839132-santa-rosa-california-australian-cattle-dog-catahoula-leopard-dog-mix",
-      "source": "Adopt-a-Pet · Santa Rosa 50mi",
-      "imageRemote": "https://pet-uploads.adoptapet.com/d/a/0/1324209397.jpg",
-      "image": "./assets/dogs/adoptapet-48839132.jpg",
       "foundAt": "2026-08-12T02:44:22+00:00"
     },
     {
