@@ -2,8 +2,8 @@
   "season": "Big Brother 28",
   "siteTitle": "BB28 Fantasy Draft",
   "tagline": "Meet the BB28 houseguests — draft night is next.",
-  "lastUpdated": "2026-08-10T04:15:57Z",
-  "status": "week-5-in-progress",
+  "lastUpdated": "2026-08-14T04:16:08Z",
+  "status": "week-5-complete",
   "liveRefreshSeconds": 60,
   "seasonCalendar": {
     "premiere": "2026-07-07",
@@ -128,12 +128,13 @@
       "age": 27,
       "hometown": "Dallas, TX",
       "occupation": "Supply Chain Analyst",
-      "status": "active",
+      "status": "evicted",
       "draftOwner": "cadence",
       "photoUrl": "https://bigbrothernetwork.com/wp-content/uploads/2026/07/bb28-cast-chuk-01-680x382.jpg",
       "bio": "Chuk Anyanwu is a 27-year-old supply Chain Analyst from Dallas, TX.",
       "sourceName": "Big Brother Network",
-      "sourceUrl": "https://bigbrothernetwork.com/big-brother-28-cast/"
+      "sourceUrl": "https://bigbrothernetwork.com/big-brother-28-cast/",
+      "notes": "Evicted Week 5 by a 9-1 vote after Haley Thogmartin won the BB Blockbuster."
     },
     {
       "id": "drew-campbell",
@@ -160,7 +161,7 @@
       "bio": "Haley Thogmartin is a 29-year-old telemedicine Exec.",
       "sourceName": "Big Brother Network",
       "sourceUrl": "https://bigbrothernetwork.com/big-brother-28-cast/",
-      "notes": "Week 4 Head of Household. Nominated Melody Morris, Drew Campbell, and Taylor Brown; named Lyric Medeiros as the replacement nominee after Taylor used the Veto."
+      "notes": "Week 4 Head of Household. Nominated Melody Morris, Drew Campbell, and Taylor Brown; named Lyric Medeiros as the replacement nominee after Taylor used the Veto. Won the Week 5 BB Blockbuster and came off the block."
     },
     {
       "id": "jason-de-puy",
@@ -188,7 +189,7 @@
       "bio": "Kamu Kirk is a 32-year-old mMA Fighter from Phoenix, AZ.",
       "sourceName": "Big Brother Network",
       "sourceUrl": "https://bigbrothernetwork.com/big-brother-28-cast/",
-      "notes": "Week 3 Head of Household."
+      "notes": "Week 3 Head of Household. Won the Week 5 Power of Veto and kept the nominations the same."
     },
     {
       "id": "latrice-verrett",
@@ -503,15 +504,66 @@
       "week": 5,
       "label": "Week 5",
       "date": "2026-08-13",
-      "status": "In progress",
+      "status": "Complete",
       "hoh": {
         "houseguestId": "latrice-verrett",
         "winner": "LaTrice Verrett"
       },
-      "notes": "LaTrice “Lala” Verrett won the Head of Household wall competition. Veto, BB Blockbuster, and eviction results are pending."
+      "nominees": [
+        {
+          "houseguestId": "haley-thogmartin",
+          "name": "Haley Thogmartin"
+        },
+        {
+          "houseguestId": "barrett-pfeiffer",
+          "name": "Barrett Pfeiffer"
+        },
+        {
+          "houseguestId": "chuk-anyanwu",
+          "name": "Chuk Anyanwu"
+        }
+      ],
+      "notes": "LaTrice “Lala” Verrett won Head of Household and nominated Haley Thogmartin, Barrett Pfeiffer, and Chuk Anyanwu. Kamu Kirk won the Power of Veto and kept the nominations the same. Haley won the BB Blockbuster, and Chuk was evicted 9-1.",
+      "veto": {
+        "houseguestId": "kamu-kirk",
+        "winner": "Kamu Kirk"
+      },
+      "blockbuster": {
+        "houseguestId": "haley-thogmartin",
+        "winner": "Haley Thogmartin"
+      },
+      "evicted": {
+        "houseguestId": "chuk-anyanwu",
+        "name": "Chuk Anyanwu",
+        "vote": "9-1"
+      }
     }
   ],
   "events": [
+    {
+      "date": "2026-08-13T21:00:00-07:00",
+      "type": "eviction",
+      "title": "Chuk is evicted in Week 5",
+      "description": "Chuk Anyanwu was evicted by a 9-1 vote."
+    },
+    {
+      "date": "2026-08-13T20:45:00-07:00",
+      "type": "competition_result",
+      "title": "Haley wins the Week 5 BB Blockbuster",
+      "description": "Haley Thogmartin won the Week 5 BB Blockbuster and came off the block."
+    },
+    {
+      "date": "2026-08-12T21:00:00-07:00",
+      "type": "competition_result",
+      "title": "Kamu wins the Week 5 Veto",
+      "description": "Kamu Kirk won the Week 5 Power of Veto and kept the nominations the same."
+    },
+    {
+      "date": "2026-08-12T20:45:00-07:00",
+      "type": "nomination",
+      "title": "Week 5 nominations are set",
+      "description": "Head of Household LaTrice Verrett nominated Haley Thogmartin, Barrett Pfeiffer, and Chuk Anyanwu."
+    },
     {
       "date": "2026-08-09T21:00:00-07:00",
       "type": "competition_result",
@@ -723,6 +775,16 @@
       "name": "Big Brother Network Episode 14 recap",
       "url": "https://bigbrothernetwork.com/big-brother-28-episode-14-recap-historic-hoh-shakes-up-the-game/",
       "checkedAt": "2026-08-10T04:15:57Z"
+    },
+    {
+      "name": "Deadline Week 5 eviction recap",
+      "url": "https://deadline.com/2026/08/big-brother-season-28-week-5-eviction-cbs-1237033488/",
+      "checkedAt": "2026-08-14T04:16:08Z"
+    },
+    {
+      "name": "TVLine Week 5 eviction recap",
+      "url": "https://www.tvline.com/2236793/big-brother-recap-chuk-evicted-season-28-week-5-results/",
+      "checkedAt": "2026-08-14T04:16:08Z"
     }
   ],
   "players": [
