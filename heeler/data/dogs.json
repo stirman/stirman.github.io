@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-15T22:00:27+00:00",
+  "updatedAt": "2026-08-15T23:00:28+00:00",
   "location": "San Francisco Bay Area + couple-hour drive",
   "breedTerms": [
     "Australian Cattle Dog",
@@ -7,7 +7,7 @@
     "Red Heeler",
     "Cattle Dog"
   ],
-  "count": 44,
+  "count": 43,
   "dogs": [
     {
       "id": "shelterluv-MILO-A-10109",
@@ -96,28 +96,6 @@
       "imageRemote": "",
       "image": "",
       "foundAt": "2026-08-12T02:44:22+00:00"
-    },
-    {
-      "id": "shelterluv-MILO-A-11275",
-      "name": "DOVE",
-      "breed": "Queensland Heeler / Mixed Breed (Medium)",
-      "sex": "Female",
-      "age": "6 mos",
-      "color": "Sable",
-      "size": "Medium (25-59)",
-      "description": "*No Refunds on puppies, Behavior: Quick Learner, Behavior: Playful, Good with Dogs, Available for Foster, Behavior: Family Friendly, Behavior: Medium Energy, Training: Affection Motivated",
-      "city": "Point Richmond",
-      "state": "CA",
-      "postalCode": "94801",
-      "distanceMiles": 18,
-      "shelterName": "Milo Foundation",
-      "contactPhone": "",
-      "contactEmail": "",
-      "url": "https://www.shelterluv.com/embed/animal/MILO-A-11275",
-      "source": "Milo Foundation · Shelterluv",
-      "imageRemote": "https://new-s3.shelterluv.com/profile-pictures/4da588bd9dad67a89c567cfa051fb72c/dbf7d22a6185f761e365d33d434fd329.jpeg",
-      "image": "./assets/dogs/shelterluv-MILO-A-11275.jpg",
-      "foundAt": "2026-08-12T22:00:30+00:00"
     },
     {
       "id": "shelterluv-MILO-A-10060",
