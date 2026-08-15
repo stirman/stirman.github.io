@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-15T07:00:11+00:00",
+  "updatedAt": "2026-08-15T08:00:12+00:00",
   "location": "San Francisco Bay Area + couple-hour drive",
   "breedTerms": [
     "Australian Cattle Dog",
@@ -7,7 +7,7 @@
     "Red Heeler",
     "Cattle Dog"
   ],
-  "count": 45,
+  "count": 44,
   "dogs": [
     {
       "id": "shelterluv-MILO-A-10109",
@@ -361,29 +361,6 @@
       "source": "Adopt-a-Pet · Santa Rosa 50mi",
       "imageRemote": "https://pet-uploads.adoptapet.com/b/e/6/1326591375.jpg",
       "image": "./assets/dogs/adoptapet-48937901.jpg",
-      "foundAt": "2026-08-12T02:44:22+00:00"
-    },
-    {
-      "id": "adoptapet-48794372",
-      "name": "Daphne",
-      "breed": "Blue Heeler",
-      "sex": "Female",
-      "age": "puppy",
-      "color": "Black",
-      "size": "Small 25 lbs (11 kg) or less",
-      "description": "Adoption fees include: For puppies: First year's vaccines, including Bordetella, microchip, and deworming. Adult dog: Vaccinations are current, microchip, dewormed and spay/neuter. If you have current pets, we offer a Foster to Adopt Program, in which you have a two week trial period to make sure the animals get along, it's a good fit, and your begining to bond. Countryside Animal Rescue is open Tuesday - Friday 11am to 3pm by appointment only. Appointments can be made by calling 707-542-5582 or emailing countrysiderescuesr@gmail.com. Please ensure that you receive a confirmation of your appointment before arriving to ensure we are properly staffed for your visit. Drop-In (Without an appointment) Satruday from 11am to 3pm. We are closed Sunday and Monday. Please complete our online applicationat : https://forms.gle/PGmGoo2ZoBEtU4D18 ##2799531##",
-      "city": "Santa Rosa",
-      "state": "CA",
-      "postalCode": "95401",
-      "distanceMiles": 55,
-      "sourceDistanceMiles": 2.0,
-      "shelterName": "Countryside Animal Rescue",
-      "contactPhone": "707-542-5582",
-      "contactEmail": "",
-      "url": "https://www.adoptapet.com/pet/48794372-santa-rosa-california-blue-heeler-mix",
-      "source": "Adopt-a-Pet · Santa Rosa 50mi",
-      "imageRemote": "https://pet-uploads.adoptapet.com/5/f/c/1327382017.jpg",
-      "image": "./assets/dogs/adoptapet-48794372.jpg",
       "foundAt": "2026-08-12T02:44:22+00:00"
     },
     {
