@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-15T17:00:23+00:00",
+  "updatedAt": "2026-08-15T18:00:07+00:00",
   "location": "San Francisco Bay Area + couple-hour drive",
   "breedTerms": [
     "Australian Cattle Dog",
@@ -7,7 +7,7 @@
     "Red Heeler",
     "Cattle Dog"
   ],
-  "count": 45,
+  "count": 44,
   "dogs": [
     {
       "id": "shelterluv-MILO-A-10109",
@@ -315,28 +315,6 @@
       "source": "Milo Foundation · Shelterluv",
       "imageRemote": "https://new-s3.shelterluv.com/profile-pictures/97638a20116ac1818a1f54421e7ce72b/9464bf5878ff99e0f0a874762e857069.jpg",
       "image": "./assets/dogs/shelterluv-MILO-A-11749.jpg",
-      "foundAt": "2026-08-12T02:44:22+00:00"
-    },
-    {
-      "id": "shelterluv-MILO-A-11493",
-      "name": "WINSTON",
-      "breed": "Queensland Heeler / Cattle Dog, Australian (Blue Heeler)",
-      "sex": "Male",
-      "age": "4 mos",
-      "color": "White / Black",
-      "size": "Medium (25-59)",
-      "description": "*No Refunds on puppies, No walks yet, I am a puppy!, Good with Dogs, Behavior: Family Friendly, Training: Needs mental stimulation, Training: Jumpy, Behavior: High Energy, Playstyle: Wrestler",
-      "city": "Foster Home",
-      "state": "CA",
-      "postalCode": "94801",
-      "distanceMiles": 18,
-      "shelterName": "Milo Foundation",
-      "contactPhone": "",
-      "contactEmail": "",
-      "url": "https://www.shelterluv.com/embed/animal/MILO-A-11493",
-      "source": "Milo Foundation · Shelterluv",
-      "imageRemote": "",
-      "image": "",
       "foundAt": "2026-08-12T02:44:22+00:00"
     },
     {
