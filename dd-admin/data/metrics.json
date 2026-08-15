@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-15T01:01:13Z",
-  "generatedAtHuman": "Aug 14, 2026 at 06:01 PM PDT",
+  "generatedAt": "2026-08-15T04:00:35Z",
+  "generatedAtHuman": "Aug 14, 2026 at 09:00 PM PDT",
   "source": "scheduled-cache",
   "refreshCadenceMinutes": 180,
   "overview": {
@@ -12,8 +12,8 @@
     "paidSubscribers": 5,
     "grantedPremium": 11,
     "retainedUsers": 18,
-    "insights30": 63,
-    "entries30": 326,
+    "insights30": 64,
+    "entries30": 327,
     "cardImages30": 41
   },
   "users": [
@@ -308,11 +308,11 @@
       "displayName": "Erica Joub\u00e9rt",
       "email": "28vvv4r8sh@privaterelay.appleid.com",
       "createdAt": "2026-05-22T02:29:56Z",
-      "lastLoginAt": "2026-08-14T02:30:33Z",
-      "lastActiveAt": "2026-08-14T02:30:33Z",
+      "lastLoginAt": "2026-08-15T02:31:01Z",
+      "lastActiveAt": "2026-08-15T02:31:01Z",
       "isPaidSubscriber": false,
       "grantedPremium": true,
-      "insights30": 16,
+      "insights30": 17,
       "cardImages30": 11,
       "retained": true
     },
@@ -900,7 +900,7 @@
     },
     {
       "title": "Depth signal",
-      "body": "Users averaged about 5.2 inputs per generated insight in the last 30 days."
+      "body": "Users averaged about 5.1 inputs per generated insight in the last 30 days."
     },
     {
       "title": "Retention pulse",
@@ -1060,7 +1060,7 @@
       {
         "date": "2026-08-14",
         "label": "Aug 14",
-        "count": 3
+        "count": 4
       },
       {
         "date": "2026-08-15",
