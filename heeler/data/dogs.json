@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-15T23:00:28+00:00",
+  "updatedAt": "2026-08-16T00:00:30+00:00",
   "location": "San Francisco Bay Area + couple-hour drive",
   "breedTerms": [
     "Australian Cattle Dog",
@@ -7,7 +7,7 @@
     "Red Heeler",
     "Cattle Dog"
   ],
-  "count": 43,
+  "count": 42,
   "dogs": [
     {
       "id": "shelterluv-MILO-A-10109",
@@ -316,29 +316,6 @@
       "source": "Adopt-a-Pet · San Jose 50mi",
       "imageRemote": "https://pet-uploads.adoptapet.com/f/e/7/1288795687.jpg",
       "image": "./assets/dogs/adoptapet-47316463.jpg",
-      "foundAt": "2026-08-12T02:44:22+00:00"
-    },
-    {
-      "id": "adoptapet-48937901",
-      "name": "*NAPOLEON",
-      "breed": "Australian Cattle Dog / Catahoula Leopard Dog",
-      "sex": "Male",
-      "age": "5 mos",
-      "color": "Brown/Chocolate - with White",
-      "size": "Small 25 lbs (11 kg) or less",
-      "description": "",
-      "city": "Santa Rosa",
-      "state": "CA",
-      "postalCode": "95403",
-      "distanceMiles": 55,
-      "sourceDistanceMiles": 0,
-      "shelterName": "Sonoma County Animal Care and Control",
-      "contactPhone": "707-565-7100",
-      "contactEmail": "",
-      "url": "https://www.adoptapet.com/pet/48937901-santa-rosa-california-australian-cattle-dog-catahoula-leopard-dog-mix",
-      "source": "Adopt-a-Pet · Santa Rosa 50mi",
-      "imageRemote": "https://pet-uploads.adoptapet.com/b/e/6/1326591375.jpg",
-      "image": "./assets/dogs/adoptapet-48937901.jpg",
       "foundAt": "2026-08-12T02:44:22+00:00"
     },
     {
