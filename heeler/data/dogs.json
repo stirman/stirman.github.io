@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-16T18:00:23+00:00",
+  "updatedAt": "2026-08-16T19:00:31+00:00",
   "location": "San Francisco Bay Area + couple-hour drive",
   "breedTerms": [
     "Australian Cattle Dog",
@@ -7,7 +7,7 @@
     "Red Heeler",
     "Cattle Dog"
   ],
-  "count": 39,
+  "count": 38,
   "dogs": [
     {
       "id": "shelterluv-MILO-A-10109",
@@ -158,28 +158,6 @@
       "contactPhone": "",
       "contactEmail": "",
       "url": "https://www.shelterluv.com/embed/animal/MILO-A-6462",
-      "source": "Milo Foundation · Shelterluv",
-      "imageRemote": "",
-      "image": "",
-      "foundAt": "2026-08-12T02:44:22+00:00"
-    },
-    {
-      "id": "shelterluv-MILO-A-11495",
-      "name": "LUCY IN THE SKY",
-      "breed": "Cattle Dog, Australian (Blue Heeler) / Mixed Breed (Large)",
-      "sex": "Female",
-      "age": "3.2 yrs",
-      "color": "White / Black",
-      "size": "Large (60-99)",
-      "description": "Behavior: Family Friendly, Behavior: Leans in, Housetrained, Training: Leash Trained, Training: Affection Motivated, Behavior: Mellow, Behavior: Soft Mouth, Good with Kids",
-      "city": "Foster Home",
-      "state": "CA",
-      "postalCode": "94801",
-      "distanceMiles": 18,
-      "shelterName": "Milo Foundation",
-      "contactPhone": "",
-      "contactEmail": "",
-      "url": "https://www.shelterluv.com/embed/animal/MILO-A-11495",
       "source": "Milo Foundation · Shelterluv",
       "imageRemote": "",
       "image": "",
