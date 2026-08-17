@@ -2,8 +2,8 @@
   "season": "Big Brother 28",
   "siteTitle": "BB28 Fantasy Draft",
   "tagline": "Meet the BB28 houseguests — the Monjies/Cassie/Crush/Mike/Fins family draft is live.",
-  "lastUpdated": "2026-08-14T04:16:08Z",
-  "status": "week-5-complete",
+  "lastUpdated": "2026-08-17T16:53:46Z",
+  "status": "week-6-in-progress",
   "liveRefreshSeconds": 60,
   "seasonCalendar": {
     "premiere": "2026-07-07",
@@ -497,9 +497,46 @@
         "name": "Chuk Anyanwu",
         "vote": "9-1"
       }
+    },
+    {
+      "week": 6,
+      "label": "Week 6",
+      "date": "2026-08-16",
+      "status": "In progress",
+      "hoh": {
+        "houseguestId": "yash-patel",
+        "winner": "Yash Patel"
+      },
+      "nominees": [
+        {
+          "houseguestId": "dee-valladares",
+          "name": "Dee Valladares"
+        },
+        {
+          "houseguestId": "haley-thogmartin",
+          "name": "Haley Thogmartin"
+        },
+        {
+          "houseguestId": "angela-murray",
+          "name": "Angela Murray"
+        }
+      ],
+      "notes": "Yash Patel won Head of Household and nominated Dee Valladares, Haley Thogmartin, and Angela Murray."
     }
   ],
   "events": [
+    {
+      "date": "2026-08-16T21:00:00-07:00",
+      "type": "nomination",
+      "title": "Week 6 nominations are set",
+      "description": "Head of Household Yash Patel nominated Dee Valladares, Haley Thogmartin, and Angela Murray."
+    },
+    {
+      "date": "2026-08-16T20:30:00-07:00",
+      "type": "competition_result",
+      "title": "Yash wins Week 6 HOH",
+      "description": "Yash Patel won the Week 6 Head of Household competition."
+    },
     {
       "date": "2026-08-13T21:00:00-07:00",
       "type": "eviction",
