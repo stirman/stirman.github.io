@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-08-19T22:00:31Z",
-  "generatedAtHuman": "Aug 19, 2026 at 03:00 PM PDT",
+  "generatedAt": "2026-08-20T01:00:34Z",
+  "generatedAtHuman": "Aug 19, 2026 at 06:00 PM PDT",
   "source": "scheduled-cache",
   "refreshCadenceMinutes": 180,
   "overview": {
     "totalUsers": 69,
     "launchUsers": 65,
-    "active7": 7,
+    "active7": 6,
     "active30": 17,
     "premium": 16,
     "paidSubscribers": 5,
     "grantedPremium": 11,
     "retainedUsers": 19,
-    "insights30": 61,
-    "entries30": 320,
-    "cardImages30": 41
+    "insights30": 59,
+    "entries30": 318,
+    "cardImages30": 40
   },
   "users": [
     {
@@ -325,8 +325,8 @@
       "lastActiveAt": "2026-08-15T02:31:01Z",
       "isPaidSubscriber": false,
       "grantedPremium": true,
-      "insights30": 15,
-      "cardImages30": 10,
+      "insights30": 14,
+      "cardImages30": 9,
       "retained": true
     },
     {
@@ -702,7 +702,7 @@
       "lastActiveAt": "2026-08-14T19:20:25Z",
       "isPaidSubscriber": false,
       "grantedPremium": false,
-      "insights30": 4,
+      "insights30": 3,
       "cardImages30": 1,
       "retained": true
     },
@@ -926,7 +926,7 @@
     },
     {
       "title": "Depth signal",
-      "body": "Users averaged about 5.2 inputs per generated insight in the last 30 days."
+      "body": "Users averaged about 5.4 inputs per generated insight in the last 30 days."
     },
     {
       "title": "Retention pulse",
@@ -944,11 +944,6 @@
   "series": {
     "dailyInsights": [
       {
-        "date": "2026-07-21",
-        "label": "Jul 21",
-        "count": 2
-      },
-      {
         "date": "2026-07-22",
         "label": "Jul 22",
         "count": 3
@@ -1091,16 +1086,16 @@
       {
         "date": "2026-08-19",
         "label": "Aug 19",
+        "count": 0
+      },
+      {
+        "date": "2026-08-20",
+        "label": "Aug 20",
         "count": 0
       }
     ],
     "dailyCardImages": [
       {
-        "date": "2026-07-21",
-        "label": "Jul 21",
-        "count": 1
-      },
-      {
         "date": "2026-07-22",
         "label": "Jul 22",
         "count": 2
@@ -1243,6 +1238,11 @@
       {
         "date": "2026-08-19",
         "label": "Aug 19",
+        "count": 0
+      },
+      {
+        "date": "2026-08-20",
+        "label": "Aug 20",
         "count": 0
       }
     ],
@@ -1846,17 +1846,14 @@
         "date": "2026-08-19",
         "label": "Aug 19",
         "count": 67
+      },
+      {
+        "date": "2026-08-20",
+        "label": "Aug 20",
+        "count": 67
       }
     ],
     "dailyCosts": [
-      {
-        "date": "2026-07-21",
-        "label": "Jul 21",
-        "textDollars": 0.0005,
-        "imageDollars": 0.0,
-        "otherDollars": 0.0,
-        "totalDollars": 0.0005
-      },
       {
         "date": "2026-07-22",
         "label": "Jul 22",
@@ -2088,13 +2085,21 @@
         "imageDollars": 0.0,
         "otherDollars": 0.0,
         "totalDollars": 0.0
+      },
+      {
+        "date": "2026-08-20",
+        "label": "Aug 20",
+        "textDollars": 0.0,
+        "imageDollars": 0.0,
+        "otherDollars": 0.0,
+        "totalDollars": 0.0
       }
     ]
   },
   "costs": {
     "available": true,
-    "totalDollars": 27.0952,
-    "textDollars": 0.1331,
+    "totalDollars": 27.0947,
+    "textDollars": 0.1326,
     "imageDollars": 14.6656,
     "otherDollars": 12.2965,
     "byLineItem": [
@@ -2136,11 +2141,11 @@
       },
       {
         "name": "gpt-4o-mini-2024-07-18, input",
-        "dollars": 0.0739
+        "dollars": 0.0736
       },
       {
         "name": "gpt-4o-mini-2024-07-18, output",
-        "dollars": 0.0592
+        "dollars": 0.059
       },
       {
         "name": "gpt-5.6-sol, input",
@@ -2185,14 +2190,6 @@
     ],
     "daily": [
       {
-        "date": "2026-07-21",
-        "label": "Jul 21",
-        "textDollars": 0.0005,
-        "imageDollars": 0.0,
-        "otherDollars": 0.0,
-        "totalDollars": 0.0005
-      },
-      {
         "date": "2026-07-22",
         "label": "Jul 22",
         "textDollars": 0.0022,
@@ -2423,11 +2420,19 @@
         "imageDollars": 0.0,
         "otherDollars": 0.0,
         "totalDollars": 0.0
+      },
+      {
+        "date": "2026-08-20",
+        "label": "Aug 20",
+        "textDollars": 0.0,
+        "imageDollars": 0.0,
+        "otherDollars": 0.0,
+        "totalDollars": 0.0
       }
     ],
     "error": null,
     "subscriptionPrice": 7.99,
     "estimatedRevenue": 39.95,
-    "grossMargin": 12.85
+    "grossMargin": 12.86
   }
 }
