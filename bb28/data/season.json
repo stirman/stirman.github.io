@@ -2,8 +2,8 @@
   "season": "Big Brother 28",
   "siteTitle": "BB28 Fantasy Draft",
   "tagline": "Meet the BB28 houseguests — draft night is next.",
-  "lastUpdated": "2026-08-20T04:31:04Z",
-  "status": "week-6-in-progress",
+  "lastUpdated": "2026-08-21T04:46:17Z",
+  "status": "week-6-complete",
   "liveRefreshSeconds": 60,
   "seasonCalendar": {
     "premiere": "2026-07-07",
@@ -183,13 +183,13 @@
       "age": 32,
       "hometown": "Phoenix, AZ",
       "occupation": "MMA Fighter",
-      "status": "active",
+      "status": "evicted",
       "draftOwner": "cru",
       "photoUrl": "https://bigbrothernetwork.com/wp-content/uploads/2026/07/bb28-cast-kamu-00.jpg",
       "bio": "Kamu Kirk is a 32-year-old mMA Fighter from Phoenix, AZ.",
       "sourceName": "Big Brother Network",
       "sourceUrl": "https://bigbrothernetwork.com/big-brother-28-cast/",
-      "notes": "Week 3 Head of Household. Won the Week 5 Power of Veto and kept the nominations the same. Named as the Week 6 replacement nominee when Rick Devens used the Diamond Power of Veto on Dee Valladares."
+      "notes": "Week 3 Head of Household. Won the Week 5 Power of Veto and kept the nominations the same. Named as the Week 6 replacement nominee when Rick Devens used the Diamond Power of Veto on Dee Valladares, then evicted 8-1 before jury after Angela Murray won the BB Blockbuster."
     },
     {
       "id": "latrice-verrett",
@@ -299,7 +299,8 @@
       "photoUrl": "./assets/angela-murray.jpg",
       "bio": "Angela Murray is a Big Brother 26 alum joining the BB28 draft board as a returnee pick.",
       "sourceName": "Screen Rant",
-      "sourceUrl": "https://screenrant.com/big-brother-season-26-cast-guide/"
+      "sourceUrl": "https://screenrant.com/big-brother-season-26-cast-guide/",
+      "notes": "Won the Week 6 BB Blockbuster and came off the block."
     },
     {
       "id": "rick-devens",
@@ -543,7 +544,7 @@
       "week": 6,
       "label": "Week 6",
       "date": "2026-08-16",
-      "status": "In progress",
+      "status": "Complete",
       "hoh": {
         "houseguestId": "yash-patel",
         "winner": "Yash Patel"
@@ -562,7 +563,7 @@
           "name": "Angela Murray"
         }
       ],
-      "notes": "Yash Patel won Head of Household and nominated Dee Valladares, Haley Thogmartin, and Angela Murray. Yash then won the OTEV Power of Veto and did not use it. Rick Devens used the Diamond Power of Veto to save Dee and named Kamu Kirk as the replacement nominee.",
+      "notes": "Yash Patel won Head of Household and nominated Dee Valladares, Haley Thogmartin, and Angela Murray. Yash then won the OTEV Power of Veto and did not use it. Rick Devens used the Diamond Power of Veto to save Dee and named Kamu Kirk as the replacement nominee. Angela won the BB Blockbuster, and Kamu was evicted 8-1 before jury.",
       "veto": {
         "houseguestId": "yash-patel",
         "winner": "Yash Patel"
@@ -593,10 +594,31 @@
           "houseguestId": "kamu-kirk",
           "name": "Kamu Kirk"
         }
-      ]
+      ],
+      "blockbuster": {
+        "houseguestId": "angela-murray",
+        "winner": "Angela Murray"
+      },
+      "evicted": {
+        "houseguestId": "kamu-kirk",
+        "name": "Kamu Kirk",
+        "vote": "8-1"
+      }
     }
   ],
   "events": [
+    {
+      "date": "2026-08-20T21:00:00-07:00",
+      "type": "eviction",
+      "title": "Kamu is evicted in Week 6",
+      "description": "Kamu Kirk was evicted by an 8-1 vote before jury."
+    },
+    {
+      "date": "2026-08-20T20:45:00-07:00",
+      "type": "competition_result",
+      "title": "Angela wins the Week 6 BB Blockbuster",
+      "description": "Angela Murray won the Week 6 BB Blockbuster and came off the block."
+    },
     {
       "date": "2026-08-19T21:00:00-07:00",
       "type": "twist_result",
@@ -876,6 +898,11 @@
       "name": "Primetimer August 19 episode recap",
       "url": "https://www.primetimer.com/features/big-brother-season-28-episode-21-recap-yash-wins-the-power-of-veto-as-rick-devens-saves-dee-valladres",
       "checkedAt": "2026-08-20T04:31:04Z"
+    },
+    {
+      "name": "TVLine Week 6 eviction recap",
+      "url": "https://www.tvline.com/2241321/big-brother-recap-kamu-evicted-season-28-week-6-results/",
+      "checkedAt": "2026-08-21T04:46:17Z"
     }
   ],
   "players": [
