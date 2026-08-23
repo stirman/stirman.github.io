@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-08-22T22:00:59Z",
-  "generatedAtHuman": "Aug 22, 2026 at 03:00 PM PDT",
+  "generatedAt": "2026-08-23T04:01:38Z",
+  "generatedAtHuman": "Aug 22, 2026 at 09:01 PM PDT",
   "source": "scheduled-cache",
   "refreshCadenceMinutes": 180,
   "overview": {
     "totalUsers": 71,
     "launchUsers": 67,
-    "active7": 8,
+    "active7": 9,
     "active30": 16,
     "premium": 17,
     "paidSubscribers": 6,
     "grantedPremium": 11,
     "retainedUsers": 19,
-    "insights30": 59,
-    "entries30": 315,
-    "cardImages30": 37
+    "insights30": 57,
+    "entries30": 296,
+    "cardImages30": 34
   },
   "users": [
     {
@@ -195,8 +195,8 @@
       "lastActiveAt": "2026-08-22T00:58:01Z",
       "isPaidSubscriber": false,
       "grantedPremium": true,
-      "insights30": 16,
-      "cardImages30": 9,
+      "insights30": 15,
+      "cardImages30": 8,
       "retained": true
     },
     {
@@ -338,8 +338,8 @@
       "lastActiveAt": "2026-08-21T02:31:02Z",
       "isPaidSubscriber": false,
       "grantedPremium": true,
-      "insights30": 16,
-      "cardImages30": 9,
+      "insights30": 15,
+      "cardImages30": 8,
       "retained": true
     },
     {
@@ -724,11 +724,11 @@
       "displayName": "Miquelle Hardy",
       "email": "hs2c8wryfg@privaterelay.appleid.com",
       "createdAt": "2026-06-18T00:56:55Z",
-      "lastLoginAt": "2026-08-14T19:20:25Z",
-      "lastActiveAt": "2026-08-14T19:20:25Z",
+      "lastLoginAt": "2026-08-23T00:00:20Z",
+      "lastActiveAt": "2026-08-23T00:00:20Z",
       "isPaidSubscriber": false,
       "grantedPremium": false,
-      "insights30": 3,
+      "insights30": 4,
       "cardImages30": 1,
       "retained": true
     },
@@ -793,8 +793,8 @@
       "lastActiveAt": "2026-08-11T04:37:12Z",
       "isPaidSubscriber": false,
       "grantedPremium": false,
-      "insights30": 10,
-      "cardImages30": 6,
+      "insights30": 9,
+      "cardImages30": 5,
       "retained": true
     },
     {
@@ -947,12 +947,12 @@
       "body": "4 generated insights in the current 30-day window."
     },
     {
-      "title": "Jul 24 led card generation",
+      "title": "Jul 31 led card generation",
       "body": "3 card images generated that day."
     },
     {
       "title": "Depth signal",
-      "body": "Users averaged about 5.3 inputs per generated insight in the last 30 days."
+      "body": "Users averaged about 5.2 inputs per generated insight in the last 30 days."
     },
     {
       "title": "Retention pulse",
@@ -970,11 +970,6 @@
   "series": {
     "dailyInsights": [
       {
-        "date": "2026-07-24",
-        "label": "Jul 24",
-        "count": 3
-      },
-      {
         "date": "2026-07-25",
         "label": "Jul 25",
         "count": 2
@@ -1117,16 +1112,16 @@
       {
         "date": "2026-08-22",
         "label": "Aug 22",
+        "count": 1
+      },
+      {
+        "date": "2026-08-23",
+        "label": "Aug 23",
         "count": 0
       }
     ],
     "dailyCardImages": [
       {
-        "date": "2026-07-24",
-        "label": "Jul 24",
-        "count": 3
-      },
-      {
         "date": "2026-07-25",
         "label": "Jul 25",
         "count": 1
@@ -1269,6 +1264,11 @@
       {
         "date": "2026-08-22",
         "label": "Aug 22",
+        "count": 0
+      },
+      {
+        "date": "2026-08-23",
+        "label": "Aug 23",
         "count": 0
       }
     ],
@@ -1887,17 +1887,14 @@
         "date": "2026-08-22",
         "label": "Aug 22",
         "count": 69
+      },
+      {
+        "date": "2026-08-23",
+        "label": "Aug 23",
+        "count": 69
       }
     ],
     "dailyCosts": [
-      {
-        "date": "2026-07-24",
-        "label": "Jul 24",
-        "textDollars": 0.0118,
-        "imageDollars": 0.515,
-        "otherDollars": 0.0,
-        "totalDollars": 0.5268
-      },
       {
         "date": "2026-07-25",
         "label": "Jul 25",
@@ -2125,6 +2122,14 @@
       {
         "date": "2026-08-22",
         "label": "Aug 22",
+        "textDollars": 0.0012,
+        "imageDollars": 0.2574,
+        "otherDollars": 0.0,
+        "totalDollars": 0.2586
+      },
+      {
+        "date": "2026-08-23",
+        "label": "Aug 23",
         "textDollars": 0.0,
         "imageDollars": 0.0,
         "otherDollars": 0.0,
@@ -2134,14 +2139,14 @@
   },
   "costs": {
     "available": true,
-    "totalDollars": 25.8051,
-    "textDollars": 0.1273,
-    "imageDollars": 13.3813,
+    "totalDollars": 25.5369,
+    "textDollars": 0.1167,
+    "imageDollars": 13.1237,
     "otherDollars": 12.2965,
     "byLineItem": [
       {
         "name": "gpt-image-1 image, output",
-        "dollars": 12.9792
+        "dollars": 12.7296
       },
       {
         "name": "gpt-5.6-sol, cached input",
@@ -2157,7 +2162,7 @@
       },
       {
         "name": "gpt-image-1 text, input",
-        "dollars": 0.4021
+        "dollars": 0.3941
       },
       {
         "name": "gpt-5.6-terra, cache writes",
@@ -2177,11 +2182,11 @@
       },
       {
         "name": "gpt-4o-mini-2024-07-18, input",
-        "dollars": 0.0707
+        "dollars": 0.0652
       },
       {
         "name": "gpt-4o-mini-2024-07-18, output",
-        "dollars": 0.0565
+        "dollars": 0.0515
       },
       {
         "name": "gpt-5.6-sol, input",
@@ -2226,14 +2231,6 @@
     ],
     "daily": [
       {
-        "date": "2026-07-24",
-        "label": "Jul 24",
-        "textDollars": 0.0118,
-        "imageDollars": 0.515,
-        "otherDollars": 0.0,
-        "totalDollars": 0.5268
-      },
-      {
         "date": "2026-07-25",
         "label": "Jul 25",
         "textDollars": 0.0121,
@@ -2460,6 +2457,14 @@
       {
         "date": "2026-08-22",
         "label": "Aug 22",
+        "textDollars": 0.0012,
+        "imageDollars": 0.2574,
+        "otherDollars": 0.0,
+        "totalDollars": 0.2586
+      },
+      {
+        "date": "2026-08-23",
+        "label": "Aug 23",
         "textDollars": 0.0,
         "imageDollars": 0.0,
         "otherDollars": 0.0,
@@ -2469,6 +2474,6 @@
     "error": null,
     "subscriptionPrice": 7.99,
     "estimatedRevenue": 47.94,
-    "grossMargin": 22.13
+    "grossMargin": 22.4
   }
 }
