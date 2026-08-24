@@ -2,8 +2,8 @@
   "season": "Big Brother 28",
   "siteTitle": "BB28 Fantasy Draft",
   "tagline": "Meet the BB28 houseguests — draft night is next.",
-  "lastUpdated": "2026-08-21T04:46:17Z",
-  "status": "week-6-complete",
+  "lastUpdated": "2026-08-24T04:17:00Z",
+  "status": "week-7-in-progress",
   "liveRefreshSeconds": 60,
   "seasonCalendar": {
     "premiere": "2026-07-07",
@@ -147,7 +147,8 @@
       "photoUrl": "https://bigbrothernetwork.com/wp-content/uploads/2026/07/bb28-cast-drew-00.jpg",
       "bio": "Drew Campbell is a 22-year-old dental Assistant.",
       "sourceName": "Big Brother Network",
-      "sourceUrl": "https://bigbrothernetwork.com/big-brother-28-cast/"
+      "sourceUrl": "https://bigbrothernetwork.com/big-brother-28-cast/",
+      "notes": "Won the Week 7 BB Time Capsule vote and received the Never-Not Pass. Nominated for eviction by Dee Valladares in Week 7."
     },
     {
       "id": "haley-thogmartin",
@@ -321,7 +322,7 @@
       "name": "Dee Valladares",
       "status": "active",
       "bio": "Dee Valladares entered the BB28 house, won the first HOH, and is assigned to CA Stirmans under the first-eviction draft rule.",
-      "notes": "Assigned to CA Stirmans after their houseguest Ashley Trail became the first evictee. Saved from the block in Week 6 when Rick Devens used the Diamond Power of Veto.",
+      "notes": "Assigned to CA Stirmans after their houseguest Ashley Trail became the first evictee. Saved from the block in Week 6 when Rick Devens used the Diamond Power of Veto. Won the Week 7 Head of Household competition and nominated LaTrice Verrett, Drew Campbell, and Taylor Brown.",
       "photoUrl": "./assets/dee-valladares-headshot.png",
       "sourceName": "Survivor Wiki",
       "sourceUrl": "https://survivor.fandom.com/wiki/Dee_Valladares",
@@ -604,9 +605,57 @@
         "name": "Kamu Kirk",
         "vote": "8-1"
       }
+    },
+    {
+      "week": 7,
+      "label": "Week 7",
+      "date": "2026-08-23",
+      "status": "In progress",
+      "hoh": {
+        "houseguestId": "dee-valladares",
+        "winner": "Dee Valladares"
+      },
+      "nominees": [
+        {
+          "houseguestId": "latrice-verrett",
+          "name": "LaTrice Verrett"
+        },
+        {
+          "houseguestId": "drew-campbell",
+          "name": "Drew Campbell"
+        },
+        {
+          "houseguestId": "taylor-brown",
+          "name": "Taylor Brown"
+        }
+      ],
+      "timeCapsule": {
+        "houseguestId": "drew-campbell",
+        "name": "Drew Campbell",
+        "outcome": "Never-Not Pass"
+      },
+      "notes": "Dee Valladares won Head of Household and nominated LaTrice Verrett, Drew Campbell, and Taylor Brown. Drew received the Never-Not Pass from the BB Time Capsule."
     }
   ],
   "events": [
+    {
+      "date": "2026-08-23T21:00:00-07:00",
+      "type": "nomination",
+      "title": "Week 7 nominations are set",
+      "description": "Head of Household Dee Valladares nominated LaTrice Verrett, Drew Campbell, and Taylor Brown."
+    },
+    {
+      "date": "2026-08-23T20:45:00-07:00",
+      "type": "twist_result",
+      "title": "Drew receives the Never-Not Pass",
+      "description": "Drew Campbell won the Week 7 BB Time Capsule vote and received the Never-Not Pass."
+    },
+    {
+      "date": "2026-08-23T20:30:00-07:00",
+      "type": "competition_result",
+      "title": "Dee wins Week 7 HOH",
+      "description": "Dee Valladares won the Week 7 Head of Household competition."
+    },
     {
       "date": "2026-08-20T21:00:00-07:00",
       "type": "eviction",
@@ -903,6 +952,11 @@
       "name": "TVLine Week 6 eviction recap",
       "url": "https://www.tvline.com/2241321/big-brother-recap-kamu-evicted-season-28-week-6-results/",
       "checkedAt": "2026-08-21T04:46:17Z"
+    },
+    {
+      "name": "Big Brother Network Episode 20 recap",
+      "url": "https://bigbrothernetwork.com/big-brother-28-episode-20-recap-dee-takes-charge-drew-takes-the-heat/",
+      "checkedAt": "2026-08-24T04:17:00Z"
     }
   ],
   "players": [
