@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-25T19:00:48Z",
-  "generatedAtHuman": "Aug 25, 2026 at 12:00 PM PDT",
+  "generatedAt": "2026-08-25T22:00:56Z",
+  "generatedAtHuman": "Aug 25, 2026 at 03:00 PM PDT",
   "source": "scheduled-cache",
   "refreshCadenceMinutes": 180,
   "overview": {
@@ -13,7 +13,7 @@
     "grantedPremium": 11,
     "retainedUsers": 19,
     "insights30": 55,
-    "entries30": 275,
+    "entries30": 276,
     "cardImages30": 32
   },
   "users": [
@@ -464,8 +464,8 @@
       "displayName": "Jane Russell",
       "email": "groovystarr@hotmail.co.uk",
       "createdAt": "2026-06-07T10:11:54Z",
-      "lastLoginAt": "2026-08-25T16:53:58Z",
-      "lastActiveAt": "2026-08-25T16:53:58Z",
+      "lastLoginAt": "2026-08-25T21:23:39Z",
+      "lastActiveAt": "2026-08-25T21:23:39Z",
       "isPaidSubscriber": false,
       "grantedPremium": false,
       "insights30": 2,
