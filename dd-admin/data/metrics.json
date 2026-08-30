@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-08-30T01:01:13Z",
-  "generatedAtHuman": "Aug 29, 2026 at 06:01 PM PDT",
+  "generatedAt": "2026-08-30T04:00:38Z",
+  "generatedAtHuman": "Aug 29, 2026 at 09:00 PM PDT",
   "source": "scheduled-cache",
   "refreshCadenceMinutes": 180,
   "overview": {
-    "totalUsers": 71,
-    "launchUsers": 67,
-    "active7": 4,
-    "active30": 15,
+    "totalUsers": 72,
+    "launchUsers": 68,
+    "active7": 5,
+    "active30": 16,
     "premium": 18,
     "paidSubscribers": 7,
     "grantedPremium": 11,
@@ -94,6 +94,19 @@
       "insights30": 0,
       "cardImages30": 0,
       "retained": true
+    },
+    {
+      "id": "YuzS5TzNDDMrUFIf0Lmo77VSWha2",
+      "displayName": "Angie Furtaw",
+      "email": "wmvc9rs45d@privaterelay.appleid.com",
+      "createdAt": "2026-08-30T01:02:30Z",
+      "lastLoginAt": "2026-08-30T01:02:30Z",
+      "lastActiveAt": "2026-08-30T01:02:30Z",
+      "isPaidSubscriber": false,
+      "grantedPremium": false,
+      "insights30": 0,
+      "cardImages30": 0,
+      "retained": false
     },
     {
       "id": "23dRGxVItMPeYp8Iu6ONwX41ckh1",
@@ -956,7 +969,7 @@
     },
     {
       "title": "Retention pulse",
-      "body": "27% of users have returned across multiple weeks."
+      "body": "26% of users have returned across multiple weeks."
     },
     {
       "title": "Most engaged recently",
@@ -1926,7 +1939,7 @@
       {
         "date": "2026-08-30",
         "label": "Aug 30",
-        "count": 69
+        "count": 70
       }
     ],
     "dailyCosts": [
