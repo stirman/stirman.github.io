@@ -2,8 +2,8 @@
   "season": "Big Brother 28",
   "siteTitle": "BB28 Fantasy Draft",
   "tagline": "Meet the BB28 houseguests — the Monjies/Cassie/Crush/Mike/Fins family draft is live.",
-  "lastUpdated": "2026-08-28T04:16:32Z",
-  "status": "week-7-complete",
+  "lastUpdated": "2026-08-31T04:46:22Z",
+  "status": "week-8-veto-complete",
   "liveRefreshSeconds": 60,
   "seasonCalendar": {
     "premiere": "2026-07-07",
@@ -108,7 +108,7 @@
       "bio": "Drew Campbell is a 22-year-old dental Assistant.",
       "sourceName": "Big Brother Network",
       "sourceUrl": "https://bigbrothernetwork.com/big-brother-28-cast/",
-      "notes": "Won the Week 7 BB Time Capsule vote and received the Never-Not Pass. Nominated for eviction by Dee Valladares, then won the Week 7 BB Blockbuster and came off the block."
+      "notes": "Won the Week 7 BB Time Capsule vote and received the Never-Not Pass. Nominated for eviction by Dee Valladares, then won the Week 7 BB Blockbuster and came off the block. Won the Week 8 Head of Household competition and nominated LaTrice Verrett, Taylor Brown, and Yash Patel."
     },
     {
       "id": "haley-thogmartin",
@@ -116,13 +116,13 @@
       "age": 29,
       "hometown": "",
       "occupation": "Telemedicine Exec",
-      "status": "active",
+      "status": "evicted",
       "draftOwner": "crush",
       "photoUrl": "https://bigbrothernetwork.com/wp-content/uploads/2026/07/bb28-cast-haley-00.jpg",
       "bio": "Haley Thogmartin is a 29-year-old telemedicine Exec.",
       "sourceName": "Big Brother Network",
       "sourceUrl": "https://bigbrothernetwork.com/big-brother-28-cast/",
-      "notes": "Week 4 Head of Household. Nominated Melody Morris, Drew Campbell, and Taylor Brown; named Lyric Medeiros as the replacement nominee after Taylor used the Veto. Won the Week 5 BB Blockbuster and came off the block."
+      "notes": "Week 4 Head of Household. Nominated Melody Morris, Drew Campbell, and Taylor Brown; named Lyric Medeiros as the replacement nominee after Taylor used the Veto. Won the Week 5 BB Blockbuster and came off the block. Eliminated during the medieval twist at the start of Week 8."
     },
     {
       "id": "jason-de-puy",
@@ -247,7 +247,7 @@
       "bio": "Yash Patel is a 24-year-old financial Analyst from Monroe, NJ.",
       "sourceName": "Big Brother Network",
       "sourceUrl": "https://bigbrothernetwork.com/big-brother-28-cast/",
-      "notes": "Week 6 Head of Household. Nominated Dee Valladares, Haley Thogmartin, and Angela Murray, then won the OTEV Power of Veto and did not use it."
+      "notes": "Week 6 Head of Household. Nominated Dee Valladares, Haley Thogmartin, and Angela Murray, then won the OTEV Power of Veto and did not use it. Won the Week 8 Power of Veto while nominated."
     },
     {
       "id": "angela-murray",
@@ -616,9 +616,53 @@
         "name": "Mallory Aurichio",
         "vote": "6-2"
       }
+    },
+    {
+      "week": 8,
+      "label": "Week 8",
+      "date": "2026-08-29",
+      "status": "Veto complete",
+      "hoh": {
+        "houseguestId": "drew-campbell",
+        "winner": "Drew Campbell"
+      },
+      "nominees": [
+        { "houseguestId": "latrice-verrett", "name": "LaTrice Verrett" },
+        { "houseguestId": "taylor-brown", "name": "Taylor Brown" },
+        { "houseguestId": "yash-patel", "name": "Yash Patel" }
+      ],
+      "veto": {
+        "houseguestId": "yash-patel",
+        "winner": "Yash Patel"
+      },
+      "notes": "Haley Thogmartin was eliminated during the medieval twist. Drew Campbell then won Head of Household and nominated LaTrice Verrett, Taylor Brown, and Yash Patel. Yash won the Power of Veto."
     }
   ],
   "events": [
+    {
+      "date": "2026-08-29",
+      "type": "competition_result",
+      "title": "Yash wins the Week 8 Veto",
+      "description": "Yash Patel won the Week 8 Power of Veto while nominated."
+    },
+    {
+      "date": "2026-08-29",
+      "type": "nomination",
+      "title": "Week 8 nominations are set",
+      "description": "Head of Household Drew Campbell nominated LaTrice Verrett, Taylor Brown, and Yash Patel."
+    },
+    {
+      "date": "2026-08-29",
+      "type": "competition_result",
+      "title": "Drew wins Week 8 HOH",
+      "description": "Drew Campbell won his first Head of Household competition."
+    },
+    {
+      "date": "2026-08-29",
+      "type": "twist_result",
+      "title": "Haley is eliminated in the medieval twist",
+      "description": "Haley Thogmartin was eliminated during the medieval twist at the start of Week 8."
+    },
     {
       "date": "2026-08-28T04:16:32Z",
       "type": "eviction",
@@ -955,6 +999,21 @@
       "name": "Deadline Week 7 eviction recap",
       "url": "https://deadline.com/2026/08/big-brother-season-28-week-7-eviction-cbs-1237061646/",
       "checkedAt": "2026-08-28T04:16:32Z"
+    },
+    {
+      "name": "Big Brother Network Week 8 HOH spoiler",
+      "url": "https://bigbrothernetwork.com/big-brother-28-spoilers-who-won-hoh-week-8/",
+      "checkedAt": "2026-08-31T04:46:22Z"
+    },
+    {
+      "name": "Milwaukee Journal Sentinel Week 8 live-feed recap via Yahoo",
+      "url": "https://yahoo.com/entertainment/tv/articles/big-brother-spoilers-tonight-went-020549324.html",
+      "checkedAt": "2026-08-31T04:46:22Z"
+    },
+    {
+      "name": "Hamsterwatch BB28 daily index",
+      "url": "https://hamsterwatch.com/bb28/days.shtml",
+      "checkedAt": "2026-08-31T04:46:22Z"
     }
   ],
   "players": [
