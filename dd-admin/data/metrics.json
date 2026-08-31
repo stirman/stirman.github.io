@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-31T01:00:30Z",
-  "generatedAtHuman": "Aug 30, 2026 at 06:00 PM PDT",
+  "generatedAt": "2026-08-31T04:01:10Z",
+  "generatedAtHuman": "Aug 30, 2026 at 09:01 PM PDT",
   "source": "scheduled-cache",
   "refreshCadenceMinutes": 180,
   "overview": {
@@ -8,8 +8,8 @@
     "launchUsers": 68,
     "active7": 5,
     "active30": 16,
-    "premium": 18,
-    "paidSubscribers": 7,
+    "premium": 17,
+    "paidSubscribers": 6,
     "grantedPremium": 11,
     "retainedUsers": 19,
     "insights30": 45,
@@ -115,7 +115,7 @@
       "createdAt": "2026-08-21T15:21:47Z",
       "lastLoginAt": "2026-08-21T15:21:47Z",
       "lastActiveAt": "2026-08-21T15:21:47Z",
-      "isPaidSubscriber": true,
+      "isPaidSubscriber": false,
       "grantedPremium": false,
       "insights30": 0,
       "cardImages30": 0,
@@ -2526,7 +2526,7 @@
     ],
     "error": null,
     "subscriptionPrice": 7.99,
-    "estimatedRevenue": 55.93,
-    "grossMargin": 32.23
+    "estimatedRevenue": 47.94,
+    "grossMargin": 24.24
   }
 }
