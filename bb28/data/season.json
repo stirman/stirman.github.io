@@ -2,8 +2,8 @@
   "season": "Big Brother 28",
   "siteTitle": "BB28 Fantasy Draft",
   "tagline": "Meet the BB28 houseguests — draft night is next.",
-  "lastUpdated": "2026-08-31T04:46:22Z",
-  "status": "week-8-veto-complete",
+  "lastUpdated": "2026-09-03T04:16:47Z",
+  "status": "week-8-veto-ceremony-complete",
   "liveRefreshSeconds": 60,
   "seasonCalendar": {
     "premiere": "2026-07-07",
@@ -148,7 +148,7 @@
       "bio": "Drew Campbell is a 22-year-old dental Assistant.",
       "sourceName": "Big Brother Network",
       "sourceUrl": "https://bigbrothernetwork.com/big-brother-28-cast/",
-      "notes": "Won the Week 7 BB Time Capsule vote and received the Never-Not Pass. Nominated for eviction by Dee Valladares, then won the Week 7 BB Blockbuster and came off the block. Won the Week 8 Head of Household competition and nominated LaTrice Verrett, Taylor Brown, and Yash Patel."
+      "notes": "Won the Week 7 BB Time Capsule vote and received the Never-Not Pass. Nominated for eviction by Dee Valladares, then won the Week 7 BB Blockbuster and came off the block. Won the Week 8 Head of Household competition and nominated LaTrice Verrett, Taylor Brown, and Yash Patel. Named Rick Devens as the replacement nominee after Yash used the Veto."
     },
     {
       "id": "haley-thogmartin",
@@ -287,7 +287,7 @@
       "bio": "Yash Patel is a 24-year-old financial Analyst from Monroe, NJ.",
       "sourceName": "Big Brother Network",
       "sourceUrl": "https://bigbrothernetwork.com/big-brother-28-cast/",
-      "notes": "Week 6 Head of Household. Nominated Dee Valladares, Haley Thogmartin, and Angela Murray, then won the OTEV Power of Veto and did not use it. Won the Week 8 Power of Veto while nominated."
+      "notes": "Week 6 Head of Household. Nominated Dee Valladares, Haley Thogmartin, and Angela Murray, then won the OTEV Power of Veto and did not use it. Won the Week 8 Power of Veto while nominated and used it on himself."
     },
     {
       "id": "angela-murray",
@@ -315,7 +315,7 @@
       "bio": "Rick Devens is a Survivor: Edge of Extinction fan favorite joining the BB28 draft board as a crossover pick.",
       "sourceName": "Parade",
       "sourceUrl": "https://parade.com/tv/rick-devens-survivor-50-interview",
-      "notes": "Week 2 Head of Household and Power of Veto winner. Received the Week 3 Diamond Power of Veto from the BB Time Capsule. Used the Diamond Power of Veto in Week 6 to save Dee Valladares and named Kamu Kirk as the replacement nominee."
+      "notes": "Week 2 Head of Household and Power of Veto winner. Received the Week 3 Diamond Power of Veto from the BB Time Capsule. Used the Diamond Power of Veto in Week 6 to save Dee Valladares and named Kamu Kirk as the replacement nominee. Named as the Week 8 replacement nominee after Yash Patel used the Veto."
     },
     {
       "id": "dee-valladares",
@@ -675,10 +675,24 @@
         "houseguestId": "yash-patel",
         "winner": "Yash Patel"
       },
-      "notes": "Haley Thogmartin was eliminated during the medieval twist. Drew Campbell then won Head of Household and nominated LaTrice Verrett, Taylor Brown, and Yash Patel. Yash won the Power of Veto."
+      "vetoUsedOn": {
+        "houseguestId": "yash-patel",
+        "name": "Yash Patel"
+      },
+      "replacementNominee": {
+        "houseguestId": "rick-devens",
+        "name": "Rick Devens"
+      },
+      "notes": "Haley Thogmartin was eliminated during the medieval twist. Drew Campbell then won Head of Household and nominated LaTrice Verrett, Taylor Brown, and Yash Patel. Yash won the Power of Veto and used it on himself; Drew named Rick Devens as the replacement nominee."
     }
   ],
   "events": [
+    {
+      "date": "2026-09-02",
+      "type": "veto_ceremony",
+      "title": "Yash uses the Week 8 Veto",
+      "description": "Yash Patel used the Power of Veto on himself, and Head of Household Drew Campbell named Rick Devens as the replacement nominee."
+    },
     {
       "date": "2026-08-29",
       "type": "competition_result",
@@ -1048,6 +1062,11 @@
       "name": "Hamsterwatch BB28 daily index",
       "url": "https://hamsterwatch.com/bb28/days.shtml",
       "checkedAt": "2026-08-31T04:46:22Z"
+    },
+    {
+      "name": "Big Brother Network Episode 24 recap",
+      "url": "https://bigbrothernetwork.com/big-brother-28-episode-24-recap-barrett-is-done-playing-the-icons-game/",
+      "checkedAt": "2026-09-03T04:16:47Z"
     }
   ],
   "players": [
