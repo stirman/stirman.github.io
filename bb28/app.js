@@ -263,7 +263,9 @@ function renderHouseguests(data) {
     const status = guest.status || 'active';
     const owner = guest.draftOwner ? ownerName(data, guest.draftOwner) : 'Undrafted';
     const meta = [guest.age && `Age ${guest.age}`, guest.hometown, guest.occupation].filter(Boolean).join(' • ');
-    const evictedStamp = status === 'evicted'
+    // Jury members have also been evicted from the house; keep the visible
+    // eviction treatment while preserving their distinct jury status.
+    const evictedStamp = ['evicted', 'jury'].includes(status)
       ? '<img class="evicted-stamp" src="./assets/evicted-stamp.png" alt="Evicted">'
       : '';
     const photo = guest.photoUrl ? `

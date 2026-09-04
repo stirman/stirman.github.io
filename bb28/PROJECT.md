@@ -95,6 +95,8 @@ Use `null`, `{ "winner": "TBD" }`, or omit a comp until the winner is known. Pre
 4. Update `lastUpdated`.
 5. Commit/push.
 
+Houseguests with either `evicted` or `jury` status receive the visible Evicted stamp. `jury` remains a distinct structured status for jury tracking.
+
 ## Deploy
 
 This lives in the `stirman.github.io` GitHub Pages repo. Publishing is a normal git push to `master`:
