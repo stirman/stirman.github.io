@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-09-04T04:00:41Z",
-  "generatedAtHuman": "Sep 03, 2026 at 09:00 PM PDT",
+  "generatedAt": "2026-09-04T07:00:35Z",
+  "generatedAtHuman": "Sep 04, 2026 at 12:00 AM PDT",
   "source": "scheduled-cache",
   "refreshCadenceMinutes": 180,
   "overview": {
-    "totalUsers": 72,
-    "launchUsers": 68,
-    "active7": 6,
-    "active30": 16,
-    "premium": 17,
-    "paidSubscribers": 6,
+    "totalUsers": 73,
+    "launchUsers": 69,
+    "active7": 7,
+    "active30": 17,
+    "premium": 18,
+    "paidSubscribers": 7,
     "grantedPremium": 11,
     "retainedUsers": 19,
-    "insights30": 44,
-    "entries30": 190,
-    "cardImages30": 25
+    "insights30": 45,
+    "entries30": 198,
+    "cardImages30": 26
   },
   "users": [
     {
@@ -457,6 +457,19 @@
       "grantedPremium": true,
       "insights30": 0,
       "cardImages30": 0,
+      "retained": false
+    },
+    {
+      "id": "DOkO7F8NDlb5Q5Kn0BeKUQrMYyA2",
+      "displayName": "Hearher Scobey",
+      "email": "Y351t5M3Aga1n@icloud.com",
+      "createdAt": "2026-09-04T06:32:18Z",
+      "lastLoginAt": "2026-09-04T06:37:59Z",
+      "lastActiveAt": "2026-09-04T06:37:59Z",
+      "isPaidSubscriber": true,
+      "grantedPremium": false,
+      "insights30": 1,
+      "cardImages30": 1,
       "retained": false
     },
     {
@@ -965,7 +978,7 @@
     },
     {
       "title": "Depth signal",
-      "body": "Users averaged about 4.3 inputs per generated insight in the last 30 days."
+      "body": "Users averaged about 4.4 inputs per generated insight in the last 30 days."
     },
     {
       "title": "Retention pulse",
@@ -1130,7 +1143,7 @@
       {
         "date": "2026-09-04",
         "label": "Sep 4",
-        "count": 0
+        "count": 1
       }
     ],
     "dailyCardImages": [
@@ -1282,7 +1295,7 @@
       {
         "date": "2026-09-04",
         "label": "Sep 4",
-        "count": 0
+        "count": 1
       }
     ],
     "totalUsers": [
@@ -1964,7 +1977,7 @@
       {
         "date": "2026-09-04",
         "label": "Sep 4",
-        "count": 70
+        "count": 71
       }
     ],
     "dailyCosts": [
@@ -2546,7 +2559,7 @@
     ],
     "error": null,
     "subscriptionPrice": 7.99,
-    "estimatedRevenue": 47.94,
-    "grossMargin": 25.02
+    "estimatedRevenue": 55.93,
+    "grossMargin": 33.01
   }
 }
