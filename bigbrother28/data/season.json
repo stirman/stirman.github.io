@@ -2,8 +2,8 @@
   "season": "Big Brother 28",
   "siteTitle": "BB28 Fantasy Draft",
   "tagline": "Meet the BB28 houseguests — the Monjies/Cassie/Crush/Mike/Fins family draft is live.",
-  "lastUpdated": "2026-09-03T04:16:47Z",
-  "status": "week-8-veto-ceremony-complete",
+  "lastUpdated": "2026-09-04T04:15:41Z",
+  "status": "week-8-complete",
   "liveRefreshSeconds": 60,
   "seasonCalendar": {
     "premiere": "2026-07-07",
@@ -158,13 +158,13 @@
       "age": 58,
       "hometown": "Maplewood, NJ",
       "occupation": "Boutique Salesperson",
-      "status": "active",
+      "status": "jury",
       "draftOwner": "fins",
       "photoUrl": "https://bigbrothernetwork.com/wp-content/uploads/2026/07/bb28-cast-latrice-00.jpg",
       "bio": "LaTrice Verrett is a 58-year-old boutique salesperson from Maplewood, NJ.",
       "sourceName": "Big Brother Network",
       "sourceUrl": "https://bigbrothernetwork.com/big-brother-28-cast/",
-      "notes": "Won the Week 5 Head of Household wall competition, becoming the oldest HOH winner in Big Brother history. Won the Week 7 Power of Veto and used it on herself."
+      "notes": "Won the Week 5 Head of Household wall competition, becoming the oldest HOH winner in Big Brother history. Won the Week 7 Power of Veto and used it on herself. Evicted in Week 8 by a 4-2 vote after Rick Devens won the BB Blockbuster; became the first member of the jury."
     },
     {
       "id": "lyric-medeiros",
@@ -275,7 +275,7 @@
       "bio": "Rick Devens is a Survivor: Edge of Extinction fan favorite joining the BB28 draft board as a crossover pick.",
       "sourceName": "Parade",
       "sourceUrl": "https://parade.com/tv/rick-devens-survivor-50-interview",
-      "notes": "Week 2 Head of Household and Power of Veto winner. Received the Week 3 Diamond Power of Veto from the BB Time Capsule. Used the Diamond Power of Veto in Week 6 to save Dee Valladares and named Kamu Kirk as the replacement nominee. Named as the Week 8 replacement nominee after Yash Patel used the Veto."
+      "notes": "Week 2 Head of Household and Power of Veto winner. Received the Week 3 Diamond Power of Veto from the BB Time Capsule. Used the Diamond Power of Veto in Week 6 to save Dee Valladares and named Kamu Kirk as the replacement nominee. Named as the Week 8 replacement nominee after Yash Patel used the Veto, then won the Week 8 BB Blockbuster and came off the block."
     },
     {
       "id": "dee-valladares",
@@ -620,8 +620,8 @@
     {
       "week": 8,
       "label": "Week 8",
-      "date": "2026-08-29",
-      "status": "Veto complete",
+      "date": "2026-09-03",
+      "status": "Complete",
       "hoh": {
         "houseguestId": "drew-campbell",
         "winner": "Drew Campbell"
@@ -643,10 +643,36 @@
         "houseguestId": "rick-devens",
         "name": "Rick Devens"
       },
-      "notes": "Haley Thogmartin was eliminated during the medieval twist. Drew Campbell then won Head of Household and nominated LaTrice Verrett, Taylor Brown, and Yash Patel. Yash won the Power of Veto and used it on himself; Drew named Rick Devens as the replacement nominee."
+      "finalNominees": [
+        { "houseguestId": "latrice-verrett", "name": "LaTrice Verrett" },
+        { "houseguestId": "taylor-brown", "name": "Taylor Brown" },
+        { "houseguestId": "rick-devens", "name": "Rick Devens" }
+      ],
+      "blockbuster": {
+        "houseguestId": "rick-devens",
+        "winner": "Rick Devens"
+      },
+      "evicted": {
+        "houseguestId": "latrice-verrett",
+        "name": "LaTrice Verrett",
+        "vote": "4-2"
+      },
+      "notes": "Haley Thogmartin was eliminated during the medieval twist. Drew Campbell then won Head of Household and nominated LaTrice Verrett, Taylor Brown, and Yash Patel. Yash won the Power of Veto and used it on himself; Drew named Rick Devens as the replacement nominee. Rick won the BB Blockbuster, and LaTrice was evicted 4-2 as the first member of the jury."
     }
   ],
   "events": [
+    {
+      "date": "2026-09-03T21:00:00-07:00",
+      "type": "eviction",
+      "title": "LaTrice is evicted in Week 8",
+      "description": "Rick Devens won the BB Blockbuster and came off the block. LaTrice Verrett was then evicted by a 4-2 vote and became the first member of the jury."
+    },
+    {
+      "date": "2026-09-03T20:45:00-07:00",
+      "type": "competition_result",
+      "title": "Rick wins the Week 8 BB Blockbuster",
+      "description": "Rick Devens won the Week 8 BB Blockbuster and came off the block."
+    },
     {
       "date": "2026-09-02",
       "type": "veto_ceremony",
@@ -1033,6 +1059,16 @@
       "name": "Big Brother Network Episode 24 recap",
       "url": "https://bigbrothernetwork.com/big-brother-28-episode-24-recap-barrett-is-done-playing-the-icons-game/",
       "checkedAt": "2026-09-03T04:16:47Z"
+    },
+    {
+      "name": "Deadline Week 8 eviction recap",
+      "url": "https://deadline.com/2026/09/big-brother-season-28-week-8-eviction-cbs-1237067692/",
+      "checkedAt": "2026-09-04T04:15:41Z"
+    },
+    {
+      "name": "TVLine Week 8 eviction recap",
+      "url": "https://www.tvline.com/2250846/big-brother-recap-lala-evicted-latrice-first-juror-season-28/",
+      "checkedAt": "2026-09-04T04:15:41Z"
     }
   ],
   "players": [
