@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-05T16:01:19Z",
-  "generatedAtHuman": "Sep 05, 2026 at 09:01 AM PDT",
+  "generatedAt": "2026-09-05T19:00:36Z",
+  "generatedAtHuman": "Sep 05, 2026 at 12:00 PM PDT",
   "source": "scheduled-cache",
   "refreshCadenceMinutes": 180,
   "overview": {
@@ -8,13 +8,13 @@
     "launchUsers": 69,
     "active7": 7,
     "active30": 17,
-    "premium": 17,
-    "paidSubscribers": 6,
+    "premium": 18,
+    "paidSubscribers": 7,
     "grantedPremium": 11,
     "retainedUsers": 19,
-    "insights30": 45,
-    "entries30": 189,
-    "cardImages30": 25
+    "insights30": 46,
+    "entries30": 190,
+    "cardImages30": 26
   },
   "users": [
     {
@@ -334,12 +334,12 @@
       "displayName": "Emily Bentley",
       "email": "57rv7p7fzj@privaterelay.appleid.com",
       "createdAt": "2026-06-10T22:06:14Z",
-      "lastLoginAt": "2026-09-01T13:54:12Z",
-      "lastActiveAt": "2026-09-01T13:54:12Z",
-      "isPaidSubscriber": false,
+      "lastLoginAt": "2026-09-05T17:01:37Z",
+      "lastActiveAt": "2026-09-05T17:01:37Z",
+      "isPaidSubscriber": true,
       "grantedPremium": false,
-      "insights30": 5,
-      "cardImages30": 5,
+      "insights30": 6,
+      "cardImages30": 6,
       "retained": true
     },
     {
@@ -978,7 +978,7 @@
     },
     {
       "title": "Depth signal",
-      "body": "Users averaged about 4.2 inputs per generated insight in the last 30 days."
+      "body": "Users averaged about 4.1 inputs per generated insight in the last 30 days."
     },
     {
       "title": "Retention pulse",
@@ -1138,7 +1138,7 @@
       {
         "date": "2026-09-04",
         "label": "Sep 4",
-        "count": 1
+        "count": 2
       },
       {
         "date": "2026-09-05",
@@ -1290,7 +1290,7 @@
       {
         "date": "2026-09-04",
         "label": "Sep 4",
-        "count": 1
+        "count": 2
       },
       {
         "date": "2026-09-05",
@@ -2564,7 +2564,7 @@
     ],
     "error": null,
     "subscriptionPrice": 7.99,
-    "estimatedRevenue": 47.94,
-    "grossMargin": 25.02
+    "estimatedRevenue": 55.93,
+    "grossMargin": 33.02
   }
 }
