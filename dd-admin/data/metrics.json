@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-07T04:00:28Z",
-  "generatedAtHuman": "Sep 06, 2026 at 09:00 PM PDT",
+  "generatedAt": "2026-09-07T07:00:59Z",
+  "generatedAtHuman": "Sep 07, 2026 at 12:00 AM PDT",
   "source": "scheduled-cache",
   "refreshCadenceMinutes": 180,
   "overview": {
@@ -12,8 +12,8 @@
     "paidSubscribers": 7,
     "grantedPremium": 11,
     "retainedUsers": 19,
-    "insights30": 42,
-    "entries30": 121,
+    "insights30": 43,
+    "entries30": 125,
     "cardImages30": 23
   },
   "users": [
@@ -750,11 +750,11 @@
       "displayName": "Miquelle Hardy",
       "email": "hs2c8wryfg@privaterelay.appleid.com",
       "createdAt": "2026-06-18T00:56:55Z",
-      "lastLoginAt": "2026-09-01T22:24:17Z",
-      "lastActiveAt": "2026-09-01T22:24:17Z",
+      "lastLoginAt": "2026-09-07T04:09:04Z",
+      "lastActiveAt": "2026-09-07T04:09:04Z",
       "isPaidSubscriber": false,
       "grantedPremium": false,
-      "insights30": 5,
+      "insights30": 6,
       "cardImages30": 2,
       "retained": true
     },
@@ -1138,7 +1138,7 @@
       {
         "date": "2026-09-06",
         "label": "Sep 6",
-        "count": 0
+        "count": 1
       },
       {
         "date": "2026-09-07",
