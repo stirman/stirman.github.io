@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-07T15:53:06.101327+00:00",
+  "updatedAt": "2026-09-07T16:36:15.184130+00:00",
   "mapAccuracy": "Regional overview only. Exact cache coordinates require Geocaching sign-in. Lines connect approximate place centers, not actual travel paths.",
   "inputCount": 7,
   "uniqueTrackableCount": 6,
@@ -9,7 +9,7 @@
       "name": "Audrey’s Heart",
       "color": "#c85270",
       "status": "In the hands of Or_Mi.",
-      "distanceMiles": 5884.1,
+      "distanceMiles": 6362.9,
       "sourceUrl": "https://www.geocaching.com/track/details.aspx?tracker=TBB8FK9",
       "logs": [
         {
@@ -611,6 +611,51 @@
           "lon": 6.1296751,
           "precision": "Approximate city / region center, not cache coordinates",
           "coordinateSource": "https://nominatim.openstreetmap.org/search?q=Luxembourg&format=json&limit=1"
+        },
+        {
+          "id": "TL27ETYNA",
+          "date": "2026-09-04",
+          "type": "Visited",
+          "text": "",
+          "event": "Or_Mi took it to Putování za kuchyní - Mongolsko",
+          "cacheName": "Putování za kuchyní - Mongolsko",
+          "cacheUrl": "https://www.geocaching.com/geocache/GCBM8ZN",
+          "location": "Středočeský kraj, Czechia",
+          "sourceUrl": "https://www.geocaching.com/live/log/TL27ETYNA",
+          "lat": 50.0601579,
+          "lon": 13.8307479,
+          "precision": "Approximate city / region center, not cache coordinates",
+          "coordinateSource": "https://nominatim.openstreetmap.org/search?q=St%C5%99edo%C4%8Desk%C3%BD+kraj%2C+Czechia&format=json&limit=1"
+        },
+        {
+          "id": "TL27EV3ZV",
+          "date": "2026-09-04",
+          "type": "Visited",
+          "text": "",
+          "event": "Or_Mi took it to Lysá nad Labem Nádraží",
+          "cacheName": "Lysá nad Labem Nádraží",
+          "cacheUrl": "https://www.geocaching.com/geocache/GCBTH5D",
+          "location": "Středočeský kraj, Czechia",
+          "sourceUrl": "https://www.geocaching.com/live/log/TL27EV3ZV",
+          "lat": 50.0601579,
+          "lon": 13.8307479,
+          "precision": "Approximate city / region center, not cache coordinates",
+          "coordinateSource": "https://nominatim.openstreetmap.org/search?q=St%C5%99edo%C4%8Desk%C3%BD+kraj%2C+Czechia&format=json&limit=1"
+        },
+        {
+          "id": "TL27EV43D",
+          "date": "2026-09-05",
+          "type": "Visited",
+          "text": "",
+          "event": "Or_Mi took it to IM #1 - Měšťanský pivovar",
+          "cacheName": "IM #1 - Měšťanský pivovar",
+          "cacheUrl": "https://www.geocaching.com/geocache/GC45GN6",
+          "location": "Ústecký kraj, Czechia",
+          "sourceUrl": "https://www.geocaching.com/live/log/TL27EV43D",
+          "lat": 50.5663266,
+          "lon": 13.8206705,
+          "precision": "Approximate city / region center, not cache coordinates",
+          "coordinateSource": "https://nominatim.openstreetmap.org/search?q=%C3%9Asteck%C3%BD+kraj%2C+Czechia&format=json&limit=1"
         }
       ]
     },
