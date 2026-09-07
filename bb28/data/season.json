@@ -2,8 +2,8 @@
   "season": "Big Brother 28",
   "siteTitle": "BB28 Fantasy Draft",
   "tagline": "Meet the BB28 houseguests — draft night is next.",
-  "lastUpdated": "2026-09-04T04:15:41Z",
-  "status": "week-8-complete",
+  "lastUpdated": "2026-09-07T04:16:37Z",
+  "status": "week-9-in-progress",
   "liveRefreshSeconds": 60,
   "seasonCalendar": {
     "premiere": "2026-07-07",
@@ -120,7 +120,8 @@
       "photoUrl": "https://bigbrothernetwork.com/wp-content/uploads/2026/07/bb28-cast-barrett-00.jpg",
       "bio": "Barrett Pfeiffer is a 27-year-old jumbotron Engineer from Texas.",
       "sourceName": "Big Brother Network",
-      "sourceUrl": "https://bigbrothernetwork.com/big-brother-28-cast/"
+      "sourceUrl": "https://bigbrothernetwork.com/big-brother-28-cast/",
+      "notes": "Won the Week 9 Head of Household competition."
     },
     {
       "id": "chuk-anyanwu",
@@ -698,9 +699,26 @@
         "vote": "4-2"
       },
       "notes": "Haley Thogmartin was eliminated during the medieval twist. Drew Campbell then won Head of Household and nominated LaTrice Verrett, Taylor Brown, and Yash Patel. Yash won the Power of Veto and used it on himself; Drew named Rick Devens as the replacement nominee. Rick won the BB Blockbuster, and LaTrice was evicted 4-2 as the first member of the jury."
+    },
+    {
+      "week": 9,
+      "label": "Week 9",
+      "date": "2026-09-04",
+      "status": "In Progress",
+      "hoh": {
+        "houseguestId": "barrett-pfeiffer",
+        "winner": "Barrett Pfeiffer"
+      },
+      "notes": "Barrett Pfeiffer won the Week 9 Head of Household competition."
     }
   ],
   "events": [
+    {
+      "date": "2026-09-04",
+      "type": "competition_result",
+      "title": "Barrett wins Week 9 HOH",
+      "description": "Barrett Pfeiffer won the Week 9 Head of Household competition."
+    },
     {
       "date": "2026-09-03T21:00:00-07:00",
       "type": "eviction",
@@ -1103,6 +1121,16 @@
       "name": "TVLine Week 8 eviction recap",
       "url": "https://www.tvline.com/2250846/big-brother-recap-lala-evicted-latrice-first-juror-season-28/",
       "checkedAt": "2026-09-04T04:15:41Z"
+    },
+    {
+      "name": "Big Brother Network Week 9 HOH spoiler",
+      "url": "https://bigbrothernetwork.com/big-brother-28-spoilers-who-won-hoh-week-9/",
+      "checkedAt": "2026-09-07T04:16:37Z"
+    },
+    {
+      "name": "Big Brother USA Week 9 HOH report",
+      "url": "https://bigbrotherus.com/2026/09/04/big-brother-28-spoilers-barrett-wins-week-9-hoh-are-the-icons-finally-in-trouble/",
+      "checkedAt": "2026-09-07T04:16:37Z"
     }
   ],
   "players": [
