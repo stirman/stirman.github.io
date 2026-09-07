@@ -131,10 +131,10 @@
     else { state.map.setView([25, 0], 2); message(coins.some(coin => coin.logs.length) ? 'These logs have no public map locations. Read their stories below.' : 'No logged travels to map yet. A little adventure is still ahead.'); }
   }
   function drawJournal() {
-    const coins = chosen(), entries = coins.flatMap(coin => coin.logs.map(log => ({ coin, log })));
-    entries.sort((a, b) => (dateValue(a.log.date)?.getTime() ?? Infinity) - (dateValue(b.log.date)?.getTime() ?? Infinity));
-    $('journal-count').textContent = `${number(entries.length)} ${entries.length === 1 ? 'log' : 'logs'} · oldest first`;
-    $('journal-intro').textContent = state.selected === null ? 'A chronological collection of moments, from the first stop to the latest.' : `Following ${coins[0]?.name || 'this little heart'}, one logged moment at a time.`;
+    const coins = chosen(), entries = coins.flatMap(coin => [...coin.logs].reverse().map(log => ({ coin, log })));
+    entries.sort((a, b) => (dateValue(b.log.date)?.getTime() ?? -Infinity) - (dateValue(a.log.date)?.getTime() ?? -Infinity));
+    $('journal-count').textContent = `${number(entries.length)} ${entries.length === 1 ? 'log' : 'logs'} · newest first`;
+    $('journal-intro').textContent = state.selected === null ? 'The latest adventures first, followed by earlier moments along the way.' : `Following ${coins[0]?.name || 'this little heart'}, newest moments first.`;
     $('timeline').replaceChildren();
     if (!entries.length) {
       const empty = element('div', 'empty'); empty.append(element('h3', '', state.coins.length ? 'An adventure waiting to happen' : 'The journal is waiting for its first page'), element('p', '', state.coins.length ? 'No logged travels yet for this selection. Nothing has been added to the map or imagined along the way.' : 'No public coin data is available yet. Check back after the next data update.'));
