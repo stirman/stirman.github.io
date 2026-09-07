@@ -1,6 +1,6 @@
 # Audrey’s Heart — regional travel journal
 
-Version: 1 (2026-09-07). Public URL: https://stirman.net/geocoins/ (GitHub Pages, `stirman/stirman.github.io`, `master` branch). Scope is this subpath only; preserve the existing homepage and all other projects.
+Version: 1 (2026-09-07). Public URL: https://stirman.net/audrey/ (GitHub Pages, `stirman/stirman.github.io`, `master` branch). Scope is this subpath only; preserve the existing homepage and all other projects.
 
 ## Files
 - `index.html`: accessible page structure, hero, map, summary, journal and disclosure.
@@ -29,16 +29,16 @@ Leaflet 1.9.4 comes from unpkg; OpenStreetMap tiles use `https://tile.openstreet
 The public JSON is fetched with cache busting and no-store, with a 15-second timeout. Empty data, invalid data, HTTP failure, missing Leaflet, missing map locations, stale/unknown update time and missing distances have distinct visible states. Failed data loads offer a retry. A separate tile-health warning tracks current failed tile elements and clears as they load or leave the viewport; it never replaces the selected journey label.
 
 ## Local verification
-From repository root, serve with `python3 -m http.server 8768 --bind 127.0.0.1`, then open `http://127.0.0.1:8768/geocoins/`. Use HTTP, not file://.
+From repository root, serve with `python3 -m http.server 8768 --bind 127.0.0.1`, then open `http://127.0.0.1:8768/audrey/`. Use HTTP, not file://.
 
-- Syntax: `node --check geocoins/app.js`.
+- Syntax: `node --check audrey/app.js`.
 - Browser tests written outside the repository: `/tmp/geocoins-browser-test.cjs`, `/tmp/geocoins-edge-test.cjs` (Playwright installation path is local-machine-specific).
 - Real-data tests cover six cards, 46 logs, nine grouped coin/region markers, waiting-state filtering, all-journey reset, popup zoom, public IDs, event text, OSM tile URLs, no uncaught JS errors, and mobile overflow.
 - Edge tests cover empty JSON, HTTP failure, malformed data, absent Leaflet, and isolated tile failure.
 - Screenshots: `/tmp/geocoins-final-desktop.png`, `/tmp/geocoins-final-mobile.png`. OSM geographic tiles were visually inspected, not merely checked for HTTP success.
 
 ## Updates and deployment
-Update source history only through the parent-owned updater and validate its public JSON before deployment. No API keys are used by the frontend. Existing repository owner controls GitHub Pages publication. After reviewing the frontend and data together, owner can stage only intended `geocoins/` files, commit and push using the existing deployment workflow. Verify the HTTPS page and JSON after Pages propagation before declaring the site live. Change CSS/JS query versions in HTML when shipping later behavior changes.
+Update source history only through the parent-owned updater and validate its public JSON before deployment. No API keys are used by the frontend. Existing repository owner controls GitHub Pages publication. After reviewing the frontend and data together, owner can stage only intended `audrey/` files, commit and push using the existing deployment workflow. Verify the HTTPS page and JSON after Pages propagation before declaring the site live. Change CSS/JS query versions in HTML when shipping later behavior changes.
 
 ## Known limits
 Map/data/CDN availability is network-dependent. Region-level markers deliberately cannot locate a physical geocache. Coin cards scroll in the desktop panel; mobile shows a two-column card grid below the map. The journal shows all source logs without pagination. No persistent browser storage or analytics.

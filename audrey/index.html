@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#faf7f0"><meta name="description" content="A little family travel journal following Audrey’s Heart geocoins, one logged stop at a time.">
+<title>Audrey’s Heart · Little hearts. Big world.</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
+<link rel="stylesheet" href="./styles.css?v=1">
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="./app.js?v=1"></script>
+</head>
+<body>
+<a class="skip" href="#journeys">Skip to journeys</a>
+<header class="masthead"><a class="brand" href="./"><span class="brand-heart" aria-hidden="true">♥</span> Audrey’s Heart</a><span class="mast-note">A FAMILY GEOCACHING JOURNAL</span><a class="nav-link" href="#journal">The travel journal <span aria-hidden="true">↗</span></a></header>
+<main>
+<section class="hero" aria-labelledby="title"><div><p class="eyebrow">SENT WITH LOVE. CARRIED BY KINDNESS.</p><h1 id="title">Little hearts.<br><em>Big world.</em></h1><p class="intro">Small geocoins, a world of possibility. Follow our family’s little hearts as geocachers carry them from one adventure to the next.</p></div><div class="postcard" aria-hidden="true"><div class="stamp">♥<small>WITH LOVE</small></div><svg viewBox="0 0 320 210"><path class="wander" d="M30 175C-5 90 125 155 102 76S205 0 221 65s-122 128-42 129 70-72 115-99"/><circle cx="30" cy="175" r="5"/><path class="illustrated-heart" d="M164 64c-38-46-100 13 0 85 100-72 38-131 0-85"/><path class="spark" d="M55 42v18m-9-9h18m184 102v16m-8-8h16"/></svg><span class="handwritten">Adventure looks good on you.</span></div></section>
+<section class="stats" aria-label="Journey totals"><div><strong id="coin-count">—</strong><span>little hearts</span></div><div><strong id="stop-count">—</strong><span>mapped travel logs</span></div><div><strong id="mile-count">—</strong><span>source-recorded miles <sup>†</sup></span></div><p>Every stop has a story.<br>Every journey starts with a little heart.</p></section>
+<div id="data-notice" class="notice" role="status" aria-live="polite">Opening the travel journal…</div>
+<section id="journeys" class="journeys" aria-labelledby="map-title"><div class="section-heading"><div><p class="eyebrow">FOLLOW THEIR FOOTSTEPS</p><h2 id="map-title">Regional journeys, shared adventures</h2></div><button id="reset" class="pill" type="button" aria-pressed="true">All journeys <span aria-hidden="true">↗</span></button></div><div class="explorer"><aside class="coin-panel" aria-label="Choose a geocoin"><div class="panel-heading"><span>THE LITTLE HEARTS</span><small>Pick one to explore</small></div><div id="coins"></div></aside><div class="map-panel"><div id="map" aria-label="Interactive regional overview of logged geocoin locations"></div><p id="map-message" class="map-message" role="status" hidden></p><div class="map-caption"><span class="live-dot" aria-hidden="true"></span><span id="map-label">All regional journeys</span><span>· Dashed lines are illustrative, not actual paths</span></div></div></div><p class="map-note">⌖ Regional overview only: city / region centers, not cache coordinates. Exact cache maps require a Geocaching login and are not accessed here. Repeated logs share regional markers; mapped travel logs are not distinct places. Dashed lines connect known regions, not actual routes. Unlocated logs stay in the journal.</p></section>
+<section id="journal" class="journal" aria-labelledby="journal-title"><div class="section-heading"><div><p class="eyebrow">POSTCARDS FROM THE ROAD</p><h2 id="journal-title">The travel journal</h2></div><span id="journal-count" class="muted"></span></div><p class="journal-intro" id="journal-intro">A chronological collection of moments, from the first stop to the latest.</p><div id="timeline"></div></section>
+<section class="about"><span class="about-heart" aria-hidden="true">♡</span><div><h2>A tiny token. A shared adventure.</h2><p>Geocoins travel with the help of people who find them in geocaches, log their visit, and carry them somewhere new. This is our place to follow along — and to say thank you to everyone who gives a little heart its next adventure.</p></div></section>
+</main>
+<footer><div><a class="brand" href="./">♥ Audrey’s Heart</a><p>Little hearts. Big world. Lots of love.</p></div><div class="footer-notes"><p id="updated">Data update time unavailable.</p><p>† Miles are recorded by the source, not calculated from this map or a measure of all travel. Missing distances are not counted.</p><p>Public tracking history only. No private tracking codes are published.</p></div></footer>
+<noscript><p class="notice">JavaScript is needed to load the map and journal. <a href="./data/coins.json">Read the public journey data</a>.</p></noscript>
+</body></html>
