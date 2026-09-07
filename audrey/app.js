@@ -2,7 +2,7 @@
 (() => {
   const $ = id => document.getElementById(id);
   const palette = ['#b75067', '#728566', '#b28a4e', '#688c9d', '#9475a3', '#c17e64'];
-  const state = { coins: [], selected: null, map: null, layer: null, markers: new Map() };
+  const state = { coins: [], fixed: [], selected: null, map: null, layer: null, markers: new Map() };
   const number = value => new Intl.NumberFormat('en-US', { maximumFractionDigits: 1 }).format(value);
   const mapped = log => typeof log.lat === 'number' && typeof log.lon === 'number' && Number.isFinite(log.lat) && Number.isFinite(log.lon) && Math.abs(log.lat) <= 90 && Math.abs(log.lon) <= 180;
   const distance = coin => typeof coin.distanceMiles === 'number' && Number.isFinite(coin.distanceMiles) && coin.distanceMiles >= 0;
@@ -42,6 +42,8 @@
       tiles.on('tileload', event => { failedTiles.delete(event.tile); showTileHealth(); });
       tiles.on('tileunload', event => { failedTiles.delete(event.tile); showTileHealth(); });
       state.layer = L.featureGroup().addTo(state.map);
+      state.map.on('popupopen', () => { $('map-message').hidden = true; });
+      state.map.on('popupclose', () => { $('map-message').hidden = !$('map-message').textContent; });
     } catch { state.map = null; message('The map could not start. All available logs are listed below.'); }
   }
   function chosen() { return state.selected === null ? state.coins : state.coins.filter(coin => coin.id === state.selected); }
@@ -62,6 +64,24 @@
       button.append(body); button.addEventListener('click', () => select(coin.id)); $('coins').append(button);
     }
     if (!state.coins.length) $('coins').append(element('p', 'muted', 'The little hearts will appear here when public data is available.'));
+  }
+  function drawFixedCards() {
+    for (const place of state.fixed) {
+      const button = element('button', 'coin-card fixed-cache-card'); button.type = 'button'; button.dataset.fixedId = place.id; button.style.setProperty('--coin', place.color);
+      button.append(element('span', 'coin-icon', '⌖'));
+      const body = element('span'); body.append(element('span', 'coin-title', place.location), element('span', 'coin-detail', `${place.id} · Fixed geocache`), element('span', 'coin-state', 'Approximate city location · Not a traveling coin'));
+      button.append(body);
+      button.addEventListener('click', () => { const marker = state.markers.get(place.id); if (!marker || !state.map) return; state.map.setView(marker.getLatLng(), 10); marker.openPopup(); $('map').scrollIntoView({ block: 'center' }); });
+      $('coins').append(button);
+    }
+  }
+  function drawFixedMarkers(bounds) {
+    for (const place of state.fixed) {
+      const content = element('div'); content.append(element('strong', '', `${place.id} · ${place.name}`), element('p', '', `${place.location} · Fixed geocache`), element('p', 'precision', place.precision));
+      const source = link(place.sourceUrl, 'View geocache ↗'); if (source) content.append(source);
+      const marker = L.circleMarker([place.lat, place.lon], { radius: 11, color: place.color, weight: 3, fillColor: '#fffdf8', fillOpacity: 1 }).bindPopup(content).bindTooltip(`${place.id} · ${place.location} · Fixed cache`).addTo(state.layer);
+      state.markers.set(place.id, marker); if (state.selected === null) bounds.push([place.lat, place.lon]);
+    }
   }
   function drawStats() {
     $('coin-count').textContent = number(state.coins.length);
@@ -106,6 +126,7 @@
         bounds.push(region.point);
       }
     }
+    drawFixedMarkers(bounds);
     if (bounds.length) { state.map.fitBounds(bounds, { padding: [45, 45], maxZoom: 6 }); message('Regional overview · approximate locations, not cache coordinates'); }
     else { state.map.setView([25, 0], 2); message(coins.some(coin => coin.logs.length) ? 'These logs have no public map locations. Read their stories below.' : 'No logged travels to map yet. A little adventure is still ahead.'); }
   }
@@ -163,7 +184,12 @@
         coin.logs.forEach(log => { if (!log || typeof log.id !== 'string' || !log.id || logIds.has(log.id)) throw new Error('Invalid or duplicate log identifier'); logIds.add(log.id); });
         return { ...coin, color: /^#[\da-f]{6}$/i.test(coin.color) ? coin.color : palette[index % palette.length], logs: [...coin.logs].sort((a, b) => (dateValue(a.date)?.getTime() ?? Infinity) - (dateValue(b.date)?.getTime() ?? Infinity)) };
       });
-      drawStats(); drawCards(); select(null); updateAge(data.updatedAt);
+      const fixedResponse = await fetch(`./data/fixed-locations.json?v=${Date.now()}`, { cache: 'no-store', signal: AbortSignal.timeout(15000) });
+      if (!fixedResponse.ok) throw new Error('Fixed location data unavailable');
+      const fixed = await fixedResponse.json();
+      if (!Array.isArray(fixed) || fixed.some(place => !mapped(place) || typeof place.id !== 'string' || typeof place.name !== 'string')) throw new Error('Invalid fixed location data');
+      state.fixed = fixed;
+      drawStats(); drawCards(); drawFixedCards(); select(null); updateAge(data.updatedAt);
       if (!state.coins.length) $('data-notice').textContent = 'No public coin data is available yet. No journeys or distances have been assumed.';
     } catch (error) {
       state.coins = []; drawCards(); select(null);

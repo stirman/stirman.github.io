@@ -40,5 +40,8 @@ From repository root, serve with `python3 -m http.server 8768 --bind 127.0.0.1`,
 ## Updates and deployment
 Update source history only through the parent-owned updater and validate its public JSON before deployment. No API keys are used by the frontend. Existing repository owner controls GitHub Pages publication. After reviewing the frontend and data together, owner can stage only intended `audrey/` files, commit and push using the existing deployment workflow. Verify the HTTPS page and JSON after Pages propagation before declaring the site live. Change CSS/JS query versions in HTML when shipping later behavior changes.
 
+## Fixed cache locations
+`data/fixed-locations.json` stores stationary geocaches separately from traveling coins. GC5WCVV is shown at an approximate Rome city-center coordinate (city supplied by Jason, centroid from OpenStreetMap relation 41485), not its Premium-only cache coordinates. Fixed pins do not contribute to coin totals, travel logs, mileage, or travel lines. The daily updater modifies only `data/coins.json`, so this fixed location is preserved. Update fixed locations manually when better authorized coordinates are supplied.
+
 ## Known limits
 Map/data/CDN availability is network-dependent. Region-level markers deliberately cannot locate a physical geocache. Coin cards scroll in the desktop panel; mobile shows a two-column card grid below the map. The journal shows all source logs without pagination. No persistent browser storage or analytics.
