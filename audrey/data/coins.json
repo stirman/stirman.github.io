@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-07T16:36:15.184130+00:00",
+  "updatedAt": "2026-09-08T14:00:06.269688+00:00",
   "mapAccuracy": "Regional overview only. Exact cache coordinates require Geocaching sign-in. Lines connect approximate place centers, not actual travel paths.",
   "inputCount": 7,
   "uniqueTrackableCount": 6,
@@ -9,7 +9,7 @@
       "name": "Audrey’s Heart",
       "color": "#c85270",
       "status": "In the hands of Or_Mi.",
-      "distanceMiles": 6362.9,
+      "distanceMiles": 6363.2,
       "sourceUrl": "https://www.geocaching.com/track/details.aspx?tracker=TBB8FK9",
       "logs": [
         {
@@ -652,6 +652,36 @@
           "cacheUrl": "https://www.geocaching.com/geocache/GC45GN6",
           "location": "Ústecký kraj, Czechia",
           "sourceUrl": "https://www.geocaching.com/live/log/TL27EV43D",
+          "lat": 50.5663266,
+          "lon": 13.8206705,
+          "precision": "Approximate city / region center, not cache coordinates",
+          "coordinateSource": "https://nominatim.openstreetmap.org/search?q=%C3%9Asteck%C3%BD+kraj%2C+Czechia&format=json&limit=1"
+        },
+        {
+          "id": "TL27EZ3KE",
+          "date": "2026-09-05",
+          "type": "Visited",
+          "text": "",
+          "event": "Or_Mi took it to Královské město Žatec",
+          "cacheName": "Královské město Žatec",
+          "cacheUrl": "https://www.geocaching.com/geocache/GCAJGTQ",
+          "location": "Ústecký kraj, Czechia",
+          "sourceUrl": "https://www.geocaching.com/live/log/TL27EZ3KE",
+          "lat": 50.5663266,
+          "lon": 13.8206705,
+          "precision": "Approximate city / region center, not cache coordinates",
+          "coordinateSource": "https://nominatim.openstreetmap.org/search?q=%C3%9Asteck%C3%BD+kraj%2C+Czechia&format=json&limit=1"
+        },
+        {
+          "id": "TL27F10GR",
+          "date": "2026-09-05",
+          "type": "Visited",
+          "text": "",
+          "event": "Or_Mi took it to Zaniklé kostely - Žatec II",
+          "cacheName": "Zaniklé kostely - Žatec II",
+          "cacheUrl": "https://www.geocaching.com/geocache/GCB65EW",
+          "location": "Ústecký kraj, Czechia",
+          "sourceUrl": "https://www.geocaching.com/live/log/TL27F10GR",
           "lat": 50.5663266,
           "lon": 13.8206705,
           "precision": "Approximate city / region center, not cache coordinates",
