@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-09-08T14:00:06.269688+00:00",
+  "updatedAt": "2026-09-08T14:44:06.474310+00:00",
   "mapAccuracy": "Regional overview only. Exact cache coordinates require Geocaching sign-in. Lines connect approximate place centers, not actual travel paths.",
   "inputCount": 7,
-  "uniqueTrackableCount": 6,
+  "uniqueTrackableCount": 7,
   "coins": [
     {
       "id": "TBB8FK9",
@@ -825,6 +825,32 @@
       "distanceMiles": 0,
       "sourceUrl": "https://www.geocaching.com/track/details.aspx?tracker=TBB8FX6",
       "logs": []
+    },
+    {
+      "id": "TBB8FJ3",
+      "name": "Audrey’s Heart",
+      "color": "#495dad",
+      "status": "In Casa Generalizia dei Padri Passionisti",
+      "distanceMiles": 0,
+      "sourceUrl": "https://www.geocaching.com/track/details.aspx?tracker=TBB8FJ3",
+      "logs": [
+        {
+          "id": "TL27EDRQT",
+          "date": "2026-09-06",
+          "type": "Dropped Off",
+          "text": "Help Audrey see the world! 💗",
+          "event": "cassiestirman placed it in Casa Generalizia dei Padri Passionisti",
+          "cacheName": "Casa Generalizia dei Padri Passionisti",
+          "cacheUrl": "https://www.geocaching.com/geocache/GC5WCVV",
+          "location": "Rome, Italy",
+          "sourceUrl": "https://www.geocaching.com/live/log/TL27EDRQT",
+          "locationBasis": "Rome supplied by Jason for this cache; placement verified in public trackable log",
+          "lat": 41.8933203,
+          "lon": 12.4829321,
+          "precision": "Approximate city / region center, not cache coordinates",
+          "coordinateSource": "https://nominatim.openstreetmap.org/search?q=Rome%2C+Italy&format=json&limit=1"
+        }
+      ]
     }
   ]
 }
