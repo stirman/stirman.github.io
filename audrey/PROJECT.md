@@ -43,5 +43,8 @@ Update source history only through the parent-owned updater and validate its pub
 ## Fixed cache locations
 `data/fixed-locations.json` is now empty. TBB8FJ3 is the traveling coin placed in GC5WCVV, not a separate fixed location. Its real public placement log dated 2026-09-06 is mapped to approximate Rome, based on Jason’s supplied city and Nominatim coordinates. The updater uses Rome only for this coin’s logs at GC5WCVV; future locations follow new logs. Daily checks include all seven trackables.
 
+## Family-reported starts
+`data/family-starts.json` provides separately attributed starting stops, prepended to map routes but never written to official `coins.json`. TBB8FJ3 began at GCBQAEF (Audrey’s Cache, approximate Mill Valley) per Jason, before Rome. Exact date unknown; do not invent one. The newest-first journal shows this undated origin after dated logs. Official log counts and source miles exclude family stops. Daily updates replace only coins.json, preserving this overlay.
+
 ## Known limits
 Map/data/CDN availability is network-dependent. Region-level markers deliberately cannot locate a physical geocache. Coin cards scroll in the desktop panel; mobile shows a two-column card grid below the map. The journal shows all source logs without pagination. No persistent browser storage or analytics.

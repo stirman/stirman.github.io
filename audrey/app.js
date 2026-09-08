@@ -59,7 +59,7 @@
       const button = element('button', 'coin-card'); button.type = 'button'; button.dataset.id = coin.id; button.style.setProperty('--coin', coin.color); button.setAttribute('aria-pressed', 'false');
       button.append(element('span', 'coin-icon', '♥'));
       const body = element('span'); body.append(element('span', 'coin-title', coin.name), element('span', 'coin-detail', coin.id));
-      body.append(element('span', 'coin-detail', coin.logs.length ? `${coin.logs.length} logs · ${distance(coin) ? number(coin.distanceMiles) + ' source mi' : 'Miles unavailable'}` : 'No logged travels yet'));
+      body.append(element('span', 'coin-detail', coin.logs.length ? `${coin.logs.filter(log => !log.familyReported).length} official logs · ${distance(coin) ? number(coin.distanceMiles) + ' source mi' : 'Miles unavailable'}` : 'No logged travels yet'));
       body.append(element('span', 'coin-state', coin.logs.length ? coin.status || 'Journey in progress' : 'Awaiting the first travel log'));
       button.append(body); button.addEventListener('click', () => select(coin.id)); $('coins').append(button);
     }
@@ -85,15 +85,15 @@
   }
   function drawStats() {
     $('coin-count').textContent = number(state.coins.length);
-    $('stop-count').textContent = number(state.coins.reduce((sum, coin) => sum + coin.logs.filter(mapped).length, 0));
+    $('stop-count').textContent = number(state.coins.reduce((sum, coin) => sum + coin.logs.filter(log => mapped(log) && !log.familyReported).length, 0));
     const known = state.coins.filter(distance);
     $('mile-count').textContent = known.length ? number(known.reduce((sum, coin) => sum + coin.distanceMiles, 0)) : '—';
     $('mile-count').title = `${known.length} of ${state.coins.length} coins have a source-recorded distance. Missing distances are excluded.`;
   }
   function markerKey(coin, log) { return JSON.stringify([coin.id, log.id]); }
   function popup(coin, log) {
-    const box = element('div'); box.append(element('span', 'log-coin', coin.name), element('br'), element('strong', '', log.cacheName || log.location || 'Logged location'), element('p', '', `${dateLabel(log.date)} · ${log.type || 'Travel log'}`), element('p', '', log.location || 'Location name unavailable'), element('p', 'precision', precision(log)));
-    const source = link(log.sourceUrl || coin.sourceUrl); if (source) box.append(source);
+    const box = element('div'); box.append(element('span', 'log-coin', coin.name), element('br'), element('strong', '', log.cacheName || log.location || 'Logged location'), element('p', '', `${log.dateLabel || dateLabel(log.date)} · ${log.type || 'Travel log'}`), element('p', '', log.location || 'Location name unavailable'), element('p', 'precision', precision(log)));
+    const source = link(log.sourceUrl || coin.sourceUrl, log.familyReported ? 'View cache (not a travel log) ↗' : 'View source ↗'); if (source) box.append(source);
     return box;
   }
   // Keep one shared world; dashed connections are illustrative, never actual travel paths.
@@ -118,7 +118,7 @@
       for (const region of regions.values()) {
         const latest = region.logs[region.logs.length - 1];
         const content = popup(coin, latest);
-        content.prepend(element('p', '', `${region.logs.length} ${region.logs.length === 1 ? 'log' : 'logs'} in this approximate region · ${coin.id}`));
+        content.prepend(element('p', '', `${region.logs.length} ${region.logs.length === 1 ? 'journal entry' : 'journal entries'} in this approximate region · ${coin.id}`));
         if (region.logs.length > 1) content.append(element('p', '', 'Latest log shown here. Every log appears in the journal below.'));
         const marker = L.circleMarker(region.point, { radius: 8, color: '#fffdf8', weight: 2, fillColor: coin.color, fillOpacity: 1 }).bindPopup(content).addTo(state.layer);
         marker.bindTooltip(`${coin.name} · ${coin.id} · ${region.logs.length} regional logs`, { direction: 'top' });
@@ -133,7 +133,7 @@
   function drawJournal() {
     const coins = chosen(), entries = coins.flatMap(coin => [...coin.logs].reverse().map(log => ({ coin, log })));
     entries.sort((a, b) => (dateValue(b.log.date)?.getTime() ?? -Infinity) - (dateValue(a.log.date)?.getTime() ?? -Infinity));
-    $('journal-count').textContent = `${number(entries.length)} ${entries.length === 1 ? 'log' : 'logs'} · newest first`;
+    $('journal-count').textContent = `${number(entries.length)} ${entries.length === 1 ? 'entry' : 'entries'} · newest first`;
     $('journal-intro').textContent = state.selected === null ? 'The latest adventures first, followed by earlier moments along the way.' : `Following ${coins[0]?.name || 'this little heart'}, newest moments first.`;
     $('timeline').replaceChildren();
     if (!entries.length) {
@@ -143,7 +143,7 @@
     }
     for (const { coin, log } of entries) {
       const row = element('article', 'timeline-row'); row.style.setProperty('--coin', coin.color);
-      const time = element('time', 'log-date', dateLabel(log.date)); if (dateValue(log.date)) time.dateTime = log.date;
+      const time = element('time', 'log-date', log.dateLabel || dateLabel(log.date)); if (dateValue(log.date)) time.dateTime = log.date;
       const track = element('div', 'timeline-track'); track.setAttribute('aria-hidden', 'true'); track.append(element('span', 'timeline-dot'));
       const card = element('div', 'log-card'), top = element('div', 'log-top');
       top.append(element('span', 'log-coin', `♥ ${coin.name}`), element('span', 'log-type', log.type || 'Travel log'));
@@ -155,7 +155,7 @@
         const button = element('button', 'location-button', `⌖ ${log.location || 'View approximate location'} ↗`); button.type = 'button';
         button.addEventListener('click', () => { const marker = state.markers.get(markerKey(coin, log)); if (!marker) return; state.map.setView(marker.getLatLng(), 6, { animate: !window.matchMedia('(prefers-reduced-motion: reduce)').matches }); marker.openPopup(); $('map').scrollIntoView({ behavior: 'auto', block: 'center' }); }); bottom.append(button);
       } else bottom.append(element('span', 'muted', log.location || 'Location not publicly available'));
-      const source = link(log.sourceUrl || coin.sourceUrl); if (source) bottom.append(source);
+      const source = link(log.sourceUrl || coin.sourceUrl, log.familyReported ? 'View cache (not a travel log) ↗' : 'View source ↗'); if (source) bottom.append(source);
       const coordinates = link(log.coordinateSource, 'Region coordinate source ↗'); if (coordinates) bottom.append(coordinates);
       card.append(bottom, element('span', 'precision', mapped(log) ? precision(log) : 'Not mapped · public coordinates unavailable'));
       row.append(time, track, card); $('timeline').append(row);
@@ -184,6 +184,15 @@
         coin.logs.forEach(log => { if (!log || typeof log.id !== 'string' || !log.id || logIds.has(log.id)) throw new Error('Invalid or duplicate log identifier'); logIds.add(log.id); });
         return { ...coin, color: /^#[\da-f]{6}$/i.test(coin.color) ? coin.color : palette[index % palette.length], logs: [...coin.logs].sort((a, b) => (dateValue(a.date)?.getTime() ?? Infinity) - (dateValue(b.date)?.getTime() ?? Infinity)) };
       });
+      const familyResponse = await fetch(`./data/family-starts.json?v=${Date.now()}`, { cache: 'no-store', signal: AbortSignal.timeout(15000) });
+      if (!familyResponse.ok) throw new Error('Family starting locations unavailable');
+      const family = await familyResponse.json();
+      if (!family || typeof family !== 'object' || Array.isArray(family)) throw new Error('Invalid family starting locations');
+      for (const coin of state.coins) {
+        const starts = family[coin.id] || [];
+        if (!Array.isArray(starts) || starts.some(log => !mapped(log) || !log.familyReported || typeof log.id !== 'string')) throw new Error('Invalid family starting stop');
+        coin.logs = [...starts, ...coin.logs];
+      }
       const fixedResponse = await fetch(`./data/fixed-locations.json?v=${Date.now()}`, { cache: 'no-store', signal: AbortSignal.timeout(15000) });
       if (!fixedResponse.ok) throw new Error('Fixed location data unavailable');
       const fixed = await fixedResponse.json();
