@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-08T14:45:27.688188+00:00",
+  "updatedAt": "2026-09-09T14:00:17.387297+00:00",
   "mapAccuracy": "Regional overview only. Exact cache coordinates require Geocaching sign-in. Lines connect approximate place centers, not actual travel paths.",
   "inputCount": 7,
   "uniqueTrackableCount": 7,
@@ -797,7 +797,23 @@
       "status": "In the hands of the owner.",
       "distanceMiles": 0,
       "sourceUrl": "https://www.geocaching.com/track/details.aspx?tracker=TBB8FXB",
-      "logs": []
+      "logs": [
+        {
+          "id": "TL27F3XMP",
+          "date": "2026-09-08",
+          "type": "Visited",
+          "text": "Audrey’s heart started here ❤️",
+          "event": "cassiestirman took it to Audrey's Cache",
+          "cacheName": "Audrey's Cache",
+          "cacheUrl": "https://www.geocaching.com/geocache/GCBQAEF",
+          "location": "California",
+          "sourceUrl": "https://www.geocaching.com/live/log/TL27F3XMP",
+          "lat": 36.7014631,
+          "lon": -118.755997,
+          "precision": "Approximate city / region center, not cache coordinates",
+          "coordinateSource": "https://nominatim.openstreetmap.org/search?q=California%2C+United+States&format=json&limit=1"
+        }
+      ]
     },
     {
       "id": "TBB8G42",
@@ -806,7 +822,23 @@
       "status": "In the hands of the owner.",
       "distanceMiles": 0,
       "sourceUrl": "https://www.geocaching.com/track/details.aspx?tracker=TBB8G42",
-      "logs": []
+      "logs": [
+        {
+          "id": "TL27F3XQN",
+          "date": "2026-09-08",
+          "type": "Visited",
+          "text": "Audrey’s heart started here ❤️",
+          "event": "cassiestirman took it to Audrey's Cache",
+          "cacheName": "Audrey's Cache",
+          "cacheUrl": "https://www.geocaching.com/geocache/GCBQAEF",
+          "location": "California",
+          "sourceUrl": "https://www.geocaching.com/live/log/TL27F3XQN",
+          "lat": 36.7014631,
+          "lon": -118.755997,
+          "precision": "Approximate city / region center, not cache coordinates",
+          "coordinateSource": "https://nominatim.openstreetmap.org/search?q=California%2C+United+States&format=json&limit=1"
+        }
+      ]
     },
     {
       "id": "TBB8G77",
@@ -815,7 +847,23 @@
       "status": "In the hands of the owner.",
       "distanceMiles": 0,
       "sourceUrl": "https://www.geocaching.com/track/details.aspx?tracker=TBB8G77",
-      "logs": []
+      "logs": [
+        {
+          "id": "TL27F3Y4W",
+          "date": "2026-09-08",
+          "type": "Visited",
+          "text": "Audrey’s heart started here ❤️",
+          "event": "cassiestirman took it to Audrey's Cache",
+          "cacheName": "Audrey's Cache",
+          "cacheUrl": "https://www.geocaching.com/geocache/GCBQAEF",
+          "location": "California",
+          "sourceUrl": "https://www.geocaching.com/live/log/TL27F3Y4W",
+          "lat": 36.7014631,
+          "lon": -118.755997,
+          "precision": "Approximate city / region center, not cache coordinates",
+          "coordinateSource": "https://nominatim.openstreetmap.org/search?q=California%2C+United+States&format=json&limit=1"
+        }
+      ]
     },
     {
       "id": "TBB8FX6",
@@ -824,7 +872,23 @@
       "status": "In the hands of the owner.",
       "distanceMiles": 0,
       "sourceUrl": "https://www.geocaching.com/track/details.aspx?tracker=TBB8FX6",
-      "logs": []
+      "logs": [
+        {
+          "id": "TL27F3XCG",
+          "date": "2026-09-08",
+          "type": "Visited",
+          "text": "Audrey’s heart started here ❤️",
+          "event": "cassiestirman took it to Audrey's Cache",
+          "cacheName": "Audrey's Cache",
+          "cacheUrl": "https://www.geocaching.com/geocache/GCBQAEF",
+          "location": "California",
+          "sourceUrl": "https://www.geocaching.com/live/log/TL27F3XCG",
+          "lat": 36.7014631,
+          "lon": -118.755997,
+          "precision": "Approximate city / region center, not cache coordinates",
+          "coordinateSource": "https://nominatim.openstreetmap.org/search?q=California%2C+United+States&format=json&limit=1"
+        }
+      ]
     },
     {
       "id": "TBB8FJ3",
