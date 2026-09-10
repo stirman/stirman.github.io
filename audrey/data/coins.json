@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-09T14:00:17.387297+00:00",
+  "updatedAt": "2026-09-10T14:00:21.380890+00:00",
   "mapAccuracy": "Regional overview only. Exact cache coordinates require Geocaching sign-in. Lines connect approximate place centers, not actual travel paths.",
   "inputCount": 7,
   "uniqueTrackableCount": 7,
@@ -9,7 +9,7 @@
       "name": "Audrey’s Heart",
       "color": "#c85270",
       "status": "In the hands of Or_Mi.",
-      "distanceMiles": 6363.2,
+      "distanceMiles": 6408.8,
       "sourceUrl": "https://www.geocaching.com/track/details.aspx?tracker=TBB8FK9",
       "logs": [
         {
@@ -686,6 +686,21 @@
           "lon": 13.8206705,
           "precision": "Approximate city / region center, not cache coordinates",
           "coordinateSource": "https://nominatim.openstreetmap.org/search?q=%C3%9Asteck%C3%BD+kraj%2C+Czechia&format=json&limit=1"
+        },
+        {
+          "id": "TL27FMJEA",
+          "date": "2026-09-10",
+          "type": "Visited",
+          "text": "",
+          "event": "Or_Mi took it to Dožínky - aneb po žních k Turkovi   2",
+          "cacheName": "Dožínky - aneb po žních k Turkovi   2",
+          "cacheUrl": "https://www.geocaching.com/geocache/GCBWMRZ",
+          "location": "Hlavní město Praha, Czechia",
+          "sourceUrl": "https://www.geocaching.com/live/log/TL27FMJEA",
+          "lat": 50.0874654,
+          "lon": 14.4212535,
+          "precision": "Approximate city / region center, not cache coordinates",
+          "coordinateSource": "https://nominatim.openstreetmap.org/search?q=Hlavn%C3%AD+m%C4%9Bsto+Praha%2C+Czechia&format=json&limit=1"
         }
       ]
     },
