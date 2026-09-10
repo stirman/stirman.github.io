@@ -2,7 +2,7 @@
   "season": "Big Brother 28",
   "siteTitle": "BB28 Fantasy Draft",
   "tagline": "Meet the BB28 houseguests — draft night is next.",
-  "lastUpdated": "2026-09-10T04:16:26Z",
+  "lastUpdated": "2026-09-10T06:01:16Z",
   "status": "week-9-in-progress",
   "liveRefreshSeconds": 60,
   "seasonCalendar": {
@@ -727,6 +727,7 @@
         "houseguestId": "yash-patel",
         "winner": "Yash Patel"
       },
+      "vetoUsed": false,
       "finalNominees": [
         {
           "houseguestId": "angela-murray",
@@ -1185,6 +1186,11 @@
       "name": "Big Brother Network Episode 27 recap",
       "url": "https://bigbrothernetwork.com/big-brother-28-episode-27-recap-the-icons-have-a-problem/",
       "checkedAt": "2026-09-10T04:16:26Z"
+    },
+    {
+      "name": "NorthJersey.com Week 9 Veto report",
+      "url": "https://www.northjersey.com/story/news/2026/09/09/big-brother-week-9-spoilers-live-feeds-pov-winner-targets/91672742007/",
+      "checkedAt": "2026-09-10T06:01:16Z"
     }
   ],
   "players": [
