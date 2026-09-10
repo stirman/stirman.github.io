@@ -2,7 +2,7 @@
   "season": "Big Brother 28",
   "siteTitle": "BB28 Fantasy Draft",
   "tagline": "Meet the BB28 houseguests — draft night is next.",
-  "lastUpdated": "2026-09-07T04:16:37Z",
+  "lastUpdated": "2026-09-10T04:16:26Z",
   "status": "week-9-in-progress",
   "liveRefreshSeconds": 60,
   "seasonCalendar": {
@@ -288,7 +288,7 @@
       "bio": "Yash Patel is a 24-year-old financial Analyst from Monroe, NJ.",
       "sourceName": "Big Brother Network",
       "sourceUrl": "https://bigbrothernetwork.com/big-brother-28-cast/",
-      "notes": "Week 6 Head of Household. Nominated Dee Valladares, Haley Thogmartin, and Angela Murray, then won the OTEV Power of Veto and did not use it. Won the Week 8 Power of Veto while nominated and used it on himself."
+      "notes": "Week 6 Head of Household. Nominated Dee Valladares, Haley Thogmartin, and Angela Murray, then won the OTEV Power of Veto and did not use it. Won the Week 8 Power of Veto while nominated and used it on himself. Won the Week 9 BB Comics Power of Veto and kept the nominations the same."
     },
     {
       "id": "angela-murray",
@@ -709,10 +709,54 @@
         "houseguestId": "barrett-pfeiffer",
         "winner": "Barrett Pfeiffer"
       },
-      "notes": "Barrett Pfeiffer won the Week 9 Head of Household competition."
+      "nominees": [
+        {
+          "houseguestId": "angela-murray",
+          "name": "Angela Murray"
+        },
+        {
+          "houseguestId": "dee-valladares",
+          "name": "Dee Valladares"
+        },
+        {
+          "houseguestId": "rick-devens",
+          "name": "Rick Devens"
+        }
+      ],
+      "veto": {
+        "houseguestId": "yash-patel",
+        "winner": "Yash Patel"
+      },
+      "finalNominees": [
+        {
+          "houseguestId": "angela-murray",
+          "name": "Angela Murray"
+        },
+        {
+          "houseguestId": "dee-valladares",
+          "name": "Dee Valladares"
+        },
+        {
+          "houseguestId": "rick-devens",
+          "name": "Rick Devens"
+        }
+      ],
+      "notes": "Barrett Pfeiffer won the Week 9 Head of Household competition and nominated Angela Murray, Dee Valladares, and Rick Devens. Yash Patel won the BB Comics Power of Veto and did not use it, leaving the nominations unchanged."
     }
   ],
   "events": [
+    {
+      "date": "2026-09-09T21:00:00-07:00",
+      "type": "veto_ceremony",
+      "title": "Yash keeps the Week 9 nominations the same",
+      "description": "Yash Patel did not use the Power of Veto, leaving Angela Murray, Dee Valladares, and Rick Devens nominated."
+    },
+    {
+      "date": "2026-09-09T20:30:00-07:00",
+      "type": "competition_result",
+      "title": "Yash wins the Week 9 Veto",
+      "description": "Yash Patel won the Week 9 BB Comics Power of Veto."
+    },
     {
       "date": "2026-09-04",
       "type": "competition_result",
@@ -1131,6 +1175,16 @@
       "name": "Big Brother USA Week 9 HOH report",
       "url": "https://bigbrotherus.com/2026/09/04/big-brother-28-spoilers-barrett-wins-week-9-hoh-are-the-icons-finally-in-trouble/",
       "checkedAt": "2026-09-07T04:16:37Z"
+    },
+    {
+      "name": "Big Brother Network Week 9 Veto spoiler",
+      "url": "https://bigbrothernetwork.com/big-brother-28-spoilers-veto-competition-results-week-9/",
+      "checkedAt": "2026-09-10T04:16:26Z"
+    },
+    {
+      "name": "Big Brother Network Episode 27 recap",
+      "url": "https://bigbrothernetwork.com/big-brother-28-episode-27-recap-the-icons-have-a-problem/",
+      "checkedAt": "2026-09-10T04:16:26Z"
     }
   ],
   "players": [
