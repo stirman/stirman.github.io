@@ -16,5 +16,23 @@
       "precision": "Approximate Mill Valley city center, not exact cache coordinates. Travel history supplied by the family.",
       "coordinateSource": "https://nominatim.openstreetmap.org/search?q=Mill+Valley%2C+California%2C+United+States&format=json&limit=1"
     }
+  ],
+  "TBB8FXD": [
+    {
+      "id": "family-start-GCBQAEF",
+      "familyReported": true,
+      "date": null,
+      "dateLabel": "Before Greece · date unknown",
+      "type": "Family-reported starting stop",
+      "text": "The family reports that this heart started in Audrey’s Cache before traveling to Greece. This stop is not recorded in the official Geocaching history; its exact date is unknown.",
+      "cacheName": "Audrey’s Cache · GCBQAEF",
+      "cacheUrl": "https://www.geocaching.com/geocache/GCBQAEF",
+      "sourceUrl": "https://www.geocaching.com/geocache/GCBQAEF",
+      "location": "Mill Valley, California, United States",
+      "lat": 37.9060368,
+      "lon": -122.5449763,
+      "precision": "Approximate Mill Valley city center, not exact cache coordinates. Travel history supplied by the family.",
+      "coordinateSource": "https://nominatim.openstreetmap.org/search?q=Mill+Valley%2C+California%2C+United+States&format=json&limit=1"
+    }
   ]
 }
