@@ -149,7 +149,13 @@
       top.append(element('span', 'log-coin', `♥ ${coin.name}`), element('span', 'log-type', log.type || 'Travel log'));
       card.append(top, element('h3', '', log.cacheName || log.location || 'A moment in the journey'));
       if (log.event) card.append(element('p', 'log-text', log.event));
-      if (log.text) card.append(element('p', 'log-text', log.text));
+      if (log.text) card.append(element('p', 'log-text log-original', log.text));
+      const translation = log.translation;
+      if (log.text && /\p{L}/u.test(log.text) && translation?.language === 'en' && translation.sourceLanguage && !['en', 'und'].includes(translation.sourceLanguage) && translation.sourceText === log.text && typeof translation.text === 'string' && translation.text.trim() && translation.text.trim() !== log.text.trim()) {
+        const translated = element('div', 'log-translation'); translated.lang = 'en';
+        translated.append(element('span', 'translation-label', 'English translation · automated'), element('p', 'log-text translation-text', translation.text));
+        card.append(translated);
+      }
       const bottom = element('div', 'log-bottom');
       if (mapped(log) && state.map) {
         const button = element('button', 'location-button', `⌖ ${log.location || 'View approximate location'} ↗`); button.type = 'button';

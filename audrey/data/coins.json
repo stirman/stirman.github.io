@@ -714,7 +714,15 @@
           "sourceUrl": "https://www.geocaching.com/live/log/TL27FP4FZ",
           "lat": null,
           "lon": null,
-          "precision": null
+          "precision": null,
+          "translation": {
+            "language": "en",
+            "sourceLanguage": "cs",
+            "sourceText": "Viděno na eventu Dožínky.",
+            "text": "Seen at the Dožínky event.",
+            "provider": "OpenAI Codex",
+            "machineGenerated": true
+          }
         },
         {
           "id": "TL27FPRTH",
@@ -728,7 +736,15 @@
           "sourceUrl": "https://www.geocaching.com/live/log/TL27FPRTH",
           "lat": null,
           "lon": null,
-          "precision": null
+          "precision": null,
+          "translation": {
+            "language": "en",
+            "sourceLanguage": "cs",
+            "sourceText": "Viděno dnes na dožínkách u grilu...dík za ukázku🔥🥩🌏🇨🇿🙂",
+            "text": "Seen today at the harvest festival by the grill... thanks for showing it🔥🥩🌏🇨🇿🙂",
+            "provider": "OpenAI Codex",
+            "machineGenerated": true
+          }
         },
         {
           "id": "TL27FREY6",
@@ -758,7 +774,15 @@
           "lat": 50.0874654,
           "lon": 14.4212535,
           "precision": "Approximate city / region center, not cache coordinates",
-          "coordinateSource": "https://nominatim.openstreetmap.org/search?q=Hlavn%C3%AD+m%C4%9Bsto+Praha%2C+Czechia&format=json&limit=1"
+          "coordinateSource": "https://nominatim.openstreetmap.org/search?q=Hlavn%C3%AD+m%C4%9Bsto+Praha%2C+Czechia&format=json&limit=1",
+          "translation": {
+            "language": "en",
+            "sourceLanguage": "cs",
+            "sourceText": "Díky za ukázku",
+            "text": "Thanks for showing it",
+            "provider": "OpenAI Codex",
+            "machineGenerated": true
+          }
         }
       ]
     },
@@ -814,7 +838,15 @@
           "sourceUrl": "https://www.geocaching.com/live/log/TL26VC9W2",
           "lat": null,
           "lon": null,
-          "precision": null
+          "precision": null,
+          "translation": {
+            "language": "en",
+            "sourceLanguage": "cs",
+            "sourceText": "Převzal jsem tento TB abych ho odvezl do České republiky, případně Rakouska a předal do další keše.",
+            "text": "I took over this TB to take it to the Czech Republic, possibly Austria, and pass it on to another cache.",
+            "provider": "OpenAI Codex",
+            "machineGenerated": true
+          }
         },
         {
           "id": "TL26VYTFZ",
@@ -829,7 +861,15 @@
           "lat": 48.2817813,
           "lon": 15.7632457,
           "precision": "Approximate city / region center, not cache coordinates",
-          "coordinateSource": "https://nominatim.openstreetmap.org/search?q=Nieder%C3%B6sterreich%2C+Austria&format=json&limit=1"
+          "coordinateSource": "https://nominatim.openstreetmap.org/search?q=Nieder%C3%B6sterreich%2C+Austria&format=json&limit=1",
+          "translation": {
+            "language": "en",
+            "sourceLanguage": "cs",
+            "sourceText": "Navštíveno",
+            "text": "Visited",
+            "provider": "OpenAI Codex",
+            "machineGenerated": true
+          }
         },
         {
           "id": "TL26W7BQF",
@@ -844,7 +884,15 @@
           "lat": 48.2817813,
           "lon": 15.7632457,
           "precision": "Approximate city / region center, not cache coordinates",
-          "coordinateSource": "https://nominatim.openstreetmap.org/search?q=Nieder%C3%B6sterreich%2C+Austria&format=json&limit=1"
+          "coordinateSource": "https://nominatim.openstreetmap.org/search?q=Nieder%C3%B6sterreich%2C+Austria&format=json&limit=1",
+          "translation": {
+            "language": "en",
+            "sourceLanguage": "cs",
+            "sourceText": "dik",
+            "text": "thanks",
+            "provider": "OpenAI Codex",
+            "machineGenerated": true
+          }
         },
         {
           "id": "TL26W7J4C",
@@ -859,7 +907,15 @@
           "lat": 48.2817813,
           "lon": 15.7632457,
           "precision": "Approximate city / region center, not cache coordinates",
-          "coordinateSource": "https://nominatim.openstreetmap.org/search?q=Nieder%C3%B6sterreich%2C+Austria&format=json&limit=1"
+          "coordinateSource": "https://nominatim.openstreetmap.org/search?q=Nieder%C3%B6sterreich%2C+Austria&format=json&limit=1",
+          "translation": {
+            "language": "en",
+            "sourceLanguage": "cs",
+            "sourceText": "dik",
+            "text": "thanks",
+            "provider": "OpenAI Codex",
+            "machineGenerated": true
+          }
         }
       ]
     },
