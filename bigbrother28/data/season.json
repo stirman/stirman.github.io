@@ -2,8 +2,8 @@
   "season": "Big Brother 28",
   "siteTitle": "BB28 Fantasy Draft",
   "tagline": "Meet the BB28 houseguests — the Monjies/Cassie/Crush/Mike/Fins family draft is live.",
-  "lastUpdated": "2026-09-10T06:01:16Z",
-  "status": "week-9-in-progress",
+  "lastUpdated": "2026-09-11T04:15:43Z",
+  "status": "week-9-complete",
   "liveRefreshSeconds": 60,
   "seasonCalendar": {
     "premiere": "2026-07-07",
@@ -256,13 +256,13 @@
       "age": 51,
       "hometown": "Syracuse, UT",
       "occupation": "Real estate agent",
-      "status": "active",
+      "status": "jury",
       "draftOwner": "crush",
       "photoUrl": "./assets/angela-murray.jpg",
       "bio": "Angela Murray is a Big Brother 26 alum joining the BB28 draft board as a returnee pick.",
       "sourceName": "Screen Rant",
       "sourceUrl": "https://screenrant.com/big-brother-season-26-cast-guide/",
-      "notes": "Won the Week 6 BB Blockbuster and came off the block."
+      "notes": "Won the Week 6 BB Blockbuster and came off the block. Evicted in Week 9 by a 3-2 vote after Rick Devens won the BB Blockbuster; became the second member of the jury."
     },
     {
       "id": "rick-devens",
@@ -276,7 +276,7 @@
       "bio": "Rick Devens is a Survivor: Edge of Extinction fan favorite joining the BB28 draft board as a crossover pick.",
       "sourceName": "Parade",
       "sourceUrl": "https://parade.com/tv/rick-devens-survivor-50-interview",
-      "notes": "Week 2 Head of Household and Power of Veto winner. Received the Week 3 Diamond Power of Veto from the BB Time Capsule. Used the Diamond Power of Veto in Week 6 to save Dee Valladares and named Kamu Kirk as the replacement nominee. Named as the Week 8 replacement nominee after Yash Patel used the Veto, then won the Week 8 BB Blockbuster and came off the block."
+      "notes": "Week 2 Head of Household and Power of Veto winner. Received the Week 3 Diamond Power of Veto from the BB Time Capsule. Used the Diamond Power of Veto in Week 6 to save Dee Valladares and named Kamu Kirk as the replacement nominee. Named as the Week 8 replacement nominee after Yash Patel used the Veto, then won the Week 8 BB Blockbuster and came off the block. Won the Week 9 BB Blockbuster and came off the block."
     },
     {
       "id": "dee-valladares",
@@ -664,7 +664,7 @@
       "week": 9,
       "label": "Week 9",
       "date": "2026-09-04",
-      "status": "In Progress",
+      "status": "Complete",
       "hoh": {
         "houseguestId": "barrett-pfeiffer",
         "winner": "Barrett Pfeiffer"
@@ -702,10 +702,31 @@
           "name": "Rick Devens"
         }
       ],
-      "notes": "Barrett Pfeiffer won the Week 9 Head of Household competition and nominated Angela Murray, Dee Valladares, and Rick Devens. Yash Patel won the BB Comics Power of Veto and did not use it, leaving the nominations unchanged."
+      "blockbuster": {
+        "houseguestId": "rick-devens",
+        "winner": "Rick Devens"
+      },
+      "evicted": {
+        "houseguestId": "angela-murray",
+        "name": "Angela Murray",
+        "vote": "3-2"
+      },
+      "notes": "Barrett Pfeiffer won the Week 9 Head of Household competition and nominated Angela Murray, Dee Valladares, and Rick Devens. Yash Patel won the BB Comics Power of Veto and did not use it. Rick won the BB Blockbuster and came off the block, then Angela was evicted 3-2 as the second member of the jury."
     }
   ],
   "events": [
+    {
+      "date": "2026-09-10T21:00:00-07:00",
+      "type": "eviction",
+      "title": "Angela is evicted in Week 9",
+      "description": "Rick Devens won the BB Blockbuster and came off the block. Angela Murray was then evicted by a 3-2 vote and became the second member of the jury."
+    },
+    {
+      "date": "2026-09-10T20:45:00-07:00",
+      "type": "competition_result",
+      "title": "Rick wins the Week 9 BB Blockbuster",
+      "description": "Rick Devens won the Week 9 BB Blockbuster and came off the block."
+    },
     {
       "date": "2026-09-09T21:00:00-07:00",
       "type": "veto_ceremony",
@@ -1157,6 +1178,16 @@
       "name": "NorthJersey.com Week 9 Veto report",
       "url": "https://www.northjersey.com/story/news/2026/09/09/big-brother-week-9-spoilers-live-feeds-pov-winner-targets/91672742007/",
       "checkedAt": "2026-09-10T06:01:16Z"
+    },
+    {
+      "name": "Deadline Week 9 eviction recap",
+      "url": "https://deadline.com/2026/09/big-brother-season-28-week-9-eviction-cbs-1237084415/",
+      "checkedAt": "2026-09-11T04:15:43Z"
+    },
+    {
+      "name": "TVLine Week 9 eviction recap",
+      "url": "https://www.tvline.com/2255616/big-brother-recap-angela-evicted-season-28-week-9-results/",
+      "checkedAt": "2026-09-11T04:15:43Z"
     }
   ],
   "players": [
