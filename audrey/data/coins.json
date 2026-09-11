@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-09-11T14:00:34.515728+00:00",
+  "updatedAt": "2026-09-11T17:17:14.472783+00:00",
   "mapAccuracy": "Regional overview only. Exact cache coordinates require Geocaching sign-in. Lines connect approximate place centers, not actual travel paths.",
   "inputCount": 7,
-  "uniqueTrackableCount": 7,
+  "uniqueTrackableCount": 8,
   "coins": [
     {
       "id": "TBB8FK9",
@@ -988,6 +988,32 @@
           "coordinateSource": "https://nominatim.openstreetmap.org/search?q=Rome%2C+Italy&format=json&limit=1"
         }
       ]
+    },
+    {
+      "id": "TBB8FXD",
+      "sourceUrl": "https://www.geocaching.com/track/details.aspx?tracker=TBB8FXD",
+      "status": "In O Milos tou Porou, The Mill of Poros",
+      "distanceMiles": 0,
+      "logs": [
+        {
+          "id": "TL27G0G4K",
+          "date": "2026-09-11",
+          "type": "Dropped Off",
+          "text": "Audrey is in Greece! 💗",
+          "event": "cassiestirman placed it in O Milos tou Porou, The Mill of Poros",
+          "cacheName": "O Milos tou Porou, The Mill of Poros",
+          "cacheUrl": "https://www.geocaching.com/geocache/GC30T9P",
+          "location": "Poros, Attica, Greece",
+          "sourceUrl": "https://www.geocaching.com/live/log/TL27G0G4K",
+          "locationBasis": "Poros identified in the public cache description; placement verified in public trackable log",
+          "lat": 37.5269211,
+          "lon": 23.4752454,
+          "precision": "Approximate city / region center, not cache coordinates",
+          "coordinateSource": "https://nominatim.openstreetmap.org/search?q=Poros%2C+Attica%2C+Greece&format=json&limit=1"
+        }
+      ],
+      "name": "Audrey’s Heart",
+      "color": "#b96b24"
     }
   ]
 }
