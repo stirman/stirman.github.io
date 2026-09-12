@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-09-12T13:00:40Z",
-  "generatedAtHuman": "Sep 12, 2026 at 06:00 AM PDT",
+  "generatedAt": "2026-09-12T16:00:58Z",
+  "generatedAtHuman": "Sep 12, 2026 at 09:00 AM PDT",
   "source": "scheduled-cache",
   "refreshCadenceMinutes": 180,
   "overview": {
-    "totalUsers": 73,
-    "launchUsers": 69,
-    "active7": 5,
-    "active30": 13,
+    "totalUsers": 74,
+    "launchUsers": 70,
+    "active7": 6,
+    "active30": 14,
     "premium": 18,
     "paidSubscribers": 7,
     "grantedPremium": 11,
@@ -544,6 +544,19 @@
       "createdAt": "2026-05-09T06:01:30Z",
       "lastLoginAt": "2026-05-09T06:01:30Z",
       "lastActiveAt": "2026-05-09T06:01:30Z",
+      "isPaidSubscriber": false,
+      "grantedPremium": false,
+      "insights30": 0,
+      "cardImages30": 0,
+      "retained": false
+    },
+    {
+      "id": "Gth1LbQFykYv0Z6k9UdBb7QXc222",
+      "displayName": "Julie Arntsen",
+      "email": "julie.arntsen@live.no",
+      "createdAt": "2026-09-12T15:04:49Z",
+      "lastLoginAt": "2026-09-12T15:04:49Z",
+      "lastActiveAt": "2026-09-12T15:04:49Z",
       "isPaidSubscriber": false,
       "grantedPremium": false,
       "insights30": 0,
@@ -2017,7 +2030,7 @@
       {
         "date": "2026-09-12",
         "label": "Sep 12",
-        "count": 71
+        "count": 72
       }
     ],
     "dailyCosts": [
