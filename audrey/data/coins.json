@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-11T19:25:44.376758+00:00",
+  "updatedAt": "2026-09-12T14:00:21.066499+00:00",
   "mapAccuracy": "Regional overview only. Exact cache coordinates require Geocaching sign-in. Lines connect approximate place centers, not actual travel paths.",
   "inputCount": 7,
   "uniqueTrackableCount": 8,
@@ -780,6 +780,29 @@
             "sourceLanguage": "cs",
             "sourceText": "Díky za ukázku",
             "text": "Thanks for showing it",
+            "provider": "OpenAI Codex",
+            "machineGenerated": true
+          }
+        },
+        {
+          "id": "TL27G4RMV",
+          "date": "2026-09-12",
+          "type": "Discovered It",
+          "text": "Heute aufm Mega gesehen. Schöne Grüße!",
+          "event": "DJMDN discovered it",
+          "cacheName": null,
+          "cacheUrl": null,
+          "location": "Hlavní město Praha, Czechia",
+          "sourceUrl": "https://www.geocaching.com/live/log/TL27G4RMV",
+          "lat": 50.0874654,
+          "lon": 14.4212535,
+          "precision": "Approximate city / region center, not cache coordinates",
+          "coordinateSource": "https://nominatim.openstreetmap.org/search?q=Hlavn%C3%AD+m%C4%9Bsto+Praha%2C+Czechia&format=json&limit=1",
+          "translation": {
+            "language": "en",
+            "sourceLanguage": "de",
+            "sourceText": "Heute aufm Mega gesehen. Schöne Grüße!",
+            "text": "Seen today at the Mega. Best regards!",
             "provider": "OpenAI Codex",
             "machineGenerated": true
           }
