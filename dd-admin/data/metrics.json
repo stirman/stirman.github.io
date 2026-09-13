@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-09-12T22:01:03Z",
-  "generatedAtHuman": "Sep 12, 2026 at 03:01 PM PDT",
+  "generatedAt": "2026-09-13T01:01:08Z",
+  "generatedAtHuman": "Sep 12, 2026 at 06:01 PM PDT",
   "source": "scheduled-cache",
   "refreshCadenceMinutes": 180,
   "overview": {
     "totalUsers": 74,
     "launchUsers": 70,
-    "active7": 6,
+    "active7": 4,
     "active30": 14,
     "premium": 18,
     "paidSubscribers": 7,
     "grantedPremium": 11,
     "retainedUsers": 19,
-    "insights30": 36,
-    "entries30": 71,
-    "cardImages30": 16
+    "insights30": 32,
+    "entries30": 66,
+    "cardImages30": 14
   },
   "users": [
     {
@@ -208,8 +208,8 @@
       "lastActiveAt": "2026-09-06T00:56:37Z",
       "isPaidSubscriber": false,
       "grantedPremium": true,
-      "insights30": 8,
-      "cardImages30": 2,
+      "insights30": 7,
+      "cardImages30": 1,
       "retained": true
     },
     {
@@ -351,7 +351,7 @@
       "lastActiveAt": "2026-09-11T02:30:34Z",
       "isPaidSubscriber": false,
       "grantedPremium": true,
-      "insights30": 5,
+      "insights30": 4,
       "cardImages30": 1,
       "retained": true
     },
@@ -611,8 +611,8 @@
       "lastActiveAt": "2026-08-17T08:59:22Z",
       "isPaidSubscriber": true,
       "grantedPremium": false,
-      "insights30": 2,
-      "cardImages30": 1,
+      "insights30": 1,
+      "cardImages30": 0,
       "retained": true
     },
     {
@@ -767,7 +767,7 @@
       "lastActiveAt": "2026-09-09T20:55:31Z",
       "isPaidSubscriber": false,
       "grantedPremium": false,
-      "insights30": 7,
+      "insights30": 6,
       "cardImages30": 2,
       "retained": true
     },
@@ -982,8 +982,8 @@
   ],
   "patterns": [
     {
-      "title": "Aug 14 was the busiest insight day",
-      "body": "4 generated insights in the current 30-day window."
+      "title": "Aug 26 was the busiest insight day",
+      "body": "3 generated insights in the current 30-day window."
     },
     {
       "title": "Aug 26 led card generation",
@@ -991,7 +991,7 @@
     },
     {
       "title": "Depth signal",
-      "body": "Users averaged about 2.0 inputs per generated insight in the last 30 days."
+      "body": "Users averaged about 2.1 inputs per generated insight in the last 30 days."
     },
     {
       "title": "Retention pulse",
@@ -1009,11 +1009,6 @@
   "series": {
     "dailyInsights": [
       {
-        "date": "2026-08-14",
-        "label": "Aug 14",
-        "count": 4
-      },
-      {
         "date": "2026-08-15",
         "label": "Aug 15",
         "count": 1
@@ -1156,16 +1151,16 @@
       {
         "date": "2026-09-12",
         "label": "Sep 12",
+        "count": 0
+      },
+      {
+        "date": "2026-09-13",
+        "label": "Sep 13",
         "count": 0
       }
     ],
     "dailyCardImages": [
       {
-        "date": "2026-08-14",
-        "label": "Aug 14",
-        "count": 2
-      },
-      {
         "date": "2026-08-15",
         "label": "Aug 15",
         "count": 0
@@ -1308,6 +1303,11 @@
       {
         "date": "2026-09-12",
         "label": "Sep 12",
+        "count": 0
+      },
+      {
+        "date": "2026-09-13",
+        "label": "Sep 13",
         "count": 0
       }
     ],
@@ -2031,17 +2031,14 @@
         "date": "2026-09-12",
         "label": "Sep 12",
         "count": 72
+      },
+      {
+        "date": "2026-09-13",
+        "label": "Sep 13",
+        "count": 72
       }
     ],
     "dailyCosts": [
-      {
-        "date": "2026-08-14",
-        "label": "Aug 14",
-        "textDollars": 0.0027,
-        "imageDollars": 0.7719,
-        "otherDollars": 0.0,
-        "totalDollars": 0.7746
-      },
       {
         "date": "2026-08-15",
         "label": "Aug 15",
@@ -2273,31 +2270,39 @@
         "imageDollars": 0.0,
         "otherDollars": 0.0,
         "totalDollars": 0.0
+      },
+      {
+        "date": "2026-09-13",
+        "label": "Sep 13",
+        "textDollars": 0.0,
+        "imageDollars": 0.0,
+        "otherDollars": 0.0,
+        "totalDollars": 0.0
       }
     ]
   },
   "costs": {
     "available": true,
-    "totalDollars": 6.9767,
-    "textDollars": 0.029,
-    "imageDollars": 6.9477,
+    "totalDollars": 6.2021,
+    "textDollars": 0.0264,
+    "imageDollars": 6.1758,
     "otherDollars": 0.0,
     "byLineItem": [
       {
         "name": "gpt-image-1 image, output",
-        "dollars": 6.7392
+        "dollars": 5.9904
       },
       {
         "name": "gpt-image-1 text, input",
-        "dollars": 0.2085
+        "dollars": 0.1854
       },
       {
         "name": "gpt-4o-mini-2024-07-18, input",
-        "dollars": 0.0173
+        "dollars": 0.0157
       },
       {
         "name": "gpt-4o-mini-2024-07-18, output",
-        "dollars": 0.0117
+        "dollars": 0.0107
       },
       {
         "name": "gpt-4o-mini-2024-07-18, cached input",
@@ -2318,14 +2323,6 @@
     ],
     "daily": [
       {
-        "date": "2026-08-14",
-        "label": "Aug 14",
-        "textDollars": 0.0027,
-        "imageDollars": 0.7719,
-        "otherDollars": 0.0,
-        "totalDollars": 0.7746
-      },
-      {
         "date": "2026-08-15",
         "label": "Aug 15",
         "textDollars": 0.0017,
@@ -2556,11 +2553,19 @@
         "imageDollars": 0.0,
         "otherDollars": 0.0,
         "totalDollars": 0.0
+      },
+      {
+        "date": "2026-09-13",
+        "label": "Sep 13",
+        "textDollars": 0.0,
+        "imageDollars": 0.0,
+        "otherDollars": 0.0,
+        "totalDollars": 0.0
       }
     ],
     "error": null,
     "subscriptionPrice": 7.99,
     "estimatedRevenue": 55.93,
-    "grossMargin": 48.95
+    "grossMargin": 49.73
   }
 }
