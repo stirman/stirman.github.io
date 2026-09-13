@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-12T14:00:21.066499+00:00",
+  "updatedAt": "2026-09-13T14:00:08.230469+00:00",
   "mapAccuracy": "Regional overview only. Exact cache coordinates require Geocaching sign-in. Lines connect approximate place centers, not actual travel paths.",
   "inputCount": 7,
   "uniqueTrackableCount": 8,
@@ -8,8 +8,8 @@
       "id": "TBB8FK9",
       "name": "Audrey’s Heart",
       "color": "#c85270",
-      "status": "In Dožínky - aneb po žních k Turkovi   2",
-      "distanceMiles": 6408.8,
+      "status": "In the hands of JezMys.cz.",
+      "distanceMiles": 6439.7,
       "sourceUrl": "https://www.geocaching.com/track/details.aspx?tracker=TBB8FK9",
       "logs": [
         {
@@ -806,6 +806,102 @@
             "provider": "OpenAI Codex",
             "machineGenerated": true
           }
+        },
+        {
+          "id": "TL27GDFYK",
+          "date": "2026-09-12",
+          "type": "Grab It (Not from a Cache)",
+          "text": "Převzato na MEGA eventu PostApo v Bratronicích na bývalé raketové základně.\nVezmeme tě na sever Čech na další toulky světem.",
+          "event": "JezMys.cz grabbed it",
+          "cacheName": null,
+          "cacheUrl": null,
+          "location": "",
+          "sourceUrl": "https://www.geocaching.com/live/log/TL27GDFYK",
+          "lat": null,
+          "lon": null,
+          "precision": null,
+          "translation": {
+            "language": "en",
+            "sourceLanguage": "cs",
+            "sourceText": "Převzato na MEGA eventu PostApo v Bratronicích na bývalé raketové základně.\nVezmeme tě na sever Čech na další toulky světem.",
+            "text": "Picked up at the MEGA event PostApo in Bratronice at the former missile base.\nWe'll take you to northern Bohemia for more wanderings around the world.",
+            "provider": "OpenAI Codex",
+            "machineGenerated": true
+          }
+        },
+        {
+          "id": "TL27GDNKC",
+          "date": "2026-09-12",
+          "type": "Visited",
+          "text": "",
+          "event": "JezMys.cz took it to PostApo 2026",
+          "cacheName": "PostApo 2026",
+          "cacheUrl": "https://www.geocaching.com/geocache/GCBBK4D",
+          "location": "Středočeský kraj, Czechia",
+          "sourceUrl": "https://www.geocaching.com/live/log/TL27GDNKC",
+          "lat": 50.0601579,
+          "lon": 13.8307479,
+          "precision": "Approximate city / region center, not cache coordinates",
+          "coordinateSource": "https://nominatim.openstreetmap.org/search?q=St%C5%99edo%C4%8Desk%C3%BD+kraj%2C+Czechia&format=json&limit=1"
+        },
+        {
+          "id": "TL27GDWWD",
+          "date": "2026-09-12",
+          "type": "Visited",
+          "text": "",
+          "event": "JezMys.cz took it to Goodbye PostApo 2026",
+          "cacheName": "Goodbye PostApo 2026",
+          "cacheUrl": "https://www.geocaching.com/geocache/GCBX5GB",
+          "location": "Středočeský kraj, Czechia",
+          "sourceUrl": "https://www.geocaching.com/live/log/TL27GDWWD",
+          "lat": 50.0601579,
+          "lon": 13.8307479,
+          "precision": "Approximate city / region center, not cache coordinates",
+          "coordinateSource": "https://nominatim.openstreetmap.org/search?q=St%C5%99edo%C4%8Desk%C3%BD+kraj%2C+Czechia&format=json&limit=1"
+        },
+        {
+          "id": "TL27GF2RJ",
+          "date": "2026-09-12",
+          "type": "Discovered It",
+          "text": "Seen at PostApo megaevent 🇨🇿.",
+          "event": "anomen discovered it",
+          "cacheName": null,
+          "cacheUrl": null,
+          "location": "",
+          "sourceUrl": "https://www.geocaching.com/live/log/TL27GF2RJ",
+          "lat": null,
+          "lon": null,
+          "precision": null
+        },
+        {
+          "id": "TL27GMTZ4",
+          "date": "2026-09-13",
+          "type": "Visited",
+          "text": "",
+          "event": "JezMys.cz took it to Vlecka Amalie / Rail siding Amalie",
+          "cacheName": "Vlecka Amalie / Rail siding Amalie",
+          "cacheUrl": "https://www.geocaching.com/geocache/GC15XXF",
+          "location": "Středočeský kraj, Czechia",
+          "sourceUrl": "https://www.geocaching.com/live/log/TL27GMTZ4",
+          "lat": 50.0601579,
+          "lon": 13.8307479,
+          "precision": "Approximate city / region center, not cache coordinates",
+          "coordinateSource": "https://nominatim.openstreetmap.org/search?q=St%C5%99edo%C4%8Desk%C3%BD+kraj%2C+Czechia&format=json&limit=1"
+        },
+        {
+          "id": "TL27GMY80",
+          "date": "2026-09-13",
+          "type": "Visited",
+          "text": "",
+          "event": "JezMys.cz took it to BIOPARK",
+          "cacheName": "BIOPARK",
+          "cacheUrl": "https://www.geocaching.com/geocache/GCB3GK0",
+          "location": "Středočeský kraj, Czechia",
+          "sourceUrl": "https://www.geocaching.com/live/log/TL27GMY80",
+          "lat": 50.0601579,
+          "lon": 13.8307479,
+          "precision": "Approximate city / region center, not cache coordinates",
+          "coordinateSource": "https://nominatim.openstreetmap.org/search?q=St%C5%99edo%C4%8Desk%C3%BD+kraj%2C+Czechia&format=json&limit=1"
         }
       ]
     },
