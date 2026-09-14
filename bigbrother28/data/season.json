@@ -2,8 +2,8 @@
   "season": "Big Brother 28",
   "siteTitle": "BB28 Fantasy Draft",
   "tagline": "Meet the BB28 houseguests — the Monjies/Cassie/Crush/Mike/Fins family draft is live.",
-  "lastUpdated": "2026-09-11T04:15:43Z",
-  "status": "week-9-complete",
+  "lastUpdated": "2026-09-14T04:16:17Z",
+  "status": "week-10-in-progress",
   "liveRefreshSeconds": 60,
   "seasonCalendar": {
     "premiere": "2026-07-07",
@@ -248,7 +248,7 @@
       "bio": "Yash Patel is a 24-year-old financial Analyst from Monroe, NJ.",
       "sourceName": "Big Brother Network",
       "sourceUrl": "https://bigbrothernetwork.com/big-brother-28-cast/",
-      "notes": "Week 6 Head of Household. Nominated Dee Valladares, Haley Thogmartin, and Angela Murray, then won the OTEV Power of Veto and did not use it. Won the Week 8 Power of Veto while nominated and used it on himself. Won the Week 9 BB Comics Power of Veto and kept the nominations the same."
+      "notes": "Week 6 Head of Household. Nominated Dee Valladares, Haley Thogmartin, and Angela Murray, then won the OTEV Power of Veto and did not use it. Won the Week 8 Power of Veto while nominated and used it on himself. Won the Week 9 BB Comics Power of Veto and kept the nominations the same. Won the Week 10 Head of Household competition and nominated Barrett Pfeiffer, Drew Campbell, and Melody Morris."
     },
     {
       "id": "angela-murray",
@@ -712,9 +712,46 @@
         "vote": "3-2"
       },
       "notes": "Barrett Pfeiffer won the Week 9 Head of Household competition and nominated Angela Murray, Dee Valladares, and Rick Devens. Yash Patel won the BB Comics Power of Veto and did not use it. Rick won the BB Blockbuster and came off the block, then Angela was evicted 3-2 as the second member of the jury."
+    },
+    {
+      "week": 10,
+      "label": "Week 10",
+      "date": "2026-09-11",
+      "status": "In progress",
+      "hoh": {
+        "houseguestId": "yash-patel",
+        "winner": "Yash Patel"
+      },
+      "nominees": [
+        {
+          "houseguestId": "barrett-pfeiffer",
+          "name": "Barrett Pfeiffer"
+        },
+        {
+          "houseguestId": "drew-campbell",
+          "name": "Drew Campbell"
+        },
+        {
+          "houseguestId": "melody-morris",
+          "name": "Melody Morris"
+        }
+      ],
+      "notes": "Yash Patel won his second Head of Household competition of the season and nominated Barrett Pfeiffer, Drew Campbell, and Melody Morris. The Week 10 Veto result is still pending."
     }
   ],
   "events": [
+    {
+      "date": "2026-09-11",
+      "type": "nomination",
+      "title": "Week 10 nominations are set",
+      "description": "Head of Household Yash Patel nominated Barrett Pfeiffer, Drew Campbell, and Melody Morris."
+    },
+    {
+      "date": "2026-09-11",
+      "type": "competition_result",
+      "title": "Yash wins Week 10 HOH",
+      "description": "Yash Patel won his second Head of Household competition of the season."
+    },
     {
       "date": "2026-09-10T21:00:00-07:00",
       "type": "eviction",
@@ -1188,6 +1225,16 @@
       "name": "TVLine Week 9 eviction recap",
       "url": "https://www.tvline.com/2255616/big-brother-recap-angela-evicted-season-28-week-9-results/",
       "checkedAt": "2026-09-11T04:15:43Z"
+    },
+    {
+      "name": "Big Brother Network Week 10 HOH spoiler",
+      "url": "https://bigbrothernetwork.com/big-brother-28-spoilers-who-won-hoh-week-10/",
+      "checkedAt": "2026-09-14T04:16:17Z"
+    },
+    {
+      "name": "Big Brother Network Week 10 nominations spoiler",
+      "url": "https://bigbrothernetwork.com/big-brother-28-spoilers-week-10-nominations/",
+      "checkedAt": "2026-09-14T04:16:17Z"
     }
   ],
   "players": [
