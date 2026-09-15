@@ -197,9 +197,11 @@ class PublicClient:
 
 
 DATA_REL = 'audrey/data/coins.json'
-REPO = Path('/Users/rosie/clawd/stirman/stirman.github.io')
-CACHE = Path('/Users/rosie/.hermes/cache/geocoins')
-REMOTE = 'https://github.com/stirman/stirman.github.io.git'
+# Environment overrides let another machine run the updater without editing
+# checked-in defaults (the Mac paths below remain the defaults).
+REPO = Path(os.environ.get('GEOCOINS_REPO', '/Users/rosie/clawd/stirman/stirman.github.io'))
+CACHE = Path(os.environ.get('GEOCOINS_CACHE', '/Users/rosie/.hermes/cache/geocoins'))
+REMOTE = os.environ.get('GEOCOINS_REMOTE', 'https://github.com/stirman/stirman.github.io.git')
 LIVE = 'https://stirman.net/audrey/data/coins.json'
 
 
