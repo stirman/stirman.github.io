@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-14T14:00:55.673208+00:00",
+  "updatedAt": "2026-09-15T23:03:24.166779+00:00",
   "mapAccuracy": "Regional overview only. Exact cache coordinates require Geocaching sign-in. Lines connect approximate place centers, not actual travel paths.",
   "inputCount": 7,
   "uniqueTrackableCount": 8,
@@ -1260,6 +1260,21 @@
           "lon": 23.4752454,
           "precision": "Approximate city / region center, not cache coordinates",
           "coordinateSource": "https://nominatim.openstreetmap.org/search?q=Poros%2C+Attica%2C+Greece&format=json&limit=1"
+        },
+        {
+          "id": "TL27HBE88",
+          "date": "2026-09-15",
+          "type": "Discovered It",
+          "text": "Good luck!",
+          "event": "JantheBukal discovered it",
+          "cacheName": null,
+          "cacheUrl": null,
+          "location": "Greece",
+          "sourceUrl": "https://www.geocaching.com/live/log/TL27HBE88",
+          "lat": 38.9953683,
+          "lon": 21.9877132,
+          "precision": "Approximate city / region center, not cache coordinates",
+          "coordinateSource": "https://nominatim.openstreetmap.org/search?q=Greece&format=json&limit=1"
         }
       ],
       "name": "Audrey’s Heart",
