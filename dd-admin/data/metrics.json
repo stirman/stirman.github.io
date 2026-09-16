@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-09-15T22:01:18Z",
-  "generatedAtHuman": "Sep 15, 2026 at 03:01 PM PDT",
+  "generatedAt": "2026-09-16T01:01:24Z",
+  "generatedAtHuman": "Sep 15, 2026 at 06:01 PM PDT",
   "source": "scheduled-cache",
   "refreshCadenceMinutes": 180,
   "overview": {
     "totalUsers": 75,
     "launchUsers": 71,
     "active7": 5,
-    "active30": 15,
+    "active30": 14,
     "premium": 18,
     "paidSubscribers": 7,
     "grantedPremium": 11,
     "retainedUsers": 19,
-    "insights30": 31,
+    "insights30": 30,
     "entries30": 63,
-    "cardImages30": 14
+    "cardImages30": 13
   },
   "users": [
     {
@@ -208,8 +208,8 @@
       "lastActiveAt": "2026-09-06T00:56:37Z",
       "isPaidSubscriber": false,
       "grantedPremium": true,
-      "insights30": 6,
-      "cardImages30": 1,
+      "insights30": 5,
+      "cardImages30": 0,
       "retained": true
     },
     {
@@ -624,7 +624,7 @@
       "lastActiveAt": "2026-08-17T08:59:22Z",
       "isPaidSubscriber": true,
       "grantedPremium": false,
-      "insights30": 1,
+      "insights30": 0,
       "cardImages30": 0,
       "retained": true
     },
@@ -776,11 +776,11 @@
       "displayName": "Miquelle Hardy",
       "email": "hs2c8wryfg@privaterelay.appleid.com",
       "createdAt": "2026-06-18T00:56:55Z",
-      "lastLoginAt": "2026-09-09T20:55:31Z",
-      "lastActiveAt": "2026-09-09T20:55:31Z",
+      "lastLoginAt": "2026-09-15T22:17:57Z",
+      "lastActiveAt": "2026-09-15T22:17:57Z",
       "isPaidSubscriber": false,
       "grantedPremium": false,
-      "insights30": 6,
+      "insights30": 7,
       "cardImages30": 2,
       "retained": true
     },
@@ -1004,7 +1004,7 @@
     },
     {
       "title": "Depth signal",
-      "body": "Users averaged about 2.0 inputs per generated insight in the last 30 days."
+      "body": "Users averaged about 2.1 inputs per generated insight in the last 30 days."
     },
     {
       "title": "Retention pulse",
@@ -1012,7 +1012,7 @@
     },
     {
       "title": "Most engaged recently",
-      "body": "Emily Bentley, Cassandra Stirman, Miquelle Hardy generated the most insights in the last 30 days."
+      "body": "Emily Bentley, Miquelle Hardy, Cassandra Stirman generated the most insights in the last 30 days."
     },
     {
       "title": "Win-back opportunity",
@@ -1022,11 +1022,6 @@
   "series": {
     "dailyInsights": [
       {
-        "date": "2026-08-17",
-        "label": "Aug 17",
-        "count": 2
-      },
-      {
         "date": "2026-08-18",
         "label": "Aug 18",
         "count": 0
@@ -1169,16 +1164,16 @@
       {
         "date": "2026-09-15",
         "label": "Sep 15",
+        "count": 1
+      },
+      {
+        "date": "2026-09-16",
+        "label": "Sep 16",
         "count": 0
       }
     ],
     "dailyCardImages": [
       {
-        "date": "2026-08-17",
-        "label": "Aug 17",
-        "count": 1
-      },
-      {
         "date": "2026-08-18",
         "label": "Aug 18",
         "count": 0
@@ -1321,6 +1316,11 @@
       {
         "date": "2026-09-15",
         "label": "Sep 15",
+        "count": 0
+      },
+      {
+        "date": "2026-09-16",
+        "label": "Sep 16",
         "count": 0
       }
     ],
@@ -2059,17 +2059,14 @@
         "date": "2026-09-15",
         "label": "Sep 15",
         "count": 73
+      },
+      {
+        "date": "2026-09-16",
+        "label": "Sep 16",
+        "count": 73
       }
     ],
     "dailyCosts": [
-      {
-        "date": "2026-08-17",
-        "label": "Aug 17",
-        "textDollars": 0.0019,
-        "imageDollars": 0.2576,
-        "otherDollars": 0.0,
-        "totalDollars": 0.2595
-      },
       {
         "date": "2026-08-18",
         "label": "Aug 18",
@@ -2297,6 +2294,14 @@
       {
         "date": "2026-09-15",
         "label": "Sep 15",
+        "textDollars": 0.0005,
+        "imageDollars": 0.0,
+        "otherDollars": 0.0,
+        "totalDollars": 0.0005
+      },
+      {
+        "date": "2026-09-16",
+        "label": "Sep 16",
         "textDollars": 0.0,
         "imageDollars": 0.0,
         "otherDollars": 0.0,
@@ -2306,30 +2311,26 @@
   },
   "costs": {
     "available": true,
-    "totalDollars": 5.6857,
-    "textDollars": 0.0246,
-    "imageDollars": 5.6611,
+    "totalDollars": 5.4268,
+    "textDollars": 0.0233,
+    "imageDollars": 5.4034,
     "otherDollars": 0.0,
     "byLineItem": [
       {
         "name": "gpt-image-1 image, output",
-        "dollars": 5.4912
+        "dollars": 5.2416
       },
       {
         "name": "gpt-image-1 text, input",
-        "dollars": 0.1699
+        "dollars": 0.1619
       },
       {
         "name": "gpt-4o-mini-2024-07-18, input",
-        "dollars": 0.0146
+        "dollars": 0.0137
       },
       {
         "name": "gpt-4o-mini-2024-07-18, output",
-        "dollars": 0.01
-      },
-      {
-        "name": "gpt-4o-mini-2024-07-18, cached input",
-        "dollars": 0.0
+        "dollars": 0.0096
       },
       {
         "name": "gpt-image-1 image, cached input",
@@ -2342,17 +2343,13 @@
       {
         "name": "gpt-image-1 text, cached input",
         "dollars": 0.0
+      },
+      {
+        "name": "gpt-4o-mini-2024-07-18, cached input",
+        "dollars": 0.0
       }
     ],
     "daily": [
-      {
-        "date": "2026-08-17",
-        "label": "Aug 17",
-        "textDollars": 0.0019,
-        "imageDollars": 0.2576,
-        "otherDollars": 0.0,
-        "totalDollars": 0.2595
-      },
       {
         "date": "2026-08-18",
         "label": "Aug 18",
@@ -2580,6 +2577,14 @@
       {
         "date": "2026-09-15",
         "label": "Sep 15",
+        "textDollars": 0.0005,
+        "imageDollars": 0.0,
+        "otherDollars": 0.0,
+        "totalDollars": 0.0005
+      },
+      {
+        "date": "2026-09-16",
+        "label": "Sep 16",
         "textDollars": 0.0,
         "imageDollars": 0.0,
         "otherDollars": 0.0,
@@ -2589,6 +2594,6 @@
     "error": null,
     "subscriptionPrice": 7.99,
     "estimatedRevenue": 55.93,
-    "grossMargin": 50.24
+    "grossMargin": 50.5
   }
 }
