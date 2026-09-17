@@ -102,7 +102,7 @@
   }
   function drawMap() {
     const coins = chosen();
-    $('map-label').textContent = state.selected === null ? 'All regional journeys' : coins[0]?.name || 'Regional journey';
+    const mapLabel = $('map-label'); if (mapLabel) mapLabel.textContent = state.selected === null ? 'All regional journeys' : coins[0]?.name || 'Regional journey';
     if (!state.map) return;
     state.layer.clearLayers(); state.markers.clear();
     const bounds = [];
