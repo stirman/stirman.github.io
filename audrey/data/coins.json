@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-17T21:38:42.110997+00:00",
+  "updatedAt": "2026-09-17T22:38:31.644774+00:00",
   "mapAccuracy": "Regional overview only. Exact cache coordinates require Geocaching sign-in. Lines connect approximate place centers, not actual travel paths.",
   "inputCount": 7,
   "uniqueTrackableCount": 8,
@@ -1469,7 +1469,7 @@
       "id": "TBB8FXD",
       "sourceUrl": "https://www.geocaching.com/track/details.aspx?tracker=TBB8FXD",
       "status": "In the hands of hahtho.",
-      "distanceMiles": 13.6,
+      "distanceMiles": 14.6,
       "logs": [
         {
           "id": "TL27G0G4K",
@@ -1528,6 +1528,21 @@
           "cacheUrl": "https://www.geocaching.com/geocache/GCAWFBW",
           "location": "Greece",
           "sourceUrl": "https://www.geocaching.com/live/log/TL27HX7RV",
+          "lat": 38.9953683,
+          "lon": 21.9877132,
+          "precision": "Approximate city / region center, not cache coordinates",
+          "coordinateSource": "https://nominatim.openstreetmap.org/search?q=Greece&format=json&limit=1"
+        },
+        {
+          "id": "TL27J0BJD",
+          "date": "2026-09-18",
+          "type": "Visited",
+          "text": "",
+          "event": "hahtho took it to Aegina Series #4 Perdika",
+          "cacheName": "Aegina Series #4 Perdika",
+          "cacheUrl": "https://www.geocaching.com/geocache/GC53BK1",
+          "location": "Greece",
+          "sourceUrl": "https://www.geocaching.com/live/log/TL27J0BJD",
           "lat": 38.9953683,
           "lon": 21.9877132,
           "precision": "Approximate city / region center, not cache coordinates",
