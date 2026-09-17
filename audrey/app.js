@@ -127,7 +127,7 @@
       }
     }
     drawFixedMarkers(bounds);
-    if (bounds.length) { state.map.fitBounds(bounds, { padding: [45, 45], maxZoom: 6 }); message('Regional overview · approximate locations, not cache coordinates'); }
+    if (bounds.length) { state.map.fitBounds(bounds, { padding: [45, 45], maxZoom: 6 }); }
     else { state.map.setView([25, 0], 2); message(coins.some(coin => coin.logs.length) ? 'These logs have no public map locations. Read their stories below.' : 'No logged travels to map yet. A little adventure is still ahead.'); }
   }
   function drawJournal() {
