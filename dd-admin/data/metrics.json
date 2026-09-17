@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-09-16T22:00:59Z",
-  "generatedAtHuman": "Sep 16, 2026 at 03:00 PM PDT",
+  "generatedAt": "2026-09-17T01:01:07Z",
+  "generatedAtHuman": "Sep 16, 2026 at 06:01 PM PDT",
   "source": "scheduled-cache",
   "refreshCadenceMinutes": 180,
   "overview": {
     "totalUsers": 76,
     "launchUsers": 72,
     "active7": 7,
-    "active30": 15,
+    "active30": 13,
     "premium": 18,
     "paidSubscribers": 7,
     "grantedPremium": 11,
@@ -1035,11 +1035,6 @@
   "series": {
     "dailyInsights": [
       {
-        "date": "2026-08-18",
-        "label": "Aug 18",
-        "count": 0
-      },
-      {
         "date": "2026-08-19",
         "label": "Aug 19",
         "count": 1
@@ -1182,16 +1177,16 @@
       {
         "date": "2026-09-16",
         "label": "Sep 16",
+        "count": 0
+      },
+      {
+        "date": "2026-09-17",
+        "label": "Sep 17",
         "count": 0
       }
     ],
     "dailyCardImages": [
       {
-        "date": "2026-08-18",
-        "label": "Aug 18",
-        "count": 0
-      },
-      {
         "date": "2026-08-19",
         "label": "Aug 19",
         "count": 0
@@ -1334,6 +1329,11 @@
       {
         "date": "2026-09-16",
         "label": "Sep 16",
+        "count": 0
+      },
+      {
+        "date": "2026-09-17",
+        "label": "Sep 17",
         "count": 0
       }
     ],
@@ -2077,17 +2077,14 @@
         "date": "2026-09-16",
         "label": "Sep 16",
         "count": 74
+      },
+      {
+        "date": "2026-09-17",
+        "label": "Sep 17",
+        "count": 74
       }
     ],
     "dailyCosts": [
-      {
-        "date": "2026-08-18",
-        "label": "Aug 18",
-        "textDollars": 0.0,
-        "imageDollars": 0.5163,
-        "otherDollars": 0.0,
-        "totalDollars": 0.5163
-      },
       {
         "date": "2026-08-19",
         "label": "Aug 19",
@@ -2315,6 +2312,14 @@
       {
         "date": "2026-09-16",
         "label": "Sep 16",
+        "textDollars": 0.0031,
+        "imageDollars": 0.0,
+        "otherDollars": 0.0,
+        "totalDollars": 0.0031
+      },
+      {
+        "date": "2026-09-17",
+        "label": "Sep 17",
         "textDollars": 0.0,
         "imageDollars": 0.0,
         "otherDollars": 0.0,
@@ -2324,26 +2329,30 @@
   },
   "costs": {
     "available": true,
-    "totalDollars": 5.4268,
-    "textDollars": 0.0233,
-    "imageDollars": 5.4034,
+    "totalDollars": 4.9135,
+    "textDollars": 0.0264,
+    "imageDollars": 4.8872,
     "otherDollars": 0.0,
     "byLineItem": [
       {
         "name": "gpt-image-1 image, output",
-        "dollars": 5.2416
+        "dollars": 4.7424
       },
       {
         "name": "gpt-image-1 text, input",
-        "dollars": 0.1619
+        "dollars": 0.1448
       },
       {
         "name": "gpt-4o-mini-2024-07-18, input",
-        "dollars": 0.0137
+        "dollars": 0.0155
       },
       {
         "name": "gpt-4o-mini-2024-07-18, output",
-        "dollars": 0.0096
+        "dollars": 0.0109
+      },
+      {
+        "name": "gpt-4o-mini-2024-07-18, cached input",
+        "dollars": 0.0
       },
       {
         "name": "gpt-image-1 image, cached input",
@@ -2356,21 +2365,9 @@
       {
         "name": "gpt-image-1 text, cached input",
         "dollars": 0.0
-      },
-      {
-        "name": "gpt-4o-mini-2024-07-18, cached input",
-        "dollars": 0.0
       }
     ],
     "daily": [
-      {
-        "date": "2026-08-18",
-        "label": "Aug 18",
-        "textDollars": 0.0,
-        "imageDollars": 0.5163,
-        "otherDollars": 0.0,
-        "totalDollars": 0.5163
-      },
       {
         "date": "2026-08-19",
         "label": "Aug 19",
@@ -2598,6 +2595,14 @@
       {
         "date": "2026-09-16",
         "label": "Sep 16",
+        "textDollars": 0.0031,
+        "imageDollars": 0.0,
+        "otherDollars": 0.0,
+        "totalDollars": 0.0031
+      },
+      {
+        "date": "2026-09-17",
+        "label": "Sep 17",
         "textDollars": 0.0,
         "imageDollars": 0.0,
         "otherDollars": 0.0,
@@ -2607,6 +2612,6 @@
     "error": null,
     "subscriptionPrice": 7.99,
     "estimatedRevenue": 55.93,
-    "grossMargin": 50.5
+    "grossMargin": 51.02
   }
 }
