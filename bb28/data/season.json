@@ -2,7 +2,7 @@
   "season": "Big Brother 28",
   "siteTitle": "BB28 Fantasy Draft",
   "tagline": "Meet the BB28 houseguests — draft night is next.",
-  "lastUpdated": "2026-09-14T04:16:17Z",
+  "lastUpdated": "2026-09-17T04:16:20Z",
   "status": "week-10-in-progress",
   "liveRefreshSeconds": 60,
   "seasonCalendar": {
@@ -149,7 +149,7 @@
       "bio": "Drew Campbell is a 22-year-old dental Assistant.",
       "sourceName": "Big Brother Network",
       "sourceUrl": "https://bigbrothernetwork.com/big-brother-28-cast/",
-      "notes": "Won the Week 7 BB Time Capsule vote and received the Never-Not Pass. Nominated for eviction by Dee Valladares, then won the Week 7 BB Blockbuster and came off the block. Won the Week 8 Head of Household competition and nominated LaTrice Verrett, Taylor Brown, and Yash Patel. Named Rick Devens as the replacement nominee after Yash used the Veto."
+      "notes": "Won the Week 7 BB Time Capsule vote and received the Never-Not Pass. Nominated for eviction by Dee Valladares, then won the Week 7 BB Blockbuster and came off the block. Won the Week 8 Head of Household competition and nominated LaTrice Verrett, Taylor Brown, and Yash Patel. Named Rick Devens as the replacement nominee after Yash used the Veto. Won the Week 10 Pressure Cooker Power of Veto and used it on himself."
     },
     {
       "id": "haley-thogmartin",
@@ -274,7 +274,7 @@
       "bio": "Taylor Brown is a 27-year-old elementary School Counselor from Deerfield Beach, FL.",
       "sourceName": "Big Brother Network",
       "sourceUrl": "https://bigbrothernetwork.com/big-brother-28-cast/",
-      "notes": "Won the Week 4 Power of Veto and used it on herself."
+      "notes": "Won the Week 4 Power of Veto and used it on herself. Named as the Week 10 replacement nominee after Drew Campbell used the Veto on himself."
     },
     {
       "id": "yash-patel",
@@ -776,10 +776,48 @@
           "name": "Melody Morris"
         }
       ],
-      "notes": "Yash Patel won his second Head of Household competition of the season and nominated Barrett Pfeiffer, Drew Campbell, and Melody Morris. The Week 10 Veto result is still pending."
+      "veto": {
+        "houseguestId": "drew-campbell",
+        "winner": "Drew Campbell"
+      },
+      "vetoUsedOn": {
+        "houseguestId": "drew-campbell",
+        "name": "Drew Campbell"
+      },
+      "replacementNominee": {
+        "houseguestId": "taylor-brown",
+        "name": "Taylor Brown"
+      },
+      "finalNominees": [
+        {
+          "houseguestId": "barrett-pfeiffer",
+          "name": "Barrett Pfeiffer"
+        },
+        {
+          "houseguestId": "melody-morris",
+          "name": "Melody Morris"
+        },
+        {
+          "houseguestId": "taylor-brown",
+          "name": "Taylor Brown"
+        }
+      ],
+      "notes": "Yash Patel won his second Head of Household competition of the season and nominated Barrett Pfeiffer, Drew Campbell, and Melody Morris. Drew won the Pressure Cooker Power of Veto and used it on himself; Yash named Taylor Brown as the replacement nominee. Barrett, Melody, and Taylor are the final nominees heading into the BB Blockbuster."
     }
   ],
   "events": [
+    {
+      "date": "2026-09-16T21:00:00-07:00",
+      "type": "veto_ceremony",
+      "title": "Drew uses the Week 10 Veto",
+      "description": "Drew Campbell used the Power of Veto on himself, and Head of Household Yash Patel named Taylor Brown as the replacement nominee. Barrett Pfeiffer, Melody Morris, and Taylor are the final nominees."
+    },
+    {
+      "date": "2026-09-16T20:30:00-07:00",
+      "type": "competition_result",
+      "title": "Drew wins the Week 10 Veto",
+      "description": "Drew Campbell won the Week 10 Pressure Cooker Power of Veto."
+    },
     {
       "date": "2026-09-11",
       "type": "nomination",
@@ -1269,6 +1307,16 @@
       "name": "Big Brother Network Week 10 nominations spoiler",
       "url": "https://bigbrothernetwork.com/big-brother-28-spoilers-week-10-nominations/",
       "checkedAt": "2026-09-14T04:16:17Z"
+    },
+    {
+      "name": "Big Brother Network Episode 30 recap",
+      "url": "https://bigbrothernetwork.com/big-brother-28-episode-30-recap-deals-are-made-under-pressure/",
+      "checkedAt": "2026-09-17T04:16:20Z"
+    },
+    {
+      "name": "DraftKings Network Week 10 Veto recap",
+      "url": "https://dknetwork.draftkings.com/2026/09/16/big-brother-season-28-episode-34-recap-drew-wins-pressure-cooker-veto/",
+      "checkedAt": "2026-09-17T04:16:20Z"
     }
   ],
   "players": [
