@@ -2,8 +2,8 @@
   "season": "Big Brother 28",
   "siteTitle": "BB28 Fantasy Draft",
   "tagline": "Meet the BB28 houseguests — draft night is next.",
-  "lastUpdated": "2026-09-17T04:16:20Z",
-  "status": "week-10-in-progress",
+  "lastUpdated": "2026-09-18T04:16:12Z",
+  "status": "final-5",
   "liveRefreshSeconds": 60,
   "seasonCalendar": {
     "premiere": "2026-07-07",
@@ -115,13 +115,13 @@
       "age": 27,
       "hometown": "Texas",
       "occupation": "Jumbotron Engineer",
-      "status": "active",
+      "status": "jury",
       "draftOwner": "stacey",
       "photoUrl": "https://bigbrothernetwork.com/wp-content/uploads/2026/07/bb28-cast-barrett-00.jpg",
       "bio": "Barrett Pfeiffer is a 27-year-old jumbotron Engineer from Texas.",
       "sourceName": "Big Brother Network",
       "sourceUrl": "https://bigbrothernetwork.com/big-brother-28-cast/",
-      "notes": "Won the Week 9 Head of Household competition."
+      "notes": "Won the Week 9 Head of Household competition. Evicted 3-1 in Week 10 after Melody Morris won the final BB Blockbuster; became the third member of the jury."
     },
     {
       "id": "chuk-anyanwu",
@@ -282,13 +282,13 @@
       "age": 24,
       "hometown": "Monroe, NJ",
       "occupation": "Financial Analyst",
-      "status": "active",
+      "status": "jury",
       "draftOwner": "jason",
       "photoUrl": "https://bigbrothernetwork.com/wp-content/uploads/2026/07/bb28-cast-yash-00.jpg",
       "bio": "Yash Patel is a 24-year-old financial Analyst from Monroe, NJ.",
       "sourceName": "Big Brother Network",
       "sourceUrl": "https://bigbrothernetwork.com/big-brother-28-cast/",
-      "notes": "Week 6 Head of Household. Nominated Dee Valladares, Haley Thogmartin, and Angela Murray, then won the OTEV Power of Veto and did not use it. Won the Week 8 Power of Veto while nominated and used it on himself. Won the Week 9 BB Comics Power of Veto and kept the nominations the same. Won the Week 10 Head of Household competition and nominated Barrett Pfeiffer, Drew Campbell, and Melody Morris."
+      "notes": "Week 6 Head of Household. Nominated Dee Valladares, Haley Thogmartin, and Angela Murray, then won the OTEV Power of Veto and did not use it. Won the Week 8 Power of Veto while nominated and used it on himself. Won the Week 9 BB Comics Power of Veto and kept the nominations the same. Won the Week 10 Head of Household competition and nominated Barrett Pfeiffer, Drew Campbell, and Melody Morris. Evicted 2-1 during the Week 10 double eviction after Melody nominated Rick Devens and Dee Valladares, Rick used the Veto on himself, and Yash became the replacement nominee; became the fourth member of the jury."
     },
     {
       "id": "angela-murray",
@@ -757,7 +757,7 @@
       "week": 10,
       "label": "Week 10",
       "date": "2026-09-11",
-      "status": "In progress",
+      "status": "Complete",
       "hoh": {
         "houseguestId": "yash-patel",
         "winner": "Yash Patel"
@@ -802,10 +802,97 @@
           "name": "Taylor Brown"
         }
       ],
-      "notes": "Yash Patel won his second Head of Household competition of the season and nominated Barrett Pfeiffer, Drew Campbell, and Melody Morris. Drew won the Pressure Cooker Power of Veto and used it on himself; Yash named Taylor Brown as the replacement nominee. Barrett, Melody, and Taylor are the final nominees heading into the BB Blockbuster."
+      "blockbuster": {
+        "houseguestId": "melody-morris",
+        "winner": "Melody Morris"
+      },
+      "evicted": {
+        "houseguestId": "barrett-pfeiffer",
+        "name": "Barrett Pfeiffer",
+        "vote": "3-1"
+      },
+      "notes": "Yash Patel won his second Head of Household competition of the season and nominated Barrett Pfeiffer, Drew Campbell, and Melody Morris. Drew won the Pressure Cooker Power of Veto and used it on himself; Yash named Taylor Brown as the replacement nominee. Melody won the final BB Blockbuster, and Barrett was evicted 3-1 as the third member of the jury."
+    },
+    {
+      "week": 10.5,
+      "label": "Week 10 Double Eviction",
+      "date": "2026-09-17",
+      "status": "Complete",
+      "hoh": {
+        "houseguestId": "melody-morris",
+        "winner": "Melody Morris"
+      },
+      "nominees": [
+        {
+          "houseguestId": "rick-devens",
+          "name": "Rick Devens"
+        },
+        {
+          "houseguestId": "dee-valladares",
+          "name": "Dee Valladares"
+        }
+      ],
+      "veto": {
+        "houseguestId": "rick-devens",
+        "winner": "Rick Devens"
+      },
+      "vetoUsedOn": {
+        "houseguestId": "rick-devens",
+        "name": "Rick Devens"
+      },
+      "replacementNominee": {
+        "houseguestId": "yash-patel",
+        "name": "Yash Patel"
+      },
+      "finalNominees": [
+        {
+          "houseguestId": "dee-valladares",
+          "name": "Dee Valladares"
+        },
+        {
+          "houseguestId": "yash-patel",
+          "name": "Yash Patel"
+        }
+      ],
+      "evicted": {
+        "houseguestId": "yash-patel",
+        "name": "Yash Patel",
+        "vote": "2-1"
+      },
+      "notes": "Melody Morris won the double-eviction Head of Household and nominated Rick Devens and Dee Valladares. Rick won the Power of Veto and used it on himself; Melody named Yash Patel as the replacement nominee. Yash was evicted 2-1 as the fourth member of the jury, leaving Dee, Drew, Melody, Rick, and Taylor as the final five."
     }
   ],
   "events": [
+    {
+      "date": "2026-09-17T22:00:00-07:00",
+      "type": "eviction",
+      "title": "Yash is evicted in the Week 10 double eviction",
+      "description": "Rick Devens used the Power of Veto on himself, Melody Morris named Yash Patel as the replacement nominee, and Yash was evicted 2-1 as the fourth jury member. Dee Valladares, Drew Campbell, Melody, Rick, and Taylor Brown are the final five."
+    },
+    {
+      "date": "2026-09-17T21:50:00-07:00",
+      "type": "competition_result",
+      "title": "Rick wins the double-eviction Veto",
+      "description": "Rick Devens won the Power of Veto and used it on himself; Head of Household Melody Morris named Yash Patel as the replacement nominee."
+    },
+    {
+      "date": "2026-09-17T21:30:00-07:00",
+      "type": "competition_result",
+      "title": "Melody wins the double-eviction HOH",
+      "description": "Melody Morris won Head of Household and nominated Rick Devens and Dee Valladares."
+    },
+    {
+      "date": "2026-09-17T21:00:00-07:00",
+      "type": "eviction",
+      "title": "Barrett is evicted in Week 10",
+      "description": "Melody Morris won the final BB Blockbuster and came off the block. Barrett Pfeiffer was then evicted 3-1 and became the third member of the jury."
+    },
+    {
+      "date": "2026-09-17T20:45:00-07:00",
+      "type": "competition_result",
+      "title": "Melody wins the final BB Blockbuster",
+      "description": "Melody Morris won the final BB Blockbuster of the season and came off the block."
+    },
     {
       "date": "2026-09-16T21:00:00-07:00",
       "type": "veto_ceremony",
@@ -1138,6 +1225,16 @@
     }
   ],
   "sources": [
+    {
+      "name": "Deadline Week 10 double eviction recap",
+      "url": "https://deadline.com/2026/09/big-brother-season-28-week-10-double-eviction-final-five-1237107108/",
+      "checkedAt": "2026-09-18T04:16:12Z"
+    },
+    {
+      "name": "TVLine Week 10 double eviction recap",
+      "url": "https://www.tvline.com/2261978/big-brother-recap-double-eviction-results-season-28/",
+      "checkedAt": "2026-09-18T04:16:12Z"
+    },
     {
       "name": "Big Brother Network",
       "url": "https://bigbrothernetwork.com/big-brother-28-cast/",
