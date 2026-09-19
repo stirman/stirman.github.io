@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-19T09:39:03.988410+00:00",
+  "updatedAt": "2026-09-19T10:38:50.897616+00:00",
   "mapAccuracy": "Regional overview only. Exact cache coordinates require Geocaching sign-in. Lines connect approximate place centers, not actual travel paths.",
   "inputCount": 7,
   "uniqueTrackableCount": 8,
@@ -1469,7 +1469,7 @@
       "id": "TBB8FXD",
       "sourceUrl": "https://www.geocaching.com/track/details.aspx?tracker=TBB8FXD",
       "status": "In the hands of hahtho.",
-      "distanceMiles": 14.6,
+      "distanceMiles": 39.7,
       "logs": [
         {
           "id": "TL27G0G4K",
@@ -1543,6 +1543,21 @@
           "cacheUrl": "https://www.geocaching.com/geocache/GC53BK1",
           "location": "Greece",
           "sourceUrl": "https://www.geocaching.com/live/log/TL27J0BJD",
+          "lat": 38.9953683,
+          "lon": 21.9877132,
+          "precision": "Approximate city / region center, not cache coordinates",
+          "coordinateSource": "https://nominatim.openstreetmap.org/search?q=Greece&format=json&limit=1"
+        },
+        {
+          "id": "TL27JAXVA",
+          "date": "2026-09-19",
+          "type": "Visited",
+          "text": "",
+          "event": "hahtho took it to Kallimarmaro",
+          "cacheName": "Kallimarmaro",
+          "cacheUrl": "https://www.geocaching.com/geocache/GC554T6",
+          "location": "Greece",
+          "sourceUrl": "https://www.geocaching.com/live/log/TL27JAXVA",
           "lat": 38.9953683,
           "lon": 21.9877132,
           "precision": "Approximate city / region center, not cache coordinates",
