@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-20T03:42:26.353757+00:00",
+  "updatedAt": "2026-09-20T04:39:07.861868+00:00",
   "mapAccuracy": "Regional overview only. Exact cache coordinates require Geocaching sign-in. Lines connect approximate place centers, not actual travel paths.",
   "inputCount": 7,
   "uniqueTrackableCount": 8,
@@ -9,7 +9,7 @@
       "name": "Audrey’s Heart",
       "color": "#c85270",
       "status": "In the hands of JezMys.cz.",
-      "distanceMiles": 6517.3,
+      "distanceMiles": 6521.7,
       "sourceUrl": "https://www.geocaching.com/track/details.aspx?tracker=TBB8FK9",
       "logs": [
         {
@@ -1183,6 +1183,21 @@
           "cacheUrl": "https://www.geocaching.com/geocache/GCBWEFG",
           "location": "Liberecký kraj, Czechia",
           "sourceUrl": "https://www.geocaching.com/live/log/TL27HQN87",
+          "lat": 50.747604,
+          "lon": 14.9903103,
+          "precision": "Approximate city / region center, not cache coordinates",
+          "coordinateSource": "https://nominatim.openstreetmap.org/search?q=Libereck%C3%BD+kraj%2C+Czechia&format=json&limit=1"
+        },
+        {
+          "id": "TL27JNNR7",
+          "date": "2026-09-19",
+          "type": "Visited",
+          "text": "",
+          "event": "JezMys.cz took it to Koruna Podještědí",
+          "cacheName": "Koruna Podještědí",
+          "cacheUrl": "https://www.geocaching.com/geocache/GCAJG0Y",
+          "location": "Liberecký kraj, Czechia",
+          "sourceUrl": "https://www.geocaching.com/live/log/TL27JNNR7",
           "lat": 50.747604,
           "lon": 14.9903103,
           "precision": "Approximate city / region center, not cache coordinates",
