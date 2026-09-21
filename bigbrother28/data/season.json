@@ -2,8 +2,8 @@
   "season": "Big Brother 28",
   "siteTitle": "BB28 Fantasy Draft",
   "tagline": "Meet the BB28 houseguests — the Monjies/Cassie/Crush/Mike/Fins family draft is live.",
-  "lastUpdated": "2026-09-18T04:16:12Z",
-  "status": "final-5",
+  "lastUpdated": "2026-09-21T04:15:37Z",
+  "status": "week-11-in-progress",
   "liveRefreshSeconds": 60,
   "seasonCalendar": {
     "premiere": "2026-07-07",
@@ -276,7 +276,7 @@
       "bio": "Rick Devens is a Survivor: Edge of Extinction fan favorite joining the BB28 draft board as a crossover pick.",
       "sourceName": "Parade",
       "sourceUrl": "https://parade.com/tv/rick-devens-survivor-50-interview",
-      "notes": "Week 2 Head of Household and Power of Veto winner. Received the Week 3 Diamond Power of Veto from the BB Time Capsule. Used the Diamond Power of Veto in Week 6 to save Dee Valladares and named Kamu Kirk as the replacement nominee. Named as the Week 8 replacement nominee after Yash Patel used the Veto, then won the Week 8 BB Blockbuster and came off the block. Won the Week 9 BB Blockbuster and came off the block."
+      "notes": "Week 2 Head of Household and Power of Veto winner. Received the Week 3 Diamond Power of Veto from the BB Time Capsule. Used the Diamond Power of Veto in Week 6 to save Dee Valladares and named Kamu Kirk as the replacement nominee. Named as the Week 8 replacement nominee after Yash Patel used the Veto, then won the Week 8 BB Blockbuster and came off the block. Won the Week 9 BB Blockbuster and came off the block. Won $10,000 by triggering the Pharaoh’s Curse, then won the Week 11 Head of Household tiny-puzzle competition."
     },
     {
       "id": "dee-valladares",
@@ -820,9 +820,26 @@
         "vote": "2-1"
       },
       "notes": "Melody Morris won the double-eviction Head of Household and nominated Rick Devens and Dee Valladares. Rick won the Power of Veto and used it on himself; Melody named Yash Patel as the replacement nominee. Yash was evicted 2-1 as the fourth member of the jury, leaving Dee, Drew, Melody, Rick, and Taylor as the final five."
+    },
+    {
+      "week": 11,
+      "label": "Week 11",
+      "date": "2026-09-20",
+      "status": "In Progress",
+      "hoh": {
+        "houseguestId": "rick-devens",
+        "winner": "Rick Devens"
+      },
+      "notes": "Rick Devens won $10,000 by triggering the Pharaoh’s Curse, then completed the tiny-puzzle competition to become the Week 11 Head of Household."
     }
   ],
   "events": [
+    {
+      "date": "2026-09-20",
+      "type": "competition_result",
+      "title": "Rick wins Week 11 HOH",
+      "description": "Rick Devens completed the tiny-puzzle competition to become Head of Household after taking $10,000 and triggering the Pharaoh’s Curse."
+    },
     {
       "date": "2026-09-17T22:00:00-07:00",
       "type": "eviction",
@@ -1191,6 +1208,11 @@
     }
   ],
   "sources": [
+    {
+      "name": "Big Brother Network Episode 32 recap",
+      "url": "https://bigbrothernetwork.com/big-brother-28-episode-32-recap-things-just-got-cursed/",
+      "checkedAt": "2026-09-21T04:15:37Z"
+    },
     {
       "name": "Deadline Week 10 double eviction recap",
       "url": "https://deadline.com/2026/09/big-brother-season-28-week-10-double-eviction-final-five-1237107108/",
