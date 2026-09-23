@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-23T15:38:31.991139+00:00",
+  "updatedAt": "2026-09-23T16:38:32.921062+00:00",
   "mapAccuracy": "Regional overview only. Exact cache coordinates require Geocaching sign-in. Lines connect approximate place centers, not actual travel paths.",
   "inputCount": 7,
   "uniqueTrackableCount": 8,
@@ -9,7 +9,7 @@
       "name": "Audrey’s Heart",
       "color": "#c85270",
       "status": "In the hands of JezMys.cz.",
-      "distanceMiles": 6521.7,
+      "distanceMiles": 6535.2,
       "sourceUrl": "https://www.geocaching.com/track/details.aspx?tracker=TBB8FK9",
       "logs": [
         {
@@ -1198,6 +1198,21 @@
           "cacheUrl": "https://www.geocaching.com/geocache/GCAJG0Y",
           "location": "Liberecký kraj, Czechia",
           "sourceUrl": "https://www.geocaching.com/live/log/TL27JNNR7",
+          "lat": 50.747604,
+          "lon": 14.9903103,
+          "precision": "Approximate city / region center, not cache coordinates",
+          "coordinateSource": "https://nominatim.openstreetmap.org/search?q=Libereck%C3%BD+kraj%2C+Czechia&format=json&limit=1"
+        },
+        {
+          "id": "TL27KZF4M",
+          "date": "2026-09-23",
+          "type": "Visited",
+          "text": "",
+          "event": "JezMys.cz took it to Cvikovske panorama III",
+          "cacheName": "Cvikovske panorama III",
+          "cacheUrl": "https://www.geocaching.com/geocache/GC5N681",
+          "location": "Liberecký kraj, Czechia",
+          "sourceUrl": "https://www.geocaching.com/live/log/TL27KZF4M",
           "lat": 50.747604,
           "lon": 14.9903103,
           "precision": "Approximate city / region center, not cache coordinates",
