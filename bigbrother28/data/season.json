@@ -2,8 +2,8 @@
   "season": "Big Brother 28",
   "siteTitle": "BB28 Fantasy Draft",
   "tagline": "Meet the BB28 houseguests — the Monjies/Cassie/Crush/Mike/Fins family draft is live.",
-  "lastUpdated": "2026-09-21T04:15:37Z",
-  "status": "week-11-in-progress",
+  "lastUpdated": "2026-09-25T04:25:58Z",
+  "status": "final-3",
   "liveRefreshSeconds": 60,
   "seasonCalendar": {
     "premiere": "2026-07-07",
@@ -109,7 +109,7 @@
       "bio": "Drew Campbell is a 22-year-old dental Assistant.",
       "sourceName": "Big Brother Network",
       "sourceUrl": "https://bigbrothernetwork.com/big-brother-28-cast/",
-      "notes": "Won the Week 7 BB Time Capsule vote and received the Never-Not Pass. Nominated for eviction by Dee Valladares, then won the Week 7 BB Blockbuster and came off the block. Won the Week 8 Head of Household competition and nominated LaTrice Verrett, Taylor Brown, and Yash Patel. Named Rick Devens as the replacement nominee after Yash used the Veto. Won the Week 10 Pressure Cooker Power of Veto and used it on himself."
+      "notes": "Won the Week 7 BB Time Capsule vote and received the Never-Not Pass. Nominated for eviction by Dee Valladares, then won the Week 7 BB Blockbuster and came off the block. Won the Week 8 Head of Household competition and nominated LaTrice Verrett, Taylor Brown, and Yash Patel. Named Rick Devens as the replacement nominee after Yash used the Veto. Won the Week 10 Pressure Cooker Power of Veto and used it on himself. Won the Week 11 Power of Veto and used it on himself. Won the final Power of Veto, used it on himself, and cast the sole vote to evict Dee Valladares, advancing to the Final 3."
     },
     {
       "id": "haley-thogmartin",
@@ -201,12 +201,13 @@
       "age": 24,
       "hometown": "Maricopa, AZ",
       "occupation": "Game Show Host",
-      "status": "active",
+      "status": "jury",
       "draftOwner": "mike",
       "photoUrl": "https://bigbrothernetwork.com/wp-content/uploads/2026/07/bb28-cast-melody-00.jpg",
       "bio": "Melody Morris is a 24-year-old game Show Host from Maricopa, AZ.",
       "sourceName": "Big Brother Network",
-      "sourceUrl": "https://bigbrothernetwork.com/big-brother-28-cast/"
+      "sourceUrl": "https://bigbrothernetwork.com/big-brother-28-cast/",
+      "notes": "Evicted 2-1 in Week 11 after Rick Devens broke a 1-1 tie; became the fifth member of the jury."
     },
     {
       "id": "rome-seymour",
@@ -234,7 +235,7 @@
       "bio": "Taylor Brown is a 27-year-old elementary School Counselor from Deerfield Beach, FL.",
       "sourceName": "Big Brother Network",
       "sourceUrl": "https://bigbrothernetwork.com/big-brother-28-cast/",
-      "notes": "Won the Week 4 Power of Veto and used it on herself. Named as the Week 10 replacement nominee after Drew Campbell used the Veto on himself."
+      "notes": "Won the Week 4 Power of Veto and used it on herself. Named as the Week 10 replacement nominee after Drew Campbell used the Veto on himself. Won the Final 4 Head of Household competition, nominated Dee Valladares and Drew Campbell, and advanced to the Final 3."
     },
     {
       "id": "yash-patel",
@@ -276,14 +277,14 @@
       "bio": "Rick Devens is a Survivor: Edge of Extinction fan favorite joining the BB28 draft board as a crossover pick.",
       "sourceName": "Parade",
       "sourceUrl": "https://parade.com/tv/rick-devens-survivor-50-interview",
-      "notes": "Week 2 Head of Household and Power of Veto winner. Received the Week 3 Diamond Power of Veto from the BB Time Capsule. Used the Diamond Power of Veto in Week 6 to save Dee Valladares and named Kamu Kirk as the replacement nominee. Named as the Week 8 replacement nominee after Yash Patel used the Veto, then won the Week 8 BB Blockbuster and came off the block. Won the Week 9 BB Blockbuster and came off the block. Won $10,000 by triggering the Pharaoh’s Curse, then won the Week 11 Head of Household tiny-puzzle competition."
+      "notes": "Week 2 Head of Household and Power of Veto winner. Received the Week 3 Diamond Power of Veto from the BB Time Capsule. Used the Diamond Power of Veto in Week 6 to save Dee Valladares and named Kamu Kirk as the replacement nominee. Named as the Week 8 replacement nominee after Yash Patel used the Veto, then won the Week 8 BB Blockbuster and came off the block. Won the Week 9 BB Blockbuster and came off the block. Won $10,000 by triggering the Pharaoh’s Curse, then won the Week 11 Head of Household tiny-puzzle competition. Broke a 1-1 Week 11 tie to evict Melody Morris. Became the replacement nominee at Final 4 after Drew Campbell used the final Veto and advanced to the Final 3."
     },
     {
       "id": "dee-valladares",
       "name": "Dee Valladares",
-      "status": "active",
+      "status": "jury",
       "bio": "Dee Valladares recently entered the BB28 house and is assigned to Fins for this family draft.",
-      "notes": "Assigned to Fins for this family draft. Saved from the block in Week 6 when Rick Devens used the Diamond Power of Veto. Won the Week 7 Head of Household competition and nominated LaTrice Verrett, Drew Campbell, and Taylor Brown.",
+      "notes": "Assigned to Fins for this family draft. Saved from the block in Week 6 when Rick Devens used the Diamond Power of Veto. Won the Week 7 Head of Household competition and nominated LaTrice Verrett, Drew Campbell, and Taylor Brown. Evicted 1-0 at Final 4 by Drew Campbell after Drew won the final Power of Veto; became the sixth member of the jury.",
       "photoUrl": "./assets/dee-valladares-headshot.png",
       "sourceName": "Survivor Wiki",
       "sourceUrl": "https://survivor.fandom.com/wiki/Dee_Valladares",
@@ -628,9 +629,18 @@
         "winner": "Drew Campbell"
       },
       "nominees": [
-        { "houseguestId": "latrice-verrett", "name": "LaTrice Verrett" },
-        { "houseguestId": "taylor-brown", "name": "Taylor Brown" },
-        { "houseguestId": "yash-patel", "name": "Yash Patel" }
+        {
+          "houseguestId": "latrice-verrett",
+          "name": "LaTrice Verrett"
+        },
+        {
+          "houseguestId": "taylor-brown",
+          "name": "Taylor Brown"
+        },
+        {
+          "houseguestId": "yash-patel",
+          "name": "Yash Patel"
+        }
       ],
       "veto": {
         "houseguestId": "yash-patel",
@@ -645,9 +655,18 @@
         "name": "Rick Devens"
       },
       "finalNominees": [
-        { "houseguestId": "latrice-verrett", "name": "LaTrice Verrett" },
-        { "houseguestId": "taylor-brown", "name": "Taylor Brown" },
-        { "houseguestId": "rick-devens", "name": "Rick Devens" }
+        {
+          "houseguestId": "latrice-verrett",
+          "name": "LaTrice Verrett"
+        },
+        {
+          "houseguestId": "taylor-brown",
+          "name": "Taylor Brown"
+        },
+        {
+          "houseguestId": "rick-devens",
+          "name": "Rick Devens"
+        }
       ],
       "blockbuster": {
         "houseguestId": "rick-devens",
@@ -825,15 +844,124 @@
       "week": 11,
       "label": "Week 11",
       "date": "2026-09-20",
-      "status": "In Progress",
+      "status": "Complete",
       "hoh": {
         "houseguestId": "rick-devens",
         "winner": "Rick Devens"
       },
-      "notes": "Rick Devens won $10,000 by triggering the Pharaoh’s Curse, then completed the tiny-puzzle competition to become the Week 11 Head of Household."
+      "nominees": [
+        {
+          "houseguestId": "drew-campbell",
+          "name": "Drew Campbell"
+        },
+        {
+          "houseguestId": "melody-morris",
+          "name": "Melody Morris"
+        }
+      ],
+      "veto": {
+        "houseguestId": "drew-campbell",
+        "winner": "Drew Campbell"
+      },
+      "vetoUsedOn": {
+        "houseguestId": "drew-campbell",
+        "name": "Drew Campbell"
+      },
+      "replacementNominee": {
+        "houseguestId": "taylor-brown",
+        "name": "Taylor Brown"
+      },
+      "finalNominees": [
+        {
+          "houseguestId": "melody-morris",
+          "name": "Melody Morris"
+        },
+        {
+          "houseguestId": "taylor-brown",
+          "name": "Taylor Brown"
+        }
+      ],
+      "evicted": {
+        "houseguestId": "melody-morris",
+        "name": "Melody Morris",
+        "vote": "2-1"
+      },
+      "notes": "Rick Devens won the tiny-puzzle Head of Household after taking $10,000 and triggering the Pharaoh’s Curse. He nominated Drew Campbell and Melody Morris. Drew won the Power of Veto and used it on himself; Rick named Taylor Brown as the replacement nominee. Dee voted to evict Melody and Drew voted to evict Taylor, so Rick broke the tie to evict Melody 2-1 as the fifth member of the jury."
+    },
+    {
+      "week": 11.5,
+      "label": "Final 4 Eviction",
+      "date": "2026-09-24",
+      "status": "Complete",
+      "hoh": {
+        "houseguestId": "taylor-brown",
+        "winner": "Taylor Brown"
+      },
+      "nominees": [
+        {
+          "houseguestId": "dee-valladares",
+          "name": "Dee Valladares"
+        },
+        {
+          "houseguestId": "drew-campbell",
+          "name": "Drew Campbell"
+        }
+      ],
+      "veto": {
+        "houseguestId": "drew-campbell",
+        "winner": "Drew Campbell"
+      },
+      "vetoUsedOn": {
+        "houseguestId": "drew-campbell",
+        "name": "Drew Campbell"
+      },
+      "replacementNominee": {
+        "houseguestId": "rick-devens",
+        "name": "Rick Devens"
+      },
+      "finalNominees": [
+        {
+          "houseguestId": "dee-valladares",
+          "name": "Dee Valladares"
+        },
+        {
+          "houseguestId": "rick-devens",
+          "name": "Rick Devens"
+        }
+      ],
+      "evicted": {
+        "houseguestId": "dee-valladares",
+        "name": "Dee Valladares",
+        "vote": "1-0"
+      },
+      "notes": "Taylor Brown won the Final 4 Head of Household and nominated Dee Valladares and Drew Campbell. Drew won the final Power of Veto and used it on himself, making Rick Devens the replacement nominee. Drew cast the sole vote to evict Dee 1-0, making her the sixth member of the jury and leaving Taylor, Drew, and Rick as the Final 3."
     }
   ],
   "events": [
+    {
+      "date": "2026-09-24",
+      "type": "eviction",
+      "title": "Dee is evicted at Final 4",
+      "description": "Drew Campbell used the final Power of Veto on himself and cast the sole vote to evict Dee Valladares 1-0. Dee became the sixth jury member, leaving Taylor Brown, Drew, and Rick Devens as the Final 3."
+    },
+    {
+      "date": "2026-09-24",
+      "type": "competition_result",
+      "title": "Taylor wins Final 4 HOH; Drew wins final Veto",
+      "description": "Taylor Brown won Head of Household and nominated Dee Valladares and Drew Campbell. Drew won the final Power of Veto and used it on himself, placing Rick Devens beside Dee for the eviction vote."
+    },
+    {
+      "date": "2026-09-23",
+      "type": "eviction",
+      "title": "Melody is evicted in Week 11",
+      "description": "Drew Campbell used the Power of Veto on himself, Rick Devens named Taylor Brown as the replacement nominee, and Rick broke a 1-1 tie to evict Melody Morris 2-1 as the fifth member of the jury."
+    },
+    {
+      "date": "2026-09-23",
+      "type": "competition_result",
+      "title": "Drew wins the Week 11 Veto",
+      "description": "Drew Campbell won the Power of Veto and used it on himself after Rick Devens nominated Drew and Melody Morris."
+    },
     {
       "date": "2026-09-20",
       "type": "competition_result",
@@ -1208,6 +1336,16 @@
     }
   ],
   "sources": [
+    {
+      "name": "Deadline Week 11 Final 4 eviction recap",
+      "url": "https://deadline.com/2026/09/big-brother-season-28-week-11-eviction-results-final-3-1237113438/",
+      "checkedAt": "2026-09-25T04:25:58Z"
+    },
+    {
+      "name": "DraftKings Network Week 11 eviction recap",
+      "url": "https://dknetwork.draftkings.com/2026/09/23/big-brother-season-28-episode-38-week-11-recap-melody-evicted/",
+      "checkedAt": "2026-09-25T04:25:58Z"
+    },
     {
       "name": "Big Brother Network Episode 32 recap",
       "url": "https://bigbrothernetwork.com/big-brother-28-episode-32-recap-things-just-got-cursed/",
