@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-25T13:38:50.178519+00:00",
+  "updatedAt": "2026-09-25T14:38:35.346981+00:00",
   "mapAccuracy": "Regional overview only. Exact cache coordinates require Geocaching sign-in. Lines connect approximate place centers, not actual travel paths.",
   "inputCount": 7,
   "uniqueTrackableCount": 8,
@@ -1514,7 +1514,7 @@
       "id": "TBB8FXD",
       "sourceUrl": "https://www.geocaching.com/track/details.aspx?tracker=TBB8FXD",
       "status": "In the hands of hahtho.",
-      "distanceMiles": 39.7,
+      "distanceMiles": 1271.8,
       "logs": [
         {
           "id": "TL27G0G4K",
@@ -1607,6 +1607,21 @@
           "lon": 21.9877132,
           "precision": "Approximate city / region center, not cache coordinates",
           "coordinateSource": "https://nominatim.openstreetmap.org/search?q=Greece&format=json&limit=1"
+        },
+        {
+          "id": "TL27MF3YD",
+          "date": "2026-09-25",
+          "type": "Visited",
+          "text": "",
+          "event": "hahtho took it to Baldeneysteig-Südroute-1",
+          "cacheName": "Baldeneysteig-Südroute-1",
+          "cacheUrl": "https://www.geocaching.com/geocache/GC9HYBX",
+          "location": "Nordrhein-Westfalen, Germany",
+          "sourceUrl": "https://www.geocaching.com/live/log/TL27MF3YD",
+          "lat": 51.4789205,
+          "lon": 7.5543751,
+          "precision": "Approximate city / region center, not cache coordinates",
+          "coordinateSource": "https://nominatim.openstreetmap.org/search?q=Nordrhein-Westfalen%2C+Germany&format=json&limit=1"
         }
       ],
       "name": "Audrey’s Heart",
