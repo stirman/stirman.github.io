@@ -12,7 +12,7 @@ from urllib.parse import urljoin, urlsplit, parse_qs
 from bs4 import BeautifulSoup
 from geocoins_translate import enrich
 
-IDS = ('TBB8FK9', 'TBB8G36', 'TBB8FXB', 'TBB8G42', 'TBB8G77', 'TBB8FX6', 'TBB8FJ3', 'TBB8FXD')
+IDS = ('TBB8FK9', 'TBB8G36', 'TBB8FXB', 'TBB8G42', 'TBB8G77', 'TBB8FX6', 'TBB8FJ3', 'TBB8FXD', 'TBB8G4G')
 BASE = 'https://www.geocaching.com'
 
 class RefreshError(RuntimeError):
