@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-09-26T19:13:13.190172+00:00",
+  "updatedAt": "2026-09-26T19:30:17.429115+00:00",
   "mapAccuracy": "Regional overview only. Exact cache coordinates require Geocaching sign-in. Lines connect approximate place centers, not actual travel paths.",
-  "inputCount": 19,
-  "uniqueTrackableCount": 19,
+  "inputCount": 20,
+  "uniqueTrackableCount": 20,
   "coins": [
     {
       "id": "TBB8FK9",
@@ -1961,6 +1961,47 @@
           "lon": -118.755997,
           "precision": "Approximate city / region center, not cache coordinates",
           "coordinateSource": "https://nominatim.openstreetmap.org/search?q=California%2C+United+States&format=json&limit=1"
+        }
+      ],
+      "familyMiles": 0
+    },
+    {
+      "id": "TBB8G48",
+      "name": "Audrey’s Heart",
+      "color": "#9c6644",
+      "status": "In the hands of the owner.",
+      "distanceMiles": 0,
+      "sourceUrl": "https://www.geocaching.com/track/details.aspx?tracker=TBB8G48",
+      "logs": [
+        {
+          "id": "TL27F3XWK",
+          "date": "2026-09-08",
+          "type": "Visited",
+          "text": "Audrey’s heart started here ❤️",
+          "event": "cassiestirman took it to Audrey's Cache",
+          "cacheName": "Audrey's Cache",
+          "cacheUrl": "https://www.geocaching.com/geocache/GCBQAEF",
+          "location": "California",
+          "sourceUrl": "https://www.geocaching.com/live/log/TL27F3XWK",
+          "lat": 36.7014631,
+          "lon": -118.755997,
+          "precision": "Approximate city / region center, not cache coordinates",
+          "coordinateSource": "https://nominatim.openstreetmap.org/search?q=California%2C+United+States&format=json&limit=1"
+        },
+        {
+          "id": "TL27N03AH",
+          "date": "2026-09-26",
+          "type": "Visited",
+          "text": "",
+          "event": "cassiestirman took it to Audrey's Cache",
+          "cacheName": "Audrey's Cache",
+          "cacheUrl": "https://www.geocaching.com/geocache/GCBQAEF",
+          "location": "California\r\n                 -  miles",
+          "sourceUrl": "https://www.geocaching.com/live/log/TL27N03AH",
+          "lat": 37.7674718,
+          "lon": -122.1493941,
+          "precision": "Approximate city / region center, not cache coordinates",
+          "coordinateSource": "https://nominatim.openstreetmap.org/search?q=California%0D%0A+++++++++++++++++-++miles&format=json&limit=1"
         }
       ],
       "familyMiles": 0
