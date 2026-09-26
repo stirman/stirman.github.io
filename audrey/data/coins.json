@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-26T07:38:39.976076+00:00",
+  "updatedAt": "2026-09-26T08:39:12.633831+00:00",
   "mapAccuracy": "Regional overview only. Exact cache coordinates require Geocaching sign-in. Lines connect approximate place centers, not actual travel paths.",
   "inputCount": 7,
   "uniqueTrackableCount": 8,
@@ -9,7 +9,7 @@
       "name": "Audrey’s Heart",
       "color": "#c85270",
       "status": "In the hands of JezMys.cz.",
-      "distanceMiles": 6536.6,
+      "distanceMiles": 6557.2,
       "sourceUrl": "https://www.geocaching.com/track/details.aspx?tracker=TBB8FK9",
       "logs": [
         {
@@ -1228,6 +1228,36 @@
           "cacheUrl": "https://www.geocaching.com/geocache/GC7CRZR",
           "location": "Liberecký kraj, Czechia",
           "sourceUrl": "https://www.geocaching.com/live/log/TL27KZKWB",
+          "lat": 50.747604,
+          "lon": 14.9903103,
+          "precision": "Approximate city / region center, not cache coordinates",
+          "coordinateSource": "https://nominatim.openstreetmap.org/search?q=Libereck%C3%BD+kraj%2C+Czechia&format=json&limit=1"
+        },
+        {
+          "id": "TL27MNTTT",
+          "date": "2026-09-26",
+          "type": "Visited",
+          "text": "",
+          "event": "JezMys.cz took it to Kdy zas něco uděláš 9?",
+          "cacheName": "Kdy zas něco uděláš 9?",
+          "cacheUrl": "https://www.geocaching.com/geocache/GCBYCMP",
+          "location": "Liberecký kraj, Czechia",
+          "sourceUrl": "https://www.geocaching.com/live/log/TL27MNTTT",
+          "lat": 50.747604,
+          "lon": 14.9903103,
+          "precision": "Approximate city / region center, not cache coordinates",
+          "coordinateSource": "https://nominatim.openstreetmap.org/search?q=Libereck%C3%BD+kraj%2C+Czechia&format=json&limit=1"
+        },
+        {
+          "id": "TL27MNVX1",
+          "date": "2026-09-26",
+          "type": "Visited",
+          "text": "",
+          "event": "JezMys.cz took it to Kdy zas něco uděláš 8?",
+          "cacheName": "Kdy zas něco uděláš 8?",
+          "cacheUrl": "https://www.geocaching.com/geocache/GCBYCNF",
+          "location": "Liberecký kraj, Czechia",
+          "sourceUrl": "https://www.geocaching.com/live/log/TL27MNVX1",
           "lat": 50.747604,
           "lon": 14.9903103,
           "precision": "Approximate city / region center, not cache coordinates",
