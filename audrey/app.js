@@ -6,6 +6,8 @@
   const number = value => new Intl.NumberFormat('en-US', { maximumFractionDigits: 1 }).format(value);
   const mapped = log => typeof log.lat === 'number' && typeof log.lon === 'number' && Number.isFinite(log.lat) && Number.isFinite(log.lon) && Math.abs(log.lat) <= 90 && Math.abs(log.lon) <= 180;
   const distance = coin => typeof coin.distanceMiles === 'number' && Number.isFinite(coin.distanceMiles) && coin.distanceMiles >= 0;
+  const familyMiles = coin => typeof coin.familyMiles === 'number' && Number.isFinite(coin.familyMiles) && coin.familyMiles > 0 ? coin.familyMiles : 0;
+  const totalMiles = coin => coin.distanceMiles + familyMiles(coin);
   function element(tag, className, text) {
     const node = document.createElement(tag);
     if (className) node.className = className;
@@ -59,7 +61,10 @@
       const button = element('button', 'coin-card'); button.type = 'button'; button.dataset.id = coin.id; button.style.setProperty('--coin', coin.color); button.setAttribute('aria-pressed', 'false');
       button.append(element('span', 'coin-icon', '♥'));
       const body = element('span'); body.append(element('span', 'coin-title', coin.name), element('span', 'coin-detail', coin.id));
-      body.append(element('span', 'coin-detail', coin.logs.length ? `${coin.logs.filter(log => !log.familyReported).length} official logs · ${distance(coin) ? number(coin.distanceMiles) + ' source mi' : 'Miles unavailable'}` : 'No logged travels yet'));
+      const fam = familyMiles(coin);
+      const milesDetail = element('span', 'coin-detail', coin.logs.length ? `${coin.logs.filter(log => !log.familyReported).length} official logs · ${distance(coin) ? number(totalMiles(coin)) + (fam ? ' mi' : ' source mi') : 'Miles unavailable'}` : 'No logged travels yet');
+      if (fam && distance(coin)) milesDetail.title = `${number(coin.distanceMiles)} source mi + ${number(fam)} family-reported mi from Audrey's Cache`;
+      body.append(milesDetail);
       body.append(element('span', 'coin-state', coin.logs.length ? coin.status || 'Journey in progress' : 'Awaiting the first travel log'));
       button.append(body); button.addEventListener('click', () => select(coin.id)); $('coins').append(button);
     }
@@ -87,8 +92,8 @@
     $('coin-count').textContent = number(state.coins.length);
     $('stop-count').textContent = number(state.coins.reduce((sum, coin) => sum + coin.logs.filter(log => mapped(log) && !log.familyReported).length, 0));
     const known = state.coins.filter(distance);
-    $('mile-count').textContent = known.length ? number(known.reduce((sum, coin) => sum + coin.distanceMiles, 0)) : '—';
-    $('mile-count').title = `${known.length} of ${state.coins.length} coins have a source-recorded distance. Missing distances are excluded.`;
+    $('mile-count').textContent = known.length ? number(known.reduce((sum, coin) => sum + totalMiles(coin), 0)) : '—';
+    $('mile-count').title = `${known.length} of ${state.coins.length} coins have a source-recorded distance. Missing distances are excluded. Includes family-reported starting legs where noted.`;
   }
   function markerKey(coin, log) { return JSON.stringify([coin.id, log.id]); }
   function popup(coin, log) {
