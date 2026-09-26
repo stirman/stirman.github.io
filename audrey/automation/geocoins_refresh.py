@@ -12,7 +12,8 @@ from urllib.parse import urljoin, urlsplit, parse_qs
 from bs4 import BeautifulSoup
 from geocoins_translate import enrich
 
-IDS = ('TBB8FK9', 'TBB8G36', 'TBB8FXB', 'TBB8G42', 'TBB8G77', 'TBB8FX6', 'TBB8FJ3', 'TBB8FXD', 'TBB8G4G')
+IDS = ('TBB8FK9', 'TBB8G36', 'TBB8FXB', 'TBB8G42', 'TBB8G77', 'TBB8FX6', 'TBB8FJ3', 'TBB8FXD', 'TBB8G4G',
+       'TBBFVQK', 'TBBFV07', 'TBBFVRZ', 'TBBFVQA', 'TBBFVPE', 'TBBFVRT', 'TBBFVT4', 'TBBFVQ8', 'TBBFV0E', 'TBBFVPX')
 # Family-supplied approximate mileage for legs the public source never recorded
 # (a heart that started at Audrey's Cache before its first public log).
 # Great-circle miles from the family-reported start to the first known location.
