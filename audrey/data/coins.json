@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-26T17:59:36.154314+00:00",
+  "updatedAt": "2026-09-26T18:02:39.114061+00:00",
   "mapAccuracy": "Regional overview only. Exact cache coordinates require Geocaching sign-in. Lines connect approximate place centers, not actual travel paths.",
   "inputCount": 9,
   "uniqueTrackableCount": 9,
@@ -1263,7 +1263,8 @@
           "precision": "Approximate city / region center, not cache coordinates",
           "coordinateSource": "https://nominatim.openstreetmap.org/search?q=Libereck%C3%BD+kraj%2C+Czechia&format=json&limit=1"
         }
-      ]
+      ],
+      "familyMiles": 0
     },
     {
       "id": "TBB8G36",
@@ -1396,7 +1397,8 @@
             "machineGenerated": true
           }
         }
-      ]
+      ],
+      "familyMiles": 0
     },
     {
       "id": "TBB8FXB",
@@ -1421,7 +1423,8 @@
           "precision": "Approximate city / region center, not cache coordinates",
           "coordinateSource": "https://nominatim.openstreetmap.org/search?q=California%2C+United+States&format=json&limit=1"
         }
-      ]
+      ],
+      "familyMiles": 0
     },
     {
       "id": "TBB8G42",
@@ -1446,7 +1449,8 @@
           "precision": "Approximate city / region center, not cache coordinates",
           "coordinateSource": "https://nominatim.openstreetmap.org/search?q=California%2C+United+States&format=json&limit=1"
         }
-      ]
+      ],
+      "familyMiles": 0
     },
     {
       "id": "TBB8G77",
@@ -1471,7 +1475,8 @@
           "precision": "Approximate city / region center, not cache coordinates",
           "coordinateSource": "https://nominatim.openstreetmap.org/search?q=California%2C+United+States&format=json&limit=1"
         }
-      ]
+      ],
+      "familyMiles": 0
     },
     {
       "id": "TBB8FX6",
@@ -1496,7 +1501,8 @@
           "precision": "Approximate city / region center, not cache coordinates",
           "coordinateSource": "https://nominatim.openstreetmap.org/search?q=California%2C+United+States&format=json&limit=1"
         }
-      ]
+      ],
+      "familyMiles": 0
     },
     {
       "id": "TBB8FJ3",
@@ -1538,7 +1544,8 @@
           "precision": "Approximate city / region center, not cache coordinates",
           "coordinateSource": "https://nominatim.openstreetmap.org/search?q=Rome%2C+Italy&format=json&limit=1"
         }
-      ]
+      ],
+      "familyMiles": 0
     },
     {
       "id": "TBB8FXD",
@@ -1655,7 +1662,8 @@
         }
       ],
       "name": "Audrey’s Heart",
-      "color": "#b96b24"
+      "color": "#b96b24",
+      "familyMiles": 0
     },
     {
       "id": "TBB8G4G",
@@ -1694,7 +1702,8 @@
           "precision": "Approximate city / region center, not cache coordinates",
           "coordinateSource": "https://nominatim.openstreetmap.org/search?q=South+Carolina&format=json&limit=1"
         }
-      ]
+      ],
+      "familyMiles": 2226
     }
   ]
 }
