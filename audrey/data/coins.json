@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-27T08:38:28.469860+00:00",
+  "updatedAt": "2026-09-27T09:38:47.734555+00:00",
   "mapAccuracy": "Regional overview only. Exact cache coordinates require Geocaching sign-in. Lines connect approximate place centers, not actual travel paths.",
   "inputCount": 20,
   "uniqueTrackableCount": 20,
@@ -1550,8 +1550,8 @@
     {
       "id": "TBB8FXD",
       "sourceUrl": "https://www.geocaching.com/track/details.aspx?tracker=TBB8FXD",
-      "status": "In the hands of hahtho.",
-      "distanceMiles": 1271.8,
+      "status": "In Parkplatz Gangenhoferweg",
+      "distanceMiles": 1279.9,
       "logs": [
         {
           "id": "TL27G0G4K",
@@ -1655,6 +1655,21 @@
           "cacheUrl": "https://www.geocaching.com/geocache/GC9HYBX",
           "location": "Nordrhein-Westfalen, Germany",
           "sourceUrl": "https://www.geocaching.com/live/log/TL27MF3YD",
+          "lat": 51.4789205,
+          "lon": 7.5543751,
+          "precision": "Approximate city / region center, not cache coordinates",
+          "coordinateSource": "https://nominatim.openstreetmap.org/search?q=Nordrhein-Westfalen%2C+Germany&format=json&limit=1"
+        },
+        {
+          "id": "TL27N5FCE",
+          "date": "2026-09-27",
+          "type": "Dropped Off",
+          "text": "",
+          "event": "hahtho placed it in Parkplatz Gangenhoferweg",
+          "cacheName": "Parkplatz Gangenhoferweg",
+          "cacheUrl": "https://www.geocaching.com/geocache/GC9WPA9",
+          "location": "Nordrhein-Westfalen, Germany",
+          "sourceUrl": "https://www.geocaching.com/live/log/TL27N5FCE",
           "lat": 51.4789205,
           "lon": 7.5543751,
           "precision": "Approximate city / region center, not cache coordinates",
