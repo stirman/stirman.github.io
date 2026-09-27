@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-27T11:38:29.978804+00:00",
+  "updatedAt": "2026-09-27T12:38:30.471657+00:00",
   "mapAccuracy": "Regional overview only. Exact cache coordinates require Geocaching sign-in. Lines connect approximate place centers, not actual travel paths.",
   "inputCount": 20,
   "uniqueTrackableCount": 20,
@@ -9,7 +9,7 @@
       "name": "Audrey’s Heart",
       "color": "#c85270",
       "status": "In the hands of JezMys.cz.",
-      "distanceMiles": 6557.2,
+      "distanceMiles": 6641.2,
       "sourceUrl": "https://www.geocaching.com/track/details.aspx?tracker=TBB8FK9",
       "logs": [
         {
@@ -1262,6 +1262,21 @@
           "lon": 14.9903103,
           "precision": "Approximate city / region center, not cache coordinates",
           "coordinateSource": "https://nominatim.openstreetmap.org/search?q=Libereck%C3%BD+kraj%2C+Czechia&format=json&limit=1"
+        },
+        {
+          "id": "TL27N837R",
+          "date": "2026-09-27",
+          "type": "Visited",
+          "text": "",
+          "event": "JezMys.cz took it to Po stopách mlsného medvěda",
+          "cacheName": "Po stopách mlsného medvěda",
+          "cacheUrl": "https://www.geocaching.com/geocache/GC7TJ6H",
+          "location": "Pardubický kraj, Czechia",
+          "sourceUrl": "https://www.geocaching.com/live/log/TL27N837R",
+          "lat": 49.889819,
+          "lon": 16.1283254,
+          "precision": "Approximate city / region center, not cache coordinates",
+          "coordinateSource": "https://nominatim.openstreetmap.org/search?q=Pardubick%C3%BD+kraj%2C+Czechia&format=json&limit=1"
         }
       ],
       "familyMiles": 0
