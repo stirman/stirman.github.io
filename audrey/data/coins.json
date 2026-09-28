@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-28T08:38:27.229594+00:00",
+  "updatedAt": "2026-09-28T09:40:04.467293+00:00",
   "mapAccuracy": "Regional overview only. Exact cache coordinates require Geocaching sign-in. Lines connect approximate place centers, not actual travel paths.",
   "inputCount": 20,
   "uniqueTrackableCount": 20,
@@ -1307,8 +1307,8 @@
       "id": "TBB8G36",
       "name": "Audrey’s Heart",
       "color": "#317e83",
-      "status": "In the hands of Adam`s Family.",
-      "distanceMiles": 11.3,
+      "status": "In Mount Everest",
+      "distanceMiles": 171.2,
       "sourceUrl": "https://www.geocaching.com/track/details.aspx?tracker=TBB8G36",
       "logs": [
         {
@@ -1430,6 +1430,52 @@
             "sourceLanguage": "cs",
             "sourceText": "dik",
             "text": "thanks",
+            "provider": "OpenAI Codex",
+            "machineGenerated": true
+          }
+        },
+        {
+          "id": "TL27NM9DT",
+          "date": "2026-09-28",
+          "type": "Visited",
+          "text": "diky",
+          "event": "Adam`s Family took it to Mount Everest",
+          "cacheName": "Mount Everest",
+          "cacheUrl": "https://www.geocaching.com/geocache/GC8AAHK",
+          "location": "Moravskoslezský kraj, Czechia",
+          "sourceUrl": "https://www.geocaching.com/live/log/TL27NM9DT",
+          "lat": 49.860275,
+          "lon": 18.0386541,
+          "precision": "Approximate city / region center, not cache coordinates",
+          "coordinateSource": "https://nominatim.openstreetmap.org/search?q=Moravskoslezsk%C3%BD+kraj%2C+Czechia&format=json&limit=1",
+          "translation": {
+            "language": "en",
+            "sourceLanguage": "cs",
+            "sourceText": "diky",
+            "text": "thanks",
+            "provider": "OpenAI Codex",
+            "machineGenerated": true
+          }
+        },
+        {
+          "id": "TL27NM9FN",
+          "date": "2026-09-28",
+          "type": "Dropped Off",
+          "text": "vlozeno",
+          "event": "Adam`s Family placed it in Mount Everest",
+          "cacheName": "Mount Everest",
+          "cacheUrl": "https://www.geocaching.com/geocache/GC8AAHK",
+          "location": "Moravskoslezský kraj, Czechia",
+          "sourceUrl": "https://www.geocaching.com/live/log/TL27NM9FN",
+          "lat": 49.860275,
+          "lon": 18.0386541,
+          "precision": "Approximate city / region center, not cache coordinates",
+          "coordinateSource": "https://nominatim.openstreetmap.org/search?q=Moravskoslezsk%C3%BD+kraj%2C+Czechia&format=json&limit=1",
+          "translation": {
+            "language": "en",
+            "sourceLanguage": "cs",
+            "sourceText": "vlozeno",
+            "text": "placed in",
             "provider": "OpenAI Codex",
             "machineGenerated": true
           }
