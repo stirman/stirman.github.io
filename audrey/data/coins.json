@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-30T19:38:28.945510+00:00",
+  "updatedAt": "2026-09-30T20:38:31.668012+00:00",
   "mapAccuracy": "Regional overview only. Exact cache coordinates require Geocaching sign-in. Lines connect approximate place centers, not actual travel paths.",
   "inputCount": 20,
   "uniqueTrackableCount": 20,
@@ -9,7 +9,7 @@
       "name": "Audrey’s Heart",
       "color": "#c85270",
       "status": "In the hands of JezMys.cz.",
-      "distanceMiles": 6641.2,
+      "distanceMiles": 6729.2,
       "sourceUrl": "https://www.geocaching.com/track/details.aspx?tracker=TBB8FK9",
       "logs": [
         {
@@ -1299,6 +1299,81 @@
           "lon": 16.1283254,
           "precision": "Approximate city / region center, not cache coordinates",
           "coordinateSource": "https://nominatim.openstreetmap.org/search?q=Pardubick%C3%BD+kraj%2C+Czechia&format=json&limit=1"
+        },
+        {
+          "id": "TL27PDKD9",
+          "date": "2026-09-30",
+          "type": "Visited",
+          "text": "",
+          "event": "JezMys.cz took it to 31 ZTDD Dřevěné napětí",
+          "cacheName": "31 ZTDD Dřevěné napětí",
+          "cacheUrl": "https://www.geocaching.com/geocache/GCAT9CY",
+          "location": "Středočeský kraj, Czechia",
+          "sourceUrl": "https://www.geocaching.com/live/log/TL27PDKD9",
+          "lat": 50.0601579,
+          "lon": 13.8307479,
+          "precision": "Approximate city / region center, not cache coordinates",
+          "coordinateSource": "https://nominatim.openstreetmap.org/search?q=St%C5%99edo%C4%8Desk%C3%BD+kraj%2C+Czechia&format=json&limit=1"
+        },
+        {
+          "id": "TL27PDP2J",
+          "date": "2026-09-30",
+          "type": "Visited",
+          "text": "",
+          "event": "JezMys.cz took it to 37 ZTDD BONUS 2 Trpaslík",
+          "cacheName": "37 ZTDD BONUS 2 Trpaslík",
+          "cacheUrl": "https://www.geocaching.com/geocache/GCAT9EY",
+          "location": "Královéhradecký kraj, Czechia",
+          "sourceUrl": "https://www.geocaching.com/live/log/TL27PDP2J",
+          "lat": 50.4093927,
+          "lon": 15.6850054,
+          "precision": "Approximate city / region center, not cache coordinates",
+          "coordinateSource": "https://nominatim.openstreetmap.org/search?q=Kr%C3%A1lov%C3%A9hradeck%C3%BD+kraj%2C+Czechia&format=json&limit=1"
+        },
+        {
+          "id": "TL27PDX9V",
+          "date": "2026-09-30",
+          "type": "Visited",
+          "text": "",
+          "event": "JezMys.cz took it to 50 ZTDD Bonus 3 Rola",
+          "cacheName": "50 ZTDD Bonus 3 Rola",
+          "cacheUrl": "https://www.geocaching.com/geocache/GCATDHN",
+          "location": "Královéhradecký kraj, Czechia",
+          "sourceUrl": "https://www.geocaching.com/live/log/TL27PDX9V",
+          "lat": 50.4093927,
+          "lon": 15.6850054,
+          "precision": "Approximate city / region center, not cache coordinates",
+          "coordinateSource": "https://nominatim.openstreetmap.org/search?q=Kr%C3%A1lov%C3%A9hradeck%C3%BD+kraj%2C+Czechia&format=json&limit=1"
+        },
+        {
+          "id": "TL27PDYN2",
+          "date": "2026-09-30",
+          "type": "Visited",
+          "text": "",
+          "event": "JezMys.cz took it to Lavičková 15 - Výhled na biocentrum",
+          "cacheName": "Lavičková 15 - Výhled na biocentrum",
+          "cacheUrl": "https://www.geocaching.com/geocache/GCBPZMJ",
+          "location": "Středočeský kraj, Czechia",
+          "sourceUrl": "https://www.geocaching.com/live/log/TL27PDYN2",
+          "lat": 50.0601579,
+          "lon": 13.8307479,
+          "precision": "Approximate city / region center, not cache coordinates",
+          "coordinateSource": "https://nominatim.openstreetmap.org/search?q=St%C5%99edo%C4%8Desk%C3%BD+kraj%2C+Czechia&format=json&limit=1"
+        },
+        {
+          "id": "TL27PDZAB",
+          "date": "2026-09-30",
+          "type": "Visited",
+          "text": "",
+          "event": "JezMys.cz took it to U Johanna",
+          "cacheName": "U Johanna",
+          "cacheUrl": "https://www.geocaching.com/geocache/GCB2FMX",
+          "location": "Středočeský kraj, Czechia",
+          "sourceUrl": "https://www.geocaching.com/live/log/TL27PDZAB",
+          "lat": 50.0601579,
+          "lon": 13.8307479,
+          "precision": "Approximate city / region center, not cache coordinates",
+          "coordinateSource": "https://nominatim.openstreetmap.org/search?q=St%C5%99edo%C4%8Desk%C3%BD+kraj%2C+Czechia&format=json&limit=1"
         }
       ],
       "familyMiles": 0
