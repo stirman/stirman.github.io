@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-02T10:40:33.136809+00:00",
+  "updatedAt": "2026-10-02T11:49:05.124231+00:00",
   "mapAccuracy": "Regional overview only. Exact cache coordinates require Geocaching sign-in. Lines connect approximate place centers, not actual travel paths.",
   "inputCount": 20,
   "uniqueTrackableCount": 20,
@@ -2176,8 +2176,8 @@
       "id": "TBB8FJ3",
       "name": "Audrey’s Heart",
       "color": "#495dad",
-      "status": "In the hands of mcc_.",
-      "distanceMiles": 0,
+      "status": "In Think of a number...",
+      "distanceMiles": 909.0,
       "sourceUrl": "https://www.geocaching.com/track/details.aspx?tracker=TBB8FJ3",
       "logs": [
         {
@@ -2211,6 +2211,21 @@
           "lon": 12.4829321,
           "precision": "Approximate city / region center, not cache coordinates",
           "coordinateSource": "https://nominatim.openstreetmap.org/search?q=Rome%2C+Italy&format=json&limit=1"
+        },
+        {
+          "id": "TL27PQYV7",
+          "date": "2026-10-02",
+          "type": "Dropped Off",
+          "text": "Dropped",
+          "event": "mcc_ placed it in Think of a number...",
+          "cacheName": "Think of a number...",
+          "cacheUrl": "https://www.geocaching.com/geocache/GCADZHD",
+          "location": "Southern England, United Kingdom",
+          "sourceUrl": "https://www.geocaching.com/live/log/TL27PQYV7",
+          "lat": 50.9245008,
+          "lon": -0.1459793,
+          "precision": "Approximate city / region center, not cache coordinates",
+          "coordinateSource": "https://nominatim.openstreetmap.org/search?q=Southern+England%2C+United+Kingdom&format=json&limit=1"
         }
       ],
       "familyMiles": 0
