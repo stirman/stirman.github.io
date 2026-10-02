@@ -1,5 +1,20 @@
 # BB28 Fantasy Draft
 
+## Finale UI — 20261002-finale
+
+- `status: "complete"` activates the gold/champagne championship hero before the roster and replaces the active-house count with `Season complete · N houseguests`.
+- Finale schema: `finale: {date: "2026-10-01", winnerId: "rick-devens", runnerUpId: "taylor-brown", thirdPlaceId: "drew-campbell", juryVote: "6–1", favoriteId: "rick-devens"}`. IDs resolve against this route’s houseguest records; the winner portrait uses the existing local `assets/rick-devens.jpg`.
+- Winner, runner-up, third place and America’s Favorite Player are separate from fantasy competition points. Champion/runner-up/AFP badges are derived from finale IDs, so outdated roster statuses cannot stamp the winner or runner-up as evicted.
+- The season winner’s draft owner comes from this route’s `houseguests[].draftOwner` and `familyMembers`. Do not copy ownership between routes.
+- Competition-point champion(s) come from the existing `buildPlayerLeaderboard`, including all tied leaders; ranks share places for tied totals. Scoring remains **HOH 5 / Veto 3 / Blockbuster 2**, with no season-win or AFP bonus. Preserve `players` and `playerGroups` independently on each route.
+- Complete seasons hide the upcoming section, clear episode cards, and make `nextEpisodes()` return an empty array even if the old calendar runs beyond finale night.
+- The decorative confetti runs briefly (not continuously), is inaccessible to assistive tech, and is disabled for reduced motion. HTML loads cache-busted `app.js` and `styles.css` (`20261002-finale`).
+- Verification on the current final data: competition-point champion **Bruin (45 points)**; season winner’s draft owner **Claghorns**. Node VM checks passed for final results, roster badges, complete-season episode suppression, active-state restoration, group fan-out, and synthetic tied champions/ranks. Both JS syntax checks and scoped `git diff --check` passed. Browser harness startup failed and direct headless Chrome timed out; visual browser QA remains outstanding.
+- UI-only update: finale data is supplied separately; no JSON edits or deployment are part of this change. Existing data polling remains available for later corrections.
+- Local checks: `node --check bb28/app.js` and `node --check bigbrother28/app.js`; exercise complete/in-progress fixtures, grouped scoring and ties without changing stored JSON. Serve the repo with `python3 -m http.server` to preview.
+
+
+
 Static, data-driven Big Brother 28 family fantasy draft tracker published at:
 
 - https://stirman.net/bb28/
@@ -11,7 +26,7 @@ Shows:
 - Each houseguest’s assigned family owner on the houseguest card
 - A dynamic Houseguests section eyebrow in the form `active/total still in the house` (starts `16/16 still in the house` and drops when statuses become `evicted` or `jury`)
 - Weekly Head of Household, Veto, and Blockbuster winners
-- A season-long Weekly Power Watch leaderboard ranking each winning houseguest with their family member by points: HOH = 5, Veto/Blockbuster = 3
+- A season-long Weekly Power Watch leaderboard ranking each winning houseguest with their family member by points: HOH = 5, Veto = 3, Blockbuster = 2
 
 ## Update flow
 
@@ -121,7 +136,7 @@ git push origin master
 
 ## 2026-07-12 power leaderboard update
 - Weekly Power Watch now includes a season-long leaderboard for strongest houseguest + family member.
-- Scoring: HOH = 5 points; Veto and Blockbuster = 3 points.
+- Scoring: HOH = 5 points; Veto = 3 points; Blockbuster = 2 points.
 - Update both `/bb28` and `/bigbrother28` weekly data together after Pacific airtime; do not text spoiler notifications.
 
 ## Dee Valladares assignment rule

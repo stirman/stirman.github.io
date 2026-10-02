@@ -4,24 +4,24 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>BB28 Fantasy Draft</title>
-  <meta name="description" content="Big Brother 28 family fantasy draft tracker: contestants, draft picks, evictions, and winner watch.">
+  <meta name="description" content="Big Brother 28 family fantasy draft tracker: final results, draft picks, and competition standings.">
   <meta property="og:title" content="BB28 Fantasy Draft">
-  <meta property="og:description" content="Who drafted the next Big Brother winner? Follow the family BB28 draft board live.">
+  <meta property="og:description" content="Celebrate the BB28 champion, the winning family draft, and the competition-point champions.">
   <meta property="og:type" content="website">
   <meta name="theme-color" content="#050816">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles.css?v=20260718-top-aligned-points">
+  <link rel="stylesheet" href="./styles.css?v=20261002-finale">
 </head>
 <body>
   <div class="stage-glow" aria-hidden="true"></div>
   <main class="shell" id="page-content">
     <section class="hero" aria-labelledby="page-title">
       <div class="hero-copy">
-        <p class="eyebrow"><span class="live-dot"></span> Live from the family HOH room</p>
+        <p class="eyebrow">The family season scrapbook</p>
         <h1 id="page-title">BB28 Fantasy Draft</h1>
-        <p class="tagline" id="tagline">The family draft is entering the house.</p>
+        <p class="tagline" id="tagline">The houseguests, the family picks, and every competition result.</p>
         <div class="hero-actions">
           <a class="button primary" href="#houseguests">Meet the houseguests</a>
           <a class="button ghost" href="#player-leaderboard">Player leaderboard</a>
@@ -29,9 +29,11 @@
       </div>
     </section>
 
+    <section class="finale" id="finale" aria-labelledby="finale-title" hidden></section>
+
     <section class="panel featured-houseguests" id="houseguests">
       <div class="section-heading">
-        <p class="eyebrow" id="house-status-count">16/16 still in the house</p>
+        <p class="eyebrow" id="house-status-count">Houseguests</p>
         <h2>Houseguests</h2>
         <p>Every BB28 houseguest is led by the family player who drafted them.</p>
       </div>
@@ -40,7 +42,7 @@
 
     <section class="panel" id="weekly-winners">
       <div class="section-heading">
-        <p class="eyebrow">Weekly power watch</p>
+        <p class="eyebrow">Season competition record</p>
         <h2>HOH + Power of Veto winners</h2>
         <p>Track weekly competition wins and the season-long power score for each houseguest and family member. HOH wins are worth 5 points; Veto wins are worth 3; Blockbuster wins are worth 2.</p>
       </div>
@@ -59,13 +61,13 @@
     </section>
 
     <section class="panel diary-room">      <div>
-        <p class="eyebrow">Diary room feed</p>
+        <p class="eyebrow">Diary room archive</p>
         <h2>Season events</h2>
       </div>
       <ol class="timeline" id="timeline"></ol>
     </section>
 
-    <section class="panel upcoming-panel" id="upcoming-episodes">
+    <section class="panel upcoming-panel" id="upcoming-episodes" hidden>
       <div class="section-heading">
         <p class="eyebrow">On deck</p>
         <h2>Next episodes</h2>
@@ -74,6 +76,6 @@
       <div class="upcoming-grid" id="upcoming-grid"></div>
     </section>
   </main>
-  <script src="./app.js?v=20260904-jury-eviction-stamp" defer></script>
+  <script src="./app.js?v=20261002-finale" defer></script>
 </body>
 </html>

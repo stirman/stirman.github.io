@@ -36,8 +36,64 @@ function renderStats(data) {
   const guests = data.houseguests || [];
   const total = guests.length;
   const active = guests.filter(guest => !['evicted', 'jury'].includes(guest.status)).length;
-  $('tagline').textContent = data.tagline || 'The family draft is entering the house.';
-  $('house-status-count').textContent = total ? `${active}/${total} still in the house` : 'Houseguests';
+  const complete = data.status === 'complete';
+  $('tagline').textContent = complete ? 'The confetti has fallen. Celebrate the champion, the winning draft, and the final competition standings.' : 'The houseguests, the family picks, and every competition result.';
+  $('house-status-count').textContent = complete ? `Season complete · ${total} houseguests` : total ? `${active}/${total} still in the house` : 'Houseguests';
+}
+
+function renderFinale(data) {
+  const target = $('finale');
+  if (!target) return;
+  const complete = data.status === 'complete';
+  document.body.classList.toggle('season-complete', complete);
+  target.hidden = !complete;
+  if (!complete) { target.innerHTML = ''; return; }
+  const finale = data.finale || {};
+  const guests = data.houseguests || [];
+  const winner = guests.find(guest => guest.id === finale.winnerId);
+  if (!winner) {
+    target.innerHTML = emptyState('Season complete', 'Final results are being recorded.');
+    return;
+  }
+  const runnerUp = guests.find(guest => guest.id === finale.runnerUpId);
+  const favorite = guests.find(guest => guest.id === finale.favoriteId);
+  const thirdPlace = guests.find(guest => guest.id === finale.thirdPlaceId);
+  const standings = buildPlayerLeaderboard(data, data.weeklyResults || []);
+  const champions = standings.filter(row => row.points === standings[0]?.points);
+  const championNames = champions.map(row => row.name).join(' + ');
+  target.innerHTML = `
+    <div class="finale-confetti" aria-hidden="true">${Array.from({length: 18}, (_, i) => `<i style="--i:${i}"></i>`).join('')}</div>
+    <div class="finale-main">
+      <div class="finale-portrait">
+        <img src="${escapeAttr(winner.photoUrl || './assets/rick-devens.jpg')}" alt="${escapeAttr(winner.name)} — BB28 champion" style="object-position:${escapeAttr(winner.photoPosition || 'center')}" fetchpriority="high">
+        <span class="finale-seal" aria-hidden="true">★<small>BB28</small></span>
+        <span class="finale-portrait-label">The winner’s circle</span>
+      </div>
+      <div class="finale-copy">
+        <p class="eyebrow">Season complete · ${escapeHtml(fmtDate(finale.date))}</p>
+        <p class="finale-kicker">Big Brother 28 champion</p>
+        <h2 id="finale-title">${escapeHtml(winner.name)}</h2>
+        <p class="finale-deck">One unforgettable season. One winning finish.${finale.juryVote ? ` A ${escapeHtml(finale.juryVote)} jury vote.` : ''}</p>
+        <dl class="finale-results">
+          <div><dt>Runner-up</dt><dd>${escapeHtml(runnerUp?.name || 'Not recorded')}</dd></div>
+          <div><dt>America’s Favorite Player</dt><dd>${escapeHtml(favorite?.name || 'Not recorded')}</dd></div>
+          ${thirdPlace ? `<div><dt>Third place</dt><dd>${escapeHtml(thirdPlace.name)}</dd></div>` : ''}
+        </dl>
+      </div>
+    </div>
+    <div class="finale-awards">
+      <div class="finale-award draft-award">
+        <span class="finale-award-label">Season winner’s draft owner</span>
+        <h3>${escapeHtml(ownerName(data, winner.draftOwner))}</h3>
+        <p>${winner.draftOwner ? `You drafted the champion. ${escapeHtml(winner.name)} takes the crown!` : 'The season champion was undrafted.'}</p>
+      </div>
+      <div class="finale-award points-award">
+        <span class="finale-award-label">Competition-point ${champions.length > 1 ? 'co-champions' : 'champion'}</span>
+        <h3>${escapeHtml(championNames || 'No player standings')}</h3>
+        <p>${champions.length ? `<strong>${champions[0].points} points${champions.length > 1 ? ' each · tied for first' : ''}</strong> · ` : ''}HOH 5 · Veto 3 · Blockbuster 2</p>
+        <p class="finale-footnote">A separate competition award — no bonus points for the season win or AFP.</p>
+      </div>
+    </div>`;
 }
 
 function ownerName(data, ownerId) {
@@ -145,7 +201,7 @@ function renderPowerLeaderboard(data, weeks) {
     <ol class="leaderboard-list">
       ${rows.map((row, index) => `
         <li class="leaderboard-row" style="--owner-color:${ownerColor(data, row.ownerId)}">
-          <span class="rank">#${index + 1}</span>
+          <span class="rank">#${rows.findIndex(other => other.points === row.points) + 1}</span>
           <div class="leaderboard-copy">
             <strong>${escapeHtml(row.houseguestName)}</strong>
             <span>${escapeHtml(row.ownerName)} · ${escapeHtml(row.breakdown)}</span>
@@ -200,7 +256,7 @@ function renderPlayerLeaderboard(data, weeks) {
   }
   target.innerHTML = rows.map((row, index) => `
     <article class="player-card" style="--player-color:${escapeAttr(row.color || '#00d5ff')}">
-      <div class="player-rank">#${index + 1}</div>
+      <div class="player-rank">#${rows.findIndex(other => other.points === row.points) + 1}</div>
       <div class="player-photo" style="background-image:url('${escapeAttr(row.photoUrl)}'); background-position:${escapeAttr(row.photoPosition || 'center')}" role="img" aria-label="${escapeAttr(`${row.name} player photo`)}"></div>
       <div class="player-copy">
         <div class="player-title-row">
@@ -211,7 +267,7 @@ function renderPlayerLeaderboard(data, weeks) {
           <div class="player-score"><strong>${row.points}</strong><span>pts</span></div>
         </div>
         <div class="player-breakdown">${escapeHtml(row.breakdown)}</div>
-        ${row.sources.length ? `<ul class="player-sources">${row.sources.map(source => `<li>${escapeHtml(source)}</li>`).join('')}</ul>` : '<p class="player-sources-empty">Waiting on first competition points</p>'}
+        ${row.sources.length ? `<ul class="player-sources">${row.sources.map(source => `<li>${escapeHtml(source)}</li>`).join('')}</ul>` : `<p class="player-sources-empty">${data.status === 'complete' ? 'No competition points this season' : 'Waiting on first competition points'}</p>`}
       </div>
     </article>
   `).join('');
@@ -260,7 +316,9 @@ function renderHouseguests(data) {
     return;
   }
   grid.innerHTML = guests.map(guest => {
-    const status = guest.status || 'active';
+    const finale = data.status === 'complete' ? data.finale || {} : {};
+    const award = guest.id === finale.winnerId ? 'Champion' : guest.id === finale.runnerUpId ? 'Runner-up' : '';
+    const status = award === 'Champion' ? 'winner' : award === 'Runner-up' ? 'runner-up' : guest.status || 'active';
     const owner = guest.draftOwner ? ownerName(data, guest.draftOwner) : 'Undrafted';
     const meta = [guest.age && `Age ${guest.age}`, guest.hometown, guest.occupation].filter(Boolean).join(' • ');
     // Jury members have also been evicted from the house; keep the visible
@@ -278,6 +336,8 @@ function renderHouseguests(data) {
       <article class="guest-card ${escapeAttr(status)}" style="--owner-color:${ownerColor(data, guest.draftOwner)}; --photo-position:${escapeAttr(guest.photoPosition || 'center')}; border-color:${ownerColor(data, guest.draftOwner)}88">
         ${photo || `<div class="guest-image photo-fallback">${evictedStamp}<div class="avatar">${escapeHtml(initials(guest.name))}</div><div class="owner-ribbon" style="--owner-color:${ownerColor(data, guest.draftOwner)}">${escapeHtml(owner)}</div></div>`}
         <div class="guest-copy">
+          ${award ? `<span class="finalist-badge ${status}">${escapeHtml(award)}</span>` : ''}
+          ${guest.id === finale.favoriteId ? '<span class="finalist-badge favorite">America’s Favorite Player</span>' : ''}
           <h3>${escapeHtml(guest.name)}</h3>
           <p class="guest-meta">${escapeHtml(meta || 'Details coming soon')}</p>
           ${guest.bio ? `<p class="guest-bio">${escapeHtml(guest.bio)}</p>` : ''}
@@ -302,6 +362,9 @@ function renderTimeline(data) {
 function renderUpcomingEpisodes(data) {
   const target = $('upcoming-grid');
   if (!target) return;
+  const panel = $('upcoming-episodes');
+  if (panel) panel.hidden = data.status === 'complete';
+  if (data.status === 'complete') { target.innerHTML = ''; return; }
   const episodes = nextEpisodes(data, 3);
   if (!episodes.length) {
     target.innerHTML = emptyState('Schedule coming soon', 'Upcoming episode times will appear here once the season schedule is available.');
@@ -320,6 +383,7 @@ function renderUpcomingEpisodes(data) {
 }
 
 function nextEpisodes(data, count = 3) {
+  if (data.status === 'complete') return [];
   const schedule = data.seasonCalendar?.episodeSchedule;
   if (!schedule) return [];
   const weekdayNames = schedule.weekdays || ['Wednesday', 'Thursday', 'Sunday'];
@@ -408,6 +472,7 @@ async function render() {
   try {
     const data = await loadSeason();
     renderStats(data);
+    renderFinale(data);
     renderWeeklyWinners(data);
     renderHouseguests(data);
     renderTimeline(data);

@@ -1,17 +1,17 @@
 {
   "season": "Big Brother 28",
   "siteTitle": "BB28 Fantasy Draft",
-  "tagline": "Meet the BB28 houseguests — the Monjies/Cassie/Crush/Mike/Fins family draft is live.",
-  "lastUpdated": "2026-09-25T04:25:58Z",
-  "status": "final-3",
+  "tagline": "The votes are in. The confetti is falling. Celebrate our BB28 champions!",
+  "lastUpdated": "2026-10-02T11:58:34Z",
+  "status": "complete",
   "liveRefreshSeconds": 60,
   "seasonCalendar": {
     "premiere": "2026-07-07",
-    "finaleWindow": "October 2026",
-    "notes": "Monjies, Cassie, Crush, Mike, and Fins draft picks are locked for the /bigbrother28 family draft. Dee Valladares is assigned to Fins. Keep season updates in sync with /bb28 while preserving separate draftOwner assignments.",
+    "finaleWindow": "October 1, 2026",
+    "notes": "Season complete. Rick Devens won the 6–1 jury vote and America’s Favorite Houseguest; Taylor Brown finished second and Drew Campbell third.",
     "episodeSchedule": {
       "startDate": "2026-07-15",
-      "endDate": "2026-10-31",
+      "endDate": "2026-10-01",
       "weekdays": [
         "Wednesday",
         "Thursday",
@@ -25,7 +25,8 @@
       },
       "sourceName": "Big Brother Network / CBS schedule",
       "sourceUrl": "https://bigbrothernetwork.com/big-brother-28-schedule/"
-    }
+    },
+    "finale": "2026-10-01"
   },
   "familyMembers": [
     {
@@ -103,13 +104,13 @@
       "age": 22,
       "hometown": "",
       "occupation": "Dental Assistant",
-      "status": "active",
+      "status": "jury",
       "draftOwner": "monjies",
       "photoUrl": "https://bigbrothernetwork.com/wp-content/uploads/2026/07/bb28-cast-drew-00.jpg",
       "bio": "Drew Campbell is a 22-year-old dental Assistant.",
       "sourceName": "Big Brother Network",
       "sourceUrl": "https://bigbrothernetwork.com/big-brother-28-cast/",
-      "notes": "Won the Week 7 BB Time Capsule vote and received the Never-Not Pass. Nominated for eviction by Dee Valladares, then won the Week 7 BB Blockbuster and came off the block. Won the Week 8 Head of Household competition and nominated LaTrice Verrett, Taylor Brown, and Yash Patel. Named Rick Devens as the replacement nominee after Yash used the Veto. Won the Week 10 Pressure Cooker Power of Veto and used it on himself. Won the Week 11 Power of Veto and used it on himself. Won the final Power of Veto, used it on himself, and cast the sole vote to evict Dee Valladares, advancing to the Final 3."
+      "notes": "Won the Week 7 BB Time Capsule vote and received the Never-Not Pass. Nominated for eviction by Dee Valladares, then won the Week 7 BB Blockbuster and came off the block. Won the Week 8 Head of Household competition and nominated LaTrice Verrett, Taylor Brown, and Yash Patel. Named Rick Devens as the replacement nominee after Yash used the Veto. Won the Week 10 Pressure Cooker Power of Veto and used it on himself. Won the Week 11 Power of Veto and used it on himself. Won the final Power of Veto, used it on himself, and cast the sole vote to evict Dee Valladares, advancing to the Final 3. Evicted by final HOH Rick Devens on finale night, finishing third and becoming the seventh jury member."
     },
     {
       "id": "haley-thogmartin",
@@ -229,13 +230,13 @@
       "age": 27,
       "hometown": "Deerfield Beach, FL",
       "occupation": "Elementary School Counselor",
-      "status": "active",
+      "status": "runner-up",
       "draftOwner": "mike",
       "photoUrl": "https://bigbrothernetwork.com/wp-content/uploads/2026/07/bb28-cast-taylor-00.jpg",
       "bio": "Taylor Brown is a 27-year-old elementary School Counselor from Deerfield Beach, FL.",
       "sourceName": "Big Brother Network",
       "sourceUrl": "https://bigbrothernetwork.com/big-brother-28-cast/",
-      "notes": "Won the Week 4 Power of Veto and used it on herself. Named as the Week 10 replacement nominee after Drew Campbell used the Veto on himself. Won the Final 4 Head of Household competition, nominated Dee Valladares and Drew Campbell, and advanced to the Final 3."
+      "notes": "Won the Week 4 Power of Veto and used it on herself. Named as the Week 10 replacement nominee after Drew Campbell used the Veto on himself. Won the Final 4 Head of Household competition, nominated Dee Valladares and Drew Campbell, and advanced to the Final 3. Won Part 1 of the final HOH and finished as BB28 runner-up, earning $75,000. LaTrice Verrett cast her jury vote for Taylor."
     },
     {
       "id": "yash-patel",
@@ -271,13 +272,13 @@
       "age": 42,
       "hometown": "Macon, GA",
       "occupation": "News anchor / Survivor alum",
-      "status": "active",
+      "status": "winner",
       "draftOwner": "cassie",
       "photoUrl": "./assets/rick-devens.jpg",
       "bio": "Rick Devens is a Survivor: Edge of Extinction fan favorite joining the BB28 draft board as a crossover pick.",
       "sourceName": "Parade",
       "sourceUrl": "https://parade.com/tv/rick-devens-survivor-50-interview",
-      "notes": "Week 2 Head of Household and Power of Veto winner. Received the Week 3 Diamond Power of Veto from the BB Time Capsule. Used the Diamond Power of Veto in Week 6 to save Dee Valladares and named Kamu Kirk as the replacement nominee. Named as the Week 8 replacement nominee after Yash Patel used the Veto, then won the Week 8 BB Blockbuster and came off the block. Won the Week 9 BB Blockbuster and came off the block. Won $10,000 by triggering the Pharaoh’s Curse, then won the Week 11 Head of Household tiny-puzzle competition. Broke a 1-1 Week 11 tie to evict Melody Morris. Became the replacement nominee at Final 4 after Drew Campbell used the final Veto and advanced to the Final 3."
+      "notes": "Week 2 Head of Household and Power of Veto winner. Received the Week 3 Diamond Power of Veto from the BB Time Capsule. Used the Diamond Power of Veto in Week 6 to save Dee Valladares and named Kamu Kirk as the replacement nominee. Named as the Week 8 replacement nominee after Yash Patel used the Veto, then won the Week 8 BB Blockbuster and came off the block. Won the Week 9 BB Blockbuster and came off the block. Won $10,000 by triggering the Pharaoh’s Curse, then won the Week 11 Head of Household tiny-puzzle competition. Broke a 1-1 Week 11 tie to evict Melody Morris. Became the replacement nominee at Final 4 after Drew Campbell used the final Veto and advanced to the Final 3. Won Part 2 and Part 3 of the final HOH, evicted Drew Campbell, and defeated Taylor Brown 6–1 to win BB28 and $750,000. Also won America’s Favorite Houseguest and $50,000."
     },
     {
       "id": "dee-valladares",
@@ -935,9 +936,48 @@
         "vote": "1-0"
       },
       "notes": "Taylor Brown won the Final 4 Head of Household and nominated Dee Valladares and Drew Campbell. Drew won the final Power of Veto and used it on himself, making Rick Devens the replacement nominee. Drew cast the sole vote to evict Dee 1-0, making her the sixth member of the jury and leaving Taylor, Drew, and Rick as the Final 3."
+    },
+    {
+      "week": 12,
+      "label": "Finale · Final HOH",
+      "date": "2026-10-01",
+      "status": "Complete",
+      "hoh": {
+        "houseguestId": "rick-devens",
+        "winner": "Rick Devens"
+      },
+      "finalHohParts": {
+        "part1": "taylor-brown",
+        "part2": "rick-devens",
+        "part3": "rick-devens"
+      },
+      "evicted": {
+        "houseguestId": "drew-campbell",
+        "name": "Drew Campbell",
+        "vote": "1-0"
+      },
+      "notes": "Taylor won Part 1; Rick won Parts 2 and 3 to become final HOH and evicted Drew. Rick defeated Taylor 6–1 and also won America’s Favorite Houseguest. The final HOH earns 5 points once; preliminary parts and finale prizes do not add bonus points."
     }
   ],
   "events": [
+    {
+      "date": "2026-10-01",
+      "type": "season_finale",
+      "title": "Rick Devens wins Big Brother 28!",
+      "description": "Rick wins the $750,000 grand prize by a 6–1 jury vote. Taylor Brown is runner-up and earns $75,000; Drew Campbell finishes third."
+    },
+    {
+      "date": "2026-10-01",
+      "type": "fan_favorite",
+      "title": "America’s Favorite: Rick Devens",
+      "description": "A double celebration! Rick also wins America’s Favorite Houseguest and the $50,000 prize."
+    },
+    {
+      "date": "2026-10-01",
+      "type": "competition_result",
+      "title": "Rick wins final HOH and takes Taylor to Final 2",
+      "description": "Taylor won Part 1, Rick won Parts 2 and 3, and Rick cast the final eviction vote against Drew."
+    },
     {
       "date": "2026-09-24",
       "type": "eviction",
@@ -1337,6 +1377,11 @@
   ],
   "sources": [
     {
+      "name": "Deadline BB28 finale results and jury votes",
+      "url": "https://deadline.com/gallery/big-brother-season-28-winner-cbs/",
+      "checkedAt": "2026-10-02T11:58:34Z"
+    },
+    {
       "name": "Deadline Week 11 Final 4 eviction recap",
       "url": "https://deadline.com/2026/09/big-brother-season-28-week-11-eviction-results-final-3-1237113438/",
       "checkedAt": "2026-09-25T04:25:58Z"
@@ -1583,5 +1628,27 @@
       "color": "#7c5cff",
       "photoPosition": "center"
     }
-  ]
+  ],
+  "finale": {
+    "date": "2026-10-01",
+    "winnerId": "rick-devens",
+    "runnerUpId": "taylor-brown",
+    "thirdPlaceId": "drew-campbell",
+    "juryVote": "6–1",
+    "favoriteId": "rick-devens",
+    "sourceUrl": "https://deadline.com/gallery/big-brother-season-28-winner-cbs/",
+    "juryVotes": {
+      "rick-devens": [
+        "angela-murray",
+        "barrett-pfeiffer",
+        "yash-patel",
+        "melody-morris",
+        "dee-valladares",
+        "drew-campbell"
+      ],
+      "taylor-brown": [
+        "latrice-verrett"
+      ]
+    }
+  }
 }
