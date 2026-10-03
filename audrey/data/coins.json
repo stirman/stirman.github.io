@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-03T10:41:05.296934+00:00",
+  "updatedAt": "2026-10-03T11:53:38.953728+00:00",
   "mapAccuracy": "Regional overview only. Exact cache coordinates require Geocaching sign-in. Lines connect approximate place centers, not actual travel paths.",
   "inputCount": 20,
   "uniqueTrackableCount": 20,
@@ -1892,8 +1892,8 @@
       "id": "TBB8G36",
       "name": "Audrey’s Heart",
       "color": "#317e83",
-      "status": "In Mount Everest",
-      "distanceMiles": 171.2,
+      "status": "In Praded_1492m",
+      "distanceMiles": 171.8,
       "sourceUrl": "https://www.geocaching.com/track/details.aspx?tracker=TBB8G36",
       "logs": [
         {
@@ -2064,6 +2064,44 @@
             "provider": "OpenAI Codex",
             "machineGenerated": true
           }
+        },
+        {
+          "id": "TL27Q24X3",
+          "date": "2026-10-03",
+          "type": "Retrieve It from a Cache",
+          "text": "Poponeseme dal",
+          "event": "kubajzek retrieved it from Mount Everest",
+          "cacheName": "Mount Everest",
+          "cacheUrl": "https://www.geocaching.com/geocache/GC8AAHK",
+          "location": "Moravskoslezský kraj, Czechia",
+          "sourceUrl": "https://www.geocaching.com/live/log/TL27Q24X3",
+          "lat": 49.860275,
+          "lon": 18.0386541,
+          "precision": "Approximate city / region center, not cache coordinates",
+          "coordinateSource": "https://nominatim.openstreetmap.org/search?q=Moravskoslezsk%C3%BD+kraj%2C+Czechia&format=json&limit=1",
+          "translation": {
+            "language": "en",
+            "sourceLanguage": "cs",
+            "sourceText": "Poponeseme dal",
+            "text": "We'll carry it on a bit further",
+            "provider": "OpenAI Codex",
+            "machineGenerated": true
+          }
+        },
+        {
+          "id": "TL27Q2H2C",
+          "date": "2026-10-03",
+          "type": "Dropped Off",
+          "text": "TB in",
+          "event": "kubajzek placed it in Praded_1492m",
+          "cacheName": "Praded_1492m",
+          "cacheUrl": "https://www.geocaching.com/geocache/GCXN9X",
+          "location": "Olomoucký kraj, Czechia",
+          "sourceUrl": "https://www.geocaching.com/live/log/TL27Q2H2C",
+          "lat": 49.8591058,
+          "lon": 16.9561267,
+          "precision": "Approximate city / region center, not cache coordinates",
+          "coordinateSource": "https://nominatim.openstreetmap.org/search?q=Olomouck%C3%BD+kraj%2C+Czechia&format=json&limit=1"
         }
       ],
       "familyMiles": 0
