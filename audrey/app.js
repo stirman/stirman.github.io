@@ -84,7 +84,7 @@
     for (const place of state.fixed) {
       const content = element('div'); content.append(element('strong', '', `${place.id} · ${place.name}`), element('p', '', `${place.location} · Fixed geocache`), element('p', 'precision', place.precision));
       const source = link(place.sourceUrl, 'View geocache ↗'); if (source) content.append(source);
-      const marker = L.circleMarker([place.lat, place.lon], { radius: 11, color: place.color, weight: 3, fillColor: '#fffdf8', fillOpacity: 1 }).bindPopup(content).bindTooltip(`${place.id} · ${place.location} · Fixed cache`).addTo(state.layer);
+      const marker = L.circleMarker([place.lat, place.lon], { radius: 5, color: place.color, weight: 2, fillColor: '#fffdf8', fillOpacity: 1 }).bindPopup(content).bindTooltip(`${place.id} · ${place.location} · Fixed cache`).addTo(state.layer);
       state.markers.set(place.id, marker); if (state.selected === null) bounds.push([place.lat, place.lon]);
     }
   }
@@ -120,13 +120,17 @@
         if (!regions.has(key)) regions.set(key, { point: points[i], logs: [] });
         regions.get(key).logs.push(log);
       });
-      for (const region of regions.values()) {
+      const currentKey = logs.length ? `${logs[logs.length - 1].lat},${logs[logs.length - 1].lon}` : null;
+      for (const [regionKey, region] of regions.entries()) {
         const latest = region.logs[region.logs.length - 1];
         const content = popup(coin, latest);
         content.prepend(element('p', '', `${region.logs.length} ${region.logs.length === 1 ? 'journal entry' : 'journal entries'} in this approximate region · ${coin.id}`));
         if (region.logs.length > 1) content.append(element('p', '', 'Latest log shown here. Every log appears in the journal below.'));
-        const marker = L.circleMarker(region.point, { radius: 8, color: '#fffdf8', weight: 2, fillColor: coin.color, fillOpacity: 1 }).bindPopup(content).addTo(state.layer);
-        marker.bindTooltip(`${coin.name} · ${coin.id} · ${region.logs.length} regional logs`, { direction: 'top' });
+        const isCurrent = regionKey === currentKey;
+        const marker = isCurrent
+          ? L.marker(region.point, { icon: L.divIcon({ className: 'current-heart-marker', html: `<span class="current-heart" style="color:${coin.color}" aria-hidden="true">♥</span>`, iconSize: [16, 16], iconAnchor: [8, 8] }) }).bindPopup(content).addTo(state.layer)
+          : L.circleMarker(region.point, { radius: 3.5, color: '#fffdf8', weight: 1.5, fillColor: coin.color, fillOpacity: 1 }).bindPopup(content).addTo(state.layer);
+        marker.bindTooltip(`${coin.name} · ${coin.id} · ${region.logs.length} regional logs${isCurrent ? ' · Current location' : ''}`, { direction: 'top' });
         region.logs.forEach(log => state.markers.set(markerKey(coin, log), marker));
         bounds.push(region.point);
       }
