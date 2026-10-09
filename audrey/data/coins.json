@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-09T18:38:48.054905+00:00",
+  "updatedAt": "2026-10-09T19:38:42.012293+00:00",
   "mapAccuracy": "Regional overview only. Exact cache coordinates require Geocaching sign-in. Lines connect approximate place centers, not actual travel paths.",
   "inputCount": 20,
   "uniqueTrackableCount": 20,
@@ -8,8 +8,8 @@
       "id": "TBB8FK9",
       "name": "Audrey’s Heart",
       "color": "#c85270",
-      "status": "In the hands of JezMys.cz.",
-      "distanceMiles": 6847.8,
+      "status": "In Kdy zas něco uděláš 8?",
+      "distanceMiles": 6914.3,
       "sourceUrl": "https://www.geocaching.com/track/details.aspx?tracker=TBB8FK9",
       "logs": [
         {
@@ -1884,6 +1884,21 @@
           "lon": 13.8307479,
           "precision": "Approximate city / region center, not cache coordinates",
           "coordinateSource": "https://nominatim.openstreetmap.org/search?q=St%C5%99edo%C4%8Desk%C3%BD+kraj%2C+Czechia&format=json&limit=1"
+        },
+        {
+          "id": "TL27T4ZA0",
+          "date": "2026-10-09",
+          "type": "Dropped Off",
+          "text": "",
+          "event": "JezMys.cz placed it in Kdy zas něco uděláš 8?",
+          "cacheName": "Kdy zas něco uděláš 8?",
+          "cacheUrl": "https://www.geocaching.com/geocache/GCBYCNF",
+          "location": "Liberecký kraj, Czechia",
+          "sourceUrl": "https://www.geocaching.com/live/log/TL27T4ZA0",
+          "lat": 50.747604,
+          "lon": 14.9903103,
+          "precision": "Approximate city / region center, not cache coordinates",
+          "coordinateSource": "https://nominatim.openstreetmap.org/search?q=Libereck%C3%BD+kraj%2C+Czechia&format=json&limit=1"
         }
       ],
       "familyMiles": 0
