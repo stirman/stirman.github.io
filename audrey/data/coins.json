@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-10T06:38:53.987447+00:00",
+  "updatedAt": "2026-10-10T07:39:51.563988+00:00",
   "mapAccuracy": "Regional overview only. Exact cache coordinates require Geocaching sign-in. Lines connect approximate place centers, not actual travel paths.",
   "inputCount": 20,
   "uniqueTrackableCount": 20,
@@ -8,7 +8,7 @@
       "id": "TBB8FK9",
       "name": "Audrey’s Heart",
       "color": "#c85270",
-      "status": "In Kdy zas něco uděláš 8?",
+      "status": "In the hands of Sug@r.",
       "distanceMiles": 6914.3,
       "sourceUrl": "https://www.geocaching.com/track/details.aspx?tracker=TBB8FK9",
       "logs": [
@@ -1895,6 +1895,21 @@
           "cacheUrl": "https://www.geocaching.com/geocache/GCBYCNF",
           "location": "Liberecký kraj, Czechia",
           "sourceUrl": "https://www.geocaching.com/live/log/TL27T4ZA0",
+          "lat": 50.747604,
+          "lon": 14.9903103,
+          "precision": "Approximate city / region center, not cache coordinates",
+          "coordinateSource": "https://nominatim.openstreetmap.org/search?q=Libereck%C3%BD+kraj%2C+Czechia&format=json&limit=1"
+        },
+        {
+          "id": "TL27T7H84",
+          "date": "2026-10-10",
+          "type": "Retrieve It from a Cache",
+          "text": "Let´s go to travel...",
+          "event": "Sug@r retrieved it from Kdy zas něco uděláš 8?",
+          "cacheName": "Kdy zas něco uděláš 8?",
+          "cacheUrl": "https://www.geocaching.com/geocache/GCBYCNF",
+          "location": "Liberecký kraj, Czechia",
+          "sourceUrl": "https://www.geocaching.com/live/log/TL27T7H84",
           "lat": 50.747604,
           "lon": 14.9903103,
           "precision": "Approximate city / region center, not cache coordinates",
