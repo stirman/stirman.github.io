@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-10T18:38:37.078462+00:00",
+  "updatedAt": "2026-10-10T19:39:44.544904+00:00",
   "mapAccuracy": "Regional overview only. Exact cache coordinates require Geocaching sign-in. Lines connect approximate place centers, not actual travel paths.",
   "inputCount": 20,
   "uniqueTrackableCount": 20,
@@ -1899,6 +1899,28 @@
           "lon": 14.9903103,
           "precision": "Approximate city / region center, not cache coordinates",
           "coordinateSource": "https://nominatim.openstreetmap.org/search?q=Libereck%C3%BD+kraj%2C+Czechia&format=json&limit=1"
+        },
+        {
+          "id": "TL27TFFYK",
+          "date": "2026-10-09",
+          "type": "Discovered It",
+          "text": "Viděn v Liberci na eventu. Díky za sdílení.",
+          "event": "Klokyna discovered it",
+          "cacheName": null,
+          "cacheUrl": null,
+          "location": "",
+          "sourceUrl": "https://www.geocaching.com/live/log/TL27TFFYK",
+          "lat": null,
+          "lon": null,
+          "precision": null,
+          "translation": {
+            "language": "en",
+            "sourceLanguage": "cs",
+            "sourceText": "Viděn v Liberci na eventu. Díky za sdílení.",
+            "text": "Seen in Liberec at an event. Thanks for sharing.",
+            "provider": "OpenAI Codex",
+            "machineGenerated": true
+          }
         },
         {
           "id": "TL27T7H84",
