@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-10T01:38:48.556174+00:00",
+  "updatedAt": "2026-10-10T02:40:55.807884+00:00",
   "mapAccuracy": "Regional overview only. Exact cache coordinates require Geocaching sign-in. Lines connect approximate place centers, not actual travel paths.",
   "inputCount": 20,
   "uniqueTrackableCount": 20,
@@ -2642,7 +2642,7 @@
       "id": "TBBFVQ8",
       "name": "Audrey’s Heart",
       "color": "#5a6e1f",
-      "status": "In the hands of the owner.",
+      "status": "In the hands of themasseyfamily1.",
       "distanceMiles": 0,
       "sourceUrl": "https://www.geocaching.com/track/details.aspx?tracker=TBBFVQ8",
       "logs": [
@@ -2660,6 +2660,20 @@
           "lon": -118.755997,
           "precision": "Approximate city / region center, not cache coordinates",
           "coordinateSource": "https://nominatim.openstreetmap.org/search?q=California%2C+United+States&format=json&limit=1"
+        },
+        {
+          "id": "TL27T6VXJ",
+          "date": "2026-10-03",
+          "type": "Grab It (Not from a Cache)",
+          "text": "Audrey's heart ready to travel the world!",
+          "event": "themasseyfamily1 grabbed it",
+          "cacheName": null,
+          "cacheUrl": null,
+          "location": "",
+          "sourceUrl": "https://www.geocaching.com/live/log/TL27T6VXJ",
+          "lat": null,
+          "lon": null,
+          "precision": null
         }
       ],
       "familyMiles": 0
