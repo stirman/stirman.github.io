@@ -103,11 +103,23 @@ function renderAll() {
   setText("metric-card-image-rate", `${percent(overview.cardImages30, Math.max(1, overview.insights30))} of insights have cards`);
 
   renderBarChart($("insight-chart"), state.metrics.series.dailyInsights, "insight", "insights", true);
-  renderBarChart($("users-growth-chart"), state.metrics.series.totalUsers, "total user", "total users", true);
+  renderBarChart($("users-growth-chart"), groupGrowthSeries(state.metrics.series.totalUsers), "total user", "total users", true);
   renderRetention(overview.retainedUsers, overview.totalUsers);
   renderInteresting();
   renderUsers();
   renderCosts();
+}
+
+function groupGrowthSeries(series, maxBars = 24) {
+  const items = series || [];
+  const size = Math.max(1, Math.ceil(items.length / maxBars));
+  const groups = [];
+  for (let i = 0; i < items.length; i += size) {
+    const first = items[i];
+    const last = items[Math.min(i + size, items.length) - 1];
+    groups.push({ ...last, periodLabel: first === last ? last.label : `${first.label} – ${last.label}` });
+  }
+  return groups;
 }
 
 function renderBarChart(container, series, singular, plural, sparseLabels = false) {
@@ -126,7 +138,7 @@ function renderBarChart(container, series, singular, plural, sparseLabels = fals
     if (showsLabel && index === 0) bar.classList.add("label-start");
     if (showsLabel && index === items.length - 1) bar.classList.add("label-end");
     const noun = item.count === 1 ? singular : plural;
-    bar.dataset.tip = `${item.label} · ${formatNumber(item.count || 0)} ${noun}`;
+    bar.dataset.tip = `${item.periodLabel || item.label} · ${formatNumber(item.count || 0)} ${noun}${item.periodLabel && item.periodLabel !== item.label ? " (period end)" : ""}`;
     bar.setAttribute("aria-label", bar.dataset.tip);
     bar.tabIndex = 0;
     container.appendChild(bar);

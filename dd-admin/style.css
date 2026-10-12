@@ -59,21 +59,22 @@ h2 { font-size: clamp(22px, 3vw, 30px); }
 .metric-card span { display: block; font-size: 13px; font-weight: 800; }
 .metric-card strong { display: block; margin: 11px 0 7px; color: var(--plum); font-size: clamp(30px, 4vw, 46px); letter-spacing: -.05em; }
 .metric-card small { line-height: 1.35; }
-.content-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: 18px; align-items: start; }
-.panel { padding: 22px; }
+.content-grid { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr); gap: 18px; align-items: start; }
+.panel { padding: 22px; min-width: 0; }
+.bar-chart { min-width: 0; max-width: 100%; }
 .full-width { grid-column: 1 / -1; }
 .panel-heading { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 18px; }
 .user-heading { display: grid; align-items: center; grid-template-columns: minmax(190px, max-content) minmax(260px, 1fr); }
 .user-heading h2 { white-space: nowrap; }
 .pill { display: inline-flex; align-items: center; border-radius: 999px; padding: 8px 11px; background: rgba(245,157,100,.16); color: var(--rose); font-size: 12px; font-weight: 850; }
-.bar-chart { display: grid; grid-template-columns: repeat(var(--bar-count, 30), minmax(7px, 1fr)); align-items: end; gap: 6px; height: 278px; padding: 16px 0 38px; border-bottom: 1px solid var(--line); }
+.bar-chart { display: grid; grid-template-columns: repeat(var(--bar-count, 30), minmax(0, 1fr)); align-items: end; gap: 6px; height: 278px; padding: 16px 0 38px; border-bottom: 1px solid var(--line); }
 .bar { position: relative; min-height: 6px; border-radius: 999px 999px 4px 4px; background: linear-gradient(180deg, #d36f86, #f2a46a); box-shadow: inset 0 1px 0 rgba(255,255,255,.34); }
 .bar::after { content: attr(data-label); position: absolute; left: 50%; bottom: -28px; transform: translateX(-50%) rotate(-45deg); transform-origin: center; color: var(--muted); font-size: 10px; opacity: .86; }
 .bar:focus-visible { outline: 3px solid rgba(200,111,125,.32); outline-offset: 3px; }
 .bar-chart.sparse-labels .bar::after { bottom: -24px; transform: translateX(-50%); white-space: nowrap; }
 .bar-chart.sparse-labels .bar.label-start::after { left: 0; transform: none; text-align: left; }
 .bar-chart.sparse-labels .bar.label-end::after { left: auto; right: 0; transform: none; text-align: right; }
-.growth-chart { grid-template-columns: repeat(var(--bar-count, 1), minmax(8px, 1fr)); overflow-x: auto; overflow-y: visible; }
+.growth-chart { grid-template-columns: repeat(var(--bar-count, 1), minmax(0, 1fr)); }
 .growth-chart .bar { background: linear-gradient(180deg, #8f6fb8, #d36f86); }
 .line-chart { width: 100%; min-height: 278px; height: 278px; overflow: visible; }
 .axis-label { fill: var(--muted); font-size: 11px; }

@@ -1,0 +1,17 @@
+const assert = require('node:assert/strict');
+const fs = require('node:fs');
+const vm = require('node:vm');
+const source = fs.readFileSync(__dirname + '/script.js', 'utf8');
+const match = source.match(/function groupGrowthSeries\(series, maxBars = 24\) \{[\s\S]*?\n\}/);
+assert.ok(match, 'bounded cumulative growth grouping must exist');
+const context = {}; vm.createContext(context); vm.runInContext(match[0], context);
+const rows = Array.from({length:174}, (_,i)=>({date:String(i),label:`Day ${i}`,count:i+2}));
+const groups = context.groupGrowthSeries(rows);
+assert.ok(groups.length <= 24);
+assert.equal(groups.at(-1).count, rows.at(-1).count);
+assert.equal(groups[0].count, rows[7].count, 'use period-end count, never sum cumulative totals');
+assert.equal(groups[0].periodLabel, 'Day 0 – Day 7');
+assert.equal(rows.length,174);
+assert.equal(context.groupGrowthSeries([]).length,0);
+assert.equal(context.groupGrowthSeries(rows.slice(0,3)).length,3);
+console.log('Growth grouping checks passed');
