@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-13T07:38:36.293957+00:00",
+  "updatedAt": "2026-10-13T08:39:58.487792+00:00",
   "mapAccuracy": "Regional overview only. Exact cache coordinates require Geocaching sign-in. Lines connect approximate place centers, not actual travel paths.",
   "inputCount": 20,
   "uniqueTrackableCount": 20,
@@ -2323,7 +2323,7 @@
     {
       "id": "TBB8FXD",
       "sourceUrl": "https://www.geocaching.com/track/details.aspx?tracker=TBB8FXD",
-      "status": "In Parkplatz Gangenhoferweg",
+      "status": "In the hands of Goofy92.",
       "distanceMiles": 1279.9,
       "logs": [
         {
@@ -2447,6 +2447,29 @@
           "lon": 7.5543751,
           "precision": "Approximate city / region center, not cache coordinates",
           "coordinateSource": "https://nominatim.openstreetmap.org/search?q=Nordrhein-Westfalen%2C+Germany&format=json&limit=1"
+        },
+        {
+          "id": "TL27V91M0",
+          "date": "2026-10-13",
+          "type": "Retrieve It from a Cache",
+          "text": "Mal schauen wo ich diesen TB mit hinnehmen werden.",
+          "event": "Goofy92 retrieved it from Parkplatz Gangenhoferweg",
+          "cacheName": "Parkplatz Gangenhoferweg",
+          "cacheUrl": "https://www.geocaching.com/geocache/GC9WPA9",
+          "location": "Nordrhein-Westfalen, Germany",
+          "sourceUrl": "https://www.geocaching.com/live/log/TL27V91M0",
+          "lat": 51.4789205,
+          "lon": 7.5543751,
+          "precision": "Approximate city / region center, not cache coordinates",
+          "coordinateSource": "https://nominatim.openstreetmap.org/search?q=Nordrhein-Westfalen%2C+Germany&format=json&limit=1",
+          "translation": {
+            "language": "en",
+            "sourceLanguage": "de",
+            "sourceText": "Mal schauen wo ich diesen TB mit hinnehmen werden.",
+            "text": "Let's see where I'll take this TB along to.",
+            "provider": "OpenAI Codex",
+            "machineGenerated": true
+          }
         }
       ],
       "name": "Audrey’s Heart",
