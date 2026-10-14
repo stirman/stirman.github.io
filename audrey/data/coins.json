@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-14T15:44:37.886016+00:00",
+  "updatedAt": "2026-10-14T17:00:26.085429+00:00",
   "mapAccuracy": "Regional overview only. Exact cache coordinates require Geocaching sign-in. Lines connect approximate place centers, not actual travel paths.",
   "inputCount": 20,
   "uniqueTrackableCount": 20,
@@ -2323,8 +2323,8 @@
     {
       "id": "TBB8FXD",
       "sourceUrl": "https://www.geocaching.com/track/details.aspx?tracker=TBB8FXD",
-      "status": "In the hands of Goofy92.",
-      "distanceMiles": 1279.9,
+      "status": "In TB Hotel Mondbasis Alpha",
+      "distanceMiles": 1416.6,
       "logs": [
         {
           "id": "TL27G0G4K",
@@ -2470,6 +2470,21 @@
             "provider": "OpenAI Codex",
             "machineGenerated": true
           }
+        },
+        {
+          "id": "TL27VJYK1",
+          "date": "2026-10-14",
+          "type": "Dropped Off",
+          "text": "",
+          "event": "Goofy92 placed it in TB Hotel Mondbasis Alpha",
+          "cacheName": "TB Hotel Mondbasis Alpha",
+          "cacheUrl": "https://www.geocaching.com/geocache/GC4YJ6F",
+          "location": "Hessen, Germany",
+          "sourceUrl": "https://www.geocaching.com/live/log/TL27VJYK1",
+          "lat": 50.6080651,
+          "lon": 9.0284647,
+          "precision": "Approximate city / region center, not cache coordinates",
+          "coordinateSource": "https://nominatim.openstreetmap.org/search?q=Hessen%2C+Germany&format=json&limit=1"
         }
       ],
       "name": "Audrey’s Heart",
@@ -2520,8 +2535,8 @@
       "id": "TBBFVQK",
       "name": "Audrey’s Heart",
       "color": "#3d9970",
-      "status": "In the hands of jamielaurin.",
-      "distanceMiles": 0,
+      "status": "In Aruba Sunset",
+      "distanceMiles": 3654.0,
       "sourceUrl": "https://www.geocaching.com/track/details.aspx?tracker=TBBFVQK",
       "logs": [
         {
@@ -2552,6 +2567,21 @@
           "lat": null,
           "lon": null,
           "precision": null
+        },
+        {
+          "id": "TL27VK9Z3",
+          "date": "2026-10-14",
+          "type": "Dropped Off",
+          "text": "Take this travel bug as far from here as you can & log it in another cache !! Audrey Massy moved to Heaven at only 20 years young. She wanted  to travel the world. Let’s help her !! Her family has put her ashes in a resin heart & gotten this travel bug. 💕✨ thank you.",
+          "event": "jamielaurin placed it in Aruba Sunset",
+          "cacheName": "Aruba Sunset",
+          "cacheUrl": "https://www.geocaching.com/geocache/GC7FWC1",
+          "location": "Aruba",
+          "sourceUrl": "https://www.geocaching.com/live/log/TL27VK9Z3",
+          "lat": 12.5013629,
+          "lon": -69.9618475,
+          "precision": "Approximate city / region center, not cache coordinates",
+          "coordinateSource": "https://nominatim.openstreetmap.org/search?q=Aruba&format=json&limit=1"
         }
       ],
       "familyMiles": 0
