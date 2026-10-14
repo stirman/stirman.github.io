@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-14T13:38:40.243372+00:00",
+  "updatedAt": "2026-10-14T14:40:05.066513+00:00",
   "mapAccuracy": "Regional overview only. Exact cache coordinates require Geocaching sign-in. Lines connect approximate place centers, not actual travel paths.",
   "inputCount": 20,
   "uniqueTrackableCount": 20,
@@ -2520,7 +2520,7 @@
       "id": "TBBFVQK",
       "name": "Audrey’s Heart",
       "color": "#3d9970",
-      "status": "In the hands of the owner.",
+      "status": "In the hands of jamielaurin.",
       "distanceMiles": 0,
       "sourceUrl": "https://www.geocaching.com/track/details.aspx?tracker=TBBFVQK",
       "logs": [
@@ -2538,6 +2538,20 @@
           "lon": -118.755997,
           "precision": "Approximate city / region center, not cache coordinates",
           "coordinateSource": "https://nominatim.openstreetmap.org/search?q=California%2C+United+States&format=json&limit=1"
+        },
+        {
+          "id": "TL27VJAEM",
+          "date": "2026-10-14",
+          "type": "Grab It (Not from a Cache)",
+          "text": "One of Audrey’s travels bugs 💕✨ TRVC11",
+          "event": "jamielaurin grabbed it",
+          "cacheName": null,
+          "cacheUrl": null,
+          "location": "",
+          "sourceUrl": "https://www.geocaching.com/live/log/TL27VJAEM",
+          "lat": null,
+          "lon": null,
+          "precision": null
         }
       ],
       "familyMiles": 0
