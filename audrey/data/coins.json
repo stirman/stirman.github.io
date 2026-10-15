@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-15T17:40:20.819369+00:00",
+  "updatedAt": "2026-10-15T18:41:47.198000+00:00",
   "mapAccuracy": "Regional overview only. Exact cache coordinates require Geocaching sign-in. Lines connect approximate place centers, not actual travel paths.",
   "inputCount": 20,
   "uniqueTrackableCount": 20,
@@ -2323,8 +2323,8 @@
     {
       "id": "TBB8FXD",
       "sourceUrl": "https://www.geocaching.com/track/details.aspx?tracker=TBB8FXD",
-      "status": "In TB Hotel Mondbasis Alpha",
-      "distanceMiles": 1416.6,
+      "status": "In the hands of SPS_BG.",
+      "distanceMiles": 1427.8,
       "logs": [
         {
           "id": "TL27G0G4K",
@@ -2485,6 +2485,44 @@
           "lon": 9.0284647,
           "precision": "Approximate city / region center, not cache coordinates",
           "coordinateSource": "https://nominatim.openstreetmap.org/search?q=Hessen%2C+Germany&format=json&limit=1"
+        },
+        {
+          "id": "TL27VWDJ3",
+          "date": "2026-10-15",
+          "type": "Retrieve It from a Cache",
+          "text": "Weiter geht's",
+          "event": "SPS_BG retrieved it from TB Hotel Mondbasis Alpha",
+          "cacheName": "TB Hotel Mondbasis Alpha",
+          "cacheUrl": "https://www.geocaching.com/geocache/GC4YJ6F",
+          "location": "Hessen, Germany",
+          "sourceUrl": "https://www.geocaching.com/live/log/TL27VWDJ3",
+          "lat": 50.6080651,
+          "lon": 9.0284647,
+          "precision": "Approximate city / region center, not cache coordinates",
+          "coordinateSource": "https://nominatim.openstreetmap.org/search?q=Hessen%2C+Germany&format=json&limit=1",
+          "translation": {
+            "language": "en",
+            "sourceLanguage": "de",
+            "sourceText": "Weiter geht's",
+            "text": "Let's keep going",
+            "provider": "OpenAI Codex",
+            "machineGenerated": true
+          }
+        },
+        {
+          "id": "TL27VWDZR",
+          "date": "2026-10-15",
+          "type": "Visited",
+          "text": "",
+          "event": "SPS_BG took it to Burgruine Landskron",
+          "cacheName": "Burgruine Landskron",
+          "cacheUrl": "https://www.geocaching.com/geocache/GCB28DG",
+          "location": "Rheinland-Pfalz, Germany",
+          "sourceUrl": "https://www.geocaching.com/live/log/TL27VWDZR",
+          "lat": 49.9531599,
+          "lon": 7.310646,
+          "precision": "Approximate city / region center, not cache coordinates",
+          "coordinateSource": "https://nominatim.openstreetmap.org/search?q=Rheinland-Pfalz%2C+Germany&format=json&limit=1"
         }
       ],
       "name": "Audrey’s Heart",
