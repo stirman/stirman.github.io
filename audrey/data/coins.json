@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-16T17:38:52.512750+00:00",
+  "updatedAt": "2026-10-16T18:38:45.307522+00:00",
   "mapAccuracy": "Regional overview only. Exact cache coordinates require Geocaching sign-in. Lines connect approximate place centers, not actual travel paths.",
   "inputCount": 20,
   "uniqueTrackableCount": 20,
@@ -2324,7 +2324,7 @@
       "id": "TBB8FXD",
       "sourceUrl": "https://www.geocaching.com/track/details.aspx?tracker=TBB8FXD",
       "status": "In the hands of SPS_BG.",
-      "distanceMiles": 1427.8,
+      "distanceMiles": 1464.8,
       "logs": [
         {
           "id": "TL27G0G4K",
@@ -2523,6 +2523,66 @@
           "lon": 7.310646,
           "precision": "Approximate city / region center, not cache coordinates",
           "coordinateSource": "https://nominatim.openstreetmap.org/search?q=Rheinland-Pfalz%2C+Germany&format=json&limit=1"
+        },
+        {
+          "id": "TL27W3127",
+          "date": "2026-10-16",
+          "type": "Visited",
+          "text": "",
+          "event": "SPS_BG took it to Parkplatz zum Ausblick",
+          "cacheName": "Parkplatz zum Ausblick",
+          "cacheUrl": "https://www.geocaching.com/geocache/GCBQ9V2",
+          "location": "Rheinland-Pfalz, Germany",
+          "sourceUrl": "https://www.geocaching.com/live/log/TL27W3127",
+          "lat": 49.9531599,
+          "lon": 7.310646,
+          "precision": "Approximate city / region center, not cache coordinates",
+          "coordinateSource": "https://nominatim.openstreetmap.org/search?q=Rheinland-Pfalz%2C+Germany&format=json&limit=1"
+        },
+        {
+          "id": "TL27W31Q0",
+          "date": "2026-10-16",
+          "type": "Visited",
+          "text": "",
+          "event": "SPS_BG took it to X Heilig-Kreuz-Cache St. Jakobus.1",
+          "cacheName": "X Heilig-Kreuz-Cache St. Jakobus.1",
+          "cacheUrl": "https://www.geocaching.com/geocache/GC7N8CA",
+          "location": "Hessen, Germany",
+          "sourceUrl": "https://www.geocaching.com/live/log/TL27W31Q0",
+          "lat": 50.6080651,
+          "lon": 9.0284647,
+          "precision": "Approximate city / region center, not cache coordinates",
+          "coordinateSource": "https://nominatim.openstreetmap.org/search?q=Hessen%2C+Germany&format=json&limit=1"
+        },
+        {
+          "id": "TL27W31T3",
+          "date": "2026-10-16",
+          "type": "Visited",
+          "text": "",
+          "event": "SPS_BG took it to Der Tempel",
+          "cacheName": "Der Tempel",
+          "cacheUrl": "https://www.geocaching.com/geocache/GC3HAHR",
+          "location": "Hessen, Germany",
+          "sourceUrl": "https://www.geocaching.com/live/log/TL27W31T3",
+          "lat": 50.6080651,
+          "lon": 9.0284647,
+          "precision": "Approximate city / region center, not cache coordinates",
+          "coordinateSource": "https://nominatim.openstreetmap.org/search?q=Hessen%2C+Germany&format=json&limit=1"
+        },
+        {
+          "id": "TL27W32XZ",
+          "date": "2026-10-16",
+          "type": "Visited",
+          "text": "",
+          "event": "SPS_BG took it to 👻 Germania 👻",
+          "cacheName": "👻 Germania 👻",
+          "cacheUrl": "https://www.geocaching.com/geocache/GCAJH4E",
+          "location": "Hessen, Germany",
+          "sourceUrl": "https://www.geocaching.com/live/log/TL27W32XZ",
+          "lat": 50.6080651,
+          "lon": 9.0284647,
+          "precision": "Approximate city / region center, not cache coordinates",
+          "coordinateSource": "https://nominatim.openstreetmap.org/search?q=Hessen%2C+Germany&format=json&limit=1"
         }
       ],
       "name": "Audrey’s Heart",
