@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-10-17T22:01:20Z",
-  "generatedAtHuman": "Oct 17, 2026 at 03:01 PM PDT",
+  "generatedAt": "2026-10-18T01:01:27Z",
+  "generatedAtHuman": "Oct 17, 2026 at 06:01 PM PDT",
   "source": "scheduled-cache",
   "refreshCadenceMinutes": 180,
   "overview": {
     "totalUsers": 83,
     "launchUsers": 79,
     "active7": 5,
-    "active30": 14,
+    "active30": 13,
     "premium": 17,
     "paidSubscribers": 6,
     "grantedPremium": 11,
@@ -1126,11 +1126,6 @@
   "series": {
     "dailyInsights": [
       {
-        "date": "2026-09-18",
-        "label": "Sep 18",
-        "count": 0
-      },
-      {
         "date": "2026-09-19",
         "label": "Sep 19",
         "count": 0
@@ -1274,14 +1269,14 @@
         "date": "2026-10-17",
         "label": "Oct 17",
         "count": 0
+      },
+      {
+        "date": "2026-10-18",
+        "label": "Oct 18",
+        "count": 0
       }
     ],
     "dailyCardImages": [
-      {
-        "date": "2026-09-18",
-        "label": "Sep 18",
-        "count": 0
-      },
       {
         "date": "2026-09-19",
         "label": "Sep 19",
@@ -1425,6 +1420,11 @@
       {
         "date": "2026-10-17",
         "label": "Oct 17",
+        "count": 0
+      },
+      {
+        "date": "2026-10-18",
+        "label": "Oct 18",
         "count": 0
       }
     ],
@@ -2323,17 +2323,14 @@
         "date": "2026-10-17",
         "label": "Oct 17",
         "count": 81
+      },
+      {
+        "date": "2026-10-18",
+        "label": "Oct 18",
+        "count": 81
       }
     ],
     "dailyCosts": [
-      {
-        "date": "2026-09-18",
-        "label": "Sep 18",
-        "textDollars": 0.0,
-        "imageDollars": 0.0,
-        "otherDollars": 0.0,
-        "totalDollars": 0.0
-      },
       {
         "date": "2026-09-19",
         "label": "Sep 19",
@@ -2561,6 +2558,14 @@
       {
         "date": "2026-10-17",
         "label": "Oct 17",
+        "textDollars": 0.0,
+        "imageDollars": 0.0,
+        "otherDollars": 0.0,
+        "totalDollars": 0.0
+      },
+      {
+        "date": "2026-10-18",
+        "label": "Oct 18",
         "textDollars": 0.0,
         "imageDollars": 0.0,
         "otherDollars": 0.0,
@@ -3014,14 +3019,6 @@
     ],
     "daily": [
       {
-        "date": "2026-09-18",
-        "label": "Sep 18",
-        "textDollars": 0.0,
-        "imageDollars": 0.0,
-        "otherDollars": 0.0,
-        "totalDollars": 0.0
-      },
-      {
         "date": "2026-09-19",
         "label": "Sep 19",
         "textDollars": 0.0,
@@ -3248,6 +3245,14 @@
       {
         "date": "2026-10-17",
         "label": "Oct 17",
+        "textDollars": 0.0,
+        "imageDollars": 0.0,
+        "otherDollars": 0.0,
+        "totalDollars": 0.0
+      },
+      {
+        "date": "2026-10-18",
+        "label": "Oct 18",
         "textDollars": 0.0,
         "imageDollars": 0.0,
         "otherDollars": 0.0,
