@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-10-18T22:01:21Z",
-  "generatedAtHuman": "Oct 18, 2026 at 03:01 PM PDT",
+  "generatedAt": "2026-10-19T01:01:15Z",
+  "generatedAtHuman": "Oct 18, 2026 at 06:01 PM PDT",
   "source": "scheduled-cache",
   "refreshCadenceMinutes": 180,
   "overview": {
     "totalUsers": 83,
     "launchUsers": 79,
-    "active7": 5,
-    "active30": 13,
+    "active7": 4,
+    "active30": 12,
     "premium": 17,
     "paidSubscribers": 6,
     "grantedPremium": 11,
@@ -1126,11 +1126,6 @@
   "series": {
     "dailyInsights": [
       {
-        "date": "2026-09-19",
-        "label": "Sep 19",
-        "count": 0
-      },
-      {
         "date": "2026-09-20",
         "label": "Sep 20",
         "count": 1
@@ -1274,14 +1269,14 @@
         "date": "2026-10-18",
         "label": "Oct 18",
         "count": 1
+      },
+      {
+        "date": "2026-10-19",
+        "label": "Oct 19",
+        "count": 0
       }
     ],
     "dailyCardImages": [
-      {
-        "date": "2026-09-19",
-        "label": "Sep 19",
-        "count": 0
-      },
       {
         "date": "2026-09-20",
         "label": "Sep 20",
@@ -1425,6 +1420,11 @@
       {
         "date": "2026-10-18",
         "label": "Oct 18",
+        "count": 0
+      },
+      {
+        "date": "2026-10-19",
+        "label": "Oct 19",
         "count": 0
       }
     ],
@@ -2328,17 +2328,14 @@
         "date": "2026-10-18",
         "label": "Oct 18",
         "count": 81
+      },
+      {
+        "date": "2026-10-19",
+        "label": "Oct 19",
+        "count": 81
       }
     ],
     "dailyCosts": [
-      {
-        "date": "2026-09-19",
-        "label": "Sep 19",
-        "textDollars": 0.0,
-        "imageDollars": 0.0,
-        "otherDollars": 0.0,
-        "totalDollars": 0.0
-      },
       {
         "date": "2026-09-20",
         "label": "Sep 20",
@@ -2568,6 +2565,14 @@
         "label": "Oct 18",
         "textDollars": 0.0,
         "imageDollars": 0.0,
+        "otherDollars": 0.0021,
+        "totalDollars": 0.0021
+      },
+      {
+        "date": "2026-10-19",
+        "label": "Oct 19",
+        "textDollars": 0.0,
+        "imageDollars": 0.0,
         "otherDollars": 0.0,
         "totalDollars": 0.0
       }
@@ -2575,10 +2580,10 @@
   },
   "costs": {
     "available": true,
-    "totalDollars": 36.4806,
+    "totalDollars": 36.4827,
     "textDollars": 0.0921,
     "imageDollars": 24.7124,
-    "otherDollars": 11.6762,
+    "otherDollars": 11.6783,
     "byLineItem": [
       {
         "name": "gpt-image-2.5-sunburst image, input",
@@ -2709,16 +2714,16 @@
         "dollars": 0.0086
       },
       {
+        "name": "gpt-6-luna, cache writes",
+        "dollars": 0.0085
+      },
+      {
         "name": "gpt-4o-transcribe-diarize audio, input",
         "dollars": 0.0081
       },
       {
         "name": "gpt-4o-transcribe-diarize text, output",
         "dollars": 0.0078
-      },
-      {
-        "name": "gpt-6-luna, cache writes",
-        "dollars": 0.0072
       },
       {
         "name": "gpt-4o-transcribe audio, input",
@@ -2733,16 +2738,16 @@
         "dollars": 0.0053
       },
       {
+        "name": "gpt-6-luna, output",
+        "dollars": 0.0052
+      },
+      {
         "name": "gpt-4o-transcribe text, output",
         "dollars": 0.005
       },
       {
         "name": "gpt-5.5-2026-04-23, input",
         "dollars": 0.0046
-      },
-      {
-        "name": "gpt-6-luna, output",
-        "dollars": 0.0044
       },
       {
         "name": "gpt-4o-2024-11-20, output",
@@ -3019,14 +3024,6 @@
     ],
     "daily": [
       {
-        "date": "2026-09-19",
-        "label": "Sep 19",
-        "textDollars": 0.0,
-        "imageDollars": 0.0,
-        "otherDollars": 0.0,
-        "totalDollars": 0.0
-      },
-      {
         "date": "2026-09-20",
         "label": "Sep 20",
         "textDollars": 0.0,
@@ -3253,6 +3250,14 @@
       {
         "date": "2026-10-18",
         "label": "Oct 18",
+        "textDollars": 0.0,
+        "imageDollars": 0.0,
+        "otherDollars": 0.0021,
+        "totalDollars": 0.0021
+      },
+      {
+        "date": "2026-10-19",
+        "label": "Oct 19",
         "textDollars": 0.0,
         "imageDollars": 0.0,
         "otherDollars": 0.0,
