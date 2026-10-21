@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-21T20:38:52.235849+00:00",
+  "updatedAt": "2026-10-21T21:41:10.847437+00:00",
   "mapAccuracy": "Regional overview only. Exact cache coordinates require Geocaching sign-in. Lines connect approximate place centers, not actual travel paths.",
   "inputCount": 20,
   "uniqueTrackableCount": 20,
@@ -2678,7 +2678,7 @@
       "id": "TBBFVQK",
       "name": "Audrey’s Heart",
       "color": "#3d9970",
-      "status": "In Aruba Sunset",
+      "status": "In the hands of Real-B-Team.",
       "distanceMiles": 3654.0,
       "sourceUrl": "https://www.geocaching.com/track/details.aspx?tracker=TBBFVQK",
       "logs": [
@@ -2721,6 +2721,21 @@
           "cacheUrl": "https://www.geocaching.com/geocache/GC7FWC1",
           "location": "Aruba",
           "sourceUrl": "https://www.geocaching.com/live/log/TL27VK9Z3",
+          "lat": 12.5013629,
+          "lon": -69.9618475,
+          "precision": "Approximate city / region center, not cache coordinates",
+          "coordinateSource": "https://nominatim.openstreetmap.org/search?q=Aruba&format=json&limit=1"
+        },
+        {
+          "id": "TL27XKBZA",
+          "date": "2026-10-21",
+          "type": "Retrieve It from a Cache",
+          "text": "On our way back to\nCanada 🇨🇦",
+          "event": "Real-B-Team retrieved it from Aruba Sunset",
+          "cacheName": "Aruba Sunset",
+          "cacheUrl": "https://www.geocaching.com/geocache/GC7FWC1",
+          "location": "Aruba",
+          "sourceUrl": "https://www.geocaching.com/live/log/TL27XKBZA",
           "lat": 12.5013629,
           "lon": -69.9618475,
           "precision": "Approximate city / region center, not cache coordinates",
