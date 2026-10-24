@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-23T22:01:17Z",
-  "generatedAtHuman": "Oct 23, 2026 at 03:01 PM PDT",
+  "generatedAt": "2026-10-24T04:01:17Z",
+  "generatedAtHuman": "Oct 23, 2026 at 09:01 PM PDT",
   "source": "scheduled-cache",
   "refreshCadenceMinutes": 180,
   "overview": {
@@ -12,8 +12,8 @@
     "paidSubscribers": 6,
     "grantedPremium": 11,
     "retainedUsers": 19,
-    "insights30": 22,
-    "entries30": 47,
+    "insights30": 21,
+    "entries30": 46,
     "cardImages30": 5
   },
   "users": [
@@ -572,7 +572,7 @@
       "lastActiveAt": "2026-10-23T19:29:49Z",
       "isPaidSubscriber": false,
       "grantedPremium": false,
-      "insights30": 5,
+      "insights30": 4,
       "cardImages30": 0,
       "retained": true
     },
@@ -1134,7 +1134,7 @@
     },
     {
       "title": "Depth signal",
-      "body": "Users averaged about 2.1 inputs per generated insight in the last 30 days."
+      "body": "Users averaged about 2.2 inputs per generated insight in the last 30 days."
     },
     {
       "title": "Retention pulse",
@@ -1152,11 +1152,6 @@
   "series": {
     "dailyInsights": [
       {
-        "date": "2026-09-24",
-        "label": "Sep 24",
-        "count": 1
-      },
-      {
         "date": "2026-09-25",
         "label": "Sep 25",
         "count": 2
@@ -1299,16 +1294,16 @@
       {
         "date": "2026-10-23",
         "label": "Oct 23",
+        "count": 0
+      },
+      {
+        "date": "2026-10-24",
+        "label": "Oct 24",
         "count": 0
       }
     ],
     "dailyCardImages": [
       {
-        "date": "2026-09-24",
-        "label": "Sep 24",
-        "count": 0
-      },
-      {
         "date": "2026-09-25",
         "label": "Sep 25",
         "count": 0
@@ -1451,6 +1446,11 @@
       {
         "date": "2026-10-23",
         "label": "Oct 23",
+        "count": 0
+      },
+      {
+        "date": "2026-10-24",
+        "label": "Oct 24",
         "count": 0
       }
     ],
@@ -2379,17 +2379,14 @@
         "date": "2026-10-23",
         "label": "Oct 23",
         "count": 83
+      },
+      {
+        "date": "2026-10-24",
+        "label": "Oct 24",
+        "count": 83
       }
     ],
     "dailyCosts": [
-      {
-        "date": "2026-09-24",
-        "label": "Sep 24",
-        "textDollars": 0.0854,
-        "imageDollars": 19.7658,
-        "otherDollars": 11.6721,
-        "totalDollars": 31.5233
-      },
       {
         "date": "2026-09-25",
         "label": "Sep 25",
@@ -2619,6 +2616,14 @@
         "label": "Oct 23",
         "textDollars": 0.0,
         "imageDollars": 0.0,
+        "otherDollars": 0.0007,
+        "totalDollars": 0.0007
+      },
+      {
+        "date": "2026-10-24",
+        "label": "Oct 24",
+        "textDollars": 0.0,
+        "imageDollars": 0.0,
         "otherDollars": 0.0,
         "totalDollars": 0.0
       }
@@ -2626,377 +2631,73 @@
   },
   "costs": {
     "available": true,
-    "totalDollars": 38.5857,
-    "textDollars": 0.0902,
-    "imageDollars": 26.8118,
-    "otherDollars": 11.6837,
+    "totalDollars": 7.0632,
+    "textDollars": 0.0048,
+    "imageDollars": 7.046,
+    "otherDollars": 0.0124,
     "byLineItem": [
-      {
-        "name": "gpt-image-2.5-sunburst image, input",
-        "dollars": 8.5362
-      },
-      {
-        "name": "gpt-image-2.5-sunburst image, output",
-        "dollars": 6.6115
-      },
-      {
-        "name": "gpt-6-astra, cached input",
-        "dollars": 3.9191
-      },
       {
         "name": "gpt-image-1 image, output",
         "dollars": 3.9104
       },
       {
-        "name": "gpt-6-astra, cache writes",
-        "dollars": 3.2045
-      },
-      {
-        "name": "gpt-image-2.5-sunburst text, input",
-        "dollars": 3.1111
-      },
-      {
         "name": "gpt-image-2-2026-04-21 image, output",
-        "dollars": 2.4755
-      },
-      {
-        "name": "gpt-6-astra, output",
-        "dollars": 2.3608
-      },
-      {
-        "name": "gpt-image-2.5-flare image, input",
-        "dollars": 1.0708
+        "dollars": 2.4696
       },
       {
         "name": "gpt-image-2.5-flare image, output",
-        "dollars": 0.765
-      },
-      {
-        "name": "gpt-6-sol, output",
-        "dollars": 0.6822
-      },
-      {
-        "name": "gpt-5.6-sol, input",
-        "dollars": 0.4897
-      },
-      {
-        "name": "gpt-5.6-sol, output",
-        "dollars": 0.4415
-      },
-      {
-        "name": "gpt-6-sol, cache writes",
-        "dollars": 0.2043
-      },
-      {
-        "name": "gpt-image-2.5-flare text, input",
-        "dollars": 0.1185
+        "dollars": 0.3704
       },
       {
         "name": "gpt-image-2-2026-04-21 text, input",
-        "dollars": 0.1153
+        "dollars": 0.1152
       },
       {
         "name": "gpt-image-1 text, input",
         "dollars": 0.0976
       },
       {
-        "name": "gpt-6-astra, input",
-        "dollars": 0.091
+        "name": "gpt-image-2.5-sunburst image, output",
+        "dollars": 0.0412
       },
       {
-        "name": "gpt-5.4-nano-2026-03-17, output",
-        "dollars": 0.0382
-      },
-      {
-        "name": "gpt-5.6-sol, cache writes",
-        "dollars": 0.0363
-      },
-      {
-        "name": "gpt-5.4-nano-2026-03-17, input",
-        "dollars": 0.0335
-      },
-      {
-        "name": "gpt-4o-2024-08-06, input",
-        "dollars": 0.0263
-      },
-      {
-        "name": "gpt-5.2-2025-12-11, output",
-        "dollars": 0.0258
-      },
-      {
-        "name": "gpt-5.4-2026-03-05, input",
-        "dollars": 0.0217
-      },
-      {
-        "name": "gpt-5-2025-08-07, output",
-        "dollars": 0.0189
-      },
-      {
-        "name": "gpt-5.2-2025-12-11, input",
-        "dollars": 0.0158
-      },
-      {
-        "name": "gpt-5.4-mini-2026-03-17, output",
-        "dollars": 0.0157
-      },
-      {
-        "name": "gpt-5-2025-08-07, input",
-        "dollars": 0.0152
-      },
-      {
-        "name": "gpt-5.4-mini-2026-03-17, input",
-        "dollars": 0.0141
+        "name": "gpt-image-2.5-flare text, input",
+        "dollars": 0.0411
       },
       {
         "name": "gpt-6-luna, cache writes",
-        "dollars": 0.0119
-      },
-      {
-        "name": "gpt-4o-mini-2024-07-18, input",
-        "dollars": 0.0114
-      },
-      {
-        "name": "gpt-5.6-sol, cached input",
-        "dollars": 0.011
-      },
-      {
-        "name": "gpt-5.4-2026-03-05, output",
-        "dollars": 0.0086
-      },
-      {
-        "name": "gpt-4o-transcribe-diarize audio, input",
-        "dollars": 0.0081
-      },
-      {
-        "name": "gpt-4o-transcribe-diarize text, output",
         "dollars": 0.0078
       },
       {
         "name": "gpt-6-luna, output",
-        "dollars": 0.0073
+        "dollars": 0.0045
       },
       {
-        "name": "gpt-4o-transcribe audio, input",
-        "dollars": 0.0069
-      },
-      {
-        "name": "gpt-4o-2024-08-06, output",
-        "dollars": 0.0064
-      },
-      {
-        "name": "gpt-5.5-2026-04-23, output",
-        "dollars": 0.0053
-      },
-      {
-        "name": "gpt-4o-transcribe text, output",
-        "dollars": 0.005
-      },
-      {
-        "name": "gpt-5.5-2026-04-23, input",
-        "dollars": 0.0046
-      },
-      {
-        "name": "gpt-4o-2024-11-20, output",
-        "dollars": 0.0043
-      },
-      {
-        "name": "gpt-4o-2024-11-20, input",
-        "dollars": 0.0037
-      },
-      {
-        "name": "gpt-4o-mini-2024-07-18, output",
+        "name": "gpt-4o-mini-2024-07-18, input",
         "dollars": 0.003
       },
       {
-        "name": "gpt-5.6-luna, output",
-        "dollars": 0.0023
-      },
-      {
-        "name": "gpt-4, input",
-        "dollars": 0.0022
-      },
-      {
-        "name": "gpt-4, output",
+        "name": "gpt-4o-mini-2024-07-18, output",
         "dollars": 0.0018
       },
       {
-        "name": "gpt-5-mini-2025-08-07, output",
-        "dollars": 0.0018
-      },
-      {
-        "name": "gpt-5.6-luna, cache writes",
-        "dollars": 0.001
-      },
-      {
-        "name": "gpt-3.5-turbo-0125, input",
-        "dollars": 0.0008
-      },
-      {
-        "name": "gpt-3.5-turbo-0125, output",
+        "name": "gpt-image-2.5-sunburst text, input",
         "dollars": 0.0005
       },
       {
-        "name": "gpt-4-turbo-2024-04-09, output",
-        "dollars": 0.0004
-      },
-      {
         "name": "gpt-4o-mini-2024-07-18, cached input",
-        "dollars": 0.0004
-      },
-      {
-        "name": "gpt-5.4-nano-2026-03-17, cached input",
-        "dollars": 0.0004
-      },
-      {
-        "name": "gpt-4-turbo-2024-04-09, input",
-        "dollars": 0.0003
-      },
-      {
-        "name": "gpt-5.1-2025-11-13, output",
-        "dollars": 0.0003
-      },
-      {
-        "name": "gpt-5.6-luna, input",
-        "dollars": 0.0003
-      },
-      {
-        "name": "gpt-4.1-mini-2025-04-14, input",
-        "dollars": 0.0002
-      },
-      {
-        "name": "gpt-4o-transcribe-diarize text, input",
-        "dollars": 0.0002
-      },
-      {
-        "name": "gpt-4o-transcribe text, input",
-        "dollars": 0.0002
-      },
-      {
-        "name": "gpt-5.3-codex, output",
-        "dollars": 0.0002
-      },
-      {
-        "name": "gpt-6-sol, input",
-        "dollars": 0.0002
-      },
-      {
-        "name": "gpt-4.1-2025-04-14, output",
-        "dollars": 0.0001
-      },
-      {
-        "name": "gpt-4.1-mini-2025-04-14, output",
-        "dollars": 0.0001
-      },
-      {
-        "name": "gpt-5.6-terra, output",
-        "dollars": 0.0001
-      },
-      {
-        "name": "gpt-5-mini-2025-08-07, input",
-        "dollars": 0.0001
-      },
-      {
-        "name": "o4-mini-2025-04-16, output",
-        "dollars": 0.0001
-      },
-      {
-        "name": "gpt-4.1-2025-04-14, cached input",
         "dollars": 0.0
       },
       {
-        "name": "gpt-4.1-2025-04-14, input",
+        "name": "gpt-image-1 image, cached input",
         "dollars": 0.0
       },
       {
-        "name": "gpt-4.1-mini-2025-04-14, cached input",
+        "name": "gpt-image-1 image, input",
         "dollars": 0.0
       },
       {
-        "name": "gpt-4.1-nano-2025-04-14, cached input",
-        "dollars": 0.0
-      },
-      {
-        "name": "gpt-4.1-nano-2025-04-14, input",
-        "dollars": 0.0
-      },
-      {
-        "name": "gpt-4.1-nano-2025-04-14, output",
-        "dollars": 0.0
-      },
-      {
-        "name": "gpt-4o-2024-08-06, cached input",
-        "dollars": 0.0
-      },
-      {
-        "name": "gpt-4o-2024-11-20, cached input",
-        "dollars": 0.0
-      },
-      {
-        "name": "gpt-5.1-2025-11-13, cached input",
-        "dollars": 0.0
-      },
-      {
-        "name": "gpt-5.1-2025-11-13, input",
-        "dollars": 0.0
-      },
-      {
-        "name": "gpt-5-2025-08-07, cached input",
-        "dollars": 0.0
-      },
-      {
-        "name": "gpt-5.2-2025-12-11, cached input",
-        "dollars": 0.0
-      },
-      {
-        "name": "gpt-5.3-codex, cached input",
-        "dollars": 0.0
-      },
-      {
-        "name": "gpt-5.3-codex, input",
-        "dollars": 0.0
-      },
-      {
-        "name": "gpt-5.4-2026-03-05, cached input",
-        "dollars": 0.0
-      },
-      {
-        "name": "gpt-5.4-mini-2026-03-17, cached input",
-        "dollars": 0.0
-      },
-      {
-        "name": "gpt-5.5-2026-04-23, cached input",
-        "dollars": 0.0
-      },
-      {
-        "name": "gpt-5.6-luna, cached input",
-        "dollars": 0.0
-      },
-      {
-        "name": "gpt-5.6-terra, cache writes",
-        "dollars": 0.0
-      },
-      {
-        "name": "gpt-5.6-terra, cached input",
-        "dollars": 0.0
-      },
-      {
-        "name": "gpt-5.6-terra, input",
-        "dollars": 0.0
-      },
-      {
-        "name": "gpt-5-mini-2025-08-07, cached input",
-        "dollars": 0.0
-      },
-      {
-        "name": "gpt-6-luna, cached input",
-        "dollars": 0.0
-      },
-      {
-        "name": "gpt-6-luna, input",
-        "dollars": 0.0
-      },
-      {
-        "name": "gpt-6-sol, cached input",
+        "name": "gpt-image-1 text, cached input",
         "dollars": 0.0
       },
       {
@@ -3016,7 +2717,23 @@
         "dollars": 0.0
       },
       {
+        "name": "gpt-6-luna, cache writes - 12hr",
+        "dollars": 0.0
+      },
+      {
+        "name": "gpt-6-luna, cached input",
+        "dollars": 0.0
+      },
+      {
+        "name": "gpt-6-luna, input",
+        "dollars": 0.0
+      },
+      {
         "name": "gpt-image-2.5-flare image, cached input",
+        "dollars": 0.0
+      },
+      {
+        "name": "gpt-image-2.5-flare image, input",
         "dollars": 0.0
       },
       {
@@ -3028,55 +2745,15 @@
         "dollars": 0.0
       },
       {
+        "name": "gpt-image-2.5-sunburst image, input",
+        "dollars": 0.0
+      },
+      {
         "name": "gpt-image-2.5-sunburst text, cached input",
-        "dollars": 0.0
-      },
-      {
-        "name": "o4-mini-2025-04-16, cached input",
-        "dollars": 0.0
-      },
-      {
-        "name": "o4-mini-2025-04-16, input",
-        "dollars": 0.0
-      },
-      {
-        "name": "text-embedding-3-large",
-        "dollars": 0.0
-      },
-      {
-        "name": "text-embedding-3-small",
-        "dollars": 0.0
-      },
-      {
-        "name": "ada v2",
-        "dollars": 0.0
-      },
-      {
-        "name": "gpt-image-1 image, cached input",
-        "dollars": 0.0
-      },
-      {
-        "name": "gpt-image-1 image, input",
-        "dollars": 0.0
-      },
-      {
-        "name": "gpt-image-1 text, cached input",
-        "dollars": 0.0
-      },
-      {
-        "name": "gpt-6-luna, cache writes - 12hr",
         "dollars": 0.0
       }
     ],
     "daily": [
-      {
-        "date": "2026-09-24",
-        "label": "Sep 24",
-        "textDollars": 0.0854,
-        "imageDollars": 19.7658,
-        "otherDollars": 11.6721,
-        "totalDollars": 31.5233
-      },
       {
         "date": "2026-09-25",
         "label": "Sep 25",
@@ -3306,6 +2983,14 @@
         "label": "Oct 23",
         "textDollars": 0.0,
         "imageDollars": 0.0,
+        "otherDollars": 0.0007,
+        "totalDollars": 0.0007
+      },
+      {
+        "date": "2026-10-24",
+        "label": "Oct 24",
+        "textDollars": 0.0,
+        "imageDollars": 0.0,
         "otherDollars": 0.0,
         "totalDollars": 0.0
       }
@@ -3313,6 +2998,6 @@
     "error": null,
     "subscriptionPrice": 7.99,
     "estimatedRevenue": 47.94,
-    "grossMargin": 9.35
+    "grossMargin": 40.88
   }
 }
