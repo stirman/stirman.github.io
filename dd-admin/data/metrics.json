@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-28T19:00:36Z",
-  "generatedAtHuman": "Oct 28, 2026 at 12:00 PM PDT",
+  "generatedAt": "2026-10-28T22:00:29Z",
+  "generatedAtHuman": "Oct 28, 2026 at 03:00 PM PDT",
   "source": "scheduled-cache",
   "refreshCadenceMinutes": 180,
   "overview": {
@@ -13,7 +13,7 @@
     "grantedPremium": 11,
     "retainedUsers": 19,
     "insights30": 20,
-    "entries30": 47,
+    "entries30": 49,
     "cardImages30": 7
   },
   "users": [
@@ -568,8 +568,8 @@
       "displayName": "Jane Russell",
       "email": "groovystarr@hotmail.co.uk",
       "createdAt": "2026-06-07T10:11:54Z",
-      "lastLoginAt": "2026-10-28T10:14:49Z",
-      "lastActiveAt": "2026-10-28T10:14:49Z",
+      "lastLoginAt": "2026-10-28T20:53:20Z",
+      "lastActiveAt": "2026-10-28T20:53:20Z",
       "isPaidSubscriber": false,
       "grantedPremium": false,
       "insights30": 3,
@@ -1134,7 +1134,7 @@
     },
     {
       "title": "Depth signal",
-      "body": "Users averaged about 2.4 inputs per generated insight in the last 30 days."
+      "body": "Users averaged about 2.5 inputs per generated insight in the last 30 days."
     },
     {
       "title": "Retention pulse",
