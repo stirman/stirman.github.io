@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-10-30T13:00:42Z",
-  "generatedAtHuman": "Oct 30, 2026 at 06:00 AM PDT",
+  "generatedAt": "2026-10-30T16:00:38Z",
+  "generatedAtHuman": "Oct 30, 2026 at 09:00 AM PDT",
   "source": "scheduled-cache",
   "refreshCadenceMinutes": 180,
   "overview": {
-    "totalUsers": 85,
-    "launchUsers": 81,
-    "active7": 4,
-    "active30": 11,
+    "totalUsers": 86,
+    "launchUsers": 82,
+    "active7": 5,
+    "active30": 12,
     "premium": 17,
     "paidSubscribers": 6,
     "grantedPremium": 11,
@@ -934,6 +934,19 @@
       "createdAt": "2026-09-18T12:29:10Z",
       "lastLoginAt": "2026-09-18T12:29:10Z",
       "lastActiveAt": "2026-09-18T12:29:10Z",
+      "isPaidSubscriber": false,
+      "grantedPremium": false,
+      "insights30": 0,
+      "cardImages30": 0,
+      "retained": false
+    },
+    {
+      "id": "zlxacMdevGZzX14RWzjAZw91HaC2",
+      "displayName": "Paul Slater",
+      "email": "yk8tpb7pth@privaterelay.appleid.com",
+      "createdAt": "2026-10-30T13:45:19Z",
+      "lastLoginAt": "2026-10-30T13:45:19Z",
+      "lastActiveAt": "2026-10-30T13:45:19Z",
       "isPaidSubscriber": false,
       "grantedPremium": false,
       "insights30": 0,
@@ -2413,7 +2426,7 @@
       {
         "date": "2026-10-30",
         "label": "Oct 30",
-        "count": 83
+        "count": 84
       }
     ],
     "dailyCosts": [
