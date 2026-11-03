@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-02T23:00:35Z",
-  "generatedAtHuman": "Nov 02, 2026 at 03:00 PM PST",
+  "generatedAt": "2026-11-03T02:00:35Z",
+  "generatedAtHuman": "Nov 02, 2026 at 06:00 PM PST",
   "source": "scheduled-cache",
   "refreshCadenceMinutes": 180,
   "overview": {
@@ -1165,11 +1165,6 @@
   "series": {
     "dailyInsights": [
       {
-        "date": "2026-10-04",
-        "label": "Oct 4",
-        "count": 0
-      },
-      {
         "date": "2026-10-05",
         "label": "Oct 5",
         "count": 0
@@ -1312,16 +1307,16 @@
       {
         "date": "2026-11-02",
         "label": "Nov 2",
+        "count": 0
+      },
+      {
+        "date": "2026-11-03",
+        "label": "Nov 3",
         "count": 0
       }
     ],
     "dailyCardImages": [
       {
-        "date": "2026-10-04",
-        "label": "Oct 4",
-        "count": 0
-      },
-      {
         "date": "2026-10-05",
         "label": "Oct 5",
         "count": 0
@@ -1464,6 +1459,11 @@
       {
         "date": "2026-11-02",
         "label": "Nov 2",
+        "count": 0
+      },
+      {
+        "date": "2026-11-03",
+        "label": "Nov 3",
         "count": 0
       }
     ],
@@ -2442,17 +2442,14 @@
         "date": "2026-11-02",
         "label": "Nov 2",
         "count": 84
+      },
+      {
+        "date": "2026-11-03",
+        "label": "Nov 3",
+        "count": 84
       }
     ],
     "dailyCosts": [
-      {
-        "date": "2026-10-04",
-        "label": "Oct 4",
-        "textDollars": 0.0,
-        "imageDollars": 0.0,
-        "otherDollars": 0.0,
-        "totalDollars": 0.0
-      },
       {
         "date": "2026-10-05",
         "label": "Oct 5",
@@ -2681,6 +2678,14 @@
         "date": "2026-11-02",
         "label": "Nov 2",
         "textDollars": 0.0,
+        "imageDollars": 0.0481,
+        "otherDollars": 0.0004,
+        "totalDollars": 0.0485
+      },
+      {
+        "date": "2026-11-03",
+        "label": "Nov 3",
+        "textDollars": 0.0,
         "imageDollars": 0.0,
         "otherDollars": 0.0,
         "totalDollars": 0.0
@@ -2689,10 +2694,10 @@
   },
   "costs": {
     "available": true,
-    "totalDollars": 6.5756,
+    "totalDollars": 6.6241,
     "textDollars": 0.003,
-    "imageDollars": 6.5572,
-    "otherDollars": 0.0154,
+    "imageDollars": 6.6053,
+    "otherDollars": 0.0158,
     "byLineItem": [
       {
         "name": "gpt-image-1 image, output",
@@ -2704,7 +2709,7 @@
       },
       {
         "name": "gpt-image-2.5-flare image, output",
-        "dollars": 0.5351
+        "dollars": 0.5762
       },
       {
         "name": "gpt-image-1 text, input",
@@ -2716,7 +2721,7 @@
       },
       {
         "name": "gpt-image-2.5-flare text, input",
-        "dollars": 0.0724
+        "dollars": 0.0793
       },
       {
         "name": "gpt-image-2.5-sunburst image, output",
@@ -2724,11 +2729,11 @@
       },
       {
         "name": "gpt-6-luna, cache writes",
-        "dollars": 0.0098
+        "dollars": 0.0101
       },
       {
         "name": "gpt-6-luna, output",
-        "dollars": 0.0056
+        "dollars": 0.0057
       },
       {
         "name": "gpt-4o-mini-2024-07-18, input",
@@ -2813,14 +2818,6 @@
     ],
     "daily": [
       {
-        "date": "2026-10-04",
-        "label": "Oct 4",
-        "textDollars": 0.0,
-        "imageDollars": 0.0,
-        "otherDollars": 0.0,
-        "totalDollars": 0.0
-      },
-      {
         "date": "2026-10-05",
         "label": "Oct 5",
         "textDollars": 0.0,
@@ -3048,6 +3045,14 @@
         "date": "2026-11-02",
         "label": "Nov 2",
         "textDollars": 0.0,
+        "imageDollars": 0.0481,
+        "otherDollars": 0.0004,
+        "totalDollars": 0.0485
+      },
+      {
+        "date": "2026-11-03",
+        "label": "Nov 3",
+        "textDollars": 0.0,
         "imageDollars": 0.0,
         "otherDollars": 0.0,
         "totalDollars": 0.0
@@ -3056,6 +3061,6 @@
     "error": null,
     "subscriptionPrice": 7.99,
     "estimatedRevenue": 47.94,
-    "grossMargin": 41.36
+    "grossMargin": 41.32
   }
 }
