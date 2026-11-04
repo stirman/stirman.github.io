@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-11-03T23:00:39Z",
-  "generatedAtHuman": "Nov 03, 2026 at 03:00 PM PST",
+  "generatedAt": "2026-11-04T02:00:56Z",
+  "generatedAtHuman": "Nov 03, 2026 at 06:00 PM PST",
   "source": "scheduled-cache",
   "refreshCadenceMinutes": 180,
   "overview": {
     "totalUsers": 86,
     "launchUsers": 82,
-    "active7": 5,
+    "active7": 4,
     "active30": 11,
     "premium": 17,
     "paidSubscribers": 6,
@@ -1165,11 +1165,6 @@
   "series": {
     "dailyInsights": [
       {
-        "date": "2026-10-05",
-        "label": "Oct 5",
-        "count": 0
-      },
-      {
         "date": "2026-10-06",
         "label": "Oct 6",
         "count": 1
@@ -1313,15 +1308,15 @@
         "date": "2026-11-03",
         "label": "Nov 3",
         "count": 1
+      },
+      {
+        "date": "2026-11-04",
+        "label": "Nov 4",
+        "count": 0
       }
     ],
     "dailyCardImages": [
       {
-        "date": "2026-10-05",
-        "label": "Oct 5",
-        "count": 0
-      },
-      {
         "date": "2026-10-06",
         "label": "Oct 6",
         "count": 0
@@ -1464,6 +1459,11 @@
       {
         "date": "2026-11-03",
         "label": "Nov 3",
+        "count": 0
+      },
+      {
+        "date": "2026-11-04",
+        "label": "Nov 4",
         "count": 0
       }
     ],
@@ -2447,17 +2447,14 @@
         "date": "2026-11-03",
         "label": "Nov 3",
         "count": 84
+      },
+      {
+        "date": "2026-11-04",
+        "label": "Nov 4",
+        "count": 84
       }
     ],
     "dailyCosts": [
-      {
-        "date": "2026-10-05",
-        "label": "Oct 5",
-        "textDollars": 0.0,
-        "imageDollars": 0.0,
-        "otherDollars": 0.0,
-        "totalDollars": 0.0
-      },
       {
         "date": "2026-10-06",
         "label": "Oct 6",
@@ -2687,6 +2684,14 @@
         "label": "Nov 3",
         "textDollars": 0.0,
         "imageDollars": 0.0,
+        "otherDollars": 0.0003,
+        "totalDollars": 0.0003
+      },
+      {
+        "date": "2026-11-04",
+        "label": "Nov 4",
+        "textDollars": 0.0,
+        "imageDollars": 0.0,
         "otherDollars": 0.0,
         "totalDollars": 0.0
       }
@@ -2694,10 +2699,10 @@
   },
   "costs": {
     "available": true,
-    "totalDollars": 6.6241,
+    "totalDollars": 6.6245,
     "textDollars": 0.003,
     "imageDollars": 6.6053,
-    "otherDollars": 0.0158,
+    "otherDollars": 0.0162,
     "byLineItem": [
       {
         "name": "gpt-image-1 image, output",
@@ -2729,11 +2734,11 @@
       },
       {
         "name": "gpt-6-luna, cache writes",
-        "dollars": 0.0101
+        "dollars": 0.0103
       },
       {
         "name": "gpt-6-luna, output",
-        "dollars": 0.0057
+        "dollars": 0.0058
       },
       {
         "name": "gpt-4o-mini-2024-07-18, input",
@@ -2818,14 +2823,6 @@
     ],
     "daily": [
       {
-        "date": "2026-10-05",
-        "label": "Oct 5",
-        "textDollars": 0.0,
-        "imageDollars": 0.0,
-        "otherDollars": 0.0,
-        "totalDollars": 0.0
-      },
-      {
         "date": "2026-10-06",
         "label": "Oct 6",
         "textDollars": 0.0011,
@@ -3052,6 +3049,14 @@
       {
         "date": "2026-11-03",
         "label": "Nov 3",
+        "textDollars": 0.0,
+        "imageDollars": 0.0,
+        "otherDollars": 0.0003,
+        "totalDollars": 0.0003
+      },
+      {
+        "date": "2026-11-04",
+        "label": "Nov 4",
         "textDollars": 0.0,
         "imageDollars": 0.0,
         "otherDollars": 0.0,
