@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-04T15:38:42.364856+00:00",
+  "updatedAt": "2026-11-04T17:38:47.733661+00:00",
   "mapAccuracy": "Regional overview only. Exact cache coordinates require Geocaching sign-in. Lines connect approximate place centers, not actual travel paths.",
   "inputCount": 20,
   "uniqueTrackableCount": 20,
@@ -2188,7 +2188,7 @@
       "id": "TBB8G42",
       "name": "Audrey’s Heart",
       "color": "#78845c",
-      "status": "In the hands of the owner.",
+      "status": "In the hands of Actiontrinity.",
       "distanceMiles": 0,
       "sourceUrl": "https://www.geocaching.com/track/details.aspx?tracker=TBB8G42",
       "logs": [
@@ -2206,6 +2206,20 @@
           "lon": -118.755997,
           "precision": "Approximate city / region center, not cache coordinates",
           "coordinateSource": "https://nominatim.openstreetmap.org/search?q=California%2C+United+States&format=json&limit=1"
+        },
+        {
+          "id": "TL281HTK3",
+          "date": "2026-11-04",
+          "type": "Grab It (Not from a Cache)",
+          "text": "Found it in Key West buy a cash not big enough to be in so I took it and hopefully I’ll find another cash to put it in or it’s going back to New York with me",
+          "event": "Actiontrinity grabbed it",
+          "cacheName": null,
+          "cacheUrl": null,
+          "location": "",
+          "sourceUrl": "https://www.geocaching.com/live/log/TL281HTK3",
+          "lat": null,
+          "lon": null,
+          "precision": null
         }
       ],
       "familyMiles": 0
