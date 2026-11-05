@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-05T17:00:46Z",
-  "generatedAtHuman": "Nov 05, 2026 at 09:00 AM PST",
+  "generatedAt": "2026-11-05T20:00:35Z",
+  "generatedAtHuman": "Nov 05, 2026 at 12:00 PM PST",
   "source": "scheduled-cache",
   "refreshCadenceMinutes": 180,
   "overview": {
@@ -1159,7 +1159,7 @@
     },
     {
       "title": "Win-back opportunity",
-      "body": "15 premium/granted users have not been active in 14+ days."
+      "body": "16 premium/granted users have not been active in 14+ days."
     }
   ],
   "series": {
