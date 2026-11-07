@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-07T15:38:46.503230+00:00",
+  "updatedAt": "2026-11-07T16:38:44.257524+00:00",
   "mapAccuracy": "Regional overview only. Exact cache coordinates require Geocaching sign-in. Lines connect approximate place centers, not actual travel paths.",
   "inputCount": 20,
   "uniqueTrackableCount": 20,
@@ -2338,7 +2338,7 @@
       "id": "TBB8FXD",
       "sourceUrl": "https://www.geocaching.com/track/details.aspx?tracker=TBB8FXD",
       "status": "In the hands of SPS_BG.",
-      "distanceMiles": 1526.3,
+      "distanceMiles": 1686.8,
       "logs": [
         {
           "id": "TL27G0G4K",
@@ -2642,6 +2642,21 @@
           "lon": 9.0284647,
           "precision": "Approximate city / region center, not cache coordinates",
           "coordinateSource": "https://nominatim.openstreetmap.org/search?q=Hessen%2C+Germany&format=json&limit=1"
+        },
+        {
+          "id": "TL2827TYG",
+          "date": "2026-11-07",
+          "type": "Visited",
+          "text": "",
+          "event": "SPS_BG took it to Herbst-CiTo 2026",
+          "cacheName": "Herbst-CiTo 2026",
+          "cacheUrl": "https://www.geocaching.com/geocache/GCBYHTB",
+          "location": "Sachsen, Germany",
+          "sourceUrl": "https://www.geocaching.com/live/log/TL2827TYG",
+          "lat": 50.9295798,
+          "lon": 13.4585052,
+          "precision": "Approximate city / region center, not cache coordinates",
+          "coordinateSource": "https://nominatim.openstreetmap.org/search?q=Sachsen%2C+Germany&format=json&limit=1"
         }
       ],
       "name": "Audrey’s Heart",
