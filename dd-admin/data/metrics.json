@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-11-11T14:00:38Z",
-  "generatedAtHuman": "Nov 11, 2026 at 06:00 AM PST",
+  "generatedAt": "2026-11-11T17:00:45Z",
+  "generatedAtHuman": "Nov 11, 2026 at 09:00 AM PST",
   "source": "scheduled-cache",
   "refreshCadenceMinutes": 180,
   "overview": {
-    "totalUsers": 88,
-    "launchUsers": 84,
-    "active7": 6,
-    "active30": 13,
+    "totalUsers": 89,
+    "launchUsers": 85,
+    "active7": 7,
+    "active30": 14,
     "premium": 19,
     "paidSubscribers": 8,
     "grantedPremium": 11,
@@ -837,6 +837,19 @@
       "retained": false
     },
     {
+      "id": "wRkDBCvBfPbUWfXtVKKiXJ1ihSm1",
+      "displayName": "Madisen Dean",
+      "email": "mrd70399@yahoo.com",
+      "createdAt": "2026-11-11T16:06:33Z",
+      "lastLoginAt": "2026-11-11T16:06:33Z",
+      "lastActiveAt": "2026-11-11T16:06:33Z",
+      "isPaidSubscriber": false,
+      "grantedPremium": false,
+      "insights30": 0,
+      "cardImages30": 0,
+      "retained": false
+    },
+    {
       "id": "CCeE8syoBDZOXuRg5WxcdTDuSpr1",
       "displayName": "Mathilde Broutin",
       "email": "mathilde.broutin44@gmail.com",
@@ -1177,7 +1190,7 @@
     },
     {
       "title": "Retention pulse",
-      "body": "22% of users have returned across multiple weeks."
+      "body": "21% of users have returned across multiple weeks."
     },
     {
       "title": "Most engaged recently",
@@ -2512,7 +2525,7 @@
       {
         "date": "2026-11-11",
         "label": "Nov 11",
-        "count": 86
+        "count": 87
       }
     ],
     "dailyCosts": [
