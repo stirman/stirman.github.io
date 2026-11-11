@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-11T17:38:48.760190+00:00",
+  "updatedAt": "2026-11-11T18:38:42.123727+00:00",
   "mapAccuracy": "Regional overview only. Exact cache coordinates require Geocaching sign-in. Lines connect approximate place centers, not actual travel paths.",
   "inputCount": 20,
   "uniqueTrackableCount": 20,
@@ -2280,8 +2280,8 @@
       "id": "TBB8FJ3",
       "name": "Audrey’s Heart",
       "color": "#495dad",
-      "status": "In the hands of Paws 4 a Cache.",
-      "distanceMiles": 909.0,
+      "status": "In Waddle Inn",
+      "distanceMiles": 960.1,
       "sourceUrl": "https://www.geocaching.com/track/details.aspx?tracker=TBB8FJ3",
       "logs": [
         {
@@ -2341,6 +2341,21 @@
           "cacheUrl": "https://www.geocaching.com/geocache/GCADZHD",
           "location": "Southern England, United Kingdom",
           "sourceUrl": "https://www.geocaching.com/live/log/TL283658T",
+          "lat": 50.9245008,
+          "lon": -0.1459793,
+          "precision": "Approximate city / region center, not cache coordinates",
+          "coordinateSource": "https://nominatim.openstreetmap.org/search?q=Southern+England%2C+United+Kingdom&format=json&limit=1"
+        },
+        {
+          "id": "TL283971V",
+          "date": "2026-11-11",
+          "type": "Dropped Off",
+          "text": "",
+          "event": "Paws 4 a Cache placed it in Waddle Inn",
+          "cacheName": "Waddle Inn",
+          "cacheUrl": "https://www.geocaching.com/geocache/GC5VXT8",
+          "location": "Southern England, United Kingdom",
+          "sourceUrl": "https://www.geocaching.com/live/log/TL283971V",
           "lat": 50.9245008,
           "lon": -0.1459793,
           "precision": "Approximate city / region center, not cache coordinates",
