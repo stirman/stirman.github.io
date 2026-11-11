@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-11T08:38:47.489947+00:00",
+  "updatedAt": "2026-11-11T09:41:11.490841+00:00",
   "mapAccuracy": "Regional overview only. Exact cache coordinates require Geocaching sign-in. Lines connect approximate place centers, not actual travel paths.",
   "inputCount": 20,
   "uniqueTrackableCount": 20,
@@ -2280,7 +2280,7 @@
       "id": "TBB8FJ3",
       "name": "Audrey’s Heart",
       "color": "#495dad",
-      "status": "In Think of a number...",
+      "status": "In the hands of Paws 4 a Cache.",
       "distanceMiles": 909.0,
       "sourceUrl": "https://www.geocaching.com/track/details.aspx?tracker=TBB8FJ3",
       "logs": [
@@ -2326,6 +2326,21 @@
           "cacheUrl": "https://www.geocaching.com/geocache/GCADZHD",
           "location": "Southern England, United Kingdom",
           "sourceUrl": "https://www.geocaching.com/live/log/TL27PQYV7",
+          "lat": 50.9245008,
+          "lon": -0.1459793,
+          "precision": "Approximate city / region center, not cache coordinates",
+          "coordinateSource": "https://nominatim.openstreetmap.org/search?q=Southern+England%2C+United+Kingdom&format=json&limit=1"
+        },
+        {
+          "id": "TL283658T",
+          "date": "2026-11-08",
+          "type": "Retrieve It from a Cache",
+          "text": "Come with us!",
+          "event": "Paws 4 a Cache retrieved it from Think of a number...",
+          "cacheName": "Think of a number...",
+          "cacheUrl": "https://www.geocaching.com/geocache/GCADZHD",
+          "location": "Southern England, United Kingdom",
+          "sourceUrl": "https://www.geocaching.com/live/log/TL283658T",
           "lat": 50.9245008,
           "lon": -0.1459793,
           "precision": "Approximate city / region center, not cache coordinates",
