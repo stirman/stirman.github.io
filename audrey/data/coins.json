@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-12T16:38:41.306624+00:00",
+  "updatedAt": "2026-11-12T17:40:46.767073+00:00",
   "mapAccuracy": "Regional overview only. Exact cache coordinates require Geocaching sign-in. Lines connect approximate place centers, not actual travel paths.",
   "inputCount": 20,
   "uniqueTrackableCount": 20,
@@ -2885,7 +2885,7 @@
       "id": "TBBFVPE",
       "name": "Audrey’s Heart",
       "color": "#d4a017",
-      "status": "In the hands of the owner.",
+      "status": "In the hands of carleighb1.",
       "distanceMiles": 0,
       "sourceUrl": "https://www.geocaching.com/track/details.aspx?tracker=TBBFVPE",
       "logs": [
@@ -2903,6 +2903,34 @@
           "lon": -118.755997,
           "precision": "Approximate city / region center, not cache coordinates",
           "coordinateSource": "https://nominatim.openstreetmap.org/search?q=California%2C+United+States&format=json&limit=1"
+        },
+        {
+          "id": "TL283F7G6",
+          "date": "2026-11-12",
+          "type": "Grab It (Not from a Cache)",
+          "text": "We’re taking Audrey to Thailand! We can’t wait to see the places she’ll go.\nWe love & miss you girly pop!",
+          "event": "carleighb1 grabbed it",
+          "cacheName": null,
+          "cacheUrl": null,
+          "location": "",
+          "sourceUrl": "https://www.geocaching.com/live/log/TL283F7G6",
+          "lat": null,
+          "lon": null,
+          "precision": null
+        },
+        {
+          "id": "TL283F7NC",
+          "date": "2026-11-12",
+          "type": "Write note",
+          "text": "We’re on our way to Thailand in 6 days!\nOh the places she’ll go 🤍",
+          "event": "carleighb1 posted a note for it",
+          "cacheName": null,
+          "cacheUrl": null,
+          "location": "",
+          "sourceUrl": "https://www.geocaching.com/live/log/TL283F7NC",
+          "lat": null,
+          "lon": null,
+          "precision": null
         }
       ],
       "familyMiles": 0
