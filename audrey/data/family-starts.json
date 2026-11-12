@@ -268,5 +268,95 @@
       "precision": "Approximate Mill Valley city center, not exact cache coordinates. Travel history supplied by the family.",
       "coordinateSource": "https://nominatim.openstreetmap.org/search?q=Mill+Valley%2C+California%2C+United+States&format=json&limit=1"
     }
+  ],
+  "TBB8FK9": [
+    {
+      "id": "family-start-GCBQAEF",
+      "familyReported": true,
+      "date": null,
+      "type": "Family-reported starting stop",
+      "cacheName": "Audrey’s Cache · GCBQAEF",
+      "cacheUrl": "https://www.geocaching.com/geocache/GCBQAEF",
+      "sourceUrl": "https://www.geocaching.com/geocache/GCBQAEF",
+      "location": "Mill Valley, California, United States",
+      "lat": 37.9060368,
+      "lon": -122.5449763,
+      "precision": "Approximate Mill Valley city center, not exact cache coordinates. Travel history supplied by the family.",
+      "coordinateSource": "https://nominatim.openstreetmap.org/search?q=Mill+Valley%2C+California%2C+United+States&format=json&limit=1",
+      "dateLabel": "Before June 2026 · date unknown",
+      "text": "The family reports that this heart’s home cache is Audrey’s Cache in Mill Valley. The official Geocaching history begins with the owner’s drop in Cascade Falls on June 20, 2026, before it was placed in Audrey’s Cache the same day."
+    }
+  ],
+  "TBB8G36": [
+    {
+      "id": "family-start-GCBQAEF",
+      "familyReported": true,
+      "date": null,
+      "type": "Family-reported starting stop",
+      "cacheName": "Audrey’s Cache · GCBQAEF",
+      "cacheUrl": "https://www.geocaching.com/geocache/GCBQAEF",
+      "sourceUrl": "https://www.geocaching.com/geocache/GCBQAEF",
+      "location": "Mill Valley, California, United States",
+      "lat": 37.9060368,
+      "lon": -122.5449763,
+      "precision": "Approximate Mill Valley city center, not exact cache coordinates. Travel history supplied by the family.",
+      "coordinateSource": "https://nominatim.openstreetmap.org/search?q=Mill+Valley%2C+California%2C+United+States&format=json&limit=1",
+      "dateLabel": "July 9, 2026 · received from the family in Mill Valley",
+      "text": "The family reports that this heart started in Mill Valley, California. The official Geocaching history begins with 4geobic receiving it from the family on July 9, 2026."
+    }
+  ],
+  "TBB8FXB": [
+    {
+      "id": "family-start-GCBQAEF",
+      "familyReported": true,
+      "date": null,
+      "type": "Family-reported starting stop",
+      "cacheName": "Audrey’s Cache · GCBQAEF",
+      "cacheUrl": "https://www.geocaching.com/geocache/GCBQAEF",
+      "sourceUrl": "https://www.geocaching.com/geocache/GCBQAEF",
+      "location": "Mill Valley, California, United States",
+      "lat": 37.9060368,
+      "lon": -122.5449763,
+      "precision": "Approximate Mill Valley city center, not exact cache coordinates. Travel history supplied by the family.",
+      "coordinateSource": "https://nominatim.openstreetmap.org/search?q=Mill+Valley%2C+California%2C+United+States&format=json&limit=1",
+      "dateLabel": "Before September 2026 · date unknown",
+      "text": "The family reports that this heart originated at Audrey’s Cache. The official Geocaching history begins with the owner’s visit log on September 8, 2026."
+    }
+  ],
+  "TBB8G42": [
+    {
+      "id": "family-start-GCBQAEF",
+      "familyReported": true,
+      "date": null,
+      "type": "Family-reported starting stop",
+      "cacheName": "Audrey’s Cache · GCBQAEF",
+      "cacheUrl": "https://www.geocaching.com/geocache/GCBQAEF",
+      "sourceUrl": "https://www.geocaching.com/geocache/GCBQAEF",
+      "location": "Mill Valley, California, United States",
+      "lat": 37.9060368,
+      "lon": -122.5449763,
+      "precision": "Approximate Mill Valley city center, not exact cache coordinates. Travel history supplied by the family.",
+      "coordinateSource": "https://nominatim.openstreetmap.org/search?q=Mill+Valley%2C+California%2C+United+States&format=json&limit=1",
+      "dateLabel": "Before Key West · date unknown",
+      "text": "The family reports that this heart started in Audrey’s Cache before traveling to Key West. The official Geocaching history begins with the owner’s visit log on September 8, 2026."
+    }
+  ],
+  "TBB8G77": [
+    {
+      "id": "family-start-GCBQAEF",
+      "familyReported": true,
+      "date": null,
+      "type": "Family-reported starting stop",
+      "cacheName": "Audrey’s Cache · GCBQAEF",
+      "cacheUrl": "https://www.geocaching.com/geocache/GCBQAEF",
+      "sourceUrl": "https://www.geocaching.com/geocache/GCBQAEF",
+      "location": "Mill Valley, California, United States",
+      "lat": 37.9060368,
+      "lon": -122.5449763,
+      "precision": "Approximate Mill Valley city center, not exact cache coordinates. Travel history supplied by the family.",
+      "coordinateSource": "https://nominatim.openstreetmap.org/search?q=Mill+Valley%2C+California%2C+United+States&format=json&limit=1",
+      "dateLabel": "Before September 2026 · date unknown",
+      "text": "The family reports that this heart originated at Audrey’s Cache. The official Geocaching history begins with the owner’s visit log on September 8, 2026."
+    }
   ]
 }
