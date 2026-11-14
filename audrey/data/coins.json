@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-14T13:38:42.297298+00:00",
+  "updatedAt": "2026-11-14T14:38:36.610675+00:00",
   "mapAccuracy": "Regional overview only. Exact cache coordinates require Geocaching sign-in. Lines connect approximate place centers, not actual travel paths.",
   "inputCount": 20,
   "uniqueTrackableCount": 20,
@@ -8,8 +8,8 @@
       "id": "TBB8FK9",
       "name": "Audrey’s Heart",
       "color": "#c85270",
-      "status": "In the hands of Sug@r.",
-      "distanceMiles": 6914.3,
+      "status": "In EarthCache Party ⛏️ 2026",
+      "distanceMiles": 7015.5,
       "sourceUrl": "https://www.geocaching.com/track/details.aspx?tracker=TBB8FK9",
       "logs": [
         {
@@ -1936,6 +1936,21 @@
           "lon": 14.9903103,
           "precision": "Approximate city / region center, not cache coordinates",
           "coordinateSource": "https://nominatim.openstreetmap.org/search?q=Libereck%C3%BD+kraj%2C+Czechia&format=json&limit=1"
+        },
+        {
+          "id": "TL283VPXK",
+          "date": "2026-11-14",
+          "type": "Dropped Off",
+          "text": "",
+          "event": "Sug@r placed it in EarthCache Party ⛏️ 2026",
+          "cacheName": "EarthCache Party ⛏️ 2026",
+          "cacheUrl": "https://www.geocaching.com/geocache/GCARXPV",
+          "location": "Plzeňský kraj, Czechia",
+          "sourceUrl": "https://www.geocaching.com/live/log/TL283VPXK",
+          "lat": 49.5228102,
+          "lon": 13.2063118,
+          "precision": "Approximate city / region center, not cache coordinates",
+          "coordinateSource": "https://nominatim.openstreetmap.org/search?q=Plze%C5%88sk%C3%BD+kraj%2C+Czechia&format=json&limit=1"
         }
       ],
       "familyMiles": 0
