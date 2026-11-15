@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-14T23:00:55Z",
-  "generatedAtHuman": "Nov 14, 2026 at 03:00 PM PST",
+  "generatedAt": "2026-11-15T02:00:37Z",
+  "generatedAtHuman": "Nov 14, 2026 at 06:00 PM PST",
   "source": "scheduled-cache",
   "refreshCadenceMinutes": 180,
   "overview": {
@@ -1204,11 +1204,6 @@
   "series": {
     "dailyInsights": [
       {
-        "date": "2026-10-16",
-        "label": "Oct 16",
-        "count": 0
-      },
-      {
         "date": "2026-10-17",
         "label": "Oct 17",
         "count": 0
@@ -1351,16 +1346,16 @@
       {
         "date": "2026-11-14",
         "label": "Nov 14",
+        "count": 0
+      },
+      {
+        "date": "2026-11-15",
+        "label": "Nov 15",
         "count": 0
       }
     ],
     "dailyCardImages": [
       {
-        "date": "2026-10-16",
-        "label": "Oct 16",
-        "count": 0
-      },
-      {
         "date": "2026-10-17",
         "label": "Oct 17",
         "count": 0
@@ -1503,6 +1498,11 @@
       {
         "date": "2026-11-14",
         "label": "Nov 14",
+        "count": 0
+      },
+      {
+        "date": "2026-11-15",
+        "label": "Nov 15",
         "count": 0
       }
     ],
@@ -2541,17 +2541,14 @@
         "date": "2026-11-14",
         "label": "Nov 14",
         "count": 87
+      },
+      {
+        "date": "2026-11-15",
+        "label": "Nov 15",
+        "count": 87
       }
     ],
     "dailyCosts": [
-      {
-        "date": "2026-10-16",
-        "label": "Oct 16",
-        "textDollars": 0.0,
-        "imageDollars": 0.0,
-        "otherDollars": 0.0,
-        "totalDollars": 0.0
-      },
       {
         "date": "2026-10-17",
         "label": "Oct 17",
@@ -2779,6 +2776,14 @@
       {
         "date": "2026-11-14",
         "label": "Nov 14",
+        "textDollars": 0.0,
+        "imageDollars": 0.0,
+        "otherDollars": 0.0,
+        "totalDollars": 0.0
+      },
+      {
+        "date": "2026-11-15",
+        "label": "Nov 15",
         "textDollars": 0.0,
         "imageDollars": 0.0,
         "otherDollars": 0.0,
@@ -2888,14 +2893,6 @@
     ],
     "daily": [
       {
-        "date": "2026-10-16",
-        "label": "Oct 16",
-        "textDollars": 0.0,
-        "imageDollars": 0.0,
-        "otherDollars": 0.0,
-        "totalDollars": 0.0
-      },
-      {
         "date": "2026-10-17",
         "label": "Oct 17",
         "textDollars": 0.0,
@@ -3122,6 +3119,14 @@
       {
         "date": "2026-11-14",
         "label": "Nov 14",
+        "textDollars": 0.0,
+        "imageDollars": 0.0,
+        "otherDollars": 0.0,
+        "totalDollars": 0.0
+      },
+      {
+        "date": "2026-11-15",
+        "label": "Nov 15",
         "textDollars": 0.0,
         "imageDollars": 0.0,
         "otherDollars": 0.0,
