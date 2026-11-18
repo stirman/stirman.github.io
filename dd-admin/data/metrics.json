@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-11-17T23:00:48Z",
-  "generatedAtHuman": "Nov 17, 2026 at 03:00 PM PST",
+  "generatedAt": "2026-11-18T02:00:39Z",
+  "generatedAtHuman": "Nov 17, 2026 at 06:00 PM PST",
   "source": "scheduled-cache",
   "refreshCadenceMinutes": 180,
   "overview": {
     "totalUsers": 89,
     "launchUsers": 85,
-    "active7": 6,
+    "active7": 4,
     "active30": 13,
     "premium": 20,
     "paidSubscribers": 8,
     "grantedPremium": 12,
     "retainedUsers": 20,
     "insights30": 23,
-    "entries30": 47,
+    "entries30": 48,
     "cardImages30": 12
   },
   "users": [
@@ -217,8 +217,8 @@
       "displayName": "Cassandra Stirman",
       "email": "cassiestirman@gmail.com",
       "createdAt": "2025-11-01T22:59:06Z",
-      "lastLoginAt": "2026-11-17T21:11:42Z",
-      "lastActiveAt": "2026-11-17T21:11:42Z",
+      "lastLoginAt": "2026-11-17T23:37:58Z",
+      "lastActiveAt": "2026-11-17T23:37:58Z",
       "isPaidSubscriber": false,
       "grantedPremium": true,
       "insights30": 6,
@@ -1186,7 +1186,7 @@
     },
     {
       "title": "Depth signal",
-      "body": "Users averaged about 2.0 inputs per generated insight in the last 30 days."
+      "body": "Users averaged about 2.1 inputs per generated insight in the last 30 days."
     },
     {
       "title": "Retention pulse",
@@ -1204,11 +1204,6 @@
   "series": {
     "dailyInsights": [
       {
-        "date": "2026-10-19",
-        "label": "Oct 19",
-        "count": 0
-      },
-      {
         "date": "2026-10-20",
         "label": "Oct 20",
         "count": 1
@@ -1352,15 +1347,15 @@
         "date": "2026-11-17",
         "label": "Nov 17",
         "count": 1
+      },
+      {
+        "date": "2026-11-18",
+        "label": "Nov 18",
+        "count": 0
       }
     ],
     "dailyCardImages": [
       {
-        "date": "2026-10-19",
-        "label": "Oct 19",
-        "count": 0
-      },
-      {
         "date": "2026-10-20",
         "label": "Oct 20",
         "count": 0
@@ -1503,6 +1498,11 @@
       {
         "date": "2026-11-17",
         "label": "Nov 17",
+        "count": 0
+      },
+      {
+        "date": "2026-11-18",
+        "label": "Nov 18",
         "count": 0
       }
     ],
@@ -2556,17 +2556,14 @@
         "date": "2026-11-17",
         "label": "Nov 17",
         "count": 87
+      },
+      {
+        "date": "2026-11-18",
+        "label": "Nov 18",
+        "count": 87
       }
     ],
     "dailyCosts": [
-      {
-        "date": "2026-10-19",
-        "label": "Oct 19",
-        "textDollars": 0.0,
-        "imageDollars": 0.0,
-        "otherDollars": 0.0,
-        "totalDollars": 0.0
-      },
       {
         "date": "2026-10-20",
         "label": "Oct 20",
@@ -2796,6 +2793,14 @@
         "label": "Nov 17",
         "textDollars": 0.0,
         "imageDollars": 0.0,
+        "otherDollars": 0.0009,
+        "totalDollars": 0.0009
+      },
+      {
+        "date": "2026-11-18",
+        "label": "Nov 18",
+        "textDollars": 0.0,
+        "imageDollars": 0.0,
         "otherDollars": 0.0,
         "totalDollars": 0.0
       }
@@ -2803,10 +2808,10 @@
   },
   "costs": {
     "available": true,
-    "totalDollars": 3.4056,
+    "totalDollars": 3.4066,
     "textDollars": 0.0005,
     "imageDollars": 3.3884,
-    "otherDollars": 0.0168,
+    "otherDollars": 0.0178,
     "byLineItem": [
       {
         "name": "gpt-image-1 image, output",
@@ -2834,11 +2839,11 @@
       },
       {
         "name": "gpt-6-luna, cache writes",
-        "dollars": 0.0108
+        "dollars": 0.0114
       },
       {
         "name": "gpt-6-luna, output",
-        "dollars": 0.006
+        "dollars": 0.0063
       },
       {
         "name": "gpt-4o-mini-2024-07-18, input",
@@ -2903,14 +2908,6 @@
     ],
     "daily": [
       {
-        "date": "2026-10-19",
-        "label": "Oct 19",
-        "textDollars": 0.0,
-        "imageDollars": 0.0,
-        "otherDollars": 0.0,
-        "totalDollars": 0.0
-      },
-      {
         "date": "2026-10-20",
         "label": "Oct 20",
         "textDollars": 0.0,
@@ -3137,6 +3134,14 @@
       {
         "date": "2026-11-17",
         "label": "Nov 17",
+        "textDollars": 0.0,
+        "imageDollars": 0.0,
+        "otherDollars": 0.0009,
+        "totalDollars": 0.0009
+      },
+      {
+        "date": "2026-11-18",
+        "label": "Nov 18",
         "textDollars": 0.0,
         "imageDollars": 0.0,
         "otherDollars": 0.0,
