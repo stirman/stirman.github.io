@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-18T02:00:39Z",
-  "generatedAtHuman": "Nov 17, 2026 at 06:00 PM PST",
+  "generatedAt": "2026-11-18T05:00:53Z",
+  "generatedAtHuman": "Nov 17, 2026 at 09:00 PM PST",
   "source": "scheduled-cache",
   "refreshCadenceMinutes": 180,
   "overview": {
@@ -12,9 +12,9 @@
     "paidSubscribers": 8,
     "grantedPremium": 12,
     "retainedUsers": 20,
-    "insights30": 23,
-    "entries30": 48,
-    "cardImages30": 12
+    "insights30": 24,
+    "entries30": 49,
+    "cardImages30": 13
   },
   "users": [
     {
@@ -399,12 +399,12 @@
       "displayName": "Erica Joub\u00e9rt",
       "email": "28vvv4r8sh@privaterelay.appleid.com",
       "createdAt": "2026-05-22T02:29:56Z",
-      "lastLoginAt": "2026-11-12T03:30:39Z",
-      "lastActiveAt": "2026-11-12T03:30:39Z",
+      "lastLoginAt": "2026-11-18T03:30:27Z",
+      "lastActiveAt": "2026-11-18T03:30:27Z",
       "isPaidSubscriber": false,
       "grantedPremium": true,
-      "insights30": 3,
-      "cardImages30": 2,
+      "insights30": 4,
+      "cardImages30": 3,
       "retained": true
     },
     {
@@ -1186,7 +1186,7 @@
     },
     {
       "title": "Depth signal",
-      "body": "Users averaged about 2.1 inputs per generated insight in the last 30 days."
+      "body": "Users averaged about 2.0 inputs per generated insight in the last 30 days."
     },
     {
       "title": "Retention pulse",
@@ -1194,7 +1194,7 @@
     },
     {
       "title": "Most engaged recently",
-      "body": "Cassandra Stirman, Miquelle Hardy, Erica Joub\u00e9rt generated the most insights in the last 30 days."
+      "body": "Cassandra Stirman, Erica Joub\u00e9rt, Miquelle Hardy generated the most insights in the last 30 days."
     },
     {
       "title": "Win-back opportunity",
@@ -1346,7 +1346,7 @@
       {
         "date": "2026-11-17",
         "label": "Nov 17",
-        "count": 1
+        "count": 2
       },
       {
         "date": "2026-11-18",
@@ -1498,7 +1498,7 @@
       {
         "date": "2026-11-17",
         "label": "Nov 17",
-        "count": 0
+        "count": 1
       },
       {
         "date": "2026-11-18",
