@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-23T20:00:36Z",
-  "generatedAtHuman": "Nov 23, 2026 at 12:00 PM PST",
+  "generatedAt": "2026-11-23T23:00:40Z",
+  "generatedAtHuman": "Nov 23, 2026 at 03:00 PM PST",
   "source": "scheduled-cache",
   "refreshCadenceMinutes": 180,
   "overview": {
@@ -12,8 +12,8 @@
     "paidSubscribers": 8,
     "grantedPremium": 12,
     "retainedUsers": 20,
-    "insights30": 21,
-    "entries30": 35,
+    "insights30": 22,
+    "entries30": 37,
     "cardImages30": 13
   },
   "users": [
@@ -217,11 +217,11 @@
       "displayName": "Cassandra Stirman",
       "email": "cassiestirman@gmail.com",
       "createdAt": "2025-11-01T22:59:06Z",
-      "lastLoginAt": "2026-11-17T23:37:58Z",
-      "lastActiveAt": "2026-11-17T23:37:58Z",
+      "lastLoginAt": "2026-11-23T21:04:02Z",
+      "lastActiveAt": "2026-11-23T21:04:02Z",
       "isPaidSubscriber": false,
       "grantedPremium": true,
-      "insights30": 4,
+      "insights30": 5,
       "cardImages30": 4,
       "retained": true
     },
@@ -1194,7 +1194,7 @@
     },
     {
       "title": "Most engaged recently",
-      "body": "Miquelle Hardy, Cassandra Stirman, Erica Joub\u00e9rt generated the most insights in the last 30 days."
+      "body": "Cassandra Stirman, Miquelle Hardy, Erica Joub\u00e9rt generated the most insights in the last 30 days."
     },
     {
       "title": "Win-back opportunity",
@@ -1351,7 +1351,7 @@
       {
         "date": "2026-11-23",
         "label": "Nov 23",
-        "count": 1
+        "count": 2
       }
     ],
     "dailyCardImages": [
