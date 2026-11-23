@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-11-18T17:00:50Z",
-  "generatedAtHuman": "Nov 18, 2026 at 09:00 AM PST",
+  "generatedAt": "2026-11-23T20:00:36Z",
+  "generatedAtHuman": "Nov 23, 2026 at 12:00 PM PST",
   "source": "scheduled-cache",
   "refreshCadenceMinutes": 180,
   "overview": {
     "totalUsers": 89,
     "launchUsers": 85,
     "active7": 4,
-    "active30": 13,
+    "active30": 11,
     "premium": 20,
     "paidSubscribers": 8,
     "grantedPremium": 12,
     "retainedUsers": 20,
-    "insights30": 24,
-    "entries30": 49,
-    "cardImages30": 14
+    "insights30": 21,
+    "entries30": 35,
+    "cardImages30": 13
   },
   "users": [
     {
@@ -221,8 +221,8 @@
       "lastActiveAt": "2026-11-17T23:37:58Z",
       "isPaidSubscriber": false,
       "grantedPremium": true,
-      "insights30": 6,
-      "cardImages30": 5,
+      "insights30": 4,
+      "cardImages30": 4,
       "retained": true
     },
     {
@@ -399,12 +399,12 @@
       "displayName": "Erica Joub\u00e9rt",
       "email": "28vvv4r8sh@privaterelay.appleid.com",
       "createdAt": "2026-05-22T02:29:56Z",
-      "lastLoginAt": "2026-11-18T03:30:27Z",
-      "lastActiveAt": "2026-11-18T03:30:27Z",
+      "lastLoginAt": "2026-11-21T03:30:45Z",
+      "lastActiveAt": "2026-11-21T03:30:45Z",
       "isPaidSubscriber": false,
       "grantedPremium": true,
       "insights30": 4,
-      "cardImages30": 3,
+      "cardImages30": 4,
       "retained": true
     },
     {
@@ -572,7 +572,7 @@
       "lastActiveAt": "2026-10-28T20:53:20Z",
       "isPaidSubscriber": false,
       "grantedPremium": false,
-      "insights30": 2,
+      "insights30": 1,
       "cardImages30": 0,
       "retained": true
     },
@@ -676,8 +676,8 @@
       "lastActiveAt": "2026-10-24T05:22:32Z",
       "isPaidSubscriber": false,
       "grantedPremium": false,
-      "insights30": 2,
-      "cardImages30": 2,
+      "insights30": 0,
+      "cardImages30": 0,
       "retained": false
     },
     {
@@ -906,11 +906,11 @@
       "displayName": "Miquelle Hardy",
       "email": "hs2c8wryfg@privaterelay.appleid.com",
       "createdAt": "2026-06-18T00:56:55Z",
-      "lastLoginAt": "2026-11-09T15:54:10Z",
-      "lastActiveAt": "2026-11-09T15:54:10Z",
+      "lastLoginAt": "2026-11-21T21:23:36Z",
+      "lastActiveAt": "2026-11-21T21:23:36Z",
       "isPaidSubscriber": false,
       "grantedPremium": false,
-      "insights30": 4,
+      "insights30": 5,
       "cardImages30": 0,
       "retained": true
     },
@@ -1049,12 +1049,12 @@
       "displayName": "stirman@gmail.com",
       "email": "stirman@gmail.com",
       "createdAt": "2026-01-02T20:39:01Z",
-      "lastLoginAt": "2026-11-16T20:06:10Z",
-      "lastActiveAt": "2026-11-16T20:06:10Z",
+      "lastLoginAt": "2026-11-23T19:02:22Z",
+      "lastActiveAt": "2026-11-23T19:02:22Z",
       "isPaidSubscriber": false,
       "grantedPremium": false,
-      "insights30": 2,
-      "cardImages30": 2,
+      "insights30": 3,
+      "cardImages30": 3,
       "retained": true
     },
     {
@@ -1177,16 +1177,16 @@
   ],
   "patterns": [
     {
-      "title": "Oct 21 was the busiest insight day",
+      "title": "Oct 28 was the busiest insight day",
       "body": "3 generated insights in the current 30-day window."
     },
     {
-      "title": "Oct 21 led card generation",
+      "title": "Nov 8 led card generation",
       "body": "2 card images generated that day."
     },
     {
       "title": "Depth signal",
-      "body": "Users averaged about 2.0 inputs per generated insight in the last 30 days."
+      "body": "Users averaged about 1.7 inputs per generated insight in the last 30 days."
     },
     {
       "title": "Retention pulse",
@@ -1194,7 +1194,7 @@
     },
     {
       "title": "Most engaged recently",
-      "body": "Cassandra Stirman, Erica Joub\u00e9rt, Miquelle Hardy generated the most insights in the last 30 days."
+      "body": "Miquelle Hardy, Cassandra Stirman, Erica Joub\u00e9rt generated the most insights in the last 30 days."
     },
     {
       "title": "Win-back opportunity",
@@ -1204,31 +1204,6 @@
   "series": {
     "dailyInsights": [
       {
-        "date": "2026-10-20",
-        "label": "Oct 20",
-        "count": 1
-      },
-      {
-        "date": "2026-10-21",
-        "label": "Oct 21",
-        "count": 3
-      },
-      {
-        "date": "2026-10-22",
-        "label": "Oct 22",
-        "count": 2
-      },
-      {
-        "date": "2026-10-23",
-        "label": "Oct 23",
-        "count": 1
-      },
-      {
-        "date": "2026-10-24",
-        "label": "Oct 24",
-        "count": 0
-      },
-      {
         "date": "2026-10-25",
         "label": "Oct 25",
         "count": 0
@@ -1352,35 +1327,35 @@
         "date": "2026-11-18",
         "label": "Nov 18",
         "count": 0
+      },
+      {
+        "date": "2026-11-19",
+        "label": "Nov 19",
+        "count": 0
+      },
+      {
+        "date": "2026-11-20",
+        "label": "Nov 20",
+        "count": 2
+      },
+      {
+        "date": "2026-11-21",
+        "label": "Nov 21",
+        "count": 1
+      },
+      {
+        "date": "2026-11-22",
+        "label": "Nov 22",
+        "count": 0
+      },
+      {
+        "date": "2026-11-23",
+        "label": "Nov 23",
+        "count": 1
       }
     ],
     "dailyCardImages": [
       {
-        "date": "2026-10-20",
-        "label": "Oct 20",
-        "count": 0
-      },
-      {
-        "date": "2026-10-21",
-        "label": "Oct 21",
-        "count": 2
-      },
-      {
-        "date": "2026-10-22",
-        "label": "Oct 22",
-        "count": 0
-      },
-      {
-        "date": "2026-10-23",
-        "label": "Oct 23",
-        "count": 1
-      },
-      {
-        "date": "2026-10-24",
-        "label": "Oct 24",
-        "count": 0
-      },
-      {
         "date": "2026-10-25",
         "label": "Oct 25",
         "count": 0
@@ -1504,6 +1479,31 @@
         "date": "2026-11-18",
         "label": "Nov 18",
         "count": 0
+      },
+      {
+        "date": "2026-11-19",
+        "label": "Nov 19",
+        "count": 0
+      },
+      {
+        "date": "2026-11-20",
+        "label": "Nov 20",
+        "count": 1
+      },
+      {
+        "date": "2026-11-21",
+        "label": "Nov 21",
+        "count": 0
+      },
+      {
+        "date": "2026-11-22",
+        "label": "Nov 22",
+        "count": 0
+      },
+      {
+        "date": "2026-11-23",
+        "label": "Nov 23",
+        "count": 1
       }
     ],
     "totalUsers": [
@@ -2561,49 +2561,34 @@
         "date": "2026-11-18",
         "label": "Nov 18",
         "count": 87
+      },
+      {
+        "date": "2026-11-19",
+        "label": "Nov 19",
+        "count": 87
+      },
+      {
+        "date": "2026-11-20",
+        "label": "Nov 20",
+        "count": 87
+      },
+      {
+        "date": "2026-11-21",
+        "label": "Nov 21",
+        "count": 87
+      },
+      {
+        "date": "2026-11-22",
+        "label": "Nov 22",
+        "count": 87
+      },
+      {
+        "date": "2026-11-23",
+        "label": "Nov 23",
+        "count": 87
       }
     ],
     "dailyCosts": [
-      {
-        "date": "2026-10-20",
-        "label": "Oct 20",
-        "textDollars": 0.0,
-        "imageDollars": 0.0,
-        "otherDollars": 0.0,
-        "totalDollars": 0.0
-      },
-      {
-        "date": "2026-10-21",
-        "label": "Oct 21",
-        "textDollars": 0.0,
-        "imageDollars": 0.0,
-        "otherDollars": 0.0035,
-        "totalDollars": 0.0035
-      },
-      {
-        "date": "2026-10-22",
-        "label": "Oct 22",
-        "textDollars": 0.0005,
-        "imageDollars": 2.3573,
-        "otherDollars": 0.0019,
-        "totalDollars": 2.3597
-      },
-      {
-        "date": "2026-10-23",
-        "label": "Oct 23",
-        "textDollars": 0.0,
-        "imageDollars": 0.0,
-        "otherDollars": 0.0007,
-        "totalDollars": 0.0007
-      },
-      {
-        "date": "2026-10-24",
-        "label": "Oct 24",
-        "textDollars": 0.0,
-        "imageDollars": 0.1959,
-        "otherDollars": 0.0009,
-        "totalDollars": 0.1967
-      },
       {
         "date": "2026-10-25",
         "label": "Oct 25",
@@ -2800,6 +2785,46 @@
         "date": "2026-11-18",
         "label": "Nov 18",
         "textDollars": 0.0,
+        "imageDollars": 0.0965,
+        "otherDollars": 0.0004,
+        "totalDollars": 0.0969
+      },
+      {
+        "date": "2026-11-19",
+        "label": "Nov 19",
+        "textDollars": 0.0,
+        "imageDollars": 0.0,
+        "otherDollars": 0.0,
+        "totalDollars": 0.0
+      },
+      {
+        "date": "2026-11-20",
+        "label": "Nov 20",
+        "textDollars": 0.0,
+        "imageDollars": 0.0,
+        "otherDollars": 0.0,
+        "totalDollars": 0.0
+      },
+      {
+        "date": "2026-11-21",
+        "label": "Nov 21",
+        "textDollars": 0.0,
+        "imageDollars": 0.0482,
+        "otherDollars": 0.0011,
+        "totalDollars": 0.0493
+      },
+      {
+        "date": "2026-11-22",
+        "label": "Nov 22",
+        "textDollars": 0.0,
+        "imageDollars": 0.0,
+        "otherDollars": 0.0,
+        "totalDollars": 0.0
+      },
+      {
+        "date": "2026-11-23",
+        "label": "Nov 23",
+        "textDollars": 0.0,
         "imageDollars": 0.0,
         "otherDollars": 0.0,
         "totalDollars": 0.0
@@ -2808,50 +2833,34 @@
   },
   "costs": {
     "available": true,
-    "totalDollars": 3.4066,
-    "textDollars": 0.0005,
-    "imageDollars": 3.3884,
-    "otherDollars": 0.0178,
+    "totalDollars": 0.9922,
+    "textDollars": 0.0,
+    "imageDollars": 0.9799,
+    "otherDollars": 0.0122,
     "byLineItem": [
       {
-        "name": "gpt-image-1 image, output",
-        "dollars": 2.2464
+        "name": "gpt-image-2.6-flare image, output",
+        "dollars": 0.4672
       },
       {
         "name": "gpt-image-2.5-flare image, output",
-        "dollars": 0.4939
-      },
-      {
-        "name": "gpt-image-2.6-flare image, output",
-        "dollars": 0.4266
-      },
-      {
-        "name": "gpt-image-2.5-flare text, input",
-        "dollars": 0.084
+        "dollars": 0.3704
       },
       {
         "name": "gpt-image-2.6-flare text, input",
-        "dollars": 0.0757
+        "dollars": 0.0836
       },
       {
-        "name": "gpt-image-1 text, input",
-        "dollars": 0.0617
+        "name": "gpt-image-2.5-flare text, input",
+        "dollars": 0.0587
       },
       {
         "name": "gpt-6-luna, cache writes",
-        "dollars": 0.0114
+        "dollars": 0.008
       },
       {
         "name": "gpt-6-luna, output",
-        "dollars": 0.0063
-      },
-      {
-        "name": "gpt-4o-mini-2024-07-18, input",
-        "dollars": 0.0003
-      },
-      {
-        "name": "gpt-4o-mini-2024-07-18, output",
-        "dollars": 0.0001
+        "dollars": 0.0042
       },
       {
         "name": "gpt-6-luna, cache writes - 12hr",
@@ -2863,22 +2872,6 @@
       },
       {
         "name": "gpt-6-luna, input",
-        "dollars": 0.0
-      },
-      {
-        "name": "gpt-4o-mini-2024-07-18, cached input",
-        "dollars": 0.0
-      },
-      {
-        "name": "gpt-image-1 image, cached input",
-        "dollars": 0.0
-      },
-      {
-        "name": "gpt-image-1 image, input",
-        "dollars": 0.0
-      },
-      {
-        "name": "gpt-image-1 text, cached input",
         "dollars": 0.0
       },
       {
@@ -2908,46 +2901,6 @@
     ],
     "daily": [
       {
-        "date": "2026-10-20",
-        "label": "Oct 20",
-        "textDollars": 0.0,
-        "imageDollars": 0.0,
-        "otherDollars": 0.0,
-        "totalDollars": 0.0
-      },
-      {
-        "date": "2026-10-21",
-        "label": "Oct 21",
-        "textDollars": 0.0,
-        "imageDollars": 0.0,
-        "otherDollars": 0.0035,
-        "totalDollars": 0.0035
-      },
-      {
-        "date": "2026-10-22",
-        "label": "Oct 22",
-        "textDollars": 0.0005,
-        "imageDollars": 2.3573,
-        "otherDollars": 0.0019,
-        "totalDollars": 2.3597
-      },
-      {
-        "date": "2026-10-23",
-        "label": "Oct 23",
-        "textDollars": 0.0,
-        "imageDollars": 0.0,
-        "otherDollars": 0.0007,
-        "totalDollars": 0.0007
-      },
-      {
-        "date": "2026-10-24",
-        "label": "Oct 24",
-        "textDollars": 0.0,
-        "imageDollars": 0.1959,
-        "otherDollars": 0.0009,
-        "totalDollars": 0.1967
-      },
-      {
         "date": "2026-10-25",
         "label": "Oct 25",
         "textDollars": 0.0,
@@ -3143,6 +3096,46 @@
         "date": "2026-11-18",
         "label": "Nov 18",
         "textDollars": 0.0,
+        "imageDollars": 0.0965,
+        "otherDollars": 0.0004,
+        "totalDollars": 0.0969
+      },
+      {
+        "date": "2026-11-19",
+        "label": "Nov 19",
+        "textDollars": 0.0,
+        "imageDollars": 0.0,
+        "otherDollars": 0.0,
+        "totalDollars": 0.0
+      },
+      {
+        "date": "2026-11-20",
+        "label": "Nov 20",
+        "textDollars": 0.0,
+        "imageDollars": 0.0,
+        "otherDollars": 0.0,
+        "totalDollars": 0.0
+      },
+      {
+        "date": "2026-11-21",
+        "label": "Nov 21",
+        "textDollars": 0.0,
+        "imageDollars": 0.0482,
+        "otherDollars": 0.0011,
+        "totalDollars": 0.0493
+      },
+      {
+        "date": "2026-11-22",
+        "label": "Nov 22",
+        "textDollars": 0.0,
+        "imageDollars": 0.0,
+        "otherDollars": 0.0,
+        "totalDollars": 0.0
+      },
+      {
+        "date": "2026-11-23",
+        "label": "Nov 23",
+        "textDollars": 0.0,
         "imageDollars": 0.0,
         "otherDollars": 0.0,
         "totalDollars": 0.0
@@ -3151,6 +3144,6 @@
     "error": null,
     "subscriptionPrice": 7.99,
     "estimatedRevenue": 63.92,
-    "grossMargin": 60.51
+    "grossMargin": 62.93
   }
 }
