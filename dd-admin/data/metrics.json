@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-23T23:00:40Z",
-  "generatedAtHuman": "Nov 23, 2026 at 03:00 PM PST",
+  "generatedAt": "2026-11-24T02:00:31Z",
+  "generatedAtHuman": "Nov 23, 2026 at 06:00 PM PST",
   "source": "scheduled-cache",
   "refreshCadenceMinutes": 180,
   "overview": {
@@ -13,7 +13,7 @@
     "grantedPremium": 12,
     "retainedUsers": 20,
     "insights30": 22,
-    "entries30": 37,
+    "entries30": 38,
     "cardImages30": 13
   },
   "users": [
@@ -217,8 +217,8 @@
       "displayName": "Cassandra Stirman",
       "email": "cassiestirman@gmail.com",
       "createdAt": "2025-11-01T22:59:06Z",
-      "lastLoginAt": "2026-11-23T21:04:02Z",
-      "lastActiveAt": "2026-11-23T21:04:02Z",
+      "lastLoginAt": "2026-11-23T23:34:10Z",
+      "lastActiveAt": "2026-11-23T23:34:10Z",
       "isPaidSubscriber": false,
       "grantedPremium": true,
       "insights30": 5,
@@ -1204,11 +1204,6 @@
   "series": {
     "dailyInsights": [
       {
-        "date": "2026-10-25",
-        "label": "Oct 25",
-        "count": 0
-      },
-      {
         "date": "2026-10-26",
         "label": "Oct 26",
         "count": 0
@@ -1352,14 +1347,14 @@
         "date": "2026-11-23",
         "label": "Nov 23",
         "count": 2
+      },
+      {
+        "date": "2026-11-24",
+        "label": "Nov 24",
+        "count": 0
       }
     ],
     "dailyCardImages": [
-      {
-        "date": "2026-10-25",
-        "label": "Oct 25",
-        "count": 0
-      },
       {
         "date": "2026-10-26",
         "label": "Oct 26",
@@ -1504,6 +1499,11 @@
         "date": "2026-11-23",
         "label": "Nov 23",
         "count": 1
+      },
+      {
+        "date": "2026-11-24",
+        "label": "Nov 24",
+        "count": 0
       }
     ],
     "totalUsers": [
@@ -2586,17 +2586,14 @@
         "date": "2026-11-23",
         "label": "Nov 23",
         "count": 87
+      },
+      {
+        "date": "2026-11-24",
+        "label": "Nov 24",
+        "count": 87
       }
     ],
     "dailyCosts": [
-      {
-        "date": "2026-10-25",
-        "label": "Oct 25",
-        "textDollars": 0.0,
-        "imageDollars": 0.0,
-        "otherDollars": 0.0,
-        "totalDollars": 0.0
-      },
       {
         "date": "2026-10-26",
         "label": "Oct 26",
@@ -2825,6 +2822,14 @@
         "date": "2026-11-23",
         "label": "Nov 23",
         "textDollars": 0.0,
+        "imageDollars": 0.1395,
+        "otherDollars": 0.0024,
+        "totalDollars": 0.1419
+      },
+      {
+        "date": "2026-11-24",
+        "label": "Nov 24",
+        "textDollars": 0.0,
         "imageDollars": 0.0,
         "otherDollars": 0.0,
         "totalDollars": 0.0
@@ -2833,10 +2838,10 @@
   },
   "costs": {
     "available": true,
-    "totalDollars": 0.9922,
+    "totalDollars": 1.1341,
     "textDollars": 0.0,
-    "imageDollars": 0.9799,
-    "otherDollars": 0.0122,
+    "imageDollars": 1.1195,
+    "otherDollars": 0.0147,
     "byLineItem": [
       {
         "name": "gpt-image-2.6-flare image, output",
@@ -2844,7 +2849,7 @@
       },
       {
         "name": "gpt-image-2.5-flare image, output",
-        "dollars": 0.3704
+        "dollars": 0.4528
       },
       {
         "name": "gpt-image-2.6-flare text, input",
@@ -2852,15 +2857,23 @@
       },
       {
         "name": "gpt-image-2.5-flare text, input",
-        "dollars": 0.0587
+        "dollars": 0.0668
+      },
+      {
+        "name": "gpt-image-2.5-sunburst image, output",
+        "dollars": 0.0412
       },
       {
         "name": "gpt-6-luna, cache writes",
-        "dollars": 0.008
+        "dollars": 0.0096
+      },
+      {
+        "name": "gpt-image-2.5-sunburst text, input",
+        "dollars": 0.0079
       },
       {
         "name": "gpt-6-luna, output",
-        "dollars": 0.0042
+        "dollars": 0.005
       },
       {
         "name": "gpt-6-luna, cache writes - 12hr",
@@ -2897,17 +2910,21 @@
       {
         "name": "gpt-image-2.6-flare text, cached input",
         "dollars": 0.0
+      },
+      {
+        "name": "gpt-image-2.5-sunburst image, cached input",
+        "dollars": 0.0
+      },
+      {
+        "name": "gpt-image-2.5-sunburst image, input",
+        "dollars": 0.0
+      },
+      {
+        "name": "gpt-image-2.5-sunburst text, cached input",
+        "dollars": 0.0
       }
     ],
     "daily": [
-      {
-        "date": "2026-10-25",
-        "label": "Oct 25",
-        "textDollars": 0.0,
-        "imageDollars": 0.0,
-        "otherDollars": 0.0,
-        "totalDollars": 0.0
-      },
       {
         "date": "2026-10-26",
         "label": "Oct 26",
@@ -3136,6 +3153,14 @@
         "date": "2026-11-23",
         "label": "Nov 23",
         "textDollars": 0.0,
+        "imageDollars": 0.1395,
+        "otherDollars": 0.0024,
+        "totalDollars": 0.1419
+      },
+      {
+        "date": "2026-11-24",
+        "label": "Nov 24",
+        "textDollars": 0.0,
         "imageDollars": 0.0,
         "otherDollars": 0.0,
         "totalDollars": 0.0
@@ -3144,6 +3169,6 @@
     "error": null,
     "subscriptionPrice": 7.99,
     "estimatedRevenue": 63.92,
-    "grossMargin": 62.93
+    "grossMargin": 62.79
   }
 }
