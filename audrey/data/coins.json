@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-25T03:38:35.974278+00:00",
+  "updatedAt": "2026-11-25T04:42:47.001254+00:00",
   "mapAccuracy": "Regional overview only. Exact cache coordinates require Geocaching sign-in. Lines connect approximate place centers, not actual travel paths.",
   "inputCount": 20,
   "uniqueTrackableCount": 20,
@@ -2945,8 +2945,8 @@
       "id": "TBBFVPE",
       "name": "Audrey’s Heart",
       "color": "#d4a017",
-      "status": "In the hands of carleighb1.",
-      "distanceMiles": 0,
+      "status": "In Irish Garden Hits Archers",
+      "distanceMiles": 7676.1,
       "sourceUrl": "https://www.geocaching.com/track/details.aspx?tracker=TBBFVPE",
       "logs": [
         {
@@ -2991,6 +2991,21 @@
           "lat": null,
           "lon": null,
           "precision": null
+        },
+        {
+          "id": "TL286A8ZK",
+          "date": "2026-11-25",
+          "type": "Dropped Off",
+          "text": "Her name is Audrey! She passed away tragically at the age of 20 years old but was able to save 5 people’s lives by being an organ donor.\nPlease take the pink heart with you on your next travels. We want her to travel as far as she can go and see the world.\nWe love and miss you Audrey girl!",
+          "event": "carleighb1 placed it in Irish Garden Hits Archers",
+          "cacheName": "Irish Garden Hits Archers",
+          "cacheUrl": "https://www.geocaching.com/geocache/GC5WXM0",
+          "location": "Thailand",
+          "sourceUrl": "https://www.geocaching.com/live/log/TL286A8ZK",
+          "lat": 14.8971921,
+          "lon": 100.83273,
+          "precision": "Approximate city / region center, not cache coordinates",
+          "coordinateSource": "https://nominatim.openstreetmap.org/search?q=Thailand&format=json&limit=1"
         }
       ],
       "familyMiles": 0
