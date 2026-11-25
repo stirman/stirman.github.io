@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-25T06:38:49.630054+00:00",
+  "updatedAt": "2026-11-25T07:40:18.980535+00:00",
   "mapAccuracy": "Regional overview only. Exact cache coordinates require Geocaching sign-in. Lines connect approximate place centers, not actual travel paths.",
   "inputCount": 20,
   "uniqueTrackableCount": 20,
@@ -2945,7 +2945,7 @@
       "id": "TBBFVPE",
       "name": "Audrey’s Heart",
       "color": "#d4a017",
-      "status": "In Irish Garden Hits Archers",
+      "status": "In the hands of Dadin91.",
       "distanceMiles": 7676.1,
       "sourceUrl": "https://www.geocaching.com/track/details.aspx?tracker=TBBFVPE",
       "logs": [
@@ -3002,6 +3002,21 @@
           "cacheUrl": "https://www.geocaching.com/geocache/GC5WXM0",
           "location": "Thailand",
           "sourceUrl": "https://www.geocaching.com/live/log/TL286A8ZK",
+          "lat": 14.8971921,
+          "lon": 100.83273,
+          "precision": "Approximate city / region center, not cache coordinates",
+          "coordinateSource": "https://nominatim.openstreetmap.org/search?q=Thailand&format=json&limit=1"
+        },
+        {
+          "id": "TL286AH5X",
+          "date": "2026-11-25",
+          "type": "Retrieve It from a Cache",
+          "text": "Come with us to Germany:)",
+          "event": "Dadin91 retrieved it from Irish Garden Hits Archers",
+          "cacheName": "Irish Garden Hits Archers",
+          "cacheUrl": "https://www.geocaching.com/geocache/GC5WXM0",
+          "location": "Thailand",
+          "sourceUrl": "https://www.geocaching.com/live/log/TL286AH5X",
           "lat": 14.8971921,
           "lon": 100.83273,
           "precision": "Approximate city / region center, not cache coordinates",
