@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-11-26T23:00:31Z",
-  "generatedAtHuman": "Nov 26, 2026 at 03:00 PM PST",
+  "generatedAt": "2026-11-27T02:00:33Z",
+  "generatedAtHuman": "Nov 26, 2026 at 06:00 PM PST",
   "source": "scheduled-cache",
   "refreshCadenceMinutes": 180,
   "overview": {
     "totalUsers": 89,
     "launchUsers": 85,
     "active7": 4,
-    "active30": 11,
+    "active30": 10,
     "premium": 20,
     "paidSubscribers": 8,
     "grantedPremium": 12,
     "retainedUsers": 20,
-    "insights30": 22,
-    "entries30": 38,
+    "insights30": 19,
+    "entries30": 34,
     "cardImages30": 14
   },
   "users": [
@@ -572,7 +572,7 @@
       "lastActiveAt": "2026-10-28T20:53:20Z",
       "isPaidSubscriber": false,
       "grantedPremium": false,
-      "insights30": 1,
+      "insights30": 0,
       "cardImages30": 0,
       "retained": true
     },
@@ -910,7 +910,7 @@
       "lastActiveAt": "2026-11-21T21:23:36Z",
       "isPaidSubscriber": false,
       "grantedPremium": false,
-      "insights30": 5,
+      "insights30": 4,
       "cardImages30": 0,
       "retained": true
     },
@@ -1027,7 +1027,7 @@
       "lastActiveAt": "2026-10-29T00:30:26Z",
       "isPaidSubscriber": false,
       "grantedPremium": false,
-      "insights30": 1,
+      "insights30": 0,
       "cardImages30": 0,
       "retained": true
     },
@@ -1177,8 +1177,8 @@
   ],
   "patterns": [
     {
-      "title": "Oct 28 was the busiest insight day",
-      "body": "3 generated insights in the current 30-day window."
+      "title": "Nov 8 was the busiest insight day",
+      "body": "2 generated insights in the current 30-day window."
     },
     {
       "title": "Nov 8 led card generation",
@@ -1186,7 +1186,7 @@
     },
     {
       "title": "Depth signal",
-      "body": "Users averaged about 1.7 inputs per generated insight in the last 30 days."
+      "body": "Users averaged about 1.8 inputs per generated insight in the last 30 days."
     },
     {
       "title": "Retention pulse",
@@ -1194,7 +1194,7 @@
     },
     {
       "title": "Most engaged recently",
-      "body": "Cassandra Stirman, Miquelle Hardy, Erica Joub\u00e9rt generated the most insights in the last 30 days."
+      "body": "Cassandra Stirman, Erica Joub\u00e9rt, Miquelle Hardy generated the most insights in the last 30 days."
     },
     {
       "title": "Win-back opportunity",
@@ -1204,11 +1204,6 @@
   "series": {
     "dailyInsights": [
       {
-        "date": "2026-10-28",
-        "label": "Oct 28",
-        "count": 3
-      },
-      {
         "date": "2026-10-29",
         "label": "Oct 29",
         "count": 0
@@ -1351,16 +1346,16 @@
       {
         "date": "2026-11-26",
         "label": "Nov 26",
+        "count": 0
+      },
+      {
+        "date": "2026-11-27",
+        "label": "Nov 27",
         "count": 0
       }
     ],
     "dailyCardImages": [
       {
-        "date": "2026-10-28",
-        "label": "Oct 28",
-        "count": 0
-      },
-      {
         "date": "2026-10-29",
         "label": "Oct 29",
         "count": 0
@@ -1503,6 +1498,11 @@
       {
         "date": "2026-11-26",
         "label": "Nov 26",
+        "count": 0
+      },
+      {
+        "date": "2026-11-27",
+        "label": "Nov 27",
         "count": 0
       }
     ],
@@ -2601,17 +2601,14 @@
         "date": "2026-11-26",
         "label": "Nov 26",
         "count": 87
+      },
+      {
+        "date": "2026-11-27",
+        "label": "Nov 27",
+        "count": 87
       }
     ],
     "dailyCosts": [
-      {
-        "date": "2026-10-28",
-        "label": "Oct 28",
-        "textDollars": 0.0,
-        "imageDollars": 0.0,
-        "otherDollars": 0.0015,
-        "totalDollars": 0.0015
-      },
       {
         "date": "2026-10-29",
         "label": "Oct 29",
@@ -2843,15 +2840,23 @@
         "imageDollars": 0.0,
         "otherDollars": 0.0,
         "totalDollars": 0.0
+      },
+      {
+        "date": "2026-11-27",
+        "label": "Nov 27",
+        "textDollars": 0.0,
+        "imageDollars": 0.0,
+        "otherDollars": 0.0,
+        "totalDollars": 0.0
       }
     ]
   },
   "costs": {
     "available": true,
-    "totalDollars": 1.1834,
+    "totalDollars": 1.1819,
     "textDollars": 0.0,
     "imageDollars": 1.1688,
-    "otherDollars": 0.0147,
+    "otherDollars": 0.0132,
     "byLineItem": [
       {
         "name": "gpt-image-2.5-flare image, output",
@@ -2875,7 +2880,7 @@
       },
       {
         "name": "gpt-6-luna, cache writes",
-        "dollars": 0.0096
+        "dollars": 0.0087
       },
       {
         "name": "gpt-image-2.5-sunburst text, input",
@@ -2883,7 +2888,7 @@
       },
       {
         "name": "gpt-6-luna, output",
-        "dollars": 0.005
+        "dollars": 0.0045
       },
       {
         "name": "gpt-6-luna, cache writes - 12hr",
@@ -2936,14 +2941,6 @@
     ],
     "daily": [
       {
-        "date": "2026-10-28",
-        "label": "Oct 28",
-        "textDollars": 0.0,
-        "imageDollars": 0.0,
-        "otherDollars": 0.0015,
-        "totalDollars": 0.0015
-      },
-      {
         "date": "2026-10-29",
         "label": "Oct 29",
         "textDollars": 0.0,
@@ -3170,6 +3167,14 @@
       {
         "date": "2026-11-26",
         "label": "Nov 26",
+        "textDollars": 0.0,
+        "imageDollars": 0.0,
+        "otherDollars": 0.0,
+        "totalDollars": 0.0
+      },
+      {
+        "date": "2026-11-27",
+        "label": "Nov 27",
         "textDollars": 0.0,
         "imageDollars": 0.0,
         "otherDollars": 0.0,
