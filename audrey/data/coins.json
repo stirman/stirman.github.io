@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-27T19:39:08.219545+00:00",
+  "updatedAt": "2026-11-27T20:40:54.091977+00:00",
   "mapAccuracy": "Regional overview only. Exact cache coordinates require Geocaching sign-in. Lines connect approximate place centers, not actual travel paths.",
   "inputCount": 20,
   "uniqueTrackableCount": 20,
@@ -2177,7 +2177,7 @@
       "id": "TBB8FXB",
       "name": "Audrey’s Heart",
       "color": "#bd8941",
-      "status": "In the hands of the owner.",
+      "status": "In the hands of kathybrogers.",
       "distanceMiles": 0,
       "sourceUrl": "https://www.geocaching.com/track/details.aspx?tracker=TBB8FXB",
       "logs": [
@@ -2195,6 +2195,20 @@
           "lon": -118.755997,
           "precision": "Approximate city / region center, not cache coordinates",
           "coordinateSource": "https://nominatim.openstreetmap.org/search?q=California%2C+United+States&format=json&limit=1"
+        },
+        {
+          "id": "TL286QM4N",
+          "date": "2026-11-27",
+          "type": "Grab It (Not from a Cache)",
+          "text": "This is my granddaughter, Audrey.  My wish is for her to travel from one of our favorite locations together, throughout the world!❤️",
+          "event": "kathybrogers grabbed it",
+          "cacheName": null,
+          "cacheUrl": null,
+          "location": "",
+          "sourceUrl": "https://www.geocaching.com/live/log/TL286QM4N",
+          "lat": null,
+          "lon": null,
+          "precision": null
         }
       ],
       "familyMiles": 0
@@ -3096,7 +3110,7 @@
       "id": "TBBFVQ8",
       "name": "Audrey’s Heart",
       "color": "#5a6e1f",
-      "status": "In the hands of themasseyfamily1.",
+      "status": "In the hands of Greenleystirman.",
       "distanceMiles": 0,
       "sourceUrl": "https://www.geocaching.com/track/details.aspx?tracker=TBBFVQ8",
       "logs": [
@@ -3128,6 +3142,20 @@
           "lat": null,
           "lon": null,
           "precision": null
+        },
+        {
+          "id": "TL286QMCK",
+          "date": "2026-11-27",
+          "type": "Grab It (Not from a Cache)",
+          "text": "This is my cousin Audrey. This travel bug is in her memory as she wanted to travel the world! Please pick her up and drop her at your next geo cash destination to allow her hearts to continue to travel 💚",
+          "event": "Greenleystirman grabbed it",
+          "cacheName": null,
+          "cacheUrl": null,
+          "location": "",
+          "sourceUrl": "https://www.geocaching.com/live/log/TL286QMCK",
+          "lat": null,
+          "lon": null,
+          "precision": null
         }
       ],
       "familyMiles": 0
@@ -3136,7 +3164,7 @@
       "id": "TBBFV0E",
       "name": "Audrey’s Heart",
       "color": "#a03d7a",
-      "status": "In the hands of the owner.",
+      "status": "In the hands of Greenleystirman.",
       "distanceMiles": 0,
       "sourceUrl": "https://www.geocaching.com/track/details.aspx?tracker=TBBFV0E",
       "logs": [
@@ -3154,6 +3182,20 @@
           "lon": -118.755997,
           "precision": "Approximate city / region center, not cache coordinates",
           "coordinateSource": "https://nominatim.openstreetmap.org/search?q=California%2C+United+States&format=json&limit=1"
+        },
+        {
+          "id": "TL286QN9J",
+          "date": "2026-11-27",
+          "type": "Grab It (Not from a Cache)",
+          "text": "This is my cousin Audrey. This travel bug is in her memory as she wanted to travel the world! Please pick her up and drop her at your next geo cash destination to allow her hearts to continue to travel 💚",
+          "event": "Greenleystirman grabbed it",
+          "cacheName": null,
+          "cacheUrl": null,
+          "location": "",
+          "sourceUrl": "https://www.geocaching.com/live/log/TL286QN9J",
+          "lat": null,
+          "lon": null,
+          "precision": null
         }
       ],
       "familyMiles": 0
