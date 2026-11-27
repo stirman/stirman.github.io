@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-27T22:38:55.566764+00:00",
+  "updatedAt": "2026-11-27T23:22:29.311361+00:00",
   "mapAccuracy": "Regional overview only. Exact cache coordinates require Geocaching sign-in. Lines connect approximate place centers, not actual travel paths.",
   "inputCount": 20,
   "uniqueTrackableCount": 20,
@@ -2283,8 +2283,8 @@
       "id": "TBB8FX6",
       "name": "Audrey’s Heart",
       "color": "#ba7859",
-      "status": "In the hands of the owner.",
-      "distanceMiles": 0,
+      "status": "In Trees Cheeks",
+      "distanceMiles": 1642.6,
       "sourceUrl": "https://www.geocaching.com/track/details.aspx?tracker=TBB8FX6",
       "logs": [
         {
@@ -2301,6 +2301,22 @@
           "lon": -118.755997,
           "precision": "Approximate city / region center, not cache coordinates",
           "coordinateSource": "https://nominatim.openstreetmap.org/search?q=California%2C+United+States&format=json&limit=1"
+        },
+        {
+          "id": "TL286RCRV",
+          "date": "2026-11-27",
+          "type": "Dropped Off",
+          "text": "Help Audrey see the world through geocaching. A family favorite. 💝",
+          "event": "cassiestirman placed it in Trees Cheeks",
+          "cacheName": "Trees Cheeks",
+          "cacheUrl": "https://www.geocaching.com/geocache/GCBH36Q",
+          "location": "Livingston, Texas, United States",
+          "sourceUrl": "https://www.geocaching.com/live/log/TL286RCRV",
+          "locationBasis": "Livingston supplied by Jason; placement verified in public trackable log",
+          "lat": 30.711029,
+          "lon": -94.9329898,
+          "precision": "Approximate city / region center, not cache coordinates",
+          "coordinateSource": "https://nominatim.openstreetmap.org/search?q=Livingston%2C+Texas%2C+United+States&format=json&limit=1"
         }
       ],
       "familyMiles": 0
