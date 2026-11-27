@@ -92,6 +92,9 @@ def collect_coin(code, fetch):
             if code == 'TBB8FXD' and (item.get('cacheUrl') or '').rstrip('/').endswith('/GC30T9P'):
                 item['location'] = 'Poros, Attica, Greece'
                 item['locationBasis'] = 'Poros identified in the public cache description; placement verified in public trackable log'
+            if code == 'TBB8FX6' and (item.get('cacheUrl') or '').rstrip('/').endswith('/GCBH36Q'):
+                item['location'] = 'Livingston, Texas, United States'
+                item['locationBasis'] = 'Livingston supplied by Jason; placement verified in public trackable log'
             logs[log_id] = item
         next_link = soup.find('a', string=re.compile(r'^next'))
         url = urljoin(BASE, next_link['href']) if next_link else None
