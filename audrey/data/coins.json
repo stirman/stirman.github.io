@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-28T09:38:38.966446+00:00",
+  "updatedAt": "2026-11-28T10:38:38.457837+00:00",
   "mapAccuracy": "Regional overview only. Exact cache coordinates require Geocaching sign-in. Lines connect approximate place centers, not actual travel paths.",
   "inputCount": 20,
   "uniqueTrackableCount": 20,
@@ -2976,7 +2976,7 @@
       "name": "Audrey’s Heart",
       "color": "#d4a017",
       "status": "In the hands of Dadin91.",
-      "distanceMiles": 7679.8,
+      "distanceMiles": 8141.2,
       "sourceUrl": "https://www.geocaching.com/track/details.aspx?tracker=TBBFVPE",
       "logs": [
         {
@@ -3062,6 +3062,21 @@
           "cacheUrl": "https://www.geocaching.com/geocache/GC7J3E8",
           "location": "Thailand",
           "sourceUrl": "https://www.geocaching.com/live/log/TL286BGN9",
+          "lat": 14.8971921,
+          "lon": 100.83273,
+          "precision": "Approximate city / region center, not cache coordinates",
+          "coordinateSource": "https://nominatim.openstreetmap.org/search?q=Thailand&format=json&limit=1"
+        },
+        {
+          "id": "TL286TKFW",
+          "date": "2026-11-28",
+          "type": "Visited",
+          "text": "",
+          "event": "Dadin91 took it to Wat Regor",
+          "cacheName": "Wat Regor",
+          "cacheUrl": "https://www.geocaching.com/geocache/GCBF4MQ",
+          "location": "Thailand",
+          "sourceUrl": "https://www.geocaching.com/live/log/TL286TKFW",
           "lat": 14.8971921,
           "lon": 100.83273,
           "precision": "Approximate city / region center, not cache coordinates",
