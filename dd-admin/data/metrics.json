@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-11-27T23:00:33Z",
-  "generatedAtHuman": "Nov 27, 2026 at 03:00 PM PST",
+  "generatedAt": "2026-11-28T02:00:35Z",
+  "generatedAtHuman": "Nov 27, 2026 at 06:00 PM PST",
   "source": "scheduled-cache",
   "refreshCadenceMinutes": 180,
   "overview": {
     "totalUsers": 89,
     "launchUsers": 85,
-    "active7": 4,
-    "active30": 10,
+    "active7": 2,
+    "active30": 9,
     "premium": 20,
     "paidSubscribers": 8,
     "grantedPremium": 12,
     "retainedUsers": 20,
     "insights30": 19,
-    "entries30": 34,
+    "entries30": 32,
     "cardImages30": 14
   },
   "users": [
@@ -1186,7 +1186,7 @@
     },
     {
       "title": "Depth signal",
-      "body": "Users averaged about 1.8 inputs per generated insight in the last 30 days."
+      "body": "Users averaged about 1.7 inputs per generated insight in the last 30 days."
     },
     {
       "title": "Retention pulse",
@@ -1204,11 +1204,6 @@
   "series": {
     "dailyInsights": [
       {
-        "date": "2026-10-29",
-        "label": "Oct 29",
-        "count": 0
-      },
-      {
         "date": "2026-10-30",
         "label": "Oct 30",
         "count": 0
@@ -1351,16 +1346,16 @@
       {
         "date": "2026-11-27",
         "label": "Nov 27",
+        "count": 0
+      },
+      {
+        "date": "2026-11-28",
+        "label": "Nov 28",
         "count": 0
       }
     ],
     "dailyCardImages": [
       {
-        "date": "2026-10-29",
-        "label": "Oct 29",
-        "count": 0
-      },
-      {
         "date": "2026-10-30",
         "label": "Oct 30",
         "count": 0
@@ -1503,6 +1498,11 @@
       {
         "date": "2026-11-27",
         "label": "Nov 27",
+        "count": 0
+      },
+      {
+        "date": "2026-11-28",
+        "label": "Nov 28",
         "count": 0
       }
     ],
@@ -2606,17 +2606,14 @@
         "date": "2026-11-27",
         "label": "Nov 27",
         "count": 87
+      },
+      {
+        "date": "2026-11-28",
+        "label": "Nov 28",
+        "count": 87
       }
     ],
     "dailyCosts": [
-      {
-        "date": "2026-10-29",
-        "label": "Oct 29",
-        "textDollars": 0.0,
-        "imageDollars": 0.0,
-        "otherDollars": 0.0007,
-        "totalDollars": 0.0007
-      },
       {
         "date": "2026-10-30",
         "label": "Oct 30",
@@ -2848,15 +2845,23 @@
         "imageDollars": 0.0,
         "otherDollars": 0.0,
         "totalDollars": 0.0
+      },
+      {
+        "date": "2026-11-28",
+        "label": "Nov 28",
+        "textDollars": 0.0,
+        "imageDollars": 0.0,
+        "otherDollars": 0.0,
+        "totalDollars": 0.0
       }
     ]
   },
   "costs": {
     "available": true,
-    "totalDollars": 1.1819,
+    "totalDollars": 1.1812,
     "textDollars": 0.0,
     "imageDollars": 1.1688,
-    "otherDollars": 0.0132,
+    "otherDollars": 0.0125,
     "byLineItem": [
       {
         "name": "gpt-image-2.5-flare image, output",
@@ -2880,7 +2885,7 @@
       },
       {
         "name": "gpt-6-luna, cache writes",
-        "dollars": 0.0087
+        "dollars": 0.0082
       },
       {
         "name": "gpt-image-2.5-sunburst text, input",
@@ -2888,7 +2893,7 @@
       },
       {
         "name": "gpt-6-luna, output",
-        "dollars": 0.0045
+        "dollars": 0.0043
       },
       {
         "name": "gpt-6-luna, cache writes - 12hr",
@@ -2941,14 +2946,6 @@
     ],
     "daily": [
       {
-        "date": "2026-10-29",
-        "label": "Oct 29",
-        "textDollars": 0.0,
-        "imageDollars": 0.0,
-        "otherDollars": 0.0007,
-        "totalDollars": 0.0007
-      },
-      {
         "date": "2026-10-30",
         "label": "Oct 30",
         "textDollars": 0.0,
@@ -3175,6 +3172,14 @@
       {
         "date": "2026-11-27",
         "label": "Nov 27",
+        "textDollars": 0.0,
+        "imageDollars": 0.0,
+        "otherDollars": 0.0,
+        "totalDollars": 0.0
+      },
+      {
+        "date": "2026-11-28",
+        "label": "Nov 28",
         "textDollars": 0.0,
         "imageDollars": 0.0,
         "otherDollars": 0.0,
